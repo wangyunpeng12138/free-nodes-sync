@@ -1,0 +1,1045 @@
+# 订阅 11.1.txt -> Clash
+# 由 txt2clash.py 自动生成于 2026-11-01 16:51:16 +0800
+# 节点数量: 96
+# 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: "off"
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  listen: "0.0.0.0:1053"
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "*.localhost"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  proxy-server-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+proxies:
+  - name: "@Vip_Security join us - 394"
+    type: vless
+    server: 194.150.166.230
+    port: 9443
+    uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+    udp: true
+    tls: true
+    servername: storage.yandexcloud.net
+    client-fingerprint: safari
+    reality-opts:
+      public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+      short-id: ad20d2ba
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@Vip_Security join us - 390"
+    type: vless
+    server: k2.cloud--vpn.site
+    port: 443
+    uuid: daee66b7-3f5e-46d7-83c1-4d93a5fb33c3
+    udp: true
+    tls: true
+    servername: ssl.fastly.com
+    client-fingerprint: firefox
+    alpn:
+      - h2
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: c12.com
+  - name: "@Vip_Security join us - 386"
+    type: vless
+    server: 2.27.205.59
+    port: 443
+    uuid: c21631d5-36c9-4664-b575-97eca17456be
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 2.27.205.59
+  - name: "@Vip_Security join us - 382"
+    type: vless
+    server: 188.114.97.6
+    port: 443
+    uuid: b2593749-691c-428c-9481-14979cba3446
+    udp: true
+    tls: true
+    servername: xi.tbv.ccwu.cc
+    network: ws
+    ws-opts:
+      path: "/proxyip=us.xiabibi.cf"
+      headers:
+        Host: xi.tbv.ccwu.cc
+    client-fingerprint: chrome
+  - name: "@Vip_Security join us - 378"
+    type: vless
+    server: 188.114.97.6
+    port: 443
+    uuid: 9f44d517-29f2-4c6d-cc06-a1268f13da58
+    udp: true
+    tls: true
+    servername: kala.bestsellers1.site
+    alpn:
+      - h2
+    network: xhttp
+    xhttp-opts:
+      path: "/Meh?di=443"
+      host: kala.bestsellers1.site
+      mode: auto
+    client-fingerprint: chrome
+  - name: "@Vip_Security join us - 374"
+    type: vless
+    server: 77.110.105.102
+    port: 443
+    uuid: 89a0fe83-dcb3-4e3c-92ed-407fc668e7b1
+    udp: true
+    tls: true
+    servername: ru-1.brodvpn.com
+    client-fingerprint: safari
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@Vip_Security join us - 370"
+    type: vless
+    server: 176.108.246.73
+    port: 9873
+    uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+    udp: true
+    tls: true
+    servername: dl.google.com
+    client-fingerprint: qq
+    reality-opts:
+      public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+      short-id: aabbccdd
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc-tunnel
+  - name: "@Vip_Security join us - 366"
+    type: vless
+    server: 199.232.78.159
+    port: 443
+    uuid: 1ee3c7ee-c8dd-44a5-bd22-ac5d3f34eaa9
+    udp: true
+    tls: true
+    servername: ssl.fastly.com
+    network: ws
+    ws-opts:
+      path: "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER"
+      headers:
+        Host: pan1.global.ssl.fastly.net
+    client-fingerprint: chrome
+  - name: "@Vip_Security join us - 362"
+    type: vless
+    server: 85.17.145.65
+    port: 12068
+    uuid: 05caca6c-9e97-4c0f-8edf-7b88a6e572c5
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: mypanel.unixzone.us
+  - name: "@Vip_Security join us - 358"
+    type: trojan
+    server: render.com
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "@Vip_Security join us - 354"
+    type: trojan
+    server: 188.42.145.180
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.volumeroot.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.volumeroot.com
+  - name: "@Vip_Security join us - 350"
+    type: trojan
+    server: 172.67.149.60
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "@Vip_Security join us - 346"
+    type: trojan
+    server: 107.150.105.84
+    port: 59385
+    password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
+    udp: true
+    servername: 107.150.105.84
+    client-fingerprint: chrome
+    network: tcp
+  - name: node
+    type: vmess
+    server: gs03-1.guoshi1520.com
+    port: 443
+    uuid: 82ff6d30-2920-4ebd-b95c-b016ede1a841
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: gs03-1.guoshi1520.com
+    network: ws
+    ws-opts:
+      path: "/82ff6d30"
+      headers:
+        Host: gs03-1.guoshi1520.com
+    client-fingerprint: chrome
+  - name: "node 2"
+    type: vmess
+    server: xc115-1.meiziba5566.com
+    port: 443
+    uuid: f40a8d65-a9ac-42ce-ebcc-9e6447a9866d
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: xc115-1.meiziba5566.com
+    network: ws
+    ws-opts:
+      path: "/f40a8d65"
+      headers:
+        Host: xc115-1.meiziba5566.com
+    client-fingerprint: chrome
+  - name: "node 3"
+    type: vmess
+    server: xcf029.facai2024.com
+    port: 443
+    uuid: 9ce4526a-c500-4c66-99b0-048e4b6b5663
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: xcf029.facai2024.com
+    network: ws
+    ws-opts:
+      path: "/9ce4526a"
+      headers:
+        Host: xcf029.facai2024.com
+    client-fingerprint: chrome
+  - name: "node 4"
+    type: vmess
+    server: tk.hzlt.tkddns.xyz
+    port: 22643
+    uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+    alterId: 2
+    cipher: auto
+    udp: true
+    tls: true
+    servername: zxjp-c.tkong.cc
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: zxjp-c.tkong.cc
+    client-fingerprint: chrome
+  - name: "node 5"
+    type: vmess
+    server: 165.140.217.2
+    port: 443
+    uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "node 6"
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "node 7"
+    type: vmess
+    server: 47.250.135.244
+    port: 10000
+    uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "@Vip_Security join us - 310"
+    type: ss
+    server: 149.202.82.172
+    port: 6379
+    cipher: aes-256-gcm
+    password: zDNVedRFPQexG9v
+    udp: true
+  - name: "@Vip_Security join us - 306"
+    type: ss
+    server: 37.120.236.147
+    port: 40093
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    udp: true
+  - name: "@Vip_Security join us - 302"
+    type: ss
+    server: 188.95.55.123
+    port: 40093
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    udp: true
+  - name: "@Vip_Security join us - 298"
+    type: ss
+    server: 185.153.151.164
+    port: 40093
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    udp: true
+  - name: "@Vip_Security join us - 294"
+    type: ss
+    server: 185.166.84.79
+    port: 47553
+    cipher: aes-256-gcm
+    password: t2JnnFqjDMmzWurseJPgBsYY
+    udp: true
+  - name: "@Vip_Security join us - 290"
+    type: ss
+    server: 172.105.244.165
+    port: 443
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+    udp: true
+  - name: "@Vip_Security join us - 286"
+    type: ss
+    server: ak1083.www.getoutline.net
+    port: 18760
+    cipher: aes-256-gcm
+    password: "hg49$WH8943g3"
+    udp: true
+  - name: "@Vip_Security join us - 282"
+    type: ss
+    server: 172.105.244.165
+    port: 5004
+    cipher: aes-256-gcm
+    password: g5MeD6Ft3CWlJId
+    udp: true
+  - name: "@Vip_Security join us - 278"
+    type: ss
+    server: ak1071.www.getoutline.net
+    port: 2376
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+    udp: true
+  - name: "@Vip_Security join us - 274"
+    type: ss
+    server: 172.105.244.165
+    port: 2376
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+    udp: true
+  - name: "@Vip_Security join us - 270"
+    type: ss
+    server: 89.238.133.123
+    port: 50695
+    cipher: aes-256-gcm
+    password: gqtwGu9bVreJqL3FTHSVKGzy
+    udp: true
+  - name: "@Vip_Security join us - 266"
+    type: ss
+    server: 138.199.19.169
+    port: 50695
+    cipher: aes-256-gcm
+    password: gqtwGu9bVreJqL3FTHSVKGzy
+    udp: true
+  - name: "@Vip_Security join us - 262"
+    type: ss
+    server: 138.199.19.167
+    port: 50024
+    cipher: aes-256-gcm
+    password: b2jDPHUQxCNa2KmGHZjy7C4B
+    udp: true
+  - name: "@Vip_Security join us - 258"
+    type: ss
+    server: 149.202.82.172
+    port: 8119
+    cipher: aes-256-gcm
+    password: cdBIDV42DCwnfIN
+    udp: true
+  - name: "@Vip_Security join us - 254"
+    type: ss
+    server: 62.212.239.53
+    port: 43893
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+    udp: true
+  - name: "@Vip_Security join us - 250"
+    type: ss
+    server: 185.59.220.150
+    port: 43893
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+    udp: true
+  - name: "@Vip_Security join us - 246"
+    type: ss
+    server: 51.79.178.63
+    port: 3306
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+    udp: true
+  - name: "@Vip_Security join us - 242"
+    type: ss
+    server: 172.105.244.165
+    port: 3389
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+    udp: true
+  - name: "@Vip_Security join us - 238"
+    type: ss
+    server: 145.239.1.100
+    port: 5600
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+    udp: true
+  - name: "@Vip_Security join us - 234"
+    type: ss
+    server: 139.162.24.50
+    port: 8888
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+    udp: true
+  - name: "@Vip_Security join us - 230"
+    type: ss
+    server: 38.121.43.71
+    port: 8008
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+    udp: true
+  - name: "@Vip_Security join us - 226"
+    type: ss
+    server: 149.202.82.172
+    port: 8009
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+    udp: true
+  - name: "@Vip_Security join us - 222"
+    type: ss
+    server: 172.105.180.227
+    port: 6679
+    cipher: aes-256-gcm
+    password: TEzjfAYq2IjtuoS
+    udp: true
+  - name: "@Vip_Security join us - 218"
+    type: ss
+    server: 138.199.19.167
+    port: 50168
+    cipher: aes-256-gcm
+    password: WCuz7yrfZSCQQXSNrtGPz2HT
+    udp: true
+  - name: "@Vip_Security join us - 214"
+    type: ss
+    server: 87.239.255.109
+    port: 40282
+    cipher: aes-256-gcm
+    password: Pvvaw486867D2w4yctL2ULTQ
+    udp: true
+  - name: "@Vip_Security join us - 210"
+    type: ss
+    server: 172.99.190.90
+    port: 8090
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+    udp: true
+  - name: "@Vip_Security join us - 206"
+    type: ss
+    server: 172.105.244.165
+    port: 8090
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+    udp: true
+  - name: "@Vip_Security join us - 202"
+    type: ss
+    server: 172.105.180.227
+    port: 8080
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+    udp: true
+  - name: "@Vip_Security join us - 198"
+    type: ss
+    server: 172.105.244.165
+    port: 7307
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+    udp: true
+  - name: "@Vip_Security join us - 194"
+    type: ss
+    server: 79.110.53.205
+    port: 44236
+    cipher: aes-256-gcm
+    password: FWrXcxPZjJxAN89xLgqY3Acp
+    udp: true
+  - name: "@Vip_Security join us - 190"
+    type: ss
+    server: 27.131.164.85
+    port: 47121
+    cipher: aes-256-gcm
+    password: CTK8GXFQgKYQErrghPJfZ6tk
+    udp: true
+  - name: "@Vip_Security join us - 186"
+    type: ss
+    server: 154.16.171.215
+    port: 47121
+    cipher: aes-256-gcm
+    password: CTK8GXFQgKYQErrghPJfZ6tk
+    udp: true
+  - name: "@Vip_Security join us - 182"
+    type: ss
+    server: 84.17.55.133
+    port: 33992
+    cipher: aes-256-gcm
+    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+    udp: true
+  - name: "@Vip_Security join us - 178"
+    type: ss
+    server: 2.58.242.157
+    port: 33992
+    cipher: aes-256-gcm
+    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+    udp: true
+  - name: "@Vip_Security join us - 174"
+    type: ss
+    server: 185.134.22.115
+    port: 48938
+    cipher: aes-256-gcm
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+    udp: true
+  - name: "@Vip_Security join us - 170"
+    type: ss
+    server: 45.144.176.135
+    port: 3001
+    cipher: aes-256-cfb
+    password: qazplmn1236547dr42q
+    udp: true
+  - name: "@Vip_Security join us - 166"
+    type: ss
+    server: 83.217.9.76
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+  - name: "@Vip_Security join us - 162"
+    type: ss
+    server: 43.254.132.220
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+  - name: "@Vip_Security join us - 158"
+    type: ss
+    server: 213.174.158.181
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+  - name: "@Vip_Security join us - 154"
+    type: ss
+    server: 212.237.210.158
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+  - name: "@Vip_Security join us - 150"
+    type: ss
+    server: 194.68.32.29
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+  - name: "@Vip_Security join us - 146"
+    type: ss
+    server: 192.71.244.49
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+  - name: "@Vip_Security join us - 142"
+    type: ss
+    server: 188.123.123.133
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+  - name: "@Vip_Security join us - 138"
+    type: ss
+    server: 103.238.213.96
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+  - name: "@Vip_Security join us - 134"
+    type: ss
+    server: 194.68.44.206
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+  - name: "@Vip_Security join us - 130"
+    type: ss
+    server: 46.183.185.15
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+  - name: "@Vip_Security join us - 126"
+    type: ss
+    server: 94.20.154.38
+    port: 50006
+    cipher: aes-256-cfb
+    password: "9344665077"
+    udp: true
+  - name: "@Vip_Security join us - 122"
+    type: ss
+    server: 185.219.134.52
+    port: 50003
+    cipher: aes-256-cfb
+    password: "8460400130"
+    udp: true
+  - name: "@Vip_Security join us - 118"
+    type: ss
+    server: 92.38.139.95
+    port: 50003
+    cipher: aes-256-cfb
+    password: "8460400130"
+    udp: true
+  - name: "@Vip_Security join us - 110"
+    type: ss
+    server: 95.216.5.254
+    port: 50007
+    cipher: aes-256-cfb
+    password: "7122910143"
+    udp: true
+  - name: "@Vip_Security join us - 106"
+    type: ss
+    server: 46.165.254.155
+    port: 50007
+    cipher: aes-256-cfb
+    password: "7122910143"
+    udp: true
+  - name: "@Vip_Security join us - 102"
+    type: ss
+    server: 135.125.236.229
+    port: 50007
+    cipher: aes-256-cfb
+    password: "7122910143"
+    udp: true
+  - name: "@Vip_Security join us - 98"
+    type: ss
+    server: 51.79.166.171
+    port: 50004
+    cipher: aes-256-cfb
+    password: "4415934295"
+    udp: true
+  - name: "@Vip_Security join us - 94"
+    type: ss
+    server: 94.20.154.38
+    port: 50000
+    cipher: aes-256-cfb
+    password: "3135771619"
+    udp: true
+  - name: "@Vip_Security join us - 90"
+    type: ss
+    server: 20.113.70.231
+    port: 3030
+    cipher: chacha20-ietf
+    password: "3030"
+    udp: true
+  - name: "@Vip_Security join us - 86"
+    type: ss
+    server: 20.120.24.20
+    port: 5008
+    cipher: chacha20-ietf
+    password: "5008"
+    udp: true
+  - name: "@Vip_Security join us - 82"
+    type: ss
+    server: 37.48.81.6
+    port: 22
+    cipher: chacha20-ietf-poly1305
+    password: privatevpndotcom
+    udp: true
+  - name: "@Vip_Security join us - 78"
+    type: ss
+    server: 46.102.153.106
+    port: 8389
+    cipher: chacha20-ietf-poly1305
+    password: dsHq7JmRFhSkvxzCuMFy
+    udp: true
+  - name: "@Vip_Security join us - 74"
+    type: ss
+    server: 138.197.166.205
+    port: 811
+    cipher: chacha20-ietf-poly1305
+    password: "Ultr@r00t_2017"
+    udp: true
+  - name: "@Vip_Security join us - 70"
+    type: ss
+    server: 37.19.218.197
+    port: 8389
+    cipher: chacha20-ietf-poly1305
+    password: Mx6DztQqZb7j34FdWjER
+    udp: true
+  - name: "@Vip_Security join us - 66"
+    type: ss
+    server: 95.85.90.181
+    port: 804
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "@Vip_Security join us - 62"
+    type: ss
+    server: 92.223.59.188
+    port: 812
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "@Vip_Security join us - 58"
+    type: ss
+    server: 185.104.184.78
+    port: 812
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "@Vip_Security join us - 50"
+    type: ss
+    server: 93.186.201.124
+    port: 810
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "@Vip_Security join us - 46"
+    type: ss
+    server: 78.129.253.9
+    port: 809
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "@Vip_Security join us - 42"
+    type: ss
+    server: 72.140.224.197
+    port: 802
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "@Vip_Security join us - 38"
+    type: ss
+    server: 51.161.118.38
+    port: 805
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "@Vip_Security join us - 34"
+    type: ss
+    server: 196.247.59.156
+    port: 804
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "@Vip_Security join us - 30"
+    type: ss
+    server: 193.9.114.34
+    port: 809
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "@Vip_Security join us - 26"
+    type: ss
+    server: 185.17.113.234
+    port: 809
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "@Vip_Security join us - 22"
+    type: ss
+    server: 185.104.184.78
+    port: 809
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "@Vip_Security join us - 18"
+    type: ss
+    server: 141.95.0.23
+    port: 800
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "@Vip_Security join us - 14"
+    type: ss
+    server: 84.17.37.55
+    port: 8389
+    cipher: chacha20-ietf-poly1305
+    password: tjwRqQvteAjt3xFmbZTA
+    udp: true
+  - name: "@Vip_Security join us - 10"
+    type: ss
+    server: 20.124.221.217
+    port: 2818
+    cipher: chacha20-ietf-poly1305
+    password: "2818"
+    udp: true
+  - name: "@Vip_Security join us - 6"
+    type: ss
+    server: 169.62.109.140
+    port: 8389
+    cipher: chacha20-ietf-poly1305
+    password: 74cf7gsXJgd9Z4MAW42L
+    udp: true
+  - name: "@Vip_Security join us - 2"
+    type: ss
+    server: 170.130.31.114
+    port: 8389
+    cipher: chacha20-ietf-poly1305
+    password: 4W2SJmdKUMJjjkVfRDdh
+    udp: true
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "♻️ 自动选择"
+      - DIRECT
+      - "@Vip_Security join us - 394"
+      - "@Vip_Security join us - 390"
+      - "@Vip_Security join us - 386"
+      - "@Vip_Security join us - 382"
+      - "@Vip_Security join us - 378"
+      - "@Vip_Security join us - 374"
+      - "@Vip_Security join us - 370"
+      - "@Vip_Security join us - 366"
+      - "@Vip_Security join us - 362"
+      - "@Vip_Security join us - 358"
+      - "@Vip_Security join us - 354"
+      - "@Vip_Security join us - 350"
+      - "@Vip_Security join us - 346"
+      - node
+      - "node 2"
+      - "node 3"
+      - "node 4"
+      - "node 5"
+      - "node 6"
+      - "node 7"
+      - "@Vip_Security join us - 310"
+      - "@Vip_Security join us - 306"
+      - "@Vip_Security join us - 302"
+      - "@Vip_Security join us - 298"
+      - "@Vip_Security join us - 294"
+      - "@Vip_Security join us - 290"
+      - "@Vip_Security join us - 286"
+      - "@Vip_Security join us - 282"
+      - "@Vip_Security join us - 278"
+      - "@Vip_Security join us - 274"
+      - "@Vip_Security join us - 270"
+      - "@Vip_Security join us - 266"
+      - "@Vip_Security join us - 262"
+      - "@Vip_Security join us - 258"
+      - "@Vip_Security join us - 254"
+      - "@Vip_Security join us - 250"
+      - "@Vip_Security join us - 246"
+      - "@Vip_Security join us - 242"
+      - "@Vip_Security join us - 238"
+      - "@Vip_Security join us - 234"
+      - "@Vip_Security join us - 230"
+      - "@Vip_Security join us - 226"
+      - "@Vip_Security join us - 222"
+      - "@Vip_Security join us - 218"
+      - "@Vip_Security join us - 214"
+      - "@Vip_Security join us - 210"
+      - "@Vip_Security join us - 206"
+      - "@Vip_Security join us - 202"
+      - "@Vip_Security join us - 198"
+      - "@Vip_Security join us - 194"
+      - "@Vip_Security join us - 190"
+      - "@Vip_Security join us - 186"
+      - "@Vip_Security join us - 182"
+      - "@Vip_Security join us - 178"
+      - "@Vip_Security join us - 174"
+      - "@Vip_Security join us - 170"
+      - "@Vip_Security join us - 166"
+      - "@Vip_Security join us - 162"
+      - "@Vip_Security join us - 158"
+      - "@Vip_Security join us - 154"
+      - "@Vip_Security join us - 150"
+      - "@Vip_Security join us - 146"
+      - "@Vip_Security join us - 142"
+      - "@Vip_Security join us - 138"
+      - "@Vip_Security join us - 134"
+      - "@Vip_Security join us - 130"
+      - "@Vip_Security join us - 126"
+      - "@Vip_Security join us - 122"
+      - "@Vip_Security join us - 118"
+      - "@Vip_Security join us - 110"
+      - "@Vip_Security join us - 106"
+      - "@Vip_Security join us - 102"
+      - "@Vip_Security join us - 98"
+      - "@Vip_Security join us - 94"
+      - "@Vip_Security join us - 90"
+      - "@Vip_Security join us - 86"
+      - "@Vip_Security join us - 82"
+      - "@Vip_Security join us - 78"
+      - "@Vip_Security join us - 74"
+      - "@Vip_Security join us - 70"
+      - "@Vip_Security join us - 66"
+      - "@Vip_Security join us - 62"
+      - "@Vip_Security join us - 58"
+      - "@Vip_Security join us - 50"
+      - "@Vip_Security join us - 46"
+      - "@Vip_Security join us - 42"
+      - "@Vip_Security join us - 38"
+      - "@Vip_Security join us - 34"
+      - "@Vip_Security join us - 30"
+      - "@Vip_Security join us - 26"
+      - "@Vip_Security join us - 22"
+      - "@Vip_Security join us - 18"
+      - "@Vip_Security join us - 14"
+      - "@Vip_Security join us - 10"
+      - "@Vip_Security join us - 6"
+      - "@Vip_Security join us - 2"
+  - name: "♻️ 自动选择"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "@Vip_Security join us - 394"
+      - "@Vip_Security join us - 390"
+      - "@Vip_Security join us - 386"
+      - "@Vip_Security join us - 382"
+      - "@Vip_Security join us - 378"
+      - "@Vip_Security join us - 374"
+      - "@Vip_Security join us - 370"
+      - "@Vip_Security join us - 366"
+      - "@Vip_Security join us - 362"
+      - "@Vip_Security join us - 358"
+      - "@Vip_Security join us - 354"
+      - "@Vip_Security join us - 350"
+      - "@Vip_Security join us - 346"
+      - node
+      - "node 2"
+      - "node 3"
+      - "node 4"
+      - "node 5"
+      - "node 6"
+      - "node 7"
+      - "@Vip_Security join us - 310"
+      - "@Vip_Security join us - 306"
+      - "@Vip_Security join us - 302"
+      - "@Vip_Security join us - 298"
+      - "@Vip_Security join us - 294"
+      - "@Vip_Security join us - 290"
+      - "@Vip_Security join us - 286"
+      - "@Vip_Security join us - 282"
+      - "@Vip_Security join us - 278"
+      - "@Vip_Security join us - 274"
+      - "@Vip_Security join us - 270"
+      - "@Vip_Security join us - 266"
+      - "@Vip_Security join us - 262"
+      - "@Vip_Security join us - 258"
+      - "@Vip_Security join us - 254"
+      - "@Vip_Security join us - 250"
+      - "@Vip_Security join us - 246"
+      - "@Vip_Security join us - 242"
+      - "@Vip_Security join us - 238"
+      - "@Vip_Security join us - 234"
+      - "@Vip_Security join us - 230"
+      - "@Vip_Security join us - 226"
+      - "@Vip_Security join us - 222"
+      - "@Vip_Security join us - 218"
+      - "@Vip_Security join us - 214"
+      - "@Vip_Security join us - 210"
+      - "@Vip_Security join us - 206"
+      - "@Vip_Security join us - 202"
+      - "@Vip_Security join us - 198"
+      - "@Vip_Security join us - 194"
+      - "@Vip_Security join us - 190"
+      - "@Vip_Security join us - 186"
+      - "@Vip_Security join us - 182"
+      - "@Vip_Security join us - 178"
+      - "@Vip_Security join us - 174"
+      - "@Vip_Security join us - 170"
+      - "@Vip_Security join us - 166"
+      - "@Vip_Security join us - 162"
+      - "@Vip_Security join us - 158"
+      - "@Vip_Security join us - 154"
+      - "@Vip_Security join us - 150"
+      - "@Vip_Security join us - 146"
+      - "@Vip_Security join us - 142"
+      - "@Vip_Security join us - 138"
+      - "@Vip_Security join us - 134"
+      - "@Vip_Security join us - 130"
+      - "@Vip_Security join us - 126"
+      - "@Vip_Security join us - 122"
+      - "@Vip_Security join us - 118"
+      - "@Vip_Security join us - 110"
+      - "@Vip_Security join us - 106"
+      - "@Vip_Security join us - 102"
+      - "@Vip_Security join us - 98"
+      - "@Vip_Security join us - 94"
+      - "@Vip_Security join us - 90"
+      - "@Vip_Security join us - 86"
+      - "@Vip_Security join us - 82"
+      - "@Vip_Security join us - 78"
+      - "@Vip_Security join us - 74"
+      - "@Vip_Security join us - 70"
+      - "@Vip_Security join us - 66"
+      - "@Vip_Security join us - 62"
+      - "@Vip_Security join us - 58"
+      - "@Vip_Security join us - 50"
+      - "@Vip_Security join us - 46"
+      - "@Vip_Security join us - 42"
+      - "@Vip_Security join us - 38"
+      - "@Vip_Security join us - 34"
+      - "@Vip_Security join us - 30"
+      - "@Vip_Security join us - 26"
+      - "@Vip_Security join us - 22"
+      - "@Vip_Security join us - 18"
+      - "@Vip_Security join us - 14"
+      - "@Vip_Security join us - 10"
+      - "@Vip_Security join us - 6"
+      - "@Vip_Security join us - 2"
+rules:
+  - "GEOIP,LAN,DIRECT,no-resolve"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,🚀 节点选择"

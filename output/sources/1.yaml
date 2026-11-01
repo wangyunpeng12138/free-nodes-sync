@@ -1,0 +1,4508 @@
+# 订阅 1.txt -> Clash
+# 由 txt2clash.py 自动生成于 2026-11-01 16:51:08 +0800
+# 节点数量: 292
+# 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: "off"
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  listen: "0.0.0.0:1053"
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "*.localhost"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  proxy-server-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+proxies:
+  - name: "[OpenRay] 🇨🇦 CA-11680"
+    type: vless
+    server: 104.18.13.229
+    port: 2052
+    uuid: 25efc727-e853-49ba-9609-3c20009d0e7a
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: winbiss-0tpka6-v1.winbiss.workers.dev
+  - name: "[OpenRay] 🇨🇦 CA-11727"
+    type: vless
+    server: 104.17.201.245
+    port: 2052
+    uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/x0o2qglxz7zu"
+      headers:
+        Host: index.arcane509.workers.dev
+  - name: node
+    type: vmess
+    server: 15.235.41.200
+    port: 80
+    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/IOebhLMhl1CTbFHbL95myfRX2"
+      headers:
+        Host: 15.235.41.200
+  - name: "[OpenRay] 🇨🇦 CA-11866"
+    type: vless
+    server: 104.16.248.249
+    port: 2095
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: fuckingfangbinxing.cnm--fangbinxing-cnm.workers.dev
+  - name: "[OpenRay] 🇨🇦 CA-12035"
+    type: trojan
+    server: 188.114.98.0
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.creationlong.org
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.creationlong.org
+  - name: "[OpenRay] 🇨🇦 CA-12412"
+    type: vless
+    server: 172.66.128.70
+    port: 80
+    uuid: 65fe56c2-78ec-417a-a666-9f393eac8b61
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed"
+      headers:
+        Host: everlASTinG-oFfERC4S5Mg1918.SpoRTLand.COMpaNy.
+  - name: "node 2"
+    type: vmess
+    server: 172.67.204.84
+    port: 8080
+    uuid: nasnet
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/nasnet/cdn"
+      headers:
+        Host: nasnet-511952424.mcitel.co
+  - name: "[OpenRay] 🇨🇦 CA-12687"
+    type: ss
+    server: 45.154.204.7
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "node 3"
+    type: vmess
+    server: 188.114.96.3
+    port: 443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: sy4.620720.xyz
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: sy4.620720.xyz
+    client-fingerprint: chrome
+  - name: "node 4"
+    type: vmess
+    server: 172.67.204.84
+    port: 8080
+    uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/nasnet/cdn"
+      headers:
+        Host: nasnet-511952424.mcitel.co
+  - name: "[OpenRay] 🇨🇦 CA-13813"
+    type: vless
+    server: 104.18.32.47
+    port: 2052
+    uuid: 25b7069d-a1e0-4053-8469-a54ec1ce8f56
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: rOugh-preseNCEUROCy1N6YY.sEOtOOLsfOryou.cO.UK.
+  - name: "[OpenRay] 🇨🇦 CA-13908"
+    type: vless
+    server: 104.16.63.239
+    port: 80
+    uuid: 04969b01-ac6a-4056-b5cd-852ccf45f100
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/🔒 [By EbraSha]"
+      headers:
+        Host: netherlands.vipserver14.workers.dev
+  - name: "node 5"
+    type: vmess
+    server: 104.26.14.85
+    port: 8080
+    uuid: nasnet
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/nasnet/cdn?ed=2560"
+      headers:
+        Host: nasnet-571296497.iranpress.co
+  - name: "[OpenRay] 🇨🇦 CA-14133"
+    type: trojan
+    server: cfip.1323123.xyz
+    port: 443
+    password: 919f16d2-ae91-4589-8bb2-a672890e3537
+    udp: true
+    servername: z.linglingqi.dpdns.org
+    client-fingerprint: chrome
+    alpn:
+      - h3
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: z.linglingqi.dpdns.org
+  - name: "[OpenRay] 🇨🇦 CA-14212"
+    type: vless
+    server: 104.17.147.22
+    port: 8443
+    uuid: e07c6a8b-f67d-4297-bc8f-31855eef57a8
+    udp: true
+    tls: true
+    servername: Tet.mehspeedtest.com
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: Tet.mehspeedtest.com
+  - name: "[OpenRay] 🇨🇦 CA-14259"
+    type: ss
+    server: 148.113.139.160
+    port: 46534
+    cipher: chacha20-ietf-poly1305
+    password: 7a106afc33eaa261
+    udp: true
+  - name: "[OpenRay] 🇨🇦 CA-14342"
+    type: vless
+    server: 188.114.97.3
+    port: 443
+    uuid: 79d24ca6-8f75-4653-9a9c-2d4ee38f4b88
+    udp: true
+    tls: true
+    servername: nnet.online
+    network: ws
+    ws-opts:
+      path: "/vless-tls"
+      headers:
+        Host: nnet.online
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇨🇦 CA-14437"
+    type: vless
+    server: 199.232.196.193
+    port: 80
+    uuid: 49af75d4-31d0-4322-b425-630be07030e1
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/download"
+      headers:
+        Host: diarasup2.global.ssl.fastly.net
+  - name: "[OpenRay] 🇨🇦 CA-14474"
+    type: vless
+    server: Z2.prodnsspeed10.ir
+    port: 2083
+    uuid: fc6bde39-c3f7-46e2-bf9d-0878ba56a4be
+    udp: true
+    tls: true
+    servername: itw33.roshdadcollection.ir
+    network: grpc
+    grpc-opts:
+      grpc-service-name: Love
+    client-fingerprint: chrome
+  - name: "[OpenRay] Dynamic-11283"
+    type: vless
+    server: v1.dabache.top
+    port: 2083
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: wk1.f1w.de5.net
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: wk1.f1w.de5.net
+  - name: "[OpenRay] Dynamic-11673"
+    type: trojan
+    server: usa.visa.com
+    port: 443
+    password: zWFjJENcljZm
+    udp: true
+    servername: vahidqaz-7o61u7.vahidqaz.workers.dev
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: vahidqaz-7o61u7.vahidqaz.workers.dev
+  - name: "[OpenRay] Dynamic-11778"
+    type: vless
+    server: cf.0sm.com
+    port: 80
+    uuid: 93526fcb-8dbf-442e-a656-eb304f1da4ef
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: lucky-voice-d6f3.difat89954-0c6.workers.dev
+  - name: "node 6"
+    type: vmess
+    server: cf.090227.xyz
+    port: 443
+    uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: sgal.dagrate.eu.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: sgal.dagrate.eu.org
+    client-fingerprint: chrome
+  - name: "[OpenRay] Dynamic-12217"
+    type: vless
+    server: vip2.kaixincloud.top
+    port: 2096
+    uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
+    udp: true
+    tls: true
+    servername: ca.adobe-connect.top
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ca.adobe-connect.top
+  - name: "node 7"
+    type: vmess
+    server: tgju.org
+    port: 8080
+    uuid: nasnet
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/nasnet/cdn"
+      headers:
+        Host: nasnet-162191099.sharghdaily.co
+  - name: "node 8"
+    type: vmess
+    server: c7.620720.xyz
+    port: 8443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: c7.620720.xyz
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: c7.620720.xyz
+    client-fingerprint: chrome
+  - name: "[OpenRay] Dynamic-550"
+    type: vless
+    server: vip1.kaixincloud.top
+    port: 443
+    uuid: 873a8e21-5fed-36a7-b251-734ebc97381c
+    udp: true
+    tls: true
+    servername: dabaif0.webn.cc
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/db10248a03e8db1b"
+      headers:
+        Host: dabaif0.webn.cc
+  - name: "node 9"
+    type: vmess
+    server: gbnh.7777112.xyz
+    port: 443
+    uuid: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: gbnh.7777112.xyz
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/t1UV4HSrzbWGmJtbBhmKb8nOkg"
+      headers:
+        Host: gbnh.7777112.xyz
+  - name: "node 10"
+    type: vmess
+    server: bbBhny.191268.XYz
+    port: 443
+    uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: BBbHny.191268.Xyz
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/GgigazFGDLgFWDItkD5XgXAL"
+      headers:
+        Host: BbBhnY.191268.XyZ
+  - name: "node 11"
+    type: vmess
+    server: jjjjjjjji.191292.xyz
+    port: 443
+    uuid: b9bb332d-5e0d-41af-adac-49362dde8661
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: jjjjjjjji.191292.xyz
+    network: ws
+    ws-opts:
+      path: "/iqjxVCqiIAaLCt5Q2GkKGWRMg"
+      headers:
+        Host: jjjjjjjji.191292.xyz
+    client-fingerprint: chrome
+  - name: "node 12"
+    type: vmess
+    server: hhhnju.taipei102.indevs.in
+    port: 443
+    uuid: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: hhhnju.taipei102.indevs.in
+    network: ws
+    ws-opts:
+      path: "/t1UV4HSrzbWGmJtbBhmKb8nOkg"
+      headers:
+        Host: hhhnju.taipei102.indevs.in
+    client-fingerprint: chrome
+  - name: "node 13"
+    type: vmess
+    server: ffvvbnhju.2030.pp.ua
+    port: 443
+    uuid: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: ffvvbnhju.2030.pp.ua
+    network: ws
+    ws-opts:
+      path: "/t1UV4HSrzbWGmJtbBhmKb8nOkg"
+      headers:
+        Host: ffvvbnhju.2030.pp.ua
+    client-fingerprint: chrome
+  - name: "node 14"
+    type: vmess
+    server: gGgnhHy.hUAnGsHANG.onliNe
+    port: 443
+    uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: GGgnhhY.HuanGsHanG.ONLiNe
+    network: ws
+    ws-opts:
+      path: "/GgigazFGDLgFWDItkD5XgXAL"
+      headers:
+        Host: GGgnHhy.HUaNgshaNG.onliNE
+    client-fingerprint: chrome
+  - name: "[OpenRay] Dynamic-13325"
+    type: vless
+    server: nnmjkio.taipei101.indevs.in
+    port: 443
+    uuid: 98b419ef-83a2-4d1b-a23d-566b7f24477b
+    udp: true
+    tls: true
+    servername: NnMjkIO.TaipEi101.INdEVS.IN
+    network: ws
+    ws-opts:
+      path: "/FHqOdFbetLpTGA5AqzZ2Mj"
+      headers:
+        Host: NnMJKIo.TAIpEi101.INdEVS.In
+    client-fingerprint: chrome
+  - name: "[OpenRay] Dynamic-13400"
+    type: vless
+    server: mmmfffgh.huangshang.online
+    port: 443
+    uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+    udp: true
+    tls: true
+    servername: MmMFffgh.HuaNgsHAnG.oNLIne
+    network: ws
+    ws-opts:
+      path: "/s2VHv9VUVzg35A6ueyyZnWd"
+      headers:
+        Host: MmMFffgh.HuaNgsHAnG.oNLIne
+    client-fingerprint: chrome
+  - name: "[OpenRay] Dynamic-13480"
+    type: vless
+    server: v1.dabache.top
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+  - name: "node 15"
+    type: vmess
+    server: ffffv.2030.pp.ua
+    port: 443
+    uuid: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: ffffv.2030.pp.ua
+    network: ws
+    ws-opts:
+      path: "/eszjp4nTT8TxDHFepMpfNkCk8"
+      headers:
+        Host: ffffv.2030.pp.ua
+    client-fingerprint: chrome
+  - name: "[OpenRay] Dynamic-13621"
+    type: vless
+    server: uj.999j.indevs.in
+    port: 443
+    uuid: b020865b-7404-4894-ba65-a7414b10cda3
+    udp: true
+    tls: true
+    servername: uj.999j.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/15ZYK3adOPjqSc7fzeJr"
+      headers:
+        Host: uj.999j.indevs.in
+  - name: "[OpenRay] Dynamic-13714"
+    type: vless
+    server: cdn.tzpro.xyz
+    port: 80
+    uuid: f2083aa4-f27d-43da-81cf-8bab31730400
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: germany.vipserver14.workers.dev
+  - name: "node 16"
+    type: vmess
+    server: bBbNHJ.890634.xyz
+    port: 443
+    uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: bBbNHJ.890634.xyz
+    network: ws
+    ws-opts:
+      path: "/AwUJyGh9Ym6vVzg35A6ueyyZnWd"
+      headers:
+        Host: bBbNHJ.890634.xyz
+    client-fingerprint: chrome
+  - name: "node 17"
+    type: vmess
+    server: bbnmji.tc5.ccwu.cc
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/kFK9O5cl8ZycyrxcJWNVFC21"
+      headers:
+        Host: bbnmji.tc5.ccwu.cc
+  - name: "node 18"
+    type: vmess
+    server: vfgt.wc3.ccwu.cc
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/kFK9O5cl8ZycyrxcJWNVFC21"
+      headers:
+        Host: vfgt.wc3.ccwu.cc
+  - name: "node 19"
+    type: vmess
+    server: hhhjkklo0.890604.filegear-sg.me
+    port: 443
+    uuid: 39929006-c496-408a-b8b9-29a17173aa6a
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: hhhjkklo0.890604.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: "/KygeZ2wfpnxBXt9uCu"
+      headers:
+        Host: hhhjkklo0.890604.filegear-sg.me
+    client-fingerprint: chrome
+  - name: "[OpenRay] Dynamic-13988"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: b7039fbe-0359-4d91-977d-a926203b1936
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/47.74.254.191=8900"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "[OpenRay] Dynamic-14005"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: e308d602-67eb-4ba5-baa5-f53be1fcee6f
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/154.19.242.205=443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "[OpenRay] Dynamic-14041"
+    type: vless
+    server: vvvbnj.huangshang.pp.ua
+    port: 443
+    uuid: a5e71861-2fba-4040-a8e4-a215305f37c4
+    udp: true
+    tls: true
+    servername: vvvbnj.huangshang.pp.ua
+    network: ws
+    ws-opts:
+      path: "/nv8ntnDfr2XA4ENhXs7"
+      headers:
+        Host: vvvbnj.huangshang.pp.ua
+    client-fingerprint: chrome
+  - name: "[OpenRay] Dynamic-1385"
+    type: vless
+    server: midorinote.online
+    port: 8443
+    uuid: e39b2db3-ad43-48d5-8d57-22e4998702b7
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Cxvc5bVMKln6RxPs5MtviUZNDsmpfuYUK8UFBlcBaS0
+      short-id: 808e2d36726ee97e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] Dynamic-490"
+    type: vless
+    server: merlinty.site
+    port: 8443
+    uuid: e49e17a2-a368-488d-92a0-db7cc2c5582f
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: random
+    reality-opts:
+      public-key: uWB8HfNVK_-9KtjDGjmBovnYxTh6wN95APRUBmCC30M
+      short-id: 9925643a6fad995c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] Dynamic-14104"
+    type: vless
+    server: 002.w4wl4v1cptky.workers.dev
+    port: 443
+    uuid: 72fc1188-430f-4a3c-a64e-af9023819899
+    udp: true
+    tls: true
+    servername: 002.w4WL4V1cpTKY.wOrKers.dev
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiYUlWS29Zd2xjZmdFZjk4IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560"
+      headers:
+        Host: 002.w4wl4v1cptky.workers.dev
+  - name: "[OpenRay] Dynamic-14126"
+    type: vless
+    server: cloudflare-ip.mofashi.ltd
+    port: 443
+    uuid: 919f16d2-ae91-4589-8bb2-a672890e3537
+    udp: true
+    tls: true
+    servername: z.linglingqi.dpdns.org
+    client-fingerprint: chrome
+    alpn:
+      - h3
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: z.linglingqi.dpdns.org
+  - name: "[OpenRay] Dynamic-9366"
+    type: vless
+    server: best.pineappled.org
+    port: 443
+    uuid: 64b5d863-81d6-48ea-9222-82030616fa63
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] Dynamic-4912"
+    type: vless
+    server: wa.sfasti.ru
+    port: 443
+    uuid: 5757c746-9878-4cfd-874a-edd95485f26d
+    udp: true
+    tls: true
+    servername: wa.sfasti.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: J_jQq9-SWQZjiMhuPaFV7V2MaJ4pkKgVRaz7x6tmvy8
+      short-id: 16895459a2c7768d
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] Dynamic-14185"
+    type: vless
+    server: mmmhu.huangshang.online
+    port: 443
+    uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+    udp: true
+    tls: true
+    servername: MmMhU.HuANGshaNG.ONLiNE
+    network: ws
+    ws-opts:
+      path: "/s2VHv9VUVzg35A6ueyyZnWd"
+      headers:
+        Host: MmMhU.HuANGshaNG.ONLiNE
+    client-fingerprint: chrome
+  - name: "[OpenRay] Dynamic-14206"
+    type: vless
+    server: uu.852224.xyz
+    port: 443
+    uuid: b020865b-7404-4894-ba65-a7414b10cda3
+    udp: true
+    tls: true
+    servername: uu.852224.xyz
+    network: ws
+    ws-opts:
+      path: "/15ZYK3adOPjqSc7fzeJr"
+      headers:
+        Host: uu.852224.xyz
+    client-fingerprint: chrome
+  - name: "[OpenRay] Dynamic-14247"
+    type: trojan
+    server: bbnhmjk.191262.xyz
+    port: 443
+    password: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    udp: true
+    servername: BbNHmJK.191262.xYZ
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/r862SIwqItkD5XgXAL"
+      headers:
+        Host: BbNhMjk.191262.xYz
+  - name: "node 20"
+    type: vmess
+    server: mmkio.wc5.ccwu.cc
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/kFK9O5cl8ZycyrxcJWNVFC21"
+      headers:
+        Host: mmkio.wc5.ccwu.cc
+  - name: "node 21"
+    type: vmess
+    server: bbbnmki.kk7.ccwu.cc
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/kFK9O5cl8ZycyrxcJWNVFC21"
+      headers:
+        Host: bbbnmki.kk7.ccwu.cc
+  - name: "[OpenRay] Dynamic-1729"
+    type: vless
+    server: sps1.sbs
+    port: 8443
+    uuid: beb0bfb2-d8f4-412e-9865-282771636c64
+    udp: true
+    tls: true
+    servername: dropbox.com
+    client-fingerprint: safari
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "node 22"
+    type: vmess
+    server: mmko.tt0.ccwu.cc
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/kFK9O5cl8ZycyrxcJWNVFC21"
+      headers:
+        Host: mmko.tt0.ccwu.cc
+  - name: "[OpenRay] Dynamic-14333"
+    type: vless
+    server: 005.inc-electrocell-001-005-803.workers.dev
+    port: 443
+    uuid: 1ef3cee6-4b96-424b-9b46-fdf01927581d
+    udp: true
+    tls: true
+    servername: 005.inc-ELECtRoCELL-001-005-803.WORKers.dEV
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoidXJzTllJVlpXVWZUIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560"
+      headers:
+        Host: 005.inc-electrocell-001-005-803.workers.dev
+  - name: "[OpenRay] Dynamic-1750"
+    type: vless
+    server: nl04-vlr01.tcp-reset-club.net
+    port: 443
+    uuid: 74c94a27-a187-4759-a1bf-2170ce196288
+    udp: true
+    tls: true
+    servername: hls-svod.itunes.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 86e999a2cdc2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "node 23"
+    type: vmess
+    server: bnmj.wc6.ccwu.cc
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/kFK9O5cl8ZycyrxcJWNVFC21"
+      headers:
+        Host: bnmj.wc6.ccwu.cc
+  - name: "[OpenRay] Dynamic-2"
+    type: vless
+    server: de2.pink-service.ru
+    port: 443
+    uuid: 4d77a5d2-51ed-4494-b38a-87f340591db6
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0
+      short-id: 86b80f1e713a33ad
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] Dynamic-14390"
+    type: vless
+    server: njki.222856.xyz
+    port: 443
+    uuid: c558328b-eb46-424c-b9e0-574770f0b072
+    udp: true
+    tls: true
+    servername: njki.222856.xyz
+    network: ws
+    ws-opts:
+      path: "/v8clafFSnPXNC0BXGtJ"
+      headers:
+        Host: njki.222856.xyz
+    client-fingerprint: chrome
+  - name: "[OpenRay] Dynamic-14407"
+    type: vless
+    server: ko9.999864.xyz
+    port: 443
+    uuid: c558328b-eb46-424c-b9e0-574770f0b072
+    udp: true
+    tls: true
+    servername: ko9.999864.xyz
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/v8clafFSnPXNC0BXGtJ"
+      headers:
+        Host: ko9.999864.xyz
+  - name: "[OpenRay] Dynamic-14425"
+    type: vless
+    server: gt6.ae1.us.ci
+    port: 80
+    uuid: 4c205c81-5694-43fe-a287-af563a2ebc05
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/AbRz6tBwBWo4gds7cXpDB5nO5"
+      headers:
+        Host: gt6.ae1.us.ci
+  - name: "[OpenRay] Dynamic-14443"
+    type: trojan
+    server: u8.ok8.ccwu.cc
+    port: 443
+    password: 1338f666-2fcc-4538-bc29-1ebf89624383
+    udp: true
+    servername: u8.ok8.ccwu.cc
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/XCLcnSashhgSVE3HOw1VI85y"
+      headers:
+        Host: u8.ok8.ccwu.cc
+  - name: "[OpenRay] Dynamic-12859"
+    type: vless
+    server: telegram-NpvV2rayFilter.fastlynew.hosting-ip.com
+    port: 80
+    uuid: e4a6331b-e3e7-4f4e-b46a-8c31bf44bf83
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--/@HqV2RayNG--@HqV2RayNG?ed=2056"
+      headers:
+        Host: moodaontw.global.ssl.fastly.net
+  - name: "[OpenRay] Dynamic-5679"
+    type: vless
+    server: ru.sfasti.ru
+    port: 443
+    uuid: f6d382fa-3a53-4497-beb0-b285ac9bcf3a
+    udp: true
+    tls: true
+    servername: ru.sfasti.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: J_jQq9-SWQZjiMhuPaFV7V2MaJ4pkKgVRaz7x6tmvy8
+      short-id: 16895459a2c7768d
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] Dynamic-5687"
+    type: ss
+    server: ss.sps1.sbs
+    port: 20
+    cipher: aes-256-gcm
+    password: mFdfoC1KdWUVLqBvCWgljg
+    udp: true
+  - name: "node 24"
+    type: vmess
+    server: zzs.222856.xyz
+    port: 443
+    uuid: c558328b-eb46-424c-b9e0-574770f0b072
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: zzs.222856.xyz
+    network: ws
+    ws-opts:
+      path: "/7sOz0p4SzU1D6XNC0BXGtJ"
+      headers:
+        Host: zzs.222856.xyz
+    client-fingerprint: chrome
+  - name: "node 25"
+    type: vmess
+    server: ko0.ae1.us.ci
+    port: 80
+    uuid: 4c205c81-5694-43fe-a287-af563a2ebc05
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/djA07iUsSp0K2Fo4gds7cXpDB5nO5"
+      headers:
+        Host: ko0.ae1.us.ci
+  - name: "node 26"
+    type: vmess
+    server: dfg.ae1autumn.cc.cd
+    port: 80
+    uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/YsmRouA9ZbxgW4"
+      headers:
+        Host: dfg.ae1autumn.cc.cd
+  - name: "node 27"
+    type: vmess
+    server: vfgt.99890604.xyz
+    port: 443
+    uuid: c558328b-eb46-424c-b9e0-574770f0b072
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vfgt.99890604.xyz
+    network: ws
+    ws-opts:
+      path: "/7sOz0p4SzU1D6XNC0BXGtJ"
+      headers:
+        Host: vfgt.99890604.xyz
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇩🇪 DE-3695"
+    type: vless
+    server: 94.156.115.109
+    port: 443
+    uuid: 9357d31a-97f5-492b-9a9d-24dcb3449fb9
+    udp: true
+    tls: true
+    servername: tunnel.vk-apps.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 2XHOm5oJ92noxYHfahYv6dABkpp-bdehIA5grPB1X2c
+      short-id: beba4237
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇩🇪 DE-6018"
+    type: ss
+    server: 135.125.245.131
+    port: 20939
+    cipher: chacha20-ietf-poly1305
+    password: 85d3d8ccba287d3e
+    udp: true
+  - name: "[OpenRay] 🇩🇪 DE-6124"
+    type: ss
+    server: 141.95.102.29
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 431e88b038422867
+    udp: true
+  - name: "[OpenRay] 🇩🇪 DE-6892"
+    type: vless
+    server: 2.58.65.28
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇩🇪 DE-7483"
+    type: vless
+    server: 87.120.92.150
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇩🇪 DE-7511"
+    type: vless
+    server: 139.144.77.58
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇩🇪 DE-7529"
+    type: vless
+    server: 162.19.253.192
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇩🇪 DE-7884"
+    type: vless
+    server: 46.101.250.44
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🎖@AliXTso"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇩🇪 DE-8258"
+    type: vless
+    server: 68.183.220.92
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🎖@AliXTso"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇩🇪 DE-8500"
+    type: vless
+    server: 194.195.240.193
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@app_bedal"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇩🇪 DE-9008"
+    type: vless
+    server: 89.58.34.230
+    port: 2012
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇩🇪 DE-9105"
+    type: vless
+    server: 87.120.216.157
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.dynv6.net
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: "[OpenRay] 🇩🇪 DE-9141"
+    type: vless
+    server: 195.201.222.173
+    port: 51781
+    uuid: 7afb5c1f-ca54-4f4a-ae77-a46cdad4f45e
+    udp: true
+    tls: false
+    network: tcp
+  - name: "[OpenRay] 🇩🇪 DE-9170"
+    type: vless
+    server: 57.129.63.133
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.dynv6.net
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.dynv6.net
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇩🇪 DE-9195"
+    type: vless
+    server: 134.209.246.179
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇩🇪 DE-9212"
+    type: vless
+    server: 91.99.9.125
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇩🇪 DE-9242"
+    type: vless
+    server: 57.129.47.36
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇩🇪 DE-9352"
+    type: vless
+    server: 57.129.5.82
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇩🇪 DE-9437"
+    type: vless
+    server: 163.5.187.221
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇩🇪 DE-9472"
+    type: vless
+    server: 94.159.109.190
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇩🇪 DE-9502"
+    type: ss
+    server: 57.129.95.45
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 6675cbf62d6a3a4f
+    udp: true
+  - name: "node 28"
+    type: vmess
+    server: 5.83.150.108
+    port: 59443
+    uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: imafake.locker
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: imafake.locker
+  - name: "[OpenRay] 🇩🇪 DE-9574"
+    type: vless
+    server: 162.248.166.66
+    port: 4443
+    uuid: 65f98bdd-b437-4d7e-8bba-8ab70cc8ff37
+    udp: true
+    tls: true
+    servername: github.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
+      short-id: aa7e96542880027a
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇩🇪 DE-9593"
+    type: vless
+    server: xn--u28h.xn--g28h.xn--g28h.xn--fjqyexxidv2znoe9rk1n8ada0532g6usa.com
+    port: 443
+    uuid: b3984af0-f50c-4326-a16b-a26bc6cb0f1e
+    udp: true
+    tls: true
+    servername: ya.ru.
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: aZILtbVL4-PP-D5kDN7xOljJTMKTYhL4iYUet-TsTSg
+      short-id: ffffffffff
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇩🇪 DE-9610"
+    type: vless
+    server: de.arman-a.ir
+    port: 8443
+    uuid: ef6e9da8-a93e-466e-be28-a663632a3747
+    udp: true
+    tls: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: tYCKcYojOp_n2dPJsoKZKc5bpGsPewSPX78KBKfV9Ws
+      short-id: f0196561eb1e6f
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "node 29"
+    type: vmess
+    server: 5.83.150.108
+    port: 63829
+    uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: imafake.locker
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: imafake.locker
+  - name: "[OpenRay] 🇩🇪 DE-9646"
+    type: vless
+    server: deu.dashping2.ir
+    port: 8203
+    uuid: 40842354-ecd2-47ce-9ac0-dd3fc4e0a614
+    udp: true
+    tls: true
+    servername: varzesh3.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 8Qmcew0nvdRJ1zida6oLjMJk3jShr7nzaB8u7-kEPCs
+      short-id: d7edd0fbe87bb4
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇺🇸 US-9868"
+    type: vless
+    server: 15.204.97.172
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "node 30"
+    type: vmess
+    server: 192.227.249.227
+    port: 27641
+    uuid: 3b134252-e7c2-43df-98b7-da204104aa79
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "node 31"
+    type: vmess
+    server: 209.126.84.189
+    port: 443
+    uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmessws"
+      headers:
+        Host: 209.126.84.189
+  - name: "node 32"
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "[OpenRay] 🇺🇸 US-11902"
+    type: vless
+    server: 5.34.179.145
+    port: 3443
+    uuid: 9f0dc45e-ec13-40d2-a463-9adc0b5207bb
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CsUm6jBZvd5KzFN8Klm9KYF5kiUmztspcA9InbcnwXM
+      short-id: e49b4e3d5f46d5c2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇺🇸 US-11983"
+    type: vless
+    server: 5.34.179.145
+    port: 3443
+    uuid: abc90f66-a21a-4cec-8242-7679a76e92c2
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CsUm6jBZvd5KzFN8Klm9KYF5kiUmztspcA9InbcnwXM
+      short-id: e49b4e3d5f46d5c2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇺🇸 US-12070"
+    type: vless
+    server: 5.34.179.145
+    port: 3443
+    uuid: c2b8d89f-c92f-47c0-af63-b3766ec105e3
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CsUm6jBZvd5KzFN8Klm9KYF5kiUmztspcA9InbcnwXM
+      short-id: e49b4e3d5f46d5c2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇺🇸 US-12140"
+    type: vless
+    server: 5.34.179.145
+    port: 3443
+    uuid: 04dfe434-6987-4750-a981-e754bd05e74e
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CsUm6jBZvd5KzFN8Klm9KYF5kiUmztspcA9InbcnwXM
+      short-id: e49b4e3d5f46d5c2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇺🇸 US-12284"
+    type: vless
+    server: 129.153.132.114
+    port: 46000
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇺🇸 US-12419"
+    type: vless
+    server: 216.128.140.218
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.dynv6.net
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: "[OpenRay] 🇺🇸 US-12451"
+    type: vless
+    server: 167.71.91.150
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇺🇸 US-12504"
+    type: vless
+    server: 5.34.179.145
+    port: 3443
+    uuid: 7644f5da-b9f0-4e38-aeb0-dc69e5ee1e8d
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: qq
+    reality-opts:
+      public-key: CsUm6jBZvd5KzFN8Klm9KYF5kiUmztspcA9InbcnwXM
+      short-id: e49b4e3d5f46d5c2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇺🇸 US-12522"
+    type: vless
+    server: 5.34.179.145
+    port: 3443
+    uuid: b05654d5-a4ec-48eb-9a9f-2f587dcb79c8
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: qq
+    reality-opts:
+      public-key: CsUm6jBZvd5KzFN8Klm9KYF5kiUmztspcA9InbcnwXM
+      short-id: e49b4e3d5f46d5c2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇺🇸 US-12539"
+    type: vless
+    server: 5.34.179.145
+    port: 3443
+    uuid: 45fd3418-b32e-42f2-9973-efd1f598e0af
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: qq
+    reality-opts:
+      public-key: CsUm6jBZvd5KzFN8Klm9KYF5kiUmztspcA9InbcnwXM
+      short-id: e49b4e3d5f46d5c2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇺🇸 US-12591"
+    type: vless
+    server: 5.34.179.145
+    port: 3443
+    uuid: e13a662c-2a75-4aed-b64f-11b8f665b401
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CsUm6jBZvd5KzFN8Klm9KYF5kiUmztspcA9InbcnwXM
+      short-id: e49b4e3d5f46d5c2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇺🇸 US-12614"
+    type: vless
+    server: 34.82.76.253
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.dynv6.net
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.dynv6.net
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇺🇸 US-12673"
+    type: ss
+    server: 66.94.125.178
+    port: 80
+    cipher: aes-256-gcm
+    password: 14CLBaFBqwqxBJy6
+    udp: true
+  - name: "node 33"
+    type: vmess
+    server: c86s3.portablesubmarines.com
+    port: 31350
+    uuid: 5f7e4a08-757a-48fa-8ed8-38599c684851
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "[OpenRay] 🇺🇸 US-12795"
+    type: vless
+    server: usaded.subsvdragontoo.online
+    port: 8443
+    uuid: c0c3dc30-4ed9-e13d-50e8-0a84a84815e3
+    udp: true
+    tls: true
+    servername: usaded.subsvdragontoo.online
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: usaded.subsvdragontoo.online
+  - name: "[OpenRay] 🇺🇸 US-12827"
+    type: vless
+    server: kiramshadhendi.global.ssl.fastly.net
+    port: 443
+    uuid: 6a2cb1ed-83fa-4f31-999c-d51a6628ef69
+    udp: true
+    tls: true
+    servername: kiramshadhendi.global.ssl.fastly.net
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/site"
+      headers:
+        Host: kiramshadhendi.global.ssl.fastly.net
+  - name: "[OpenRay] 🇺🇸 US-12846"
+    type: vless
+    server: 208.70.218.76
+    port: 6443
+    uuid: 2b7b9245-28da-470f-9e19-150a1099319c
+    udp: true
+    tls: true
+    servername: debug.resolvertest.doh.umbrella.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇺🇸 US-12863"
+    type: vless
+    server: 146.75.93.194
+    port: 443
+    uuid: b433fd43-e947-4cd0-96f9-901eb09df4b9
+    udp: true
+    tls: true
+    servername: MediaOP-name.global.ssl.fastly.net.
+    client-fingerprint: chrome
+    alpn:
+      - h3
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: MediaOP-name.global.ssl.fastly.net.
+  - name: "[OpenRay] 🇺🇸 US-12884"
+    type: vless
+    server: 151.101.169.242
+    port: 80
+    uuid: e4a6331b-e3e7-4f4e-b46a-8c31bf44bf83
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--/@HqV2RayNG--@HqV2RayNG?ed=2056"
+      headers:
+        Host: moodaontw.global.ssl.fastly.net
+  - name: "[OpenRay] 🇳🇱 NL-10"
+    type: vless
+    server: 51.158.206.19
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-430"
+    type: vless
+    server: 5.180.97.139
+    port: 443
+    uuid: a384c715-aeb5-45e8-859b-f687ca6c083f
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: wBrGfTI9PaFf966aN6KaCY0cL6QRLlop4nzNa6bJsiQ
+      short-id: 9f35da6c9412b832
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-571"
+    type: vless
+    server: 91.84.113.47
+    port: 443
+    uuid: a44e0875-210f-4941-9062-89b6361a14c6
+    udp: true
+    tls: true
+    servername: apple.com
+    reality-opts:
+      public-key: i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4
+      short-id: 8bcfe256cf216fd8
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-625"
+    type: ss
+    server: 82.38.31.101
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+    udp: true
+  - name: "[OpenRay] 🇳🇱 NL-686"
+    type: ss
+    server: 82.38.31.184
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+    udp: true
+  - name: "[OpenRay] 🇳🇱 NL-721"
+    type: ss
+    server: 82.38.31.191
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+    udp: true
+  - name: "[OpenRay] 🇳🇱 NL-745"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 04d7aab0-0422-42f2-ba26-957b10ff53f0
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-774"
+    type: ss
+    server: 82.38.31.122
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+    udp: true
+  - name: "[OpenRay] 🇳🇱 NL-821"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 3022e092-de0f-411f-a4ed-75a9a7112b13
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-866"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 12319401-960e-4a2c-881b-917cf0af6c83
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 54c71eb172a3
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-954"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 71afb2b4-e5fa-4e1c-a718-73a933fa9fbe
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 3d3c3fc7e9
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-993"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: a7763a81-c5b2-45d1-8d82-5d23b627466f
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-1107"
+    type: vless
+    server: 91.84.106.209
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @app_bedal"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇳🇱 NL-1165"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 5dd6763c-d4f5-4e58-8ab9-6f8f828f7e83
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-1223"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 12cd2ebb-5036-451a-a7e3-7d526b3eb4ce
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-1271"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: af4dc576-45a5-4954-8fc3-6034d2d2f06e
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-1306"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 4bf1fd03-976d-4bf4-a49c-e0185979692f
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-1332"
+    type: vless
+    server: 5.35.34.240
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.dynv6.net
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.dynv6.net
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇳🇱 NL-1365"
+    type: vless
+    server: 89.110.116.250
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.dynv6.net
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.dynv6.net
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇳🇱 NL-1382"
+    type: vless
+    server: 72.56.69.207
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇳🇱 NL-1410"
+    type: vless
+    server: 5.35.36.50
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "node 34"
+    type: vmess
+    server: 92.246.87.170
+    port: 18355
+    uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-1484"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 98e10e51-3410-43b4-8cff-3438c81603ca
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-1567"
+    type: vless
+    server: 91.84.124.41
+    port: 443
+    uuid: 891300bc-11b2-4b24-8056-b329b098888b
+    udp: true
+    tls: true
+    servername: github.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: jaTTje9eZ9v7W0Uy_ML3Nhm4IX5I9upVOZuFB9eEiXk
+      short-id: 7dc11b109bb00df2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-1604"
+    type: vless
+    server: 45.12.145.80
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇳🇱 NL-1621"
+    type: vless
+    server: 5.255.122.12
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇳🇱 NL-1639"
+    type: vless
+    server: 151.242.69.58
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇳🇱 NL-1660"
+    type: vless
+    server: 103.251.167.74
+    port: 443
+    uuid: 64b5d863-81d6-48ea-9222-82030616fa63
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-1685"
+    type: vless
+    server: 91.84.108.229
+    port: 8443
+    uuid: e39b2db3-ad43-48d5-8d57-22e4998702b7
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Cxvc5bVMKln6RxPs5MtviUZNDsmpfuYUK8UFBlcBaS0
+      short-id: 808e2d36726ee97e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-1709"
+    type: vless
+    server: nl3.pineappled.org
+    port: 443
+    uuid: 18f72be7-0651-4037-928b-8a309d685796
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-1728"
+    type: vless
+    server: 91.201.115.94
+    port: 8443
+    uuid: e39b2db3-ad43-48d5-8d57-22e4998702b7
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Cxvc5bVMKln6RxPs5MtviUZNDsmpfuYUK8UFBlcBaS0
+      short-id: 808e2d36726ee97e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-1750"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: c37b5cc9-afd6-4467-8fc1-fd2b5abfb2b8
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-1768"
+    type: vless
+    server: 45.149.114.53
+    port: 8443
+    uuid: 2b7b9245-28da-470f-9e19-150a1099319c
+    udp: true
+    tls: true
+    servername: ign.dev
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-1786"
+    type: vless
+    server: 212.34.134.10
+    port: 8443
+    uuid: e39b2db3-ad43-48d5-8d57-22e4998702b7
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Cxvc5bVMKln6RxPs5MtviUZNDsmpfuYUK8UFBlcBaS0
+      short-id: 808e2d36726ee97e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-1804"
+    type: vless
+    server: id.fasti.win
+    port: 91
+    uuid: 54a41073-e798-488b-af16-28533e612ec1
+    udp: true
+    tls: true
+    servername: id.fasti.win
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "-YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs"
+      short-id: feedbacc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-1821"
+    type: vless
+    server: 93.183.125.197
+    port: 8443
+    uuid: e39b2db3-ad43-48d5-8d57-22e4998702b7
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Cxvc5bVMKln6RxPs5MtviUZNDsmpfuYUK8UFBlcBaS0
+      short-id: 808e2d36726ee97e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇳🇱 NL-1842"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: c2fb5d4f-6959-40ae-b190-0dc313b88927
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "[OpenRay] 🇫🇮 FI-244"
+    type: vless
+    server: email.swiftraci.org
+    port: 443
+    uuid: 7eb4a87d-e22f-4eb3-a793-ee3d6200fdc6
+    udp: true
+    tls: true
+    servername: www.microsoft.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Cs45TZ-4YKa8fWZ72YJcIcQCKipWsoYNZHEqFvs-PTE
+      short-id: a6aef5143d94
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇫🇮 FI-307"
+    type: vless
+    server: staging.lastilhame.monster
+    port: 443
+    uuid: 594d466e-8ac3-4fda-b1d1-eeb817853518
+    udp: true
+    tls: true
+    servername: www.microsoft.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
+      short-id: 5a018643df03
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇫🇮 FI-413"
+    type: vless
+    server: 45.38.139.9
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🎖@YamYamProxy"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇫🇮 FI-496"
+    type: vless
+    server: 45.144.53.37
+    port: 8104
+    uuid: db27262a-4151-4c36-8e5f-2cf7fd387a0f
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 4gcDJumxa0bTaHvrZRL4Hb5ItXPha6ZYZ0fGmMD_k0A
+      short-id: 9f4ca836ca270ef8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇫🇮 FI-553"
+    type: vless
+    server: fn.takovpn.ru
+    port: 443
+    uuid: 8fa2865a-be8a-4a8f-a87f-7fa5b06c13b2
+    udp: true
+    tls: true
+    servername: www.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 3cj5R-TwL-wjkLvwMcVW-DJXbm6xOyIIJEP1cC8AhgI
+      short-id: 86f0
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇫🇮 FI-716"
+    type: vless
+    server: 65.108.245.196
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇫🇮 FI-739"
+    type: vless
+    server: access-fl15.agveit.pro
+    port: 443
+    uuid: 637bd1f3-f097-4fa2-a62d-322f1aede2fe
+    udp: true
+    tls: true
+    servername: queuev4.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: hGydpZcQoEQHwTTtwTf0Lai6MqGOHhvUJtUlONunh2c
+      short-id: 584053d3c479a4fc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇫🇮 FI-756"
+    type: vless
+    server: access-nl2.agveit.pro
+    port: 443
+    uuid: 637bd1f3-f097-4fa2-a62d-322f1aede2fe
+    udp: true
+    tls: true
+    servername: queuev4.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 50Zp-z_zGSs2Aus-SAqd9Db6kGb_6-_CyEB37TYODGs
+      short-id: 3dd903829bcc68ef
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇫🇮 FI-787"
+    type: vless
+    server: hield.ru
+    port: 3443
+    uuid: b35d784f-5da0-4a61-a15d-8619ad646f42
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: GxR12dtq_m0q2_Kx1PF7GD9du6zKkCtrVgmaR7ATckY
+      short-id: cb938a1c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇫🇮 FI-805"
+    type: vless
+    server: 2.56.173.227
+    port: 8443
+    uuid: 2b7b9245-28da-470f-9e19-150a1099319c
+    udp: true
+    tls: true
+    servername: ign.dev
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇫🇮 FI-823"
+    type: vless
+    server: fi1.mahboob.top
+    port: 2086
+    uuid: 896f6d8c-eef2-98ba-899c-a13bbdb7a345
+    udp: true
+    tls: false
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-2231"
+    type: vless
+    server: 109.120.188.166
+    port: 443
+    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: qq
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-3542"
+    type: vless
+    server: 79.137.175.59
+    port: 443
+    uuid: 0a9fe7e0-e02d-42ca-bebd-ecb4292f180c
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: e57932a42872a362
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-4209"
+    type: vless
+    server: 158.160.221.132
+    port: 8443
+    uuid: e8accc46-c511-42fb-919b-9283799a88a1
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 8f222b3475800821
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-4497"
+    type: vless
+    server: 89.169.128.105
+    port: 443
+    uuid: 80d277e5-d30a-49c6-8987-cb4d2cc79ee5
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: f4b4a6365558ea2e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-4651"
+    type: ss
+    server: 176.123.168.79
+    port: 41056
+    cipher: chacha20-ietf-poly1305
+    password: awYDSj3KrIKEQ3RrpRCKDqVMX
+    udp: true
+  - name: "[OpenRay] 🇷🇺 RU-4927"
+    type: vless
+    server: rus.fasti.win
+    port: 443
+    uuid: f6d382fa-3a53-4497-beb0-b285ac9bcf3a
+    udp: true
+    tls: true
+    servername: rus.fasti.win
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "-YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs"
+      short-id: feedbacc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5123"
+    type: vless
+    server: ru.tutnet.online
+    port: 443
+    uuid: 895f80be-902e-45c2-9b23-a27283edc180
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 34DUDsfZ0zjJ2PIspatJC8Gl-hXq9EbIRsORflvIIGw
+      short-id: 23c30a7eb4ecbc24
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5148"
+    type: vless
+    server: 146.185.242.222
+    port: 443
+    uuid: 853fb55f-e53f-460a-b562-e2683f14be4a
+    udp: true
+    tls: true
+    servername: web.max.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: JWNGbELCag9f-4uwpKizZEuRvAaL8qzoXOq5S0uzbhI
+      short-id: 8c1f5e30
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5193"
+    type: vless
+    server: 51.250.73.139
+    port: 12001
+    uuid: ad5d8d51-18f4-451b-9c01-7baff1d9b244
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 0a3d38cwnQfUM7EqjEinf1XUZyKdzgiuRMayO3LcYl0
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5277"
+    type: vless
+    server: 95.163.214.120
+    port: 7443
+    uuid: c0c3dc30-4ed9-e13d-50e8-0a84a84815e3
+    udp: true
+    tls: true
+    servername: ndded2.subsvdragontoo.online
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ndded2.subsvdragontoo.online
+  - name: "[OpenRay] 🇷🇺 RU-5300"
+    type: vless
+    server: 95.163.211.13
+    port: 443
+    uuid: 6beee13a-f356-4a51-8e65-75f776508e8f
+    udp: true
+    tls: true
+    servername: max.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: d17bd238f23fba92
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5358"
+    type: vless
+    server: 130.193.59.133
+    port: 51101
+    uuid: fdee1b7b-8944-49f1-966e-9530804b6ff7
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: 4ffc99daad0f261f
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5388"
+    type: vless
+    server: 82.146.45.147
+    port: 8443
+    uuid: eb905045-5eeb-45ac-b9de-424f18047ecc
+    udp: true
+    tls: true
+    servername: dropbox.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5409"
+    type: vless
+    server: 84.252.136.245
+    port: 8443
+    uuid: 24327711-3001-4101-820d-8e2fc14d6f5e
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: e57932a42872a362
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5433"
+    type: vless
+    server: 212.109.197.85
+    port: 8443
+    uuid: eb905045-5eeb-45ac-b9de-424f18047ecc
+    udp: true
+    tls: true
+    servername: dropbox.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5452"
+    type: vless
+    server: 185.146.156.161
+    port: 8443
+    uuid: eb905045-5eeb-45ac-b9de-424f18047ecc
+    udp: true
+    tls: true
+    servername: dropbox.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5469"
+    type: vless
+    server: 109.120.190.39
+    port: 443
+    uuid: bcfcca79-4d0d-4ad2-99a0-8129cb4717c0
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5486"
+    type: vless
+    server: 46.243.235.220
+    port: 50445
+    uuid: a11c5a0f-fdb8-4cba-bb43-a018018674da
+    udp: true
+    tls: true
+    servername: river-5-528.rtbcdn.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ZSzB9TQPGNcCiC0WLmciF5Jc8doJDvdRgbqTi8SCoEM
+      short-id: a1b2c3d4e5f6789a
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5504"
+    type: vless
+    server: 84.201.156.73
+    port: 443
+    uuid: 1e22a062-946f-4914-960b-25ba4f7e8ca1
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: c0Vy7DbsPgdcUerLNCyrwB5NXsFeeCTIikBMbrqRuj0
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "[OpenRay] 🇷🇺 RU-5521"
+    type: vless
+    server: 158.160.223.36
+    port: 443
+    uuid: 72fb3bd4-75dd-488a-9af7-c391321ecfcc
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5539"
+    type: vless
+    server: 37.139.33.52
+    port: 443
+    uuid: d5137491-4da5-426a-8318-6a06d0354c9d
+    udp: true
+    tls: true
+    servername: m.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: itChlzYnj7xu0-o776CzSu4BECllDKkrpsKVlNT5Fw0
+      short-id: 1de6f79b957b8b5c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5556"
+    type: vless
+    server: 109.120.190.193
+    port: 5443
+    uuid: 0a473358-f2cb-4929-a948-80ddb3a659ac
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: aH4mIVWwqa3AcsnPzzh729ycpTlmx__o_WINJq4Tk1Q
+      short-id: e6faba7fedebfe2c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5574"
+    type: vless
+    server: 95.163.182.63
+    port: 5561
+    uuid: af31d215-084c-49ef-b904-d40a3e339dee
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: tFakpIRTyorIgfaaRqB-kcTbQvcmDIFIYbYWtL0VVxI
+      short-id: 1f6a9c2d5b8e4703
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5591"
+    type: vless
+    server: 89.208.222.191
+    port: 8443
+    uuid: 0a473358-f2cb-4929-a948-80ddb3a659ac
+    udp: true
+    tls: true
+    servername: max.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 5glYyt2PVlrfg70dJAVvo9R34gdft0xfQOaa8ab2fQQ
+      short-id: 0d53f5dd9eda7a84
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5608"
+    type: vless
+    server: 84.23.54.169
+    port: 443
+    uuid: e6c99501-2522-47dd-9652-f0ef12d6f277
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zjv3djnsCKDqP7zZFIrJ9ImzgdPE3zFMCYrOvdWqkEE
+      short-id: 06bf5b24acb9
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5626"
+    type: vless
+    server: 109.120.188.214
+    port: 8443
+    uuid: 0a473358-f2cb-4929-a948-80ddb3a659ac
+    udp: true
+    tls: true
+    servername: max.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 5glYyt2PVlrfg70dJAVvo9R34gdft0xfQOaa8ab2fQQ
+      short-id: 0d53f5dd9eda7a84
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5643"
+    type: vless
+    server: 109.120.191.156
+    port: 8443
+    uuid: 9bc247bd-6fef-468b-91e7-2400e8c0903f
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zbYv3t9VgzBeh9kTydhdi7u9niwh-_LHa4xYc9Zl_1U
+      short-id: 2e752b0d4d15e0f9
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5664"
+    type: vless
+    server: 109a_b.harknmav.fun
+    port: 9443
+    uuid: 9bc247bd-6fef-468b-91e7-2400e8c0903f
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: AmcTYjbCAn33BFmg55kFKIIbNRBmQWan9RDl8lZuHgo
+      short-id: bd3c2c10ca44261a
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5685"
+    type: vless
+    server: nod5.freedomvpn.live
+    port: 443
+    uuid: a89cfbf6-456b-4381-a18d-4363c2f5c38e
+    udp: true
+    tls: true
+    servername: nod5.freedomvpn.live
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: x__F0WbokHHSh1YFY9eE4lm3Jq_JA9z3lWfencDgV3s
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5703"
+    type: vless
+    server: 51.250.0.147
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: f85b0cdd7d20c84c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5720"
+    type: vless
+    server: bgr01-vlr01.tcp-reset-club.net
+    port: 15443
+    uuid: 74c94a27-a187-4759-a1bf-2170ce196288
+    udp: true
+    tls: true
+    servername: hls-svod.itunes.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: e499f276e7bd6420
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5738"
+    type: vless
+    server: ltu01-vlr01.tcp-reset-club.net
+    port: 12443
+    uuid: 9fdd70da-b710-48b7-945a-642fe8937861
+    udp: true
+    tls: true
+    servername: hls-svod.itunes.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: e499f276e7bd6420
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇷🇺 RU-5756"
+    type: vless
+    server: 51.250.26.75
+    port: 443
+    uuid: dddd3838-5cd6-4c2f-953f-d41a34a46336
+    udp: true
+    tls: true
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7IOtSp0-n2_uNS5nMO9ywZbn2HibMRGy0KbLad3szXc
+      short-id: b8cf9578640a9edf
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇰🇷 KR-203"
+    type: ss
+    server: srv12.outlinekeys.com
+    port: 1080
+    cipher: chacha20-ietf-poly1305
+    password: fkxXhS9VUmWmoC9N9xu2WBjVoEGV7UZT
+    udp: true
+  - name: "[OpenRay] 🇰🇷 KR-356"
+    type: vless
+    server: 130.162.130.105
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.jpmj.dev
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.jpmj.dev
+    client-fingerprint: chrome
+  - name: "node 35"
+    type: vmess
+    server: 52.79.212.191
+    port: 8686
+    uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: end-gfw.com
+  - name: "node 36"
+    type: vmess
+    server: n1753598451.74qxv.top
+    port: 443
+    uuid: 9798678f-5b8c-4ff1-bbdd-b9b5c1539de0
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: n1753598451.74qxv.top
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: n1753598451.74qxv.top
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇯🇵 JP-719"
+    type: vless
+    server: 138.3.222.124
+    port: 46209
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "node 37"
+    type: vmess
+    server: n1753598448.74qxv.top
+    port: 443
+    uuid: 3cd6f849-078e-4da9-8080-a2791b51b766
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: n1753598448.74qxv.top
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: n1753598448.74qxv.top
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇯🇵 JP-845"
+    type: vless
+    server: 45.76.192.129
+    port: 24434
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.dynv6.net
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: "node 38"
+    type: vmess
+    server: 43.206.236.66
+    port: 8686
+    uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: end-gfw.com
+  - name: "[OpenRay] 🇫🇷 FR-460"
+    type: vless
+    server: 188.92.28.204
+    port: 34045
+    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+    udp: true
+    tls: true
+    servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+    reality-opts:
+      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+      short-id: e8ab71d0
+    client-fingerprint: chrome
+    network: tcp
+  - name: "[OpenRay] 🇫🇷 FR-543"
+    type: ss
+    server: 51.178.114.83
+    port: 11202
+    cipher: chacha20-ietf-poly1305
+    password: d5b878cbb46f3e33
+    udp: true
+  - name: "[OpenRay] 🇫🇷 FR-576"
+    type: vless
+    server: 95.182.97.147
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇫🇷 FR-604"
+    type: vless
+    server: 141.94.205.63
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇫🇷 FR-638"
+    type: vless
+    server: 141.95.161.241
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇫🇷 FR-664"
+    type: vless
+    server: 54.36.98.4
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇫🇷 FR-699"
+    type: vless
+    server: 213.165.48.126
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇫🇷 FR-717"
+    type: vless
+    server: 162.19.79.57
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇫🇷 FR-734"
+    type: vless
+    server: 51.38.227.155
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇫🇷 FR-752"
+    type: vless
+    server: 51.91.102.26
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇫🇷 FR-770"
+    type: vless
+    server: 141.94.222.214
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇫🇷 FR-788"
+    type: vless
+    server: 85.31.236.117
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇫🇷 FR-805"
+    type: vless
+    server: 146.59.230.8
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇫🇷 FR-822"
+    type: vless
+    server: 141.94.70.243
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇫🇷 FR-840"
+    type: vless
+    server: 141.94.221.119
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇫🇷 FR-857"
+    type: vless
+    server: 141.94.223.220
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇫🇷 FR-875"
+    type: vless
+    server: 141.94.221.241
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇫🇷 FR-1136"
+    type: vless
+    server: 141.94.223.124
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇫🇷 FR-1170"
+    type: vless
+    server: 94.183.186.27
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇵🇱 PL-212"
+    type: vless
+    server: 45.144.51.22
+    port: 443
+    uuid: 6c49485f-843c-4e96-abfe-046bc473c7b0
+    udp: true
+    tls: true
+    servername: github.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: euR8poucesDF-UxANxJ7Uqg1t4cfiDtAzAQcTVhRQCE
+      short-id: 140d8b3989bf5116
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇵🇱 PL-321"
+    type: vless
+    server: 144.31.2.86
+    port: 443
+    uuid: 5e178a81-74e3-4b28-a8ef-2d19989f72b0
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: PuHKrJNt4shNVTNZ_leD7SmOI0QhxJ9SVnkV70i1xho
+      short-id: cbdfef7f3ede2072
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇵🇱 PL-371"
+    type: vless
+    server: 144.31.2.86
+    port: 443
+    uuid: 6eb149a1-39de-4f12-ac11-76e5d4be4a21
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: PuHKrJNt4shNVTNZ_leD7SmOI0QhxJ9SVnkV70i1xho
+      short-id: cbdfef7f3ede2072
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "node 39"
+    type: vmess
+    server: 85.194.243.117
+    port: 57878
+    uuid: 1423fa54-1256-4cbb-9663-e0ccab46f02a
+    alterId: 0
+    cipher: none
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess-argo"
+      headers:
+        Host: 85.194.243.117
+  - name: "[OpenRay] 🇵🇱 PL-439"
+    type: vless
+    server: 144.31.2.86
+    port: 443
+    uuid: d6a82038-383b-4596-8db9-92cbc5161069
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: PuHKrJNt4shNVTNZ_leD7SmOI0QhxJ9SVnkV70i1xho
+      short-id: cbdfef7f3ede2072
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇵🇱 PL-459"
+    type: vless
+    server: 144.31.2.86
+    port: 443
+    uuid: 2ee1b10a-e01e-41e2-8578-5aa1df3d3596
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: PuHKrJNt4shNVTNZ_leD7SmOI0QhxJ9SVnkV70i1xho
+      short-id: cbdfef7f3ede2072
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇵🇱 PL-477"
+    type: vless
+    server: 135.125.139.219
+    port: 2055
+    uuid: 6500156c-21ed-4a13-8b4a-f7b10c132c80
+    udp: true
+    tls: false
+    network: tcp
+  - name: "node 40"
+    type: vmess
+    server: 57.129.132.223
+    port: 80
+    uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+      headers:
+        Host: google.com
+  - name: "[OpenRay] 🇬🇧 GB-229"
+    type: trojan
+    server: hl-freedom-1.undef.network
+    port: 443
+    password: 7LBbob9IutFObLxLf9Svc1HaV
+    udp: true
+    servername: hl-freedom-1.undef.network
+    network: ws
+    ws-opts:
+      path: "/f2fc2a1f"
+      headers:
+        Host: hl-freedom-1.undef.network
+  - name: "[OpenRay] 🇬🇧 GB-287"
+    type: vless
+    server: 165.232.104.116
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🎖@AliXTso"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇬🇧 GB-354"
+    type: vless
+    server: 87.106.65.110
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇬🇧 GB-402"
+    type: ss
+    server: 51.75.168.50
+    port: 13031
+    cipher: chacha20-ietf-poly1305
+    password: 25f8159be6c408fe
+    udp: true
+  - name: "[OpenRay] 🇬🇧 GB-422"
+    type: trojan
+    server: hl-freedom-2.undef.network
+    port: 443
+    password: jJT7gd5O9vwJzL6RiXpxxXIAL
+    udp: true
+    servername: hl-freedom-2.undef.network
+    network: ws
+    ws-opts:
+      path: "/f2fc2a1f"
+      headers:
+        Host: hl-freedom-2.undef.network
+  - name: "[OpenRay] 🇸🇪 SE-222"
+    type: vless
+    server: 89.22.230.197
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇸🇪 SE-300"
+    type: vless
+    server: dd.openaccessnode.com
+    port: 2197
+    uuid: 75193bef-8d8f-e823-41e0-2dd083dc1399
+    udp: true
+    tls: true
+    servername: api.push.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ECxm-BdHYhxYK9MtN33NkkrFSdFZXp-OB-yhN8AleRY
+      short-id: a62d513cd709744a
+    network: tcp
+  - name: "node 41"
+    type: vmess
+    server: singapore02.zgjok.com
+    port: 443
+    uuid: 780c7671-e8c8-45ab-922b-4fdfc4310aa0
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: singapore02.zgjok.com
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: singapore02.zgjok.com
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇸🇬 SG-170"
+    type: vless
+    server: 194.36.178.36
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+  - name: "[OpenRay] 🇸🇬 SG-221"
+    type: vless
+    server: 68.183.178.178
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.dynv6.net
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: "[OpenRay] 🇸🇬 SG-245"
+    type: vless
+    server: 35.185.190.189
+    port: 8443
+    uuid: 69905933-1b12-24fd-4ded-568ee4322895
+    udp: true
+    tls: true
+    servername: a926adb5.lfree.ccwu.cc
+    network: ws
+    ws-opts:
+      path: "/socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719"
+      headers:
+        Host: a926adb5.lfree.ccwu.cc
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇧🇷 BR-29"
+    type: ss
+    server: 5.188.4.103
+    port: 11202
+    cipher: chacha20-ietf-poly1305
+    password: a7c205642b302c20
+    udp: true
+  - name: "[OpenRay] 🇧🇷 BR-52"
+    type: ss
+    server: 5.188.4.103
+    port: 11203
+    cipher: chacha20-ietf-poly1305
+    password: a7c205642b302c20
+    udp: true
+  - name: "[OpenRay] 🇹🇷 TR-78"
+    type: ss
+    server: 154.205.148.202
+    port: 11205
+    cipher: chacha20-ietf-poly1305
+    password: 71807718f593d3e6
+    udp: true
+  - name: "[OpenRay] 🇹🇷 TR-189"
+    type: vless
+    server: tr.darknet.run
+    port: 443
+    uuid: 8c6302ee-8eb9-488c-9888-b7a5eb48fccd
+    udp: true
+    tls: true
+    servername: tr.darknet.run
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: DOWJ2Y8jartFx3gZyxrzG2SOtaqJbxfWnD5fgebgjRA
+      short-id: a1b223d4
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "node 42"
+    type: vmess
+    server: 47.243.95.187
+    port: 443
+    uuid: c28a6258-7baa-40fc-8a51-87f59c847cd7
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: n1761214906.wpg27.xyz
+    alpn:
+      - None
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: n1761214906.wpg27.xyz
+    client-fingerprint: chrome
+  - name: "node 43"
+    type: vmess
+    server: 47.243.244.164
+    port: 443
+    uuid: 3514a93f-bb26-4442-8f99-971b2ff3388a
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: n1761214908.wpg27.xyz
+    alpn:
+      - None
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: n1761214908.wpg27.xyz
+    client-fingerprint: chrome
+  - name: "node 44"
+    type: vmess
+    server: n1761214912.wpg27.xyz
+    port: 443
+    uuid: 4f86a909-836d-4643-b650-d812144a1fa9
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: n1761214912.wpg27.xyz
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: n1761214912.wpg27.xyz
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇭🇰 HK-355"
+    type: vless
+    server: 156.255.90.175
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+  - name: "[OpenRay] 🇭🇰 HK-386"
+    type: vless
+    server: 46.8.78.122
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.dynv6.net
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.111000.dynv6.net
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇭🇰 HK-496"
+    type: vless
+    server: 175.29.22.90
+    port: 35549
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇭🇰 HK-524"
+    type: trojan
+    server: 154.86.11.145
+    port: 30003
+    password: a8f3baf4-0694-4f73-bebc-9e7f3ea01b95
+    udp: true
+    servername: jsygouer.weixin-baidu-qq.com
+    network: tcp
+  - name: "[OpenRay] 🇭🇰 HK-541"
+    type: vless
+    server: hkt1.xn--9kqp42aims.top
+    port: 20418
+    uuid: 04793d5b-1b79-49fc-b5f9-2e8ce0e3ebc6
+    udp: true
+    tls: true
+    servername: buylite.music.apple.com
+    client-fingerprint: edge
+    reality-opts:
+      public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
+      short-id: 4b070735
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇨🇭 CH-48"
+    type: vless
+    server: che01-plr-vlr01.tcp-reset-club.net
+    port: 443
+    uuid: 4604876a-0652-4835-88bd-4421ea5c40da
+    udp: true
+    tls: true
+    servername: hls-svod.itunes.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 8453e5fd9af927
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇱🇻 LV-149"
+    type: vless
+    server: 45.43.79.73
+    port: 443
+    uuid: f79d200c-ac04-45a8-98a7-031d629f705c
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: sSxz8on32QOT9c9J-03K911U9vFr6xBKcK2zVfvk4QI
+      short-id: cd620180
+    network: tcp
+  - name: "[OpenRay] 🇱🇻 LV-202"
+    type: vless
+    server: 188.253.19.222
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@@jdfxq"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇱🇻 LV-228"
+    type: vless
+    server: 188.253.19.248
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇱🇻 LV-311"
+    type: vless
+    server: access-lv8.agveit.pro
+    port: 443
+    uuid: 637bd1f3-f097-4fa2-a62d-322f1aede2fe
+    udp: true
+    tls: true
+    servername: queuev4.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 54jbWpPjclvCsIXBElSiDpzutpwCyw4o82I49XzeUXI
+      short-id: a6e3da0c3ad67f70
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇱🇻 LV-330"
+    type: vless
+    server: 193.43.146.163
+    port: 8443
+    uuid: c3cb51a2-9f85-40f4-848f-fde89920bb90
+    udp: true
+    tls: true
+    servername: ozon.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7HejPU15kdTl9QG_8AygEM3w0ythsbhG6q_SwUumyR0
+      short-id: 72b11c6ddbcfecf1
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇹🇭 TH-4"
+    type: trojan
+    server: 38.54.82.205
+    port: 27877
+    password: "pUF+zmIw0QuRESBPLofx7eOj6Xc49"
+    udp: true
+    servername: www.metaphysicalmagnet.click
+    network: tcp
+  - name: "node 45"
+    type: vmess
+    server: 3h-kazakhstan1.09vpn.com
+    port: 80
+    uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+      headers:
+        Host: 3h-kazakhstan1.09vpn.com
+  - name: "[OpenRay] 🇦🇹 AT-7"
+    type: vless
+    server: 152.53.49.130
+    port: 22955
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    udp: true
+    tls: true
+    servername: one-piece.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+      short-id: 6ba85179e30d4fc2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+  - name: "[OpenRay] 🇪🇸 ES-82"
+    type: vless
+    server: tunnyl.ru
+    port: 3443
+    uuid: 188acdf8-c3c1-458d-8963-2f3b1e8a0b25
+    udp: true
+    tls: true
+    servername: www.bing.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VuGbF41ZZJnNSTXTnQiT59bug135kyLp6MNx0_rO2Bo
+      short-id: f2b23eb38f49f2
+    network: tcp
+  - name: "node 46"
+    type: vmess
+    server: 47.250.45.234
+    port: 43063
+    uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/arki?ed=2048"
+      headers:
+        Host: 47.250.45.234
+  - name: "node 47"
+    type: vmess
+    server: pq-Hungary1.09vpn.com
+    port: 80
+    uuid: 703f722a-4bdf-4e9d-9afd-a681fdf87c74
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+      headers:
+        Host: pq-Hungary1.09vpn.com
+  - name: "[OpenRay] 🇭🇺 HU-57"
+    type: vless
+    server: 217.13.104.133
+    port: 443
+    uuid: 74ba25a5-fb60-453d-a5f8-3ba2fa3c727b
+    udp: true
+    tls: true
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ZGwYjRp5RxlVpHUTPzi7pB4ZZuDU5FZEaFgBM71teiQ
+      short-id: 0669a3e6b300d069
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇪🇪 EE-91"
+    type: vless
+    server: s501.ccgfw.top
+    port: 443
+    uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+    udp: true
+    tls: true
+    servername: u708330u05c4s501.ccgfw.top
+    client-fingerprint: random
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇮🇹 IT-62"
+    type: vless
+    server: 151.101.241.242
+    port: 80
+    uuid: e4a6331b-e3e7-4f4e-b46a-8c31bf44bf83
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--/@HqV2RayNG--@HqV2RayNG?ed=2056"
+      headers:
+        Host: moodaontw.global.ssl.fastly.net
+  - name: "[OpenRay] 🇹🇼 TW-78"
+    type: vless
+    server: 111.246.224.77
+    port: 10001
+    uuid: 04793d5b-1b79-49fc-b5f9-2e8ce0e3ebc6
+    udp: true
+    tls: true
+    servername: buylite.music.apple.com
+    client-fingerprint: edge
+    reality-opts:
+      public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
+      short-id: 4b070735
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇬🇷 GR-3"
+    type: ss
+    server: 38.54.29.57
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: cb955c8530320120
+    udp: true
+  - name: "node 48"
+    type: vmess
+    server: 20.193.153.19
+    port: 15834
+    uuid: 39a8c374-76b1-4e90-ab85-85cd9a42ded2
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "[OpenRay] 🇮🇳 IN-55"
+    type: vless
+    server: pq-india1.09vpn.com
+    port: 80
+    uuid: 528bf7f6-2a4f-4701-a1a7-d91f7980e6d5
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: pq-india1.09vpn.com
+  - name: "[OpenRay] 🇦🇺 AU-12"
+    type: ss
+    server: 149.28.164.55
+    port: 80
+    cipher: aes-256-gcm
+    password: pzoNdPbhqT1Xd7WS
+    udp: true
+  - name: "[OpenRay] 🇮🇷 IR-336"
+    type: vless
+    server: Panel.AhmadMomeni.ir
+    port: 44088
+    uuid: 40b125e3-4c2a-4664-a5aa-fcd09e6ff299
+    udp: true
+    tls: false
+    network: tcp
+  - name: "[OpenRay] 🇮🇷 IR-353"
+    type: vless
+    server: s6.daneshvardost.com
+    port: 26480
+    uuid: 6919e588-cff3-4c1b-b7a3-3ca0ada5fb69
+    udp: true
+    tls: false
+    network: tcp
+  - name: "[OpenRay] 🇦🇱 AL-30"
+    type: vless
+    server: 78.159.131.90
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇻🇳 VN-16"
+    type: vless
+    server: s226.okgg.top
+    port: 443
+    uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+    udp: true
+    tls: true
+    servername: u708330u3491s226.okgg.top
+    client-fingerprint: random
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[OpenRay] 🇦🇪 AE-23"
+    type: vless
+    server: 188.72.103.3
+    port: 443
+    uuid: bcfcca79-4d0d-4ad2-99a0-8129cb4717c0
+    udp: true
+    tls: true
+    servername: yc-nl.quattro-tech.ru
+    client-fingerprint: chrome
+    alpn:
+      - h3
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/websocket"
+      headers:
+        Host: yc-nl.quattro-tech.ru
+  - name: "[OpenRay] 🇵🇹 PT-5"
+    type: vless
+    server: 94.23.78.198
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "[OpenRay] 🇳🇬 NG-2"
+    type: ss
+    server: 185.255.123.110
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "[OpenRay] 🇰🇼 KW-2"
+    type: ss
+    server: 163.171.181.49
+    port: 42933
+    cipher: chacha20-ietf-poly1305
+    password: 877c3b069c335ffc
+    udp: true
+  - name: "[OpenRay] 🇺🇦 UA-18"
+    type: vless
+    server: ua2.vpnjantit.com
+    port: 10002
+    uuid: 1295e422-068a-11f1-b042-1bd023c5f030
+    udp: true
+    tls: true
+    servername: ua2.vpnjantit.com
+    network: ws
+    ws-opts:
+      path: "/vpnjantit"
+      headers:
+        Host: ua2.vpnjantit.com
+    client-fingerprint: chrome
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "♻️ 自动选择"
+      - DIRECT
+      - "[OpenRay] 🇨🇦 CA-11680"
+      - "[OpenRay] 🇨🇦 CA-11727"
+      - node
+      - "[OpenRay] 🇨🇦 CA-11866"
+      - "[OpenRay] 🇨🇦 CA-12035"
+      - "[OpenRay] 🇨🇦 CA-12412"
+      - "node 2"
+      - "[OpenRay] 🇨🇦 CA-12687"
+      - "node 3"
+      - "node 4"
+      - "[OpenRay] 🇨🇦 CA-13813"
+      - "[OpenRay] 🇨🇦 CA-13908"
+      - "node 5"
+      - "[OpenRay] 🇨🇦 CA-14133"
+      - "[OpenRay] 🇨🇦 CA-14212"
+      - "[OpenRay] 🇨🇦 CA-14259"
+      - "[OpenRay] 🇨🇦 CA-14342"
+      - "[OpenRay] 🇨🇦 CA-14437"
+      - "[OpenRay] 🇨🇦 CA-14474"
+      - "[OpenRay] Dynamic-11283"
+      - "[OpenRay] Dynamic-11673"
+      - "[OpenRay] Dynamic-11778"
+      - "node 6"
+      - "[OpenRay] Dynamic-12217"
+      - "node 7"
+      - "node 8"
+      - "[OpenRay] Dynamic-550"
+      - "node 9"
+      - "node 10"
+      - "node 11"
+      - "node 12"
+      - "node 13"
+      - "node 14"
+      - "[OpenRay] Dynamic-13325"
+      - "[OpenRay] Dynamic-13400"
+      - "[OpenRay] Dynamic-13480"
+      - "node 15"
+      - "[OpenRay] Dynamic-13621"
+      - "[OpenRay] Dynamic-13714"
+      - "node 16"
+      - "node 17"
+      - "node 18"
+      - "node 19"
+      - "[OpenRay] Dynamic-13988"
+      - "[OpenRay] Dynamic-14005"
+      - "[OpenRay] Dynamic-14041"
+      - "[OpenRay] Dynamic-1385"
+      - "[OpenRay] Dynamic-490"
+      - "[OpenRay] Dynamic-14104"
+      - "[OpenRay] Dynamic-14126"
+      - "[OpenRay] Dynamic-9366"
+      - "[OpenRay] Dynamic-4912"
+      - "[OpenRay] Dynamic-14185"
+      - "[OpenRay] Dynamic-14206"
+      - "[OpenRay] Dynamic-14247"
+      - "node 20"
+      - "node 21"
+      - "[OpenRay] Dynamic-1729"
+      - "node 22"
+      - "[OpenRay] Dynamic-14333"
+      - "[OpenRay] Dynamic-1750"
+      - "node 23"
+      - "[OpenRay] Dynamic-2"
+      - "[OpenRay] Dynamic-14390"
+      - "[OpenRay] Dynamic-14407"
+      - "[OpenRay] Dynamic-14425"
+      - "[OpenRay] Dynamic-14443"
+      - "[OpenRay] Dynamic-12859"
+      - "[OpenRay] Dynamic-5679"
+      - "[OpenRay] Dynamic-5687"
+      - "node 24"
+      - "node 25"
+      - "node 26"
+      - "node 27"
+      - "[OpenRay] 🇩🇪 DE-3695"
+      - "[OpenRay] 🇩🇪 DE-6018"
+      - "[OpenRay] 🇩🇪 DE-6124"
+      - "[OpenRay] 🇩🇪 DE-6892"
+      - "[OpenRay] 🇩🇪 DE-7483"
+      - "[OpenRay] 🇩🇪 DE-7511"
+      - "[OpenRay] 🇩🇪 DE-7529"
+      - "[OpenRay] 🇩🇪 DE-7884"
+      - "[OpenRay] 🇩🇪 DE-8258"
+      - "[OpenRay] 🇩🇪 DE-8500"
+      - "[OpenRay] 🇩🇪 DE-9008"
+      - "[OpenRay] 🇩🇪 DE-9105"
+      - "[OpenRay] 🇩🇪 DE-9141"
+      - "[OpenRay] 🇩🇪 DE-9170"
+      - "[OpenRay] 🇩🇪 DE-9195"
+      - "[OpenRay] 🇩🇪 DE-9212"
+      - "[OpenRay] 🇩🇪 DE-9242"
+      - "[OpenRay] 🇩🇪 DE-9352"
+      - "[OpenRay] 🇩🇪 DE-9437"
+      - "[OpenRay] 🇩🇪 DE-9472"
+      - "[OpenRay] 🇩🇪 DE-9502"
+      - "node 28"
+      - "[OpenRay] 🇩🇪 DE-9574"
+      - "[OpenRay] 🇩🇪 DE-9593"
+      - "[OpenRay] 🇩🇪 DE-9610"
+      - "node 29"
+      - "[OpenRay] 🇩🇪 DE-9646"
+      - "[OpenRay] 🇺🇸 US-9868"
+      - "node 30"
+      - "node 31"
+      - "node 32"
+      - "[OpenRay] 🇺🇸 US-11902"
+      - "[OpenRay] 🇺🇸 US-11983"
+      - "[OpenRay] 🇺🇸 US-12070"
+      - "[OpenRay] 🇺🇸 US-12140"
+      - "[OpenRay] 🇺🇸 US-12284"
+      - "[OpenRay] 🇺🇸 US-12419"
+      - "[OpenRay] 🇺🇸 US-12451"
+      - "[OpenRay] 🇺🇸 US-12504"
+      - "[OpenRay] 🇺🇸 US-12522"
+      - "[OpenRay] 🇺🇸 US-12539"
+      - "[OpenRay] 🇺🇸 US-12591"
+      - "[OpenRay] 🇺🇸 US-12614"
+      - "[OpenRay] 🇺🇸 US-12673"
+      - "node 33"
+      - "[OpenRay] 🇺🇸 US-12795"
+      - "[OpenRay] 🇺🇸 US-12827"
+      - "[OpenRay] 🇺🇸 US-12846"
+      - "[OpenRay] 🇺🇸 US-12863"
+      - "[OpenRay] 🇺🇸 US-12884"
+      - "[OpenRay] 🇳🇱 NL-10"
+      - "[OpenRay] 🇳🇱 NL-430"
+      - "[OpenRay] 🇳🇱 NL-571"
+      - "[OpenRay] 🇳🇱 NL-625"
+      - "[OpenRay] 🇳🇱 NL-686"
+      - "[OpenRay] 🇳🇱 NL-721"
+      - "[OpenRay] 🇳🇱 NL-745"
+      - "[OpenRay] 🇳🇱 NL-774"
+      - "[OpenRay] 🇳🇱 NL-821"
+      - "[OpenRay] 🇳🇱 NL-866"
+      - "[OpenRay] 🇳🇱 NL-954"
+      - "[OpenRay] 🇳🇱 NL-993"
+      - "[OpenRay] 🇳🇱 NL-1107"
+      - "[OpenRay] 🇳🇱 NL-1165"
+      - "[OpenRay] 🇳🇱 NL-1223"
+      - "[OpenRay] 🇳🇱 NL-1271"
+      - "[OpenRay] 🇳🇱 NL-1306"
+      - "[OpenRay] 🇳🇱 NL-1332"
+      - "[OpenRay] 🇳🇱 NL-1365"
+      - "[OpenRay] 🇳🇱 NL-1382"
+      - "[OpenRay] 🇳🇱 NL-1410"
+      - "node 34"
+      - "[OpenRay] 🇳🇱 NL-1484"
+      - "[OpenRay] 🇳🇱 NL-1567"
+      - "[OpenRay] 🇳🇱 NL-1604"
+      - "[OpenRay] 🇳🇱 NL-1621"
+      - "[OpenRay] 🇳🇱 NL-1639"
+      - "[OpenRay] 🇳🇱 NL-1660"
+      - "[OpenRay] 🇳🇱 NL-1685"
+      - "[OpenRay] 🇳🇱 NL-1709"
+      - "[OpenRay] 🇳🇱 NL-1728"
+      - "[OpenRay] 🇳🇱 NL-1750"
+      - "[OpenRay] 🇳🇱 NL-1768"
+      - "[OpenRay] 🇳🇱 NL-1786"
+      - "[OpenRay] 🇳🇱 NL-1804"
+      - "[OpenRay] 🇳🇱 NL-1821"
+      - "[OpenRay] 🇳🇱 NL-1842"
+      - "[OpenRay] 🇫🇮 FI-244"
+      - "[OpenRay] 🇫🇮 FI-307"
+      - "[OpenRay] 🇫🇮 FI-413"
+      - "[OpenRay] 🇫🇮 FI-496"
+      - "[OpenRay] 🇫🇮 FI-553"
+      - "[OpenRay] 🇫🇮 FI-716"
+      - "[OpenRay] 🇫🇮 FI-739"
+      - "[OpenRay] 🇫🇮 FI-756"
+      - "[OpenRay] 🇫🇮 FI-787"
+      - "[OpenRay] 🇫🇮 FI-805"
+      - "[OpenRay] 🇫🇮 FI-823"
+      - "[OpenRay] 🇷🇺 RU-2231"
+      - "[OpenRay] 🇷🇺 RU-3542"
+      - "[OpenRay] 🇷🇺 RU-4209"
+      - "[OpenRay] 🇷🇺 RU-4497"
+      - "[OpenRay] 🇷🇺 RU-4651"
+      - "[OpenRay] 🇷🇺 RU-4927"
+      - "[OpenRay] 🇷🇺 RU-5123"
+      - "[OpenRay] 🇷🇺 RU-5148"
+      - "[OpenRay] 🇷🇺 RU-5193"
+      - "[OpenRay] 🇷🇺 RU-5277"
+      - "[OpenRay] 🇷🇺 RU-5300"
+      - "[OpenRay] 🇷🇺 RU-5358"
+      - "[OpenRay] 🇷🇺 RU-5388"
+      - "[OpenRay] 🇷🇺 RU-5409"
+      - "[OpenRay] 🇷🇺 RU-5433"
+      - "[OpenRay] 🇷🇺 RU-5452"
+      - "[OpenRay] 🇷🇺 RU-5469"
+      - "[OpenRay] 🇷🇺 RU-5486"
+      - "[OpenRay] 🇷🇺 RU-5504"
+      - "[OpenRay] 🇷🇺 RU-5521"
+      - "[OpenRay] 🇷🇺 RU-5539"
+      - "[OpenRay] 🇷🇺 RU-5556"
+      - "[OpenRay] 🇷🇺 RU-5574"
+      - "[OpenRay] 🇷🇺 RU-5591"
+      - "[OpenRay] 🇷🇺 RU-5608"
+      - "[OpenRay] 🇷🇺 RU-5626"
+      - "[OpenRay] 🇷🇺 RU-5643"
+      - "[OpenRay] 🇷🇺 RU-5664"
+      - "[OpenRay] 🇷🇺 RU-5685"
+      - "[OpenRay] 🇷🇺 RU-5703"
+      - "[OpenRay] 🇷🇺 RU-5720"
+      - "[OpenRay] 🇷🇺 RU-5738"
+      - "[OpenRay] 🇷🇺 RU-5756"
+      - "[OpenRay] 🇰🇷 KR-203"
+      - "[OpenRay] 🇰🇷 KR-356"
+      - "node 35"
+      - "node 36"
+      - "[OpenRay] 🇯🇵 JP-719"
+      - "node 37"
+      - "[OpenRay] 🇯🇵 JP-845"
+      - "node 38"
+      - "[OpenRay] 🇫🇷 FR-460"
+      - "[OpenRay] 🇫🇷 FR-543"
+      - "[OpenRay] 🇫🇷 FR-576"
+      - "[OpenRay] 🇫🇷 FR-604"
+      - "[OpenRay] 🇫🇷 FR-638"
+      - "[OpenRay] 🇫🇷 FR-664"
+      - "[OpenRay] 🇫🇷 FR-699"
+      - "[OpenRay] 🇫🇷 FR-717"
+      - "[OpenRay] 🇫🇷 FR-734"
+      - "[OpenRay] 🇫🇷 FR-752"
+      - "[OpenRay] 🇫🇷 FR-770"
+      - "[OpenRay] 🇫🇷 FR-788"
+      - "[OpenRay] 🇫🇷 FR-805"
+      - "[OpenRay] 🇫🇷 FR-822"
+      - "[OpenRay] 🇫🇷 FR-840"
+      - "[OpenRay] 🇫🇷 FR-857"
+      - "[OpenRay] 🇫🇷 FR-875"
+      - "[OpenRay] 🇫🇷 FR-1136"
+      - "[OpenRay] 🇫🇷 FR-1170"
+      - "[OpenRay] 🇵🇱 PL-212"
+      - "[OpenRay] 🇵🇱 PL-321"
+      - "[OpenRay] 🇵🇱 PL-371"
+      - "node 39"
+      - "[OpenRay] 🇵🇱 PL-439"
+      - "[OpenRay] 🇵🇱 PL-459"
+      - "[OpenRay] 🇵🇱 PL-477"
+      - "node 40"
+      - "[OpenRay] 🇬🇧 GB-229"
+      - "[OpenRay] 🇬🇧 GB-287"
+      - "[OpenRay] 🇬🇧 GB-354"
+      - "[OpenRay] 🇬🇧 GB-402"
+      - "[OpenRay] 🇬🇧 GB-422"
+      - "[OpenRay] 🇸🇪 SE-222"
+      - "[OpenRay] 🇸🇪 SE-300"
+      - "node 41"
+      - "[OpenRay] 🇸🇬 SG-170"
+      - "[OpenRay] 🇸🇬 SG-221"
+      - "[OpenRay] 🇸🇬 SG-245"
+      - "[OpenRay] 🇧🇷 BR-29"
+      - "[OpenRay] 🇧🇷 BR-52"
+      - "[OpenRay] 🇹🇷 TR-78"
+      - "[OpenRay] 🇹🇷 TR-189"
+      - "node 42"
+      - "node 43"
+      - "node 44"
+      - "[OpenRay] 🇭🇰 HK-355"
+      - "[OpenRay] 🇭🇰 HK-386"
+      - "[OpenRay] 🇭🇰 HK-496"
+      - "[OpenRay] 🇭🇰 HK-524"
+      - "[OpenRay] 🇭🇰 HK-541"
+      - "[OpenRay] 🇨🇭 CH-48"
+      - "[OpenRay] 🇱🇻 LV-149"
+      - "[OpenRay] 🇱🇻 LV-202"
+      - "[OpenRay] 🇱🇻 LV-228"
+      - "[OpenRay] 🇱🇻 LV-311"
+      - "[OpenRay] 🇱🇻 LV-330"
+      - "[OpenRay] 🇹🇭 TH-4"
+      - "node 45"
+      - "[OpenRay] 🇦🇹 AT-7"
+      - "[OpenRay] 🇪🇸 ES-82"
+      - "node 46"
+      - "node 47"
+      - "[OpenRay] 🇭🇺 HU-57"
+      - "[OpenRay] 🇪🇪 EE-91"
+      - "[OpenRay] 🇮🇹 IT-62"
+      - "[OpenRay] 🇹🇼 TW-78"
+      - "[OpenRay] 🇬🇷 GR-3"
+      - "node 48"
+      - "[OpenRay] 🇮🇳 IN-55"
+      - "[OpenRay] 🇦🇺 AU-12"
+      - "[OpenRay] 🇮🇷 IR-336"
+      - "[OpenRay] 🇮🇷 IR-353"
+      - "[OpenRay] 🇦🇱 AL-30"
+      - "[OpenRay] 🇻🇳 VN-16"
+      - "[OpenRay] 🇦🇪 AE-23"
+      - "[OpenRay] 🇵🇹 PT-5"
+      - "[OpenRay] 🇳🇬 NG-2"
+      - "[OpenRay] 🇰🇼 KW-2"
+      - "[OpenRay] 🇺🇦 UA-18"
+  - name: "♻️ 自动选择"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "[OpenRay] 🇨🇦 CA-11680"
+      - "[OpenRay] 🇨🇦 CA-11727"
+      - node
+      - "[OpenRay] 🇨🇦 CA-11866"
+      - "[OpenRay] 🇨🇦 CA-12035"
+      - "[OpenRay] 🇨🇦 CA-12412"
+      - "node 2"
+      - "[OpenRay] 🇨🇦 CA-12687"
+      - "node 3"
+      - "node 4"
+      - "[OpenRay] 🇨🇦 CA-13813"
+      - "[OpenRay] 🇨🇦 CA-13908"
+      - "node 5"
+      - "[OpenRay] 🇨🇦 CA-14133"
+      - "[OpenRay] 🇨🇦 CA-14212"
+      - "[OpenRay] 🇨🇦 CA-14259"
+      - "[OpenRay] 🇨🇦 CA-14342"
+      - "[OpenRay] 🇨🇦 CA-14437"
+      - "[OpenRay] 🇨🇦 CA-14474"
+      - "[OpenRay] Dynamic-11283"
+      - "[OpenRay] Dynamic-11673"
+      - "[OpenRay] Dynamic-11778"
+      - "node 6"
+      - "[OpenRay] Dynamic-12217"
+      - "node 7"
+      - "node 8"
+      - "[OpenRay] Dynamic-550"
+      - "node 9"
+      - "node 10"
+      - "node 11"
+      - "node 12"
+      - "node 13"
+      - "node 14"
+      - "[OpenRay] Dynamic-13325"
+      - "[OpenRay] Dynamic-13400"
+      - "[OpenRay] Dynamic-13480"
+      - "node 15"
+      - "[OpenRay] Dynamic-13621"
+      - "[OpenRay] Dynamic-13714"
+      - "node 16"
+      - "node 17"
+      - "node 18"
+      - "node 19"
+      - "[OpenRay] Dynamic-13988"
+      - "[OpenRay] Dynamic-14005"
+      - "[OpenRay] Dynamic-14041"
+      - "[OpenRay] Dynamic-1385"
+      - "[OpenRay] Dynamic-490"
+      - "[OpenRay] Dynamic-14104"
+      - "[OpenRay] Dynamic-14126"
+      - "[OpenRay] Dynamic-9366"
+      - "[OpenRay] Dynamic-4912"
+      - "[OpenRay] Dynamic-14185"
+      - "[OpenRay] Dynamic-14206"
+      - "[OpenRay] Dynamic-14247"
+      - "node 20"
+      - "node 21"
+      - "[OpenRay] Dynamic-1729"
+      - "node 22"
+      - "[OpenRay] Dynamic-14333"
+      - "[OpenRay] Dynamic-1750"
+      - "node 23"
+      - "[OpenRay] Dynamic-2"
+      - "[OpenRay] Dynamic-14390"
+      - "[OpenRay] Dynamic-14407"
+      - "[OpenRay] Dynamic-14425"
+      - "[OpenRay] Dynamic-14443"
+      - "[OpenRay] Dynamic-12859"
+      - "[OpenRay] Dynamic-5679"
+      - "[OpenRay] Dynamic-5687"
+      - "node 24"
+      - "node 25"
+      - "node 26"
+      - "node 27"
+      - "[OpenRay] 🇩🇪 DE-3695"
+      - "[OpenRay] 🇩🇪 DE-6018"
+      - "[OpenRay] 🇩🇪 DE-6124"
+      - "[OpenRay] 🇩🇪 DE-6892"
+      - "[OpenRay] 🇩🇪 DE-7483"
+      - "[OpenRay] 🇩🇪 DE-7511"
+      - "[OpenRay] 🇩🇪 DE-7529"
+      - "[OpenRay] 🇩🇪 DE-7884"
+      - "[OpenRay] 🇩🇪 DE-8258"
+      - "[OpenRay] 🇩🇪 DE-8500"
+      - "[OpenRay] 🇩🇪 DE-9008"
+      - "[OpenRay] 🇩🇪 DE-9105"
+      - "[OpenRay] 🇩🇪 DE-9141"
+      - "[OpenRay] 🇩🇪 DE-9170"
+      - "[OpenRay] 🇩🇪 DE-9195"
+      - "[OpenRay] 🇩🇪 DE-9212"
+      - "[OpenRay] 🇩🇪 DE-9242"
+      - "[OpenRay] 🇩🇪 DE-9352"
+      - "[OpenRay] 🇩🇪 DE-9437"
+      - "[OpenRay] 🇩🇪 DE-9472"
+      - "[OpenRay] 🇩🇪 DE-9502"
+      - "node 28"
+      - "[OpenRay] 🇩🇪 DE-9574"
+      - "[OpenRay] 🇩🇪 DE-9593"
+      - "[OpenRay] 🇩🇪 DE-9610"
+      - "node 29"
+      - "[OpenRay] 🇩🇪 DE-9646"
+      - "[OpenRay] 🇺🇸 US-9868"
+      - "node 30"
+      - "node 31"
+      - "node 32"
+      - "[OpenRay] 🇺🇸 US-11902"
+      - "[OpenRay] 🇺🇸 US-11983"
+      - "[OpenRay] 🇺🇸 US-12070"
+      - "[OpenRay] 🇺🇸 US-12140"
+      - "[OpenRay] 🇺🇸 US-12284"
+      - "[OpenRay] 🇺🇸 US-12419"
+      - "[OpenRay] 🇺🇸 US-12451"
+      - "[OpenRay] 🇺🇸 US-12504"
+      - "[OpenRay] 🇺🇸 US-12522"
+      - "[OpenRay] 🇺🇸 US-12539"
+      - "[OpenRay] 🇺🇸 US-12591"
+      - "[OpenRay] 🇺🇸 US-12614"
+      - "[OpenRay] 🇺🇸 US-12673"
+      - "node 33"
+      - "[OpenRay] 🇺🇸 US-12795"
+      - "[OpenRay] 🇺🇸 US-12827"
+      - "[OpenRay] 🇺🇸 US-12846"
+      - "[OpenRay] 🇺🇸 US-12863"
+      - "[OpenRay] 🇺🇸 US-12884"
+      - "[OpenRay] 🇳🇱 NL-10"
+      - "[OpenRay] 🇳🇱 NL-430"
+      - "[OpenRay] 🇳🇱 NL-571"
+      - "[OpenRay] 🇳🇱 NL-625"
+      - "[OpenRay] 🇳🇱 NL-686"
+      - "[OpenRay] 🇳🇱 NL-721"
+      - "[OpenRay] 🇳🇱 NL-745"
+      - "[OpenRay] 🇳🇱 NL-774"
+      - "[OpenRay] 🇳🇱 NL-821"
+      - "[OpenRay] 🇳🇱 NL-866"
+      - "[OpenRay] 🇳🇱 NL-954"
+      - "[OpenRay] 🇳🇱 NL-993"
+      - "[OpenRay] 🇳🇱 NL-1107"
+      - "[OpenRay] 🇳🇱 NL-1165"
+      - "[OpenRay] 🇳🇱 NL-1223"
+      - "[OpenRay] 🇳🇱 NL-1271"
+      - "[OpenRay] 🇳🇱 NL-1306"
+      - "[OpenRay] 🇳🇱 NL-1332"
+      - "[OpenRay] 🇳🇱 NL-1365"
+      - "[OpenRay] 🇳🇱 NL-1382"
+      - "[OpenRay] 🇳🇱 NL-1410"
+      - "node 34"
+      - "[OpenRay] 🇳🇱 NL-1484"
+      - "[OpenRay] 🇳🇱 NL-1567"
+      - "[OpenRay] 🇳🇱 NL-1604"
+      - "[OpenRay] 🇳🇱 NL-1621"
+      - "[OpenRay] 🇳🇱 NL-1639"
+      - "[OpenRay] 🇳🇱 NL-1660"
+      - "[OpenRay] 🇳🇱 NL-1685"
+      - "[OpenRay] 🇳🇱 NL-1709"
+      - "[OpenRay] 🇳🇱 NL-1728"
+      - "[OpenRay] 🇳🇱 NL-1750"
+      - "[OpenRay] 🇳🇱 NL-1768"
+      - "[OpenRay] 🇳🇱 NL-1786"
+      - "[OpenRay] 🇳🇱 NL-1804"
+      - "[OpenRay] 🇳🇱 NL-1821"
+      - "[OpenRay] 🇳🇱 NL-1842"
+      - "[OpenRay] 🇫🇮 FI-244"
+      - "[OpenRay] 🇫🇮 FI-307"
+      - "[OpenRay] 🇫🇮 FI-413"
+      - "[OpenRay] 🇫🇮 FI-496"
+      - "[OpenRay] 🇫🇮 FI-553"
+      - "[OpenRay] 🇫🇮 FI-716"
+      - "[OpenRay] 🇫🇮 FI-739"
+      - "[OpenRay] 🇫🇮 FI-756"
+      - "[OpenRay] 🇫🇮 FI-787"
+      - "[OpenRay] 🇫🇮 FI-805"
+      - "[OpenRay] 🇫🇮 FI-823"
+      - "[OpenRay] 🇷🇺 RU-2231"
+      - "[OpenRay] 🇷🇺 RU-3542"
+      - "[OpenRay] 🇷🇺 RU-4209"
+      - "[OpenRay] 🇷🇺 RU-4497"
+      - "[OpenRay] 🇷🇺 RU-4651"
+      - "[OpenRay] 🇷🇺 RU-4927"
+      - "[OpenRay] 🇷🇺 RU-5123"
+      - "[OpenRay] 🇷🇺 RU-5148"
+      - "[OpenRay] 🇷🇺 RU-5193"
+      - "[OpenRay] 🇷🇺 RU-5277"
+      - "[OpenRay] 🇷🇺 RU-5300"
+      - "[OpenRay] 🇷🇺 RU-5358"
+      - "[OpenRay] 🇷🇺 RU-5388"
+      - "[OpenRay] 🇷🇺 RU-5409"
+      - "[OpenRay] 🇷🇺 RU-5433"
+      - "[OpenRay] 🇷🇺 RU-5452"
+      - "[OpenRay] 🇷🇺 RU-5469"
+      - "[OpenRay] 🇷🇺 RU-5486"
+      - "[OpenRay] 🇷🇺 RU-5504"
+      - "[OpenRay] 🇷🇺 RU-5521"
+      - "[OpenRay] 🇷🇺 RU-5539"
+      - "[OpenRay] 🇷🇺 RU-5556"
+      - "[OpenRay] 🇷🇺 RU-5574"
+      - "[OpenRay] 🇷🇺 RU-5591"
+      - "[OpenRay] 🇷🇺 RU-5608"
+      - "[OpenRay] 🇷🇺 RU-5626"
+      - "[OpenRay] 🇷🇺 RU-5643"
+      - "[OpenRay] 🇷🇺 RU-5664"
+      - "[OpenRay] 🇷🇺 RU-5685"
+      - "[OpenRay] 🇷🇺 RU-5703"
+      - "[OpenRay] 🇷🇺 RU-5720"
+      - "[OpenRay] 🇷🇺 RU-5738"
+      - "[OpenRay] 🇷🇺 RU-5756"
+      - "[OpenRay] 🇰🇷 KR-203"
+      - "[OpenRay] 🇰🇷 KR-356"
+      - "node 35"
+      - "node 36"
+      - "[OpenRay] 🇯🇵 JP-719"
+      - "node 37"
+      - "[OpenRay] 🇯🇵 JP-845"
+      - "node 38"
+      - "[OpenRay] 🇫🇷 FR-460"
+      - "[OpenRay] 🇫🇷 FR-543"
+      - "[OpenRay] 🇫🇷 FR-576"
+      - "[OpenRay] 🇫🇷 FR-604"
+      - "[OpenRay] 🇫🇷 FR-638"
+      - "[OpenRay] 🇫🇷 FR-664"
+      - "[OpenRay] 🇫🇷 FR-699"
+      - "[OpenRay] 🇫🇷 FR-717"
+      - "[OpenRay] 🇫🇷 FR-734"
+      - "[OpenRay] 🇫🇷 FR-752"
+      - "[OpenRay] 🇫🇷 FR-770"
+      - "[OpenRay] 🇫🇷 FR-788"
+      - "[OpenRay] 🇫🇷 FR-805"
+      - "[OpenRay] 🇫🇷 FR-822"
+      - "[OpenRay] 🇫🇷 FR-840"
+      - "[OpenRay] 🇫🇷 FR-857"
+      - "[OpenRay] 🇫🇷 FR-875"
+      - "[OpenRay] 🇫🇷 FR-1136"
+      - "[OpenRay] 🇫🇷 FR-1170"
+      - "[OpenRay] 🇵🇱 PL-212"
+      - "[OpenRay] 🇵🇱 PL-321"
+      - "[OpenRay] 🇵🇱 PL-371"
+      - "node 39"
+      - "[OpenRay] 🇵🇱 PL-439"
+      - "[OpenRay] 🇵🇱 PL-459"
+      - "[OpenRay] 🇵🇱 PL-477"
+      - "node 40"
+      - "[OpenRay] 🇬🇧 GB-229"
+      - "[OpenRay] 🇬🇧 GB-287"
+      - "[OpenRay] 🇬🇧 GB-354"
+      - "[OpenRay] 🇬🇧 GB-402"
+      - "[OpenRay] 🇬🇧 GB-422"
+      - "[OpenRay] 🇸🇪 SE-222"
+      - "[OpenRay] 🇸🇪 SE-300"
+      - "node 41"
+      - "[OpenRay] 🇸🇬 SG-170"
+      - "[OpenRay] 🇸🇬 SG-221"
+      - "[OpenRay] 🇸🇬 SG-245"
+      - "[OpenRay] 🇧🇷 BR-29"
+      - "[OpenRay] 🇧🇷 BR-52"
+      - "[OpenRay] 🇹🇷 TR-78"
+      - "[OpenRay] 🇹🇷 TR-189"
+      - "node 42"
+      - "node 43"
+      - "node 44"
+      - "[OpenRay] 🇭🇰 HK-355"
+      - "[OpenRay] 🇭🇰 HK-386"
+      - "[OpenRay] 🇭🇰 HK-496"
+      - "[OpenRay] 🇭🇰 HK-524"
+      - "[OpenRay] 🇭🇰 HK-541"
+      - "[OpenRay] 🇨🇭 CH-48"
+      - "[OpenRay] 🇱🇻 LV-149"
+      - "[OpenRay] 🇱🇻 LV-202"
+      - "[OpenRay] 🇱🇻 LV-228"
+      - "[OpenRay] 🇱🇻 LV-311"
+      - "[OpenRay] 🇱🇻 LV-330"
+      - "[OpenRay] 🇹🇭 TH-4"
+      - "node 45"
+      - "[OpenRay] 🇦🇹 AT-7"
+      - "[OpenRay] 🇪🇸 ES-82"
+      - "node 46"
+      - "node 47"
+      - "[OpenRay] 🇭🇺 HU-57"
+      - "[OpenRay] 🇪🇪 EE-91"
+      - "[OpenRay] 🇮🇹 IT-62"
+      - "[OpenRay] 🇹🇼 TW-78"
+      - "[OpenRay] 🇬🇷 GR-3"
+      - "node 48"
+      - "[OpenRay] 🇮🇳 IN-55"
+      - "[OpenRay] 🇦🇺 AU-12"
+      - "[OpenRay] 🇮🇷 IR-336"
+      - "[OpenRay] 🇮🇷 IR-353"
+      - "[OpenRay] 🇦🇱 AL-30"
+      - "[OpenRay] 🇻🇳 VN-16"
+      - "[OpenRay] 🇦🇪 AE-23"
+      - "[OpenRay] 🇵🇹 PT-5"
+      - "[OpenRay] 🇳🇬 NG-2"
+      - "[OpenRay] 🇰🇼 KW-2"
+      - "[OpenRay] 🇺🇦 UA-18"
+rules:
+  - "GEOIP,LAN,DIRECT,no-resolve"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,🚀 节点选择"

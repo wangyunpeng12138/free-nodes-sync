@@ -1,0 +1,774 @@
+# 订阅 27.txt -> Clash
+# 由 txt2clash.py 自动生成于 2026-11-01 16:51:17 +0800
+# 节点数量: 47
+# 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: "off"
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  listen: "0.0.0.0:1053"
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "*.localhost"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  proxy-server-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+proxies:
+  - name: node
+    type: vmess
+    server: 47.250.135.244
+    port: 10000
+    uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "node 2"
+    type: vmess
+    server: wjofHsQtEuEywxEq.v.3dns.vip
+    port: 443
+    uuid: a9f4de8b-68f1-44b6-b6a2-1db60940503a
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: wjofHsQtEuEywxEq.v.3dns.vip
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: wjofHsQtEuEywxEq.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "node 3"
+    type: vmess
+    server: wjofhsqteueywxeq.v.3dns.vip
+    port: 443
+    uuid: a9f4de8b-68f1-44b6-b6a2-1db60940503a
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: wjofhsqteueywxeq.v.3dns.vip
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: wjofhsqteueywxeq.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "node 4"
+    type: vmess
+    server: wjofhsqteueywxeq.v.3dns.vip
+    port: 443
+    uuid: a9f4de8b-68f1-44b6-b6a2-1db60940503a
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: wjofhsqteueywxeq.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "node 5"
+    type: vmess
+    server: mdk.mdmekjll.best
+    port: 80
+    uuid: 6E571484-4166-4699-8F58-B34A1823691F
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/game/resources"
+      headers:
+        Host: mdk.mdmekjll.best
+  - name: "node 6"
+    type: vmess
+    server: 142.171.48.179
+    port: 28167
+    uuid: c20f5c31-488e-44c7-b26a-8be8e0737066
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: gw.alicdn.com
+  - name: "🇫🇷 France, Paris | [BL]"
+    type: trojan
+    server: 141.193.213.172
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.calmlunch.com
+    client-fingerprint: android
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+  - name: "🇫🇷 France, Paris | [BL] 2"
+    type: trojan
+    server: 194.147.149.54
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+  - name: "🇫🇷 France, Paris | [BL] 3"
+    type: trojan
+    server: 45.80.111.7
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+  - name: "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]"
+    type: trojan
+    server: de-bots4.h1cloud.net
+    port: 25267
+    password: happybirthdaydaniel
+    udp: true
+    servername: de-bots4.h1cloud.net
+    client-fingerprint: android
+    skip-cert-verify: true
+    network: tcp
+  - name: "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] 2"
+    type: trojan
+    server: de-bots4.h1cloud.net
+    port: 25267
+    password: happybirthdaydaniel
+    udp: true
+    servername: t.me/FuckTheWall
+    client-fingerprint: ios
+    skip-cert-verify: true
+    network: tcp
+  - name: "🇱🇹 Lithuania, Šiauliai | [BL]"
+    type: trojan
+    server: 176.114.95.242
+    port: 443
+    password: UAKWGor-h0woFsxKSWK92HptcM0g2k2h
+    udp: true
+    servername: lt-1.1984.love
+    network: tcp
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL]"
+    type: trojan
+    server: 103.218.173.218
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 2"
+    type: trojan
+    server: 103.219.195.65
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 3"
+    type: trojan
+    server: 103.69.128.221
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 4"
+    type: trojan
+    server: 130.78.185.4
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 5"
+    type: trojan
+    server: 138.124.231.159
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 6"
+    type: trojan
+    server: 141.133.174.88
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 7"
+    type: trojan
+    server: 179.255.127.200
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 8"
+    type: trojan
+    server: 179.255.127.45
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 9"
+    type: trojan
+    server: 179.255.127.82
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 10"
+    type: trojan
+    server: 179.255.157.247
+    port: 8443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 11"
+    type: trojan
+    server: 188.42.145.180
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.volumeroot.com
+    client-fingerprint: qq
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.volumeroot.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 12"
+    type: trojan
+    server: 188.42.145.180
+    port: 443
+    password: humanity
+    udp: true
+    servername: wWw.Volumeroot.cOm.
+    client-fingerprint: android
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.volumerOot.coM.
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 13"
+    type: trojan
+    server: 193.17.183.48
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 14"
+    type: trojan
+    server: 199.119.137.32
+    port: 8443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 15"
+    type: trojan
+    server: 213.238.182.13
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 16"
+    type: trojan
+    server: 43.161.233.40
+    port: 8443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 17"
+    type: trojan
+    server: 43.164.132.109
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 18"
+    type: trojan
+    server: 45.131.4.38
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.pleadcourt.org
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.pleadcourt.org
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 19"
+    type: trojan
+    server: 45.196.235.64
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 20"
+    type: trojan
+    server: 45.8.115.202
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 21"
+    type: trojan
+    server: 46.174.142.238
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 22"
+    type: trojan
+    server: 5.253.29.83
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 23"
+    type: trojan
+    server: 76.13.188.13
+    port: 8443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 24"
+    type: trojan
+    server: 8.47.69.0
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.pleadcourt.org
+    client-fingerprint: safari
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.pleadcourt.org
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 25"
+    type: trojan
+    server: 82.118.18.179
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 26"
+    type: trojan
+    server: 87.236.146.111
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 27"
+    type: trojan
+    server: 93.170.72.138
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇳🇱 The Netherlands, Haarlem | [BL] 28"
+    type: trojan
+    server: 95.182.95.144
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.cordweave.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.cordweave.com
+  - name: "🇺🇸 United States, Ashburn | [BL]"
+    type: trojan
+    server: 176.114.95.242
+    port: 443
+    password: UAKWGor-h0woFsxKSWK92HptcM0g2k2h
+    udp: true
+    servername: us-1.1984.love
+    network: tcp
+  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 | [BL]"
+    type: trojan
+    server: 199.232.78.120
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: community.fastly.steamstatic.com
+    client-fingerprint: chrome
+    alpn:
+      - "http%2F1.1"
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/NLSus—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN"
+      headers:
+        Host: mitivpn-mitivpn-mitivpn.ac.ir
+  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 🇺🇸 | [BL]"
+    type: trojan
+    server: 151.101.36.120
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: firefox.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: mitivpn-mitivpn-mitivpn.ac.ir
+  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 🇺🇸 | [BL] 2"
+    type: trojan
+    server: 167.82.64.120
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: community.fastly.steamstatic.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSus---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN"
+      headers:
+        Host: mitivpn--mitivpn-mitivpn.ac.ir
+  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 🇺🇸 | [BL] 3"
+    type: trojan
+    server: 199.232.78.120
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: firefox.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: mitivpn-mitivpn-mitivpn.ac.ir
+  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
+    type: trojan
+    server: 146.75.57.120
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: firefox.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSus---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN"
+      headers:
+        Host: mitivpn--mitivpn-mitivpn.ac.ir
+  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 2"
+    type: trojan
+    server: 151.101.36.120
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: community.fastly.steamstatic.com
+    client-fingerprint: chrome
+    alpn:
+      - "http%2F1.1"
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/NLSus—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN"
+      headers:
+        Host: mitivpn-mitivpn-mitivpn.ac.ir
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "♻️ 自动选择"
+      - DIRECT
+      - node
+      - "node 2"
+      - "node 3"
+      - "node 4"
+      - "node 5"
+      - "node 6"
+      - "🇫🇷 France, Paris | [BL]"
+      - "🇫🇷 France, Paris | [BL] 2"
+      - "🇫🇷 France, Paris | [BL] 3"
+      - "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]"
+      - "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] 2"
+      - "🇱🇹 Lithuania, Šiauliai | [BL]"
+      - "🇳🇱 The Netherlands, Haarlem | [BL]"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 2"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 3"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 4"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 5"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 6"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 7"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 8"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 9"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 10"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 11"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 12"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 13"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 14"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 15"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 16"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 17"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 18"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 19"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 20"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 21"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 22"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 23"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 24"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 25"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 26"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 27"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 28"
+      - "🇺🇸 United States, Ashburn | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 🇺🇸 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 🇺🇸 | [BL] 3"
+      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 2"
+  - name: "♻️ 自动选择"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+      - node
+      - "node 2"
+      - "node 3"
+      - "node 4"
+      - "node 5"
+      - "node 6"
+      - "🇫🇷 France, Paris | [BL]"
+      - "🇫🇷 France, Paris | [BL] 2"
+      - "🇫🇷 France, Paris | [BL] 3"
+      - "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]"
+      - "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] 2"
+      - "🇱🇹 Lithuania, Šiauliai | [BL]"
+      - "🇳🇱 The Netherlands, Haarlem | [BL]"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 2"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 3"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 4"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 5"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 6"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 7"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 8"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 9"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 10"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 11"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 12"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 13"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 14"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 15"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 16"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 17"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 18"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 19"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 20"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 21"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 22"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 23"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 24"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 25"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 26"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 27"
+      - "🇳🇱 The Netherlands, Haarlem | [BL] 28"
+      - "🇺🇸 United States, Ashburn | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 🇺🇸 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 🇺🇸 | [BL] 3"
+      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 2"
+rules:
+  - "GEOIP,LAN,DIRECT,no-resolve"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,🚀 节点选择"

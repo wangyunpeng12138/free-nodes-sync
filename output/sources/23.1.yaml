@@ -1,0 +1,939 @@
+# 订阅 23.1.txt -> Clash
+# 由 txt2clash.py 自动生成于 2026-11-01 16:51:17 +0800
+# 节点数量: 63
+# 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: "off"
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  listen: "0.0.0.0:1053"
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "*.localhost"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  proxy-server-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+proxies:
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
+    type: vless
+    server: gerwai1488.vvzzkontaktezzvv.garden
+    port: 443
+    uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+    udp: true
+    tls: true
+    servername: gerwai1488.vvzzkontaktezzvv.garden
+    client-fingerprint: edge
+    reality-opts:
+      public-key: EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0
+      short-id: 0c13e8822e7f58aa
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 2"
+    type: vless
+    server: 34.65.54.139
+    port: 443
+    uuid: bd93a117-2e9d-4e1e-b9b9-69d8d7089bdb
+    udp: true
+    tls: true
+    servername: www.cloudflare.com
+    client-fingerprint: qq
+    reality-opts:
+      public-key: DE-S0R0KYYTuBsuQmT-iip6rJ2QsuH6z3SJYlsNyUUI
+      short-id: 5214a92cad4ad90e
+    network: tcp
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 3"
+    type: vless
+    server: 185.71.219.128
+    port: 8443
+    uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
+    udp: true
+    tls: true
+    servername: www.goo.gl
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: yrKUxdxmj4Z5ECKB70SuqjmmjY7KUOtTL9-uWmKLqDw
+      short-id: 3b3066
+    network: tcp
+  - name: "🇨🇦 Canada, Montreal | [BL]"
+    type: vless
+    server: 34.186.193.91
+    port: 443
+    uuid: 2ea95ec3-6b09-470e-952a-ebb171b0d666
+    udp: true
+    tls: true
+    servername: www.cloudflare.com
+    client-fingerprint: edge
+    reality-opts:
+      public-key: 0dSYzX_uvVr-YmiONeKxPt7TdFkaFeYopYfjobxxEC4
+      short-id: 341ec000a90f1ced
+    network: tcp
+  - name: "🇨🇿 Czechia, Prague | [BL]"
+    type: vless
+    server: 153.76.185.145
+    port: 3090
+    uuid: 43202c3e-466c-4dce-b834-c6f4378ba217
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇨🇿 Czechia, Prague | [BL] 2"
+    type: vless
+    server: 194.87.59.97
+    port: 2085
+    uuid: 5afea0a3-cd66-43fd-b431-5203ce3e14c5
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇨🇿 Czechia, Prague | [BL] 3"
+    type: vless
+    server: 153.76.185.145
+    port: 3090
+    uuid: 71cebfdf-ad6c-4844-9c32-a8a9b1f19a17
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇨🇿 Czechia, Prague | [BL] 4"
+    type: vless
+    server: 194.87.59.13
+    port: 2085
+    uuid: 79e66d72-d0e1-4a73-ad10-9f687852d0b4
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇨🇿 Czechia, Prague | [BL] 5"
+    type: vless
+    server: 194.87.59.98
+    port: 2085
+    uuid: 79e66d72-d0e1-4a73-ad10-9f687852d0b4
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇨🇿 Czechia, Prague | [BL] 6"
+    type: vless
+    server: 153.76.185.83
+    port: 3090
+    uuid: 8e757d59-a8d2-4e59-8ba8-bd02e7a46d57
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇨🇿 Czechia, Prague | [BL] 7"
+    type: vless
+    server: 153.76.185.145
+    port: 3090
+    uuid: cf5cc3e0-223c-41b0-9a28-8ee642612d14
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇨🇿 Czechia, Prague | [BL] 8"
+    type: vless
+    server: 194.87.59.16
+    port: 2085
+    uuid: f477a134-fa2c-4573-8599-cd897ac89d98
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇫🇮 Finland, Helsinki | [BL]"
+    type: vless
+    server: 196.196.206.37
+    port: 443
+    uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+    udp: true
+    tls: true
+    servername: fintanil228.vvzzkontaktezzvv.garden
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
+      short-id: d110331f200987ae
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇫🇮 Finland, Helsinki | [BL] 2"
+    type: vless
+    server: fintanil228.vvzzkontaktezzvv.garden
+    port: 443
+    uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+    udp: true
+    tls: true
+    servername: fintanil228.vvzzkontaktezzvv.garden
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
+      short-id: d110331f200987ae
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇫🇮 Finland, Helsinki | [BL] 3"
+    type: vless
+    server: 144.31.150.111
+    port: 443
+    uuid: 6db6b948-655f-4f68-a9e7-865050e05b31
+    udp: true
+    tls: true
+    servername: vera.kyras.pw
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 7ZF54dpwd_FPKDWGIsZdP7pqJ1Q2kwmQBjeQ54xoKzI
+      short-id: cdf67af2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇫🇮 Finland, Helsinki | [BL] 4"
+    type: vless
+    server: vera.kyras.pw
+    port: 443
+    uuid: 6db6b948-655f-4f68-a9e7-865050e05b31
+    udp: true
+    tls: true
+    servername: vera.kyras.pw
+    client-fingerprint: random
+    reality-opts:
+      public-key: 7ZF54dpwd_FPKDWGIsZdP7pqJ1Q2kwmQBjeQ54xoKzI
+      short-id: cdf67af2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇫🇮 Finland, Helsinki | [BL] 5"
+    type: vless
+    server: 2.27.13.62
+    port: 443
+    uuid: 92c863cb-7b96-405c-bc04-ff4d73465f1a
+    udp: true
+    tls: true
+    servername: dissolvedvpn.eu.cc
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/dissolved-ws/"
+      headers:
+        Host: dissolvedvpn.eu.cc
+  - name: "🇫🇮 Finland, Helsinki | [BL] 6"
+    type: vless
+    server: dissolvedvpn.eu.cc
+    port: 443
+    uuid: 92c863cb-7b96-405c-bc04-ff4d73465f1a
+    udp: true
+    tls: true
+    servername: dissolvedvpn.eu.cc
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/dissolved-ws/"
+      headers:
+        Host: dissolvedvpn.eu.cc
+  - name: "🇫🇷 France, Paris | [BL]"
+    type: vless
+    server: 205.237.105.80
+    port: 11443
+    uuid: b4d782e0-d405-4aea-8853-ea3afb64afff
+    udp: true
+    tls: true
+    servername: fr4.sodahub.online
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/api/v2/stream/ws"
+      headers:
+        Host: fr4.sodahub.online
+  - name: "🇩🇪 Germany, Frankfurt am Main | [BL]"
+    type: vless
+    server: 93.123.101.30
+    port: 443
+    uuid: 6db6b948-655f-4f68-a9e7-865050e05b31
+    udp: true
+    tls: true
+    servername: api.murka.fun
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: VsDy8oI6dQcGEOpW-SLALsy0iPwzuol9r2UtBqtIYDk
+      short-id: 2c9d1b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇩🇪 Germany, Frankfurt am Main | [BL] 2"
+    type: vless
+    server: 93.123.101.30
+    port: 4443
+    uuid: 6db6b948-655f-4f68-a9e7-865050e05b31
+    udp: true
+    tls: true
+    servername: api.murka.fun
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 8WnlJPDokVAx8-yzAEqVJ2VQs-1L5b_839JLJQW-ITw
+      short-id: 9fcb7c3f5d8a
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🇩🇪 Germany, Frankfurt am Main | [BL] 3"
+    type: vless
+    server: api.murka.fun
+    port: 443
+    uuid: 6db6b948-655f-4f68-a9e7-865050e05b31
+    udp: true
+    tls: true
+    servername: api.murka.fun
+    client-fingerprint: random
+    reality-opts:
+      public-key: VsDy8oI6dQcGEOpW-SLALsy0iPwzuol9r2UtBqtIYDk
+      short-id: 2c9d1b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇩🇪 Germany, Frankfurt am Main | [BL] 4"
+    type: vless
+    server: api.murka.fun
+    port: 4443
+    uuid: 6db6b948-655f-4f68-a9e7-865050e05b31
+    udp: true
+    tls: true
+    servername: api.murka.fun
+    client-fingerprint: random
+    reality-opts:
+      public-key: 8WnlJPDokVAx8-yzAEqVJ2VQs-1L5b_839JLJQW-ITw
+      short-id: 9fcb7c3f5d8a
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🇵🇱 Poland, Warsaw (Praga-Północ) | [BL]"
+    type: vless
+    server: pl.bubahero.com
+    port: 443
+    uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+    udp: true
+    tls: true
+    servername: pl.bubahero.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00
+      short-id: 9c2378562188c3cb
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇱🇰 Sri Lanka, Battaramulla | [BL]"
+    type: vless
+    server: support.zoom.us
+    port: 80
+    uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: free.sahanwickramasinghe.me
+  - name: "🇸🇪 Sweden, Stockholm | [BL]"
+    type: vless
+    server: 5.157.10.148
+    port: 443
+    uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+    udp: true
+    tls: true
+    servername: surstreming.vvzzkontaktezzvv.garden
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+      short-id: fb442438e2223836
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇸🇪 Sweden, Stockholm | [BL] 2"
+    type: vless
+    server: surstreming.vvzzkontaktezzvv.garden
+    port: 443
+    uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+    udp: true
+    tls: true
+    servername: surstreming.vvzzkontaktezzvv.garden
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+      short-id: fb442438e2223836
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey, Istanbul | [BL]"
+    type: vless
+    server: 185.71.219.128
+    port: 2052
+    uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
+    udp: true
+    tls: true
+    servername: 185.71.219.128
+    client-fingerprint: ios
+    alpn:
+      - h2
+      - http/1.1
+    network: tcp
+  - name: "🇹🇷 Turkey, Istanbul | [BL] 2"
+    type: vless
+    server: 185.71.219.128
+    port: 2082
+    uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
+    udp: true
+    tls: true
+    servername: 185.71.219.128
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      v2ray-http-upgrade: true
+      headers:
+        Host: play.google.com
+  - name: "🇹🇷 Turkey, Istanbul | [BL] 3"
+    type: vless
+    server: 185.71.219.128
+    port: 443
+    uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: www.cloudflare.com
+  - name: "🇹🇷 Turkey, Istanbul | [BL] 4"
+    type: vless
+    server: 185.71.219.128
+    port: 8080
+    uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
+    udp: true
+    tls: true
+    servername: 185.71.219.128
+    client-fingerprint: chrome
+    network: tcp
+  - name: "🇹🇷 Turkey, Mahmutbey | [BL]"
+    type: vless
+    server: 93.190.9.22
+    port: 3090
+    uuid: 131b4772-9597-4c02-8323-6c7be3d7736d
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇹🇷 Turkey, Mahmutbey | [BL] 2"
+    type: vless
+    server: 93.190.9.50
+    port: 3090
+    uuid: 131b4772-9597-4c02-8323-6c7be3d7736d
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇹🇷 Turkey, Mahmutbey | [BL] 3"
+    type: vless
+    server: 93.190.9.157
+    port: 3090
+    uuid: 219b68e3-497a-4127-aec9-8a0142762fba
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇹🇷 Turkey, Mahmutbey | [BL] 4"
+    type: vless
+    server: 93.190.9.2
+    port: 3090
+    uuid: 5afea0a3-cd66-43fd-b431-5203ce3e14c5
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇹🇷 Turkey, Mahmutbey | [BL] 5"
+    type: vless
+    server: 93.190.9.30
+    port: 3090
+    uuid: 5afea0a3-cd66-43fd-b431-5203ce3e14c5
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇹🇷 Turkey, Mahmutbey | [BL] 6"
+    type: vless
+    server: 93.190.8.21
+    port: 3090
+    uuid: 7b22f37d-3b56-4719-a03a-07f05fb517d5
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇹🇷 Turkey, Mahmutbey | [BL] 7"
+    type: vless
+    server: 93.190.9.4
+    port: 3090
+    uuid: 7b22f37d-3b56-4719-a03a-07f05fb517d5
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇹🇷 Turkey, Mahmutbey | [BL] 8"
+    type: vless
+    server: 93.190.8.17
+    port: 3090
+    uuid: 8e757d59-a8d2-4e59-8ba8-bd02e7a46d57
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇹🇷 Turkey, Mahmutbey | [BL] 9"
+    type: vless
+    server: 93.190.9.7
+    port: 3090
+    uuid: 8e757d59-a8d2-4e59-8ba8-bd02e7a46d57
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇹🇷 Turkey, Mahmutbey | [BL] 10"
+    type: vless
+    server: 93.190.9.2
+    port: 3090
+    uuid: 9992be65-f201-44ca-a177-2ca95aaa7ad4
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇹🇷 Turkey, Mahmutbey | [BL] 11"
+    type: vless
+    server: 93.190.8.17
+    port: 3090
+    uuid: cf5cc3e0-223c-41b0-9a28-8ee642612d14
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇹🇷 Turkey, Mahmutbey | [BL] 12"
+    type: vless
+    server: 93.190.8.23
+    port: 3090
+    uuid: cf5cc3e0-223c-41b0-9a28-8ee642612d14
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇹🇷 Turkey, Mahmutbey | [BL] 13"
+    type: vless
+    server: 93.190.9.16
+    port: 3090
+    uuid: f477a134-fa2c-4573-8599-cd897ac89d98
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇹🇷 Turkey, Mahmutbey | [BL] 14"
+    type: vless
+    server: 93.190.9.14
+    port: 3090
+    uuid: fb39bdb9-ef6c-4e48-89e6-b495ac4ca3bf
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇹🇷 Turkey, Mahmutbey | [BL] 15"
+    type: vless
+    server: 93.190.9.20
+    port: 3090
+    uuid: fb39bdb9-ef6c-4e48-89e6-b495ac4ca3bf
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇺🇦 Ukraine, Kyiv | [BL]"
+    type: vless
+    server: 104.143.223.234
+    port: 2085
+    uuid: 131b4772-9597-4c02-8323-6c7be3d7736d
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇺🇦 Ukraine, Kyiv | [BL] 2"
+    type: vless
+    server: 104.143.223.78
+    port: 2085
+    uuid: 5afea0a3-cd66-43fd-b431-5203ce3e14c5
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇺🇦 Ukraine, Kyiv | [BL] 3"
+    type: vless
+    server: 104.143.223.77
+    port: 2085
+    uuid: 8e757d59-a8d2-4e59-8ba8-bd02e7a46d57
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇺🇦 Ukraine, Kyiv | [BL] 4"
+    type: vless
+    server: 104.143.223.70
+    port: 2085
+    uuid: cf5cc3e0-223c-41b0-9a28-8ee642612d14
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇺🇦 Ukraine, Kyiv | [BL] 5"
+    type: vless
+    server: 104.143.223.233
+    port: 2085
+    uuid: fb39bdb9-ef6c-4e48-89e6-b495ac4ca3bf
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇺🇦 Ukraine, Kyiv | [BL] 6"
+    type: vless
+    server: 104.143.223.55
+    port: 2085
+    uuid: fb39bdb9-ef6c-4e48-89e6-b495ac4ca3bf
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇬🇧 United Kingdom, London | [BL]"
+    type: vless
+    server: 31.76.39.141
+    port: 443
+    uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+    udp: true
+    tls: true
+    servername: gb.superbuba.top
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
+      short-id: 4fa44664f6a566d3
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇬🇧 United Kingdom, London | [BL] 2"
+    type: vless
+    server: 31.76.39.153
+    port: 443
+    uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+    udp: true
+    tls: true
+    servername: gb.superbuba.top
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
+      short-id: 4fa44664f6a566d3
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇬🇧 United Kingdom, London | [BL] 3"
+    type: vless
+    server: gb.superbuba.top
+    port: 443
+    uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+    udp: true
+    tls: true
+    servername: gb.superbuba.top
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
+      short-id: 4fa44664f6a566d3
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇬🇧 United Kingdom, London | [BL] 4"
+    type: vless
+    server: 35.189.111.134
+    port: 443
+    uuid: ed492b33-c6b4-463f-8359-3634b0d44251
+    udp: true
+    tls: true
+    servername: www.cloudflare.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: matDwR2fEV41IhLs23SkP9dS6d6qiaRKS4ndb3uR1lk
+      short-id: 89ea42ae375d4933
+    network: tcp
+  - name: "🇬🇧 United Kingdom, London | 🌐 | [BL]"
+    type: vless
+    server: 23.81.34.204
+    port: 443
+    uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
+    udp: true
+    tls: true
+    servername: speed.cloudflare.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
+      short-id: b19b017d6f453873
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇺🇸 United States, Ashburn | [BL]"
+    type: vless
+    server: 185.87.24.170
+    port: 2085
+    uuid: 131b4772-9597-4c02-8323-6c7be3d7736d
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "🇺🇸 United States, San Francisco | [BL]"
+    type: vless
+    server: 216.23.123.211
+    port: 30718
+    uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
+    udp: true
+    tls: true
+    servername: 123.714542.xyz
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: "/Desi-vl"
+      headers:
+        Host: 123.714542.xyz
+  - name: "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇳🇱 🇸🇪 🇺🇸 | [BL]"
+    type: vless
+    server: 104.21.70.21
+    port: 443
+    uuid: 12cebf33-2f96-48a3-af37-c2231e5cef75
+    udp: true
+    tls: true
+    servername: throbbing-moon-a07c.90-ec4.workers.dev
+    network: ws
+    ws-opts:
+      path: "/pyip=Telegram @VPNine1"
+      headers:
+        Host: throbbing-moon-a07c.90-ec4.workers.dev
+    client-fingerprint: chrome
+  - name: "🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL]"
+    type: vless
+    server: 217.144.188.131
+    port: 443
+    uuid: ce230b9c-0531-40da-bc3f-f27a8e059db1
+    udp: true
+    tls: true
+    servername: admin.vkroom-it-service.xyz
+    client-fingerprint: qq
+    reality-opts:
+      public-key: RoZB6zAaInm8X5feCKpL0_wMZRQYxQHWsirP0SYum2g
+      short-id: f3a9c21e8b6d4571
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐 Anycast-IP | 🇺🇸 | [BL]"
+    type: vless
+    server: 154.17.228.81
+    port: 59686
+    uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
+    udp: true
+    tls: true
+    servername: 123.714541.xyz
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: "/Ra-vl"
+      headers:
+        Host: 123.714541.xyz
+  - name: "🌐 Anycast-IP | 🇺🇸 | [BL] 2"
+    type: vless
+    server: 211.229.56.86
+    port: 30021
+    uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
+    udp: true
+    tls: true
+    servername: 123.714541.xyz
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: "/Ra-vl"
+      headers:
+        Host: 123.714541.xyz
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "♻️ 自动选择"
+      - DIRECT
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 2"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 3"
+      - "🇨🇦 Canada, Montreal | [BL]"
+      - "🇨🇿 Czechia, Prague | [BL]"
+      - "🇨🇿 Czechia, Prague | [BL] 2"
+      - "🇨🇿 Czechia, Prague | [BL] 3"
+      - "🇨🇿 Czechia, Prague | [BL] 4"
+      - "🇨🇿 Czechia, Prague | [BL] 5"
+      - "🇨🇿 Czechia, Prague | [BL] 6"
+      - "🇨🇿 Czechia, Prague | [BL] 7"
+      - "🇨🇿 Czechia, Prague | [BL] 8"
+      - "🇫🇮 Finland, Helsinki | [BL]"
+      - "🇫🇮 Finland, Helsinki | [BL] 2"
+      - "🇫🇮 Finland, Helsinki | [BL] 3"
+      - "🇫🇮 Finland, Helsinki | [BL] 4"
+      - "🇫🇮 Finland, Helsinki | [BL] 5"
+      - "🇫🇮 Finland, Helsinki | [BL] 6"
+      - "🇫🇷 France, Paris | [BL]"
+      - "🇩🇪 Germany, Frankfurt am Main | [BL]"
+      - "🇩🇪 Germany, Frankfurt am Main | [BL] 2"
+      - "🇩🇪 Germany, Frankfurt am Main | [BL] 3"
+      - "🇩🇪 Germany, Frankfurt am Main | [BL] 4"
+      - "🇵🇱 Poland, Warsaw (Praga-Północ) | [BL]"
+      - "🇱🇰 Sri Lanka, Battaramulla | [BL]"
+      - "🇸🇪 Sweden, Stockholm | [BL]"
+      - "🇸🇪 Sweden, Stockholm | [BL] 2"
+      - "🇹🇷 Turkey, Istanbul | [BL]"
+      - "🇹🇷 Turkey, Istanbul | [BL] 2"
+      - "🇹🇷 Turkey, Istanbul | [BL] 3"
+      - "🇹🇷 Turkey, Istanbul | [BL] 4"
+      - "🇹🇷 Turkey, Mahmutbey | [BL]"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 2"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 3"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 4"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 5"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 6"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 7"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 8"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 9"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 10"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 11"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 12"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 13"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 14"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 15"
+      - "🇺🇦 Ukraine, Kyiv | [BL]"
+      - "🇺🇦 Ukraine, Kyiv | [BL] 2"
+      - "🇺🇦 Ukraine, Kyiv | [BL] 3"
+      - "🇺🇦 Ukraine, Kyiv | [BL] 4"
+      - "🇺🇦 Ukraine, Kyiv | [BL] 5"
+      - "🇺🇦 Ukraine, Kyiv | [BL] 6"
+      - "🇬🇧 United Kingdom, London | [BL]"
+      - "🇬🇧 United Kingdom, London | [BL] 2"
+      - "🇬🇧 United Kingdom, London | [BL] 3"
+      - "🇬🇧 United Kingdom, London | [BL] 4"
+      - "🇬🇧 United Kingdom, London | 🌐 | [BL]"
+      - "🇺🇸 United States, Ashburn | [BL]"
+      - "🇺🇸 United States, San Francisco | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇳🇱 🇸🇪 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL]"
+      - "🌐 Anycast-IP | 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇺🇸 | [BL] 2"
+  - name: "♻️ 自动选择"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 2"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 3"
+      - "🇨🇦 Canada, Montreal | [BL]"
+      - "🇨🇿 Czechia, Prague | [BL]"
+      - "🇨🇿 Czechia, Prague | [BL] 2"
+      - "🇨🇿 Czechia, Prague | [BL] 3"
+      - "🇨🇿 Czechia, Prague | [BL] 4"
+      - "🇨🇿 Czechia, Prague | [BL] 5"
+      - "🇨🇿 Czechia, Prague | [BL] 6"
+      - "🇨🇿 Czechia, Prague | [BL] 7"
+      - "🇨🇿 Czechia, Prague | [BL] 8"
+      - "🇫🇮 Finland, Helsinki | [BL]"
+      - "🇫🇮 Finland, Helsinki | [BL] 2"
+      - "🇫🇮 Finland, Helsinki | [BL] 3"
+      - "🇫🇮 Finland, Helsinki | [BL] 4"
+      - "🇫🇮 Finland, Helsinki | [BL] 5"
+      - "🇫🇮 Finland, Helsinki | [BL] 6"
+      - "🇫🇷 France, Paris | [BL]"
+      - "🇩🇪 Germany, Frankfurt am Main | [BL]"
+      - "🇩🇪 Germany, Frankfurt am Main | [BL] 2"
+      - "🇩🇪 Germany, Frankfurt am Main | [BL] 3"
+      - "🇩🇪 Germany, Frankfurt am Main | [BL] 4"
+      - "🇵🇱 Poland, Warsaw (Praga-Północ) | [BL]"
+      - "🇱🇰 Sri Lanka, Battaramulla | [BL]"
+      - "🇸🇪 Sweden, Stockholm | [BL]"
+      - "🇸🇪 Sweden, Stockholm | [BL] 2"
+      - "🇹🇷 Turkey, Istanbul | [BL]"
+      - "🇹🇷 Turkey, Istanbul | [BL] 2"
+      - "🇹🇷 Turkey, Istanbul | [BL] 3"
+      - "🇹🇷 Turkey, Istanbul | [BL] 4"
+      - "🇹🇷 Turkey, Mahmutbey | [BL]"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 2"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 3"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 4"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 5"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 6"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 7"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 8"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 9"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 10"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 11"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 12"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 13"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 14"
+      - "🇹🇷 Turkey, Mahmutbey | [BL] 15"
+      - "🇺🇦 Ukraine, Kyiv | [BL]"
+      - "🇺🇦 Ukraine, Kyiv | [BL] 2"
+      - "🇺🇦 Ukraine, Kyiv | [BL] 3"
+      - "🇺🇦 Ukraine, Kyiv | [BL] 4"
+      - "🇺🇦 Ukraine, Kyiv | [BL] 5"
+      - "🇺🇦 Ukraine, Kyiv | [BL] 6"
+      - "🇬🇧 United Kingdom, London | [BL]"
+      - "🇬🇧 United Kingdom, London | [BL] 2"
+      - "🇬🇧 United Kingdom, London | [BL] 3"
+      - "🇬🇧 United Kingdom, London | [BL] 4"
+      - "🇬🇧 United Kingdom, London | 🌐 | [BL]"
+      - "🇺🇸 United States, Ashburn | [BL]"
+      - "🇺🇸 United States, San Francisco | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇳🇱 🇸🇪 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL]"
+      - "🌐 Anycast-IP | 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇺🇸 | [BL] 2"
+rules:
+  - "GEOIP,LAN,DIRECT,no-resolve"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,🚀 节点选择"

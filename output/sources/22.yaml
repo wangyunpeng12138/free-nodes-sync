@@ -1,0 +1,1809 @@
+# 订阅 22.txt -> Clash
+# 由 txt2clash.py 自动生成于 2026-11-01 16:51:16 +0800
+# 节点数量: 114
+# 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: "off"
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  listen: "0.0.0.0:1053"
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "*.localhost"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  proxy-server-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+proxies:
+  - name: "[🇦🇪] [vl-re-ra] [260215-224519.349]"
+    type: vless
+    server: 38.180.27.102
+    port: 8443
+    uuid: 59edf6dc-b1f7-4017-8107-aae4f61a173c
+    udp: true
+    tls: true
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CWeNg8bNNdCHYhjNl01BTevvPnHsXd736dymoBEsbBI
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇦🇱] [vl-no-ws] [260215-225127.091]"
+    type: vless
+    server: pq-albania1.09vpn.com
+    port: 80
+    uuid: b4819c49-6c7e-4b57-9b9b-c73031e1de11
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: pq-albania1.09vpn.com
+  - name: "[🇦🇹] [vl-re-ra] [260215-225104.702]"
+    type: vless
+    server: 38.180.144.156
+    port: 8443
+    uuid: ae0a43bc-6189-456e-9b8a-a93f39af336e
+    udp: true
+    tls: true
+    servername: www.microsoft.com
+    client-fingerprint: safari
+    reality-opts:
+      public-key: 76Cfr5qNl9BCrSb6jdkrgj0HbwfyCwj4oF6JJVhKD0s
+      short-id: 42d7234d875308a2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇦🇺] [vl-re-ra] [260215-224707.328]"
+    type: vless
+    server: 192.9.162.122
+    port: 1443
+    uuid: 7a169e43-ff85-4572-9843-ba7207d07319
+    udp: true
+    tls: true
+    servername: swdist.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ZIBYUH_qQSeI1T6xImXG6MEZXP2yZW3NqGa8W69Cfyk
+      short-id: dde50f55d81116
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇧🇦] [vl-no-ws] [260215-224654.457]"
+    type: vless
+    server: pq-bosniaandherzegovina1.09vpn.com
+    port: 80
+    uuid: 75e1fde7-6bf6-48ef-ba43-400e960e185b
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: pq-bosniaandherzegovina1.09vpn.com
+  - name: "[🇨🇦] [vl-re-ra] [260215-224908.485]"
+    type: vless
+    server: daily.asperwild.com
+    port: 443
+    uuid: 9c8bb1f3-c261-4c4a-a97c-e0778dfb2772
+    udp: true
+    tls: true
+    servername: daily.asperwild.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: hLlhnCZGMfjakOk2U1uDynwnqG0z4A8HSE4cu-lrrzo
+      short-id: 9a461d450ab387b5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: node
+    type: vmess
+    server: 15.235.41.200
+    port: 80
+    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/IOebhLMhl1CTbFHbL95myfRX2"
+      headers:
+        Host: 15.235.41.200
+  - name: "node 2"
+    type: vmess
+    server: 51.79.103.76
+    port: 80
+    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+    alterId: 0
+    cipher: aes-128-gcm
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/IOebhLMhl1CTbFHbL95myfRX2"
+      headers:
+        Host: google.com
+  - name: "[🇨🇿] [vl-re-ra] [260215-224402.657]"
+    type: vless
+    server: 45.15.162.85
+    port: 443
+    uuid: 45e3b7ad-03b6-42fc-b616-1e92bdd0a5b3
+    udp: true
+    tls: true
+    servername: hls-svod.itunes.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: f79448a30d
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇩🇪] [vl-no-ra] [260215-224346.469]"
+    type: vless
+    server: 85.133.250.174
+    port: 443
+    uuid: 416bf752-1181-4733-945a-3403d7ff54dc
+    udp: true
+    tls: false
+    network: tcp
+  - name: "[🇩🇪] [vl-no-ra] [260215-224850.127]"
+    type: vless
+    server: antifiltervip.pwteam.ir
+    port: 38463
+    uuid: 9706248e-259e-4738-9cde-a3f7e11be4b8
+    udp: true
+    tls: false
+    network: tcp
+  - name: "[🇩🇪] [vl-no-ws] [260215-224429.785]"
+    type: vless
+    server: nodejs.org
+    port: 80
+    uuid: 4c97ec3e-3527-48c5-80ff-b715463896ba
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed"
+      headers:
+        Host: kindhearted-parkb5rjo2juer.sportland.company.
+  - name: "[🇩🇪] [vl-no-ws] [260215-225407.823]"
+    type: vless
+    server: telegram-srcvpn.fastlynew.hosting-ip.com
+    port: 80
+    uuid: e4a6331b-e3e7-4f4e-b46a-8c31bf44bf83
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--/@HqV2RayNG--@HqV2RayNG?ed=2056"
+      headers:
+        Host: moodaontw.global.ssl.fastly.net
+  - name: "[🇩🇪] [vl-re-gr] [260215-224229.277]"
+    type: vless
+    server: 195.201.222.173
+    port: 31232
+    uuid: 28cdbb46-1309-45fb-92f0-6a761bc30236
+    udp: true
+    tls: true
+    servername: tgju.org
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: YMUFe3eUfODM1B0huGgXNxdZLtQczEzSHS3a1TJXyGQ
+      short-id: 280a1eae36
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "@mahdi_383ir"
+  - name: "[🇩🇪] [vl-re-ra] [260215-224137.101]"
+    type: vless
+    server: nl1.pineappled.org
+    port: 443
+    uuid: 18f72be7-0651-4037-928b-8a309d685796
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇩🇪] [vl-re-ra] [260215-224230.034]"
+    type: vless
+    server: 38.244.215.124
+    port: 443
+    uuid: 28f9da30-cd81-4726-86a9-d2e17b14decc
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: teH8elrVppRluj9CeSno57ARzAUKRLCu6X9f8yvxvhQ
+      short-id: 0ad4430e2c
+    network: tcp
+  - name: "[🇩🇪] [vl-re-ra] [260215-224502.095]"
+    type: vless
+    server: 144.31.17.116
+    port: 443
+    uuid: 54ef6124-3a61-4a44-9901-78fadc6c59d9
+    udp: true
+    tls: true
+    servername: sun6-22.userapi.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: iAWzXE2vetDOtZePY7-Y64p5AY7h35eE3YnVSZM8LUw
+      short-id: 760f7a4c46859978
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇩🇪] [vl-re-ra] [260215-224830.479]"
+    type: vless
+    server: 146.185.208.206
+    port: 443
+    uuid: 914b0493-7094-4840-b94d-8ec3e92e9c43
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: do22ES2nDjO0EggET4H9Gf8_tEY7PwZv76zVXPrDojQ
+      short-id: 5f22
+    network: tcp
+  - name: "[🇩🇪] [vl-re-ra] [260215-225101.963]"
+    type: vless
+    server: 185.143.238.229
+    port: 443
+    uuid: ad5d8d51-18f4-451b-9c01-7baff1d9b244
+    udp: true
+    tls: true
+    servername: www.google.com
+    reality-opts:
+      public-key: 30eHXS9LpzFg443EtLaGLuDFo2QGa4zvLM7WdT-tSiM
+      short-id: 35debf0dc757d053
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇩🇪] [vl-re-ra] [260215-225249.530]"
+    type: vless
+    server: 146.185.208.206
+    port: 8443
+    uuid: cede58e4-091f-4eb7-b9d5-9b892e85b291
+    udp: true
+    tls: true
+    servername: max.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: do22ES2nDjO0EggET4H9Gf8_tEY7PwZv76zVXPrDojQ
+      short-id: 5f22
+    network: tcp
+  - name: "[🇩🇪] [vl-tl-ws] [260215-224046.762]"
+    type: vless
+    server: chatgpt.com
+    port: 2087
+    uuid: 0c65de9b-e736-4487-bb4b-5ff5ab58812f
+    udp: true
+    tls: true
+    servername: SMALL-bREEZe-e257.MOkEt12807.WOrkeRs.Dev
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiMVlqdVJib05XdDBVIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560"
+      headers:
+        Host: small-breeze-e257.moket12807.workers.dev
+  - name: "[🇩🇪] [vl-tl-ws] [260215-224706.743]"
+    type: vless
+    server: vpn.nnet.online
+    port: 443
+    uuid: 79d24ca6-8f75-4653-9a9c-2d4ee38f4b88
+    udp: true
+    tls: true
+    servername: nnet.online
+    network: ws
+    ws-opts:
+      path: "/vless-tls"
+      headers:
+        Host: nnet.online
+    client-fingerprint: chrome
+  - name: "[🇩🇪] [vl-tl-ws] [260215-224828.488]"
+    type: vless
+    server: tck-cmhdwom6nlm1k50eelcbh6kum4ob.s90786383.workers.dev
+    port: 443
+    uuid: 90b9fe99-5bd4-4fa8-a290-4987833adb22
+    udp: true
+    tls: true
+    servername: TCK-cmhdwom6Nlm1k50eeLCBh6kUM4Ob.S90786383.workErs.deV
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiZGZqSnhwWmI5NzQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjEwLjIxNS4yNiIsIjIwNi4xNjYuMjUxLjkyIiwiMzcuNDguOTAuMTIwIiwiMTI1LjcuMjQuMjUxIiwiODAuNzYuMzIuMTIiXX0=?ed=2560"
+      headers:
+        Host: tck-cmhdwom6nlm1k50eelcbh6kum4ob.s90786383.workers.dev
+  - name: "[🇩🇪] [vl-tl-ws] [260215-225309.434]"
+    type: vless
+    server: 188.114.96.3
+    port: 2053
+    uuid: d406dda1-2302-4805-a62c-f3dc36799a43
+    udp: true
+    tls: true
+    servername: V2nGFasT.VnkRycw.WOrKeRS.dev
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiODJaTHE3aHlUIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560"
+      headers:
+        Host: v2ngfast.vnkrycw.workers.dev
+  - name: "[🇩🇪] [vl-tl-xh] [260215-224730.623]"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: 8196d16d-855b-42bc-80f4-b5db138c5572
+    udp: true
+    tls: true
+    servername: test2.testrobot.site
+    client-fingerprint: chrome
+    network: xhttp
+    xhttp-opts:
+      path: "/randomibash043"
+      host: test2.testrobot.site
+      mode: auto
+  - name: "node 3"
+    type: vmess
+    server: 162.19.248.238
+    port: 550
+    uuid: ede27a79-b039-490b-932c-495de4b68880
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "[🇪🇸] [vl-re-ra] [260215-224112.615]"
+    type: vless
+    server: 79.137.175.44
+    port: 443
+    uuid: 11e41a32-6672-48a0-b9cb-c8694242ecff
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: random
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 48fccabc158a4c22
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇪🇸] [vl-re-ra] [260215-225105.379]"
+    type: vless
+    server: 37.139.34.145
+    port: 443
+    uuid: ae1d0280-68e4-40a4-adce-a634ebe0948b
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇫🇮] [vl-no-ws] [260215-225148.557]"
+    type: vless
+    server: h22.amoosias.site
+    port: 18521
+    uuid: bbb0d738-975d-41c5-ebfe-164f8cdc914f
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: h22.amoosias.site
+  - name: "[🇫🇮] [vl-re-ra] [260215-224153.967]"
+    type: vless
+    server: dns.dressforida.monster
+    port: 443
+    uuid: 1ebb7caf-8704-48de-adbb-30b0b821c650
+    udp: true
+    tls: true
+    servername: www.microsoft.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
+      short-id: 9eff19e0405a
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇫🇮] [vl-re-ra] [260215-224502.593]"
+    type: vless
+    server: 109.172.54.240
+    port: 59398
+    uuid: 54fd9404-923c-45b4-88f8-5f6097eb0829
+    udp: true
+    tls: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: b8NtQQVV_K7uwM3aetyCznK4DHk3rb_ngogf8-Ro3FI
+      short-id: e5d5a211
+    network: tcp
+  - name: "[🇫🇮] [vl-re-ra] [260215-224859.247]"
+    type: vless
+    server: 64.188.73.12
+    port: 443
+    uuid: 99bd2791-8e27-435b-a1e2-c9b625101af9
+    udp: true
+    tls: true
+    servername: www.intel.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: PJQxY2FFwn9nXutKZx1t9TcMnRjqXpBAnIDB5jvwEAU
+      short-id: d91248fbca
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇫🇮] [vl-re-ra] [260215-225228.532]"
+    type: vless
+    server: info.mattesaira.cc
+    port: 443
+    uuid: c819f3b4-0c46-4ad3-8b6c-beef5215be4a
+    udp: true
+    tls: true
+    servername: www.microsoft.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: uf64ptbhMNcLWuwEfOzQB7qgn725h6w9DmKRteQQPwg
+      short-id: 036861b20a94
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇫🇮] [vl-re-ra] [260215-225355.595]"
+    type: vless
+    server: 94.131.100.42
+    port: 42642
+    uuid: e04f764c-6009-45aa-b033-97a90024634b
+    udp: true
+    tls: true
+    servername: stats.vk-portal.net
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: iIRXKqJFxSwYKAvwwB952WMLgU1UDC9yFqNUsRYuW2U
+      short-id: 41ac
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇫🇮] [vl-tl-ht] [260215-225243.902]"
+    type: vless
+    server: connect.znex.ir
+    port: 2087
+    uuid: cce9a82d-eb90-4f9f-afc0-1a55442fd235
+    udp: true
+    tls: true
+    servername: fnldvip.duosseldorf.ir
+    network: ws
+    ws-opts:
+      path: "/"
+      v2ray-http-upgrade: true
+      headers:
+        Host: fnldvip.duosseldorf.ir
+    client-fingerprint: chrome
+  - name: "[🇫🇮] [vl-tl-xh] [260215-224811.885]"
+    type: vless
+    server: 8.6.112.0
+    port: 443
+    uuid: 8d5ebe3f-d0c5-45f2-9dde-21ee29fc0ee6
+    udp: true
+    tls: true
+    servername: fin.moell13.org
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: fin.moell13.org
+      mode: auto
+    client-fingerprint: chrome
+  - name: "[🇫🇷] [vl-no-ws] [260215-225507.712]"
+    type: vless
+    server: ov-france1.09vpn.com
+    port: 80
+    uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: ov-france1.09vpn.com
+  - name: "[🇫🇷] [vl-re-ra] [260215-225044.830]"
+    type: vless
+    server: 94.183.186.118
+    port: 443
+    uuid: a7b4fe0c-2577-4aa3-9e0d-573fec207c65
+    udp: true
+    tls: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: YyRIZiLux0R8BZfaM3BseFoDRzoZ9ErRTbAvDATd-mI
+      short-id: "16"
+    network: tcp
+  - name: "[🇫🇷] [vl-tl-ra] [260215-224052.964]"
+    type: vless
+    server: fr.1323.world
+    port: 443
+    uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4
+    udp: true
+    tls: true
+    servername: b12a6eea4807ca4e.1323.world
+    client-fingerprint: chrome
+    alpn:
+      - h2
+    network: tcp
+  - name: "node 4"
+    type: vmess
+    server: 94.232.247.165
+    port: 45653
+    uuid: 9e91d19a-c73f-4276-adbc-b337c374259c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "node 5"
+    type: vmess
+    server: Cpannel.iranucshop.ir
+    port: 2085
+    uuid: 2c72c667-093c-47a5-a108-493c93282b57
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - fast.com
+  - name: "node 6"
+    type: vmess
+    server: 5.196.29.123
+    port: 2082
+    uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  - name: "node 7"
+    type: vmess
+    server: chatgpt.com
+    port: 8443
+    uuid: 19e52bf4-1b7d-4bd4-ae66-6ca024436c17
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: frsys.fl-dl.com
+    network: ws
+    ws-opts:
+      path: "/gbt"
+      headers:
+        Host: frsys.fl-dl.com
+    client-fingerprint: chrome
+  - name: "[🇬🇧] [vl-tl-xh] [260215-224110.700]"
+    type: vless
+    server: 188.114.99.243
+    port: 8443
+    uuid: 115e24e4-fc6b-4d89-8f55-05eb00770001
+    udp: true
+    tls: true
+    servername: ic.imsoon.io
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: xhttp
+    xhttp-opts:
+      path: "/t.me/Vip_fragment_v2ray"
+      host: ic.imsoon.io.
+      mode: auto
+  - name: "node 8"
+    type: vmess
+    server: 57.129.132.223
+    port: 80
+    uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+      headers:
+        Host: google.com
+  - name: "[🇭🇰] [vl-no-ws] [260215-224557.793]"
+    type: vless
+    server: 82.25.145.95
+    port: 38666
+    uuid: 65d8bfbf-f625-4d35-9a1c-2b19a55e58e2
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 82.25.145.95
+  - name: "[🇭🇰] [vl-tl-ws] [260215-224339.060]"
+    type: vless
+    server: 104.26.0.221
+    port: 443
+    uuid: 3f9c8463-8610-3ed8-86c8-a26713067825
+    udp: true
+    tls: true
+    servername: dabaius2.sylu.net
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/db10240eb751d6ab"
+      headers:
+        Host: dabaius2.sylu.net
+  - name: "[🇭🇰] [vl-tl-ws] [260215-224844.270]"
+    type: vless
+    server: v1.dabache.top
+    port: 443
+    uuid: 9523a24b-f6bf-339e-9950-32829162ffc2
+    udp: true
+    tls: true
+    servername: dabaihk.webn.cc
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/db1024532f9883c8"
+      headers:
+        Host: dabaihk.webn.cc
+  - name: "node 9"
+    type: vmess
+    server: 47.243.135.74
+    port: 55185
+    uuid: 1375985e-334a-4c25-8f64-52a182bc8037
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/Notif_Chat"
+      headers:
+        Host: 47.243.135.74
+  - name: "node 10"
+    type: vmess
+    server: 47.244.120.197
+    port: 36703
+    uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/arki?ed=2048"
+      headers:
+        Host: google.com
+  - name: "node 11"
+    type: vmess
+    server: 8.210.79.212
+    port: 55185
+    uuid: aa3c3018-288b-46f3-af1c-9044e18d6e5b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/Notif_Chat"
+      headers:
+        Host: 8.210.79.212
+  - name: "node 12"
+    type: vmess
+    server: n1747624282.lie5d.cyou
+    port: 443
+    uuid: 30109222-8c53-41bc-9781-a01cdeb68e4c
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: n1747624282.lie5d.cyou
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: n1747624282.lie5d.cyou
+    client-fingerprint: chrome
+  - name: "node 13"
+    type: vmess
+    server: n1761214911.74qxv.top
+    port: 443
+    uuid: 372c1939-299d-4946-9633-5ffa971f8b67
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: n1761214911.74qxv.top
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: n1761214911.74qxv.top
+    client-fingerprint: chrome
+  - name: "[🇭🇺] [vl-no-ws] [260215-224533.264]"
+    type: vless
+    server: pq-hungary1.09vpn.com
+    port: 80
+    uuid: 5f1811a9-292a-4d7e-b59f-1a5ff9390647
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: pq-hungary1.09vpn.com
+  - name: "node 14"
+    type: vmess
+    server: pq-Hungary1.09vpn.com
+    port: 80
+    uuid: 703f722a-4bdf-4e9d-9afd-a681fdf87c74
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+      headers:
+        Host: pq-Hungary1.09vpn.com
+  - name: "[🇮🇳] [vl-no-ws] [260215-224520.352]"
+    type: vless
+    server: pq-india1.09vpn.com
+    port: 80
+    uuid: 5a54a377-a9d3-4ea5-b7b0-17bd899e202d
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: pq-india1.09vpn.com
+  - name: "node 15"
+    type: vmess
+    server: 20.193.153.19
+    port: 15834
+    uuid: 39a8c374-76b1-4e90-ab85-85cd9a42ded2
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "[🇮🇹] [vl-no-ra] [260215-225155.138]"
+    type: vless
+    server: zone.it.flicknet.ir
+    port: 41426
+    uuid: bdf97c06-ae1f-47e9-b47a-9d9ff47b5820
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - skyroom.online
+  - name: "[🇮🇹] [vl-re-ra] [260215-225430.674]"
+    type: vless
+    server: 130.193.59.133
+    port: 51101
+    uuid: eb4234b2-8083-4038-af1d-ae752b4ad6d4
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: f32140952ba18e18
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇯🇵] [vl-re-ra] [260215-224548.747]"
+    type: vless
+    server: 45.12.134.86
+    port: 8443
+    uuid: 6432bbec-c4c0-4837-9aa3-82e79def5017
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CwOLLTLuQN1SPzvenr_B_ErYYoOB_ScSvGvH-iYOtF8
+      short-id: 83780413c2ad3eaa
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇯🇵] [vl-tl-ws] [260215-225027.127]"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: a2bb8800-245c-47d3-9539-02f04066e90e
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/140.83.59.158=15805"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "node 16"
+    type: vmess
+    server: n1753598448.74qxv.top
+    port: 443
+    uuid: 3cd6f849-078e-4da9-8080-a2791b51b766
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: n1753598448.74qxv.top
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: n1753598448.74qxv.top
+    client-fingerprint: chrome
+  - name: "[🇰🇷] [vl-tl-ra] [260215-225414.638]"
+    type: vless
+    server: ako.pagate.top
+    port: 443
+    uuid: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
+    udp: true
+    tls: true
+    servername: ako.pagate.top
+    client-fingerprint: chrome
+    network: tcp
+  - name: "node 17"
+    type: vmess
+    server: c7.620720.xyz
+    port: 8443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: c7.620720.xyz
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: c7.620720.xyz
+    client-fingerprint: chrome
+  - name: "[🇰🇿] [vl-re-xh] [260215-225414.383]"
+    type: vless
+    server: kz.vpnspacev.com
+    port: 443
+    uuid: e6c99501-2522-47dd-9652-f0ef12d6f277
+    udp: true
+    tls: true
+    servername: vpnspacev.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: zjv3djnsCKDqP7zZFIrJ9ImzgdPE3zFMCYrOvdWqkEE
+      short-id: 06bf5b24acb9
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: vpnspacev.com
+      mode: auto
+  - name: "[🇱🇻] [vl-re-ra] [260215-224225.229]"
+    type: vless
+    server: 176.120.67.169
+    port: 443
+    uuid: 2749534e-8bd1-45cf-8b17-c28bed9236c0
+    udp: true
+    tls: true
+    servername: wikimedia.org
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇱🇻] [vl-re-ra] [260215-225214.770]"
+    type: vless
+    server: braskivo.ru
+    port: 8443
+    uuid: c3cb51a2-9f85-40f4-848f-fde89920bb90
+    udp: true
+    tls: true
+    servername: ozon.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7HejPU15kdTl9QG_8AygEM3w0ythsbhG6q_SwUumyR0
+      short-id: 72b11c6ddbcfecf1
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "node 18"
+    type: vmess
+    server: 47.250.45.234
+    port: 8613
+    uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/arki?ed=2048"
+      headers:
+        Host: 47.250.45.234
+  - name: "[🇳🇱] [vl-no-ht] [260215-224909.302]"
+    type: vless
+    server: aafc22.lizard2shop.com
+    port: 2095
+    uuid: 9cb9e5c0-dbc1-4b94-a0b3-14f805e375e9
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/mammadali"
+      v2ray-http-upgrade: true
+      headers:
+        Host: mza90.lizard2shop.com
+  - name: "[🇳🇱] [vl-no-ws] [260215-224303.343]"
+    type: vless
+    server: nodejs.org
+    port: 80
+    uuid: 33e1a095-1e25-4198-bfe7-ec312e4f98ee
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed"
+      headers:
+        Host: CREDibLe-pLaNt7ddV4jJ7et.OnEeaT.CO.
+  - name: "[🇳🇱] [vl-no-ws] [260215-225515.420]"
+    type: vless
+    server: nodejs.org
+    port: 2052
+    uuid: f8ae018b-b84d-4c9b-b03b-4642c3a25977
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed"
+      headers:
+        Host: ExEMplAry-MILkytsxQiQYso.sPortlaNd.CoMPANy.
+  - name: "[🇳🇱] [vl-re-ra] [260215-224311.834]"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 36d8b4dc-e38e-4ad9-89be-b5f657d97368
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "[🇳🇱] [vl-re-ra] [260215-224855.215]"
+    type: vless
+    server: 89.110.80.96
+    port: 4443
+    uuid: 9897f9f0-ee1d-4428-8a97-4a248751d5c5
+    udp: true
+    tls: true
+    servername: github.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
+      short-id: aa7e96542880027a
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇳🇱] [vl-re-ra] [260215-225156.251]"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: be420958-a605-4513-9371-838e9ddb2866
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "[🇳🇱] [vl-re-ra] [260215-225404.841]"
+    type: vless
+    server: midorinote.online
+    port: 8443
+    uuid: e39b2db3-ad43-48d5-8d57-22e4998702b7
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Cxvc5bVMKln6RxPs5MtviUZNDsmpfuYUK8UFBlcBaS0
+      short-id: 808e2d36726ee97e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇳🇱] [vl-tl-gr] [260215-224027.322]"
+    type: vless
+    server: 104.26.7.205
+    port: 443
+    uuid: 071435dc-6ab9-4502-8441-ed4a4b609092
+    udp: true
+    tls: true
+    servername: n1.n1server.org
+    alpn:
+      - h2
+      - http/1.1
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+    client-fingerprint: chrome
+  - name: "[🇳🇱] [vl-tl-ws] [260215-224759.744]"
+    type: vless
+    server: fa.gamingserverstream.ir
+    port: 443
+    uuid: 8ae40bd9-f769-4b1b-bf89-fde9d5afc4c5
+    udp: true
+    tls: true
+    servername: pmeli.express-servers.ir
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: pmeli.express-servers.ir
+    client-fingerprint: chrome
+  - name: "node 19"
+    type: vmess
+    server: 85.17.192.110
+    port: 16623
+    uuid: ef984d19-4df7-4592-8ca8-a3f658b78c0a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - bmw.com
+  - name: "node 20"
+    type: vmess
+    server: 192.200.160.173
+    port: 2053
+    uuid: 9585636a-54bc-419a-90a1-76c5c6ec74df
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: app.hajmyab.ir
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: app.hajmyab.ir
+    client-fingerprint: chrome
+  - name: "[🇵🇱] [vl-re-ra] [260215-224625.264]"
+    type: vless
+    server: 45.144.51.22
+    port: 443
+    uuid: 6c49485f-843c-4e96-abfe-046bc473c7b0
+    udp: true
+    tls: true
+    servername: github.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: euR8poucesDF-UxANxJ7Uqg1t4cfiDtAzAQcTVhRQCE
+      short-id: 140d8b3989bf5116
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇵🇱] [vl-re-ra] [260215-224742.252]"
+    type: vless
+    server: 151.115.96.243
+    port: 7242
+    uuid: 859b7d71-a9fc-4234-8e03-42eb876a170a
+    udp: true
+    tls: true
+    servername: modily.net
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: jGmjU0vrRXCnIwn0rVatYKf5ihWZhMvqidp2ceY1QAM
+      short-id: 8c01e365
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇵🇱] [vl-re-ra] [260215-225155.303]"
+    type: vless
+    server: 2.56.125.209
+    port: 49868
+    uuid: be015dd2-30b4-4fcf-a9ee-080c13ac13fb
+    udp: true
+    tls: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: joEKL4Itljxodt1SOe1itSMrAH9bk_udpPtXgIjdu10
+      short-id: 6d638e
+    network: tcp
+  - name: "[🇵🇱] [vl-tl-ws] [260215-224115.090]"
+    type: vless
+    server: telegram.vpnazadie.store
+    port: 443
+    uuid: 128a854c-13ab-472e-b418-139869e82df6
+    udp: true
+    tls: true
+    servername: telegram.vpnazadie.store
+    network: ws
+    ws-opts:
+      path: "/vless-tls"
+      headers:
+        Host: vpnazadie.store
+    client-fingerprint: chrome
+  - name: "[🇷🇺] [vl-no-ra] [260215-225530.066]"
+    type: vless
+    server: 104.128.134.181
+    port: 34816
+    uuid: fd058cd3-55fa-43ce-a634-1920b7d12c45
+    udp: true
+    tls: false
+    network: tcp
+  - name: "[🇷🇺] [vl-re-ra] [260215-224458.090]"
+    type: vless
+    server: 45.144.64.180
+    port: 443
+    uuid: 53d37ac8-efc2-492c-b6c6-a864dfebbbff
+    udp: true
+    tls: true
+    servername: ru.jinnie.lol
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 0-0a99RLOG_2OW4j-e-UlzlMhnLubb9Gs6Ykd_bnjCM
+      short-id: e8b1ac21a7685b9c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇷🇺] [vl-re-ra] [260215-224711.887]"
+    type: vless
+    server: 109.120.188.166
+    port: 443
+    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇸🇪] [tr-tl-ws] [260215-223548.154]"
+    type: trojan
+    server: v1.dabache.top
+    port: 8443
+    password: T9BpZIVMNv
+    udp: true
+    servername: sweden.vmaxpanel.com
+    network: ws
+    ws-opts:
+      path: "/amd"
+      headers:
+        Host: sweden.vmaxpanel.com
+  - name: "[🇸🇬] [vl-tl-ws] [260215-224053.725]"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: 0ec1c958-0087-4ca6-b4b2-b846c0f62419
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/45.32.100.46=13802"
+      headers:
+        Host: afrcloud22.mmv.kr
+  - name: "node 21"
+    type: vmess
+    server: cf.090227.xyz
+    port: 443
+    uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: sgal.dagrate.eu.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: sgal.dagrate.eu.org
+    client-fingerprint: chrome
+  - name: "[🇹🇷] [vl-no-ht] [260215-225303.394]"
+    type: vless
+    server: 172.66.128.70
+    port: 8880
+    uuid: d1b1c375-d39d-4e34-abf1-e9389c432162
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/V2RayyNGvpn?ed=512"
+      v2ray-http-upgrade: true
+      headers:
+        Host: speak-teammates.rxpgain.top
+  - name: "[🇹🇷] [vl-re-ra] [260215-224452.533]"
+    type: vless
+    server: 84.252.136.245
+    port: 8443
+    uuid: 525e49c0-8396-4dac-bb2d-36412723e5cb
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: e57932a42872a362
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇹🇷] [vl-tl-xh] [260215-225328.257]"
+    type: vless
+    server: freeiran.lookanet.app
+    port: 443
+    uuid: da79ecfc-bdc4-4fa9-b7f7-3aa3e162fafa
+    udp: true
+    tls: true
+    servername: speak-teammates.rxpgain.top
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: xhttp
+    xhttp-opts:
+      path: "/t.me.V2RayyNGvpn?ed=1024"
+      host: speak-teammates.rxpgain.top
+      mode: auto
+  - name: "node 22"
+    type: vmess
+    server: 185.104.189.38
+    port: 80
+    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560"
+      headers:
+        Host: 185.104.189.38
+  - name: "node 23"
+    type: vmess
+    server: tr1-smart.adelping.com
+    port: 80
+    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: tr1-smart.adelping.com
+  - name: "node 24"
+    type: vmess
+    server: TM_AZARBAYJAB1.SERV.9.pagES.DEV
+    port: 80
+    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560"
+      headers:
+        Host: tr1-smart.adelping.com
+  - name: "node 25"
+    type: vmess
+    server: akh1.alibabaapi6.com
+    port: 14610
+    uuid: a2f33600-7ff1-46c4-abc9-7deb843e88a3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/5e60be4f/"
+      headers:
+        Host: akh1.alibabaapi6.com
+  - name: "[🇺🇸] [vl-no-gr] [260215-224542.554]"
+    type: vless
+    server: 40.160.14.104
+    port: 8880
+    uuid: 6251f84e-9c02-4140-921c-6b47d394fb96
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "[🇺🇸] [vl-no-ws] [260215-224428.119]"
+    type: vless
+    server: nhju.ae1autumn.indevs.in
+    port: 80
+    uuid: 4c205c81-5694-43fe-a287-af563a2ebc05
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/AbRz6tBwBWo4gds7cXpDB5nO5"
+      headers:
+        Host: nhju.ae1autumn.indevs.in
+  - name: "[🇺🇸] [vl-re-ra] [260215-224325.426]"
+    type: vless
+    server: 1002.kingfisher.top
+    port: 10000
+    uuid: 3be004cd-e901-4fef-9691-ab63e9758ee2
+    udp: true
+    tls: true
+    servername: www.python.org
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: xaL947o_X586spUQ-Q956KA7RnEeSAjeONwbAnonGTE
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇺🇸] [vl-re-ra] [260215-224758.173]"
+    type: vless
+    server: us-cherry-01.com
+    port: 8443
+    uuid: 8a35152a-b65c-4f6b-aec4-7844d5f9e6d8
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
+      short-id: c76ba2c2fb172e8b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇺🇸] [vl-re-ra] [260215-225153.590]"
+    type: vless
+    server: 107.174.82.65
+    port: 32068
+    uuid: bd7444d1-5f08-43bd-a332-f9058ad15010
+    udp: true
+    tls: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: QNcdT48fsgPz6WLCLTUmfb2pGG_DYAYeYSVJ2Q4Erwc
+      short-id: 684de91a
+    network: tcp
+  - name: "[🇺🇸] [vl-re-ra] [260215-225351.184]"
+    type: vless
+    server: 156.238.228.167
+    port: 61777
+    uuid: df176b95-8e71-4e5b-a24a-9715d284e24d
+    udp: true
+    tls: true
+    servername: www.ebay.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 89P7XLJ_E9kPUuWQjndIMz8qgq6xK03dqr0U7IS3WWg
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[🇺🇸] [vl-tl-ws] [260215-224052.469]"
+    type: vless
+    server: 104.26.15.21
+    port: 443
+    uuid: 0e4e3a71-e712-49c6-a6a5-0b457764746e
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/3.86.231.180=443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "[🇺🇸] [vl-tl-ws] [260215-224450.130]"
+    type: vless
+    server: vvvbghy.99890604.xyz
+    port: 443
+    uuid: 5196aae7-1479-4f3c-978b-68e74977b509
+    udp: true
+    tls: true
+    servername: vvvbghy.99890604.xyz
+    network: ws
+    ws-opts:
+      path: "/vzwyBIUYH4vYIKMBivnR3"
+      headers:
+        Host: vvvbghy.99890604.xyz
+    client-fingerprint: chrome
+  - name: "[🇺🇸] [vl-tl-ws] [260215-224644.459]"
+    type: vless
+    server: ui.huangshang.indevs.in
+    port: 443
+    uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
+    udp: true
+    tls: true
+    servername: ui.huangshang.indevs.in
+    network: ws
+    ws-opts:
+      path: "/9NojP751adPiN9LMya"
+      headers:
+        Host: ui.huangshang.indevs.in
+    client-fingerprint: chrome
+  - name: "[🇺🇸] [vl-tl-ws] [260215-225051.503]"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: a9ee8b76-6a94-4c25-9705-76d9bd38771e
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/35.230.79.26=443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "[🇺🇸] [vl-tl-ws] [260215-225219.755]"
+    type: vless
+    server: nj8.666461.xyz
+    port: 443
+    uuid: c558328b-eb46-424c-b9e0-574770f0b072
+    udp: true
+    tls: true
+    servername: nj8.666461.xyz
+    network: ws
+    ws-opts:
+      path: "/v8clafFSnPXNC0BXGtJ"
+      headers:
+        Host: nj8.666461.xyz
+    client-fingerprint: chrome
+  - name: "[🇺🇸] [vl-tl-ws] [260215-225445.945]"
+    type: vless
+    server: bbbnhju.un2026.indevs.in
+    port: 443
+    uuid: f063dee0-f33c-4e6c-83f9-4d884b62ba9e
+    udp: true
+    tls: true
+    servername: bbbnhju.un2026.indevs.in
+    network: ws
+    ws-opts:
+      path: "/2cCH0o9oSY1MFyEg1253o9NgB"
+      headers:
+        Host: bbbnhju.un2026.indevs.in
+    client-fingerprint: chrome
+  - name: "node 26"
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "node 27"
+    type: vmess
+    server: 172.233.229.91
+    port: 14102
+    uuid: 27ba87fc-583f-4763-9060-83cf0b9264db
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "node 28"
+    type: vmess
+    server: 209.126.84.189
+    port: 443
+    uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmessws"
+      headers:
+        Host: 209.126.84.189
+  - name: "node 29"
+    type: vmess
+    server: hju.ae1autumn.cc.cd
+    port: 80
+    uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/YsmRouA9ZbxgW4"
+      headers:
+        Host: hju.ae1autumn.cc.cd
+  - name: "node 30"
+    type: vmess
+    server: 193.227.99.199
+    port: 443
+    uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: ous3.dean52.top
+    network: ws
+    ws-opts:
+      path: "/f08369d1-5ee7-4b16-d786-30bce12fc33c"
+      headers:
+        Host: ous3.dean52.top
+    client-fingerprint: chrome
+  - name: "node 31"
+    type: vmess
+    server: 104.17.77.77
+    port: 8443
+    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+    alterId: 0
+    cipher: none
+    udp: true
+    tls: true
+    servername: v2ray1.dozapp.xyz
+    network: ws
+    ws-opts:
+      path: "/lMnsZUN4/"
+      headers:
+        Host: v2ray1.dozapp.xyz
+    client-fingerprint: chrome
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "♻️ 自动选择"
+      - DIRECT
+      - "[🇦🇪] [vl-re-ra] [260215-224519.349]"
+      - "[🇦🇱] [vl-no-ws] [260215-225127.091]"
+      - "[🇦🇹] [vl-re-ra] [260215-225104.702]"
+      - "[🇦🇺] [vl-re-ra] [260215-224707.328]"
+      - "[🇧🇦] [vl-no-ws] [260215-224654.457]"
+      - "[🇨🇦] [vl-re-ra] [260215-224908.485]"
+      - node
+      - "node 2"
+      - "[🇨🇿] [vl-re-ra] [260215-224402.657]"
+      - "[🇩🇪] [vl-no-ra] [260215-224346.469]"
+      - "[🇩🇪] [vl-no-ra] [260215-224850.127]"
+      - "[🇩🇪] [vl-no-ws] [260215-224429.785]"
+      - "[🇩🇪] [vl-no-ws] [260215-225407.823]"
+      - "[🇩🇪] [vl-re-gr] [260215-224229.277]"
+      - "[🇩🇪] [vl-re-ra] [260215-224137.101]"
+      - "[🇩🇪] [vl-re-ra] [260215-224230.034]"
+      - "[🇩🇪] [vl-re-ra] [260215-224502.095]"
+      - "[🇩🇪] [vl-re-ra] [260215-224830.479]"
+      - "[🇩🇪] [vl-re-ra] [260215-225101.963]"
+      - "[🇩🇪] [vl-re-ra] [260215-225249.530]"
+      - "[🇩🇪] [vl-tl-ws] [260215-224046.762]"
+      - "[🇩🇪] [vl-tl-ws] [260215-224706.743]"
+      - "[🇩🇪] [vl-tl-ws] [260215-224828.488]"
+      - "[🇩🇪] [vl-tl-ws] [260215-225309.434]"
+      - "[🇩🇪] [vl-tl-xh] [260215-224730.623]"
+      - "node 3"
+      - "[🇪🇸] [vl-re-ra] [260215-224112.615]"
+      - "[🇪🇸] [vl-re-ra] [260215-225105.379]"
+      - "[🇫🇮] [vl-no-ws] [260215-225148.557]"
+      - "[🇫🇮] [vl-re-ra] [260215-224153.967]"
+      - "[🇫🇮] [vl-re-ra] [260215-224502.593]"
+      - "[🇫🇮] [vl-re-ra] [260215-224859.247]"
+      - "[🇫🇮] [vl-re-ra] [260215-225228.532]"
+      - "[🇫🇮] [vl-re-ra] [260215-225355.595]"
+      - "[🇫🇮] [vl-tl-ht] [260215-225243.902]"
+      - "[🇫🇮] [vl-tl-xh] [260215-224811.885]"
+      - "[🇫🇷] [vl-no-ws] [260215-225507.712]"
+      - "[🇫🇷] [vl-re-ra] [260215-225044.830]"
+      - "[🇫🇷] [vl-tl-ra] [260215-224052.964]"
+      - "node 4"
+      - "node 5"
+      - "node 6"
+      - "node 7"
+      - "[🇬🇧] [vl-tl-xh] [260215-224110.700]"
+      - "node 8"
+      - "[🇭🇰] [vl-no-ws] [260215-224557.793]"
+      - "[🇭🇰] [vl-tl-ws] [260215-224339.060]"
+      - "[🇭🇰] [vl-tl-ws] [260215-224844.270]"
+      - "node 9"
+      - "node 10"
+      - "node 11"
+      - "node 12"
+      - "node 13"
+      - "[🇭🇺] [vl-no-ws] [260215-224533.264]"
+      - "node 14"
+      - "[🇮🇳] [vl-no-ws] [260215-224520.352]"
+      - "node 15"
+      - "[🇮🇹] [vl-no-ra] [260215-225155.138]"
+      - "[🇮🇹] [vl-re-ra] [260215-225430.674]"
+      - "[🇯🇵] [vl-re-ra] [260215-224548.747]"
+      - "[🇯🇵] [vl-tl-ws] [260215-225027.127]"
+      - "node 16"
+      - "[🇰🇷] [vl-tl-ra] [260215-225414.638]"
+      - "node 17"
+      - "[🇰🇿] [vl-re-xh] [260215-225414.383]"
+      - "[🇱🇻] [vl-re-ra] [260215-224225.229]"
+      - "[🇱🇻] [vl-re-ra] [260215-225214.770]"
+      - "node 18"
+      - "[🇳🇱] [vl-no-ht] [260215-224909.302]"
+      - "[🇳🇱] [vl-no-ws] [260215-224303.343]"
+      - "[🇳🇱] [vl-no-ws] [260215-225515.420]"
+      - "[🇳🇱] [vl-re-ra] [260215-224311.834]"
+      - "[🇳🇱] [vl-re-ra] [260215-224855.215]"
+      - "[🇳🇱] [vl-re-ra] [260215-225156.251]"
+      - "[🇳🇱] [vl-re-ra] [260215-225404.841]"
+      - "[🇳🇱] [vl-tl-gr] [260215-224027.322]"
+      - "[🇳🇱] [vl-tl-ws] [260215-224759.744]"
+      - "node 19"
+      - "node 20"
+      - "[🇵🇱] [vl-re-ra] [260215-224625.264]"
+      - "[🇵🇱] [vl-re-ra] [260215-224742.252]"
+      - "[🇵🇱] [vl-re-ra] [260215-225155.303]"
+      - "[🇵🇱] [vl-tl-ws] [260215-224115.090]"
+      - "[🇷🇺] [vl-no-ra] [260215-225530.066]"
+      - "[🇷🇺] [vl-re-ra] [260215-224458.090]"
+      - "[🇷🇺] [vl-re-ra] [260215-224711.887]"
+      - "[🇸🇪] [tr-tl-ws] [260215-223548.154]"
+      - "[🇸🇬] [vl-tl-ws] [260215-224053.725]"
+      - "node 21"
+      - "[🇹🇷] [vl-no-ht] [260215-225303.394]"
+      - "[🇹🇷] [vl-re-ra] [260215-224452.533]"
+      - "[🇹🇷] [vl-tl-xh] [260215-225328.257]"
+      - "node 22"
+      - "node 23"
+      - "node 24"
+      - "node 25"
+      - "[🇺🇸] [vl-no-gr] [260215-224542.554]"
+      - "[🇺🇸] [vl-no-ws] [260215-224428.119]"
+      - "[🇺🇸] [vl-re-ra] [260215-224325.426]"
+      - "[🇺🇸] [vl-re-ra] [260215-224758.173]"
+      - "[🇺🇸] [vl-re-ra] [260215-225153.590]"
+      - "[🇺🇸] [vl-re-ra] [260215-225351.184]"
+      - "[🇺🇸] [vl-tl-ws] [260215-224052.469]"
+      - "[🇺🇸] [vl-tl-ws] [260215-224450.130]"
+      - "[🇺🇸] [vl-tl-ws] [260215-224644.459]"
+      - "[🇺🇸] [vl-tl-ws] [260215-225051.503]"
+      - "[🇺🇸] [vl-tl-ws] [260215-225219.755]"
+      - "[🇺🇸] [vl-tl-ws] [260215-225445.945]"
+      - "node 26"
+      - "node 27"
+      - "node 28"
+      - "node 29"
+      - "node 30"
+      - "node 31"
+  - name: "♻️ 自动选择"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "[🇦🇪] [vl-re-ra] [260215-224519.349]"
+      - "[🇦🇱] [vl-no-ws] [260215-225127.091]"
+      - "[🇦🇹] [vl-re-ra] [260215-225104.702]"
+      - "[🇦🇺] [vl-re-ra] [260215-224707.328]"
+      - "[🇧🇦] [vl-no-ws] [260215-224654.457]"
+      - "[🇨🇦] [vl-re-ra] [260215-224908.485]"
+      - node
+      - "node 2"
+      - "[🇨🇿] [vl-re-ra] [260215-224402.657]"
+      - "[🇩🇪] [vl-no-ra] [260215-224346.469]"
+      - "[🇩🇪] [vl-no-ra] [260215-224850.127]"
+      - "[🇩🇪] [vl-no-ws] [260215-224429.785]"
+      - "[🇩🇪] [vl-no-ws] [260215-225407.823]"
+      - "[🇩🇪] [vl-re-gr] [260215-224229.277]"
+      - "[🇩🇪] [vl-re-ra] [260215-224137.101]"
+      - "[🇩🇪] [vl-re-ra] [260215-224230.034]"
+      - "[🇩🇪] [vl-re-ra] [260215-224502.095]"
+      - "[🇩🇪] [vl-re-ra] [260215-224830.479]"
+      - "[🇩🇪] [vl-re-ra] [260215-225101.963]"
+      - "[🇩🇪] [vl-re-ra] [260215-225249.530]"
+      - "[🇩🇪] [vl-tl-ws] [260215-224046.762]"
+      - "[🇩🇪] [vl-tl-ws] [260215-224706.743]"
+      - "[🇩🇪] [vl-tl-ws] [260215-224828.488]"
+      - "[🇩🇪] [vl-tl-ws] [260215-225309.434]"
+      - "[🇩🇪] [vl-tl-xh] [260215-224730.623]"
+      - "node 3"
+      - "[🇪🇸] [vl-re-ra] [260215-224112.615]"
+      - "[🇪🇸] [vl-re-ra] [260215-225105.379]"
+      - "[🇫🇮] [vl-no-ws] [260215-225148.557]"
+      - "[🇫🇮] [vl-re-ra] [260215-224153.967]"
+      - "[🇫🇮] [vl-re-ra] [260215-224502.593]"
+      - "[🇫🇮] [vl-re-ra] [260215-224859.247]"
+      - "[🇫🇮] [vl-re-ra] [260215-225228.532]"
+      - "[🇫🇮] [vl-re-ra] [260215-225355.595]"
+      - "[🇫🇮] [vl-tl-ht] [260215-225243.902]"
+      - "[🇫🇮] [vl-tl-xh] [260215-224811.885]"
+      - "[🇫🇷] [vl-no-ws] [260215-225507.712]"
+      - "[🇫🇷] [vl-re-ra] [260215-225044.830]"
+      - "[🇫🇷] [vl-tl-ra] [260215-224052.964]"
+      - "node 4"
+      - "node 5"
+      - "node 6"
+      - "node 7"
+      - "[🇬🇧] [vl-tl-xh] [260215-224110.700]"
+      - "node 8"
+      - "[🇭🇰] [vl-no-ws] [260215-224557.793]"
+      - "[🇭🇰] [vl-tl-ws] [260215-224339.060]"
+      - "[🇭🇰] [vl-tl-ws] [260215-224844.270]"
+      - "node 9"
+      - "node 10"
+      - "node 11"
+      - "node 12"
+      - "node 13"
+      - "[🇭🇺] [vl-no-ws] [260215-224533.264]"
+      - "node 14"
+      - "[🇮🇳] [vl-no-ws] [260215-224520.352]"
+      - "node 15"
+      - "[🇮🇹] [vl-no-ra] [260215-225155.138]"
+      - "[🇮🇹] [vl-re-ra] [260215-225430.674]"
+      - "[🇯🇵] [vl-re-ra] [260215-224548.747]"
+      - "[🇯🇵] [vl-tl-ws] [260215-225027.127]"
+      - "node 16"
+      - "[🇰🇷] [vl-tl-ra] [260215-225414.638]"
+      - "node 17"
+      - "[🇰🇿] [vl-re-xh] [260215-225414.383]"
+      - "[🇱🇻] [vl-re-ra] [260215-224225.229]"
+      - "[🇱🇻] [vl-re-ra] [260215-225214.770]"
+      - "node 18"
+      - "[🇳🇱] [vl-no-ht] [260215-224909.302]"
+      - "[🇳🇱] [vl-no-ws] [260215-224303.343]"
+      - "[🇳🇱] [vl-no-ws] [260215-225515.420]"
+      - "[🇳🇱] [vl-re-ra] [260215-224311.834]"
+      - "[🇳🇱] [vl-re-ra] [260215-224855.215]"
+      - "[🇳🇱] [vl-re-ra] [260215-225156.251]"
+      - "[🇳🇱] [vl-re-ra] [260215-225404.841]"
+      - "[🇳🇱] [vl-tl-gr] [260215-224027.322]"
+      - "[🇳🇱] [vl-tl-ws] [260215-224759.744]"
+      - "node 19"
+      - "node 20"
+      - "[🇵🇱] [vl-re-ra] [260215-224625.264]"
+      - "[🇵🇱] [vl-re-ra] [260215-224742.252]"
+      - "[🇵🇱] [vl-re-ra] [260215-225155.303]"
+      - "[🇵🇱] [vl-tl-ws] [260215-224115.090]"
+      - "[🇷🇺] [vl-no-ra] [260215-225530.066]"
+      - "[🇷🇺] [vl-re-ra] [260215-224458.090]"
+      - "[🇷🇺] [vl-re-ra] [260215-224711.887]"
+      - "[🇸🇪] [tr-tl-ws] [260215-223548.154]"
+      - "[🇸🇬] [vl-tl-ws] [260215-224053.725]"
+      - "node 21"
+      - "[🇹🇷] [vl-no-ht] [260215-225303.394]"
+      - "[🇹🇷] [vl-re-ra] [260215-224452.533]"
+      - "[🇹🇷] [vl-tl-xh] [260215-225328.257]"
+      - "node 22"
+      - "node 23"
+      - "node 24"
+      - "node 25"
+      - "[🇺🇸] [vl-no-gr] [260215-224542.554]"
+      - "[🇺🇸] [vl-no-ws] [260215-224428.119]"
+      - "[🇺🇸] [vl-re-ra] [260215-224325.426]"
+      - "[🇺🇸] [vl-re-ra] [260215-224758.173]"
+      - "[🇺🇸] [vl-re-ra] [260215-225153.590]"
+      - "[🇺🇸] [vl-re-ra] [260215-225351.184]"
+      - "[🇺🇸] [vl-tl-ws] [260215-224052.469]"
+      - "[🇺🇸] [vl-tl-ws] [260215-224450.130]"
+      - "[🇺🇸] [vl-tl-ws] [260215-224644.459]"
+      - "[🇺🇸] [vl-tl-ws] [260215-225051.503]"
+      - "[🇺🇸] [vl-tl-ws] [260215-225219.755]"
+      - "[🇺🇸] [vl-tl-ws] [260215-225445.945]"
+      - "node 26"
+      - "node 27"
+      - "node 28"
+      - "node 29"
+      - "node 30"
+      - "node 31"
+rules:
+  - "GEOIP,LAN,DIRECT,no-resolve"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,🚀 节点选择"

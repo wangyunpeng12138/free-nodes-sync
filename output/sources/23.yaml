@@ -1,0 +1,3392 @@
+# 订阅 23.txt -> Clash
+# 由 txt2clash.py 自动生成于 2026-11-01 16:51:17 +0800
+# 节点数量: 263
+# 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: "off"
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  listen: "0.0.0.0:1053"
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "*.localhost"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  proxy-server-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+proxies:
+  - name: "🇺🇸"
+    type: ss
+    server: tinkered-pennies-puppies.freesocks.work
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: hbGrpfvNrJsUmKmPbR3iY2
+    udp: true
+  - name: "🇫🇷"
+    type: ss
+    server: 57.130.28.148
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 74918bc801d53a4b
+    udp: true
+  - name: "🇪🇬"
+    type: ss
+    server: 38.54.59.38
+    port: 11203
+    cipher: chacha20-ietf-poly1305
+    password: 0cdde695873565ee
+    udp: true
+  - name: "🇻🇳"
+    type: ss
+    server: 112.197.26.106
+    port: 45311
+    cipher: chacha20-ietf-poly1305
+    password: ca5a5efae00a832b
+    udp: true
+  - name: "🇵🇷"
+    type: ss
+    server: 185.47.255.213
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "🇩🇪"
+    type: ss
+    server: 57.129.95.232
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 420946afc5918c49
+    udp: true
+  - name: "🇵🇰"
+    type: ss
+    server: 156.59.243.6
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "🇬🇧"
+    type: ss
+    server: 149.102.132.186
+    port: 80
+    cipher: aes-256-gcm
+    password: YhzqOeJsfuZ9rkkc
+    udp: true
+  - name: "🇺🇸 2"
+    type: ss
+    server: 62.146.224.145
+    port: 20591
+    cipher: chacha20-ietf-poly1305
+    password: d933225e6e380dad
+    udp: true
+  - name: "🇺🇸 3"
+    type: ss
+    server: 66.94.113.2
+    port: 27115
+    cipher: chacha20-ietf-poly1305
+    password: fc343864d4064051
+    udp: true
+  - name: "🇹🇼"
+    type: ss
+    server: 38.54.107.101
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "🇩🇪 2"
+    type: ss
+    server: 135.125.245.131
+    port: 20939
+    cipher: chacha20-ietf-poly1305
+    password: 85d3d8ccba287d3e
+    udp: true
+  - name: "🇧🇷"
+    type: ss
+    server: 157.185.173.60
+    port: 18424
+    cipher: chacha20-ietf-poly1305
+    password: 97fe6b07cbfaf7e7
+    udp: true
+  - name: "🇰🇭"
+    type: ss
+    server: 38.54.93.107
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 5654d957c5f61640
+    udp: true
+  - name: "🇺🇸 4"
+    type: ss
+    server: 37.19.198.236
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
+  - name: "🇩🇪 3"
+    type: ss
+    server: 54.37.78.130
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: d954bd6dd74a7f48
+    udp: true
+  - name: "🇸🇬"
+    type: ss
+    server: 194.233.94.119
+    port: 443
+    cipher: aes-256-gcm
+    password: 8t2xeemUtyui4zAv
+    udp: true
+  - name: "🇦🇺"
+    type: ss
+    server: 154.26.155.172
+    port: 443
+    cipher: aes-256-gcm
+    password: SL4vzcvhBHhTWivD
+    udp: true
+  - name: "🇺🇸 5"
+    type: ss
+    server: 154.53.34.27
+    port: 45234
+    cipher: chacha20-ietf-poly1305
+    password: 5d8680180abdb564
+    udp: true
+  - name: "🇺🇸 6"
+    type: ss
+    server: 154.38.176.7
+    port: 443
+    cipher: aes-256-gcm
+    password: nKeE2ZFWVaE4DyjR
+    udp: true
+  - name: "🇺🇸 7"
+    type: ss
+    server: 154.53.63.42
+    port: 80
+    cipher: aes-256-gcm
+    password: SM7WYtAwvBORXKjI
+    udp: true
+  - name: "🇳🇱"
+    type: ss
+    server: 82.38.31.208
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+    udp: true
+  - name: "🇵🇦"
+    type: ss
+    server: 138.186.142.80
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "🇺🇸 8"
+    type: ss
+    server: 209.126.5.209
+    port: 443
+    cipher: aes-256-gcm
+    password: kEVKj1xvgzeEn8AV
+    udp: true
+  - name: "🇺🇸 9"
+    type: ss
+    server: 94.72.127.55
+    port: 80
+    cipher: aes-256-gcm
+    password: wlJSF0fC8uqB5Gm5
+    udp: true
+  - name: "🇬🇧 2"
+    type: ss
+    server: 51.75.168.50
+    port: 13030
+    cipher: chacha20-ietf-poly1305
+    password: 6c815bb84c781da5
+    udp: true
+  - name: "🇸🇬 2"
+    type: ss
+    server: 194.233.73.51
+    port: 48803
+    cipher: chacha20-ietf-poly1305
+    password: 7afa39016d5a409c
+    udp: true
+  - name: "🇯🇵"
+    type: ss
+    server: 149.22.87.204
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
+  - name: "🇰🇼"
+    type: ss
+    server: 163.171.181.49
+    port: 42933
+    cipher: chacha20-ietf-poly1305
+    password: 877c3b069c335ffc
+    udp: true
+  - name: "🇺🇸 10"
+    type: ss
+    server: 37.19.198.243
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
+  - name: "🇺🇸 11"
+    type: ss
+    server: 167.160.90.51
+    port: 11475
+    cipher: aes-128-gcm
+    password: 523z2fgrd7jx0z5xv6o5
+    udp: true
+  - name: "🇧🇷 2"
+    type: ss
+    server: 157.185.173.60
+    port: 46727
+    cipher: chacha20-ietf-poly1305
+    password: 29acd960ab8e3408
+    udp: true
+  - name: "🇳🇱 2"
+    type: ss
+    server: 193.29.139.175
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: 1RWwXhwfAB5gAEozU4G2Pg
+    udp: true
+  - name: "🇰🇭 2"
+    type: ss
+    server: 38.54.93.66
+    port: 49696
+    cipher: chacha20-ietf-poly1305
+    password: 3b72ad57035835c7
+    udp: true
+  - name: "🇩🇪 4"
+    type: ss
+    server: 213.202.208.199
+    port: 7001
+    cipher: aes-256-gcm
+    password: RexnBgU7EV5ADxG
+    udp: true
+  - name: "🇯🇵 2"
+    type: ss
+    server: 154.205.139.9
+    port: 11203
+    cipher: chacha20-ietf-poly1305
+    password: 303ac65e30f28b0b
+    udp: true
+  - name: "🇧🇬"
+    type: ss
+    server: 89.44.197.181
+    port: 31348
+    cipher: chacha20-ietf-poly1305
+    password: zDLmeWRsfcFdKT1Tpy02xodEToqCldTxvZcRoPIZZtBdnIEL
+    udp: true
+  - name: "🇹🇭"
+    type: ss
+    server: th1.07c06051-81fd-4aa4-a94e-a0860315df8f.org
+    port: 14999
+    cipher: 2022-blake3-aes-256-gcm
+    password: "mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:6YebGRecdqKoInRf4i8SZqlAevOV13VtNw+oNecrWPQ="
+    udp: true
+  - name: "🇨🇦"
+    type: ss
+    server: 148.113.138.47
+    port: 48704
+    cipher: chacha20-ietf-poly1305
+    password: b27bc0b4fad33e46
+    udp: true
+  - name: "🇹🇷"
+    type: ss
+    server: 154.205.148.202
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 71807718f593d3e6
+    udp: true
+  - name: "🇺🇸 12"
+    type: ss
+    server: 154.53.60.212
+    port: 443
+    cipher: aes-256-gcm
+    password: ZfbPFDdeBj0B1Txs
+    udp: true
+  - name: "🇺🇸 13"
+    type: ss
+    server: 64.176.215.70
+    port: 80
+    cipher: aes-256-gcm
+    password: hbhO0xomsJzhO24F
+    udp: true
+  - name: "🇳🇱 3"
+    type: ss
+    server: 82.38.31.69
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+    udp: true
+  - name: "🇳🇱 4"
+    type: ss
+    server: 193.29.139.204
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+    udp: true
+  - name: "🇳🇱 5"
+    type: ss
+    server: 213.109.147.242
+    port: 62685
+    cipher: chacha20-ietf-poly1305
+    password: VpKABcOpNNA0l5G2AVOmw8
+    udp: true
+  - name: "🇭🇰"
+    type: ss
+    server: 45.82.252.109
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "🇸🇬 3"
+    type: ss
+    server: 194.233.94.119
+    port: 80
+    cipher: aes-256-gcm
+    password: 8t2xeemUtyui4zAv
+    udp: true
+  - name: "🇹🇷 2"
+    type: ss
+    server: 185.123.101.64
+    port: 2376
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+    udp: true
+  - name: "🇪🇬 2"
+    type: ss
+    server: 38.54.59.16
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 6ff1423f61ffe673
+    udp: true
+  - name: "🇳🇱 6"
+    type: ss
+    server: 193.29.139.233
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: QCXDxuDlTTMD7jtgHUjIoj
+    udp: true
+  - name: "🇫🇷 2"
+    type: ss
+    server: 51.178.114.83
+    port: 11202
+    cipher: chacha20-ietf-poly1305
+    password: d5b878cbb46f3e33
+    udp: true
+  - name: "🇩🇪 5"
+    type: ss
+    server: 135.125.247.224
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 87e0f9ec93704f25
+    udp: true
+  - name: "🇦🇺 2"
+    type: ss
+    server: 154.26.156.99
+    port: 47385
+    cipher: chacha20-ietf-poly1305
+    password: 78322e4b934870b6
+    udp: true
+  - name: "🇨🇦 2"
+    type: ss
+    server: 51.161.80.138
+    port: 12743
+    cipher: chacha20-ietf-poly1305
+    password: ae1f6fea74b7391a
+    udp: true
+  - name: "🇳🇱 7"
+    type: ss
+    server: 82.38.31.179
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+    udp: true
+  - name: "🇬🇧 3"
+    type: ss
+    server: 141.98.101.182
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
+  - name: "🇫🇷 3"
+    type: ss
+    server: 45.95.233.75
+    port: 27389
+    cipher: chacha20-ietf-poly1305
+    password: qYkmH2DU5LiiIzU8BKyZxo
+    udp: true
+  - name: "🇺🇸 14"
+    type: ss
+    server: 62.146.172.130
+    port: 80
+    cipher: aes-256-gcm
+    password: LYXiIUJ0FutnTzBG
+    udp: true
+  - name: "🇺🇸 15"
+    type: ss
+    server: dmitmalibu.szxcn.net
+    port: 18829
+    cipher: aes-128-gcm
+    password: fa593414-7a76-4975-909b-7a7c46be123b
+    udp: true
+  - name: "🇵🇰 2"
+    type: ss
+    server: 119.159.245.24
+    port: 26739
+    cipher: chacha20-ietf-poly1305
+    password: 1d1bc54689ed4b75
+    udp: true
+  - name: "🇳🇱 8"
+    type: ss
+    server: 208.67.106.73
+    port: 44884
+    cipher: chacha20-ietf-poly1305
+    password: 2DGq3jvVRg5n3CcxmysGK2kmrgJeSNof12A76cZvVxqPpetyC1XEciCFufq5xKvRWGGnKVembpThuUSQhbZ7GMsZY4UVxEBw
+    udp: true
+  - name: "🇩🇪 6"
+    type: ss
+    server: 57.129.35.242
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: b2871db02e5f7e2f
+    udp: true
+  - name: "🇬🇧 4"
+    type: ss
+    server: 51.89.117.154
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 9bfee1388e960537
+    udp: true
+  - name: "🇿🇦"
+    type: ss
+    server: 154.205.150.157
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "🇩🇪 7"
+    type: ss
+    server: 57.129.95.218
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 6b9737450ab7fc98
+    udp: true
+  - name: "🇩🇪 8"
+    type: ss
+    server: 141.95.105.28
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 37ef4f029f1ac0ac
+    udp: true
+  - name: "🇬🇧 5"
+    type: ss
+    server: 198.244.149.86
+    port: 26115
+    cipher: chacha20-ietf-poly1305
+    password: fa76d6f09c203a59
+    udp: true
+  - name: "🇵🇰 3"
+    type: ss
+    server: 119.159.245.24
+    port: 26737
+    cipher: chacha20-ietf-poly1305
+    password: 1d1bc54689ed4b75
+    udp: true
+  - name: "🇺🇸 16"
+    type: ss
+    server: 154.12.242.150
+    port: 80
+    cipher: aes-256-gcm
+    password: 7vZO55fXgXAJXa2F
+    udp: true
+  - name: "🇺🇸 17"
+    type: ss
+    server: 66.94.125.178
+    port: 80
+    cipher: aes-256-gcm
+    password: 14CLBaFBqwqxBJy6
+    udp: true
+  - name: "🇪🇬 3"
+    type: ss
+    server: 38.54.59.38
+    port: 11205
+    cipher: chacha20-ietf-poly1305
+    password: 0cdde695873565ee
+    udp: true
+  - name: "🇩🇪 9"
+    type: ss
+    server: 5.39.249.26
+    port: 8388
+    cipher: chacha20-ietf-poly1305
+    password: MWU4N
+    udp: true
+  - name: "🇬🇧 6"
+    type: ss
+    server: 57.129.140.88
+    port: 8388
+    cipher: chacha20-ietf-poly1305
+    password: k1v5g9FefdoO
+    udp: true
+  - name: "🇩🇪 10"
+    type: ss
+    server: 135.125.219.2
+    port: 40266
+    cipher: chacha20-ietf-poly1305
+    password: a10bd25b21995e56
+    udp: true
+  - name: "🇹🇭 2"
+    type: ss
+    server: 38.60.200.187
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: abea89e50e8abece
+    udp: true
+  - name: "🇩🇪 11"
+    type: ss
+    server: 57.129.95.45
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 6675cbf62d6a3a4f
+    udp: true
+  - name: "🇪🇨"
+    type: ss
+    server: 38.165.231.25
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "🇸🇬 4"
+    type: ss
+    server: 95.173.218.203
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "🇯🇵 3"
+    type: ss
+    server: 149.22.87.241
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
+  - name: "🇳🇱 9"
+    type: ss
+    server: 82.38.31.199
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+    udp: true
+  - name: "🇳🇱 10"
+    type: ss
+    server: 193.29.139.199
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: 4a2rfixophdjffa8KVA4Aa
+    udp: true
+  - name: "🇦🇪"
+    type: ss
+    server: 103.57.251.240
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "🇫🇮"
+    type: ss
+    server: portal.ninemakeda.cfd
+    port: 43669
+    cipher: chacha20-ietf-poly1305
+    password: 23sUrwRcTBEAvxLS6VM6Aay57KQbws1upDAxr7Btf4hXu4gaUQW4BPbComjJjStM2JqJLDwVkteXL8V33k8eWkZR4UB8intz
+    udp: true
+  - name: "🇸🇬 5"
+    type: ss
+    server: 194.233.73.51
+    port: 48801
+    cipher: chacha20-ietf-poly1305
+    password: 7afa39016d5a409c
+    udp: true
+  - name: "🇵🇱"
+    type: ss
+    server: 89.223.93.176
+    port: 41348
+    cipher: chacha20-ietf-poly1305
+    password: Vmsf06YTMqtAYdhwMqdSuGqgdVkm0yddi4kYaAEVQWYj9iHA
+    udp: true
+  - name: "🇧🇷 3"
+    type: ss
+    server: 157.185.173.60
+    port: 18425
+    cipher: chacha20-ietf-poly1305
+    password: 97fe6b07cbfaf7e7
+    udp: true
+  - name: "🇻🇳 2"
+    type: ss
+    server: 112.197.26.106
+    port: 45313
+    cipher: chacha20-ietf-poly1305
+    password: ca5a5efae00a832b
+    udp: true
+  - name: "🇻🇳 3"
+    type: ss
+    server: 38.54.14.156
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: a94f0b6916f67bdc
+    udp: true
+  - name: "🇹🇷 3"
+    type: ss
+    server: 154.205.148.202
+    port: 11203
+    cipher: chacha20-ietf-poly1305
+    password: 71807718f593d3e6
+    udp: true
+  - name: "🇫🇷 4"
+    type: ss
+    server: 57.131.42.19
+    port: 8389
+    cipher: 2022-blake3-aes-256-gcm
+    password: "et1sgh1iQaWzsw201JX2eexN1Ai6QmIGcZIlvlC5L54="
+    udp: true
+  - name: "🇵🇰 4"
+    type: ss
+    server: 119.159.245.24
+    port: 29700
+    cipher: chacha20-ietf-poly1305
+    password: fec4e6f9e954aead
+    udp: true
+  - name: "🇫🇷 5"
+    type: ss
+    server: 57.131.42.19
+    port: 8390
+    cipher: 2022-blake3-aes-256-gcm
+    password: "et1sgh1iQaWzsw201JX2eexN1Ai6QmIGcZIlvlC5L54="
+    udp: true
+  - name: "🇺🇦"
+    type: ss
+    server: 163.171.137.76
+    port: 48436
+    cipher: chacha20-ietf-poly1305
+    password: 6d0084c6e4502ab7
+    udp: true
+  - name: "🇯🇴"
+    type: ss
+    server: 91.106.109.17
+    port: 48213
+    cipher: chacha20-ietf-poly1305
+    password: 1a17c1f74cdc51d5
+    udp: true
+  - name: "🇳🇱 11"
+    type: ss
+    server: 82.38.31.190
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+    udp: true
+  - name: "🇬🇧 7"
+    type: ss
+    server: 51.75.168.50
+    port: 13031
+    cipher: chacha20-ietf-poly1305
+    password: 25f8159be6c408fe
+    udp: true
+  - name: "🇦🇪 2"
+    type: ss
+    server: 185.253.116.95
+    port: 16673
+    cipher: chacha20-ietf-poly1305
+    password: aiXO0FnjYHg6ZKJAPohBVW
+    udp: true
+  - name: "🇰🇼 2"
+    type: ss
+    server: 163.171.181.30
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 32a9a16d8a041c98
+    udp: true
+  - name: "🇺🇸 18"
+    type: ss
+    server: 154.53.60.212
+    port: 80
+    cipher: aes-256-gcm
+    password: ZfbPFDdeBj0B1Txs
+    udp: true
+  - name: "🇲🇽"
+    type: ss
+    server: 216.238.75.111
+    port: 80
+    cipher: aes-256-gcm
+    password: JhB5ado8enBhkaOe
+    udp: true
+  - name: "🇳🇱 12"
+    type: ss
+    server: 82.38.31.218
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+    udp: true
+  - name: "🇰🇷"
+    type: ss
+    server: srv12.outlinekeys.com
+    port: 1080
+    cipher: chacha20-ietf-poly1305
+    password: fkxXhS9VUmWmoC9N9xu2WBjVoEGV7UZT
+    udp: true
+  - name: "🇳🇴"
+    type: ss
+    server: 193.135.174.135
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "🇦🇺 3"
+    type: ss
+    server: 154.26.156.99
+    port: 47387
+    cipher: chacha20-ietf-poly1305
+    password: 78322e4b934870b6
+    udp: true
+  - name: "🇺🇸 19"
+    type: ss
+    server: 154.12.240.141
+    port: 443
+    cipher: aes-256-gcm
+    password: mK7eN3z276Tr0vVA
+    udp: true
+  - name: "🇬🇧 8"
+    type: ss
+    server: 149.102.132.184
+    port: 80
+    cipher: aes-256-gcm
+    password: ldjmwoNqgQqqc43j
+    udp: true
+  - name: "🇧🇷 4"
+    type: ss
+    server: 5.188.4.103
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: a7c205642b302c20
+    udp: true
+  - name: "🇬🇧 9"
+    type: ss
+    server: 51.89.118.58
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 7a63df1a001759bf
+    udp: true
+  - name: "🇩🇪 12"
+    type: ss
+    server: 54.36.118.33
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: f0669fb16446e528
+    udp: true
+  - name: "🇻🇳 4"
+    type: ss
+    server: 112.197.26.106
+    port: 45312
+    cipher: chacha20-ietf-poly1305
+    password: ca5a5efae00a832b
+    udp: true
+  - name: "🇩🇪 13"
+    type: ss
+    server: 2.58.81.221
+    port: 80
+    cipher: aes-256-gcm
+    password: 9dQS3geeylyrRth9
+    udp: true
+  - name: "🇻🇳 5"
+    type: ss
+    server: 112.197.26.106
+    port: 45310
+    cipher: chacha20-ietf-poly1305
+    password: ca5a5efae00a832b
+    udp: true
+  - name: node
+    type: vmess
+    server: vfgt.wc3.ccwu.cc
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/kFK9O5cl8ZycyrxcJWNVFC21"
+      headers:
+        Host: vfgt.wc3.ccwu.cc
+  - name: "node 2"
+    type: vmess
+    server: 149.30.232.103
+    port: 31469
+    uuid: 5381445d-6ae4-4948-b61a-a16d9498d21b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/arki?ed=2048"
+      headers:
+        Host: 149.30.232.103
+  - name: "node 3"
+    type: vmess
+    server: IiIIIi9.huANgShAnG.us.cI
+    port: 443
+    uuid: dd39bb7d-2bea-41b5-be20-fa228a45f639
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: IiiIIi9.HuaNgshaNG.us.Ci
+    network: ws
+    ws-opts:
+      path: "/vitRvGVofV7ia41dH"
+      headers:
+        Host: IIiiiI9.HUangsHANG.us.cI
+    client-fingerprint: chrome
+  - name: "node 4"
+    type: vmess
+    server: 47.245.42.92
+    port: 443
+    uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: n1753598452.wpg27.xyz
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: n1753598452.wpg27.xyz
+    client-fingerprint: chrome
+  - name: "node 5"
+    type: vmess
+    server: 91.134.8.92
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: yichueng.org
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: yichueng.org
+    client-fingerprint: chrome
+  - name: "node 6"
+    type: vmess
+    server: hhhnmjki.932.pp.ua
+    port: 443
+    uuid: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: hhhnmjki.932.pp.ua
+    network: ws
+    ws-opts:
+      path: "/t1UV4HSrzbWGmJtbBhmKb8nOkg"
+      headers:
+        Host: hhhnmjki.932.pp.ua
+    client-fingerprint: chrome
+  - name: "node 7"
+    type: vmess
+    server: 172.67.154.192
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/kFK9O5cl8ZycyrxcJWNVFC21"
+      headers:
+        Host: mk.tc0.ccwu.cc
+  - name: "node 8"
+    type: vmess
+    server: n1753598448.74qxv.top
+    port: 443
+    uuid: 3cd6f849-078e-4da9-8080-a2791b51b766
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: n1753598448.74qxv.top
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: n1753598448.74qxv.top
+    client-fingerprint: chrome
+  - name: "node 9"
+    type: vmess
+    server: nmj.wc8.ccwu.cc
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/kFK9O5cl8ZycyrxcJWNVFC21"
+      headers:
+        Host: nmj.wc8.ccwu.cc
+  - name: "node 10"
+    type: vmess
+    server: tr1-smart.adelping.com
+    port: 80
+    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560"
+      headers:
+        Host: TM_AZARBAYJAB1.new.99.workers.dev
+  - name: "node 11"
+    type: vmess
+    server: 156.233.232.192
+    port: 24004
+    uuid: 582fcb35-20a0-452c-e179-4c759c62c494
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "node 12"
+    type: vmess
+    server: dv4.789900.xyz
+    port: 2096
+    uuid: 0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: dv4.789900.xyz
+    network: ws
+    ws-opts:
+      path: "/0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05-vm"
+      headers:
+        Host: dv4.789900.xyz
+    client-fingerprint: chrome
+  - name: "node 13"
+    type: vmess
+    server: 141.95.126.134
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: jamekk.org
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: jamekk.org
+    client-fingerprint: chrome
+  - name: "node 14"
+    type: vmess
+    server: mmko.tt0.ccwu.cc
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/kFK9O5cl8ZycyrxcJWNVFC21"
+      headers:
+        Host: mmko.tt0.ccwu.cc
+  - name: "node 15"
+    type: vmess
+    server: 141.94.155.224
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: fapeng.org
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: fapeng.org
+    client-fingerprint: chrome
+  - name: "node 16"
+    type: vmess
+    server: 172.67.142.251
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/kFK9O5cl8ZycyrxcJWNVFC21"
+      headers:
+        Host: nmk.tc7.ccwu.cc
+  - name: "node 17"
+    type: vmess
+    server: 46.246.126.154
+    port: 443
+    uuid: f2fd0786-1059-4f64-d54e-3f3a568c6c68
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 46.246.126.154
+  - name: "node 18"
+    type: vmess
+    server: nji.kk0.ccwu.cc
+    port: 443
+    uuid: 2215657e-2af4-405f-b770-4e61b298d5b8
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: nji.kk0.ccwu.cc
+    network: ws
+    ws-opts:
+      path: "/PGsqb2SHJfbCLo"
+      headers:
+        Host: nji.kk0.ccwu.cc
+    client-fingerprint: chrome
+  - name: "node 19"
+    type: vmess
+    server: 57.129.25.20
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 1
+    cipher: auto
+    udp: true
+    tls: true
+    servername: 57.129.25.20
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: 57.129.25.20
+    client-fingerprint: chrome
+  - name: "node 20"
+    type: vmess
+    server: jjjuu.191292.xyz
+    port: 443
+    uuid: b9bb332d-5e0d-41af-adac-49362dde8661
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: jjjuu.191292.xyz
+    network: ws
+    ws-opts:
+      path: "/iqjxVCqiIAaLCt5Q2GkKGWRMg"
+      headers:
+        Host: jjjuu.191292.xyz
+    client-fingerprint: chrome
+  - name: "node 21"
+    type: vmess
+    server: v2ray.codefyinc.com
+    port: 443
+    uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: v2ray.codefyinc.com
+    network: ws
+    ws-opts:
+      path: "/vmessws"
+      headers:
+        Host: v2ray.codefyinc.com
+    client-fingerprint: chrome
+  - name: "node 22"
+    type: vmess
+    server: 15.235.13.69
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vkvd127.mycdn.me
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: vkvd127.mycdn.me
+    client-fingerprint: chrome
+  - name: "node 23"
+    type: vmess
+    server: 85.194.243.117
+    port: 57878
+    uuid: 1423fa54-1256-4cbb-9663-e0ccab46f02a
+    alterId: 0
+    cipher: none
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess-argo"
+      headers:
+        Host: 85.194.243.117
+  - name: "node 24"
+    type: vmess
+    server: gggh.huangshang.online
+    port: 443
+    uuid: 98b419ef-83a2-4d1b-a23d-566b7f24477b
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: gggh.huangshang.online
+    network: ws
+    ws-opts:
+      path: "/Iu415Fpf5REYxWLpTGA5AqzZ2Mj"
+      headers:
+        Host: gggh.huangshang.online
+    client-fingerprint: chrome
+  - name: "node 25"
+    type: vmess
+    server: vvbg.191262.xyz
+    port: 443
+    uuid: 4a7baca1-8048-4a91-8316-595b36657a54
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vvbg.191262.xyz
+    network: ws
+    ws-opts:
+      path: "/TaBvkrUbsyvsvinsGGg"
+      headers:
+        Host: vvbg.191262.xyz
+    client-fingerprint: chrome
+  - name: "node 26"
+    type: vmess
+    server: nnmjKi9.191262.xYz
+    port: 443
+    uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: nNmjKI9.191262.XYZ
+    network: ws
+    ws-opts:
+      path: "/GgigazFGDLgFWDItkD5XgXAL"
+      headers:
+        Host: NnmjKI9.191262.XYz
+    client-fingerprint: chrome
+  - name: "node 27"
+    type: vmess
+    server: 91.134.8.102
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: serkat.org
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: serkat.org
+    client-fingerprint: chrome
+  - name: "node 28"
+    type: vmess
+    server: 162.159.152.4
+    port: 443
+    uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: v2ray.codefyinc.com
+    network: ws
+    ws-opts:
+      path: "/vmessws"
+      headers:
+        Host: v2ray.codefyinc.com
+    client-fingerprint: chrome
+  - name: "node 29"
+    type: vmess
+    server: 61.245.11.60
+    port: 80
+    uuid: a3e3a710-79f8-4ae0-b83c-607aab40d197
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+      headers:
+        Host: 61.245.11.60
+  - name: "node 30"
+    type: vmess
+    server: 91.134.8.101
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: fapeng.org
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: fapeng.org
+    client-fingerprint: chrome
+  - name: "node 31"
+    type: vmess
+    server: pq-Hungary1.09vpn.com
+    port: 80
+    uuid: 703f722a-4bdf-4e9d-9afd-a681fdf87c74
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+      headers:
+        Host: pq-Hungary1.09vpn.com
+  - name: "node 32"
+    type: vmess
+    server: 213.183.54.243
+    port: 443
+    uuid: d7f56688-56a0-448c-bc04-fd83c6ac17d0
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 213.183.54.243
+  - name: "node 33"
+    type: vmess
+    server: 141.94.155.228
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: kampong.org
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: kampong.org
+    client-fingerprint: chrome
+  - name: "node 34"
+    type: vmess
+    server: mmki9.kk1.ccwu.cc
+    port: 443
+    uuid: 9d24b07c-71f4-4aa5-95ac-3307c6995619
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: mmki9.kk1.ccwu.cc
+    network: ws
+    ws-opts:
+      path: "/FlydU79Rnu0lNhu1YZc7zZ"
+      headers:
+        Host: mmki9.kk1.ccwu.cc
+    client-fingerprint: chrome
+  - name: "node 35"
+    type: vmess
+    server: n1761214915.mv7wh.tech
+    port: 443
+    uuid: 1f2daf43-ff90-4df9-9276-dfb8486d72bc
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: n1761214915.mv7wh.tech
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: n1761214915.mv7wh.tech
+    client-fingerprint: chrome
+  - name: "node 36"
+    type: vmess
+    server: 104.17.77.77
+    port: 8443
+    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+    alterId: 0
+    cipher: none
+    udp: true
+    tls: true
+    servername: v2ray1.dozapp.xyz
+    network: ws
+    ws-opts:
+      path: "/lMnsZUN4/"
+      headers:
+        Host: v2ray1.dozapp.xyz
+    client-fingerprint: chrome
+  - name: "node 37"
+    type: vmess
+    server: 188.114.96.3
+    port: 8443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: t1.620720.xyz
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: t1.620720.xyz
+    client-fingerprint: chrome
+  - name: "node 38"
+    type: vmess
+    server: uuujki.7777112.xyz
+    port: 443
+    uuid: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: uuujki.7777112.xyz
+    network: ws
+    ws-opts:
+      path: "/t1UV4HSrzbWGmJtbBhmKb8nOkg"
+      headers:
+        Host: uuujki.7777112.xyz
+    client-fingerprint: chrome
+  - name: "node 39"
+    type: vmess
+    server: n1747624282.lie5d.cyou
+    port: 443
+    uuid: 30109222-8c53-41bc-9781-a01cdeb68e4c
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: n1747624282.lie5d.cyou
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: n1747624282.lie5d.cyou
+    client-fingerprint: chrome
+  - name: "node 40"
+    type: vmess
+    server: n1761214908.wpg27.xyz
+    port: 443
+    uuid: 3514a93f-bb26-4442-8f99-971b2ff3388a
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: n1761214908.wpg27.xyz
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: n1761214908.wpg27.xyz
+    client-fingerprint: chrome
+  - name: "node 41"
+    type: vmess
+    server: 57.129.24.132
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: serkat.org
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: serkat.org
+    client-fingerprint: chrome
+  - name: "node 42"
+    type: vmess
+    server: GGBnh.7777198.XYz
+    port: 443
+    uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: ggBnh.7777198.Xyz
+    network: ws
+    ws-opts:
+      path: "/GgigazFGDLgFWDItkD5XgXAL"
+      headers:
+        Host: GgbNH.7777198.xyZ
+    client-fingerprint: chrome
+  - name: "node 43"
+    type: vmess
+    server: pq-Hungary1.09vpn.com
+    port: 8443
+    uuid: 6f1f1a18-ecc4-4513-890e-fd193042f564
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: pq-Hungary1.09vpn.com
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+      headers:
+        Host: pq-Hungary1.09vpn.com
+    client-fingerprint: chrome
+  - name: "node 44"
+    type: vmess
+    server: 129.212.239.177
+    port: 1000
+    uuid: 4cb07e08-f45c-4ffb-89e8-a6ef6b526b2e
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: zoom.us
+    network: ws
+    ws-opts:
+      path: "/FREE By Tharuwa (0767597317)"
+      headers:
+        Host: zoom.us
+    client-fingerprint: chrome
+  - name: "node 45"
+    type: vmess
+    server: ujjjmkkk.7777112.xyz
+    port: 443
+    uuid: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: ujjjmkkk.7777112.xyz
+    network: ws
+    ws-opts:
+      path: "/t1UV4HSrzbWGmJtbBhmKb8nOkg"
+      headers:
+        Host: ujjjmkkk.7777112.xyz
+    client-fingerprint: chrome
+  - name: "node 46"
+    type: vmess
+    server: BbGtr.7777198.xyz
+    port: 443
+    uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: BBGTr.7777198.Xyz
+    network: ws
+    ws-opts:
+      path: "/GgigazFGDLgFWDItkD5XgXAL"
+      headers:
+        Host: BBGtR.7777198.XyZ
+    client-fingerprint: chrome
+  - name: "node 47"
+    type: vmess
+    server: nnmjku.932.pp.ua
+    port: 443
+    uuid: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: nnmjku.932.pp.ua
+    network: ws
+    ws-opts:
+      path: "/t1UV4HSrzbWGmJtbBhmKb8nOkg"
+      headers:
+        Host: nnmjku.932.pp.ua
+    client-fingerprint: chrome
+  - name: "node 48"
+    type: vmess
+    server: bBbNHJ.890634.xyz
+    port: 443
+    uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: bBbNHJ.890634.xyz
+    network: ws
+    ws-opts:
+      path: "/AwUJyGh9Ym6vVzg35A6ueyyZnWd"
+      headers:
+        Host: bBbNHJ.890634.xyz
+    client-fingerprint: chrome
+  - name: "node 49"
+    type: vmess
+    server: nmklo.kk0.ccwu.cc
+    port: 443
+    uuid: 2215657e-2af4-405f-b770-4e61b298d5b8
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: nmklo.kk0.ccwu.cc
+    network: ws
+    ws-opts:
+      path: "/PGsqb2SHJfbCLo"
+      headers:
+        Host: nmklo.kk0.ccwu.cc
+    client-fingerprint: chrome
+  - name: "node 50"
+    type: vmess
+    server: france-paris.hostinger.kcartik-vps.com
+    port: 80
+    uuid: 4080e00a-d02b-4e8e-a035-0703c24d8328
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess"
+      headers:
+        Host: france-paris.hostinger.kcartik-vps.com
+  - name: "node 51"
+    type: vmess
+    server: jjjkkk.2030.pp.ua
+    port: 443
+    uuid: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: jjjkkk.2030.pp.ua
+    network: ws
+    ws-opts:
+      path: "/t1UV4HSrzbWGmJtbBhmKb8nOkg"
+      headers:
+        Host: jjjkkk.2030.pp.ua
+    client-fingerprint: chrome
+  - name: "node 52"
+    type: vmess
+    server: 8.210.79.212
+    port: 55185
+    uuid: aa3c3018-288b-46f3-af1c-9044e18d6e5b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/Notif_Chat"
+      headers:
+        Host: 8.210.79.212
+  - name: "node 53"
+    type: vmess
+    server: 23.162.200.227
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: 23.162.200.227
+    client-fingerprint: chrome
+  - name: "node 54"
+    type: vmess
+    server: bbnmj.kk9.ccwu.cc
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/kFK9O5cl8ZycyrxcJWNVFC21"
+      headers:
+        Host: bbnmj.kk9.ccwu.cc
+  - name: "node 55"
+    type: vmess
+    server: 149.88.95.217
+    port: 40741
+    uuid: 1b8a751b-4909-4fec-f019-907d92e6c47f
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "node 56"
+    type: vmess
+    server: bbbnmki.kk7.ccwu.cc
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/kFK9O5cl8ZycyrxcJWNVFC21"
+      headers:
+        Host: bbbnmki.kk7.ccwu.cc
+  - name: "node 57"
+    type: vmess
+    server: digitalocean.com
+    port: 8080
+    uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/NASNET/cdn"
+      headers:
+        Host: nasnet-571299667.rahavard365.co
+  - name: "node 58"
+    type: vmess
+    server: vg.333756.xyz
+    port: 443
+    uuid: 603f6524-7a34-473c-94fe-a967b6b25095
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vg.333756.xyz
+    network: ws
+    ws-opts:
+      path: "/czprTuhzc5gNlUuOCnhD"
+      headers:
+        Host: vg.333756.xyz
+    client-fingerprint: chrome
+  - name: "node 59"
+    type: vmess
+    server: 8.34.146.199
+    port: 443
+    uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: ous3.dean52.top
+    network: ws
+    ws-opts:
+      path: "/f08369d1-5ee7-4b16-d786-30bce12fc33c"
+      headers:
+        Host: ous3.dean52.top
+    client-fingerprint: chrome
+  - name: "node 60"
+    type: vmess
+    server: 146.59.55.50
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    client-fingerprint: chrome
+  - name: "node 61"
+    type: vmess
+    server: ert.859885.xyz
+    port: 443
+    uuid: b020865b-7404-4894-ba65-a7414b10cda3
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: ert.859885.xyz
+    network: ws
+    ws-opts:
+      path: "/boWUVaU0sxrNtFSdOPjqSc7fzeJr"
+      headers:
+        Host: ert.859885.xyz
+    client-fingerprint: chrome
+  - name: "node 62"
+    type: vmess
+    server: c86s3.portablesubmarines.com
+    port: 31350
+    uuid: 5f7e4a08-757a-48fa-8ed8-38599c684851
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "node 63"
+    type: vmess
+    server: n1761214906.wpg27.xyz
+    port: 443
+    uuid: c28a6258-7baa-40fc-8a51-87f59c847cd7
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: n1761214906.wpg27.xyz
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: n1761214906.wpg27.xyz
+    client-fingerprint: chrome
+  - name: "node 64"
+    type: vmess
+    server: mko.bb1.indevs.in
+    port: 443
+    uuid: b020865b-7404-4894-ba65-a7414b10cda3
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: mko.bb1.indevs.in
+    network: ws
+    ws-opts:
+      path: "/boWUVaU0sxrNtFSdOPjqSc7fzeJr"
+      headers:
+        Host: mko.bb1.indevs.in
+    client-fingerprint: chrome
+  - name: "node 65"
+    type: vmess
+    server: 146.59.85.226
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: pelang.org
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: pelang.org
+    client-fingerprint: chrome
+  - name: "node 66"
+    type: vmess
+    server: gbnh.7777112.xyz
+    port: 443
+    uuid: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: gbnh.7777112.xyz
+    network: ws
+    ws-opts:
+      path: "/t1UV4HSrzbWGmJtbBhmKb8nOkg"
+      headers:
+        Host: gbnh.7777112.xyz
+    client-fingerprint: chrome
+  - name: "node 67"
+    type: vmess
+    server: 57.129.64.238
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: kapelleng.com
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: kapelleng.com
+    client-fingerprint: chrome
+  - name: "node 68"
+    type: vmess
+    server: vip2.kaixincloud.top
+    port: 443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: sy4.620720.xyz
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: sy4.620720.xyz
+    client-fingerprint: chrome
+  - name: "node 69"
+    type: vmess
+    server: fffvg.7777125.xyz
+    port: 443
+    uuid: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: fffvg.7777125.xyz
+    network: ws
+    ws-opts:
+      path: "/eszjp4nTT8TxDHFepMpfNkCk8"
+      headers:
+        Host: fffvg.7777125.xyz
+    client-fingerprint: chrome
+  - name: "node 70"
+    type: vmess
+    server: NNnMJJu.131.PP.ua
+    port: 443
+    uuid: 98b419ef-83a2-4d1b-a23d-566b7f24477b
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: NNnmJJu.131.PP.Ua
+    network: ws
+    ws-opts:
+      path: "/Iu415Fpf5REYxWLpTGA5AqzZ2Mj"
+      headers:
+        Host: NNnmJJu.131.PP.Ua
+    client-fingerprint: chrome
+  - name: "node 71"
+    type: vmess
+    server: 20.193.153.19
+    port: 15834
+    uuid: 39a8c374-76b1-4e90-ab85-85cd9a42ded2
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "node 72"
+    type: vmess
+    server: GgBnhY.191262.xyz
+    port: 443
+    uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: GgbNhy.191262.XYz
+    network: ws
+    ws-opts:
+      path: "/GgigazFGDLgFWDItkD5XgXAL"
+      headers:
+        Host: gGBNhY.191262.xyz
+    client-fingerprint: chrome
+  - name: "node 73"
+    type: vmess
+    server: 15.204.103.7
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: lammaland.org
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: lammaland.org
+    client-fingerprint: chrome
+  - name: "🇺🇸 20"
+    type: vless
+    server: 94.183.150.57
+    port: 2323
+    uuid: e6056cc5-1ec5-4dad-a5c1-ffe4ccde51b8
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🇨🇦 3"
+    type: vless
+    server: 104.21.224.5
+    port: 8880
+    uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/Telegram🇨🇳@WangCai2/?ed=2560"
+      headers:
+        Host: frejd.11258.workers.dev
+  - name: "🇺🇸 21"
+    type: vless
+    server: 172.67.150.254
+    port: 2095
+    uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: iioo.iioou.workers.dev
+  - name: "🇺🇸 22"
+    type: vless
+    server: llllllllo.890404.indevs.in
+    port: 80
+    uuid: dd39bb7d-2bea-41b5-be20-fa228a45f639
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/KogllNDwTXOaeofV7ia41dH"
+      headers:
+        Host: llllllllo.890404.indevs.in
+  - name: "🇺🇸 23"
+    type: vless
+    server: 40.160.4.127
+    port: 8880
+    uuid: 6251f84e-9c02-4140-921c-6b47d394fb96
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🇺🇸 24"
+    type: vless
+    server: 40.160.4.20
+    port: 8880
+    uuid: 6251f84e-9c02-4140-921c-6b47d394fb96
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🇩🇪 14"
+    type: vless
+    server: grs.zdshop.ir
+    port: 80
+    uuid: 9c3c5a92-1018-49a4-a84d-af2dde3e618d
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/ed=2560"
+      headers:
+        Host: smk23ws74gr.global.ssl.fastly.net
+  - name: "🇺🇸 25"
+    type: vless
+    server: 104.16.63.239
+    port: 80
+    uuid: 04969b01-ac6a-4056-b5cd-852ccf45f100
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/🔒 [By EbraSha]"
+      headers:
+        Host: netherlands.vipserver14.workers.dev
+  - name: "🇳🇱 13"
+    type: vless
+    server: 162.159.36.20
+    port: 2052
+    uuid: f8ae018b-b84d-4c9b-b03b-4642c3a25977
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed"
+      headers:
+        Host: ExEMplAry-MILkytsxQiQYso.sPortlaNd.CoMPANy
+  - name: "🇺🇸 26"
+    type: vless
+    server: 1357900.xyz
+    port: 8880
+    uuid: 41ccd500-43f8-457f-9bd9-de5273a103e8
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: 52yunwang.dpdns.org
+  - name: "🇺🇸 27"
+    type: vless
+    server: amirvpn.amirhm00100.workers.dev
+    port: 80
+    uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: amirvpn.amirhm00100.workers.dev
+  - name: "🇺🇸 28"
+    type: vless
+    server: 104.18.7.36
+    port: 2086
+    uuid: 5d455342-2929-45a0-951a-1b273ec39b7c
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: rayan11-0l5mxs7b-v1.rayan-11.workers.dev
+  - name: "🇩🇪 15"
+    type: vless
+    server: 91.99.218.107
+    port: 36454
+    uuid: 98fb333c-3d84-4fa4-b1f7-1683b509f65a
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🇺🇸 29"
+    type: vless
+    server: www.visa.com.sg
+    port: 2052
+    uuid: 363a6072-05d7-48d5-8f19-312b05fdd9cd
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: chosenflyesqt-q3y28ipf-v3.chosen-fly-esqt.workers.dev
+  - name: "🇩🇪 16"
+    type: vless
+    server: ab.fxgoldensignals.com
+    port: 36454
+    uuid: 98fb333c-3d84-4fa4-b1f7-1683b509f65a
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🇳🇱 14"
+    type: vless
+    server: 104.21.227.134
+    port: 80
+    uuid: e31085f9-7f55-4a7d-b00e-ce94149477cb
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed"
+      headers:
+        Host: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO
+  - name: "🇺🇸 30"
+    type: vless
+    server: wangcai15.cloudflare.182682.xyz
+    port: 8880
+    uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/Telegram🇨🇳@WangCai2/?ed=2560"
+      headers:
+        Host: frejd.11258.workers.dev
+  - name: "🇺🇸 31"
+    type: vless
+    server: 104.18.13.229
+    port: 2052
+    uuid: 25efc727-e853-49ba-9609-3c20009d0e7a
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: winbiss-0tpka6-v1.winbiss.workers.dev
+  - name: "🇺🇸 32"
+    type: vless
+    server: 104.26.3.125
+    port: 2052
+    uuid: e8d06b09-acd9-448c-9874-3c36151d36ee
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/🔒 [By EbraSha]"
+      headers:
+        Host: icy-wildflower-2590.lihuifeng595.workers.dev
+  - name: "🇫🇮 2"
+    type: vless
+    server: 65.109.203.5
+    port: 18521
+    uuid: bbb0d738-975d-41c5-ebfe-164f8cdc914f
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 65.109.203.5
+  - name: "🇩🇪 17"
+    type: vless
+    server: 91.107.208.24
+    port: 443
+    uuid: e6cf712c-7c48-466c-aaed-4154b276a4a4
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🇺🇸 33"
+    type: vless
+    server: 195.85.59.69
+    port: 2095
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: fuckingfangbinxing.cnm--fangbinxing-cnm.workers.dev
+  - name: "🇺🇸 34"
+    type: vless
+    server: www.visaeurope.at
+    port: 2082
+    uuid: cb213db5-803d-49dd-a7e2-46d938af0751
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: amiroo-l43dac88-v2.amiroo-d8b.workers.dev
+  - name: "🇩🇪 18"
+    type: vless
+    server: 91.99.218.107
+    port: 51269
+    uuid: 0341d8f2-99e0-4f6c-af0a-345ac26815cf
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🇺🇸 35"
+    type: vless
+    server: www.visa.com
+    port: 80
+    uuid: a0af2643-a236-463c-8056-3f71d05eed53
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: shomal-g74f3znf-v2.shomal-321.workers.dev
+  - name: "🇳🇱 15"
+    type: vless
+    server: 104.21.227.134
+    port: 2052
+    uuid: 25b7069d-a1e0-4053-8469-a54ec1ce8f56
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: rOugh-preseNCEUROCy1N6YY.sEOtOOLsfOryou.cO.UK
+  - name: "🇫🇷 6"
+    type: vless
+    server: 45.132.185.227
+    port: 889
+    uuid: f7ddcea8-95e3-48de-909f-bb5d3c47696b
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🇺🇸 36"
+    type: vless
+    server: 104.18.241.114
+    port: 2095
+    uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/l25hqs0onbig"
+      headers:
+        Host: index.arcane509.workers.dev
+  - name: "🇺🇸 37"
+    type: vless
+    server: 172.67.168.168
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/Ay6844iXSu2BDycyrxcJWNVFC21"
+      headers:
+        Host: bbbnmki.kk7.ccwu.cc
+  - name: "🇺🇸 38"
+    type: vless
+    server: 172.64.80.1
+    port: 80
+    uuid: 94671f42-fdd3-4503-a3e6-bda4a2527560
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoibUVFb0RQcHJZZSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjM0LjI1My4yMzQuNjIiXX0="
+      headers:
+        Host: 019.electrocellco-cf-019.workers.dev
+  - name: "🇸🇬 6"
+    type: vless
+    server: 47.82.6.36
+    port: 51164
+    uuid: d29a7cee-acd1-4821-adbf-517f8681040e
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🇺🇸 39"
+    type: vless
+    server: 45.82.251.33
+    port: 8880
+    uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🇩🇪 19"
+    type: vless
+    server: 172.64.153.235
+    port: 8080
+    uuid: 7d47ff30-74b2-47c7-b5bd-b06ef8b8f80e
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/9PnUgtdLG8Br"
+      headers:
+        Host: spring-flower-3254.magicnight101.workers.dev
+  - name: "🇺🇸 40"
+    type: vless
+    server: 45.82.251.233
+    port: 8880
+    uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🇺🇸 41"
+    type: vless
+    server: 104.19.35.216
+    port: 80
+    uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: amirvpn.amirhm00100.workers.dev
+  - name: "🇺🇸 42"
+    type: vless
+    server: 104.16.72.113
+    port: 2086
+    uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/9om0kfpk0v09"
+      headers:
+        Host: index.arcane509.workers.dev
+  - name: "🇺🇸 43"
+    type: vless
+    server: 104.21.89.4
+    port: 2086
+    uuid: 636de463-b509-4631-adc6-400b21733278
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/l5s2vgexcus7b8c4"
+      headers:
+        Host: index.harmony610.workers.dev
+  - name: "🇫🇷 7"
+    type: vless
+    server: 72.61.161.219
+    port: 80
+    uuid: b5920b52-504c-4835-978c-fbc4110d5840
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/vless"
+      headers:
+        Host: france-paris.hostinger.kcartik-vps.com
+  - name: "🇺🇸 44"
+    type: vless
+    server: 188.114.97.0
+    port: 8080
+    uuid: 7235ac4c-b73b-45d1-8727-53e147f3744a
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiOXNidTA2d2VzejYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed"
+      headers:
+        Host: 064wfsk6shr7mq573bgm675z7h1a1s25.z2mzf6rq9i.workers.dev
+  - name: "🇺🇸 45"
+    type: vless
+    server: 198.41.222.50
+    port: 8080
+    uuid: c9b45f2f-6cbe-4a86-b4d2-a327f4055a59
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiRzBvTDBuZEFVIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTg1LjIxMy4yMTEuMjkiLCIzMS40NC4yLjU3IiwiNzcuMjQ2LjEwOC4xMzAiXX0=?ed=2560"
+      headers:
+        Host: 001.electrocellco-cf-001.workers.dev
+  - name: "🇺🇸 46"
+    type: vless
+    server: v2ray.codefyinc.com
+    port: 443
+    uuid: 0417be58-2ea8-49de-8083-9eff9b0137e5
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/vlessws"
+      headers:
+        Host: v2ray.codefyinc.com
+  - name: "🇺🇸 47"
+    type: trojan
+    server: fffbgh.huangshang.online
+    port: 443
+    password: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    udp: true
+    servername: FfFBGh.hUAngshanG.onLinE
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/r862SIwqItkD5XgXAL"
+      headers:
+        Host: fFFbGh.hUAngSHanG.onLINE
+  - name: "🇺🇸 48"
+    type: trojan
+    server: hhhnju.taipei102.indevs.in
+    port: 443
+    password: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    udp: true
+    servername: hhhnju.taipei102.indevs.in
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/2cO5FH0xUmT9oqnbBhmKb8nOkg"
+      headers:
+        Host: hhhnju.taipei102.indevs.in
+  - name: "🇺🇸 49"
+    type: trojan
+    server: mmmhu.huangshang.online
+    port: 443
+    password: 5cccb4da-8aee-4b01-be84-2056265e52dc
+    udp: true
+    servername: mMMhU.HUangSHANG.onlIne
+    network: ws
+    ws-opts:
+      path: "/hV829BTVzg35A6ueyyZnWd"
+      headers:
+        Host: mmmhu.HUangshaNG.OnLinE
+  - name: "🇩🇪 20"
+    type: trojan
+    server: 185.235.137.29
+    port: 443
+    password: pYIoKUPGpWeTYXEx3HjR7s97B
+    udp: true
+    servername: free-de-2.undef.network
+    network: ws
+    ws-opts:
+      path: "/f2fc2a1f"
+      headers:
+        Host: free-de-2.undef.network
+  - name: "🇺🇸 50"
+    type: trojan
+    server: llllllllo.890404.indevs.in
+    port: 443
+    password: dd39bb7d-2bea-41b5-be20-fa228a45f639
+    udp: true
+    servername: llllllllo.890404.indevs.in
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/tSROScnWofV7ia41dH"
+      headers:
+        Host: llllllllo.890404.indevs.in
+  - name: "🇺🇸 51"
+    type: trojan
+    server: rrrrrrr5.191262.xyz
+    port: 443
+    password: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
+    udp: true
+    servername: rrrrrrr5.191262.xyz
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/cSIyXrtyqeOFepMpfNkCk8"
+      headers:
+        Host: rrrrrrr5.191262.xyz
+  - name: "🇮🇸"
+    type: trojan
+    server: 167.17.185.152
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    udp: true
+    servername: ozon.ru
+    network: tcp
+  - name: "🇺🇸 52"
+    type: trojan
+    server: ggbnh.7777198.xyz
+    port: 443
+    password: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    udp: true
+    servername: ggBNh.7777198.Xyz
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/r862SIwqItkD5XgXAL"
+      headers:
+        Host: GGBNh.7777198.xyZ
+  - name: "🇺🇸 53"
+    type: trojan
+    server: mmkk.www890604.dpdns.org
+    port: 443
+    password: 5cccb4da-8aee-4b01-be84-2056265e52dc
+    udp: true
+    servername: mMKK.WwW890604.DpdNS.OrG
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/hV829BTVzg35A6ueyyZnWd"
+      headers:
+        Host: mMKK.WwW890604.DpdNS.OrG
+  - name: "🇺🇸 54"
+    type: trojan
+    server: hhhnmju.932.pp.ua
+    port: 443
+    password: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    udp: true
+    servername: hhhnmju.932.pp.ua
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/2cO5FH0xUmT9oqnbBhmKb8nOkg"
+      headers:
+        Host: hhhnmju.932.pp.ua
+  - name: "🇺🇸 55"
+    type: trojan
+    server: bbbnmju.932.pp.ua
+    port: 443
+    password: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    udp: true
+    servername: bbbnmju.932.pp.ua
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/2cO5FH0xUmT9oqnbBhmKb8nOkg"
+      headers:
+        Host: bbbnmju.932.pp.ua
+  - name: "🇺🇸 56"
+    type: trojan
+    server: gggbnh.www890604.dpdns.org
+    port: 443
+    password: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    udp: true
+    servername: gggbnh.www890604.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/2cO5FH0xUmT9oqnbBhmKb8nOkg"
+      headers:
+        Host: gggbnh.www890604.dpdns.org
+  - name: "🇺🇸 57"
+    type: trojan
+    server: NnmJkI9.191262.xYz
+    port: 443
+    password: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    udp: true
+    servername: nnMJkI9.191262.xYz
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/r862SIwqItkD5XgXAL"
+      headers:
+        Host: nnMJKi9.191262.xYz
+  - name: "🇺🇸 58"
+    type: trojan
+    server: ffvvbnhju.2030.pp.ua
+    port: 443
+    password: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    udp: true
+    servername: ffvvbnhju.2030.pp.ua
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/2cO5FH0xUmT9oqnbBhmKb8nOkg"
+      headers:
+        Host: ffvvbnhju.2030.pp.ua
+  - name: "🇺🇸 59"
+    type: trojan
+    server: jjji.2030.pp.ua
+    port: 443
+    password: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
+    udp: true
+    servername: jjji.2030.pp.ua
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/cSIyXrtyqeOFepMpfNkCk8"
+      headers:
+        Host: jjji.2030.pp.ua
+  - name: "🇭🇰 2"
+    type: trojan
+    server: 58.152.18.130
+    port: 443
+    password: BxceQaOe
+    udp: true
+    servername: t.me/ripaojiedian
+    network: tcp
+  - name: "🇬🇧 10"
+    type: trojan
+    server: hl-freedom-1.undef.network
+    port: 443
+    password: 7LBbob9IutFObLxLf9Svc1HaV
+    udp: true
+    servername: hl-freedom-1.undef.network
+    network: ws
+    ws-opts:
+      path: "/f2fc2a1f"
+      headers:
+        Host: hl-freedom-1.undef.network
+  - name: "🇺🇸 60"
+    type: trojan
+    server: bbnhmjk.191262.xyz
+    port: 443
+    password: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    udp: true
+    servername: BbNHmJK.191262.xYZ
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/r862SIwqItkD5XgXAL"
+      headers:
+        Host: BbNhMjk.191262.xYz
+  - name: "🇭🇰 3"
+    type: trojan
+    server: 58.152.53.45
+    port: 443
+    password: BxceQaOe
+    udp: true
+    servername: "t.me%2Fripaojiedian"
+    network: tcp
+  - name: "🇳🇱 16"
+    type: trojan
+    server: 188.114.98.0
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.multiplydose.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.multiplydose.com
+  - name: "🇺🇸 61"
+    type: trojan
+    server: hhhhhhhhj.191266.xyz
+    port: 443
+    password: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    udp: true
+    servername: hhhhhhhhj.191266.xyz
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/2cO5FH0xUmT9oqnbBhmKb8nOkg"
+      headers:
+        Host: hhhhhhhhj.191266.xyz
+  - name: "🇺🇸 62"
+    type: trojan
+    server: freeyx.cloudflare88.eu.org
+    port: 443
+    password: 919f16d2-ae91-4589-8bb2-a672890e3537
+    udp: true
+    servername: z.linglingqi.dpdns.org
+    alpn:
+      - h3
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: z.linglingqi.dpdns.org
+  - name: "🇫🇷 8"
+    type: trojan
+    server: www.calmlunch.com
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+  - name: "🇺🇸 63"
+    type: trojan
+    server: vvvbnhju.932.pp.ua
+    port: 443
+    password: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    udp: true
+    servername: vvvbnhju.932.pp.ua
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/2cO5FH0xUmT9oqnbBhmKb8nOkg"
+      headers:
+        Host: vvvbnhju.932.pp.ua
+  - name: "🇳🇱 17"
+    type: trojan
+    server: 172.67.180.92
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.multiplydose.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.multiplydose.com
+  - name: "🇷🇺"
+    type: trojan
+    server: 156.244.6.115
+    port: 443
+    password: af4b064a9c39472fb34ad8b113acdc6b
+    udp: true
+    servername: 156.244.6.115
+    network: tcp
+  - name: "🇺🇸 64"
+    type: trojan
+    server: eett.taiwan2026.indevs.in
+    port: 443
+    password: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
+    udp: true
+    servername: eett.taiwan2026.indevs.in
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/cSIyXrtyqeOFepMpfNkCk8"
+      headers:
+        Host: eett.taiwan2026.indevs.in
+  - name: "🇺🇸 65"
+    type: trojan
+    server: eed4.7777125.xyz
+    port: 443
+    password: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
+    udp: true
+    servername: eed4.7777125.xyz
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/cSIyXrtyqeOFepMpfNkCk8"
+      headers:
+        Host: eed4.7777125.xyz
+  - name: "🇳🇱 18"
+    type: trojan
+    server: 104.18.11.110
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.multiplydose.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.multiplydose.com
+  - name: "🇺🇸 66"
+    type: trojan
+    server: BBbHnY.191268.xYZ
+    port: 443
+    password: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    udp: true
+    servername: BBbhNY.191268.xYz
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/r862SIwqItkD5XgXAL"
+      headers:
+        Host: BBBHNY.191268.XyZ
+  - name: "🇨🇦 4"
+    type: trojan
+    server: ttt6.006660666.xyz
+    port: 443
+    password: 795ef99b-3260-4d18-ac98-5130bba9f168
+    udp: true
+    servername: ttt6.006660666.xyz
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/OkVaxoknnGWI7hLRpJ1"
+      headers:
+        Host: ttt6.006660666.xyz
+  - name: "🇺🇸 67"
+    type: trojan
+    server: 104.18.32.47
+    port: 8443
+    password: ppmk
+    udp: true
+    servername: flat-firefly-6022.rixewi3168.workers.dev
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: flat-firefly-6022.rixewi3168.workers.dev
+  - name: "🇺🇸 68"
+    type: trojan
+    server: cloudflare.182682.xyz
+    port: 443
+    password: 919f16d2-ae91-4589-8bb2-a672890e3537
+    udp: true
+    servername: z.linglingqi.dpdns.org
+    alpn:
+      - h3
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: z.linglingqi.dpdns.org
+  - name: "🇺🇸 69"
+    type: trojan
+    server: yyyyu.taiwan2026.indevs.in
+    port: 443
+    password: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
+    udp: true
+    servername: yyyyu.taiwan2026.indevs.in
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/cSIyXrtyqeOFepMpfNkCk8"
+      headers:
+        Host: yyyyu.taiwan2026.indevs.in
+  - name: "🇺🇸 70"
+    type: trojan
+    server: ggbnhj.932.pp.ua
+    port: 443
+    password: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    udp: true
+    servername: ggbnhj.932.pp.ua
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/2cO5FH0xUmT9oqnbBhmKb8nOkg"
+      headers:
+        Host: ggbnhj.932.pp.ua
+  - name: "🇳🇱 19"
+    type: trojan
+    server: chatgpt.com
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.gossipglove.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.gossipglove.com
+  - name: "🇺🇸 71"
+    type: trojan
+    server: bBGtr.7777198.xYZ
+    port: 443
+    password: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    udp: true
+    servername: bBGtR.7777198.XYz
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/r862SIwqItkD5XgXAL"
+      headers:
+        Host: BbGTr.7777198.Xyz
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "♻️ 自动选择"
+      - DIRECT
+      - "🇺🇸"
+      - "🇫🇷"
+      - "🇪🇬"
+      - "🇻🇳"
+      - "🇵🇷"
+      - "🇩🇪"
+      - "🇵🇰"
+      - "🇬🇧"
+      - "🇺🇸 2"
+      - "🇺🇸 3"
+      - "🇹🇼"
+      - "🇩🇪 2"
+      - "🇧🇷"
+      - "🇰🇭"
+      - "🇺🇸 4"
+      - "🇩🇪 3"
+      - "🇸🇬"
+      - "🇦🇺"
+      - "🇺🇸 5"
+      - "🇺🇸 6"
+      - "🇺🇸 7"
+      - "🇳🇱"
+      - "🇵🇦"
+      - "🇺🇸 8"
+      - "🇺🇸 9"
+      - "🇬🇧 2"
+      - "🇸🇬 2"
+      - "🇯🇵"
+      - "🇰🇼"
+      - "🇺🇸 10"
+      - "🇺🇸 11"
+      - "🇧🇷 2"
+      - "🇳🇱 2"
+      - "🇰🇭 2"
+      - "🇩🇪 4"
+      - "🇯🇵 2"
+      - "🇧🇬"
+      - "🇹🇭"
+      - "🇨🇦"
+      - "🇹🇷"
+      - "🇺🇸 12"
+      - "🇺🇸 13"
+      - "🇳🇱 3"
+      - "🇳🇱 4"
+      - "🇳🇱 5"
+      - "🇭🇰"
+      - "🇸🇬 3"
+      - "🇹🇷 2"
+      - "🇪🇬 2"
+      - "🇳🇱 6"
+      - "🇫🇷 2"
+      - "🇩🇪 5"
+      - "🇦🇺 2"
+      - "🇨🇦 2"
+      - "🇳🇱 7"
+      - "🇬🇧 3"
+      - "🇫🇷 3"
+      - "🇺🇸 14"
+      - "🇺🇸 15"
+      - "🇵🇰 2"
+      - "🇳🇱 8"
+      - "🇩🇪 6"
+      - "🇬🇧 4"
+      - "🇿🇦"
+      - "🇩🇪 7"
+      - "🇩🇪 8"
+      - "🇬🇧 5"
+      - "🇵🇰 3"
+      - "🇺🇸 16"
+      - "🇺🇸 17"
+      - "🇪🇬 3"
+      - "🇩🇪 9"
+      - "🇬🇧 6"
+      - "🇩🇪 10"
+      - "🇹🇭 2"
+      - "🇩🇪 11"
+      - "🇪🇨"
+      - "🇸🇬 4"
+      - "🇯🇵 3"
+      - "🇳🇱 9"
+      - "🇳🇱 10"
+      - "🇦🇪"
+      - "🇫🇮"
+      - "🇸🇬 5"
+      - "🇵🇱"
+      - "🇧🇷 3"
+      - "🇻🇳 2"
+      - "🇻🇳 3"
+      - "🇹🇷 3"
+      - "🇫🇷 4"
+      - "🇵🇰 4"
+      - "🇫🇷 5"
+      - "🇺🇦"
+      - "🇯🇴"
+      - "🇳🇱 11"
+      - "🇬🇧 7"
+      - "🇦🇪 2"
+      - "🇰🇼 2"
+      - "🇺🇸 18"
+      - "🇲🇽"
+      - "🇳🇱 12"
+      - "🇰🇷"
+      - "🇳🇴"
+      - "🇦🇺 3"
+      - "🇺🇸 19"
+      - "🇬🇧 8"
+      - "🇧🇷 4"
+      - "🇬🇧 9"
+      - "🇩🇪 12"
+      - "🇻🇳 4"
+      - "🇩🇪 13"
+      - "🇻🇳 5"
+      - node
+      - "node 2"
+      - "node 3"
+      - "node 4"
+      - "node 5"
+      - "node 6"
+      - "node 7"
+      - "node 8"
+      - "node 9"
+      - "node 10"
+      - "node 11"
+      - "node 12"
+      - "node 13"
+      - "node 14"
+      - "node 15"
+      - "node 16"
+      - "node 17"
+      - "node 18"
+      - "node 19"
+      - "node 20"
+      - "node 21"
+      - "node 22"
+      - "node 23"
+      - "node 24"
+      - "node 25"
+      - "node 26"
+      - "node 27"
+      - "node 28"
+      - "node 29"
+      - "node 30"
+      - "node 31"
+      - "node 32"
+      - "node 33"
+      - "node 34"
+      - "node 35"
+      - "node 36"
+      - "node 37"
+      - "node 38"
+      - "node 39"
+      - "node 40"
+      - "node 41"
+      - "node 42"
+      - "node 43"
+      - "node 44"
+      - "node 45"
+      - "node 46"
+      - "node 47"
+      - "node 48"
+      - "node 49"
+      - "node 50"
+      - "node 51"
+      - "node 52"
+      - "node 53"
+      - "node 54"
+      - "node 55"
+      - "node 56"
+      - "node 57"
+      - "node 58"
+      - "node 59"
+      - "node 60"
+      - "node 61"
+      - "node 62"
+      - "node 63"
+      - "node 64"
+      - "node 65"
+      - "node 66"
+      - "node 67"
+      - "node 68"
+      - "node 69"
+      - "node 70"
+      - "node 71"
+      - "node 72"
+      - "node 73"
+      - "🇺🇸 20"
+      - "🇨🇦 3"
+      - "🇺🇸 21"
+      - "🇺🇸 22"
+      - "🇺🇸 23"
+      - "🇺🇸 24"
+      - "🇩🇪 14"
+      - "🇺🇸 25"
+      - "🇳🇱 13"
+      - "🇺🇸 26"
+      - "🇺🇸 27"
+      - "🇺🇸 28"
+      - "🇩🇪 15"
+      - "🇺🇸 29"
+      - "🇩🇪 16"
+      - "🇳🇱 14"
+      - "🇺🇸 30"
+      - "🇺🇸 31"
+      - "🇺🇸 32"
+      - "🇫🇮 2"
+      - "🇩🇪 17"
+      - "🇺🇸 33"
+      - "🇺🇸 34"
+      - "🇩🇪 18"
+      - "🇺🇸 35"
+      - "🇳🇱 15"
+      - "🇫🇷 6"
+      - "🇺🇸 36"
+      - "🇺🇸 37"
+      - "🇺🇸 38"
+      - "🇸🇬 6"
+      - "🇺🇸 39"
+      - "🇩🇪 19"
+      - "🇺🇸 40"
+      - "🇺🇸 41"
+      - "🇺🇸 42"
+      - "🇺🇸 43"
+      - "🇫🇷 7"
+      - "🇺🇸 44"
+      - "🇺🇸 45"
+      - "🇺🇸 46"
+      - "🇺🇸 47"
+      - "🇺🇸 48"
+      - "🇺🇸 49"
+      - "🇩🇪 20"
+      - "🇺🇸 50"
+      - "🇺🇸 51"
+      - "🇮🇸"
+      - "🇺🇸 52"
+      - "🇺🇸 53"
+      - "🇺🇸 54"
+      - "🇺🇸 55"
+      - "🇺🇸 56"
+      - "🇺🇸 57"
+      - "🇺🇸 58"
+      - "🇺🇸 59"
+      - "🇭🇰 2"
+      - "🇬🇧 10"
+      - "🇺🇸 60"
+      - "🇭🇰 3"
+      - "🇳🇱 16"
+      - "🇺🇸 61"
+      - "🇺🇸 62"
+      - "🇫🇷 8"
+      - "🇺🇸 63"
+      - "🇳🇱 17"
+      - "🇷🇺"
+      - "🇺🇸 64"
+      - "🇺🇸 65"
+      - "🇳🇱 18"
+      - "🇺🇸 66"
+      - "🇨🇦 4"
+      - "🇺🇸 67"
+      - "🇺🇸 68"
+      - "🇺🇸 69"
+      - "🇺🇸 70"
+      - "🇳🇱 19"
+      - "🇺🇸 71"
+  - name: "♻️ 自动选择"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "🇺🇸"
+      - "🇫🇷"
+      - "🇪🇬"
+      - "🇻🇳"
+      - "🇵🇷"
+      - "🇩🇪"
+      - "🇵🇰"
+      - "🇬🇧"
+      - "🇺🇸 2"
+      - "🇺🇸 3"
+      - "🇹🇼"
+      - "🇩🇪 2"
+      - "🇧🇷"
+      - "🇰🇭"
+      - "🇺🇸 4"
+      - "🇩🇪 3"
+      - "🇸🇬"
+      - "🇦🇺"
+      - "🇺🇸 5"
+      - "🇺🇸 6"
+      - "🇺🇸 7"
+      - "🇳🇱"
+      - "🇵🇦"
+      - "🇺🇸 8"
+      - "🇺🇸 9"
+      - "🇬🇧 2"
+      - "🇸🇬 2"
+      - "🇯🇵"
+      - "🇰🇼"
+      - "🇺🇸 10"
+      - "🇺🇸 11"
+      - "🇧🇷 2"
+      - "🇳🇱 2"
+      - "🇰🇭 2"
+      - "🇩🇪 4"
+      - "🇯🇵 2"
+      - "🇧🇬"
+      - "🇹🇭"
+      - "🇨🇦"
+      - "🇹🇷"
+      - "🇺🇸 12"
+      - "🇺🇸 13"
+      - "🇳🇱 3"
+      - "🇳🇱 4"
+      - "🇳🇱 5"
+      - "🇭🇰"
+      - "🇸🇬 3"
+      - "🇹🇷 2"
+      - "🇪🇬 2"
+      - "🇳🇱 6"
+      - "🇫🇷 2"
+      - "🇩🇪 5"
+      - "🇦🇺 2"
+      - "🇨🇦 2"
+      - "🇳🇱 7"
+      - "🇬🇧 3"
+      - "🇫🇷 3"
+      - "🇺🇸 14"
+      - "🇺🇸 15"
+      - "🇵🇰 2"
+      - "🇳🇱 8"
+      - "🇩🇪 6"
+      - "🇬🇧 4"
+      - "🇿🇦"
+      - "🇩🇪 7"
+      - "🇩🇪 8"
+      - "🇬🇧 5"
+      - "🇵🇰 3"
+      - "🇺🇸 16"
+      - "🇺🇸 17"
+      - "🇪🇬 3"
+      - "🇩🇪 9"
+      - "🇬🇧 6"
+      - "🇩🇪 10"
+      - "🇹🇭 2"
+      - "🇩🇪 11"
+      - "🇪🇨"
+      - "🇸🇬 4"
+      - "🇯🇵 3"
+      - "🇳🇱 9"
+      - "🇳🇱 10"
+      - "🇦🇪"
+      - "🇫🇮"
+      - "🇸🇬 5"
+      - "🇵🇱"
+      - "🇧🇷 3"
+      - "🇻🇳 2"
+      - "🇻🇳 3"
+      - "🇹🇷 3"
+      - "🇫🇷 4"
+      - "🇵🇰 4"
+      - "🇫🇷 5"
+      - "🇺🇦"
+      - "🇯🇴"
+      - "🇳🇱 11"
+      - "🇬🇧 7"
+      - "🇦🇪 2"
+      - "🇰🇼 2"
+      - "🇺🇸 18"
+      - "🇲🇽"
+      - "🇳🇱 12"
+      - "🇰🇷"
+      - "🇳🇴"
+      - "🇦🇺 3"
+      - "🇺🇸 19"
+      - "🇬🇧 8"
+      - "🇧🇷 4"
+      - "🇬🇧 9"
+      - "🇩🇪 12"
+      - "🇻🇳 4"
+      - "🇩🇪 13"
+      - "🇻🇳 5"
+      - node
+      - "node 2"
+      - "node 3"
+      - "node 4"
+      - "node 5"
+      - "node 6"
+      - "node 7"
+      - "node 8"
+      - "node 9"
+      - "node 10"
+      - "node 11"
+      - "node 12"
+      - "node 13"
+      - "node 14"
+      - "node 15"
+      - "node 16"
+      - "node 17"
+      - "node 18"
+      - "node 19"
+      - "node 20"
+      - "node 21"
+      - "node 22"
+      - "node 23"
+      - "node 24"
+      - "node 25"
+      - "node 26"
+      - "node 27"
+      - "node 28"
+      - "node 29"
+      - "node 30"
+      - "node 31"
+      - "node 32"
+      - "node 33"
+      - "node 34"
+      - "node 35"
+      - "node 36"
+      - "node 37"
+      - "node 38"
+      - "node 39"
+      - "node 40"
+      - "node 41"
+      - "node 42"
+      - "node 43"
+      - "node 44"
+      - "node 45"
+      - "node 46"
+      - "node 47"
+      - "node 48"
+      - "node 49"
+      - "node 50"
+      - "node 51"
+      - "node 52"
+      - "node 53"
+      - "node 54"
+      - "node 55"
+      - "node 56"
+      - "node 57"
+      - "node 58"
+      - "node 59"
+      - "node 60"
+      - "node 61"
+      - "node 62"
+      - "node 63"
+      - "node 64"
+      - "node 65"
+      - "node 66"
+      - "node 67"
+      - "node 68"
+      - "node 69"
+      - "node 70"
+      - "node 71"
+      - "node 72"
+      - "node 73"
+      - "🇺🇸 20"
+      - "🇨🇦 3"
+      - "🇺🇸 21"
+      - "🇺🇸 22"
+      - "🇺🇸 23"
+      - "🇺🇸 24"
+      - "🇩🇪 14"
+      - "🇺🇸 25"
+      - "🇳🇱 13"
+      - "🇺🇸 26"
+      - "🇺🇸 27"
+      - "🇺🇸 28"
+      - "🇩🇪 15"
+      - "🇺🇸 29"
+      - "🇩🇪 16"
+      - "🇳🇱 14"
+      - "🇺🇸 30"
+      - "🇺🇸 31"
+      - "🇺🇸 32"
+      - "🇫🇮 2"
+      - "🇩🇪 17"
+      - "🇺🇸 33"
+      - "🇺🇸 34"
+      - "🇩🇪 18"
+      - "🇺🇸 35"
+      - "🇳🇱 15"
+      - "🇫🇷 6"
+      - "🇺🇸 36"
+      - "🇺🇸 37"
+      - "🇺🇸 38"
+      - "🇸🇬 6"
+      - "🇺🇸 39"
+      - "🇩🇪 19"
+      - "🇺🇸 40"
+      - "🇺🇸 41"
+      - "🇺🇸 42"
+      - "🇺🇸 43"
+      - "🇫🇷 7"
+      - "🇺🇸 44"
+      - "🇺🇸 45"
+      - "🇺🇸 46"
+      - "🇺🇸 47"
+      - "🇺🇸 48"
+      - "🇺🇸 49"
+      - "🇩🇪 20"
+      - "🇺🇸 50"
+      - "🇺🇸 51"
+      - "🇮🇸"
+      - "🇺🇸 52"
+      - "🇺🇸 53"
+      - "🇺🇸 54"
+      - "🇺🇸 55"
+      - "🇺🇸 56"
+      - "🇺🇸 57"
+      - "🇺🇸 58"
+      - "🇺🇸 59"
+      - "🇭🇰 2"
+      - "🇬🇧 10"
+      - "🇺🇸 60"
+      - "🇭🇰 3"
+      - "🇳🇱 16"
+      - "🇺🇸 61"
+      - "🇺🇸 62"
+      - "🇫🇷 8"
+      - "🇺🇸 63"
+      - "🇳🇱 17"
+      - "🇷🇺"
+      - "🇺🇸 64"
+      - "🇺🇸 65"
+      - "🇳🇱 18"
+      - "🇺🇸 66"
+      - "🇨🇦 4"
+      - "🇺🇸 67"
+      - "🇺🇸 68"
+      - "🇺🇸 69"
+      - "🇺🇸 70"
+      - "🇳🇱 19"
+      - "🇺🇸 71"
+rules:
+  - "GEOIP,LAN,DIRECT,no-resolve"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,🚀 节点选择"

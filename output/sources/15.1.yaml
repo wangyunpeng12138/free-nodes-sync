@@ -1,0 +1,1734 @@
+# 订阅 15.1.txt -> Clash
+# 由 txt2clash.py 自动生成于 2026-11-01 16:51:16 +0800
+# 节点数量: 113
+# 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: "off"
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  listen: "0.0.0.0:1053"
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "*.localhost"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  proxy-server-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+proxies:
+  - name: node
+    type: vmess
+    server: s1.connect.labex.pro
+    port: 1007
+    uuid: 14594d5e-86bd-4727-8772-feb16dbf24ec
+    alterId: 0
+    cipher: aes-128-gcm
+    udp: true
+    network: tcp
+  - name: "node 2"
+    type: vmess
+    server: 188.114.96.19
+    port: 80
+    uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  - name: "node 3"
+    type: vmess
+    server: 172.237.70.226
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: filembad-460
+    type: vless
+    server: 194.150.166.230
+    port: 9443
+    uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+    udp: true
+    tls: true
+    servername: storage.yandexcloud.net
+    client-fingerprint: safari
+    reality-opts:
+      public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+      short-id: ad20d2ba
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: filembad-456
+    type: vless
+    server: 91.196.32.137
+    port: 443
+    uuid: fe8d0240-ba7e-4b48-a74c-b9ae68e2c3f7
+    udp: true
+    tls: true
+    servername: sh-de-01.mintrocket.org
+    client-fingerprint: safari
+    reality-opts:
+      public-key: CI-rgcHsZVP72b_0p-KoP6MadMvE5EZcX6LDfnJWP2w
+      short-id: d5bb7530692445f9
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: canfingV2rayNG-452
+    type: vless
+    server: jsv-ir2.randino.ir
+    port: 2
+    uuid: fc7f5780-4c4e-11f1-a3f8-b58432c62d9c
+    udp: true
+    tls: false
+    network: tcp
+  - name: canfingV2rayNG-448
+    type: vless
+    server: 72.60.189.172
+    port: 443
+    uuid: f6f62b37-e002-42c2-8c32-51fe3da6750f
+    udp: true
+    tls: true
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ciEOYnFRicl1_ibRKw70jTDZKIMV7R88Qic4GpVzSXA
+      short-id: 55cbb453c4bea99b
+    network: tcp
+  - name: filembad-444
+    type: vless
+    server: 188.114.97.6
+    port: 8080
+    uuid: f55a75a7-5aa6-4df7-814a-99da0edb5c86
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip"
+      headers:
+        Host: autumn-cloud-ab5e.229-601.workers.dev
+  - name: filembad-440
+    type: vless
+    server: 172.67.209.127
+    port: 8880
+    uuid: f4e6476f-40d0-40cb-841f-cc2f6909ff20
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip=ProxyIP.SG.CMLiussss.net"
+      headers:
+        Host: calm-haze-d105.21-7cd.workers.dev
+  - name: filembad-436
+    type: vless
+    server: 185.71.219.128
+    port: 8443
+    uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
+    udp: true
+    tls: true
+    servername: youtubekids.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: yrKUxdxmj4Z5ECKB70SuqjmmjY7KUOtTL9-uWmKLqDw
+      short-id: 26f54a3aeec766
+    network: tcp
+  - name: filembad-432
+    type: vless
+    server: 185.71.219.128
+    port: 80
+    uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: play.google.com
+  - name: filembad-428
+    type: vless
+    server: 177.3.213.112
+    port: 443
+    uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
+    udp: true
+    tls: true
+    servername: germanz.ruletka.study
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+      short-id: ff776ff77be48b88
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: canfingV2rayNG-424
+    type: vless
+    server: rvg-production-8249.up.railway.app
+    port: 443
+    uuid: f1f47653-d57b-5917-fa47-c80823a8b7f3
+    udp: true
+    tls: true
+    servername: rvg-production-8249.up.railway.app
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ws/f1f47653-d57b-5917-fa47-c80823a8b7f3"
+      headers:
+        Host: rvg-production-8249.up.railway.app
+  - name: ProxyMtpVPN-420
+    type: vless
+    server: 45.88.13.6
+    port: 443
+    uuid: f0e0d780-a43b-98ef-d7fe-f628cfb1a606
+    udp: true
+    tls: true
+    servername: download.nvidia.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: download.nvidia.com
+      mode: auto
+  - name: ProxyMtpVPN-416
+    type: vless
+    server: 130.49.77.8
+    port: 443
+    uuid: f0e0d780-a43b-98ef-d7fe-f628cfb1a606
+    udp: true
+    tls: true
+    servername: cdn.steamstatic.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 3DYkxUg9fBA6cONioJOPrsklcMQEImEsurR6air4swo
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: cdn.steamstatic.com
+      mode: auto
+  - name: filembad-412
+    type: vless
+    server: 31.56.222.61
+    port: 47450
+    uuid: ef6a9d5d-d50c-4d14-abda-e9178b9965ba
+    udp: true
+    tls: false
+    network: tcp
+  - name: filembad-408
+    type: vless
+    server: 31.56.222.61
+    port: 39884
+    uuid: ef6a9d5d-d50c-4d14-abda-e9178b9965ba
+    udp: true
+    tls: false
+    network: tcp
+  - name: filembad-404
+    type: vless
+    server: 31.56.222.61
+    port: 32848
+    uuid: ef6a9d5d-d50c-4d14-abda-e9178b9965ba
+    udp: true
+    tls: false
+    network: tcp
+  - name: filembad-400
+    type: vless
+    server: 31.56.222.61
+    port: 13077
+    uuid: ef6a9d5d-d50c-4d14-abda-e9178b9965ba
+    udp: true
+    tls: false
+    network: tcp
+  - name: filembad-396
+    type: vless
+    server: 62.60.245.148
+    port: 443
+    uuid: eec2f6a7-c10f-43b0-b133-61f9bf9bbc27
+    udp: true
+    tls: true
+    servername: amazon.de
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: G8SING6Ibc_igZ5vI5578fXCT_mBMRuq_o8_Ymnj2SQ
+      short-id: eba1498e012ef580
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: canfingV2rayNG-392
+    type: vless
+    server: fn.fifapes.monster
+    port: 2090
+    uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - fn.fifapes.monster
+  - name: filembad-388
+    type: vless
+    server: 104.26.3.125
+    port: 2052
+    uuid: e8d06b09-acd9-448c-9874-3c36151d36ee
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: icy-wildflower-2590.lihuifeng595.workers.dev
+  - name: filembad-384
+    type: vless
+    server: 104.21.74.214
+    port: 8880
+    uuid: e74e8806-06b5-4fb0-a89e-cf79d88cfd02
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip"
+      headers:
+        Host: wild-frog-54a9.170-dcc.workers.dev
+  - name: ProxyMtpVPN-380
+    type: vless
+    server: 95.179.169.44
+    port: 53224
+    uuid: e4887910-bcfc-48f8-8cd4-abb592e181af
+    udp: true
+    tls: false
+    network: tcp
+  - name: filembad-376
+    type: vless
+    server: 18.169.56.185
+    port: 22223
+    uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+    udp: true
+    tls: false
+    network: tcp
+  - name: filembad-372
+    type: vless
+    server: 13.36.152.170
+    port: 22224
+    uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+    udp: true
+    tls: false
+    network: tcp
+  - name: filembad-368
+    type: vless
+    server: 91.215.40.6
+    port: 443
+    uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+    udp: true
+    tls: true
+    servername: id.dframe.app
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
+      short-id: 5c766813929a1fdd
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+  - name: filembad-364
+    type: vless
+    server: 95.85.231.130
+    port: 443
+    uuid: e0fc8dbc-d564-459f-b565-33074732c102
+    udp: true
+    tls: true
+    servername: g10r.andy-link.com
+    client-fingerprint: safari
+    reality-opts:
+      public-key: "_p24twNlnUIdoSiWlNoxSlu95PfQAoLIrxKQU4IBsU4"
+      short-id: "1122334455667788"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: filembad-360
+    type: vless
+    server: 185.126.67.202
+    port: 443
+    uuid: e0fc8dbc-d564-459f-b565-33074732c102
+    udp: true
+    tls: true
+    servername: asd-cur2.voxicheck.com
+    client-fingerprint: safari
+    reality-opts:
+      public-key: "_p24twNlnUIdoSiWlNoxSlu95PfQAoLIrxKQU4IBsU4"
+      short-id: abcd1234
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: filembad-356
+    type: vless
+    server: 185.126.67.186
+    port: 443
+    uuid: e0fc8dbc-d564-459f-b565-33074732c102
+    udp: true
+    tls: true
+    servername: asd-cur2.voxicheck.com
+    client-fingerprint: safari
+    reality-opts:
+      public-key: "_p24twNlnUIdoSiWlNoxSlu95PfQAoLIrxKQU4IBsU4"
+      short-id: abcd1234
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: filembad-352
+    type: vless
+    server: 185.126.67.145
+    port: 443
+    uuid: e0fc8dbc-d564-459f-b565-33074732c102
+    udp: true
+    tls: true
+    servername: asd-cur1.voxicheck.com
+    client-fingerprint: safari
+    reality-opts:
+      public-key: "_p24twNlnUIdoSiWlNoxSlu95PfQAoLIrxKQU4IBsU4"
+      short-id: "1122334455667788"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: filembad-347
+    type: vless
+    server: 104.18.13.229
+    port: 8880
+    uuid: deee4a60-e8c3-456f-846f-aa2c2b7fae24
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyipPLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET"
+      headers:
+        Host: broad-bush-c2c8.37-9a0.workers.dev
+  - name: canfingV2rayNG-343
+    type: vless
+    server: gr.freeinternat.com
+    port: 443
+    uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+    udp: true
+    tls: true
+    servername: gr.freeinternat.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
+      short-id: ff776ff77be48b88
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: ProxyMtpVPN-339
+    type: vless
+    server: 87.120.106.178
+    port: 443
+    uuid: d840d9d0-2597-4129-a480-b0dff02899fe
+    udp: true
+    tls: true
+    servername: Miro.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: MQwKv7mfS-Rd1h3cDtteSq5r8buY-EskhxLb2OA-LCE
+      short-id: 3149ce78f70b78fe
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: ProxyMtpVPN-335
+    type: vless
+    server: 147.90.26.37
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: cdn8848.776676.xyz
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512"
+      headers:
+        Host: cdn8848.776676.xyz
+  - name: filembad-331
+    type: vless
+    server: 62.60.152.1
+    port: 56328
+    uuid: ce230b9c-0531-40da-bc3f-f27a8e059db1
+    udp: true
+    tls: true
+    servername: table.vkroom-it-service.xyz
+    client-fingerprint: safari
+    reality-opts:
+      public-key: iI1pc8k9-mIPHL2Dga-4n4h3KoBT68lN434nglpgm2M
+      short-id: f3a9c21e8b6d4571
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: filembad-327
+    type: vless
+    server: icook.tw
+    port: 8880
+    uuid: c3f4ee0c-3c64-466d-ae14-9bcf685e1efd
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip=ProxyIP.KR.CMLiussss.net"
+      headers:
+        Host: shiny-waterfall-fa51.300-c6f.workers.dev
+  - name: filembad-323
+    type: vless
+    server: 196.245.52.147
+    port: 25535
+    uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
+    udp: true
+    tls: true
+    servername: www.microsoft.com
+    client-fingerprint: qq
+    reality-opts:
+      public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
+      short-id: 7642ce57308852e7
+    network: tcp
+  - name: canfingV2rayNG-319
+    type: vless
+    server: 89.222.123.211
+    port: 16923
+    uuid: c065e1bb-cb56-41e5-b043-9dfd15b67565
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    reality-opts:
+      public-key: "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA"
+      short-id: 10ffb85da1c2d986
+    client-fingerprint: chrome
+    network: grpc
+    grpc-opts:
+      grpc-service-name: neurex
+  - name: canfingV2rayNG-315
+    type: vless
+    server: k2.cloud--vpn.site
+    port: 443
+    uuid: bdaf42dd-f75b-4594-d5f8-51c0feeb8406
+    udp: true
+    tls: true
+    servername: ssl.fastly.com
+    client-fingerprint: firefox
+    alpn:
+      - h2
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: c12.com
+  - name: filembad-311
+    type: vless
+    server: 193.202.10.2
+    port: 40443
+    uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
+    udp: true
+    tls: true
+    servername: deepl.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
+      short-id: db46e2946fc466fd
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: ProxyMtpVPN-307
+    type: vless
+    server: freef35panel-production.up.railway.app
+    port: 443
+    uuid: b6c94a66-0d8c-34dd-a671-4e84a9e5e123
+    udp: true
+    tls: true
+    servername: freef35panel-production.up.railway.app
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ws/b6c94a66-0d8c-34dd-a671-4e84a9e5e123"
+      headers:
+        Host: freef35panel-production.up.railway.app
+  - name: ProxyMtpVPN-303
+    type: vless
+    server: 188.114.97.6
+    port: 443
+    uuid: b2593749-691c-428c-9481-14979cba3446
+    udp: true
+    tls: true
+    servername: xi.tbv.ccwu.cc
+    network: ws
+    ws-opts:
+      path: "/proxyip=us.xiabibi.cf"
+      headers:
+        Host: xi.tbv.ccwu.cc
+    client-fingerprint: chrome
+  - name: canfingV2rayNG-299
+    type: vless
+    server: www.speedtest.net
+    port: 443
+    uuid: afe143cb-76e2-4202-995d-da09f07b0cd9
+    udp: true
+    tls: true
+    servername: ez-72Da5d.eZAccEsS1eBE0E6.wOrkers.DeV
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiN2pxZ1lxeHQyZ1dudjloIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560"
+      headers:
+        Host: ez-72da5d.ezaccess1ebe0e6.workers.dev
+  - name: canfingV2rayNG-295
+    type: vless
+    server: 45.74.178.41
+    port: 719
+    uuid: ae9bcc43-5fd8-4891-b06e-1c93e2747ed9
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/api/v2/xtrnwqjbkr?ed=2560"
+      headers:
+        Host: play.google.com
+  - name: canfingV2rayNG-291
+    type: vless
+    server: de-dp-01.com
+    port: 8443
+    uuid: aa5b231c-4e18-4ae6-b83c-a293f51c0dfa
+    udp: true
+    tls: true
+    servername: storage.yandex.net
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
+      short-id: 8d3293f0066e129a
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: filembad-286
+    type: vless
+    server: 104.21.23.72
+    port: 8880
+    uuid: a62a4c64-2270-4d41-828b-2591906c48ba
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip=ProxyIP.SG.CMLiussss.net"
+      headers:
+        Host: sweet-disk-a026.253-54b.workers.dev
+  - name: canfingV2rayNG-282
+    type: vless
+    server: 192.71.82.2
+    port: 443
+    uuid: a5c05c1e-aa68-443f-8598-09800244bd4b
+    udp: true
+    tls: true
+    servername: kingcloud.biack.ir
+    client-fingerprint: firefox
+    alpn:
+      - h3
+    network: ws
+    ws-opts:
+      path: "/LiL?ed=2560"
+      headers:
+        Host: kingcloud.biack.ir
+  - name: canfingV2rayNG-278
+    type: vless
+    server: vajm5bz324c3.vtret.com
+    port: 8379
+    uuid: a2292e36-fafb-6634-051d-1d99f45503c7
+    udp: true
+    tls: true
+    servername: play.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qIRHacDVKAuyQJrOJMSpwYyKhw-5KwvOX0W3d-TiB3w
+      short-id: 07529200e1fe
+    network: xhttp
+    xhttp-opts:
+      path: "/phpMyAdmin?q=一位處女在孫先生的農場工作。"
+      host: google.com
+      mode: packet-up
+  - name: canfingV2rayNG-274
+    type: vless
+    server: 5.75.207.247
+    port: 2886
+    uuid: a1d262a9-6d57-4ff0-99e4-594782c2ca7c
+    udp: true
+    tls: true
+    servername: www.oracle.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: cKOOhuCGj6qHK3znJDGnoG9DTJOJK_GZ_r7A68xi_DM
+      short-id: e19da077d7
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: filembad-265
+    type: vless
+    server: 194.41.112.152
+    port: 8443
+    uuid: 9b4792ad-187a-4775-bf4f-9b17b0a774ce
+    udp: true
+    tls: true
+    servername: mozilla.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: TNsQJHoX2M2u07a6oEPb3tY9U08Aph4Qvdk76dAZdio
+      short-id: 82ed5803a8047a3e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: filembad-261
+    type: vless
+    server: 188.114.97.6
+    port: 8080
+    uuid: 98b6cb05-b5ab-4c82-8683-07de28f796a9
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiRHF6VWU4SmYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0"
+      headers:
+        Host: holy-glitter-39f9.wwewee2dasdds.workers.dev
+  - name: filembad-257
+    type: vless
+    server: anydesk.com
+    port: 8880
+    uuid: 984d10dd-4d51-45ac-a781-f0c1357644c2
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip=ProxyIP.SG.CMLiussss.net"
+      headers:
+        Host: lingering-sun-d7b5.49-56e.workers.dev
+  - name: filembad-253
+    type: vless
+    server: 91.107.154.88
+    port: 443
+    uuid: 92834022-0c3c-42ca-9ed4-08049705dc49
+    udp: true
+    tls: false
+    network: tcp
+  - name: filembad-249
+    type: vless
+    server: 158.94.216.42
+    port: 443
+    uuid: 92834022-0c3c-42ca-9ed4-08049705dc49
+    udp: true
+    tls: false
+    network: tcp
+  - name: filembad-245
+    type: vless
+    server: ide-de.gameservice-iramn3.com
+    port: 443
+    uuid: 91d51cf2-fa3e-4dd0-9a9d-0c8e2732624e
+    udp: true
+    tls: true
+    servername: ai.android
+    client-fingerprint: edge
+    reality-opts:
+      public-key: gSh8XF5EWNyXazy9fHQ3Xo4ioZsODd5gLE4eN-L-OSk
+      short-id: b9279ca31382a9a1
+    network: tcp
+  - name: ProxyMtpVPN-241
+    type: vless
+    server: 199.232.78.159
+    port: 443
+    uuid: 8ef58f28-1179-4dd9-9592-ca5e6b828eb5
+    udp: true
+    tls: true
+    servername: ssl.fastly.com
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: towndtime.global.ssl.fastly.neT.
+    client-fingerprint: chrome
+  - name: filembad-237
+    type: vless
+    server: 144.31.203.152
+    port: 443
+    uuid: 8ec1a004-34f5-4c2b-88f5-42c27c887c04
+    udp: true
+    tls: true
+    servername: account.amd.com
+    client-fingerprint: safari
+    reality-opts:
+      public-key: 6RnCVPCohP4zBcbSmEJD9RRia8gERSV3Q0IaZec4El0
+      short-id: be0191cc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: canfingV2rayNG-233
+    type: vless
+    server: sca23.myfymain.com
+    port: 8880
+    uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: canfingV2rayNG-229
+    type: vless
+    server: 151.115.164.110
+    port: 8880
+    uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: filembad-225
+    type: vless
+    server: 104.21.88.129
+    port: 8880
+    uuid: 8c56b4af-4762-4299-a1f8-799790dbaac7
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip=ProxyIP.SG.CMLiussss.net"
+      headers:
+        Host: lively-lab-4fd2.150-6f7.workers.dev
+  - name: ProxyMtpVPN-221
+    type: vless
+    server: gyh.manliclouc.ir
+    port: 44811
+    uuid: 89418511-64f9-4e74-ac6b-ffc1b828106f
+    udp: true
+    tls: true
+    servername: app.stiga.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 5V9UBM3WxVbCvEwW-FOxiBKlQTdMR9aScIfy53zefzM
+      short-id: b53a4597ec327aec
+    network: tcp
+  - name: filembad-217
+    type: vless
+    server: 104.21.70.21
+    port: 8080
+    uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/proxyip"
+      headers:
+        Host: shy-fog-af06.alvlirm333.workers.dev
+  - name: filembad-213
+    type: vless
+    server: 72.56.1.5
+    port: 443
+    uuid: 8057eabc-921d-4ef5-9acb-80ccc6b48379
+    udp: true
+    tls: true
+    servername: www.siemens.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 0FeZt3p4idHrFpZRIjn69W_zUFiVBKmoGhkqSqbAvRw
+      short-id: 271684C10127374D
+    network: grpc
+    grpc-opts:
+      grpc-service-name: Popka
+  - name: filembad-209
+    type: vless
+    server: Web.caroptions.ir
+    port: 80
+    uuid: 7f2f5b89-b4b1-435e-8e31-3d78f65fb9cf
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pgcfws-r4"
+      headers:
+        Host: Web.caroptions.ir
+  - name: filembad-205
+    type: vless
+    server: 185.143.233.238
+    port: 80
+    uuid: 7f2f5b89-b4b1-435e-8e31-3d78f65fb9cf
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pgcfws-r4"
+      headers:
+        Host: us.romapanel.ir
+  - name: canfingV2rayNG-201
+    type: vless
+    server: 31.220.86.213
+    port: 443
+    uuid: 74ed8b25-5ff1-40bf-bcd7-3db03be19f53
+    udp: true
+    tls: true
+    servername: status.play.google.com
+    client-fingerprint: ios
+    reality-opts:
+      public-key: VHidBoU58xA5kEh8pmXf0gQYzvz-KVH9-XAuM4TrMUs
+      short-id: 49bcf0de6392f0
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: status.play.google.com
+      mode: auto
+  - name: canfingV2rayNG-197
+    type: vless
+    server: dl3.gooniforoshi.fun
+    port: 443
+    uuid: 73e08fcb-a0c7-45d0-b55d-f78c903c64a6
+    udp: true
+    tls: true
+    servername: dl3.gooniforoshi.fun
+    network: ws
+    ws-opts:
+      path: "/download.php"
+      headers:
+        Host: dl3.gooniforoshi.fun
+    client-fingerprint: chrome
+  - name: canfingV2rayNG-193
+    type: vless
+    server: 178.236.17.86
+    port: 443
+    uuid: 6fdfdb73-51b0-4a14-89a5-c9355a0e0397
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: vCxfuNNmogA1DlPkjvmKb7_hSgXqe4MboPfi2s1JZG0
+      short-id: b318242471ba4f5b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: filembad-189
+    type: vless
+    server: tjkngfhgcghhjgc.adidasm10.ir
+    port: 45000
+    uuid: 6ad9f744-342c-4e30-9d4d-3db166e7b0f3
+    udp: true
+    tls: true
+    servername: play.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: K_eKlbzI4jFbOPiJV1GQDqF8y_Hqua0zw6ewf-cxJWc
+      short-id: c1ae335b825dd69e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: canfingV2rayNG-185
+    type: vless
+    server: cdn2.portalcode.ir
+    port: 2095
+    uuid: 681314c5-b3ee-41f1-a959-fa42841f5383
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      v2ray-http-upgrade: true
+      headers:
+        Host: usv4.monopolitass.ir
+  - name: canfingV2rayNG-180
+    type: vless
+    server: 31.128.32.98
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: ProxyMtpVPN-176
+    type: vless
+    server: 199.232.237.79
+    port: 443
+    uuid: 60a2998c-cd85-562e-a3fd-396e4925dd3a
+    udp: true
+    tls: true
+    servername: turboo-server.com
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: turboo-server.com
+    client-fingerprint: chrome
+  - name: canfingV2rayNG-172
+    type: vless
+    server: hyst.purplrose.ir
+    port: 8443
+    uuid: 5e042049-f74d-4ccc-a3ac-db27bca2ce99
+    udp: true
+    tls: true
+    servername: bastani.purplrose.ir
+    client-fingerprint: random
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: bastani.purplrose.ir
+  - name: filembad-168
+    type: vless
+    server: trk2.chaqalli.com
+    port: 8080
+    uuid: 560ecca1-7e20-4b41-b4d6-781fb3bc179d
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2082"
+      headers:
+        Host: primevideo.com
+  - name: filembad-164
+    type: vless
+    server: 194.104.94.211
+    port: 12443
+    uuid: 55061827-d64c-415f-9055-c01a66218a3e
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: safari
+    reality-opts:
+      public-key: MvWD7Eg5w1wxwd14Kgurm7Ty9hiDk0mj-_yj8a_0iX8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: canfingV2rayNG-159
+    type: vless
+    server: ro-xh02.tcp-reset-club.net
+    port: 8443
+    uuid: 4fb82973-a7f1-4fc2-9958-cb21f5162f06
+    udp: true
+    tls: true
+    servername: s3.netavex.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg
+      short-id: e0
+    network: xhttp
+    xhttp-opts:
+      path: "/assets/v2/pkg"
+      host: s3.netavex.com
+      mode: stream-one
+  - name: filembad-154
+    type: vless
+    server: 172.67.68.240
+    port: 8880
+    uuid: 4bf6fee9-d3c4-4a98-b83b-170bf37c669c
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cold-water-945c.43-bc5.workers.dev
+  - name: canfingV2rayNG-150
+    type: vless
+    server: 51.158.206.93
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: ProxyMtpVPN-146
+    type: vless
+    server: 162.159.192.125
+    port: 443
+    uuid: 44eae030-290b-4083-8102-6f8bab05701b
+    udp: true
+    tls: true
+    servername: cfvvv-ev1.pages.dev
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cfvvv-ev1.pages.dev
+    client-fingerprint: chrome
+  - name: canfingV2rayNG-142
+    type: vless
+    server: 88.218.120.60
+    port: 4443
+    uuid: 41b903e0-7d0a-45d0-9b29-83086024a88b
+    udp: true
+    tls: true
+    servername: sni4.streisand.lt
+    client-fingerprint: qq
+    reality-opts:
+      public-key: "-psPIZaOXQOuX1O1BpZ0_zyXEvx1YwW6ouBIkYGb2Dg"
+      short-id: 612d8fa72c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: canfingV2rayNG-138
+    type: vless
+    server: 104.16.7.70
+    port: 443
+    uuid: 406d8436-0eb9-4eb2-84fb-960e076ffba6
+    udp: true
+    tls: true
+    servername: "de.xn--q9jyb4c.online@oliver soul"
+    client-fingerprint: chrome
+    network: xhttp
+    xhttp-opts:
+      path: "/de"
+      host: "de.xn--q9jyb4c.online@oliver soul"
+      mode: stream-one
+  - name: canfingV2rayNG-134
+    type: vless
+    server: html.iranpood.com
+    port: 2086
+    uuid: 3b715892-8610-4fdc-9086-647b36af5443
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/?ed=2082"
+      host: h.cafearen.ir
+      mode: auto
+  - name: filembad-130
+    type: vless
+    server: 188.114.97.6
+    port: 80
+    uuid: 38aa8e17-2c2e-419a-a522-2f3ca7c79a3f
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/CooonfigCooonfigCooonfigCooonfigCooonfig"
+      headers:
+        Host: msjsi.azazilvpn.sbs.
+  - name: canfingV2rayNG-126
+    type: vless
+    server: 45.81.58.159
+    port: 2096
+    uuid: 359b9ad3-0009-4655-8872-d0ab566751d3
+    udp: true
+    tls: true
+    servername: e832b8629fff3263.hozheen.ir
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws?ed=2560"
+      headers:
+        Host: newgen14.hozheen.ir
+  - name: filembad-121
+    type: vless
+    server: best11.daltoon-server.ir
+    port: 2083
+    uuid: 33ca1d1f-497e-4452-b550-d68bef9706ae
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: maps.googleapis.com
+  - name: canfingV2rayNG-117
+    type: vless
+    server: www.speedtest.net
+    port: 443
+    uuid: 2d0f4a5d-fe76-448f-8810-5f8b0d2cd237
+    udp: true
+    tls: true
+    servername: kijuyjfjydhy14.mamadfkl.workers.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/V2rayNGSelllBoT--V2rayNGSelllBoT--V2rayNGSelllBoT--V2rayNGSelllBoT--V2rayNGSelllBoT--"
+      headers:
+        Host: kijuyjfjydhy14.mamadfkl.workers.dev
+  - name: filembad-113
+    type: vless
+    server: 172.67.187.219
+    port: 8880
+    uuid: 2b5753cf-4d0a-4746-b63d-cd67a3de2ccc
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: crimson-hill-8061.166-dcf.workers.dev
+  - name: canfingV2rayNG-109
+    type: vless
+    server: faranse.duravex.net
+    port: 8443
+    uuid: 2860e569-4c06-4950-af3e-3b72d892cdf2
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: faranse.duravex.net
+  - name: canfingV2rayNG-105
+    type: vless
+    server: 104.19.250.20
+    port: 443
+    uuid: 24d49ddd-67c1-4821-b5b9-f12107366978
+    udp: true
+    tls: true
+    servername: bahari.kiamobilepart.com
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/api"
+      headers:
+        Host: bahari.kiamobilepart.com
+  - name: ProxyMtpVPN-101
+    type: vless
+    server: k2.cloud--vpn.site
+    port: 443
+    uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
+    udp: true
+    tls: true
+    servername: ssl.fastly.com
+    client-fingerprint: firefox
+    alpn:
+      - h2
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: c12.com
+  - name: canfingV2rayNG-97
+    type: vless
+    server: cctvhikvision.center
+    port: 2052
+    uuid: 1f61ccc1-cd38-49cd-97aa-a71771433976
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: api-v1
+      headers:
+        Host: uwu.blueknightnet.qzz.io
+  - name: canfingV2rayNG-93
+    type: vless
+    server: mx.bexumconnect.ltd
+    port: 443
+    uuid: 1e06c388-d31c-420e-916a-94a990648e34
+    udp: true
+    tls: true
+    servername: mx.bexumconnect.ltd
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: filembad-89
+    type: vless
+    server: 23.137.249.110
+    port: 20365
+    uuid: 1a524663-4a74-4aad-b530-8618a540d857
+    udp: true
+    tls: false
+    network: tcp
+  - name: canfingV2rayNG-85
+    type: vless
+    server: 91.98.202.214
+    port: 1373
+    uuid: 1972d7cb-00d8-423e-91db-62f01b2289a6
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - play.google.com
+  - name: canfingV2rayNG-81
+    type: vless
+    server: germ-node.datamove.online
+    port: 2040
+    uuid: 17451fec-af94-4715-8c2f-7f6839130d0a
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: qq
+    reality-opts:
+      public-key: LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0
+      short-id: 53197c66aef53c44
+    network: tcp
+  - name: filembad-77
+    type: vless
+    server: 132.243.65.147
+    port: 443
+    uuid: 12ee5833-c8f5-4534-94e7-6d5c338008df
+    udp: true
+    tls: true
+    servername: ee.global-cdn.org
+    client-fingerprint: safari
+    reality-opts:
+      public-key: RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0
+      short-id: 7a3f9e2b1c8d4f6a
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: ProxyMtpVPN-73
+    type: vless
+    server: 69.46.46.110
+    port: 443
+    uuid: 10c3b62f-59da-55cb-b24f-2072ecb4348c
+    udp: true
+    tls: true
+    servername: core-1d94b4-5a2002-production.up.railway.app
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ws/Default"
+      headers:
+        Host: core-1d94b4-5a2002-production.up.railway.app
+  - name: canfingV2rayNG-69
+    type: vless
+    server: 43.174.247.53
+    port: 443
+    uuid: 0fc3eba4-2774-4c99-cfc7-c38b007908b0
+    udp: true
+    tls: true
+    servername: sni.irandoc.info
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/55072/api"
+      headers:
+        Host: aron.irandoc.info
+  - name: canfingV2rayNG-65
+    type: vless
+    server: 185.32.6.61
+    port: 443
+    uuid: 0ce122a3-1c91-4cf5-a2cc-67f25e8cb56f
+    udp: true
+    tls: true
+    servername: dropbox.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: xy8AHr_xZCNqFOuLq_t2fe4oLlrv5iu38uCQ1hUJ40w
+      short-id: 954c99065465428d
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: filembad-61
+    type: vless
+    server: best12.daltoon-server.ir
+    port: 2083
+    uuid: 086d1265-df24-4de0-8546-9bfeb7d45345
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: maps.googleapis.com
+  - name: canfingV2rayNG-57
+    type: vless
+    server: mypanel.unixzone.us
+    port: 12068
+    uuid: 05caca6c-9e97-4c0f-8edf-7b88a6e572c5
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: mypanel.unixzone.us
+  - name: filembad-48
+    type: trojan
+    server: 191.44.113.95
+    port: 443
+    password: pkj3BBnG2NE4wD-72SwgzNcfaHSes-dr
+    udp: true
+    servername: 16.img.avito.st
+    client-fingerprint: firefox
+    network: tcp
+  - name: ProxyMtpVPN-44
+    type: trojan
+    server: 199.232.78.160
+    port: 443
+    password: mitivpn
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: firefox
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1i@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-44e.global.ssl.fastly.net
+  - name: ProxyMtpVPN-39
+    type: trojan
+    server: 188.42.145.180
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.volumeroot.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.volumeroot.com
+  - name: canfingV2rayNG-35
+    type: trojan
+    server: 91.193.58.201
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: fl.App-Cloud.ir
+    client-fingerprint: firefox
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/MiTiVPN=fL"
+      headers:
+        Host: Fl.App-Cloud.ir
+  - name: canfingV2rayNG-31
+    type: trojan
+    server: 167.82.76.7
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "@mehrosaboran"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net
+  - name: ProxyMtpVPN-27
+    type: trojan
+    server: 199.232.78.160
+    port: 443
+    password: MiTIVPN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/des---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-55e.global.ssl.fastly.net
+  - name: ProxyMtpVPN-23
+    type: trojan
+    server: 151.101.56.7
+    port: 443
+    password: MiTIVPN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-22e.global.ssl.fastly.net
+  - name: canfingV2rayNG-14
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: 2238e2f3-1a01-485e-8c22-24b65764c68b
+    udp: true
+    servername: gzjx.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/51.91.253.83"
+      headers:
+        Host: gzjx.dpdns.org
+  - name: canfingV2rayNG-10
+    type: ss
+    server: 168.63.68.5
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: ntxb1jHgYlCB6Cm2
+    udp: true
+  - name: filembad-6
+    type: ss
+    server: p1tun3.greewebservices.ir
+    port: 2070
+    cipher: chacha20-ietf-poly1305
+    password: LMnotcv4RdaEOBXT-LdtfA
+    udp: true
+  - name: filembad-2
+    type: ss
+    server: 74.234.59.81
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: znEtjgHLXH4FBLic
+    udp: true
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "♻️ 自动选择"
+      - DIRECT
+      - node
+      - "node 2"
+      - "node 3"
+      - filembad-460
+      - filembad-456
+      - canfingV2rayNG-452
+      - canfingV2rayNG-448
+      - filembad-444
+      - filembad-440
+      - filembad-436
+      - filembad-432
+      - filembad-428
+      - canfingV2rayNG-424
+      - ProxyMtpVPN-420
+      - ProxyMtpVPN-416
+      - filembad-412
+      - filembad-408
+      - filembad-404
+      - filembad-400
+      - filembad-396
+      - canfingV2rayNG-392
+      - filembad-388
+      - filembad-384
+      - ProxyMtpVPN-380
+      - filembad-376
+      - filembad-372
+      - filembad-368
+      - filembad-364
+      - filembad-360
+      - filembad-356
+      - filembad-352
+      - filembad-347
+      - canfingV2rayNG-343
+      - ProxyMtpVPN-339
+      - ProxyMtpVPN-335
+      - filembad-331
+      - filembad-327
+      - filembad-323
+      - canfingV2rayNG-319
+      - canfingV2rayNG-315
+      - filembad-311
+      - ProxyMtpVPN-307
+      - ProxyMtpVPN-303
+      - canfingV2rayNG-299
+      - canfingV2rayNG-295
+      - canfingV2rayNG-291
+      - filembad-286
+      - canfingV2rayNG-282
+      - canfingV2rayNG-278
+      - canfingV2rayNG-274
+      - filembad-265
+      - filembad-261
+      - filembad-257
+      - filembad-253
+      - filembad-249
+      - filembad-245
+      - ProxyMtpVPN-241
+      - filembad-237
+      - canfingV2rayNG-233
+      - canfingV2rayNG-229
+      - filembad-225
+      - ProxyMtpVPN-221
+      - filembad-217
+      - filembad-213
+      - filembad-209
+      - filembad-205
+      - canfingV2rayNG-201
+      - canfingV2rayNG-197
+      - canfingV2rayNG-193
+      - filembad-189
+      - canfingV2rayNG-185
+      - canfingV2rayNG-180
+      - ProxyMtpVPN-176
+      - canfingV2rayNG-172
+      - filembad-168
+      - filembad-164
+      - canfingV2rayNG-159
+      - filembad-154
+      - canfingV2rayNG-150
+      - ProxyMtpVPN-146
+      - canfingV2rayNG-142
+      - canfingV2rayNG-138
+      - canfingV2rayNG-134
+      - filembad-130
+      - canfingV2rayNG-126
+      - filembad-121
+      - canfingV2rayNG-117
+      - filembad-113
+      - canfingV2rayNG-109
+      - canfingV2rayNG-105
+      - ProxyMtpVPN-101
+      - canfingV2rayNG-97
+      - canfingV2rayNG-93
+      - filembad-89
+      - canfingV2rayNG-85
+      - canfingV2rayNG-81
+      - filembad-77
+      - ProxyMtpVPN-73
+      - canfingV2rayNG-69
+      - canfingV2rayNG-65
+      - filembad-61
+      - canfingV2rayNG-57
+      - filembad-48
+      - ProxyMtpVPN-44
+      - ProxyMtpVPN-39
+      - canfingV2rayNG-35
+      - canfingV2rayNG-31
+      - ProxyMtpVPN-27
+      - ProxyMtpVPN-23
+      - canfingV2rayNG-14
+      - canfingV2rayNG-10
+      - filembad-6
+      - filembad-2
+  - name: "♻️ 自动选择"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+      - node
+      - "node 2"
+      - "node 3"
+      - filembad-460
+      - filembad-456
+      - canfingV2rayNG-452
+      - canfingV2rayNG-448
+      - filembad-444
+      - filembad-440
+      - filembad-436
+      - filembad-432
+      - filembad-428
+      - canfingV2rayNG-424
+      - ProxyMtpVPN-420
+      - ProxyMtpVPN-416
+      - filembad-412
+      - filembad-408
+      - filembad-404
+      - filembad-400
+      - filembad-396
+      - canfingV2rayNG-392
+      - filembad-388
+      - filembad-384
+      - ProxyMtpVPN-380
+      - filembad-376
+      - filembad-372
+      - filembad-368
+      - filembad-364
+      - filembad-360
+      - filembad-356
+      - filembad-352
+      - filembad-347
+      - canfingV2rayNG-343
+      - ProxyMtpVPN-339
+      - ProxyMtpVPN-335
+      - filembad-331
+      - filembad-327
+      - filembad-323
+      - canfingV2rayNG-319
+      - canfingV2rayNG-315
+      - filembad-311
+      - ProxyMtpVPN-307
+      - ProxyMtpVPN-303
+      - canfingV2rayNG-299
+      - canfingV2rayNG-295
+      - canfingV2rayNG-291
+      - filembad-286
+      - canfingV2rayNG-282
+      - canfingV2rayNG-278
+      - canfingV2rayNG-274
+      - filembad-265
+      - filembad-261
+      - filembad-257
+      - filembad-253
+      - filembad-249
+      - filembad-245
+      - ProxyMtpVPN-241
+      - filembad-237
+      - canfingV2rayNG-233
+      - canfingV2rayNG-229
+      - filembad-225
+      - ProxyMtpVPN-221
+      - filembad-217
+      - filembad-213
+      - filembad-209
+      - filembad-205
+      - canfingV2rayNG-201
+      - canfingV2rayNG-197
+      - canfingV2rayNG-193
+      - filembad-189
+      - canfingV2rayNG-185
+      - canfingV2rayNG-180
+      - ProxyMtpVPN-176
+      - canfingV2rayNG-172
+      - filembad-168
+      - filembad-164
+      - canfingV2rayNG-159
+      - filembad-154
+      - canfingV2rayNG-150
+      - ProxyMtpVPN-146
+      - canfingV2rayNG-142
+      - canfingV2rayNG-138
+      - canfingV2rayNG-134
+      - filembad-130
+      - canfingV2rayNG-126
+      - filembad-121
+      - canfingV2rayNG-117
+      - filembad-113
+      - canfingV2rayNG-109
+      - canfingV2rayNG-105
+      - ProxyMtpVPN-101
+      - canfingV2rayNG-97
+      - canfingV2rayNG-93
+      - filembad-89
+      - canfingV2rayNG-85
+      - canfingV2rayNG-81
+      - filembad-77
+      - ProxyMtpVPN-73
+      - canfingV2rayNG-69
+      - canfingV2rayNG-65
+      - filembad-61
+      - canfingV2rayNG-57
+      - filembad-48
+      - ProxyMtpVPN-44
+      - ProxyMtpVPN-39
+      - canfingV2rayNG-35
+      - canfingV2rayNG-31
+      - ProxyMtpVPN-27
+      - ProxyMtpVPN-23
+      - canfingV2rayNG-14
+      - canfingV2rayNG-10
+      - filembad-6
+      - filembad-2
+rules:
+  - "GEOIP,LAN,DIRECT,no-resolve"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,🚀 节点选择"

@@ -1,0 +1,2435 @@
+# 订阅 33.txt -> Clash
+# 由 txt2clash.py 自动生成于 2026-11-01 16:51:17 +0800
+# 节点数量: 149
+# 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: "off"
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  listen: "0.0.0.0:1053"
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "*.localhost"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  proxy-server-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+proxies:
+  - name: "🇦🇹 Austria [*CIDR] YA"
+    type: vless
+    server: 84.201.128.76
+    port: 443
+    uuid: b39aca97-e9f2-4a94-b87f-8748299846cd
+    udp: true
+    tls: true
+    servername: smartcaptcha.yandexcloud.net
+    client-fingerprint: random
+    reality-opts:
+      public-key: 66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0
+      short-id: 3c1523da43287ec4
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇪 Estonia [*CIDR] VK"
+    type: vless
+    server: 109.120.191.92
+    port: 1488
+    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇪 Estonia [*CIDR] VK 2"
+    type: vless
+    server: 5.188.140.115
+    port: 1488
+    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇪 Estonia [*CIDR] VK 3"
+    type: vless
+    server: 95.163.211.192
+    port: 443
+    uuid: 7a7aa0d2-5311-45fc-80b0-9f46f3546793
+    udp: true
+    tls: true
+    servername: 01.img.avito.st
+    reality-opts:
+      public-key: KoqFmkUAjNqUXiAjD4Oz3hETRQb_-ygys14EgJsmeSY
+    client-fingerprint: chrome
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/updates"
+      host: 01.img.avito.st
+      mode: auto
+  - name: "🇪🇪 Estonia [*CIDR] VK 4"
+    type: vless
+    server: 5.188.140.55
+    port: 443
+    uuid: 04f040e8-1d14-4969-94ad-6bc0ac633063
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇪 Estonia [*CIDR] VK 5"
+    type: vless
+    server: 109.120.191.92
+    port: 1488
+    uuid: 04f040e8-1d14-4969-94ad-6bc0ac633063
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇫🇷 France [*CIDR] YA"
+    type: vless
+    server: 84.201.166.48
+    port: 3443
+    uuid: 65704afe-e26a-4266-9ff3-4d09c0f04c14
+    udp: true
+    tls: true
+    servername: max.ru
+    client-fingerprint: qq
+    reality-opts:
+      public-key: pGFgy_rrpU51v3IFm-dYHOJskMDJO0kCAkIIHJdUSF8
+      short-id: f3e8b2b1
+    network: tcp
+  - name: "🇩🇪 Germany [*CIDR] VK"
+    type: vless
+    server: vnn.vpnfreedom.tech
+    port: 443
+    uuid: cc976b15-418b-4f0b-89ce-cd685ffbaf20
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: odbiaA-5s0mkehtfrf2SBcrKAMDP1sFjxKHJYdDCKgc
+      short-id: "81"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇩🇪 Germany [*CIDR] YA"
+    type: vless
+    server: 51.250.64.128
+    port: 443
+    uuid: 4742b1aa-d4e1-4994-a344-fa9267e6b9ab
+    udp: true
+    tls: true
+    servername: bunny.net
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇩🇪 Germany [*CIDR] YA 2"
+    type: vless
+    server: 51.250.73.139
+    port: 12001
+    uuid: ad5d8d51-18f4-451b-9c01-7baff1d9b244
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    reality-opts:
+      public-key: 0a3d38cwnQfUM7EqjEinf1XUZyKdzgiuRMayO3LcYl0
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇩🇪 Germany [*CIDR] VK 2"
+    type: vless
+    server: 146.185.208.206
+    port: 443
+    uuid: 914b0493-7094-4840-b94d-8ec3e92e9c43
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: do22ES2nDjO0EggET4H9Gf8_tEY7PwZv76zVXPrDojQ
+      short-id: 5f22
+    network: tcp
+  - name: "🇩🇪 Germany [*CIDR] VK 3"
+    type: vless
+    server: 146.185.208.206
+    port: 4443
+    uuid: 1dd94d15-8f73-4152-814b-d74cd11c54c9
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: do22ES2nDjO0EggET4H9Gf8_tEY7PwZv76zVXPrDojQ
+      short-id: 5f22
+    network: tcp
+  - name: "🇩🇪 Germany | 🌐 Anycast-IP | [B] [*CIDR] YA"
+    type: vless
+    server: 51.250.73.139
+    port: 12003
+    uuid: ad5d8d51-18f4-451b-9c01-7baff1d9b244
+    udp: true
+    tls: true
+    servername: nspk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 0a3d38cwnQfUM7EqjEinf1XUZyKdzgiuRMayO3LcYl0
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇩🇪 Germany | 🌐 Anycast-IP | [E] [*CIDR] VK"
+    type: vless
+    server: 83.166.255.72
+    port: 8443
+    uuid: 7a7aa0d2-5311-45fc-80b0-9f46f3546793
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    reality-opts:
+      public-key: P-3bYKbPp5YeCefayC3S3PvLanBv_lp0p_5qfrjbM34
+      short-id: fda2928a0a987b11
+    client-fingerprint: chrome
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: api-maps.yandex.ru
+      mode: stream-up
+  - name: "🇭🇺 Hungary [*CIDR] YA"
+    type: vless
+    server: 178.154.253.80
+    port: 443
+    uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 8ba12e75110b7a9c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] YA 2"
+    type: vless
+    server: 178.154.253.80
+    port: 443
+    uuid: 811b7652-ac8c-41f8-84c0-8406d883e345
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 2715592069f36fe7
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] VK"
+    type: vless
+    server: 84.23.52.70
+    port: 443
+    uuid: fed6eca7-ac5e-489d-816a-3500877b9acc
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 2715592069f36fe7
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] YA 3"
+    type: vless
+    server: 178.154.253.80
+    port: 8443
+    uuid: 811b7652-ac8c-41f8-84c0-8406d883e345
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: f4b4a6365558ea2e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] YA 4"
+    type: vless
+    server: 89.169.128.105
+    port: 443
+    uuid: fed6eca7-ac5e-489d-816a-3500877b9acc
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 2715592069f36fe7
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] YA 5"
+    type: vless
+    server: 178.154.253.80
+    port: 8443
+    uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 8ba12e75110b7a9c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] VK 2"
+    type: vless
+    server: 84.23.52.70
+    port: 443
+    uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 2715592069f36fe7
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] VK 3"
+    type: vless
+    server: 84.23.52.70
+    port: 8443
+    uuid: 811b7652-ac8c-41f8-84c0-8406d883e345
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: random
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: f4b4a6365558ea2e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] VK 4"
+    type: vless
+    server: 84.23.52.70
+    port: 443
+    uuid: 80d277e5-d30a-49c6-8987-cb4d2cc79ee5
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: ios
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: f4b4a6365558ea2e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] YA 6"
+    type: vless
+    server: 89.169.128.105
+    port: 8443
+    uuid: afffbafe-881f-4a06-bc22-d1a49121ba36
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 2715592069f36fe7
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] YA 7"
+    type: vless
+    server: 178.154.253.80
+    port: 8443
+    uuid: afffbafe-881f-4a06-bc22-d1a49121ba36
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: f4b4a6365558ea2e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] VK 5"
+    type: vless
+    server: 37.139.33.15
+    port: 443
+    uuid: fed6eca7-ac5e-489d-816a-3500877b9acc
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 2715592069f36fe7
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] YA"
+    type: vless
+    server: 130.193.59.133
+    port: 51101
+    uuid: eb4234b2-8083-4038-af1d-ae752b4ad6d4
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: f32140952ba18e18
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] YA 2"
+    type: vless
+    server: 130.193.59.133
+    port: 51101
+    uuid: fdee1b7b-8944-49f1-966e-9530804b6ff7
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: 4ffc99daad0f261f
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] VK"
+    type: vless
+    server: 37.139.33.57
+    port: 51101
+    uuid: 4ae3f4bb-6f11-478a-ade5-d7a667a8c888
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: f32140952ba18e18
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] YA 3"
+    type: vless
+    server: 130.193.59.133
+    port: 443
+    uuid: 4ae3f4bb-6f11-478a-ade5-d7a667a8c888
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: f32140952ba18e18
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] VK 2"
+    type: vless
+    server: 90.156.217.130
+    port: 8443
+    uuid: 467aa349-5a10-4f23-98d7-dd5d836dcbe5
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: 4ffc99daad0f261f
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] YA 4"
+    type: vless
+    server: 130.193.59.133
+    port: 8443
+    uuid: 4ae3f4bb-6f11-478a-ade5-d7a667a8c888
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: random
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: 6419bed7fd0a2cff
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] YA 5"
+    type: vless
+    server: 130.193.59.133
+    port: 8443
+    uuid: fdee1b7b-8944-49f1-966e-9530804b6ff7
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: random
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: 6419bed7fd0a2cff
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] VK 3"
+    type: vless
+    server: 90.156.217.130
+    port: 8443
+    uuid: 4ae3f4bb-6f11-478a-ade5-d7a667a8c888
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: 6419bed7fd0a2cff
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] YA 6"
+    type: vless
+    server: 130.193.59.133
+    port: 51101
+    uuid: 4ae3f4bb-6f11-478a-ade5-d7a667a8c888
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: qq
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: f32140952ba18e18
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] VK 4"
+    type: vless
+    server: 37.139.33.57
+    port: 8443
+    uuid: 4ae3f4bb-6f11-478a-ade5-d7a667a8c888
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: 6419bed7fd0a2cff
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] VK 5"
+    type: vless
+    server: 37.139.33.57
+    port: 443
+    uuid: 467aa349-5a10-4f23-98d7-dd5d836dcbe5
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: 6419bed7fd0a2cff
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] VK 6"
+    type: vless
+    server: 37.139.33.57
+    port: 8443
+    uuid: 6408b7b0-2527-4d9f-b361-928222ec624f
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: 6419bed7fd0a2cff
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] VK 7"
+    type: vless
+    server: 90.156.217.130
+    port: 51101
+    uuid: fdee1b7b-8944-49f1-966e-9530804b6ff7
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: 4ffc99daad0f261f
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇱🇹 Lithuania [*CIDR] YA"
+    type: vless
+    server: 51.250.109.224
+    port: 8443
+    uuid: 4742b1aa-d4e1-4994-a344-fa9267e6b9ab
+    udp: true
+    tls: true
+    servername: bunny.net
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] YA"
+    type: vless
+    server: 158.160.221.132
+    port: 443
+    uuid: e8accc46-c511-42fb-919b-9283799a88a1
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 8f222b3475800821
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] YA 2"
+    type: vless
+    server: 158.160.105.121
+    port: 51102
+    uuid: 6d39596c-b569-4a61-86c3-28cfb83a4c95
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 887c0d72e771a934
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] VK"
+    type: vless
+    server: 79.137.175.56
+    port: 8443
+    uuid: e8accc46-c511-42fb-919b-9283799a88a1
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 8f222b3475800821
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] YA 3"
+    type: vless
+    server: 158.160.221.132
+    port: 8443
+    uuid: 56e1592c-cae7-4ff1-b9d9-07ee111968b5
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 8f222b3475800821
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] VK 2"
+    type: vless
+    server: 79.137.175.56
+    port: 51102
+    uuid: 6d39596c-b569-4a61-86c3-28cfb83a4c95
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 887c0d72e771a934
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] VK 3"
+    type: vless
+    server: 5.188.141.69
+    port: 443
+    uuid: 04f040e8-1d14-4969-94ad-6bc0ac633063
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] VK 4"
+    type: vless
+    server: dostupbypass6.suio.me
+    port: 443
+    uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 5bGFIWSo4vlrd9Tv1yFcpdpSjrjYYN20SOWHYfighHc
+      short-id: 44f0602c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] YA 4"
+    type: vless
+    server: 158.160.221.132
+    port: 51102
+    uuid: e8accc46-c511-42fb-919b-9283799a88a1
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 1929ef620e9b34f5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] VK 5"
+    type: vless
+    server: 79.137.175.56
+    port: 51102
+    uuid: e8accc46-c511-42fb-919b-9283799a88a1
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 1929ef620e9b34f5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] YA 5"
+    type: vless
+    server: 158.160.221.132
+    port: 8443
+    uuid: 6d39596c-b569-4a61-86c3-28cfb83a4c95
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: random
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 887c0d72e771a934
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] YA 6"
+    type: vless
+    server: 158.160.105.121
+    port: 8443
+    uuid: e8accc46-c511-42fb-919b-9283799a88a1
+    udp: true
+    tls: true
+    servername: yandex.ru
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 8f222b3475800821
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] YA 7"
+    type: vless
+    server: 158.160.221.132
+    port: 443
+    uuid: 871fdc77-e6df-460d-ace3-b38ab82fb487
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 887c0d72e771a934
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] YA 8"
+    type: vless
+    server: 158.160.105.121
+    port: 8443
+    uuid: 83261bf9-eb44-41fc-b252-aaf685b7b23d
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 887c0d72e771a934
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] YA 9"
+    type: vless
+    server: 158.160.221.132
+    port: 8443
+    uuid: 871fdc77-e6df-460d-ace3-b38ab82fb487
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 8f222b3475800821
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] YA 10"
+    type: vless
+    server: 158.160.221.132
+    port: 51102
+    uuid: 871fdc77-e6df-460d-ace3-b38ab82fb487
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 887c0d72e771a934
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] YA 11"
+    type: vless
+    server: 158.160.105.121
+    port: 51102
+    uuid: 871fdc77-e6df-460d-ace3-b38ab82fb487
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 887c0d72e771a934
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] YA 12"
+    type: vless
+    server: 158.160.105.121
+    port: 8443
+    uuid: 871fdc77-e6df-460d-ace3-b38ab82fb487
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 8f222b3475800821
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] VK 6"
+    type: vless
+    server: 79.137.175.56
+    port: 51102
+    uuid: 83261bf9-eb44-41fc-b252-aaf685b7b23d
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 887c0d72e771a934
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] VK 7"
+    type: vless
+    server: 79.137.175.56
+    port: 8443
+    uuid: 6d39596c-b569-4a61-86c3-28cfb83a4c95
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: random
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 887c0d72e771a934
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland | 🌐 Anycast-IP | [C] [*CIDR] VK"
+    type: vless
+    server: 5.188.140.18
+    port: 1488
+    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] VK 8"
+    type: vless
+    server: 95.163.211.158
+    port: 8443
+    uuid: 7a7aa0d2-5311-45fc-80b0-9f46f3546793
+    udp: true
+    tls: true
+    servername: eh.vk.ru
+    reality-opts:
+      public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
+    client-fingerprint: chrome
+    network: grpc
+    grpc-opts:
+      grpc-service-name: xyz
+  - name: "🇪🇸 Spain [*CIDR] YA"
+    type: vless
+    server: 158.160.223.36
+    port: 8443
+    uuid: 636dac2e-9a58-49a6-84f5-313a03761131
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: random
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 48fccabc158a4c22
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK"
+    type: vless
+    server: 37.139.34.145
+    port: 443
+    uuid: 11e41a32-6672-48a0-b9cb-c8694242ecff
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 28047c78b3f5ee2c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 2"
+    type: vless
+    server: 37.139.34.145
+    port: 443
+    uuid: ae1d0280-68e4-40a4-adce-a634ebe0948b
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 3"
+    type: vless
+    server: 37.139.34.145
+    port: 443
+    uuid: 72fb3bd4-75dd-488a-9af7-c391321ecfcc
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] YA 2"
+    type: vless
+    server: 158.160.223.36
+    port: 8443
+    uuid: 11e41a32-6672-48a0-b9cb-c8694242ecff
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 28047c78b3f5ee2c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 4"
+    type: vless
+    server: 37.139.34.145
+    port: 8443
+    uuid: 72fb3bd4-75dd-488a-9af7-c391321ecfcc
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 5"
+    type: vless
+    server: 37.139.34.145
+    port: 8443
+    uuid: 829ce713-8748-4049-ba76-be56e60bc449
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] YA 3"
+    type: vless
+    server: 158.160.223.36
+    port: 443
+    uuid: ae1d0280-68e4-40a4-adce-a634ebe0948b
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 28047c78b3f5ee2c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 6"
+    type: vless
+    server: 37.139.34.145
+    port: 8443
+    uuid: 11e41a32-6672-48a0-b9cb-c8694242ecff
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: qq
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 48fccabc158a4c22
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 7"
+    type: vless
+    server: 79.137.175.44
+    port: 443
+    uuid: 11e41a32-6672-48a0-b9cb-c8694242ecff
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 48fccabc158a4c22
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] YA 4"
+    type: vless
+    server: 84.252.143.25
+    port: 8443
+    uuid: 636dac2e-9a58-49a6-84f5-313a03761131
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 48fccabc158a4c22
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 8"
+    type: vless
+    server: 87.239.106.153
+    port: 443
+    uuid: 72fb3bd4-75dd-488a-9af7-c391321ecfcc
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] YA 5"
+    type: vless
+    server: 84.252.143.25
+    port: 8443
+    uuid: 72fb3bd4-75dd-488a-9af7-c391321ecfcc
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 9"
+    type: vless
+    server: 79.137.175.44
+    port: 443
+    uuid: 829ce713-8748-4049-ba76-be56e60bc449
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 28047c78b3f5ee2c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 10"
+    type: vless
+    server: 79.137.175.44
+    port: 8443
+    uuid: 636dac2e-9a58-49a6-84f5-313a03761131
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 48fccabc158a4c22
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 11"
+    type: vless
+    server: 87.239.106.153
+    port: 443
+    uuid: 636dac2e-9a58-49a6-84f5-313a03761131
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 48fccabc158a4c22
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] YA 6"
+    type: vless
+    server: 84.252.143.25
+    port: 443
+    uuid: 829ce713-8748-4049-ba76-be56e60bc449
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 28047c78b3f5ee2c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 12"
+    type: vless
+    server: 87.239.106.153
+    port: 8443
+    uuid: 636dac2e-9a58-49a6-84f5-313a03761131
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 48fccabc158a4c22
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 13"
+    type: vless
+    server: 79.137.175.44
+    port: 443
+    uuid: ae1d0280-68e4-40a4-adce-a634ebe0948b
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 14"
+    type: vless
+    server: 87.239.106.153
+    port: 8443
+    uuid: ae1d0280-68e4-40a4-adce-a634ebe0948b
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 48fccabc158a4c22
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 15"
+    type: vless
+    server: 87.239.106.153
+    port: 8443
+    uuid: 72fb3bd4-75dd-488a-9af7-c391321ecfcc
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: ios
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] YA 7"
+    type: vless
+    server: 84.252.143.25
+    port: 8443
+    uuid: ae1d0280-68e4-40a4-adce-a634ebe0948b
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 48fccabc158a4c22
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇸🇪 Sweden [*CIDR] VK"
+    type: vless
+    server: 95.163.208.135
+    port: 443
+    uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 5bGFIWSo4vlrd9Tv1yFcpdpSjrjYYN20SOWHYfighHc
+      short-id: a1b2c3d4
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] VK"
+    type: vless
+    server: 95.163.211.158
+    port: 443
+    uuid: 7a7aa0d2-5311-45fc-80b0-9f46f3546793
+    udp: true
+    tls: true
+    servername: st.okcdn.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
+    network: grpc
+    grpc-opts:
+      grpc-service-name: xyz
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] VK"
+    type: vless
+    server: 5.188.143.8
+    port: 443
+    uuid: c343f67e-8781-4a8e-97e4-e74ab137eb1c
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: c8x7I-K2ONBUw5B2d1aZr7JNcFUu7GDfs8PAK-4qM1E
+      short-id: 0d33e856
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP [*CIDR] VK"
+    type: vless
+    server: 84.23.54.169
+    port: 443
+    uuid: e6c99501-2522-47dd-9652-f0ef12d6f277
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: zjv3djnsCKDqP7zZFIrJ9ImzgdPE3zFMCYrOvdWqkEE
+      short-id: 06bf5b24acb9
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] VK"
+    type: vless
+    server: 87.239.110.251
+    port: 8443
+    uuid: 1a5b443d-42f3-4e8e-b980-2ebf9e74a45d
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: c6ef72e4635d15a5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] VK 2"
+    type: vless
+    server: 146.185.240.23
+    port: 443
+    uuid: 86c8a690-9602-4d40-bbf7-156720de104f
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: c6ef72e4635d15a5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] YA"
+    type: vless
+    server: 84.252.136.245
+    port: 8443
+    uuid: 525e49c0-8396-4dac-bb2d-36412723e5cb
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: e57932a42872a362
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] YA 2"
+    type: vless
+    server: 89.169.162.214
+    port: 8443
+    uuid: 0a9fe7e0-e02d-42ca-bebd-ecb4292f180c
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: 205748bc0f24a747
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] VK 3"
+    type: vless
+    server: 79.137.175.59
+    port: 8443
+    uuid: 86c8a690-9602-4d40-bbf7-156720de104f
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: c6ef72e4635d15a5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] YA 3"
+    type: vless
+    server: 89.169.162.214
+    port: 8443
+    uuid: 525e49c0-8396-4dac-bb2d-36412723e5cb
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: e57932a42872a362
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] VK 4"
+    type: vless
+    server: 146.185.240.23
+    port: 8443
+    uuid: 86c8a690-9602-4d40-bbf7-156720de104f
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: e57932a42872a362
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] YA 4"
+    type: vless
+    server: 89.169.162.214
+    port: 443
+    uuid: 86c8a690-9602-4d40-bbf7-156720de104f
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: 205748bc0f24a747
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] VK 5"
+    type: vless
+    server: 79.137.175.59
+    port: 443
+    uuid: 86c8a690-9602-4d40-bbf7-156720de104f
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: c6ef72e4635d15a5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] VK 6"
+    type: vless
+    server: 87.239.110.251
+    port: 8443
+    uuid: 0a9fe7e0-e02d-42ca-bebd-ecb4292f180c
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: 205748bc0f24a747
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] VK 7"
+    type: vless
+    server: 79.137.175.59
+    port: 8443
+    uuid: 525e49c0-8396-4dac-bb2d-36412723e5cb
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: e57932a42872a362
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] VK 8"
+    type: vless
+    server: 87.239.110.251
+    port: 443
+    uuid: 7cd318d9-4bf8-4a7a-8680-af84282953e6
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: 205748bc0f24a747
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇬🇧 United Kingdom [*CIDR] VK"
+    type: vless
+    server: 109.120.188.14
+    port: 1488
+    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: qq
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇺🇸 United States [*CIDR] VK"
+    type: vless
+    server: 95.163.210.225
+    port: 8443
+    uuid: f1870ac5-ab5f-4255-965d-4a0476cb0b1a
+    udp: true
+    tls: true
+    servername: 01.img.avito.st
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 8Wb7DfK3p97KYIBDUxTZRHkG8PomTfA28gJ2qdFA808
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/updates"
+      host: 01.img.avito.st
+      mode: auto
+  - name: "🇺🇸 United States [*CIDR] VK 2"
+    type: vless
+    server: 95.163.210.225
+    port: 8443
+    uuid: 59edf6dc-b1f7-4017-8107-aae4f61a173c
+    udp: true
+    tls: true
+    servername: 01.img.avito.st
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 8Wb7DfK3p97KYIBDUxTZRHkG8PomTfA28gJ2qdFA808
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/updates"
+      host: 01.img.avito.st
+      mode: auto
+  - name: "🇺🇸 United States [*CIDR] VK 3"
+    type: vless
+    server: 95.163.210.225
+    port: 8443
+    uuid: 5b16ec53-450a-4bd5-8db5-dcd74a1863ff
+    udp: true
+    tls: true
+    servername: 01.img.avito.st
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 8Wb7DfK3p97KYIBDUxTZRHkG8PomTfA28gJ2qdFA808
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/updates"
+      host: 01.img.avito.st
+      mode: auto
+  - name: "🇺🇸 United States [*CIDR] VK 4"
+    type: vless
+    server: 95.163.210.225
+    port: 8443
+    uuid: 1c5f7c8c-e49a-4cf3-9ca9-ff4497eda5f1
+    udp: true
+    tls: true
+    servername: 01.img.avito.st
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 8Wb7DfK3p97KYIBDUxTZRHkG8PomTfA28gJ2qdFA808
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/updates"
+      host: 01.img.avito.st
+      mode: auto
+  - name: "🇷🇺 Russia [*CIDR] VK"
+    type: vless
+    server: fastcon-tg.harknmav.fun
+    port: 443
+    uuid: 50b95deb-6394-46c5-b88a-583e5b3ca7ee
+    udp: true
+    tls: true
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: PGccrEdFmBaB1rQFJqM-a9jJ1pFsxhUP2sD9KTw5Oz4
+      short-id: f69d7af2d5fc5e0c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA"
+    type: vless
+    server: 51.250.0.147
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: qq
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 6354585c37827955
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 2"
+    type: vless
+    server: 51.250.87.167
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 17f0f0e38f01af5a
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 2"
+    type: vless
+    server: 109.120.190.78
+    port: 443
+    uuid: 64a3a23c-363a-4bee-9401-f5c42eea5a27
+    udp: true
+    tls: true
+    servername: m.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: a76ea384b29a4f79
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 3"
+    type: vless
+    server: 51.250.0.147
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: f85b0cdd7d20c84c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 4"
+    type: vless
+    server: 51.250.0.147
+    port: 443
+    uuid: 64a3a23c-363a-4bee-9401-f5c42eea5a27
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: c8597fb67d55d9c4
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 5"
+    type: vless
+    server: 51.250.87.167
+    port: 443
+    uuid: 64a3a23c-363a-4bee-9401-f5c42eea5a27
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 43df3983229a1c73
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 6"
+    type: vless
+    server: 51.250.4.119
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 87cc0414902bee2d
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 7"
+    type: vless
+    server: 51.250.86.102
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: e55fd8f9c9a9a0ca
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 8"
+    type: vless
+    server: 51.250.0.147
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 33554379411b3219
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 9"
+    type: vless
+    server: 51.250.83.255
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 4b523a98e1bbd15b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 10"
+    type: vless
+    server: 51.250.83.255
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 2476f063981ffd92
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 11"
+    type: vless
+    server: 51.250.83.255
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: d17bd238f23fba92
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 12"
+    type: vless
+    server: 51.250.65.209
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 2476f063981ffd92
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 13"
+    type: vless
+    server: 51.250.87.167
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: c8597fb67d55d9c4
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 14"
+    type: vless
+    server: 51.250.86.102
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: a76ea384b29a4f79
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 15"
+    type: vless
+    server: 51.250.65.209
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 87cc0414902bee2d
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 3"
+    type: vless
+    server: 95.163.211.13
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: max.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 4a3ad88ff867a295
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 16"
+    type: vless
+    server: 51.250.86.102
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: cd57a927f6b72d81
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 17"
+    type: vless
+    server: 51.250.4.119
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 2476f063981ffd92
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 4"
+    type: vless
+    server: 95.163.211.13
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    udp: true
+    tls: true
+    servername: max.ru
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: cd57a927f6b72d81
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 18"
+    type: vless
+    server: 51.250.0.147
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: f85b0cdd7d20c84c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 19"
+    type: vless
+    server: 51.250.87.167
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 4a3ad88ff867a295
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 20"
+    type: vless
+    server: 51.250.4.119
+    port: 443
+    uuid: 64a3a23c-363a-4bee-9401-f5c42eea5a27
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 7426b0c03ef009dc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 5"
+    type: vless
+    server: 95.163.211.13
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: max.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: cd57a927f6b72d81
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 6"
+    type: vless
+    server: 185.130.115.55
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: web.max.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 048fe5c8be4bb687
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 7"
+    type: vless
+    server: 89.208.229.214
+    port: 3443
+    uuid: 2b8d3b46-debd-40c8-b530-e3cadd0681cd
+    udp: true
+    tls: true
+    servername: m.vk.com
+    reality-opts:
+      public-key: yuyU8SzfA2aTReRZ7Irjd0Zlx_TS7O2muPv0-J35OU0
+      short-id: 1c674da2d573eabc
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 21"
+    type: vless
+    server: 51.250.86.102
+    port: 443
+    uuid: 64a3a23c-363a-4bee-9401-f5c42eea5a27
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 6354585c37827955
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 8"
+    type: vless
+    server: 95.163.211.13
+    port: 443
+    uuid: 64a3a23c-363a-4bee-9401-f5c42eea5a27
+    udp: true
+    tls: true
+    servername: max.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: d17bd238f23fba92
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 9"
+    type: vless
+    server: 95.163.210.173
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: max.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 17802e8ff84f12df
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 22"
+    type: vless
+    server: 51.250.26.75
+    port: 443
+    uuid: b8a44195-0860-4312-a0df-dae178585a48
+    udp: true
+    tls: true
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7IOtSp0-n2_uNS5nMO9ywZbn2HibMRGy0KbLad3szXc
+      short-id: b8cf9578640a9edf
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 23"
+    type: vless
+    server: 51.250.4.119
+    port: 443
+    uuid: 64a3a23c-363a-4bee-9401-f5c42eea5a27
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 3f200574d011010f
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 24"
+    type: vless
+    server: 51.250.26.75
+    port: 443
+    uuid: dddd3838-5cd6-4c2f-953f-d41a34a46336
+    udp: true
+    tls: true
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7IOtSp0-n2_uNS5nMO9ywZbn2HibMRGy0KbLad3szXc
+      short-id: b8cf9578640a9edf
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia | 🌐 Anycast-IP [*CIDR] YA"
+    type: vless
+    server: 51.250.23.190
+    port: 443
+    uuid: 30c04389-bbcb-431f-9d47-a8ad24406bd4
+    udp: true
+    tls: true
+    servername: stats.vk-portal.net
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: OBR2JYROQB8odK5glVW_KLnsWl3UZ-voyGq_9ihQgTI
+      short-id: d49d578f280fd83a
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 25"
+    type: vless
+    server: 84.252.130.60
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: sun6-21.userapi.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 6354585c37827955
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 26"
+    type: vless
+    server: 84.252.130.60
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: sun6-21.userapi.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 3f200574d011010f
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 10"
+    type: vless
+    server: 109.120.191.46
+    port: 443
+    uuid: 64a3a23c-363a-4bee-9401-f5c42eea5a27
+    udp: true
+    tls: true
+    servername: m.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 17802e8ff84f12df
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 11"
+    type: vless
+    server: 217.16.27.217
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: m.ok.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 4a3ad88ff867a295
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 12"
+    type: vless
+    server: 217.16.27.217
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 87cc0414902bee2d
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 13"
+    type: vless
+    server: 217.16.27.217
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: ozon.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 95ec618532fa065e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 14"
+    type: vless
+    server: 217.16.27.217
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: a76ea384b29a4f79
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 15"
+    type: vless
+    server: 217.16.27.217
+    port: 443
+    uuid: 64a3a23c-363a-4bee-9401-f5c42eea5a27
+    udp: true
+    tls: true
+    servername: ozon.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 6354585c37827955
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 16"
+    type: vless
+    server: 217.16.27.217
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: m.ok.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 6354585c37827955
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 17"
+    type: vless
+    server: 217.16.27.217
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: ozon.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: a76ea384b29a4f79
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇺🇸 United States [*CIDR] VK 5"
+    type: ss
+    server: 95.163.210.225
+    port: 1080
+    cipher: chacha20-ietf-poly1305
+    password: hLztXTHHRK8SuEKymTddLLhE_-eyfQLK
+    udp: true
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "♻️ 自动选择"
+      - DIRECT
+      - "🇦🇹 Austria [*CIDR] YA"
+      - "🇪🇪 Estonia [*CIDR] VK"
+      - "🇪🇪 Estonia [*CIDR] VK 2"
+      - "🇪🇪 Estonia [*CIDR] VK 3"
+      - "🇪🇪 Estonia [*CIDR] VK 4"
+      - "🇪🇪 Estonia [*CIDR] VK 5"
+      - "🇫🇷 France [*CIDR] YA"
+      - "🇩🇪 Germany [*CIDR] VK"
+      - "🇩🇪 Germany [*CIDR] YA"
+      - "🇩🇪 Germany [*CIDR] YA 2"
+      - "🇩🇪 Germany [*CIDR] VK 2"
+      - "🇩🇪 Germany [*CIDR] VK 3"
+      - "🇩🇪 Germany | 🌐 Anycast-IP | [B] [*CIDR] YA"
+      - "🇩🇪 Germany | 🌐 Anycast-IP | [E] [*CIDR] VK"
+      - "🇭🇺 Hungary [*CIDR] YA"
+      - "🇭🇺 Hungary [*CIDR] YA 2"
+      - "🇭🇺 Hungary [*CIDR] VK"
+      - "🇭🇺 Hungary [*CIDR] YA 3"
+      - "🇭🇺 Hungary [*CIDR] YA 4"
+      - "🇭🇺 Hungary [*CIDR] YA 5"
+      - "🇭🇺 Hungary [*CIDR] VK 2"
+      - "🇭🇺 Hungary [*CIDR] VK 3"
+      - "🇭🇺 Hungary [*CIDR] VK 4"
+      - "🇭🇺 Hungary [*CIDR] YA 6"
+      - "🇭🇺 Hungary [*CIDR] YA 7"
+      - "🇭🇺 Hungary [*CIDR] VK 5"
+      - "🇮🇹 Italy [*CIDR] YA"
+      - "🇮🇹 Italy [*CIDR] YA 2"
+      - "🇮🇹 Italy [*CIDR] VK"
+      - "🇮🇹 Italy [*CIDR] YA 3"
+      - "🇮🇹 Italy [*CIDR] VK 2"
+      - "🇮🇹 Italy [*CIDR] YA 4"
+      - "🇮🇹 Italy [*CIDR] YA 5"
+      - "🇮🇹 Italy [*CIDR] VK 3"
+      - "🇮🇹 Italy [*CIDR] YA 6"
+      - "🇮🇹 Italy [*CIDR] VK 4"
+      - "🇮🇹 Italy [*CIDR] VK 5"
+      - "🇮🇹 Italy [*CIDR] VK 6"
+      - "🇮🇹 Italy [*CIDR] VK 7"
+      - "🇱🇹 Lithuania [*CIDR] YA"
+      - "🇵🇱 Poland [*CIDR] YA"
+      - "🇵🇱 Poland [*CIDR] YA 2"
+      - "🇵🇱 Poland [*CIDR] VK"
+      - "🇵🇱 Poland [*CIDR] YA 3"
+      - "🇵🇱 Poland [*CIDR] VK 2"
+      - "🇵🇱 Poland [*CIDR] VK 3"
+      - "🇵🇱 Poland [*CIDR] VK 4"
+      - "🇵🇱 Poland [*CIDR] YA 4"
+      - "🇵🇱 Poland [*CIDR] VK 5"
+      - "🇵🇱 Poland [*CIDR] YA 5"
+      - "🇵🇱 Poland [*CIDR] YA 6"
+      - "🇵🇱 Poland [*CIDR] YA 7"
+      - "🇵🇱 Poland [*CIDR] YA 8"
+      - "🇵🇱 Poland [*CIDR] YA 9"
+      - "🇵🇱 Poland [*CIDR] YA 10"
+      - "🇵🇱 Poland [*CIDR] YA 11"
+      - "🇵🇱 Poland [*CIDR] YA 12"
+      - "🇵🇱 Poland [*CIDR] VK 6"
+      - "🇵🇱 Poland [*CIDR] VK 7"
+      - "🇵🇱 Poland | 🌐 Anycast-IP | [C] [*CIDR] VK"
+      - "🇵🇱 Poland [*CIDR] VK 8"
+      - "🇪🇸 Spain [*CIDR] YA"
+      - "🇪🇸 Spain [*CIDR] VK"
+      - "🇪🇸 Spain [*CIDR] VK 2"
+      - "🇪🇸 Spain [*CIDR] VK 3"
+      - "🇪🇸 Spain [*CIDR] YA 2"
+      - "🇪🇸 Spain [*CIDR] VK 4"
+      - "🇪🇸 Spain [*CIDR] VK 5"
+      - "🇪🇸 Spain [*CIDR] YA 3"
+      - "🇪🇸 Spain [*CIDR] VK 6"
+      - "🇪🇸 Spain [*CIDR] VK 7"
+      - "🇪🇸 Spain [*CIDR] YA 4"
+      - "🇪🇸 Spain [*CIDR] VK 8"
+      - "🇪🇸 Spain [*CIDR] YA 5"
+      - "🇪🇸 Spain [*CIDR] VK 9"
+      - "🇪🇸 Spain [*CIDR] VK 10"
+      - "🇪🇸 Spain [*CIDR] VK 11"
+      - "🇪🇸 Spain [*CIDR] YA 6"
+      - "🇪🇸 Spain [*CIDR] VK 12"
+      - "🇪🇸 Spain [*CIDR] VK 13"
+      - "🇪🇸 Spain [*CIDR] VK 14"
+      - "🇪🇸 Spain [*CIDR] VK 15"
+      - "🇪🇸 Spain [*CIDR] YA 7"
+      - "🇸🇪 Sweden [*CIDR] VK"
+      - "🇳🇱 The Netherlands [*CIDR] VK"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] VK"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP [*CIDR] VK"
+      - "🇹🇷 Turkey [*CIDR] VK"
+      - "🇹🇷 Turkey [*CIDR] VK 2"
+      - "🇹🇷 Turkey [*CIDR] YA"
+      - "🇹🇷 Turkey [*CIDR] YA 2"
+      - "🇹🇷 Turkey [*CIDR] VK 3"
+      - "🇹🇷 Turkey [*CIDR] YA 3"
+      - "🇹🇷 Turkey [*CIDR] VK 4"
+      - "🇹🇷 Turkey [*CIDR] YA 4"
+      - "🇹🇷 Turkey [*CIDR] VK 5"
+      - "🇹🇷 Turkey [*CIDR] VK 6"
+      - "🇹🇷 Turkey [*CIDR] VK 7"
+      - "🇹🇷 Turkey [*CIDR] VK 8"
+      - "🇬🇧 United Kingdom [*CIDR] VK"
+      - "🇺🇸 United States [*CIDR] VK"
+      - "🇺🇸 United States [*CIDR] VK 2"
+      - "🇺🇸 United States [*CIDR] VK 3"
+      - "🇺🇸 United States [*CIDR] VK 4"
+      - "🇷🇺 Russia [*CIDR] VK"
+      - "🇷🇺 Russia [*CIDR] YA"
+      - "🇷🇺 Russia [*CIDR] YA 2"
+      - "🇷🇺 Russia [*CIDR] VK 2"
+      - "🇷🇺 Russia [*CIDR] YA 3"
+      - "🇷🇺 Russia [*CIDR] YA 4"
+      - "🇷🇺 Russia [*CIDR] YA 5"
+      - "🇷🇺 Russia [*CIDR] YA 6"
+      - "🇷🇺 Russia [*CIDR] YA 7"
+      - "🇷🇺 Russia [*CIDR] YA 8"
+      - "🇷🇺 Russia [*CIDR] YA 9"
+      - "🇷🇺 Russia [*CIDR] YA 10"
+      - "🇷🇺 Russia [*CIDR] YA 11"
+      - "🇷🇺 Russia [*CIDR] YA 12"
+      - "🇷🇺 Russia [*CIDR] YA 13"
+      - "🇷🇺 Russia [*CIDR] YA 14"
+      - "🇷🇺 Russia [*CIDR] YA 15"
+      - "🇷🇺 Russia [*CIDR] VK 3"
+      - "🇷🇺 Russia [*CIDR] YA 16"
+      - "🇷🇺 Russia [*CIDR] YA 17"
+      - "🇷🇺 Russia [*CIDR] VK 4"
+      - "🇷🇺 Russia [*CIDR] YA 18"
+      - "🇷🇺 Russia [*CIDR] YA 19"
+      - "🇷🇺 Russia [*CIDR] YA 20"
+      - "🇷🇺 Russia [*CIDR] VK 5"
+      - "🇷🇺 Russia [*CIDR] VK 6"
+      - "🇷🇺 Russia [*CIDR] VK 7"
+      - "🇷🇺 Russia [*CIDR] YA 21"
+      - "🇷🇺 Russia [*CIDR] VK 8"
+      - "🇷🇺 Russia [*CIDR] VK 9"
+      - "🇷🇺 Russia [*CIDR] YA 22"
+      - "🇷🇺 Russia [*CIDR] YA 23"
+      - "🇷🇺 Russia [*CIDR] YA 24"
+      - "🇷🇺 Russia | 🌐 Anycast-IP [*CIDR] YA"
+      - "🇷🇺 Russia [*CIDR] YA 25"
+      - "🇷🇺 Russia [*CIDR] YA 26"
+      - "🇷🇺 Russia [*CIDR] VK 10"
+      - "🇷🇺 Russia [*CIDR] VK 11"
+      - "🇷🇺 Russia [*CIDR] VK 12"
+      - "🇷🇺 Russia [*CIDR] VK 13"
+      - "🇷🇺 Russia [*CIDR] VK 14"
+      - "🇷🇺 Russia [*CIDR] VK 15"
+      - "🇷🇺 Russia [*CIDR] VK 16"
+      - "🇷🇺 Russia [*CIDR] VK 17"
+      - "🇺🇸 United States [*CIDR] VK 5"
+  - name: "♻️ 自动选择"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "🇦🇹 Austria [*CIDR] YA"
+      - "🇪🇪 Estonia [*CIDR] VK"
+      - "🇪🇪 Estonia [*CIDR] VK 2"
+      - "🇪🇪 Estonia [*CIDR] VK 3"
+      - "🇪🇪 Estonia [*CIDR] VK 4"
+      - "🇪🇪 Estonia [*CIDR] VK 5"
+      - "🇫🇷 France [*CIDR] YA"
+      - "🇩🇪 Germany [*CIDR] VK"
+      - "🇩🇪 Germany [*CIDR] YA"
+      - "🇩🇪 Germany [*CIDR] YA 2"
+      - "🇩🇪 Germany [*CIDR] VK 2"
+      - "🇩🇪 Germany [*CIDR] VK 3"
+      - "🇩🇪 Germany | 🌐 Anycast-IP | [B] [*CIDR] YA"
+      - "🇩🇪 Germany | 🌐 Anycast-IP | [E] [*CIDR] VK"
+      - "🇭🇺 Hungary [*CIDR] YA"
+      - "🇭🇺 Hungary [*CIDR] YA 2"
+      - "🇭🇺 Hungary [*CIDR] VK"
+      - "🇭🇺 Hungary [*CIDR] YA 3"
+      - "🇭🇺 Hungary [*CIDR] YA 4"
+      - "🇭🇺 Hungary [*CIDR] YA 5"
+      - "🇭🇺 Hungary [*CIDR] VK 2"
+      - "🇭🇺 Hungary [*CIDR] VK 3"
+      - "🇭🇺 Hungary [*CIDR] VK 4"
+      - "🇭🇺 Hungary [*CIDR] YA 6"
+      - "🇭🇺 Hungary [*CIDR] YA 7"
+      - "🇭🇺 Hungary [*CIDR] VK 5"
+      - "🇮🇹 Italy [*CIDR] YA"
+      - "🇮🇹 Italy [*CIDR] YA 2"
+      - "🇮🇹 Italy [*CIDR] VK"
+      - "🇮🇹 Italy [*CIDR] YA 3"
+      - "🇮🇹 Italy [*CIDR] VK 2"
+      - "🇮🇹 Italy [*CIDR] YA 4"
+      - "🇮🇹 Italy [*CIDR] YA 5"
+      - "🇮🇹 Italy [*CIDR] VK 3"
+      - "🇮🇹 Italy [*CIDR] YA 6"
+      - "🇮🇹 Italy [*CIDR] VK 4"
+      - "🇮🇹 Italy [*CIDR] VK 5"
+      - "🇮🇹 Italy [*CIDR] VK 6"
+      - "🇮🇹 Italy [*CIDR] VK 7"
+      - "🇱🇹 Lithuania [*CIDR] YA"
+      - "🇵🇱 Poland [*CIDR] YA"
+      - "🇵🇱 Poland [*CIDR] YA 2"
+      - "🇵🇱 Poland [*CIDR] VK"
+      - "🇵🇱 Poland [*CIDR] YA 3"
+      - "🇵🇱 Poland [*CIDR] VK 2"
+      - "🇵🇱 Poland [*CIDR] VK 3"
+      - "🇵🇱 Poland [*CIDR] VK 4"
+      - "🇵🇱 Poland [*CIDR] YA 4"
+      - "🇵🇱 Poland [*CIDR] VK 5"
+      - "🇵🇱 Poland [*CIDR] YA 5"
+      - "🇵🇱 Poland [*CIDR] YA 6"
+      - "🇵🇱 Poland [*CIDR] YA 7"
+      - "🇵🇱 Poland [*CIDR] YA 8"
+      - "🇵🇱 Poland [*CIDR] YA 9"
+      - "🇵🇱 Poland [*CIDR] YA 10"
+      - "🇵🇱 Poland [*CIDR] YA 11"
+      - "🇵🇱 Poland [*CIDR] YA 12"
+      - "🇵🇱 Poland [*CIDR] VK 6"
+      - "🇵🇱 Poland [*CIDR] VK 7"
+      - "🇵🇱 Poland | 🌐 Anycast-IP | [C] [*CIDR] VK"
+      - "🇵🇱 Poland [*CIDR] VK 8"
+      - "🇪🇸 Spain [*CIDR] YA"
+      - "🇪🇸 Spain [*CIDR] VK"
+      - "🇪🇸 Spain [*CIDR] VK 2"
+      - "🇪🇸 Spain [*CIDR] VK 3"
+      - "🇪🇸 Spain [*CIDR] YA 2"
+      - "🇪🇸 Spain [*CIDR] VK 4"
+      - "🇪🇸 Spain [*CIDR] VK 5"
+      - "🇪🇸 Spain [*CIDR] YA 3"
+      - "🇪🇸 Spain [*CIDR] VK 6"
+      - "🇪🇸 Spain [*CIDR] VK 7"
+      - "🇪🇸 Spain [*CIDR] YA 4"
+      - "🇪🇸 Spain [*CIDR] VK 8"
+      - "🇪🇸 Spain [*CIDR] YA 5"
+      - "🇪🇸 Spain [*CIDR] VK 9"
+      - "🇪🇸 Spain [*CIDR] VK 10"
+      - "🇪🇸 Spain [*CIDR] VK 11"
+      - "🇪🇸 Spain [*CIDR] YA 6"
+      - "🇪🇸 Spain [*CIDR] VK 12"
+      - "🇪🇸 Spain [*CIDR] VK 13"
+      - "🇪🇸 Spain [*CIDR] VK 14"
+      - "🇪🇸 Spain [*CIDR] VK 15"
+      - "🇪🇸 Spain [*CIDR] YA 7"
+      - "🇸🇪 Sweden [*CIDR] VK"
+      - "🇳🇱 The Netherlands [*CIDR] VK"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] VK"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP [*CIDR] VK"
+      - "🇹🇷 Turkey [*CIDR] VK"
+      - "🇹🇷 Turkey [*CIDR] VK 2"
+      - "🇹🇷 Turkey [*CIDR] YA"
+      - "🇹🇷 Turkey [*CIDR] YA 2"
+      - "🇹🇷 Turkey [*CIDR] VK 3"
+      - "🇹🇷 Turkey [*CIDR] YA 3"
+      - "🇹🇷 Turkey [*CIDR] VK 4"
+      - "🇹🇷 Turkey [*CIDR] YA 4"
+      - "🇹🇷 Turkey [*CIDR] VK 5"
+      - "🇹🇷 Turkey [*CIDR] VK 6"
+      - "🇹🇷 Turkey [*CIDR] VK 7"
+      - "🇹🇷 Turkey [*CIDR] VK 8"
+      - "🇬🇧 United Kingdom [*CIDR] VK"
+      - "🇺🇸 United States [*CIDR] VK"
+      - "🇺🇸 United States [*CIDR] VK 2"
+      - "🇺🇸 United States [*CIDR] VK 3"
+      - "🇺🇸 United States [*CIDR] VK 4"
+      - "🇷🇺 Russia [*CIDR] VK"
+      - "🇷🇺 Russia [*CIDR] YA"
+      - "🇷🇺 Russia [*CIDR] YA 2"
+      - "🇷🇺 Russia [*CIDR] VK 2"
+      - "🇷🇺 Russia [*CIDR] YA 3"
+      - "🇷🇺 Russia [*CIDR] YA 4"
+      - "🇷🇺 Russia [*CIDR] YA 5"
+      - "🇷🇺 Russia [*CIDR] YA 6"
+      - "🇷🇺 Russia [*CIDR] YA 7"
+      - "🇷🇺 Russia [*CIDR] YA 8"
+      - "🇷🇺 Russia [*CIDR] YA 9"
+      - "🇷🇺 Russia [*CIDR] YA 10"
+      - "🇷🇺 Russia [*CIDR] YA 11"
+      - "🇷🇺 Russia [*CIDR] YA 12"
+      - "🇷🇺 Russia [*CIDR] YA 13"
+      - "🇷🇺 Russia [*CIDR] YA 14"
+      - "🇷🇺 Russia [*CIDR] YA 15"
+      - "🇷🇺 Russia [*CIDR] VK 3"
+      - "🇷🇺 Russia [*CIDR] YA 16"
+      - "🇷🇺 Russia [*CIDR] YA 17"
+      - "🇷🇺 Russia [*CIDR] VK 4"
+      - "🇷🇺 Russia [*CIDR] YA 18"
+      - "🇷🇺 Russia [*CIDR] YA 19"
+      - "🇷🇺 Russia [*CIDR] YA 20"
+      - "🇷🇺 Russia [*CIDR] VK 5"
+      - "🇷🇺 Russia [*CIDR] VK 6"
+      - "🇷🇺 Russia [*CIDR] VK 7"
+      - "🇷🇺 Russia [*CIDR] YA 21"
+      - "🇷🇺 Russia [*CIDR] VK 8"
+      - "🇷🇺 Russia [*CIDR] VK 9"
+      - "🇷🇺 Russia [*CIDR] YA 22"
+      - "🇷🇺 Russia [*CIDR] YA 23"
+      - "🇷🇺 Russia [*CIDR] YA 24"
+      - "🇷🇺 Russia | 🌐 Anycast-IP [*CIDR] YA"
+      - "🇷🇺 Russia [*CIDR] YA 25"
+      - "🇷🇺 Russia [*CIDR] YA 26"
+      - "🇷🇺 Russia [*CIDR] VK 10"
+      - "🇷🇺 Russia [*CIDR] VK 11"
+      - "🇷🇺 Russia [*CIDR] VK 12"
+      - "🇷🇺 Russia [*CIDR] VK 13"
+      - "🇷🇺 Russia [*CIDR] VK 14"
+      - "🇷🇺 Russia [*CIDR] VK 15"
+      - "🇷🇺 Russia [*CIDR] VK 16"
+      - "🇷🇺 Russia [*CIDR] VK 17"
+      - "🇺🇸 United States [*CIDR] VK 5"
+rules:
+  - "GEOIP,LAN,DIRECT,no-resolve"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,🚀 节点选择"

@@ -1,0 +1,3279 @@
+# 订阅 8.1.txt -> Clash
+# 由 txt2clash.py 自动生成于 2026-11-01 16:51:16 +0800
+# 节点数量: 212
+# 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: "off"
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  listen: "0.0.0.0:1053"
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "*.localhost"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  proxy-server-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+proxies:
+  - name: "🇩🇪 ShatakVPN 548326"
+    type: vless
+    server: 157.90.165.181
+    port: 11762
+    uuid: 7c9b4360-6be9-47f2-ace9-b87297ea3d8f
+    udp: true
+    tls: true
+    servername: swdist.apple.com
+    reality-opts:
+      public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇩🇪 ShatakVPN 683167"
+    type: vless
+    server: 46.101.196.101
+    port: 2096
+    uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
+    udp: true
+    tls: true
+    servername: lucky-sky-0104.alvlirm444.workers.dev
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: lucky-sky-0104.alvlirm444.workers.dev
+  - name: "🇺🇸 ShatakVPN 397390"
+    type: vless
+    server: 208.103.161.5
+    port: 443
+    uuid: d042a74a-c305-4eec-a89f-39a348022c92
+    udp: true
+    tls: true
+    servername: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+  - name: "🇺🇸 ShatakVPN 535830"
+    type: vless
+    server: 141.193.27.4
+    port: 80
+    uuid: e403856e-4e50-49e6-9edc-d9536a803a6a
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip=Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: proud-cloud-5c50.113-8dc.workers.dev
+  - name: "🇺🇸 ShatakVPN 261558"
+    type: vless
+    server: 63.141.128.22
+    port: 443
+    uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
+    udp: true
+    tls: true
+    servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
+      headers:
+        Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+    client-fingerprint: chrome
+  - name: "🇺🇸 ShatakVPN 854835"
+    type: vless
+    server: 104.19.214.98
+    port: 2087
+    uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+    udp: true
+    tls: true
+    servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512"
+      headers:
+        Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  - name: "🇺🇸 ShatakVPN 840353"
+    type: vless
+    server: 172.64.88.168
+    port: 8880
+    uuid: 6f876b28-1b3e-4088-85c0-d299e56bfccd
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip=ProxyIP.JP.CMLiussss.net"
+      headers:
+        Host: throbbing-haze-fbde.388-6c4.workers.dev
+  - name: "🇺🇸 ShatakVPN 289796"
+    type: vless
+    server: 172.64.88.251
+    port: 8880
+    uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip=ProxyIP.KR.CMLiussss.net"
+      headers:
+        Host: patient-cake-39c7.44-e7a.workers.dev
+  - name: "🇺🇸 ShatakVPN 638261"
+    type: vless
+    server: 172.64.88.251
+    port: 8880
+    uuid: 7e3cd2f1-0de5-4717-9002-64d8597bc577
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip=ProxyIP.KR.CMLiussss.net"
+      headers:
+        Host: dry-credit-fc26.203-d8c.workers.dev
+  - name: "🇺🇸 ShatakVPN 570318"
+    type: vless
+    server: 172.64.150.28
+    port: 2082
+    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/fp"
+      headers:
+        Host: hhlfy.twiladaphne.ndjp.net
+  - name: "🇺🇸 ShatakVPN 399124"
+    type: vless
+    server: 172.66.214.247
+    port: 8880
+    uuid: e7f6f783-6754-4228-a5d0-aeed84b9949a
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip=ProxyIP.SG.CMLiussss.net"
+      headers:
+        Host: sweet-sun-c70f.317-ba5.workers.dev
+  - name: "🇺🇸 ShatakVPN 871084"
+    type: vless
+    server: 188.114.96.37
+    port: 443
+    uuid: 3804296d-167f-4c1b-8734-147f80473590
+    udp: true
+    tls: true
+    servername: TeLegrAm.FREEPErSiANland1.woRKERS.DEv
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiU29DZFZoZzF6RG8iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iLCJbMjYwMjpmYzU5OjExOjY0OjpdIl19"
+      headers:
+        Host: telegram.freepersianland1.workers.dev
+  - name: "🇺🇸 ShatakVPN 739997"
+    type: vless
+    server: 104.21.46.128
+    port: 443
+    uuid: 7e81824b-35e0-4eb1-89e9-592f0c92aa6b
+    udp: true
+    tls: true
+    servername: yx.zhourf2006.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: yx.zhourf2006.dpdns.org
+    client-fingerprint: chrome
+  - name: "🏳️ ShatakVPN 886982"
+    type: vless
+    server: 172.67.222.62
+    port: 443
+    uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
+    udp: true
+    tls: true
+    servername: cf-vless-4cf55824.aimall.fr
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/connect"
+      headers:
+        Host: cf-vless-4cf55824.aimall.fr
+  - name: "🏳️ ShatakVPN 276738"
+    type: vless
+    server: 104.21.62.46
+    port: 443
+    uuid: b8875d59-7568-4041-829a-cc6c82b70022
+    udp: true
+    tls: true
+    servername: 104.21.62.46
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 104.21.62.46
+  - name: "🏳️ ShatakVPN 571066"
+    type: vless
+    server: 172.67.194.138
+    port: 443
+    uuid: 4908acbe-485f-4e1c-bb11-5dd04b9f7e88
+    udp: true
+    tls: true
+    servername: 172.67.194.138
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiRjhycEV5WUpJTGZpQSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
+      headers:
+        Host: restless-base-fe24.alirezahabibi20009.workers.dev
+    client-fingerprint: chrome
+  - name: "🏳️ ShatakVPN 519036"
+    type: vless
+    server: 172.67.163.68
+    port: 443
+    uuid: 26086552-5b79-d167-dd18-1ea000000000
+    udp: true
+    tls: true
+    servername: lczoox-b5gygc-24w8tc.rozhaghadri.workers.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/sync"
+      headers:
+        Host: lczoox-b5gygc-24w8tc.rozhaghadri.workers.dev
+  - name: "🏳️ ShatakVPN 220591"
+    type: vless
+    server: 45.131.4.115
+    port: 80
+    uuid: 74ed78f1-4095-47e6-b043-094e494fb7e5
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/sVnT0vhrV7WAl52Z"
+      headers:
+        Host: worker3.gisenoj224.workers.dev
+  - name: "🏳️ ShatakVPN 158161"
+    type: vless
+    server: 172.64.145.93
+    port: 2087
+    uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+    udp: true
+    tls: true
+    servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  - name: "🏳️ ShatakVPN 782839"
+    type: vless
+    server: 104.18.40.152
+    port: 2087
+    uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+    udp: true
+    tls: true
+    servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  - name: "🏳️ ShatakVPN 177176"
+    type: vless
+    server: 172.67.143.56
+    port: 2096
+    uuid: 3804296d-167f-4c1b-8734-147f80473590
+    udp: true
+    tls: true
+    servername: teLeGRaM.FrEEPerSiAnLaNd1.wOrkERS.DeV
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiTGFDWG90NVpxV1B1d3B0IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIiwiWzI2MDI6ZmM1OToxMTo2NDo6XSJdfQ==?ed=2560"
+      headers:
+        Host: telegram.freepersianland1.workers.dev
+  - name: "🏳️ ShatakVPN 220862"
+    type: vless
+    server: 172.67.219.176
+    port: 2087
+    uuid: f2f4e2dc-3e7b-402f-a461-b48acc6aa310
+    udp: true
+    tls: true
+    servername: sTeEp-BoNUs-8E6A.AmIrhon1376.woRKeRS.dEv
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoid2JBOTRVclNMOVdBSVQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560"
+      headers:
+        Host: steep-bonus-8e6a.amirhon1376.workers.dev
+    client-fingerprint: chrome
+  - name: "🏳️ ShatakVPN 977803"
+    type: vless
+    server: 172.67.209.127
+    port: 8880
+    uuid: 1b3ad465-d37e-48a2-bb53-d7fddfc97b11
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: calm-silence-d4a1.217.workers.dev
+  - name: "🏳️ ShatakVPN 338315"
+    type: vless
+    server: 172.64.149.209
+    port: 2087
+    uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+    udp: true
+    tls: true
+    servername: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
+  - name: "🏳️ ShatakVPN 960328"
+    type: vless
+    server: 172.67.152.71
+    port: 8880
+    uuid: ed189537-41de-4abe-9f8b-bb75d457722d
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip=ProxyIP.US.CMLiussss.net"
+      headers:
+        Host: lucky-cake-4f58.318-5ee.workers.dev
+  - name: "🏳️ ShatakVPN 485901"
+    type: vless
+    server: 104.26.13.40
+    port: 8880
+    uuid: b9ea760d-3200-4d6d-8000-30514ebbce5a
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip=ProxyIP.JP.CMLiussss.net"
+      headers:
+        Host: aged-pine-d8c4.379.workers.dev
+  - name: "🏳️ ShatakVPN 698644"
+    type: vless
+    server: 172.65.90.52
+    port: 8880
+    uuid: 30e4c878-15ca-4f53-ab32-04c60ecd3f31
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip=ProxyIP.US.CMLiussss.net"
+      headers:
+        Host: blue-rice-7142.30-346.workers.dev
+  - name: "🏳️ ShatakVPN 924708"
+    type: vless
+    server: 188.114.97.6
+    port: 443
+    uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
+    udp: true
+    tls: true
+    servername: xwrivr.pages.dev
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: xwrivr.pages.dev
+    client-fingerprint: chrome
+  - name: "🏳️ ShatakVPN 621703"
+    type: vless
+    server: 188.114.97.6
+    port: 443
+    uuid: 1c9daf90-3950-44ac-b06f-4cf9aec63170
+    udp: true
+    tls: true
+    servername: FrEe.SeRVEr14peekCoNfIG.WoRKErS.dEV
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiQmFCblN3SmhXYTB3RzVoIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIiwiWzJhMDI6ODk4OjE0Njo2NDo6XSIsIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0="
+      headers:
+        Host: free.server14peekconfig.workers.dev
+  - name: "🏳️ ShatakVPN 658797"
+    type: vless
+    server: 188.114.97.6
+    port: 443
+    uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+    udp: true
+    tls: true
+    servername: mao.kipfel.kdns.fr
+    network: ws
+    ws-opts:
+      path: "/glasspanel/guest000_0_5de14443985f/"
+      headers:
+        Host: mao.kipfel.kdns.fr
+    client-fingerprint: chrome
+  - name: "🏳️ ShatakVPN 967110"
+    type: vless
+    server: 188.114.97.6
+    port: 8080
+    uuid: 4212034d-c18b-4060-b218-4f8372e5473a
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip=ProxyIP.JP.CMLiussss.net"
+      headers:
+        Host: summer-hill-7f65.275-521.workers.dev
+  - name: "🏳️ ShatakVPN 105675"
+    type: vless
+    server: 188.114.97.6
+    port: 2052
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+  - name: "🏳️ ShatakVPN 761579"
+    type: vless
+    server: 188.114.97.6
+    port: 2086
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+  - name: "🏳️ ShatakVPN 739315"
+    type: vless
+    server: 188.114.97.6
+    port: 8080
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+  - name: "🏳️ ShatakVPN 956929"
+    type: vless
+    server: 188.114.97.6
+    port: 2082
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+  - name: "🏳️ ShatakVPN 163194"
+    type: vless
+    server: 188.114.97.6
+    port: 8080
+    uuid: 7121d0be-40f5-4eda-b3d1-1556e71ea4fa
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip=ProxyIP.JP.CMLiussss.net"
+      headers:
+        Host: shrill-recipe-0c1d.404-a1d.workers.dev
+  - name: "🏳️ ShatakVPN 920504"
+    type: vless
+    server: 188.114.97.6
+    port: 2086
+    uuid: 7a629a11-b75a-4889-957d-dc0987a73a19
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoieVMzbmVFWlBsd3prIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed"
+      headers:
+        Host: jimifree.jimshofree1.workers.dev
+  - name: "🏳️ ShatakVPN 455319"
+    type: vless
+    server: 188.114.97.6
+    port: 8080
+    uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0"
+      headers:
+        Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
+  - name: "🏳️ ShatakVPN 993044"
+    type: vless
+    server: 188.114.97.6
+    port: 8080
+    uuid: bd9ff08b-d042-3650-48e4-c4b400000000
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN"
+      headers:
+        Host: netlivpn2950.bbxff.workers.dev
+  - name: "🏳️ ShatakVPN 761346"
+    type: vless
+    server: 188.114.97.6
+    port: 443
+    uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+    udp: true
+    tls: true
+    servername: a.cwvps.eu.org
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: a.cwvps.eu.org
+    client-fingerprint: chrome
+  - name: "🏳️ ShatakVPN 363197"
+    type: vless
+    server: 188.114.97.6
+    port: 80
+    uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/http"
+      headers:
+        Host: de.vpnbase.net
+  - name: "🏳️ ShatakVPN 909511"
+    type: vless
+    server: 188.114.97.6
+    port: 8080
+    uuid: e5c5c336-8ca7-44bc-82d6-0473a55ad1ae
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: pingoneorg.hydrash.workers.dev
+  - name: "🏳️ ShatakVPN 600283"
+    type: vless
+    server: 8.6.112.6
+    port: 2087
+    uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+    udp: true
+    tls: true
+    servername: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
+  - name: "🏳️ ShatakVPN 111077"
+    type: vless
+    server: 172.67.217.240
+    port: 443
+    uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
+    udp: true
+    tls: true
+    servername: web-socket.tgdaosheng.ggff.net
+    network: ws
+    ws-opts:
+      path: "/proxyip=bpb.yousef.isegaro.com"
+      headers:
+        Host: web-socket.tgdaosheng.ggff.net
+    client-fingerprint: chrome
+  - name: "🏳️ ShatakVPN 201538"
+    type: vless
+    server: 104.16.107.139
+    port: 8880
+    uuid: 24c2a873-4584-4c53-8679-61029682d0bb
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip"
+      headers:
+        Host: soft-thunder-bc22.111-f59.workers.dev
+  - name: "🏳️ ShatakVPN 495255"
+    type: vless
+    server: 172.66.170.53
+    port: 8880
+    uuid: 38ede46b-d237-4c76-9de1-a10738642adc
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip=ProxyIP.KR.CMLiussss.net"
+      headers:
+        Host: summer-hat-ba5c.430.workers.dev
+  - name: "🏳️ ShatakVPN 428832"
+    type: vless
+    server: 188.114.97.8
+    port: 8443
+    uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
+    udp: true
+    tls: true
+    servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
+      headers:
+        Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
+  - name: "🏳️ ShatakVPN 355302"
+    type: vless
+    server: 162.159.43.187
+    port: 2086
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2560security=tls"
+      headers:
+        Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  - name: "🏳️ ShatakVPN 506226"
+    type: vless
+    server: 45.130.125.201
+    port: 80
+    uuid: dc8a9493-c54a-459e-d060-81a700000001
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/sync"
+      headers:
+        Host: nahan-core.netizo09.workers.dev
+  - name: "🏳️ ShatakVPN 756836"
+    type: vless
+    server: 45.130.125.126
+    port: 443
+    uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
+    udp: true
+    tls: true
+    servername: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0"
+      headers:
+        Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
+    client-fingerprint: chrome
+  - name: "🏳️ ShatakVPN 779631"
+    type: vless
+    server: 108.162.198.178
+    port: 2095
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  - name: "🏳️ ShatakVPN 811485"
+    type: vless
+    server: 108.162.198.178
+    port: 8880
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  - name: "🏳️ ShatakVPN 169188"
+    type: vless
+    server: 108.162.198.178
+    port: 80
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  - name: "🏳️ ShatakVPN 161951"
+    type: vless
+    server: 108.162.198.178
+    port: 8080
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  - name: "🏳️ ShatakVPN 512693"
+    type: vless
+    server: 108.162.198.178
+    port: 2086
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  - name: "🏳️ ShatakVPN 676010"
+    type: vless
+    server: 104.16.98.215
+    port: 8880
+    uuid: 23187ddc-16a5-432d-bf4e-dd42a7ae39f7
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: steep-thunder-97fa.108-d10.workers.dev
+  - name: "🏳️ ShatakVPN 539864"
+    type: vless
+    server: 172.66.140.62
+    port: 8880
+    uuid: 160ca353-676d-4b7f-a041-0289e388b865
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: proud-cloud-7bdd.208-a52.workers.dev
+  - name: "🏳️ ShatakVPN 211347"
+    type: vless
+    server: 172.64.52.230
+    port: 2087
+    uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+    udp: true
+    tls: true
+    servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  - name: "🏳️ ShatakVPN 984346"
+    type: vless
+    server: 104.21.69.37
+    port: 443
+    uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
+    udp: true
+    tls: true
+    servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/vl/uWq9DFRgj8BwQiSXmZ46"
+      headers:
+        Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+    client-fingerprint: chrome
+  - name: "🏳️ ShatakVPN 259923"
+    type: vless
+    server: 104.21.74.214
+    port: 8443
+    uuid: 469bc714-57c1-4091-8913-ff804b38bd3a
+    udp: true
+    tls: true
+    servername: maike-tison.briqivo.ir
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: maike-tison.briqivo.ir
+    client-fingerprint: chrome
+  - name: "🏳️ ShatakVPN 456387"
+    type: vless
+    server: 185.143.233.5
+    port: 80
+    uuid: 38dd06a1-e1cb-492b-bb87-218ce05d0d67
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: fox-a9e04bb07a-test.apps.ir-central1.arvancaas.ir
+  - name: "🏳️ ShatakVPN 966489"
+    type: vless
+    server: 68.183.65.82
+    port: 2083
+    uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
+    udp: true
+    tls: true
+    servername: lucky-sky-0104.alvlirm444.workers.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: lucky-sky-0104.alvlirm444.workers.dev
+  - name: "🏳️ ShatakVPN 268328"
+    type: vless
+    server: 185.147.27.183
+    port: 8443
+    uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
+    udp: true
+    tls: true
+    servername: user-6a917f32.noooo.win
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 720719"
+    type: vless
+    server: 151.101.56.7
+    port: 443
+    uuid: d2299018-601d-488e-afd6-8f55b3f7439f
+    udp: true
+    tls: true
+    servername: ssl.fastly.com
+    network: ws
+    ws-opts:
+      path: "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053"
+      headers:
+        Host: pan1.global.ssl.fastly.net
+    client-fingerprint: chrome
+  - name: "🏳️ ShatakVPN 822322"
+    type: vless
+    server: 151.101.56.6
+    port: 443
+    uuid: 08ffff12-93bb-42eb-8c83-6489644a1d04
+    udp: true
+    tls: true
+    servername: ssl.fastly.com
+    client-fingerprint: firefox
+    alpn:
+      - h2
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: c12.com
+  - name: "🏳️ ShatakVPN 457059"
+    type: vless
+    server: 50.7.33.218
+    port: 443
+    uuid: 252f7811-d86f-4dc2-97e0-83d3172ef4b8
+    udp: true
+    tls: true
+    servername: edge-fr2.mystatic-cdn.ru
+    reality-opts:
+      public-key: ZZwdN1Lt-fIR8A4Y1NbYCCEI6th2YXYHHRLHraVXyn0
+      short-id: 72461ccce5373103
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 910033"
+    type: vless
+    server: 51.158.206.103
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 851971"
+    type: vless
+    server: 62.210.91.2
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 965760"
+    type: vless
+    server: 51.158.206.12
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 652661"
+    type: vless
+    server: 51.158.206.19
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 969071"
+    type: vless
+    server: 51.158.206.34
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 371161"
+    type: vless
+    server: 93.123.85.32
+    port: 41809
+    uuid: 87e26a6f-e243-4c8d-9bf6-362b0adee4f2
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🏳️ ShatakVPN 154162"
+    type: vless
+    server: 51.158.206.25
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 347534"
+    type: vless
+    server: 51.158.206.96
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 198493"
+    type: vless
+    server: 51.158.206.97
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 206171"
+    type: vless
+    server: 81.95.4.189
+    port: 443
+    uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+    udp: true
+    tls: true
+    servername: bab-6.site
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/vws/"
+      headers:
+        Host: bab-6.site
+  - name: "🏳️ ShatakVPN 769193"
+    type: vless
+    server: 51.158.206.93
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 175453"
+    type: vless
+    server: 163.172.214.188
+    port: 80
+    uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: SC-TheNetherlands1.09vpn.com
+  - name: "🏳️ ShatakVPN 913106"
+    type: vless
+    server: 194.58.41.39
+    port: 443
+    uuid: e1299012-3d27-4b7f-99d5-25ccb7c63220
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: sJTPQLMDCyPAbRcaJM-P8Y3_xRVpEEGrvv-kkIuIuQE
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: www.google.com
+      mode: auto
+  - name: "🏳️ ShatakVPN 338934"
+    type: vless
+    server: 51.158.206.29
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 975071"
+    type: vless
+    server: 51.158.206.87
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 369585"
+    type: vless
+    server: 51.158.206.20
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 528328"
+    type: vless
+    server: 159.195.137.29
+    port: 8443
+    uuid: 2ae1bbd2-dd81-4737-bbec-6a8c1c74e8f1
+    udp: true
+    tls: true
+    servername: sellflow.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 942650"
+    type: vless
+    server: 51.158.206.98
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 531754"
+    type: vless
+    server: 51.158.206.8
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 463123"
+    type: vless
+    server: 62.210.91.10
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 557279"
+    type: vless
+    server: 51.158.206.80
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 743840"
+    type: vless
+    server: 51.158.206.26
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 823061"
+    type: vless
+    server: 80.76.43.245
+    port: 443
+    uuid: 8c105407-82fb-4dd1-8df4-916d34a7d3fe
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: qq
+    reality-opts:
+      public-key: sJTPQLMDCyPAbRcaJM-P8Y3_xRVpEEGrvv-kkIuIuQE
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: www.google.com
+      mode: auto
+  - name: "🏳️ ShatakVPN 953172"
+    type: vless
+    server: 51.158.206.86
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 250857"
+    type: vless
+    server: 144.31.168.95
+    port: 443
+    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+    udp: true
+    tls: true
+    servername: eu-central.cendora.ru
+    reality-opts:
+      public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+      short-id: 00bca5982f82d083
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 814450"
+    type: vless
+    server: 143.246.182.63
+    port: 443
+    uuid: 5b45355f-1a9c-4802-90ed-0d1f5dcd4562
+    udp: true
+    tls: true
+    servername: uk10.filesnap.tech
+    client-fingerprint: edge
+    alpn:
+      - http/1.1
+      - h2
+    network: xhttp
+    xhttp-opts:
+      path: "/assets/build/_app/immutable/chunks/stream-one/"
+      host: uk10.filesnap.tech
+  - name: "🏳️ ShatakVPN 660649"
+    type: vless
+    server: 193.160.71.247
+    port: 443
+    uuid: 252f7811-d86f-4dc2-97e0-83d3172ef4b8
+    udp: true
+    tls: true
+    servername: edge-uk2.mystatic-cdn.ru
+    reality-opts:
+      public-key: 65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI
+      short-id: ee169e93d3c277a1
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 323201"
+    type: vless
+    server: 212.46.33.90
+    port: 443
+    uuid: 71091100-c6ed-41fa-84ac-acf7ff9eeb7f
+    udp: true
+    tls: true
+    servername: slowkd.sadiepinki.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo
+      short-id: 9c2378562188c3cb
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 223625"
+    type: vless
+    server: 31.58.182.33
+    port: 443
+    uuid: 2cca8201-c93e-40eb-bd8a-fea4170c169e
+    udp: true
+    tls: true
+    servername: deu683.lackerdeu.org
+    client-fingerprint: firefox
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v1/"
+      host: deu683.lackerdeu.org
+      mode: auto
+  - name: "🏳️ ShatakVPN 392145"
+    type: vless
+    server: 31.76.76.28
+    port: 443
+    uuid: de5906f3-df38-4463-aa9d-2b01320cc6ea
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 31.76.76.28
+  - name: "🏳️ ShatakVPN 503316"
+    type: vless
+    server: 163.8.195.241
+    port: 2087
+    uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/29c8fed7ca22"
+      headers:
+        Host: 163.8.195.241
+  - name: "🏳️ ShatakVPN 823340"
+    type: vless
+    server: 185.136.12.190
+    port: 443
+    uuid: 2cca8201-c93e-40eb-bd8a-fea4170c169e
+    udp: true
+    tls: true
+    servername: deu683.lackerdeu.org
+    client-fingerprint: firefox
+    alpn:
+      - h2
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v1/"
+      host: deu683.lackerdeu.org
+      mode: auto
+  - name: "🏳️ ShatakVPN 377636"
+    type: vless
+    server: 152.228.139.33
+    port: 51671
+    uuid: 75cc7568-abb0-46a8-88be-8137d3c647d4
+    udp: true
+    tls: true
+    servername: www.sony.com
+    reality-opts:
+      public-key: "-5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU"
+      short-id: 2fed44d8c59f7e71
+    client-fingerprint: chrome
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc_common3
+  - name: "🏳️ ShatakVPN 836700"
+    type: vless
+    server: 57.129.41.216
+    port: 80
+    uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: OV-Germany1.09vpn.com
+  - name: "🏳️ ShatakVPN 895916"
+    type: vless
+    server: 162.19.10.99
+    port: 443
+    uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+    udp: true
+    tls: true
+    servername: nasnet-162191099-direct.mbghalibaf.com
+    client-fingerprint: chrome
+    alpn:
+      - h2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 399860"
+    type: vless
+    server: 151.242.2.81
+    port: 443
+    uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+    udp: true
+    tls: true
+    servername: cf9.rumedia-cdn.com
+    network: ws
+    ws-opts:
+      path: "/cdn/v3/live"
+      headers:
+        Host: cf9.rumedia-cdn.com
+    client-fingerprint: chrome
+  - name: "🏳️ ShatakVPN 323211"
+    type: vless
+    server: 193.58.121.224
+    port: 5432
+    uuid: cc01f435-d561-4525-bf1f-7a9876d33207
+    udp: true
+    tls: true
+    servername: 193.58.121.224
+    client-fingerprint: safari
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 787169"
+    type: vless
+    server: 185.223.57.10
+    port: 33743
+    uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+    network: grpc
+    grpc-opts:
+      grpc-service-name: TunService
+  - name: "🏳️ ShatakVPN 937297"
+    type: vless
+    server: 147.45.226.155
+    port: 8443
+    uuid: 9ffaf9f7-a2ad-47ef-9256-f607b3b3c6cc
+    udp: true
+    tls: true
+    servername: wsnl24.wba-pn.ru
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: wsnl24.wba-pn.ru
+  - name: "🏳️ ShatakVPN 356556"
+    type: vless
+    server: 78.17.116.201
+    port: 443
+    uuid: 8535e46f-4c0b-4b02-9369-d4d553c9a892
+    udp: true
+    tls: true
+    servername: www.nokia.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: ho99K9SlOhJxolr4nVfw8SV4Z1yI22KaKaxUfk2o8jE
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 710327"
+    type: vless
+    server: 51.38.127.93
+    port: 443
+    uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+    udp: true
+    tls: true
+    servername: rubifen.adaspoloandco.com
+    client-fingerprint: qq
+    network: ws
+    ws-opts:
+      path: "/GOrbEh"
+      headers:
+        Host: rubifen.adaspoloandco.com
+  - name: "🏳️ ShatakVPN 593229"
+    type: vless
+    server: 54.37.136.194
+    port: 2053
+    uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+    udp: true
+    tls: true
+    servername: www.cloudflare.com
+    reality-opts:
+      public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+      short-id: 50ba05992b05c1c3
+    client-fingerprint: chrome
+    network: tcp
+  - name: "🏳️ ShatakVPN 449601"
+    type: vless
+    server: 161.97.160.224
+    port: 443
+    uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
+    udp: true
+    tls: true
+    servername: passport.yandex.ru
+    reality-opts:
+      public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
+      short-id: e6
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 342727"
+    type: vless
+    server: 89.36.161.222
+    port: 2083
+    uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+    udp: true
+    tls: true
+    servername: laoye.in-gect.fun
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: "🏳️ ShatakVPN 988434"
+    type: vless
+    server: 89.36.161.222
+    port: 2096
+    uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: laoye.in-gect.fun
+  - name: "🏳️ ShatakVPN 446992"
+    type: vless
+    server: 65.109.238.140
+    port: 443
+    uuid: 05bfcbaa-cba0-4bce-9103-09fe3f5f0667
+    udp: true
+    tls: true
+    servername: hel1.nordlinkcloud.com
+    client-fingerprint: firefox
+    alpn:
+      - h2
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v3/stream/"
+      host: hel1.nordlinkcloud.com
+  - name: "🏳️ ShatakVPN 210626"
+    type: vless
+    server: 204.216.216.23
+    port: 10086
+    uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🏳️ ShatakVPN 895029"
+    type: vless
+    server: 201.24.49.233
+    port: 4100
+    uuid: 714e1212-6707-471e-9f40-2fbd3d8d3b4b
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: live.ok.ru
+  - name: "🏳️ ShatakVPN 659390"
+    type: vless
+    server: 186.246.6.110
+    port: 443
+    uuid: 8c40bb2c-157a-4830-a2c3-0b35ef50c660
+    udp: true
+    tls: true
+    servername: upload.hexagonicfield.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+      short-id: a1b2c3d4e5f6a7b8
+    network: grpc
+    grpc-opts:
+      grpc-service-name: moktana.net.v1.StreamService
+  - name: "🏳️ ShatakVPN 732818"
+    type: vless
+    server: 150.241.101.80
+    port: 8443
+    uuid: 47d9b534-8a0a-4bd2-90f1-1d6ade14427e
+    udp: true
+    tls: true
+    servername: yandex.net
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 188670"
+    type: vless
+    server: 91.215.40.106
+    port: 443
+    uuid: ab40c8b0-268e-4251-b8a6-133a53a946ef
+    udp: true
+    tls: true
+    servername: kioth.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: SwPM1hGH3KvZSMihEdRm8V___vJiFqaBD507p_oFPDM
+      short-id: 18d92bf8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 325817"
+    type: vless
+    server: 83.147.246.153
+    port: 4100
+    uuid: 85223e1a-f55d-4d0d-b27d-39e8be49d220
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: live.ok.ru
+  - name: "🏳️ ShatakVPN 577982"
+    type: vless
+    server: 201.24.52.151
+    port: 443
+    uuid: 8c40bb2c-157a-4830-a2c3-0b35ef50c660
+    udp: true
+    tls: true
+    servername: hexagonicfield.com
+    client-fingerprint: ios
+    reality-opts:
+      public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+      short-id: 3f8e2d1c9b4a7e6f
+    network: grpc
+    grpc-opts:
+      grpc-service-name: moktana.net.v1.StreamService
+  - name: "🏳️ ShatakVPN 231181"
+    type: vless
+    server: 47.253.226.114
+    port: 443
+    uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+    udp: true
+    tls: true
+    servername: www.cloudflare.com
+    reality-opts:
+      public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 200176"
+    type: vless
+    server: 188.225.25.142
+    port: 443
+    uuid: 7cde4592-4758-415f-8b97-c188faa4d1c9
+    udp: true
+    tls: true
+    servername: prime.betust.net
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: SxbaWzlvE_HQqqsA4PNX2PFcSYXTVE2nZlgLc7cPOgk
+      short-id: 8681edc9
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 153521"
+    type: vless
+    server: 188.225.25.195
+    port: 443
+    uuid: 7cde4592-4758-415f-8b97-c188faa4d1c9
+    udp: true
+    tls: true
+    servername: app25.betust.net
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: Fe_144ALuRRedGs06ljDnE1f_G2B2wE4i9_diqw5LnY
+      short-id: a16bc894
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 344002"
+    type: vless
+    server: 217.19.122.17
+    port: 10654
+    uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+    udp: true
+    tls: true
+    servername: bl3fk52.sysopnova.art
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: ds10ztOlMn8xfeIKEQ1m3I-tdem-abZbHKtJCU13CQM
+      short-id: 5c3fb122
+    network: xhttp
+    xhttp-opts:
+      path: "/xhttp_client_upload"
+      host: bl3fk52.sysopnova.art
+      mode: packet-up
+  - name: "🏳️ ShatakVPN 738158"
+    type: vless
+    server: 188.225.44.89
+    port: 443
+    uuid: 7cde4592-4758-415f-8b97-c188faa4d1c9
+    udp: true
+    tls: true
+    servername: app12.betust.net
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: Fgd7fSq-ZXnAZd3GUYGEfTyiz9wno4IWVIcs7-Narwg
+      short-id: f73ac93d
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 387197"
+    type: vless
+    server: 201.24.49.69
+    port: 4100
+    uuid: 2cd5f052-6455-4153-b7d3-0545184dc64c
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: 201.24.49.69
+  - name: "🏳️ ShatakVPN 518531"
+    type: vless
+    server: 188.225.35.207
+    port: 443
+    uuid: 7cde4592-4758-415f-8b97-c188faa4d1c9
+    udp: true
+    tls: true
+    servername: demo.betust.net
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: "-lLmJilTNFk_DYxnbvWJH_swC9a5JRheZrN1KPVMjCc"
+      short-id: 219a891b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 845356"
+    type: vless
+    server: 188.225.42.6
+    port: 443
+    uuid: 7cde4592-4758-415f-8b97-c188faa4d1c9
+    udp: true
+    tls: true
+    servername: app6.betust.net
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: sS3x_ZygtA9uZ5WaYm7pHjy0_lPNUUK7kOSLz0BNhCs
+      short-id: 54ac91da
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 582986"
+    type: vless
+    server: 95.163.232.171
+    port: 14443
+    uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+    udp: true
+    tls: true
+    servername: media-se.compressor.work
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: media-se.compressor.work
+  - name: "🏳️ ShatakVPN 580460"
+    type: vless
+    server: 93.77.188.102
+    port: 443
+    uuid: 2eb1e3e2-34b9-4ca8-864f-9fada68d6c81
+    udp: true
+    tls: true
+    servername: wde5.whitedeu.org
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 571856"
+    type: vless
+    server: 185.241.195.151
+    port: 9444
+    uuid: 27aa2f99-9617-45d9-a4ae-6b59edb1fcd9
+    udp: true
+    tls: true
+    servername: res.cdnguard.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: zoQ5Lz62_sEMvHJywCYjYpunMOlGG1rf_jL81iCbwQk
+      short-id: 413da1312ccce8fb
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 566559"
+    type: vless
+    server: 91.224.86.107
+    port: 9830
+    uuid: 76186f1e-3062-4a2b-98c2-fab3c61a9511
+    udp: true
+    tls: true
+    servername: dl.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+      short-id: aabbccdd
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc-tunnel
+  - name: "🏳️ ShatakVPN 365414"
+    type: vless
+    server: 176.108.246.73
+    port: 9873
+    uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+    udp: true
+    tls: true
+    servername: dl.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+      short-id: aabbccdd
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc-tunnel
+  - name: "🏳️ ShatakVPN 946956"
+    type: vless
+    server: 188.225.57.78
+    port: 443
+    uuid: 7cde4592-4758-415f-8b97-c188faa4d1c9
+    udp: true
+    tls: true
+    servername: app4.betust.net
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: NCW-zK60GXsiDdlbxww18Pqp4kz3zTG1URHWS_bnfDk
+      short-id: 3f7e0363
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 841745"
+    type: vless
+    server: 91.240.86.12
+    port: 443
+    uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 2ZUQYIhUijdJ1vRL8iR8RxjmJvRVHYp-JoWevQ2LyR4
+      short-id: 7bb730e3e6616d31
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 926776"
+    type: vless
+    server: 91.224.87.22
+    port: 9873
+    uuid: 76186f1e-3062-4a2b-98c2-fab3c61a9511
+    udp: true
+    tls: true
+    servername: dl.google.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+      short-id: aabbccdd
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc-tunnel
+  - name: "🏳️ ShatakVPN 622489"
+    type: vless
+    server: 91.224.87.22
+    port: 9882
+    uuid: 76186f1e-3062-4a2b-98c2-fab3c61a9511
+    udp: true
+    tls: true
+    servername: dl.google.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+      short-id: aabb
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc-tunnel
+  - name: "🏳️ ShatakVPN 150382"
+    type: vless
+    server: 185.103.167.76
+    port: 4443
+    uuid: d7c94b82-657a-4bb7-9b24-2ae566669835
+    udp: true
+    tls: true
+    servername: moldova.cdn-europe.org
+    client-fingerprint: random
+    reality-opts:
+      public-key: cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8
+      short-id: 694ee64512cfcbef
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 504832"
+    type: vless
+    server: 176.123.161.222
+    port: 9892
+    uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+    udp: true
+    tls: true
+    servername: dl.google.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc-tunnel
+  - name: "🏳️ ShatakVPN 618630"
+    type: vless
+    server: 159.194.209.203
+    port: 2083
+    uuid: 6796f262-ca34-4b8e-b86e-6c175c081f2e
+    udp: true
+    tls: true
+    servername: 5post-gate.x5.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: DcAXpVZZ7_JtJqz9b6ax9gWWvkH_6icdC29j6keGPj8
+      short-id: c4e81a7b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 582008"
+    type: vless
+    server: 185.141.227.180
+    port: 2053
+    uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+    udp: true
+    tls: true
+    servername: dismissaltree.net
+    client-fingerprint: chrome
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: dismissaltree.net
+      mode: auto
+  - name: "🏳️ ShatakVPN 742817"
+    type: vless
+    server: 5.78.159.214
+    port: 80
+    uuid: 52ecd83b-b6c1-41ee-bc36-049755bd33d2
+    udp: true
+    tls: true
+    servername: 5.78.159.214
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: NTXb7QGg9EyPkpG-7lmBNNaqf4473p_l8ITmTH-xmHg
+      short-id: 0db5c018ed7bb596
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 368649"
+    type: vless
+    server: 45.12.75.242
+    port: 26424
+    uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+    udp: true
+    tls: true
+    servername: ya.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+      short-id: 23103e1e
+    network: tcp
+  - name: "🏳️ ShatakVPN 545736"
+    type: vless
+    server: 168.222.194.138
+    port: 9880
+    uuid: 76186f1e-3062-4a2b-98c2-fab3c61a9511
+    udp: true
+    tls: true
+    servername: dl.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+      short-id: aabbccdd
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc-tunnel
+  - name: "🏳️ ShatakVPN 427821"
+    type: vless
+    server: 45.138.100.226
+    port: 2083
+    uuid: 0c6b632a-cd96-4b74-9b51-151e3b5697db
+    udp: true
+    tls: true
+    servername: using.neobo-tooth.ru
+    client-fingerprint: chrome
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+  - name: "🏳️ ShatakVPN 994991"
+    type: vless
+    server: 188.225.24.201
+    port: 443
+    uuid: 7cde4592-4758-415f-8b97-c188faa4d1c9
+    udp: true
+    tls: true
+    servername: app11.betust.net
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: XhzNlmMTdYr2pYTqiNNP6qWe7BkAgVHU-kZWXc9u9hY
+      short-id: 91c2269c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 471314"
+    type: vless
+    server: 137.184.218.169
+    port: 36925
+    uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+    udp: true
+    tls: true
+    servername: www.cloudflare.com
+    reality-opts:
+      public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 152290"
+    type: vless
+    server: 23.237.192.18
+    port: 443
+    uuid: 252f7811-d86f-4dc2-97e0-83d3172ef4b8
+    udp: true
+    tls: true
+    servername: edge-us2.mystatic-cdn.ru
+    reality-opts:
+      public-key: NvvQrD-Febpqip-6DM7al1RrjlwMzlEJzxCjtlgcu3Y
+      short-id: b9ab7b4fadce963c
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 484904"
+    type: vless
+    server: 89.35.14.34
+    port: 443
+    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+    udp: true
+    tls: true
+    servername: md5.univesalsrv.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 99MRki6b93wC-hhDHe9yq3IXE3KtPGw4RkFAnpI-8gg
+      short-id: aa9884f2982b7d3c
+    network: grpc
+    grpc-opts:
+      grpc-service-name: app.v1.PushService
+  - name: "🏳️ ShatakVPN 938199"
+    type: vless
+    server: 192.166.82.74
+    port: 8443
+    uuid: 414b2c7f-26e8-4c08-a357-a4f00043804e
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: ios
+    reality-opts:
+      public-key: vmfswX2VwSAGOSd9gleiWLfZK8BVyMI7D6oMDPUjpCk
+      short-id: f15240e5244c7ba8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 294685"
+    type: vless
+    server: 31.58.50.200
+    port: 8443
+    uuid: 4b2fbd30-1a64-4b27-aea9-713d62c9e69b
+    udp: true
+    tls: true
+    servername: tradingview.com
+    reality-opts:
+      public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 659847"
+    type: vless
+    server: 15.204.97.195
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 555794"
+    type: vless
+    server: 15.204.97.214
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 586304"
+    type: vless
+    server: 15.204.97.198
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 708051"
+    type: vless
+    server: 15.204.97.219
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 363109"
+    type: vless
+    server: 15.204.97.197
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 404361"
+    type: vless
+    server: 15.204.97.206
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 690215"
+    type: vless
+    server: 15.204.97.216
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 548147"
+    type: vless
+    server: 146.235.16.130
+    port: 19825
+    uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+    udp: true
+    tls: true
+    servername: sg2-8sb.6121999.dpdns.org
+    reality-opts:
+      public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 592140"
+    type: vless
+    server: 134.122.154.210
+    port: 443
+    uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🏳️ ShatakVPN 770092"
+    type: vless
+    server: 95.164.85.109
+    port: 59374
+    uuid: bfc78cd8-5951-4803-8d6c-4cedef8cd420
+    udp: true
+    tls: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ZsswZuBV8bEGQWFrpShCilSytnDUj0kwHFhTSLXzOwc
+      short-id: d21e7c
+    network: tcp
+  - name: "🏳️ ShatakVPN 133091"
+    type: vless
+    server: 89.44.197.77
+    port: 15946
+    uuid: 8672bdcd-e331-464d-9ed8-93a242ca7d2e
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 89.44.197.77
+  - name: "🏳️ ShatakVPN 486728"
+    type: vless
+    server: 185.153.183.211
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🏳️ ShatakVPN 532963"
+    type: vless
+    server: 45.12.143.191
+    port: 20329
+    uuid: e105e56a-5f81-41a2-ab44-bfffc9b00674
+    udp: true
+    tls: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Lj3MXlg16CTFHtU88acSS-ACfGnwJ_xkU6dC6k8OeDo
+      short-id: 4602ee9f9f36
+    network: tcp
+  - name: "🏳️ ShatakVPN 958461"
+    type: vless
+    server: 45.82.251.80
+    port: 8880
+    uuid: e4824193-4f54-453b-d037-88368e85ef0e
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🏳️ ShatakVPN 593167"
+    type: vless
+    server: 193.233.255.45
+    port: 443
+    uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
+    udp: true
+    tls: true
+    servername: sellflow.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 413464"
+    type: vless
+    server: 91.107.190.63
+    port: 8080
+    uuid: 11af1c47-865a-47c6-92ff-118013655d78
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: 91.107.190.63
+  - name: "🏳️ ShatakVPN 754743"
+    type: vless
+    server: 94.156.232.254
+    port: 443
+    uuid: 03c48eca-e0aa-4e18-998c-1f53f1de293c
+    udp: true
+    tls: true
+    servername: cf6.rumedia-cdn.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/cdn/v3/live"
+      headers:
+        Host: cf6.rumedia-cdn.com
+  - name: "🏳️ ShatakVPN 185379"
+    type: vless
+    server: 185.189.47.107
+    port: 443
+    uuid: 252f7811-d86f-4dc2-97e0-83d3172ef4b8
+    udp: true
+    tls: true
+    servername: edge-se.mystatic-cdn.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 4HizFUAIvYp3wzM4p1_VcbhLWsRVHzG53XZG4f7oWiY
+      short-id: b21f41e79ecbac55
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 847200"
+    type: vless
+    server: 169.58.143.21
+    port: 443
+    uuid: 25f3beef-a4b6-40bc-aa74-17a0f89f683c
+    udp: true
+    tls: true
+    servername: finite-node.rtxconfigz.com
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: telegram.us
+    client-fingerprint: chrome
+  - name: "🏳️ ShatakVPN 588599"
+    type: vless
+    server: 45.128.78.6
+    port: 443
+    uuid: 2ae1bbd2-dd81-4737-bbec-6a8c1c74e8f1
+    udp: true
+    tls: true
+    servername: sellflow.org
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 253884"
+    type: vless
+    server: 82.24.203.10
+    port: 2087
+    uuid: 3165b4d0-40f7-4df0-9f59-4c89ccdac92d
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/3bfc3e3ed603"
+      headers:
+        Host: 82.24.203.10
+  - name: "🏳️ ShatakVPN 485154"
+    type: vless
+    server: 201.24.49.53
+    port: 4100
+    uuid: 33965d4f-f9bd-4437-8867-ed705b435518
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: 201.24.49.53
+  - name: "🏳️ ShatakVPN 135957"
+    type: vless
+    server: 193.23.194.167
+    port: 443
+    uuid: 32349ee8-8551-45fa-a265-8704cec72936
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 193.23.194.167
+  - name: "🏳️ ShatakVPN 539232"
+    type: vless
+    server: 193.23.194.167
+    port: 8443
+    uuid: 32349ee8-8551-45fa-a265-8704cec72936
+    udp: true
+    tls: true
+    servername: neth.lckdwn.ru
+    client-fingerprint: chrome
+    network: tcp
+  - name: "🏳️ ShatakVPN 460997"
+    type: vless
+    server: 45.131.212.62
+    port: 443
+    uuid: 3ba36a4e-9542-43d3-85c1-9f0177972231
+    udp: true
+    tls: true
+    servername: fi.sellflow.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 535593"
+    type: vless
+    server: 5.78.48.21
+    port: 39824
+    uuid: 3d15500f-f7f9-4ae0-a5f9-10df9ce32083
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🏳️ ShatakVPN 479415"
+    type: vless
+    server: 82.24.203.37
+    port: 2087
+    uuid: 44573770-963a-41f5-a080-3cc11e4957a2
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/5c62e3c616d8"
+      headers:
+        Host: 82.24.203.37
+  - name: "🏳️ ShatakVPN 228272"
+    type: vless
+    server: 157.238.208.110
+    port: 41834
+    uuid: 5adeccb9-dfca-41de-cdf7-4d901f2e70f5
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/5adeccb9"
+      headers:
+        Host: 157.238.208.110
+  - name: "🏳️ ShatakVPN 168804"
+    type: vless
+    server: 45.144.28.39
+    port: 2083
+    uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+    udp: true
+    tls: true
+    servername: usejh2.neobo-tooth.ru
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: "🏳️ ShatakVPN 487844"
+    type: vless
+    server: 45.144.28.39
+    port: 2096
+    uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: usejh2.neobo-tooth.ru
+  - name: "🏳️ ShatakVPN 245659"
+    type: vless
+    server: 201.34.137.15
+    port: 4100
+    uuid: 716903b1-e6bf-4420-9e27-65e4451692e9
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: live.ok.ru
+  - name: "🏳️ ShatakVPN 440698"
+    type: vless
+    server: 94.183.209.58
+    port: 443
+    uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: pl2.lckdwn.ru
+  - name: "🏳️ ShatakVPN 769453"
+    type: vless
+    server: 185.123.100.56
+    port: 8443
+    uuid: 78eb4455-0d07-4bc2-93e3-7c8654f11d74
+    udp: true
+    tls: true
+    servername: www.apple.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 655829"
+    type: vless
+    server: 189.74.97.47
+    port: 2087
+    uuid: 894fe9f0-b998-49c0-8003-a5007de921e1
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/755276b33b6f"
+      headers:
+        Host: 189.74.97.47
+  - name: "🏳️ ShatakVPN 983458"
+    type: vless
+    server: 162.159.156.214
+    port: 8880
+    uuid: 8991a496-1baa-486f-9948-ffe44e68c072
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/pyip=ProxyIP.SG.CMLiussss.net"
+      headers:
+        Host: soft-band-8da6.426.workers.dev
+  - name: "🏳️ ShatakVPN 121957"
+    type: vless
+    server: 188.220.67.140
+    port: 2087
+    uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/8f2690e2d016"
+      headers:
+        Host: 188.220.67.140
+  - name: "🏳️ ShatakVPN 317956"
+    type: vless
+    server: 188.220.67.181
+    port: 2087
+    uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/8f2690e2d016"
+      headers:
+        Host: 188.220.67.181
+  - name: "🏳️ ShatakVPN 879680"
+    type: vless
+    server: 188.220.67.224
+    port: 2087
+    uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/8f2690e2d016"
+      headers:
+        Host: 188.220.67.224
+  - name: "🏳️ ShatakVPN 613059"
+    type: vless
+    server: 72.56.117.75
+    port: 443
+    uuid: 8e8e4592-6088-4d00-b061-ef5456d0eb9c
+    udp: true
+    tls: true
+    servername: hys41.wba-pn.ru
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: hys41.wba-pn.ru
+  - name: "🏳️ ShatakVPN 694725"
+    type: vless
+    server: 87.120.84.32
+    port: 33843
+    uuid: 93dac4b8-3879-4179-abdb-9666a9e2ca8d
+    udp: true
+    tls: true
+    servername: deproxy2.lckdwn.ru
+    client-fingerprint: chrome
+    network: tcp
+  - name: "🏳️ ShatakVPN 741838"
+    type: vless
+    server: 87.120.84.32
+    port: 8443
+    uuid: 93dac4b8-3879-4179-abdb-9666a9e2ca8d
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 87.120.84.32
+  - name: "🏳️ ShatakVPN 274921"
+    type: vless
+    server: 151.243.182.249
+    port: 443
+    uuid: 98673856-cd6f-4aa0-b2c9-d2ec90c0f47b
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 151.243.182.249
+  - name: "🏳️ ShatakVPN 955499"
+    type: vless
+    server: 193.58.121.95
+    port: 2053
+    uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
+    udp: true
+    tls: true
+    servername: vk.ru
+    reality-opts:
+      public-key: 6RshLCSAs31qGRa_tWi63KClbh2Kzj9ooXpdaPJKbjs
+      short-id: a6bbc4aecf5d961f
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 488011"
+    type: vless
+    server: 193.58.121.95
+    port: 2096
+    uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: de-193-58.neobo-tooth.ru
+  - name: "🏳️ ShatakVPN 620839"
+    type: vless
+    server: 138.124.60.146
+    port: 443
+    uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
+    udp: true
+    tls: true
+    servername: usa.oblaco.bet
+    reality-opts:
+      public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 648653"
+    type: vless
+    server: 95.85.230.35
+    port: 443
+    uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
+    udp: true
+    tls: true
+    servername: de.oblaco.bet
+    reality-opts:
+      public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 536429"
+    type: vless
+    server: 178.95.170.115
+    port: 2087
+    uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/4bc027a44532"
+      headers:
+        Host: 178.95.170.115
+  - name: "🏳️ ShatakVPN 758676"
+    type: vless
+    server: 178.95.170.83
+    port: 2087
+    uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/4bc027a44532"
+      headers:
+        Host: 178.95.170.83
+  - name: "🏳️ ShatakVPN 215695"
+    type: vless
+    server: 94.183.209.59
+    port: 443
+    uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 94.183.209.59
+  - name: "🏳️ ShatakVPN 968114"
+    type: vless
+    server: 178.72.167.151
+    port: 443
+    uuid: d7ff1a6d-529e-4260-aa46-3c8a7fd681f4
+    udp: true
+    tls: true
+    servername: 2gis.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 54p7hD_YYV5f2ATL7rTBk4NG_KhStO76-1_tSKmXah8
+      short-id: d45603
+    network: xhttp
+    xhttp-opts:
+      path: "/eCuiEa7kedJ1UIGB3Gbgdt3XeUd"
+      host: 2gis.ru
+  - name: "🏳️ ShatakVPN 601842"
+    type: vless
+    server: 18.132.102.151
+    port: 22224
+    uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🏳️ ShatakVPN 592882"
+    type: vless
+    server: 18.169.49.13
+    port: 22222
+    uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🏳️ ShatakVPN 497804"
+    type: vless
+    server: 18.169.49.13
+    port: 22224
+    uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🏳️ ShatakVPN 772698"
+    type: vless
+    server: itproxy4.lockdwn.com
+    port: 443
+    uuid: e4737ce4-c646-44cc-9067-390e13c2a5f6
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: itproxy4.lockdwn.com
+  - name: "🏳️ ShatakVPN 610018"
+    type: vless
+    server: 157.22.133.130
+    port: 2087
+    uuid: e6d369db-22be-4f30-8685-455c717aaa8c
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/5021201ef53f"
+      headers:
+        Host: 157.22.133.130
+  - name: "🏳️ ShatakVPN 983493"
+    type: vless
+    server: 95.129.236.239
+    port: 443
+    uuid: 17ae4af4-a672-4780-b6f7-311fef62abd1
+    udp: true
+    tls: true
+    servername: login.opendns.stream
+    client-fingerprint: firefox
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/stream/615428/socket"
+      headers:
+        Host: login.opendns.stream
+  - name: "🏳️ ShatakVPN 133317"
+    type: vless
+    server: 46.243.142.63
+    port: 8443
+    uuid: 27aa2f99-9617-45d9-a4ae-6b59edb1fcd9
+    udp: true
+    tls: true
+    servername: an9b3d-07.p.portshaper.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 5hhzoP441DrGa2l5YlwizPSA5chdY2VjRP7CiEfLLA0
+      short-id: eea4ab7bddaeea39
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/session/open"
+      host: an9b3d-07.p.portshaper.com
+      mode: stream-one
+  - name: "🏳️ ShatakVPN 742169"
+    type: vless
+    server: 94.139.255.254
+    port: 5443
+    uuid: 27aa2f99-9617-45d9-a4ae-6b59edb1fcd9
+    udp: true
+    tls: true
+    servername: shprcdn.net
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 5hhzoP441DrGa2l5YlwizPSA5chdY2VjRP7CiEfLLA0
+      short-id: eea4ab7bddaeea39
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/session/open"
+      host: shprcdn.net
+      mode: stream-one
+  - name: "🏳️ ShatakVPN 500046"
+    type: vless
+    server: 3.9.135.156
+    port: 51847
+    uuid: 391a01e9-b664-407b-9158-610fab3f5920
+    udp: true
+    tls: true
+    servername: www.tesla.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
+      short-id: 0eec442e7b34d2f2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏳️ ShatakVPN 693186"
+    type: vless
+    server: 34.176.98.128
+    port: 443
+    uuid: 4fe7ceb2-160c-4564-89e6-8f5fd0b05cd5
+    udp: true
+    tls: true
+    servername: www.cloudflare.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 3ekBKAuIIAOjtkKJ0T-qpC7uJsqsY2fVLRB6C70A5hw
+      short-id: d7676b6a468a03b3
+    network: tcp
+  - name: "🏳️ ShatakVPN 548310"
+    type: vless
+    server: 88.216.220.88
+    port: 443
+    uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
+    udp: true
+    tls: true
+    servername: files.noneok.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: q3kOYHdjmqWLLYj8oikvna1bTjofk45ktegGaJE611g
+      short-id: d3b394558cfe0266
+    network: grpc
+    grpc-opts:
+      grpc-service-name: api.v1.StreamService
+  - name: "🏳️ ShatakVPN 323958"
+    type: vless
+    server: 145.223.70.129
+    port: 9443
+    uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+    udp: true
+    tls: true
+    servername: storage.yandexcloud.net
+    client-fingerprint: safari
+    reality-opts:
+      public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+      short-id: ad20d2bc
+    flow: xtls-rprx-vision
+    network: tcp
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "♻️ 自动选择"
+      - DIRECT
+      - "🇩🇪 ShatakVPN 548326"
+      - "🇩🇪 ShatakVPN 683167"
+      - "🇺🇸 ShatakVPN 397390"
+      - "🇺🇸 ShatakVPN 535830"
+      - "🇺🇸 ShatakVPN 261558"
+      - "🇺🇸 ShatakVPN 854835"
+      - "🇺🇸 ShatakVPN 840353"
+      - "🇺🇸 ShatakVPN 289796"
+      - "🇺🇸 ShatakVPN 638261"
+      - "🇺🇸 ShatakVPN 570318"
+      - "🇺🇸 ShatakVPN 399124"
+      - "🇺🇸 ShatakVPN 871084"
+      - "🇺🇸 ShatakVPN 739997"
+      - "🏳️ ShatakVPN 886982"
+      - "🏳️ ShatakVPN 276738"
+      - "🏳️ ShatakVPN 571066"
+      - "🏳️ ShatakVPN 519036"
+      - "🏳️ ShatakVPN 220591"
+      - "🏳️ ShatakVPN 158161"
+      - "🏳️ ShatakVPN 782839"
+      - "🏳️ ShatakVPN 177176"
+      - "🏳️ ShatakVPN 220862"
+      - "🏳️ ShatakVPN 977803"
+      - "🏳️ ShatakVPN 338315"
+      - "🏳️ ShatakVPN 960328"
+      - "🏳️ ShatakVPN 485901"
+      - "🏳️ ShatakVPN 698644"
+      - "🏳️ ShatakVPN 924708"
+      - "🏳️ ShatakVPN 621703"
+      - "🏳️ ShatakVPN 658797"
+      - "🏳️ ShatakVPN 967110"
+      - "🏳️ ShatakVPN 105675"
+      - "🏳️ ShatakVPN 761579"
+      - "🏳️ ShatakVPN 739315"
+      - "🏳️ ShatakVPN 956929"
+      - "🏳️ ShatakVPN 163194"
+      - "🏳️ ShatakVPN 920504"
+      - "🏳️ ShatakVPN 455319"
+      - "🏳️ ShatakVPN 993044"
+      - "🏳️ ShatakVPN 761346"
+      - "🏳️ ShatakVPN 363197"
+      - "🏳️ ShatakVPN 909511"
+      - "🏳️ ShatakVPN 600283"
+      - "🏳️ ShatakVPN 111077"
+      - "🏳️ ShatakVPN 201538"
+      - "🏳️ ShatakVPN 495255"
+      - "🏳️ ShatakVPN 428832"
+      - "🏳️ ShatakVPN 355302"
+      - "🏳️ ShatakVPN 506226"
+      - "🏳️ ShatakVPN 756836"
+      - "🏳️ ShatakVPN 779631"
+      - "🏳️ ShatakVPN 811485"
+      - "🏳️ ShatakVPN 169188"
+      - "🏳️ ShatakVPN 161951"
+      - "🏳️ ShatakVPN 512693"
+      - "🏳️ ShatakVPN 676010"
+      - "🏳️ ShatakVPN 539864"
+      - "🏳️ ShatakVPN 211347"
+      - "🏳️ ShatakVPN 984346"
+      - "🏳️ ShatakVPN 259923"
+      - "🏳️ ShatakVPN 456387"
+      - "🏳️ ShatakVPN 966489"
+      - "🏳️ ShatakVPN 268328"
+      - "🏳️ ShatakVPN 720719"
+      - "🏳️ ShatakVPN 822322"
+      - "🏳️ ShatakVPN 457059"
+      - "🏳️ ShatakVPN 910033"
+      - "🏳️ ShatakVPN 851971"
+      - "🏳️ ShatakVPN 965760"
+      - "🏳️ ShatakVPN 652661"
+      - "🏳️ ShatakVPN 969071"
+      - "🏳️ ShatakVPN 371161"
+      - "🏳️ ShatakVPN 154162"
+      - "🏳️ ShatakVPN 347534"
+      - "🏳️ ShatakVPN 198493"
+      - "🏳️ ShatakVPN 206171"
+      - "🏳️ ShatakVPN 769193"
+      - "🏳️ ShatakVPN 175453"
+      - "🏳️ ShatakVPN 913106"
+      - "🏳️ ShatakVPN 338934"
+      - "🏳️ ShatakVPN 975071"
+      - "🏳️ ShatakVPN 369585"
+      - "🏳️ ShatakVPN 528328"
+      - "🏳️ ShatakVPN 942650"
+      - "🏳️ ShatakVPN 531754"
+      - "🏳️ ShatakVPN 463123"
+      - "🏳️ ShatakVPN 557279"
+      - "🏳️ ShatakVPN 743840"
+      - "🏳️ ShatakVPN 823061"
+      - "🏳️ ShatakVPN 953172"
+      - "🏳️ ShatakVPN 250857"
+      - "🏳️ ShatakVPN 814450"
+      - "🏳️ ShatakVPN 660649"
+      - "🏳️ ShatakVPN 323201"
+      - "🏳️ ShatakVPN 223625"
+      - "🏳️ ShatakVPN 392145"
+      - "🏳️ ShatakVPN 503316"
+      - "🏳️ ShatakVPN 823340"
+      - "🏳️ ShatakVPN 377636"
+      - "🏳️ ShatakVPN 836700"
+      - "🏳️ ShatakVPN 895916"
+      - "🏳️ ShatakVPN 399860"
+      - "🏳️ ShatakVPN 323211"
+      - "🏳️ ShatakVPN 787169"
+      - "🏳️ ShatakVPN 937297"
+      - "🏳️ ShatakVPN 356556"
+      - "🏳️ ShatakVPN 710327"
+      - "🏳️ ShatakVPN 593229"
+      - "🏳️ ShatakVPN 449601"
+      - "🏳️ ShatakVPN 342727"
+      - "🏳️ ShatakVPN 988434"
+      - "🏳️ ShatakVPN 446992"
+      - "🏳️ ShatakVPN 210626"
+      - "🏳️ ShatakVPN 895029"
+      - "🏳️ ShatakVPN 659390"
+      - "🏳️ ShatakVPN 732818"
+      - "🏳️ ShatakVPN 188670"
+      - "🏳️ ShatakVPN 325817"
+      - "🏳️ ShatakVPN 577982"
+      - "🏳️ ShatakVPN 231181"
+      - "🏳️ ShatakVPN 200176"
+      - "🏳️ ShatakVPN 153521"
+      - "🏳️ ShatakVPN 344002"
+      - "🏳️ ShatakVPN 738158"
+      - "🏳️ ShatakVPN 387197"
+      - "🏳️ ShatakVPN 518531"
+      - "🏳️ ShatakVPN 845356"
+      - "🏳️ ShatakVPN 582986"
+      - "🏳️ ShatakVPN 580460"
+      - "🏳️ ShatakVPN 571856"
+      - "🏳️ ShatakVPN 566559"
+      - "🏳️ ShatakVPN 365414"
+      - "🏳️ ShatakVPN 946956"
+      - "🏳️ ShatakVPN 841745"
+      - "🏳️ ShatakVPN 926776"
+      - "🏳️ ShatakVPN 622489"
+      - "🏳️ ShatakVPN 150382"
+      - "🏳️ ShatakVPN 504832"
+      - "🏳️ ShatakVPN 618630"
+      - "🏳️ ShatakVPN 582008"
+      - "🏳️ ShatakVPN 742817"
+      - "🏳️ ShatakVPN 368649"
+      - "🏳️ ShatakVPN 545736"
+      - "🏳️ ShatakVPN 427821"
+      - "🏳️ ShatakVPN 994991"
+      - "🏳️ ShatakVPN 471314"
+      - "🏳️ ShatakVPN 152290"
+      - "🏳️ ShatakVPN 484904"
+      - "🏳️ ShatakVPN 938199"
+      - "🏳️ ShatakVPN 294685"
+      - "🏳️ ShatakVPN 659847"
+      - "🏳️ ShatakVPN 555794"
+      - "🏳️ ShatakVPN 586304"
+      - "🏳️ ShatakVPN 708051"
+      - "🏳️ ShatakVPN 363109"
+      - "🏳️ ShatakVPN 404361"
+      - "🏳️ ShatakVPN 690215"
+      - "🏳️ ShatakVPN 548147"
+      - "🏳️ ShatakVPN 592140"
+      - "🏳️ ShatakVPN 770092"
+      - "🏳️ ShatakVPN 133091"
+      - "🏳️ ShatakVPN 486728"
+      - "🏳️ ShatakVPN 532963"
+      - "🏳️ ShatakVPN 958461"
+      - "🏳️ ShatakVPN 593167"
+      - "🏳️ ShatakVPN 413464"
+      - "🏳️ ShatakVPN 754743"
+      - "🏳️ ShatakVPN 185379"
+      - "🏳️ ShatakVPN 847200"
+      - "🏳️ ShatakVPN 588599"
+      - "🏳️ ShatakVPN 253884"
+      - "🏳️ ShatakVPN 485154"
+      - "🏳️ ShatakVPN 135957"
+      - "🏳️ ShatakVPN 539232"
+      - "🏳️ ShatakVPN 460997"
+      - "🏳️ ShatakVPN 535593"
+      - "🏳️ ShatakVPN 479415"
+      - "🏳️ ShatakVPN 228272"
+      - "🏳️ ShatakVPN 168804"
+      - "🏳️ ShatakVPN 487844"
+      - "🏳️ ShatakVPN 245659"
+      - "🏳️ ShatakVPN 440698"
+      - "🏳️ ShatakVPN 769453"
+      - "🏳️ ShatakVPN 655829"
+      - "🏳️ ShatakVPN 983458"
+      - "🏳️ ShatakVPN 121957"
+      - "🏳️ ShatakVPN 317956"
+      - "🏳️ ShatakVPN 879680"
+      - "🏳️ ShatakVPN 613059"
+      - "🏳️ ShatakVPN 694725"
+      - "🏳️ ShatakVPN 741838"
+      - "🏳️ ShatakVPN 274921"
+      - "🏳️ ShatakVPN 955499"
+      - "🏳️ ShatakVPN 488011"
+      - "🏳️ ShatakVPN 620839"
+      - "🏳️ ShatakVPN 648653"
+      - "🏳️ ShatakVPN 536429"
+      - "🏳️ ShatakVPN 758676"
+      - "🏳️ ShatakVPN 215695"
+      - "🏳️ ShatakVPN 968114"
+      - "🏳️ ShatakVPN 601842"
+      - "🏳️ ShatakVPN 592882"
+      - "🏳️ ShatakVPN 497804"
+      - "🏳️ ShatakVPN 772698"
+      - "🏳️ ShatakVPN 610018"
+      - "🏳️ ShatakVPN 983493"
+      - "🏳️ ShatakVPN 133317"
+      - "🏳️ ShatakVPN 742169"
+      - "🏳️ ShatakVPN 500046"
+      - "🏳️ ShatakVPN 693186"
+      - "🏳️ ShatakVPN 548310"
+      - "🏳️ ShatakVPN 323958"
+  - name: "♻️ 自动选择"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "🇩🇪 ShatakVPN 548326"
+      - "🇩🇪 ShatakVPN 683167"
+      - "🇺🇸 ShatakVPN 397390"
+      - "🇺🇸 ShatakVPN 535830"
+      - "🇺🇸 ShatakVPN 261558"
+      - "🇺🇸 ShatakVPN 854835"
+      - "🇺🇸 ShatakVPN 840353"
+      - "🇺🇸 ShatakVPN 289796"
+      - "🇺🇸 ShatakVPN 638261"
+      - "🇺🇸 ShatakVPN 570318"
+      - "🇺🇸 ShatakVPN 399124"
+      - "🇺🇸 ShatakVPN 871084"
+      - "🇺🇸 ShatakVPN 739997"
+      - "🏳️ ShatakVPN 886982"
+      - "🏳️ ShatakVPN 276738"
+      - "🏳️ ShatakVPN 571066"
+      - "🏳️ ShatakVPN 519036"
+      - "🏳️ ShatakVPN 220591"
+      - "🏳️ ShatakVPN 158161"
+      - "🏳️ ShatakVPN 782839"
+      - "🏳️ ShatakVPN 177176"
+      - "🏳️ ShatakVPN 220862"
+      - "🏳️ ShatakVPN 977803"
+      - "🏳️ ShatakVPN 338315"
+      - "🏳️ ShatakVPN 960328"
+      - "🏳️ ShatakVPN 485901"
+      - "🏳️ ShatakVPN 698644"
+      - "🏳️ ShatakVPN 924708"
+      - "🏳️ ShatakVPN 621703"
+      - "🏳️ ShatakVPN 658797"
+      - "🏳️ ShatakVPN 967110"
+      - "🏳️ ShatakVPN 105675"
+      - "🏳️ ShatakVPN 761579"
+      - "🏳️ ShatakVPN 739315"
+      - "🏳️ ShatakVPN 956929"
+      - "🏳️ ShatakVPN 163194"
+      - "🏳️ ShatakVPN 920504"
+      - "🏳️ ShatakVPN 455319"
+      - "🏳️ ShatakVPN 993044"
+      - "🏳️ ShatakVPN 761346"
+      - "🏳️ ShatakVPN 363197"
+      - "🏳️ ShatakVPN 909511"
+      - "🏳️ ShatakVPN 600283"
+      - "🏳️ ShatakVPN 111077"
+      - "🏳️ ShatakVPN 201538"
+      - "🏳️ ShatakVPN 495255"
+      - "🏳️ ShatakVPN 428832"
+      - "🏳️ ShatakVPN 355302"
+      - "🏳️ ShatakVPN 506226"
+      - "🏳️ ShatakVPN 756836"
+      - "🏳️ ShatakVPN 779631"
+      - "🏳️ ShatakVPN 811485"
+      - "🏳️ ShatakVPN 169188"
+      - "🏳️ ShatakVPN 161951"
+      - "🏳️ ShatakVPN 512693"
+      - "🏳️ ShatakVPN 676010"
+      - "🏳️ ShatakVPN 539864"
+      - "🏳️ ShatakVPN 211347"
+      - "🏳️ ShatakVPN 984346"
+      - "🏳️ ShatakVPN 259923"
+      - "🏳️ ShatakVPN 456387"
+      - "🏳️ ShatakVPN 966489"
+      - "🏳️ ShatakVPN 268328"
+      - "🏳️ ShatakVPN 720719"
+      - "🏳️ ShatakVPN 822322"
+      - "🏳️ ShatakVPN 457059"
+      - "🏳️ ShatakVPN 910033"
+      - "🏳️ ShatakVPN 851971"
+      - "🏳️ ShatakVPN 965760"
+      - "🏳️ ShatakVPN 652661"
+      - "🏳️ ShatakVPN 969071"
+      - "🏳️ ShatakVPN 371161"
+      - "🏳️ ShatakVPN 154162"
+      - "🏳️ ShatakVPN 347534"
+      - "🏳️ ShatakVPN 198493"
+      - "🏳️ ShatakVPN 206171"
+      - "🏳️ ShatakVPN 769193"
+      - "🏳️ ShatakVPN 175453"
+      - "🏳️ ShatakVPN 913106"
+      - "🏳️ ShatakVPN 338934"
+      - "🏳️ ShatakVPN 975071"
+      - "🏳️ ShatakVPN 369585"
+      - "🏳️ ShatakVPN 528328"
+      - "🏳️ ShatakVPN 942650"
+      - "🏳️ ShatakVPN 531754"
+      - "🏳️ ShatakVPN 463123"
+      - "🏳️ ShatakVPN 557279"
+      - "🏳️ ShatakVPN 743840"
+      - "🏳️ ShatakVPN 823061"
+      - "🏳️ ShatakVPN 953172"
+      - "🏳️ ShatakVPN 250857"
+      - "🏳️ ShatakVPN 814450"
+      - "🏳️ ShatakVPN 660649"
+      - "🏳️ ShatakVPN 323201"
+      - "🏳️ ShatakVPN 223625"
+      - "🏳️ ShatakVPN 392145"
+      - "🏳️ ShatakVPN 503316"
+      - "🏳️ ShatakVPN 823340"
+      - "🏳️ ShatakVPN 377636"
+      - "🏳️ ShatakVPN 836700"
+      - "🏳️ ShatakVPN 895916"
+      - "🏳️ ShatakVPN 399860"
+      - "🏳️ ShatakVPN 323211"
+      - "🏳️ ShatakVPN 787169"
+      - "🏳️ ShatakVPN 937297"
+      - "🏳️ ShatakVPN 356556"
+      - "🏳️ ShatakVPN 710327"
+      - "🏳️ ShatakVPN 593229"
+      - "🏳️ ShatakVPN 449601"
+      - "🏳️ ShatakVPN 342727"
+      - "🏳️ ShatakVPN 988434"
+      - "🏳️ ShatakVPN 446992"
+      - "🏳️ ShatakVPN 210626"
+      - "🏳️ ShatakVPN 895029"
+      - "🏳️ ShatakVPN 659390"
+      - "🏳️ ShatakVPN 732818"
+      - "🏳️ ShatakVPN 188670"
+      - "🏳️ ShatakVPN 325817"
+      - "🏳️ ShatakVPN 577982"
+      - "🏳️ ShatakVPN 231181"
+      - "🏳️ ShatakVPN 200176"
+      - "🏳️ ShatakVPN 153521"
+      - "🏳️ ShatakVPN 344002"
+      - "🏳️ ShatakVPN 738158"
+      - "🏳️ ShatakVPN 387197"
+      - "🏳️ ShatakVPN 518531"
+      - "🏳️ ShatakVPN 845356"
+      - "🏳️ ShatakVPN 582986"
+      - "🏳️ ShatakVPN 580460"
+      - "🏳️ ShatakVPN 571856"
+      - "🏳️ ShatakVPN 566559"
+      - "🏳️ ShatakVPN 365414"
+      - "🏳️ ShatakVPN 946956"
+      - "🏳️ ShatakVPN 841745"
+      - "🏳️ ShatakVPN 926776"
+      - "🏳️ ShatakVPN 622489"
+      - "🏳️ ShatakVPN 150382"
+      - "🏳️ ShatakVPN 504832"
+      - "🏳️ ShatakVPN 618630"
+      - "🏳️ ShatakVPN 582008"
+      - "🏳️ ShatakVPN 742817"
+      - "🏳️ ShatakVPN 368649"
+      - "🏳️ ShatakVPN 545736"
+      - "🏳️ ShatakVPN 427821"
+      - "🏳️ ShatakVPN 994991"
+      - "🏳️ ShatakVPN 471314"
+      - "🏳️ ShatakVPN 152290"
+      - "🏳️ ShatakVPN 484904"
+      - "🏳️ ShatakVPN 938199"
+      - "🏳️ ShatakVPN 294685"
+      - "🏳️ ShatakVPN 659847"
+      - "🏳️ ShatakVPN 555794"
+      - "🏳️ ShatakVPN 586304"
+      - "🏳️ ShatakVPN 708051"
+      - "🏳️ ShatakVPN 363109"
+      - "🏳️ ShatakVPN 404361"
+      - "🏳️ ShatakVPN 690215"
+      - "🏳️ ShatakVPN 548147"
+      - "🏳️ ShatakVPN 592140"
+      - "🏳️ ShatakVPN 770092"
+      - "🏳️ ShatakVPN 133091"
+      - "🏳️ ShatakVPN 486728"
+      - "🏳️ ShatakVPN 532963"
+      - "🏳️ ShatakVPN 958461"
+      - "🏳️ ShatakVPN 593167"
+      - "🏳️ ShatakVPN 413464"
+      - "🏳️ ShatakVPN 754743"
+      - "🏳️ ShatakVPN 185379"
+      - "🏳️ ShatakVPN 847200"
+      - "🏳️ ShatakVPN 588599"
+      - "🏳️ ShatakVPN 253884"
+      - "🏳️ ShatakVPN 485154"
+      - "🏳️ ShatakVPN 135957"
+      - "🏳️ ShatakVPN 539232"
+      - "🏳️ ShatakVPN 460997"
+      - "🏳️ ShatakVPN 535593"
+      - "🏳️ ShatakVPN 479415"
+      - "🏳️ ShatakVPN 228272"
+      - "🏳️ ShatakVPN 168804"
+      - "🏳️ ShatakVPN 487844"
+      - "🏳️ ShatakVPN 245659"
+      - "🏳️ ShatakVPN 440698"
+      - "🏳️ ShatakVPN 769453"
+      - "🏳️ ShatakVPN 655829"
+      - "🏳️ ShatakVPN 983458"
+      - "🏳️ ShatakVPN 121957"
+      - "🏳️ ShatakVPN 317956"
+      - "🏳️ ShatakVPN 879680"
+      - "🏳️ ShatakVPN 613059"
+      - "🏳️ ShatakVPN 694725"
+      - "🏳️ ShatakVPN 741838"
+      - "🏳️ ShatakVPN 274921"
+      - "🏳️ ShatakVPN 955499"
+      - "🏳️ ShatakVPN 488011"
+      - "🏳️ ShatakVPN 620839"
+      - "🏳️ ShatakVPN 648653"
+      - "🏳️ ShatakVPN 536429"
+      - "🏳️ ShatakVPN 758676"
+      - "🏳️ ShatakVPN 215695"
+      - "🏳️ ShatakVPN 968114"
+      - "🏳️ ShatakVPN 601842"
+      - "🏳️ ShatakVPN 592882"
+      - "🏳️ ShatakVPN 497804"
+      - "🏳️ ShatakVPN 772698"
+      - "🏳️ ShatakVPN 610018"
+      - "🏳️ ShatakVPN 983493"
+      - "🏳️ ShatakVPN 133317"
+      - "🏳️ ShatakVPN 742169"
+      - "🏳️ ShatakVPN 500046"
+      - "🏳️ ShatakVPN 693186"
+      - "🏳️ ShatakVPN 548310"
+      - "🏳️ ShatakVPN 323958"
+rules:
+  - "GEOIP,LAN,DIRECT,no-resolve"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,🚀 节点选择"

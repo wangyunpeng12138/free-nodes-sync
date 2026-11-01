@@ -1,0 +1,4184 @@
+# 订阅 32.txt -> Clash
+# 由 txt2clash.py 自动生成于 2026-11-01 16:51:17 +0800
+# 节点数量: 266
+# 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: "off"
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  listen: "0.0.0.0:1053"
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "*.localhost"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  proxy-server-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+proxies:
+  - name: "🇦🇹 Austria [*CIDR]"
+    type: vless
+    server: 81.denditop.site
+    port: 443
+    uuid: b39aca97-e9f2-4a94-b87f-8748299846cd
+    udp: true
+    tls: true
+    servername: eh1.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: UZ2NoBGMbrUpBav3lcqN-E43SxZTIvkjJuHNy-Yk_go
+      short-id: d26763126a7cf4fe
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇦🇹 Austria | 🌐 Anycast-IP | [C] [*CIDR]"
+    type: vless
+    server: 81.200.151.199
+    port: 443
+    uuid: b39aca97-e9f2-4a94-b87f-8748299846cd
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_clqzJ8ZkSG71dSLu5KfRB9NJf63uBbdlDFZ4hp1uBE"
+      short-id: 3d9bfa9202efd228
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇪 Estonia [*CIDR] VK"
+    type: vless
+    server: 109.120.191.92
+    port: 1488
+    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇪 Estonia [*CIDR]"
+    type: vless
+    server: 144.31.178.150
+    port: 8443
+    uuid: ce7f5e28-d72d-4006-8d70-f428a4721910
+    udp: true
+    tls: true
+    servername: 01.img.avito.st
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: JmO_njtIe9q7HRanm_dx4BtPAGCkycJuDskOISPx_Sg
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/updates"
+      host: 01.img.avito.st
+      mode: auto
+  - name: "🇪🇪 Estonia [*CIDR] 2"
+    type: vless
+    server: tbankru.outlinekeys.net
+    port: 8443
+    uuid: 5d91fed7-24fc-4ddf-80f1-589a1275035c
+    udp: true
+    tls: true
+    servername: 01.img.avito.st
+    reality-opts:
+      public-key: JmO_njtIe9q7HRanm_dx4BtPAGCkycJuDskOISPx_Sg
+    client-fingerprint: chrome
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/updates"
+      host: 01.img.avito.st
+      mode: auto
+  - name: "🇪🇪 Estonia [*CIDR] 3"
+    type: vless
+    server: 144.31.178.168
+    port: 8443
+    uuid: ce7f5e28-d72d-4006-8d70-f428a4721910
+    udp: true
+    tls: true
+    servername: 01.img.avito.st
+    reality-opts:
+      public-key: JmO_njtIe9q7HRanm_dx4BtPAGCkycJuDskOISPx_Sg
+    client-fingerprint: chrome
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/updates"
+      host: 01.img.avito.st
+      mode: auto
+  - name: "🇪🇪 Estonia [*CIDR] 4"
+    type: vless
+    server: 144.31.178.150
+    port: 8443
+    uuid: ca911bd2-e08f-42d8-aefb-3117494d3367
+    udp: true
+    tls: true
+    servername: 01.img.avito.st
+    reality-opts:
+      public-key: JmO_njtIe9q7HRanm_dx4BtPAGCkycJuDskOISPx_Sg
+    client-fingerprint: chrome
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/updates"
+      host: 01.img.avito.st
+      mode: auto
+  - name: "🇪🇪 Estonia [*CIDR] 5"
+    type: vless
+    server: 144.31.178.168
+    port: 8443
+    uuid: 1c5f7c8c-e49a-4cf3-9ca9-ff4497eda5f1
+    udp: true
+    tls: true
+    servername: 01.img.avito.st
+    reality-opts:
+      public-key: JmO_njtIe9q7HRanm_dx4BtPAGCkycJuDskOISPx_Sg
+    client-fingerprint: chrome
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/updates"
+      host: 01.img.avito.st
+      mode: auto
+  - name: "🇪🇪 Estonia [*CIDR] VK 2"
+    type: vless
+    server: 5.188.141.138
+    port: 443
+    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇪 Estonia [*CIDR] 6"
+    type: vless
+    server: 144.31.178.150
+    port: 8443
+    uuid: 7a7aa0d2-5311-45fc-80b0-9f46f3546793
+    udp: true
+    tls: true
+    servername: 01.img.avito.st
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: JmO_njtIe9q7HRanm_dx4BtPAGCkycJuDskOISPx_Sg
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/updates"
+      host: 01.img.avito.st
+      mode: auto
+  - name: "🇪🇪 Estonia [*CIDR] 7"
+    type: vless
+    server: 144.31.178.168
+    port: 8443
+    uuid: 5d91fed7-24fc-4ddf-80f1-589a1275035c
+    udp: true
+    tls: true
+    servername: 01.img.avito.st
+    reality-opts:
+      public-key: JmO_njtIe9q7HRanm_dx4BtPAGCkycJuDskOISPx_Sg
+    client-fingerprint: chrome
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/updates"
+      host: 01.img.avito.st
+      mode: auto
+  - name: "🇫🇮 Finland [*CIDR]"
+    type: vless
+    server: 144.31.212.248
+    port: 443
+    uuid: 53d37ac8-efc2-492c-b6c6-a864dfebbbff
+    udp: true
+    tls: true
+    servername: finland.jinnie.lol
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 0-0a99RLOG_2OW4j-e-UlzlMhnLubb9Gs6Ykd_bnjCM
+      short-id: e8b1ac21a7685b9c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇫🇮 Finland [*CIDR] 2"
+    type: vless
+    server: info.mattesaira.cc
+    port: 443
+    uuid: 357488d2-cec8-4392-ba2a-92598c8711ee
+    udp: true
+    tls: true
+    servername: www.mozilla.org
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: uf64ptbhMNcLWuwEfOzQB7qgn725h6w9DmKRteQQPwg
+      short-id: 46ff0446a02c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇫🇮 Finland [*CIDR] 3"
+    type: vless
+    server: 87.239.252.186
+    port: 443
+    uuid: e3ad047d-9f7c-48a2-9cca-67a72fa6d9ec
+    udp: true
+    tls: true
+    servername: www.techradar.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: uf64ptbhMNcLWuwEfOzQB7qgn725h6w9DmKRteQQPwg
+      short-id: 04f2e507229e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇫🇮 Finland [*CIDR] 4"
+    type: vless
+    server: info.mattesaira.cc
+    port: 443
+    uuid: e3ad047d-9f7c-48a2-9cca-67a72fa6d9ec
+    udp: true
+    tls: true
+    servername: www.techradar.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: uf64ptbhMNcLWuwEfOzQB7qgn725h6w9DmKRteQQPwg
+      short-id: 04f2e507229e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇫🇷 France [*CIDR] CDN"
+    type: vless
+    server: 151.236.114.162
+    port: 6443
+    uuid: 65704afe-e26a-4266-9ff3-4d09c0f04c14
+    udp: true
+    tls: true
+    servername: max.ru
+    client-fingerprint: qq
+    reality-opts:
+      public-key: pGFgy_rrpU51v3IFm-dYHOJskMDJO0kCAkIIHJdUSF8
+      short-id: f3e8b2b1
+    network: tcp
+  - name: "🇩🇪 Germany [*CIDR] YA"
+    type: vless
+    server: 51.250.73.139
+    port: 443
+    uuid: ad5d8d51-18f4-451b-9c01-7baff1d9b244
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 0a3d38cwnQfUM7EqjEinf1XUZyKdzgiuRMayO3LcYl0
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇩🇪 Germany [*CIDR]"
+    type: vless
+    server: 178.250.243.83
+    port: 443
+    uuid: a88ea8bf-7001-4e29-a9bb-379f6778195c
+    udp: true
+    tls: true
+    servername: max.ru
+    reality-opts:
+      public-key: n7PbThf3Y4O9x0Ya1sENteFwg7k4INOTnI64MxVz5UQ
+      short-id: 0123456789abcdef
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇩🇪 Germany [*CIDR] VK"
+    type: vless
+    server: 109.120.190.130
+    port: 443
+    uuid: 4742b1aa-d4e1-4994-a344-fa9267e6b9ab
+    udp: true
+    tls: true
+    servername: bunny.net
+    client-fingerprint: qq
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇩🇪 Germany | 🌐 Anycast-IP | [G] [*CIDR] YA"
+    type: vless
+    server: 51.250.73.139
+    port: 12000
+    uuid: ad5d8d51-18f4-451b-9c01-7baff1d9b244
+    udp: true
+    tls: true
+    servername: max.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 0a3d38cwnQfUM7EqjEinf1XUZyKdzgiuRMayO3LcYl0
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇩🇪 Germany [*CIDR] 2"
+    type: vless
+    server: 144.31.221.8
+    port: 443
+    uuid: 4bc7d558-1943-44de-bd82-56920bc9383e
+    udp: true
+    tls: true
+    servername: test.spectrum.vu
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: EyzTSZxq5qlUT2xW0l7VP-DzIh2ucabMan9ekEv9Owo
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] YA"
+    type: vless
+    server: 178.154.253.80
+    port: 8443
+    uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 2715592069f36fe7
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] YA 2"
+    type: vless
+    server: 178.154.253.80
+    port: 443
+    uuid: 811b7652-ac8c-41f8-84c0-8406d883e345
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 2715592069f36fe7
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] VK"
+    type: vless
+    server: 37.139.33.15
+    port: 443
+    uuid: afffbafe-881f-4a06-bc22-d1a49121ba36
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 8ba12e75110b7a9c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] YA 3"
+    type: vless
+    server: 89.169.128.105
+    port: 443
+    uuid: fed6eca7-ac5e-489d-816a-3500877b9acc
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 2715592069f36fe7
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] YA 4"
+    type: vless
+    server: 178.154.253.80
+    port: 443
+    uuid: fed6eca7-ac5e-489d-816a-3500877b9acc
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 2715592069f36fe7
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] VK 2"
+    type: vless
+    server: 84.23.52.70
+    port: 8443
+    uuid: 811b7652-ac8c-41f8-84c0-8406d883e345
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: random
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: f4b4a6365558ea2e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] YA 5"
+    type: vless
+    server: 178.154.253.80
+    port: 443
+    uuid: afffbafe-881f-4a06-bc22-d1a49121ba36
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 8ba12e75110b7a9c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] YA 6"
+    type: vless
+    server: 178.154.253.80
+    port: 8443
+    uuid: afffbafe-881f-4a06-bc22-d1a49121ba36
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 2715592069f36fe7
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR] VK 3"
+    type: vless
+    server: 84.23.52.70
+    port: 8443
+    uuid: fed6eca7-ac5e-489d-816a-3500877b9acc
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 2715592069f36fe7
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇭🇺 Hungary [*CIDR]"
+    type: vless
+    server: 217.13.104.134
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    udp: true
+    tls: true
+    servername: hu.jojack.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 3f200574d011010f
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] YA"
+    type: vless
+    server: 130.193.59.133
+    port: 51101
+    uuid: fdee1b7b-8944-49f1-966e-9530804b6ff7
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: 4ffc99daad0f261f
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] VK"
+    type: vless
+    server: 37.139.33.57
+    port: 51101
+    uuid: eb4234b2-8083-4038-af1d-ae752b4ad6d4
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: random
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: f32140952ba18e18
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] VK 2"
+    type: vless
+    server: 90.156.217.130
+    port: 8443
+    uuid: 467aa349-5a10-4f23-98d7-dd5d836dcbe5
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: 4ffc99daad0f261f
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] YA 2"
+    type: vless
+    server: 130.193.59.133
+    port: 443
+    uuid: 467aa349-5a10-4f23-98d7-dd5d836dcbe5
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: 6419bed7fd0a2cff
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] VK 3"
+    type: vless
+    server: 90.156.217.130
+    port: 8443
+    uuid: 4ae3f4bb-6f11-478a-ade5-d7a667a8c888
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: 6419bed7fd0a2cff
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] VK 4"
+    type: vless
+    server: 37.139.33.57
+    port: 443
+    uuid: 4ae3f4bb-6f11-478a-ade5-d7a667a8c888
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: f32140952ba18e18
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] VK 5"
+    type: vless
+    server: 37.139.33.57
+    port: 443
+    uuid: 467aa349-5a10-4f23-98d7-dd5d836dcbe5
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: 6419bed7fd0a2cff
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] YA 3"
+    type: vless
+    server: 130.193.59.133
+    port: 8443
+    uuid: 6408b7b0-2527-4d9f-b361-928222ec624f
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: 6419bed7fd0a2cff
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹 Italy [*CIDR] VK 6"
+    type: vless
+    server: 90.156.217.130
+    port: 443
+    uuid: fdee1b7b-8944-49f1-966e-9530804b6ff7
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: f32140952ba18e18
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇱🇹 Lithuania [*CIDR] YA"
+    type: vless
+    server: 51.250.109.224
+    port: 8443
+    uuid: 4742b1aa-d4e1-4994-a344-fa9267e6b9ab
+    udp: true
+    tls: true
+    servername: bunny.net
+    client-fingerprint: qq
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] VK"
+    type: vless
+    server: 109.120.188.227
+    port: 1488
+    uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] VK 2"
+    type: vless
+    server: 79.137.175.56
+    port: 8443
+    uuid: e8accc46-c511-42fb-919b-9283799a88a1
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 8f222b3475800821
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] YA"
+    type: vless
+    server: 158.160.221.132
+    port: 51102
+    uuid: 56e1592c-cae7-4ff1-b9d9-07ee111968b5
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 1929ef620e9b34f5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] VK 3"
+    type: vless
+    server: 5.188.141.69
+    port: 443
+    uuid: 04f040e8-1d14-4969-94ad-6bc0ac633063
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR]"
+    type: vless
+    server: 195.3.223.51
+    port: 443
+    uuid: b39aca97-e9f2-4a94-b87f-8748299846cd
+    udp: true
+    tls: true
+    servername: poland.denditop.site
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
+      short-id: 9c2378562188c3cb
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] YA 2"
+    type: vless
+    server: 158.160.105.121
+    port: 51102
+    uuid: e8accc46-c511-42fb-919b-9283799a88a1
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 1929ef620e9b34f5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] VK 4"
+    type: vless
+    server: 79.137.175.56
+    port: 443
+    uuid: 6d39596c-b569-4a61-86c3-28cfb83a4c95
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: random
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 8f222b3475800821
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] YA 3"
+    type: vless
+    server: 158.160.105.121
+    port: 443
+    uuid: 6d39596c-b569-4a61-86c3-28cfb83a4c95
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 8f222b3475800821
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] YA 4"
+    type: vless
+    server: 158.160.221.132
+    port: 51102
+    uuid: 83261bf9-eb44-41fc-b252-aaf685b7b23d
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 887c0d72e771a934
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] VK 5"
+    type: vless
+    server: 79.137.175.56
+    port: 51102
+    uuid: 871fdc77-e6df-460d-ace3-b38ab82fb487
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 8f222b3475800821
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] VK 6"
+    type: vless
+    server: 79.137.175.56
+    port: 51102
+    uuid: 56e1592c-cae7-4ff1-b9d9-07ee111968b5
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 1929ef620e9b34f5
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] VK 7"
+    type: vless
+    server: 79.137.175.56
+    port: 443
+    uuid: 83261bf9-eb44-41fc-b252-aaf685b7b23d
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 8f222b3475800821
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] VK 8"
+    type: vless
+    server: 79.137.175.56
+    port: 443
+    uuid: 56e1592c-cae7-4ff1-b9d9-07ee111968b5
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: random
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 887c0d72e771a934
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland | 🌐 Anycast-IP | [H] [*CIDR] VK"
+    type: vless
+    server: 5.188.140.18
+    port: 1488
+    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] 2"
+    type: vless
+    server: 195.3.223.6
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    udp: true
+    tls: true
+    servername: pl.jojack.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: hSTtlpXKAYVVu5ybX3hQfq8dfsUrO_HoFVgfGGoCHVw
+      short-id: f189d91760bb6663
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇵🇱 Poland [*CIDR] VK 9"
+    type: vless
+    server: 95.163.211.158
+    port: 8443
+    uuid: 7a7aa0d2-5311-45fc-80b0-9f46f3546793
+    udp: true
+    tls: true
+    servername: eh.vk.ru
+    reality-opts:
+      public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
+    client-fingerprint: chrome
+    network: grpc
+    grpc-opts:
+      grpc-service-name: xyz
+  - name: "🇪🇸 Spain [*CIDR] YA"
+    type: vless
+    server: 158.160.223.36
+    port: 443
+    uuid: 11e41a32-6672-48a0-b9cb-c8694242ecff
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 48fccabc158a4c22
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK"
+    type: vless
+    server: 37.139.34.145
+    port: 443
+    uuid: ae1d0280-68e4-40a4-adce-a634ebe0948b
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] YA 2"
+    type: vless
+    server: 158.160.223.36
+    port: 8443
+    uuid: 72fb3bd4-75dd-488a-9af7-c391321ecfcc
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 2"
+    type: vless
+    server: 37.139.34.145
+    port: 8443
+    uuid: 72fb3bd4-75dd-488a-9af7-c391321ecfcc
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 3"
+    type: vless
+    server: 37.139.34.145
+    port: 443
+    uuid: 829ce713-8748-4049-ba76-be56e60bc449
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 28047c78b3f5ee2c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 4"
+    type: vless
+    server: 79.137.175.44
+    port: 8443
+    uuid: 11e41a32-6672-48a0-b9cb-c8694242ecff
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 48fccabc158a4c22
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] YA 3"
+    type: vless
+    server: 84.252.143.25
+    port: 8443
+    uuid: 636dac2e-9a58-49a6-84f5-313a03761131
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 48fccabc158a4c22
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] YA 4"
+    type: vless
+    server: 84.252.143.25
+    port: 443
+    uuid: ae1d0280-68e4-40a4-adce-a634ebe0948b
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 5"
+    type: vless
+    server: 79.137.175.44
+    port: 443
+    uuid: 829ce713-8748-4049-ba76-be56e60bc449
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 28047c78b3f5ee2c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 6"
+    type: vless
+    server: 87.239.106.153
+    port: 443
+    uuid: 72fb3bd4-75dd-488a-9af7-c391321ecfcc
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: random
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 7"
+    type: vless
+    server: 79.137.175.44
+    port: 443
+    uuid: 72fb3bd4-75dd-488a-9af7-c391321ecfcc
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 8"
+    type: vless
+    server: 79.137.175.44
+    port: 8443
+    uuid: 829ce713-8748-4049-ba76-be56e60bc449
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 9"
+    type: vless
+    server: 79.137.175.44
+    port: 8443
+    uuid: 72fb3bd4-75dd-488a-9af7-c391321ecfcc
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 10"
+    type: vless
+    server: 79.137.175.44
+    port: 8443
+    uuid: ae1d0280-68e4-40a4-adce-a634ebe0948b
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 48fccabc158a4c22
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇪🇸 Spain [*CIDR] VK 11"
+    type: vless
+    server: 87.239.106.153
+    port: 443
+    uuid: ae1d0280-68e4-40a4-adce-a634ebe0948b
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇸🇪 Sweden [*CIDR] VK"
+    type: vless
+    server: dostupbypass4.suio.me
+    port: 443
+    uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 5bGFIWSo4vlrd9Tv1yFcpdpSjrjYYN20SOWHYfighHc
+      short-id: a1b2c3d4
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [F] [*CIDR] VK"
+    type: vless
+    server: 5.188.143.8
+    port: 8443
+    uuid: c343f67e-8781-4a8e-97e4-e74ab137eb1c
+    udp: true
+    tls: true
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: IJXhnkkk8ouGXeOF1DXEfsz8HsuQHZBJm8VXlRMd0Hg
+      short-id: 1d33e456
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR]"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 4c0374b7-9414-4d0f-a4f1-b837061a1693
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 2"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 937b3af1-a2ca-49cd-843e-d5d77bc83a8b
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 3"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 14ab342f-3d0e-4b8f-b6a2-db7c9bc52702
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 4"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 3cac1d60-8ddb-4ea8-9344-88344d500741
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 9de7
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 5"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: a6baa464-ab9b-44f0-9c65-729af3a89e8b
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 6"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 537a9000-874f-4b46-bd60-dd95760fd1b7
+    udp: true
+    tls: true
+    servername: google.com
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    client-fingerprint: chrome
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 7"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 456bd17d-9407-4b88-959f-aa320b0a572e
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 8"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: b766e2e5-5327-4b3a-a670-38ecf2662f99
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 9"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 42a3bc73-c3c9-40e0-a402-ccf05848dea4
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 10"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: eb44b7c0-fe5a-47a7-90ea-e61a126b2a22
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 11"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: c37b5cc9-afd6-4467-8fc1-fd2b5abfb2b8
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 12"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 0e8cbd9f-4ba3-44a9-8c74-c7f0a912f479
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 13"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 66a3cb2d-f189-491e-b783-27d30a68c645
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 14"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: f0e086ad-26b6-4d84-9eb4-864bdb80bad1
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 3d3c3fc7e9
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 15"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 373a56eb-aaa9-4a92-b209-503dd916900f
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 16"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 6b16c63d-5a44-4bf5-b3c6-f978bddab026
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 17"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 0fb538e9-c56d-43e7-97d6-f748caaccfba
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 3d3c3fc7e9
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 18"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 316d1df7-3222-4665-9a20-e6976e9b43d1
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 19"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 2ad15591-8356-4f9e-b1bf-03becd0385a8
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 20"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: e4485706-f852-405c-8f2d-e1738deef06e
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 21"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 64c2baf7-0164-4d6c-bdb6-74759a40d544
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 22"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: eba1f167-396f-40cc-8e67-09e700ae1afe
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 23"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: fe2e39d6-07e8-4f7f-a46d-15564f929acf
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 24"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: b6587b5b-5f76-4fd8-8ead-89e544e84194
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 3d3c3fc7e9
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 25"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: a49e4ab5-2d44-417f-be6a-5757efa892b7
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 26"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: c02aeb3d-acff-4b1d-b38e-f855e0b9aa23
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 27"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: bbc5126c-0f1c-4301-b2f4-1e9d0780d0c4
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 9de7
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 28"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: dab4ebdd-20ba-44f0-81d7-132f1c87b55e
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 29"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: fdf3cd53-b457-46e5-a40f-fcb13960abeb
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 54c71eb172a3
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 30"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 537a9000-874f-4b46-bd60-dd95760fd1b7
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 31"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 9b476336-f5ca-4ee1-b649-ed356d9da7b0
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 32"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: a9d63718-8294-428c-8de6-0c487ce77b5d
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 9de7
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 33"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 0fcf4647-ae83-418e-b8db-b1b8d5f3fc08
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 9de7
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 34"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: f8e29d54-7745-46c2-9358-868994c79aca
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 35"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: c37b5cc9-afd6-4467-8fc1-fd2b5abfb2b8
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 36"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: f2954550-3378-46ed-ad8d-5b40f0bb5dc5
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 3d3c3fc7e9
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 37"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 351bc20f-034a-439f-94da-f91282c8ec7f
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 9de7
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 38"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: c27d70f4-00ca-432e-9d9d-ecab5cad88ac
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 3d3c3fc7e9
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 39"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 8eb60c19-7d2d-4177-a5c0-45949a66a98b
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 40"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 387f5c7b-da4f-4fd8-a27f-8c5825ffacb2
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 9de7
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 41"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 267101b8-9742-4f2a-9899-c6702b3412f5
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 42"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 902c1699-290c-4491-addf-7a384a59fed2
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 43"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: ba86dbea-c76b-4694-a154-faee9f36e8b4
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 44"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: eac256f7-b383-408c-bab3-fe75bfecec8c
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 45"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: d9e9cf27-dea6-4f57-94e9-c8182f7259e9
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 46"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 49fc8f4f-f3e9-435d-9fa8-0f489707b5b4
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 9de7
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 47"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 74880a39-bc7c-4dc6-8b2f-02984b7f8f51
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 48"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 49fc8f4f-f3e9-435d-9fa8-0f489707b5b4
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 9de7
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 49"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 57d62d61-f3e0-4aee-8878-7eabef4ba249
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 9de7
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 50"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 4c0374b7-9414-4d0f-a4f1-b837061a1693
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 51"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: c37b5cc9-afd6-4467-8fc1-fd2b5abfb2b8
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 52"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 31e09244-11f0-42be-be0f-a2e9430a7ea3
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 3d3c3fc7e9
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 53"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 332c03ef-f61e-4ed6-8c7d-5dc2a8d4cfb1
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 9de7
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 54"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: c4f7484d-0e36-4eae-a125-0699e0562b65
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 55"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 62cc6c7f-c060-4275-a1a0-7c823d27797d
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 56"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 562eb7c0-f526-4572-b10d-3d083efcd791
+    udp: true
+    tls: true
+    servername: google.com
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    client-fingerprint: chrome
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR]"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 229eaa9f-ac95-46bc-9426-361b698e1b28
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 54c71eb172a3
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 2"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 7812bc6b-959b-4e65-9093-5c1a318ee4bf
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 3"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 20fe73d2-c308-4a43-95bc-71b0a4687b3f
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 4"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 32939076-7490-4484-a2db-d91de1899416
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 5"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 093ca6c0-e824-4d9d-ab1f-46294a2f3b5c
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 6"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 5dd6763c-d4f5-4e58-8ab9-6f8f828f7e83
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 7"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 0b12dd98-2266-420b-8f79-026dab5786d5
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 9de7
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 8"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 660e94db-ee00-4f46-b88e-7c73d5fe2989
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 9"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 7fbd497e-8fb2-4722-aa1f-c2c0873e7944
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 10"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 454dfe09-9562-4217-bd9c-2dcc188d9272
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 11"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: f56e01da-6407-4ca0-8ea3-92b7d9a431a6
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 12"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 7a7e4bd6-035d-4d36-bc71-a82074e35bd7
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 9de7
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 13"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 3ffea3f6-602e-4bc5-9eaf-c49bbda0f081
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 14"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: be420958-a605-4513-9371-838e9ddb2866
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 15"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 8eb60c19-7d2d-4177-a5c0-45949a66a98b
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 3d3c3fc7e9
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 16"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: c7db6499-1935-4105-9922-071a5d9fbffb
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 17"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: a0926f66-3684-4eff-a985-8eb33d06f8f7
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 9de7
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 18"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 373a56eb-aaa9-4a92-b209-503dd916900f
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 19"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 5dd6763c-d4f5-4e58-8ab9-6f8f828f7e83
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 20"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: eea91850-6d79-471b-aaa0-a9bc3b1d85d5
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 21"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 6dc79c10-2a49-4c69-9c60-af95b61c2aa9
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 54c71eb172a3
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 22"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: d21113d8-8589-4b3c-89f3-7851b8845320
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 23"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 9c05c87c-1f36-4610-a9c3-467eaf166569
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 3d3c3fc7e9
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 24"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 839276b2-40a4-4727-afb2-6d1896974131
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 25"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: a44920ab-fcc4-45cd-819e-5597abe13457
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 3d3c3fc7e9
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 26"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: f8e29d54-7745-46c2-9358-868994c79aca
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 54c71eb172a3
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 27"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 20c9f234-d409-4c72-a96a-0b7deef5f7d5
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 54c71eb172a3
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 28"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 839276b2-40a4-4727-afb2-6d1896974131
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 29"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 1067894b-b8ac-427c-b3d6-dfb52c100489
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 30"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 993ed252-32f1-46e1-9ffd-6fbc099d0030
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 31"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 02da1868-c2c9-48fa-ba1d-9ec3a7bbd9cf
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 32"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 60c06143-b4ed-42b1-a054-fc06f3396495
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 33"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 9e0fe137-0da7-45b0-9a6d-a767f109d666
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 54c71eb172a3
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 34"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 1f030b12-a40d-4a9a-ba88-d20f7a2686fe
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 35"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 8edb4633-613e-465c-b41c-2fdab7c5b138
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 36"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 2ad15591-8356-4f9e-b1bf-03becd0385a8
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 37"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: e76d643e-e3db-45ed-b46e-571b8d592cee
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 38"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: f4eee586-aa51-49d2-bb76-a44afee3dfcc
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 39"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: c70a7410-f469-48d4-bc54-fb254ad61545
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 40"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 04ff3c3b-c9b8-4891-8d3f-a3a39316f3d2
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 3d3c3fc7e9
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 41"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: eba1f167-396f-40cc-8e67-09e700ae1afe
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 42"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 62cc6c7f-c060-4275-a1a0-7c823d27797d
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 54c71eb172a3
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 43"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 90bdbda3-7159-4757-8c05-c634e0f005ed
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 44"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 934f91c7-1903-4e7e-a6d0-a112f27480c7
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 45"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 3022e092-de0f-411f-a4ed-75a9a7112b13
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 46"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: d21113d8-8589-4b3c-89f3-7851b8845320
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 47"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 57d62d61-f3e0-4aee-8878-7eabef4ba249
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 48"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 62fc9491-524b-4680-b007-0da28635ed69
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 54c71eb172a3
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 49"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 6b71b891-7495-4365-893f-e7a9a280b858
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 50"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 474d4909-7756-49f8-adf0-49b0635a1d7e
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 51"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 6d5371e1-783f-446a-b3e1-284b5915b7a8
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 52"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 4590600e-dcd0-4799-ba6a-56802b66325d
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 3d3c3fc7e9
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 53"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 29eb05af-f89d-4563-a8c5-44f0c5733860
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 54"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 35b82948-ae78-487a-9ec6-d65e749b5695
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 3d3c3fc7e9
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 55"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 11cb61f5-0c63-4996-a665-54bc37d286cc
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 56"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 52dfeddf-a0fa-4750-9d8a-ee198dea79b7
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 57"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: a814c797-0bf1-49cd-a5ea-da5f04ebcc02
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 58"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 0e143563-0f9e-41fe-89c4-8f6d5c1af18e
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 9de7
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 59"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 351bc20f-034a-439f-94da-f91282c8ec7f
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 60"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 5ccf8576-90d7-4b49-8f7a-d46059d75ef7
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 61"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 74880a39-bc7c-4dc6-8b2f-02984b7f8f51
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 62"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 75548efb-a317-4405-925c-47902e51ff8e
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 63"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 6b16c63d-5a44-4bf5-b3c6-f978bddab026
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 64"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: cfcd6299-310c-4cff-ab77-dfa4e5ae4f8e
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 65"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 64c329a3-2478-4729-94a5-e452e6259259
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 54c71eb172a3
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 66"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: bbc5126c-0f1c-4301-b2f4-1e9d0780d0c4
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 67"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: e9fe0353-89f8-41f6-97f6-78c4145e0d3d
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 3d3c3fc7e9
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 68"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 3cac1d60-8ddb-4ea8-9344-88344d500741
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 9de7
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 69"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 74c0a05f-55d6-4394-a794-4948871a8301
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 70"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 55c5120c-8ccf-4b51-a864-6e6f96014ba5
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 71"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: de81aca2-e23e-4c8b-a0ae-7e37375fbcd3
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 352e3a94
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 72"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 372b801a-cca6-4945-9d37-9682a4c1a972
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 73"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 456bd17d-9407-4b88-959f-aa320b0a572e
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 74"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 97e5abcc-e30d-4b6c-937a-f7da4e61c318
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 75"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: ef118cce-2e5d-4718-ac09-8d0002d72439
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 47e4c3980f872e68
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 76"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: c02aeb3d-acff-4b1d-b38e-f855e0b9aa23
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 768c60
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 77"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 01e92d42-9bbd-4e77-82a5-f64402c2e161
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 54c71eb172a3
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 78"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: c175a031-3f14-4fe3-8d48-c2cc678e35d9
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 9de7
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 79"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 04f0abe1-2d7a-43e3-ae3b-f83d27194185
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 54c71eb172a3
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 80"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: d9e9cf27-dea6-4f57-94e9-c8182f7259e9
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: "97"
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 81"
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 6bfa4ffe-1666-4281-8e69-22fa1413d4fb
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 9de7
+    network: tcp
+  - name: "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 82"
+    type: vless
+    server: 144.31.100.120
+    port: 443
+    uuid: 12319401-960e-4a2c-881b-917cf0af6c83
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 54c71eb172a3
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] YA"
+    type: vless
+    server: 89.169.162.214
+    port: 8443
+    uuid: 0a9fe7e0-e02d-42ca-bebd-ecb4292f180c
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: c6ef72e4635d15a5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] YA 2"
+    type: vless
+    server: 84.252.136.245
+    port: 8443
+    uuid: 525e49c0-8396-4dac-bb2d-36412723e5cb
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: e57932a42872a362
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] YA 3"
+    type: vless
+    server: 89.169.162.214
+    port: 443
+    uuid: 0a9fe7e0-e02d-42ca-bebd-ecb4292f180c
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: c6ef72e4635d15a5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] YA 4"
+    type: vless
+    server: 89.169.162.214
+    port: 8443
+    uuid: 525e49c0-8396-4dac-bb2d-36412723e5cb
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: e57932a42872a362
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] VK"
+    type: vless
+    server: 146.185.240.23
+    port: 443
+    uuid: 525e49c0-8396-4dac-bb2d-36412723e5cb
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: 205748bc0f24a747
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] VK 2"
+    type: vless
+    server: 79.137.175.59
+    port: 443
+    uuid: 86c8a690-9602-4d40-bbf7-156720de104f
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: c6ef72e4635d15a5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] VK 3"
+    type: vless
+    server: 87.239.110.251
+    port: 443
+    uuid: 86c8a690-9602-4d40-bbf7-156720de104f
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: 205748bc0f24a747
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] VK 4"
+    type: vless
+    server: 87.239.110.251
+    port: 443
+    uuid: 1a5b443d-42f3-4e8e-b980-2ebf9e74a45d
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: 205748bc0f24a747
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey [*CIDR] YA 5"
+    type: vless
+    server: 89.169.162.214
+    port: 443
+    uuid: 525e49c0-8396-4dac-bb2d-36412723e5cb
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: 205748bc0f24a747
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇬🇧 United Kingdom [*CIDR] VK"
+    type: vless
+    server: 89.208.230.173
+    port: 443
+    uuid: 04f040e8-1d14-4969-94ad-6bc0ac633063
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇺🇸 United States [*CIDR] VK"
+    type: vless
+    server: 95.163.210.225
+    port: 8443
+    uuid: ca911bd2-e08f-42d8-aefb-3117494d3367
+    udp: true
+    tls: true
+    servername: 01.img.avito.st
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 8Wb7DfK3p97KYIBDUxTZRHkG8PomTfA28gJ2qdFA808
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/updates"
+      host: 01.img.avito.st
+      mode: auto
+  - name: "🇺🇸 United States [*CIDR] VK 2"
+    type: vless
+    server: 95.163.210.225
+    port: 8443
+    uuid: 7a7aa0d2-5311-45fc-80b0-9f46f3546793
+    udp: true
+    tls: true
+    servername: 01.img.avito.st
+    reality-opts:
+      public-key: 8Wb7DfK3p97KYIBDUxTZRHkG8PomTfA28gJ2qdFA808
+    client-fingerprint: chrome
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/updates"
+      host: 01.img.avito.st
+      mode: auto
+  - name: "🇷🇺 Russia [*CIDR] YA"
+    type: vless
+    server: 51.250.86.102
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 17f0f0e38f01af5a
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK"
+    type: vless
+    server: 89.208.229.214
+    port: 3443
+    uuid: 2b8d3b46-debd-40c8-b530-e3cadd0681cd
+    udp: true
+    tls: true
+    servername: m.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: yuyU8SzfA2aTReRZ7Irjd0Zlx_TS7O2muPv0-J35OU0
+      short-id: 1c674da2d573eabc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 2"
+    type: vless
+    server: 51.250.12.100
+    port: 443
+    uuid: b39aca97-e9f2-4a94-b87f-8748299846cd
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0
+      short-id: 3c1523da43287ec4
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 3"
+    type: vless
+    server: 51.250.86.102
+    port: 443
+    uuid: 64a3a23c-363a-4bee-9401-f5c42eea5a27
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: a76ea384b29a4f79
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 4"
+    type: vless
+    server: 51.250.4.119
+    port: 443
+    uuid: 64a3a23c-363a-4bee-9401-f5c42eea5a27
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 2476f063981ffd92
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 5"
+    type: vless
+    server: 51.250.4.119
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: e55fd8f9c9a9a0ca
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 6"
+    type: vless
+    server: 51.250.83.255
+    port: 443
+    uuid: 64a3a23c-363a-4bee-9401-f5c42eea5a27
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: e55fd8f9c9a9a0ca
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 7"
+    type: vless
+    server: 51.250.86.102
+    port: 443
+    uuid: 64a3a23c-363a-4bee-9401-f5c42eea5a27
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: e55fd8f9c9a9a0ca
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 8"
+    type: vless
+    server: 51.250.83.255
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 2476f063981ffd92
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 9"
+    type: vless
+    server: 51.250.83.255
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 65ce6cee3941af69
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR]"
+    type: vless
+    server: 185.39.206.226
+    port: 443
+    uuid: a01881a8-3d9b-48bb-9a9c-e96e8b40b2c6
+    udp: true
+    tls: true
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7IOtSp0-n2_uNS5nMO9ywZbn2HibMRGy0KbLad3szXc
+      short-id: b8cf9578640a9edf
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 10"
+    type: vless
+    server: 51.250.0.147
+    port: 443
+    uuid: 64a3a23c-363a-4bee-9401-f5c42eea5a27
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 048fe5c8be4bb687
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 11"
+    type: vless
+    server: 51.250.86.102
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: cd57a927f6b72d81
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 2"
+    type: vless
+    server: 109.120.190.78
+    port: 443
+    uuid: 64a3a23c-363a-4bee-9401-f5c42eea5a27
+    udp: true
+    tls: true
+    servername: m.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 2476f063981ffd92
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 12"
+    type: vless
+    server: 51.250.4.119
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: d17bd238f23fba92
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 3"
+    type: vless
+    server: 95.163.211.13
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    udp: true
+    tls: true
+    servername: max.ru
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: cd57a927f6b72d81
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 13"
+    type: vless
+    server: 51.250.0.147
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 048fe5c8be4bb687
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 14"
+    type: vless
+    server: 51.250.4.119
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 17802e8ff84f12df
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 15"
+    type: vless
+    server: 51.250.87.167
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: a76ea384b29a4f79
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 4"
+    type: vless
+    server: 95.163.210.173
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: max.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 3f200574d011010f
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 5"
+    type: vless
+    server: 185.130.115.55
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: web.max.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 33554379411b3219
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 6"
+    type: vless
+    server: 95.163.211.13
+    port: 443
+    uuid: 64a3a23c-363a-4bee-9401-f5c42eea5a27
+    udp: true
+    tls: true
+    servername: max.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: c8597fb67d55d9c4
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 16"
+    type: vless
+    server: 51.250.4.119
+    port: 443
+    uuid: 64a3a23c-363a-4bee-9401-f5c42eea5a27
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 17802e8ff84f12df
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 7"
+    type: vless
+    server: 185.130.115.55
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: web.max.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 87cc0414902bee2d
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 17"
+    type: vless
+    server: 51.250.83.255
+    port: 443
+    uuid: 64a3a23c-363a-4bee-9401-f5c42eea5a27
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 33554379411b3219
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] 2"
+    type: vless
+    server: 185.39.206.226
+    port: 443
+    uuid: b8a44195-0860-4312-a0df-dae178585a48
+    udp: true
+    tls: true
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7IOtSp0-n2_uNS5nMO9ywZbn2HibMRGy0KbLad3szXc
+      short-id: b8cf9578640a9edf
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] 3"
+    type: vless
+    server: 185.39.206.226
+    port: 443
+    uuid: 490ecb4b-8ee1-4d33-9d6d-b034899a1039
+    udp: true
+    tls: true
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7IOtSp0-n2_uNS5nMO9ywZbn2HibMRGy0KbLad3szXc
+      short-id: a1b2c3d4
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia | 🌐 Anycast-IP | [D] [*CIDR]"
+    type: vless
+    server: 185.39.206.226
+    port: 443
+    uuid: dddd3838-5cd6-4c2f-953f-d41a34a46336
+    udp: true
+    tls: true
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7IOtSp0-n2_uNS5nMO9ywZbn2HibMRGy0KbLad3szXc
+      short-id: b8cf9578640a9edf
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 18"
+    type: vless
+    server: 84.252.130.60
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: sun6-21.userapi.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 7426b0c03ef009dc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 19"
+    type: vless
+    server: 84.252.130.60
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: sun6-21.userapi.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 95ec618532fa065e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] YA 20"
+    type: vless
+    server: 84.201.150.241
+    port: 443
+    uuid: be4ef2f4-8cd5-490b-9b59-a096b49ca46e
+    udp: true
+    tls: true
+    servername: help.max.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ZAF9Ig51v2cpHOCtczbVXf-lutAunI6qu3HQPhNK4i4
+      short-id: cc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] 4"
+    type: vless
+    server: 81.200.151.79
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: m.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 17f0f0e38f01af5a
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 8"
+    type: vless
+    server: 217.16.27.217
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: ozon.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 65ce6cee3941af69
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 9"
+    type: vless
+    server: 217.16.27.217
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: m.ok.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 17f0f0e38f01af5a
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 10"
+    type: vless
+    server: 217.16.27.217
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: m.ok.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 43df3983229a1c73
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 11"
+    type: vless
+    server: 217.16.27.217
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: ozon.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 048fe5c8be4bb687
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 12"
+    type: vless
+    server: 217.16.27.217
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: cd57a927f6b72d81
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia [*CIDR] VK 13"
+    type: vless
+    server: 217.16.27.217
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 95ec618532fa065e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia | 🌐 Anycast-IP | [B] [*CIDR]"
+    type: vless
+    server: 81.200.151.14
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: m.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: cd57a927f6b72d81
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇷🇺 Russia | 🌐 Anycast-IP | [B] [*CIDR] 2"
+    type: vless
+    server: 81.200.151.79
+    port: 443
+    uuid: c690db76-e866-4bca-b184-4965d29ab086
+    udp: true
+    tls: true
+    servername: m.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 4b523a98e1bbd15b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐 Anycast-IP | [Cloudflare] | CA, LV, US [*CIDR]"
+    type: vless
+    server: 188.253.17.31
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "🌐 Anycast-IP | [Cloudflare] | CA, LV, SE [*CIDR]"
+    type: vless
+    server: 188.253.17.85
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "♻️ 自动选择"
+      - DIRECT
+      - "🇦🇹 Austria [*CIDR]"
+      - "🇦🇹 Austria | 🌐 Anycast-IP | [C] [*CIDR]"
+      - "🇪🇪 Estonia [*CIDR] VK"
+      - "🇪🇪 Estonia [*CIDR]"
+      - "🇪🇪 Estonia [*CIDR] 2"
+      - "🇪🇪 Estonia [*CIDR] 3"
+      - "🇪🇪 Estonia [*CIDR] 4"
+      - "🇪🇪 Estonia [*CIDR] 5"
+      - "🇪🇪 Estonia [*CIDR] VK 2"
+      - "🇪🇪 Estonia [*CIDR] 6"
+      - "🇪🇪 Estonia [*CIDR] 7"
+      - "🇫🇮 Finland [*CIDR]"
+      - "🇫🇮 Finland [*CIDR] 2"
+      - "🇫🇮 Finland [*CIDR] 3"
+      - "🇫🇮 Finland [*CIDR] 4"
+      - "🇫🇷 France [*CIDR] CDN"
+      - "🇩🇪 Germany [*CIDR] YA"
+      - "🇩🇪 Germany [*CIDR]"
+      - "🇩🇪 Germany [*CIDR] VK"
+      - "🇩🇪 Germany | 🌐 Anycast-IP | [G] [*CIDR] YA"
+      - "🇩🇪 Germany [*CIDR] 2"
+      - "🇭🇺 Hungary [*CIDR] YA"
+      - "🇭🇺 Hungary [*CIDR] YA 2"
+      - "🇭🇺 Hungary [*CIDR] VK"
+      - "🇭🇺 Hungary [*CIDR] YA 3"
+      - "🇭🇺 Hungary [*CIDR] YA 4"
+      - "🇭🇺 Hungary [*CIDR] VK 2"
+      - "🇭🇺 Hungary [*CIDR] YA 5"
+      - "🇭🇺 Hungary [*CIDR] YA 6"
+      - "🇭🇺 Hungary [*CIDR] VK 3"
+      - "🇭🇺 Hungary [*CIDR]"
+      - "🇮🇹 Italy [*CIDR] YA"
+      - "🇮🇹 Italy [*CIDR] VK"
+      - "🇮🇹 Italy [*CIDR] VK 2"
+      - "🇮🇹 Italy [*CIDR] YA 2"
+      - "🇮🇹 Italy [*CIDR] VK 3"
+      - "🇮🇹 Italy [*CIDR] VK 4"
+      - "🇮🇹 Italy [*CIDR] VK 5"
+      - "🇮🇹 Italy [*CIDR] YA 3"
+      - "🇮🇹 Italy [*CIDR] VK 6"
+      - "🇱🇹 Lithuania [*CIDR] YA"
+      - "🇵🇱 Poland [*CIDR] VK"
+      - "🇵🇱 Poland [*CIDR] VK 2"
+      - "🇵🇱 Poland [*CIDR] YA"
+      - "🇵🇱 Poland [*CIDR] VK 3"
+      - "🇵🇱 Poland [*CIDR]"
+      - "🇵🇱 Poland [*CIDR] YA 2"
+      - "🇵🇱 Poland [*CIDR] VK 4"
+      - "🇵🇱 Poland [*CIDR] YA 3"
+      - "🇵🇱 Poland [*CIDR] YA 4"
+      - "🇵🇱 Poland [*CIDR] VK 5"
+      - "🇵🇱 Poland [*CIDR] VK 6"
+      - "🇵🇱 Poland [*CIDR] VK 7"
+      - "🇵🇱 Poland [*CIDR] VK 8"
+      - "🇵🇱 Poland | 🌐 Anycast-IP | [H] [*CIDR] VK"
+      - "🇵🇱 Poland [*CIDR] 2"
+      - "🇵🇱 Poland [*CIDR] VK 9"
+      - "🇪🇸 Spain [*CIDR] YA"
+      - "🇪🇸 Spain [*CIDR] VK"
+      - "🇪🇸 Spain [*CIDR] YA 2"
+      - "🇪🇸 Spain [*CIDR] VK 2"
+      - "🇪🇸 Spain [*CIDR] VK 3"
+      - "🇪🇸 Spain [*CIDR] VK 4"
+      - "🇪🇸 Spain [*CIDR] YA 3"
+      - "🇪🇸 Spain [*CIDR] YA 4"
+      - "🇪🇸 Spain [*CIDR] VK 5"
+      - "🇪🇸 Spain [*CIDR] VK 6"
+      - "🇪🇸 Spain [*CIDR] VK 7"
+      - "🇪🇸 Spain [*CIDR] VK 8"
+      - "🇪🇸 Spain [*CIDR] VK 9"
+      - "🇪🇸 Spain [*CIDR] VK 10"
+      - "🇪🇸 Spain [*CIDR] VK 11"
+      - "🇸🇪 Sweden [*CIDR] VK"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [F] [*CIDR] VK"
+      - "🇳🇱 The Netherlands [*CIDR]"
+      - "🇳🇱 The Netherlands [*CIDR] 2"
+      - "🇳🇱 The Netherlands [*CIDR] 3"
+      - "🇳🇱 The Netherlands [*CIDR] 4"
+      - "🇳🇱 The Netherlands [*CIDR] 5"
+      - "🇳🇱 The Netherlands [*CIDR] 6"
+      - "🇳🇱 The Netherlands [*CIDR] 7"
+      - "🇳🇱 The Netherlands [*CIDR] 8"
+      - "🇳🇱 The Netherlands [*CIDR] 9"
+      - "🇳🇱 The Netherlands [*CIDR] 10"
+      - "🇳🇱 The Netherlands [*CIDR] 11"
+      - "🇳🇱 The Netherlands [*CIDR] 12"
+      - "🇳🇱 The Netherlands [*CIDR] 13"
+      - "🇳🇱 The Netherlands [*CIDR] 14"
+      - "🇳🇱 The Netherlands [*CIDR] 15"
+      - "🇳🇱 The Netherlands [*CIDR] 16"
+      - "🇳🇱 The Netherlands [*CIDR] 17"
+      - "🇳🇱 The Netherlands [*CIDR] 18"
+      - "🇳🇱 The Netherlands [*CIDR] 19"
+      - "🇳🇱 The Netherlands [*CIDR] 20"
+      - "🇳🇱 The Netherlands [*CIDR] 21"
+      - "🇳🇱 The Netherlands [*CIDR] 22"
+      - "🇳🇱 The Netherlands [*CIDR] 23"
+      - "🇳🇱 The Netherlands [*CIDR] 24"
+      - "🇳🇱 The Netherlands [*CIDR] 25"
+      - "🇳🇱 The Netherlands [*CIDR] 26"
+      - "🇳🇱 The Netherlands [*CIDR] 27"
+      - "🇳🇱 The Netherlands [*CIDR] 28"
+      - "🇳🇱 The Netherlands [*CIDR] 29"
+      - "🇳🇱 The Netherlands [*CIDR] 30"
+      - "🇳🇱 The Netherlands [*CIDR] 31"
+      - "🇳🇱 The Netherlands [*CIDR] 32"
+      - "🇳🇱 The Netherlands [*CIDR] 33"
+      - "🇳🇱 The Netherlands [*CIDR] 34"
+      - "🇳🇱 The Netherlands [*CIDR] 35"
+      - "🇳🇱 The Netherlands [*CIDR] 36"
+      - "🇳🇱 The Netherlands [*CIDR] 37"
+      - "🇳🇱 The Netherlands [*CIDR] 38"
+      - "🇳🇱 The Netherlands [*CIDR] 39"
+      - "🇳🇱 The Netherlands [*CIDR] 40"
+      - "🇳🇱 The Netherlands [*CIDR] 41"
+      - "🇳🇱 The Netherlands [*CIDR] 42"
+      - "🇳🇱 The Netherlands [*CIDR] 43"
+      - "🇳🇱 The Netherlands [*CIDR] 44"
+      - "🇳🇱 The Netherlands [*CIDR] 45"
+      - "🇳🇱 The Netherlands [*CIDR] 46"
+      - "🇳🇱 The Netherlands [*CIDR] 47"
+      - "🇳🇱 The Netherlands [*CIDR] 48"
+      - "🇳🇱 The Netherlands [*CIDR] 49"
+      - "🇳🇱 The Netherlands [*CIDR] 50"
+      - "🇳🇱 The Netherlands [*CIDR] 51"
+      - "🇳🇱 The Netherlands [*CIDR] 52"
+      - "🇳🇱 The Netherlands [*CIDR] 53"
+      - "🇳🇱 The Netherlands [*CIDR] 54"
+      - "🇳🇱 The Netherlands [*CIDR] 55"
+      - "🇳🇱 The Netherlands [*CIDR] 56"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR]"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 2"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 3"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 4"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 5"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 6"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 7"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 8"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 9"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 10"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 11"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 12"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 13"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 14"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 15"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 16"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 17"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 18"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 19"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 20"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 21"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 22"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 23"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 24"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 25"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 26"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 27"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 28"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 29"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 30"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 31"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 32"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 33"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 34"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 35"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 36"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 37"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 38"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 39"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 40"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 41"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 42"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 43"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 44"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 45"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 46"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 47"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 48"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 49"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 50"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 51"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 52"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 53"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 54"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 55"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 56"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 57"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 58"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 59"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 60"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 61"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 62"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 63"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 64"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 65"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 66"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 67"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 68"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 69"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 70"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 71"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 72"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 73"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 74"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 75"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 76"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 77"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 78"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 79"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 80"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 81"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 82"
+      - "🇹🇷 Turkey [*CIDR] YA"
+      - "🇹🇷 Turkey [*CIDR] YA 2"
+      - "🇹🇷 Turkey [*CIDR] YA 3"
+      - "🇹🇷 Turkey [*CIDR] YA 4"
+      - "🇹🇷 Turkey [*CIDR] VK"
+      - "🇹🇷 Turkey [*CIDR] VK 2"
+      - "🇹🇷 Turkey [*CIDR] VK 3"
+      - "🇹🇷 Turkey [*CIDR] VK 4"
+      - "🇹🇷 Turkey [*CIDR] YA 5"
+      - "🇬🇧 United Kingdom [*CIDR] VK"
+      - "🇺🇸 United States [*CIDR] VK"
+      - "🇺🇸 United States [*CIDR] VK 2"
+      - "🇷🇺 Russia [*CIDR] YA"
+      - "🇷🇺 Russia [*CIDR] VK"
+      - "🇷🇺 Russia [*CIDR] YA 2"
+      - "🇷🇺 Russia [*CIDR] YA 3"
+      - "🇷🇺 Russia [*CIDR] YA 4"
+      - "🇷🇺 Russia [*CIDR] YA 5"
+      - "🇷🇺 Russia [*CIDR] YA 6"
+      - "🇷🇺 Russia [*CIDR] YA 7"
+      - "🇷🇺 Russia [*CIDR] YA 8"
+      - "🇷🇺 Russia [*CIDR] YA 9"
+      - "🇷🇺 Russia [*CIDR]"
+      - "🇷🇺 Russia [*CIDR] YA 10"
+      - "🇷🇺 Russia [*CIDR] YA 11"
+      - "🇷🇺 Russia [*CIDR] VK 2"
+      - "🇷🇺 Russia [*CIDR] YA 12"
+      - "🇷🇺 Russia [*CIDR] VK 3"
+      - "🇷🇺 Russia [*CIDR] YA 13"
+      - "🇷🇺 Russia [*CIDR] YA 14"
+      - "🇷🇺 Russia [*CIDR] YA 15"
+      - "🇷🇺 Russia [*CIDR] VK 4"
+      - "🇷🇺 Russia [*CIDR] VK 5"
+      - "🇷🇺 Russia [*CIDR] VK 6"
+      - "🇷🇺 Russia [*CIDR] YA 16"
+      - "🇷🇺 Russia [*CIDR] VK 7"
+      - "🇷🇺 Russia [*CIDR] YA 17"
+      - "🇷🇺 Russia [*CIDR] 2"
+      - "🇷🇺 Russia [*CIDR] 3"
+      - "🇷🇺 Russia | 🌐 Anycast-IP | [D] [*CIDR]"
+      - "🇷🇺 Russia [*CIDR] YA 18"
+      - "🇷🇺 Russia [*CIDR] YA 19"
+      - "🇷🇺 Russia [*CIDR] YA 20"
+      - "🇷🇺 Russia [*CIDR] 4"
+      - "🇷🇺 Russia [*CIDR] VK 8"
+      - "🇷🇺 Russia [*CIDR] VK 9"
+      - "🇷🇺 Russia [*CIDR] VK 10"
+      - "🇷🇺 Russia [*CIDR] VK 11"
+      - "🇷🇺 Russia [*CIDR] VK 12"
+      - "🇷🇺 Russia [*CIDR] VK 13"
+      - "🇷🇺 Russia | 🌐 Anycast-IP | [B] [*CIDR]"
+      - "🇷🇺 Russia | 🌐 Anycast-IP | [B] [*CIDR] 2"
+      - "🌐 Anycast-IP | [Cloudflare] | CA, LV, US [*CIDR]"
+      - "🌐 Anycast-IP | [Cloudflare] | CA, LV, SE [*CIDR]"
+  - name: "♻️ 自动选择"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "🇦🇹 Austria [*CIDR]"
+      - "🇦🇹 Austria | 🌐 Anycast-IP | [C] [*CIDR]"
+      - "🇪🇪 Estonia [*CIDR] VK"
+      - "🇪🇪 Estonia [*CIDR]"
+      - "🇪🇪 Estonia [*CIDR] 2"
+      - "🇪🇪 Estonia [*CIDR] 3"
+      - "🇪🇪 Estonia [*CIDR] 4"
+      - "🇪🇪 Estonia [*CIDR] 5"
+      - "🇪🇪 Estonia [*CIDR] VK 2"
+      - "🇪🇪 Estonia [*CIDR] 6"
+      - "🇪🇪 Estonia [*CIDR] 7"
+      - "🇫🇮 Finland [*CIDR]"
+      - "🇫🇮 Finland [*CIDR] 2"
+      - "🇫🇮 Finland [*CIDR] 3"
+      - "🇫🇮 Finland [*CIDR] 4"
+      - "🇫🇷 France [*CIDR] CDN"
+      - "🇩🇪 Germany [*CIDR] YA"
+      - "🇩🇪 Germany [*CIDR]"
+      - "🇩🇪 Germany [*CIDR] VK"
+      - "🇩🇪 Germany | 🌐 Anycast-IP | [G] [*CIDR] YA"
+      - "🇩🇪 Germany [*CIDR] 2"
+      - "🇭🇺 Hungary [*CIDR] YA"
+      - "🇭🇺 Hungary [*CIDR] YA 2"
+      - "🇭🇺 Hungary [*CIDR] VK"
+      - "🇭🇺 Hungary [*CIDR] YA 3"
+      - "🇭🇺 Hungary [*CIDR] YA 4"
+      - "🇭🇺 Hungary [*CIDR] VK 2"
+      - "🇭🇺 Hungary [*CIDR] YA 5"
+      - "🇭🇺 Hungary [*CIDR] YA 6"
+      - "🇭🇺 Hungary [*CIDR] VK 3"
+      - "🇭🇺 Hungary [*CIDR]"
+      - "🇮🇹 Italy [*CIDR] YA"
+      - "🇮🇹 Italy [*CIDR] VK"
+      - "🇮🇹 Italy [*CIDR] VK 2"
+      - "🇮🇹 Italy [*CIDR] YA 2"
+      - "🇮🇹 Italy [*CIDR] VK 3"
+      - "🇮🇹 Italy [*CIDR] VK 4"
+      - "🇮🇹 Italy [*CIDR] VK 5"
+      - "🇮🇹 Italy [*CIDR] YA 3"
+      - "🇮🇹 Italy [*CIDR] VK 6"
+      - "🇱🇹 Lithuania [*CIDR] YA"
+      - "🇵🇱 Poland [*CIDR] VK"
+      - "🇵🇱 Poland [*CIDR] VK 2"
+      - "🇵🇱 Poland [*CIDR] YA"
+      - "🇵🇱 Poland [*CIDR] VK 3"
+      - "🇵🇱 Poland [*CIDR]"
+      - "🇵🇱 Poland [*CIDR] YA 2"
+      - "🇵🇱 Poland [*CIDR] VK 4"
+      - "🇵🇱 Poland [*CIDR] YA 3"
+      - "🇵🇱 Poland [*CIDR] YA 4"
+      - "🇵🇱 Poland [*CIDR] VK 5"
+      - "🇵🇱 Poland [*CIDR] VK 6"
+      - "🇵🇱 Poland [*CIDR] VK 7"
+      - "🇵🇱 Poland [*CIDR] VK 8"
+      - "🇵🇱 Poland | 🌐 Anycast-IP | [H] [*CIDR] VK"
+      - "🇵🇱 Poland [*CIDR] 2"
+      - "🇵🇱 Poland [*CIDR] VK 9"
+      - "🇪🇸 Spain [*CIDR] YA"
+      - "🇪🇸 Spain [*CIDR] VK"
+      - "🇪🇸 Spain [*CIDR] YA 2"
+      - "🇪🇸 Spain [*CIDR] VK 2"
+      - "🇪🇸 Spain [*CIDR] VK 3"
+      - "🇪🇸 Spain [*CIDR] VK 4"
+      - "🇪🇸 Spain [*CIDR] YA 3"
+      - "🇪🇸 Spain [*CIDR] YA 4"
+      - "🇪🇸 Spain [*CIDR] VK 5"
+      - "🇪🇸 Spain [*CIDR] VK 6"
+      - "🇪🇸 Spain [*CIDR] VK 7"
+      - "🇪🇸 Spain [*CIDR] VK 8"
+      - "🇪🇸 Spain [*CIDR] VK 9"
+      - "🇪🇸 Spain [*CIDR] VK 10"
+      - "🇪🇸 Spain [*CIDR] VK 11"
+      - "🇸🇪 Sweden [*CIDR] VK"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [F] [*CIDR] VK"
+      - "🇳🇱 The Netherlands [*CIDR]"
+      - "🇳🇱 The Netherlands [*CIDR] 2"
+      - "🇳🇱 The Netherlands [*CIDR] 3"
+      - "🇳🇱 The Netherlands [*CIDR] 4"
+      - "🇳🇱 The Netherlands [*CIDR] 5"
+      - "🇳🇱 The Netherlands [*CIDR] 6"
+      - "🇳🇱 The Netherlands [*CIDR] 7"
+      - "🇳🇱 The Netherlands [*CIDR] 8"
+      - "🇳🇱 The Netherlands [*CIDR] 9"
+      - "🇳🇱 The Netherlands [*CIDR] 10"
+      - "🇳🇱 The Netherlands [*CIDR] 11"
+      - "🇳🇱 The Netherlands [*CIDR] 12"
+      - "🇳🇱 The Netherlands [*CIDR] 13"
+      - "🇳🇱 The Netherlands [*CIDR] 14"
+      - "🇳🇱 The Netherlands [*CIDR] 15"
+      - "🇳🇱 The Netherlands [*CIDR] 16"
+      - "🇳🇱 The Netherlands [*CIDR] 17"
+      - "🇳🇱 The Netherlands [*CIDR] 18"
+      - "🇳🇱 The Netherlands [*CIDR] 19"
+      - "🇳🇱 The Netherlands [*CIDR] 20"
+      - "🇳🇱 The Netherlands [*CIDR] 21"
+      - "🇳🇱 The Netherlands [*CIDR] 22"
+      - "🇳🇱 The Netherlands [*CIDR] 23"
+      - "🇳🇱 The Netherlands [*CIDR] 24"
+      - "🇳🇱 The Netherlands [*CIDR] 25"
+      - "🇳🇱 The Netherlands [*CIDR] 26"
+      - "🇳🇱 The Netherlands [*CIDR] 27"
+      - "🇳🇱 The Netherlands [*CIDR] 28"
+      - "🇳🇱 The Netherlands [*CIDR] 29"
+      - "🇳🇱 The Netherlands [*CIDR] 30"
+      - "🇳🇱 The Netherlands [*CIDR] 31"
+      - "🇳🇱 The Netherlands [*CIDR] 32"
+      - "🇳🇱 The Netherlands [*CIDR] 33"
+      - "🇳🇱 The Netherlands [*CIDR] 34"
+      - "🇳🇱 The Netherlands [*CIDR] 35"
+      - "🇳🇱 The Netherlands [*CIDR] 36"
+      - "🇳🇱 The Netherlands [*CIDR] 37"
+      - "🇳🇱 The Netherlands [*CIDR] 38"
+      - "🇳🇱 The Netherlands [*CIDR] 39"
+      - "🇳🇱 The Netherlands [*CIDR] 40"
+      - "🇳🇱 The Netherlands [*CIDR] 41"
+      - "🇳🇱 The Netherlands [*CIDR] 42"
+      - "🇳🇱 The Netherlands [*CIDR] 43"
+      - "🇳🇱 The Netherlands [*CIDR] 44"
+      - "🇳🇱 The Netherlands [*CIDR] 45"
+      - "🇳🇱 The Netherlands [*CIDR] 46"
+      - "🇳🇱 The Netherlands [*CIDR] 47"
+      - "🇳🇱 The Netherlands [*CIDR] 48"
+      - "🇳🇱 The Netherlands [*CIDR] 49"
+      - "🇳🇱 The Netherlands [*CIDR] 50"
+      - "🇳🇱 The Netherlands [*CIDR] 51"
+      - "🇳🇱 The Netherlands [*CIDR] 52"
+      - "🇳🇱 The Netherlands [*CIDR] 53"
+      - "🇳🇱 The Netherlands [*CIDR] 54"
+      - "🇳🇱 The Netherlands [*CIDR] 55"
+      - "🇳🇱 The Netherlands [*CIDR] 56"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR]"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 2"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 3"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 4"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 5"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 6"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 7"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 8"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 9"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 10"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 11"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 12"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 13"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 14"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 15"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 16"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 17"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 18"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 19"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 20"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 21"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 22"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 23"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 24"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 25"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 26"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 27"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 28"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 29"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 30"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 31"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 32"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 33"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 34"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 35"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 36"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 37"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 38"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 39"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 40"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 41"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 42"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 43"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 44"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 45"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 46"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 47"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 48"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 49"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 50"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 51"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 52"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 53"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 54"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 55"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 56"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 57"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 58"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 59"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 60"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 61"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 62"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 63"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 64"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 65"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 66"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 67"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 68"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 69"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 70"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 71"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 72"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 73"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 74"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 75"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 76"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 77"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 78"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 79"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 80"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 81"
+      - "🇳🇱 The Netherlands | 🌐 Anycast-IP | [A] [*CIDR] 82"
+      - "🇹🇷 Turkey [*CIDR] YA"
+      - "🇹🇷 Turkey [*CIDR] YA 2"
+      - "🇹🇷 Turkey [*CIDR] YA 3"
+      - "🇹🇷 Turkey [*CIDR] YA 4"
+      - "🇹🇷 Turkey [*CIDR] VK"
+      - "🇹🇷 Turkey [*CIDR] VK 2"
+      - "🇹🇷 Turkey [*CIDR] VK 3"
+      - "🇹🇷 Turkey [*CIDR] VK 4"
+      - "🇹🇷 Turkey [*CIDR] YA 5"
+      - "🇬🇧 United Kingdom [*CIDR] VK"
+      - "🇺🇸 United States [*CIDR] VK"
+      - "🇺🇸 United States [*CIDR] VK 2"
+      - "🇷🇺 Russia [*CIDR] YA"
+      - "🇷🇺 Russia [*CIDR] VK"
+      - "🇷🇺 Russia [*CIDR] YA 2"
+      - "🇷🇺 Russia [*CIDR] YA 3"
+      - "🇷🇺 Russia [*CIDR] YA 4"
+      - "🇷🇺 Russia [*CIDR] YA 5"
+      - "🇷🇺 Russia [*CIDR] YA 6"
+      - "🇷🇺 Russia [*CIDR] YA 7"
+      - "🇷🇺 Russia [*CIDR] YA 8"
+      - "🇷🇺 Russia [*CIDR] YA 9"
+      - "🇷🇺 Russia [*CIDR]"
+      - "🇷🇺 Russia [*CIDR] YA 10"
+      - "🇷🇺 Russia [*CIDR] YA 11"
+      - "🇷🇺 Russia [*CIDR] VK 2"
+      - "🇷🇺 Russia [*CIDR] YA 12"
+      - "🇷🇺 Russia [*CIDR] VK 3"
+      - "🇷🇺 Russia [*CIDR] YA 13"
+      - "🇷🇺 Russia [*CIDR] YA 14"
+      - "🇷🇺 Russia [*CIDR] YA 15"
+      - "🇷🇺 Russia [*CIDR] VK 4"
+      - "🇷🇺 Russia [*CIDR] VK 5"
+      - "🇷🇺 Russia [*CIDR] VK 6"
+      - "🇷🇺 Russia [*CIDR] YA 16"
+      - "🇷🇺 Russia [*CIDR] VK 7"
+      - "🇷🇺 Russia [*CIDR] YA 17"
+      - "🇷🇺 Russia [*CIDR] 2"
+      - "🇷🇺 Russia [*CIDR] 3"
+      - "🇷🇺 Russia | 🌐 Anycast-IP | [D] [*CIDR]"
+      - "🇷🇺 Russia [*CIDR] YA 18"
+      - "🇷🇺 Russia [*CIDR] YA 19"
+      - "🇷🇺 Russia [*CIDR] YA 20"
+      - "🇷🇺 Russia [*CIDR] 4"
+      - "🇷🇺 Russia [*CIDR] VK 8"
+      - "🇷🇺 Russia [*CIDR] VK 9"
+      - "🇷🇺 Russia [*CIDR] VK 10"
+      - "🇷🇺 Russia [*CIDR] VK 11"
+      - "🇷🇺 Russia [*CIDR] VK 12"
+      - "🇷🇺 Russia [*CIDR] VK 13"
+      - "🇷🇺 Russia | 🌐 Anycast-IP | [B] [*CIDR]"
+      - "🇷🇺 Russia | 🌐 Anycast-IP | [B] [*CIDR] 2"
+      - "🌐 Anycast-IP | [Cloudflare] | CA, LV, US [*CIDR]"
+      - "🌐 Anycast-IP | [Cloudflare] | CA, LV, SE [*CIDR]"
+rules:
+  - "GEOIP,LAN,DIRECT,no-resolve"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,🚀 节点选择"

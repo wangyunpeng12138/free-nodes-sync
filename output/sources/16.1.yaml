@@ -1,0 +1,359 @@
+# 订阅 16.1.txt -> Clash
+# 由 txt2clash.py 自动生成于 2026-11-01 16:51:16 +0800
+# 节点数量: 20
+# 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: "off"
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  listen: "0.0.0.0:1053"
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "*.localhost"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  proxy-server-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+proxies:
+  - name: "巴西圣保罗+CloudFlare节点"
+    type: trojan
+    server: 188.114.97.7
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "美国+CloudFlare节点"
+    type: trojan
+    server: 104.18.152.149
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "美国+CloudFlare节点 2"
+    type: trojan
+    server: ip.myip2.qzz.io
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "美国+CloudFlare节点 3"
+    type: trojan
+    server: 172.67.149.60
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "美国+CloudFlare节点 4"
+    type: trojan
+    server: 104.18.152.133
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "美国+CloudFlare节点 5"
+    type: trojan
+    server: 104.18.152.143
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "美国+V2CROSS.COM"
+    type: trojan
+    server: 167.82.76.7
+    port: 443
+    password: MITIVpN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net
+  - name: "美国+CloudFlare节点 6"
+    type: trojan
+    server: 104.18.152.155
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "英国+V2CROSS.COM"
+    type: vless
+    server: 31.76.101.39
+    port: 443
+    uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
+    udp: true
+    tls: true
+    servername: dzen.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
+      short-id: a1b2c3d4e5f67890
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "美国+CloudFlare节点 7"
+    type: trojan
+    server: 104.16.174.71
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "乌克兰+V2CROSS.COM"
+    type: vless
+    server: 46.28.69.53
+    port: 443
+    uuid: f2381f29-c724-4491-95a3-a17bd6eea47f
+    udp: true
+    tls: true
+    servername: de2.willo.help
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: MldGYzZegwydL76HI_beMlXgD-4ZyCZjIX0sBVPjphY
+      short-id: abcd1234
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "美国+CloudFlare节点 8"
+    type: trojan
+    server: www.speedtest.net
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "俄罗斯+V2CROSS.COM"
+    type: vless
+    server: 188.225.77.241
+    port: 443
+    uuid: 7cde4592-4758-415f-8b97-c188faa4d1c9
+    udp: true
+    tls: true
+    servername: api.betust.net
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: YczbievYAOeZIypa58aRpil6XbfdyifK_0cFJWn8-yg
+      short-id: d6c172d3
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "美国+CloudFlare节点 9"
+    type: trojan
+    server: 104.18.152.175
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "加拿大+V2CROSS.COM"
+    type: trojan
+    server: 130.250.137.171
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "美国+V2CROSS.COM 2"
+    type: trojan
+    server: 199.232.78.160
+    port: 443
+    password: MITIVpN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1i@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-44e.global.ssl.fastly.net
+  - name: "美国+CloudFlare节点 10"
+    type: trojan
+    server: 104.26.15.137
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "美国+CloudFlare节点 11"
+    type: trojan
+    server: 104.18.23.63
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "美国+CloudFlare节点 12"
+    type: trojan
+    server: 104.16.174.124
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "美国+CloudFlare节点 13"
+    type: trojan
+    server: 104.18.152.207
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "♻️ 自动选择"
+      - DIRECT
+      - "巴西圣保罗+CloudFlare节点"
+      - "美国+CloudFlare节点"
+      - "美国+CloudFlare节点 2"
+      - "美国+CloudFlare节点 3"
+      - "美国+CloudFlare节点 4"
+      - "美国+CloudFlare节点 5"
+      - "美国+V2CROSS.COM"
+      - "美国+CloudFlare节点 6"
+      - "英国+V2CROSS.COM"
+      - "美国+CloudFlare节点 7"
+      - "乌克兰+V2CROSS.COM"
+      - "美国+CloudFlare节点 8"
+      - "俄罗斯+V2CROSS.COM"
+      - "美国+CloudFlare节点 9"
+      - "加拿大+V2CROSS.COM"
+      - "美国+V2CROSS.COM 2"
+      - "美国+CloudFlare节点 10"
+      - "美国+CloudFlare节点 11"
+      - "美国+CloudFlare节点 12"
+      - "美国+CloudFlare节点 13"
+  - name: "♻️ 自动选择"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "巴西圣保罗+CloudFlare节点"
+      - "美国+CloudFlare节点"
+      - "美国+CloudFlare节点 2"
+      - "美国+CloudFlare节点 3"
+      - "美国+CloudFlare节点 4"
+      - "美国+CloudFlare节点 5"
+      - "美国+V2CROSS.COM"
+      - "美国+CloudFlare节点 6"
+      - "英国+V2CROSS.COM"
+      - "美国+CloudFlare节点 7"
+      - "乌克兰+V2CROSS.COM"
+      - "美国+CloudFlare节点 8"
+      - "俄罗斯+V2CROSS.COM"
+      - "美国+CloudFlare节点 9"
+      - "加拿大+V2CROSS.COM"
+      - "美国+V2CROSS.COM 2"
+      - "美国+CloudFlare节点 10"
+      - "美国+CloudFlare节点 11"
+      - "美国+CloudFlare节点 12"
+      - "美国+CloudFlare节点 13"
+rules:
+  - "GEOIP,LAN,DIRECT,no-resolve"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,🚀 节点选择"

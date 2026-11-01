@@ -1,0 +1,66 @@
+name: sync-subscriptions
+
+# 定时拉取上游 txt 订阅并重新生成 Clash 配置；有变化才提交
+on:
+  schedule:
+    # 每 30 分钟检查一次上游（GitHub 的 cron 可能延迟几分钟，属正常）
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "只转换指定源（逗号分隔，留空=全部）"
+        required: false
+        default: ""
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "config/**"
+      - ".github/workflows/sync-subscriptions.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-subscriptions
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Convert txt -> Clash
+        run: |
+          if [ -n "${{ github.event.inputs.only }}" ]; then
+            python src/txt2clash.py --only "${{ github.event.inputs.only }}"
+          else
+            python src/txt2clash.py
+          fi
+
+      - name: Show summary
+        run: |
+          echo "### 订阅统计" >> $GITHUB_STEP_SUMMARY
+          echo '```json' >> $GITHUB_STEP_SUMMARY
+          cat output/counts.json >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output
+          if git diff --staged --quiet; then
+            echo "上游无变化，跳过提交"
+            exit 0
+          fi
+          git commit -m "chore(sync): 同步上游订阅 $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push

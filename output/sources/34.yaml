@@ -1,0 +1,126 @@
+# 订阅 34.txt -> Clash
+# 由 txt2clash.py 自动生成于 2026-11-01 16:51:17 +0800
+# 节点数量: 4
+# 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: "off"
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  listen: "0.0.0.0:1053"
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "*.localhost"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  proxy-server-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+proxies:
+  - name: "🇺🇸 United States | 🌐 [SNI-RU] ok.ru"
+    type: vless
+    server: 185.173.147.176
+    port: 30447
+    uuid: 2d2f710b-574c-43e7-bc8c-8d69c3e7806a
+    udp: true
+    tls: true
+    servername: ok.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 516PSdm_rjV1YdoGT8npOHTH3u8SfiD-2gV-Tkax02g
+      short-id: 850a8440dff47fe2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐 Anycast-IP | 🇩🇪 🇬🇧 [SNI-RU] max.ru"
+    type: vless
+    server: 138.124.53.224
+    port: 30444
+    uuid: 2d2f710b-574c-43e7-bc8c-8d69c3e7806a
+    udp: true
+    tls: true
+    servername: max.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 9p_IFYdiRFr2rS0dkAEM3dncMWlNrMRbqnK-fCi0H3w
+      short-id: 11360560921d04c2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc-neo
+  - name: "🌐 Anycast-IP | 🇩🇪 🇬🇧 [SNI-RU] ok.ru"
+    type: vless
+    server: 138.124.53.224
+    port: 30446
+    uuid: 2d2f710b-574c-43e7-bc8c-8d69c3e7806a
+    udp: true
+    tls: true
+    servername: ok.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: m1IKQBFBKoY1Dzltcv40GXf6IA4_LgtKdvCIN1e31hA
+      short-id: fe3e6b8b31192185
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/config"
+      host: ok.ru
+      mode: auto
+  - name: "🌐 Anycast-IP | 🇩🇪 🇬🇧 [SNI-RU] ok.ru 2"
+    type: vless
+    server: 138.124.53.224
+    port: 30447
+    uuid: 2d2f710b-574c-43e7-bc8c-8d69c3e7806a
+    udp: true
+    tls: true
+    servername: ok.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 516PSdm_rjV1YdoGT8npOHTH3u8SfiD-2gV-Tkax02g
+      short-id: 850a8440dff47fe2
+    flow: xtls-rprx-vision
+    network: tcp
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "♻️ 自动选择"
+      - DIRECT
+      - "🇺🇸 United States | 🌐 [SNI-RU] ok.ru"
+      - "🌐 Anycast-IP | 🇩🇪 🇬🇧 [SNI-RU] max.ru"
+      - "🌐 Anycast-IP | 🇩🇪 🇬🇧 [SNI-RU] ok.ru"
+      - "🌐 Anycast-IP | 🇩🇪 🇬🇧 [SNI-RU] ok.ru 2"
+  - name: "♻️ 自动选择"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "🇺🇸 United States | 🌐 [SNI-RU] ok.ru"
+      - "🌐 Anycast-IP | 🇩🇪 🇬🇧 [SNI-RU] max.ru"
+      - "🌐 Anycast-IP | 🇩🇪 🇬🇧 [SNI-RU] ok.ru"
+      - "🌐 Anycast-IP | 🇩🇪 🇬🇧 [SNI-RU] ok.ru 2"
+rules:
+  - "GEOIP,LAN,DIRECT,no-resolve"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,🚀 节点选择"

@@ -1,0 +1,3490 @@
+# 订阅 21.1.txt -> Clash
+# 由 txt2clash.py 自动生成于 2026-11-01 16:51:16 +0800
+# 节点数量: 270
+# 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: "off"
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  listen: "0.0.0.0:1053"
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "*.localhost"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  proxy-server-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+proxies:
+  - name: "[15523][US][0][SS][None][v2ray1_ng][2026-09-15][2026-09-22 0"
+    type: vless
+    server: 199.232.78.159
+    port: 443
+    uuid: caeaf40e-76f3-4199-a870-2dc7efac1538
+    udp: true
+    tls: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: yaSharClass.global.ssl.fastly.net
+  - name: "[8163][CA][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 38.180.211.126
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: Kuiqk2cP0BMWrgme9IfEvp
+    udp: true
+  - name: "[11372][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 167.88.61.14
+    port: 8090
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+    udp: true
+  - name: "[11304][US][0][SS][None][Outline_Vpn][2026-08-26][2026-09-22"
+    type: ss
+    server: 154.12.242.150
+    port: 80
+    cipher: aes-256-gcm
+    password: Hi9wk14VntzGq7kq
+    udp: true
+  - name: "[12274][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 38.107.226.48
+    port: 3306
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+    udp: true
+  - name: "[12135][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 167.88.61.60
+    port: 5600
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+    udp: true
+  - name: "[16344][US][0][SS][None][v2rayNG_Matsuri][2026-09-14][2026-0"
+    type: vless
+    server: 31.76.5.107
+    port: 443
+    uuid: d6b59299-2f48-4e9b-9130-b9e9cb5d0a51
+    udp: true
+    tls: true
+    servername: no2.hat.onl
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: ZuoEro9dqmpJBUhzLRhqSo3_aedFWMoFYPCcOgqb1xA
+      short-id: 9d8cb788a9863bc0
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[8750][UA][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 176.103.53.105
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+  - name: "[3418][UnResolvedDomains][0][SS][None][ext_raw.githubusercon"
+    type: vless
+    server: amazon-13.cristiano.name.ng
+    port: 443
+    uuid: 4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4
+    udp: true
+    tls: true
+    servername: store.steampowered.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4
+      short-id: f5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[10950][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 38.114.114.19
+    port: 7306
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+    udp: true
+  - name: "[12802][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 167.88.61.60
+    port: 9102
+    cipher: aes-256-gcm
+    password: e4FCWrgpkji3QY
+    udp: true
+  - name: "[17821][US][0][SS][None][prrofile_purple][2026-07-13][2026-0"
+    type: vless
+    server: cloudflare-ip.mofashi.ltd
+    port: 443
+    uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    udp: true
+    tls: true
+    servername: t1s1.rittbo.kdns.fr
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: t1s1.rittbo.kdns.fr
+  - name: "[8638][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 46.226.163.225
+    port: 57456
+    cipher: chacha20-ietf-poly1305
+    password: c40641c1f89e7acb
+    udp: true
+  - name: "[15566][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: vless
+    server: www.speedtest.net
+    port: 8443
+    uuid: ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4
+    udp: true
+    tls: true
+    servername: hetzner-2.access.name.ng
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: hetzner-2.access.name.ng
+  - name: "[17687][US][0][SS][None][v2rayngvp][2025-07-29][2026-09-22 0"
+    type: vless
+    server: 172.67.164.4
+    port: 443
+    uuid: ec7de7e0-3f09-4ef4-8a34-e441917d65fa
+    udp: true
+    tls: true
+    servername: verina.ccantarella.dns-dynamic.net
+    client-fingerprint: randomized
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/proxyip"
+      headers:
+        Host: verina.ccantarella.dns-dynamic.net
+  - name: "[3810][DE][0][SS][None][V2rayng_Fast][2026-09-19][2026-09-22"
+    type: vless
+    server: 2.27.20.17
+    port: 443
+    uuid: 57ac42c6-14e9-4c94-85a8-01f09bf3aa43
+    udp: true
+    tls: true
+    servername: vpn.xorealis.com
+    reality-opts:
+      public-key: N9YEtcvbXxG2GD8cLMlQT35HnX8cmvYPasnqtcBW_XY
+      short-id: 131df166be01a436
+    client-fingerprint: chrome
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "[7688][CA][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 196.247.59.156
+    port: 809
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "[2267][BG][0][SS][None][v2rayNG_Matsuri][2026-09-08][2026-09"
+    type: vless
+    server: bg3.univesalsrv.com
+    port: 443
+    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+    udp: true
+    tls: true
+    servername: bg3.univesalsrv.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: XBfCioniAKXgKYBUVnvBXu80AIaIa4SpAB3w8qeF7Gk
+      short-id: 1be1bd931c98c84a
+    network: grpc
+    grpc-opts:
+      grpc-service-name: home.v1.ApiService
+  - name: "[3083][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: vless
+    server: 104.21.34.106
+    port: 443
+    uuid: 44eae030-290b-4083-8102-6f8bab05701b
+    udp: true
+    tls: true
+    servername: cfvvv-ev1.pages.dev
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cfvvv-ev1.pages.dev
+    client-fingerprint: chrome
+  - name: "[2026][RS][0][SS][None][V2rayng_Fast][2026-09-10][2026-09-22"
+    type: vless
+    server: 150.40.126.24
+    port: 443
+    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+    udp: true
+    tls: true
+    servername: rs5.univesalsrv.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: X8mPYnsoTd8QCnvFZKSy7VvpSn_nrt_NWJkCUJhFCyE
+      short-id: 4872856d5489c37d
+    network: grpc
+    grpc-opts:
+      grpc-service-name: gw.v1.ObjectService
+  - name: "[8614][DE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 185.140.12.217
+    port: 1080
+    cipher: chacha20-ietf-poly1305
+    password: bCmNtjuyczgcKj2s3P3eBg
+    udp: true
+  - name: "[15886][CN][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 120.195.181.82
+    port: 5980
+    cipher: rc4-md5
+    password: Paofu
+    udp: true
+  - name: "[17038][FR][0][SS][None][VlessConfig][2026-09-11][2026-09-22"
+    type: vless
+    server: 15.237.145.224
+    port: 22224
+    uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+    udp: true
+    tls: false
+    network: tcp
+  - name: "[11713][NL][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 81.19.208.107
+    port: 50168
+    cipher: aes-256-gcm
+    password: WCuz7yrfZSCQQXSNrtGPz2HT
+    udp: true
+  - name: "[3920][DE][0][SS][None][oneclickvpnkeys][2026-09-17][2026-09"
+    type: vless
+    server: 46.101.105.34
+    port: 440
+    uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - store.steampowered.com
+  - name: "[17890][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: vless
+    server: still-bar-5702.vpnetwork3567.workers.dev
+    port: 443
+    uuid: 0EBCBB23-C337-0909-4655-BC85BCDCFC02
+    udp: true
+    tls: true
+    servername: still-bar-5702.vpnetwork3567.workers.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: still-bar-5702.vpnetwork3567.workers.dev
+  - name: "[1193][IR][0][SS][None][v2ray_swhil][2024-07-28][2026-09-22 "
+    type: vless
+    server: www.zula.ir
+    port: 8080
+    uuid: 1725aca3-33aa-44ea-841f-0dec31e76f72
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "telegram-QJoinbedeY@V2riraN?ed=2560"
+      headers:
+        Host: v2riran.ir.www.speedtest.net.www.zula.ir.cloudflare.com.rizzlerlegacy.Ink.
+  - name: "[15231][US][0][SS][None][fnet00][2026-01-21][2026-09-22 02:0"
+    type: vless
+    server: 162.159.152.4
+    port: 443
+    uuid: c243a123-c6ca-4115-a955-3ddce53e257d
+    udp: true
+    tls: true
+    servername: fuchsia.qzz.io
+    network: ws
+    ws-opts:
+      path: "/188.132.192.194=2053"
+      headers:
+        Host: fuchsia.qzz.io
+    client-fingerprint: chrome
+  - name: "[7509][CA][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 15.235.75.71
+    port: 8388
+    cipher: chacha20-ietf-poly1305
+    password: FD3rCuOsxOay
+    udp: true
+  - name: "[10918][GB][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 172.99.190.7
+    port: 7306
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+    udp: true
+  - name: "[5260][CA][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: vless
+    server: speedtest2.wlftest.xyz
+    port: 443
+    uuid: 85399fea-2ee3-51b5-ad4e-d8b78a2cf1d9
+    udp: true
+    tls: true
+    servername: www.speedtest.net
+    client-fingerprint: ios
+    reality-opts:
+      public-key: 9D4FoKRukUuWRV8jx5ya5HHTmKC4sYH2Tk5RGWjGSmI
+      short-id: ce
+    network: tcp
+  - name: "[920][DE][0][SS][None][FreakConfig][2026-09-21][2026-09-22 0"
+    type: vless
+    server: 5.175.249.149
+    port: 443
+    uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+    udp: true
+    tls: true
+    servername: static.lotussec.com
+    client-fingerprint: firefox
+    alpn:
+      - h2
+    network: xhttp
+    xhttp-opts:
+      path: "/Join-JavidnamanIran-on-Telegram"
+      host: static.lotussec.com
+      mode: stream-one
+  - name: "[16274][DE][0][SS][None][vpnx44][2026-09-21][2026-09-22 02:0"
+    type: vless
+    server: 169.40.42.223
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    udp: true
+    tls: true
+    servername: yahoo.com
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[12828][GB][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 172.99.190.39
+    port: 9101
+    cipher: aes-256-gcm
+    password: e4FCWrgpkji3QY
+    udp: true
+  - name: "[7141][IR][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 185.215.228.132
+    port: 2044
+    cipher: chacha20-ietf-poly1305
+    password: 3rfnj11q5xvg72y1
+    udp: true
+  - name: "[10444][PT][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 185.231.233.112
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+  - name: "[5540][UnResolvedDomains][0][SS][None][freeconfigv2][2023-09"
+    type: vless
+    server: static.120.29.181.135.clients.your-server.de
+    port: 443
+    uuid: 8ca98c98-fb0b-4007-a6e8-c8294e546763
+    udp: true
+    tls: true
+    servername: azaronline.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: EwDqXy7Y1vZTco-H12ftBu7xX0k0s0lvuSJ4MiQFnBo
+      short-id: af
+    network: grpc
+    grpc-opts:
+      grpc-service-name: 6eenmFpWJ6RknrPH6qK9
+  - name: "[11094][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 167.88.61.175
+    port: 8080
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+    udp: true
+  - name: "[3799][US][0][SS][None][Lockey_vpn][2025-02-18][2026-09-22 0"
+    type: vless
+    server: 104.17.148.22
+    port: 8880
+    uuid: 57147109-749f-4c9b-c6b3-2dce03f0466f
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/FreeConfig?ed=2560"
+      v2ray-http-upgrade: true
+      headers:
+        Host: KhodeAlfred.tehran-gamee.ir
+  - name: "[6080][BG][0][SS][None][oneclickvpnkeys][2026-09-20][2026-09"
+    type: vless
+    server: 192.145.31.5
+    port: 443
+    uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 192.145.31.5
+  - name: "[5798][US][0][SS][None][V2rayng_Fast][2026-09-21][2026-09-22"
+    type: vless
+    server: 151.101.56.6
+    port: 443
+    uuid: 9503e890-3702-4847-af0a-2bceac2f0da0
+    udp: true
+    tls: true
+    servername: ssl.fastly.com
+    client-fingerprint: firefox
+    alpn:
+      - h2
+    network: ws
+    ws-opts:
+      path: "/?TELEGRAM--MARAMBASHI--MARAMBASHI"
+      headers:
+        Host: c12.com
+  - name: "[10265][JP][0][SS][None][VPNGate_Config][2023-09-30][2026-09"
+    type: ss
+    server: 84.17.34.108
+    port: 110
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    udp: true
+  - name: "[3001][UnResolvedDomains][0][SS][None][ext_raw.githubusercon"
+    type: vless
+    server: senatorrea-02.flightbean24.com
+    port: 1370
+    uuid: 43750da6-5020-4f24-b9be-df0507b9b19a
+    udp: true
+    tls: true
+    servername: store.steampowered.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "-yGe7KeDFSy8uzJ20PzuYfRwf0AgBmFhhi1ZzgiYBks"
+      short-id: eaa704c0444c9c
+    network: tcp
+  - name: "[5455][US][0][SS][None][Lockey_vpn][2024-05-02][2026-09-22 0"
+    type: vless
+    server: 173.245.59.100
+    port: 80
+    uuid: 8b6bc1e2-81c9-450e-b9d3-afeb39029db9
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: xnjsn.snjsj.sjsjeje.sjsjsjs.sjsjjs.sjsksks.sksksk.sjsjs.jskv2raykekw.jwjw.sksos.ZmV2ray.Site.
+  - name: "[14037][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: vless
+    server: 137.220.221.179
+    port: 443
+    uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+    udp: true
+    tls: false
+    network: tcp
+  - name: "[5969][US][0][SS][None][prrofile_purple][2026-09-05][2026-09"
+    type: vless
+    server: 172.67.217.240
+    port: 443
+    uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
+    udp: true
+    tls: true
+    servername: web-socket.tgdaosheng.ggff.net
+    network: ws
+    ws-opts:
+      path: MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN
+      headers:
+        Host: web-socket.tgdaosheng.ggff.net
+    client-fingerprint: chrome
+  - name: "[15128][ES][0][SS][None][marambashi][2026-09-12][2026-09-22 "
+    type: vless
+    server: 194.146.223.231
+    port: 443
+    uuid: bf8c3d34-c16c-423f-8ff0-9341d6621e97
+    udp: true
+    tls: true
+    servername: blog.api.www.cloudflare.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: CuGfoVwpKbDfXx5Lx657c-RpIyCJgWmd2xXsLgb5AhQ
+      short-id: "273288"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[4646][UnResolvedDomains][0][SS][None][freeconfigv2][2023-09"
+    type: vless
+    server: 20.239.72.23
+    port: 37322
+    uuid: 711b7b06-dccd-46ee-8d73-d834c3370ac4
+    udp: true
+    tls: false
+    network: tcp
+  - name: "[16503][DE][0][SS][None][oneclickvpnkeys][2026-09-21][2026-0"
+    type: vless
+    server: 185.255.179.11
+    port: 9443
+    uuid: d9d0f208-d582-41d5-bb7b-742671402810
+    udp: true
+    tls: true
+    servername: hub-nl-02.hanvpn.cc
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/nl02-ws-8e47a"
+      headers:
+        Host: hub-nl-02.hanvpn.cc
+    client-fingerprint: chrome
+  - name: "[2704][UnResolvedDomains][0][SS][None][Capital_NET][2023-09-"
+    type: vless
+    server: tel.1lagvpn13.cfd
+    port: 8443
+    uuid: 363d8a21-3efe-48cc-beb2-e7d561dcada1
+    udp: true
+    tls: true
+    servername: corporate.accuweather.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: mAckkJCS1BAwhhfwJcmF9g3ExyxCA2PTJXjGkRoJvVs
+      short-id: eee6f73a
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "@L_AGVPN13"
+  - name: "[16643][US][0][SS][None][proxymtprotoir][2026-09-21][2026-09"
+    type: vless
+    server: de3.edge-9d7c.com
+    port: 443
+    uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
+    udp: true
+    tls: true
+    servername: de3.edge-9d7c.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM
+      short-id: 9d84de9d9f7b85e9
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[3181][US][0][SS][None][marambashi][2026-09-18][2026-09-22 0"
+    type: vless
+    server: 188.114.97.6
+    port: 443
+    uuid: 44eae030-290b-4083-8102-6f8bab05701b
+    udp: true
+    tls: true
+    servername: cfvvv-ev1.pages.dev
+    network: ws
+    ws-opts:
+      path: "/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512"
+      headers:
+        Host: cfvvv-ev1.pages.dev
+    client-fingerprint: chrome
+  - name: "[11245][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 38.91.100.27
+    port: 8080
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+    udp: true
+  - name: "[11990][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 38.75.136.21
+    port: 8009
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+    udp: true
+  - name: "[14717][US][0][SS][None][oneclickvpnkeys][2026-09-20][2026-0"
+    type: vless
+    server: 66.235.200.218
+    port: 443
+    uuid: b2593749-691c-428c-9481-14979cba3446
+    udp: true
+    tls: true
+    servername: xi.tbv.ccwu.cc
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/proxyip=us.xiabibi.cf"
+      headers:
+        Host: xi.tbv.ccwu.cc
+  - name: "[9993][BG][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 213.183.63.218
+    port: 9000
+    cipher: aes-256-cfb
+    password: a3GFYt36Sm82Vys9
+    udp: true
+  - name: "[14133][US][0][SS][None][prrofile_purple][2026-06-06][2026-0"
+    type: vless
+    server: www.speedtest.net
+    port: 2095
+    uuid: a33841fd-e693-42e3-b7d4-9c6e802093fb
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiNmlaTUYxTnB5IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560"
+      headers:
+        Host: frosty-field-7475.hamedpop8.workers.dev
+  - name: "[14053][PL][0][SS][None][marambashi][2026-09-14][2026-09-22 "
+    type: vless
+    server: 83.168.71.216
+    port: 443
+    uuid: a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    reality-opts:
+      public-key: 8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho
+      short-id: 2f49bccf11150ef2
+    network: tcp
+  - name: "[17905][UnResolvedDomains][0][SS][None][mftizi][2024-12-08]["
+    type: ss
+    server: h-k02.loveroise.com
+    port: 54002
+    cipher: chacha20-ietf-poly1305
+    password: 09833a6f-4d46-426e-87fe-7793a5489f84
+    udp: true
+  - name: "[16073][US][0][SS][None][ConfigsHUB][2026-09-21][2026-09-22 "
+    type: vless
+    server: 162.159.197.1
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: cdn8848.776676.xyz
+    network: ws
+    ws-opts:
+      path: "/product?ed=2560fp=chrome"
+      headers:
+        Host: cdn8848.776676.xyz
+    client-fingerprint: chrome
+  - name: "[13946][CA][0][SS][None][vpn_tehran][2026-09-20][2026-09-22 "
+    type: ss
+    server: 51.222.12.127
+    port: 445
+    cipher: aes-256-gcm
+    password: zDNVedRFPQexG9v
+    udp: true
+  - name: "[9578][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 173.244.56.9
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
+  - name: "[12456][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 38.91.107.16
+    port: 5601
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+    udp: true
+  - name: "[12993][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 167.88.61.60
+    port: 2376
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+    udp: true
+  - name: "[7420][BH][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 15.185.92.149
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: Bog0ELmMM9DSxDdQ
+    udp: true
+  - name: "[17567][RU][0][SS][None][marambashi][2026-09-13][2026-09-22 "
+    type: vless
+    server: 195.133.73.65
+    port: 443
+    uuid: ebd1c0d6-7ff4-4b9f-8692-237517a27a64
+    udp: true
+    tls: true
+    servername: anyfile2file.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0
+      short-id: 64c1fe36c7846400
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[7016][LT][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 45.87.175.178
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: 1RWwXhwfAB5gAEozU4G2Pg
+    udp: true
+  - name: "[2429][RS][0][SS][None][FreakConfig][2026-09-18][2026-09-22 "
+    type: vless
+    server: rs4.univesalsrv.com
+    port: 443
+    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+    udp: true
+    tls: true
+    servername: rs4.univesalsrv.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs
+      short-id: 861ac7d66953e55f
+    network: grpc
+    grpc-opts:
+      grpc-service-name: media.v1.StreamService
+  - name: "[13454][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 167.88.63.79
+    port: 8881
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
+    udp: true
+  - name: "[10891][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 167.88.63.82
+    port: 7307
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+    udp: true
+  - name: "[8120][ES][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 212.227.146.33
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: GvsjQ0OZ5nGQXDGfzfWZf5
+    udp: true
+  - name: "[14603][UnResolvedDomains][0][SS][None][bypass_filter][2023-"
+    type: vless
+    server: public.bamarambash.monster
+    port: 443
+    uuid: b0e6a2c9-e667-4e42-9cb3-77d7db3e736b
+    udp: true
+    tls: true
+    servername: bypass-filter.btmmpv.workers.dev
+    network: ws
+    ws-opts:
+      path: "@bypass_filter/"
+      headers:
+        Host: bypass-filter.btmmpv.workers.dev
+    client-fingerprint: chrome
+  - name: "[10033][SG][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 13.215.200.86
+    port: 443
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+  - name: "[16807][US][0][SS][None][CUSTOMVPNSERVER][2026-01-22][2026-0"
+    type: vless
+    server: 162.159.152.4
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    udp: true
+    tls: true
+    servername: ww23.sgxaniu.qzz.io
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ww23.sgxaniu.qzz.io
+  - name: "[3111][US][0][SS][None][free1_vpn][2026-09-17][2026-09-22 02"
+    type: vless
+    server: 104.21.70.228
+    port: 443
+    uuid: 44eae030-290b-4083-8102-6f8bab05701b
+    udp: true
+    tls: true
+    servername: cfvvv-ev1.pages.dev
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cfvvv-ev1.pages.dev
+    client-fingerprint: chrome
+  - name: "[7423][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 74.177.119.255
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: Bog0ELmMM9DSxDdQ
+    udp: true
+  - name: "[4819][TR][0][SS][None][oneclickvpnkeys][2026-09-19][2026-09"
+    type: vless
+    server: 93.190.9.16
+    port: 3090
+    uuid: 77d89693-d043-402d-ba6b-5adacf705da4
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless
+  - name: "[14581][SA][0][SS][None][VmessProtocol][2026-09-21][2026-09-"
+    type: vless
+    server: 91.209.253.250
+    port: 443
+    uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+    udp: true
+    tls: true
+    servername: nb.lovecf.ggff.net
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: nb.lovecf.ggff.net
+    client-fingerprint: chrome
+  - name: "[17740][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: vless
+    server: sage.ns.cloudflare.com
+    port: 443
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    udp: true
+    tls: true
+    servername: edgb.aimercc.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&proxyip=ts.hpc.tw"
+      headers:
+        Host: edgb.aimercc.dpdns.org
+    client-fingerprint: chrome
+  - name: "[8713][NL][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 188.116.23.244
+    port: 8388
+    cipher: chacha20-ietf-poly1305
+    password: eVC634QvVk5l
+    udp: true
+  - name: "[18302][UnResolvedDomains][0][SS][None][Configforvpn01][2023"
+    type: vless
+    server: turkws.configforvpn.fun
+    port: 2087
+    uuid: f265ecd2-4f70-4693-b10d-8f018f19acad
+    udp: true
+    tls: true
+    servername: turkws.configforvpn.fun
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: turkws.configforvpn.fun
+  - name: "[12826][GB][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 172.99.190.149
+    port: 9101
+    cipher: aes-256-gcm
+    password: e4FCWrgpkji3QY
+    udp: true
+  - name: "[8117][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 108.181.0.177
+    port: 8388
+    cipher: chacha20-ietf-poly1305
+    password: G5p6ww4o67HB
+    udp: true
+  - name: "[11143][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 23.154.136.218
+    port: 5500
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+    udp: true
+  - name: "[10689][RU][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 92.63.193.243
+    port: 20
+    cipher: aes-256-gcm
+    password: 1KssbuTybQDBYgDju5nNSg
+    udp: true
+  - name: "[13359][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 38.75.136.21
+    port: 5004
+    cipher: aes-256-gcm
+    password: g5MeD6Ft3CWlJId
+    udp: true
+  - name: "[15507][IR][0][SS][None][CUSTOMVPNSERVER][2025-07-25][2026-0"
+    type: vless
+    server: 94.183.158.13
+    port: 1190
+    uuid: cac07fc1-9c38-42af-b26f-421eaca2cd65
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: 94.183.158.13
+  - name: "[16628][US][0][SS][None][oneclickvpnkeys][2026-09-20][2026-0"
+    type: vless
+    server: 45.141.131.16
+    port: 443
+    uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
+    udp: true
+    tls: true
+    servername: de5.edge-9d7c.com
+    reality-opts:
+      public-key: qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM
+      short-id: 9d84de9d9f7b85e9
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[6261][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 134.65.57.72
+    port: 61312
+    cipher: 2022-blake3-chacha20-poly1305
+    password: "wtrUMVbSRSi4MlzATr+FjvqFCczZWFxG3hZ7+IWW1y0="
+    udp: true
+  - name: "[16336][US][0][SS][None][mehrosaboran][2026-09-14][2026-09-2"
+    type: vless
+    server: 31.76.101.16
+    port: 443
+    uuid: d6b59299-2f48-4e9b-9130-b9e9cb5d0a51
+    udp: true
+    tls: true
+    servername: mx42.hat.onl
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: nuqkgfdRafYszLg1SzFgXlQkTu0OdV4tes4WTjjcpkI
+      short-id: 414f66403b9f0673
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[16074][DE][0][SS][None][oneclickvpnkeys][2026-09-20][2026-0"
+    type: vless
+    server: 164.92.137.46
+    port: 2083
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: cdn8848.776676.xyz
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/bt/streaming/ad?ed=2560"
+      headers:
+        Host: cdn8848.776676.xyz
+  - name: "[14118][UnResolvedDomains][0][SS][None][FalconPolV2rayNG][20"
+    type: vless
+    server: az.downloadgameiran.ir
+    port: 2053
+    uuid: a2626d27-e0f8-490d-b23c-c9ca0dea4ea9
+    udp: true
+    tls: true
+    servername: az.downloadgameiran.ir
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      v2ray-http-upgrade: true
+      headers:
+        Host: az.downloadgameiran.ir
+  - name: "[17933][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
+    type: ss
+    server: hk01.x.quickcht3.club
+    port: 52611
+    cipher: chacha20-ietf-poly1305
+    password: 2be0c954-4291-45ea-b47d-ca713180550b
+    udp: true
+  - name: "[15274][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
+    type: vless
+    server: "::ffff:6812:cae8"
+    port: 8080
+    uuid: c3077f1d-3b94-4a83-aecb-f4e9beb4dc7e
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: xn--047h.iman-v2ray.sbs.
+  - name: "[3226][US][0][SS][None][daredevill_404][2026-01-28][2026-09-"
+    type: vless
+    server: 66.81.247.155
+    port: 443
+    uuid: 4525c260-df3c-4f62-b8f1-f4f5f305694b
+    udp: true
+    tls: true
+    servername: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=512"
+      headers:
+        Host: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+  - name: "[3909][DE][0][SS][None][v2rayNG_Matsuri][2026-09-16][2026-09"
+    type: vless
+    server: 167.71.45.85
+    port: 440
+    uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - store.steampowered.com
+  - name: "[17400][UnResolvedDomains][0][SS][None][iTV2RAY][2023-07-24]"
+    type: vless
+    server: mtn-iTV2RAY.ddns.net
+    port: 2087
+    uuid: e8f5a6f2-6d07-4f19-b2c8-fa50a1c33d6b
+    udp: true
+    tls: true
+    servername: ViP.iTV2RAY.lol
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "@iTV2RAY:تلگرام"
+    client-fingerprint: chrome
+  - name: "[15061][UnResolvedDomains][0][SS][None][Capoit][2026-09-12]["
+    type: vless
+    server: mg5d89p8.selqora.ir
+    port: 20587
+    uuid: be0f5bcf-86f1-43fa-bf2d-e45131afe37b
+    udp: true
+    tls: true
+    servername: pio.hosting
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 08XjhCxzVfdFHC8ebkcHFlCPDnaFZurkUPOd--booiM
+      short-id: 867fe804429ad138
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[18123][US][0][SS][None][vpn_tehran][2026-09-15][2026-09-22 "
+    type: trojan
+    server: 8.47.69.0
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.pleadcourt.org
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.pleadcourt.org
+  - name: "[11758][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 167.88.62.68
+    port: 6679
+    cipher: aes-256-gcm
+    password: TEzjfAYq2IjtuoS
+    udp: true
+  - name: "[2448][US][0][SS][None][prrofile_purple][2026-06-15][2026-09"
+    type: vless
+    server: ipclf.bhralrqmy.com
+    port: 2053
+    uuid: 2f60be6f-be0c-48b4-9772-b56f42b51ba1
+    udp: true
+    tls: true
+    servername: drr3dme6.twelvmmapps.com
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: drr3dme6.twelvmmapps.com
+  - name: "[7715][SG][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 217.197.161.138
+    port: 804
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "[16727][LT][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: vless
+    server: 84.32.25.200
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: node
+    type: vmess
+    server: 165.140.216.142
+    port: 443
+    uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "[18386][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
+    type: vless
+    server: direct2.yasharteam.com
+    port: 443
+    uuid: f4c9e871-3f00-4dd6-9a1a-d785d6c6283b
+    udp: true
+    tls: true
+    servername: tgju.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8
+      short-id: e54b5ad736ae4c38
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[17446][IR][0][SS][None][DarkVPNpro][2026-04-16][2026-09-22 "
+    type: vless
+    server: 185.143.233.235
+    port: 80
+    uuid: e9c4da8c-b6dc-46d5-96f4-18bd9389f155
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: vixon.portab.org
+  - name: "[9020][UnResolvedDomains][0][SS][None][v2ray_swhil][2024-11-"
+    type: ss
+    server: api.turkiye6.xyz
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: lQHuqev0bDeSuxSCL
+    udp: true
+  - name: "[7342][FR][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 51.77.225.200
+    port: 8388
+    cipher: chacha20-ietf-poly1305
+    password: zRZNBszYyWo5
+    udp: true
+  - name: "[15416][US][0][SS][None][free1_vpn][2026-09-17][2026-09-22 0"
+    type: vless
+    server: xnforo.ir
+    port: 2087
+    uuid: c75775e9-cf53-47b6-9d1d-29c3a46633fd
+    udp: true
+    tls: true
+    servername: ratatouille.rahmatokaduie.ir
+    client-fingerprint: chrome
+    network: xhttp
+    xhttp-opts:
+      path: "/GoRbEh"
+      host: ratatouille.rahmatokaduie.ir
+      mode: auto
+  - name: "[16808][US][0][SS][None][Outline_Vpn][2026-07-13][2026-09-22"
+    type: vless
+    server: 8.47.69.6
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    udp: true
+    tls: true
+    servername: ww1.aniuge.qzz.io
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ww1.aniuge.qzz.io
+  - name: "node 2"
+    type: vmess
+    server: tw1-vds3.anyhk.co
+    port: 21353
+    uuid: c24b520b-e0c6-4bb0-b951-dd87cc07a518
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "[7677][CA][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 196.247.59.154
+    port: 809
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "[5163][DE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: vless
+    server: 178.162.244.224
+    port: 443
+    uuid: 83a85a41-fb7f-43e0-9c15-d199509a9624
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - zula.ir
+  - name: "[17977][US][0][SS][None][Hope_Net][2026-09-18][2026-09-22 02"
+    type: ss
+    server: 23.157.40.53
+    port: 8090
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+    udp: true
+  - name: "[14316][DE][0][SS][None][v2rayNG_Matsuri][2026-09-20][2026-0"
+    type: vless
+    server: files.noneok.com
+    port: 443
+    uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
+    udp: true
+    tls: true
+    servername: files.noneok.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: q3kOYHdjmqWLLYj8oikvna1bTjofk45ktegGaJE611g
+      short-id: d3b394558cfe0266
+    network: grpc
+    grpc-opts:
+      grpc-service-name: api.v1.StreamService
+  - name: "[13283][GB][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 172.99.190.87
+    port: 5004
+    cipher: aes-256-gcm
+    password: g5MeD6Ft3CWlJId
+    udp: true
+  - name: "[11505][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 38.75.137.9
+    port: 8090
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+    udp: true
+  - name: "[10467][BE][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 192.71.249.78
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+  - name: "[11256][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 38.91.107.16
+    port: 8080
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+    udp: true
+  - name: "[18269][TR][0][SS][None][marambashi][2026-09-12][2026-09-22 "
+    type: vless
+    server: 213.156.152.54
+    port: 8443
+    uuid: f1505323-ecb6-4152-9a5b-d37b3ae1cacf
+    udp: true
+    tls: true
+    servername: play-apps-features.googleusercontent.com
+    client-fingerprint: edge
+    reality-opts:
+      public-key: 72SJFDXHCtB2fWWRrjMj23J8iJ8T_2jvj-iNThmLREs
+      short-id: 48430401e636263b
+    network: tcp
+  - name: "[6072][ES][0][SS][None][oneclickvpnkeys][2026-09-17][2026-09"
+    type: vless
+    server: 83.147.18.3
+    port: 443
+    uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+    udp: true
+    tls: true
+    servername: www.cloudflare.com
+    reality-opts:
+      public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+      short-id: fd8cf7e1173f0edb
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[11438][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 38.107.226.132
+    port: 8090
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+    udp: true
+  - name: "[3098][US][0][SS][None][proxy_mtm][2026-09-19][2026-09-22 02"
+    type: vless
+    server: 104.21.60.109
+    port: 443
+    uuid: 44eae030-290b-4083-8102-6f8bab05701b
+    udp: true
+    tls: true
+    servername: cfvvv-ev1.pages.dev
+    network: ws
+    ws-opts:
+      path: "MTMVPN---MTMVPN---MTMVPN---MTMVPN---MTMVPN---MTMVPN---MTMVPN---MTMVPN/proxyip=us.xiabibi.cf"
+      headers:
+        Host: cfvvv-ev1.pages.dev
+    client-fingerprint: chrome
+  - name: "[11107][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 167.88.62.68
+    port: 8080
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+    udp: true
+  - name: "[2360][MD][0][SS][None][v2ray1_ng][2026-09-09][2026-09-22 02"
+    type: vless
+    server: md3.univesalsrv.com
+    port: 443
+    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+    udp: true
+    tls: true
+    servername: md3.univesalsrv.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ
+      short-id: 9a72d40f1ff882b3
+    network: grpc
+    grpc-opts:
+      grpc-service-name: stats.v2.PushService
+  - name: "[13928][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 38.68.134.9
+    port: 6379
+    cipher: aes-256-gcm
+    password: zDNVedRFPQexG9v
+    udp: true
+  - name: "[13101][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 38.143.66.55
+    port: 2375
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+    udp: true
+  - name: "[13070][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 38.107.226.238
+    port: 2376
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+    udp: true
+  - name: "[1536][IN][0][SS][None][v2rayNG_Matsuri][2026-09-11][2026-09"
+    type: vless
+    server: 5.8.35.177
+    port: 8443
+    uuid: 231e9d63-d944-4f9a-b704-4ca88e24a32c
+    udp: true
+    tls: true
+    servername: www.wikipedia.org
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: nA75KL8M3eReHaouQpRtrx9OSobZpQHtNIGQPjv6PE0
+      short-id: 0e10fa8d77a925cf
+    network: xhttp
+    xhttp-opts:
+      path: "/hndr"
+      host: www.wikipedia.org
+  - name: "[7611][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 167.88.61.2
+    port: 806
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "[1589][US][0][SS][None][DarkVPNpro][2024-11-15][2026-09-22 0"
+    type: vless
+    server: 104.16.180.136
+    port: 80
+    uuid: 243ff879-b317-4430-894e-767a131db2ca
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/vless#t-me-DarkVPNpro-t-me-DarkVPNpro-t-me-DarkVPNprot-me-DarkVPNprot-me-DarkVPNprot-me-DarkVPNprot-me-DarkVPNprot-me-DarkVPNpro?ed=2048"
+      headers:
+        Host: "www.iranserver.com.127.0.0.1.востейcontrol.農達懲.wonkacapitano.buzz."
+  - name: "[7107][PL][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 45.144.49.140
+    port: 57456
+    cipher: chacha20-ietf-poly1305
+    password: 360e21d21977dc11
+    udp: true
+  - name: "[15688][US][0][SS][None][vpn_tehran][2026-08-31][2026-09-22 "
+    type: vless
+    server: 104.21.71.238
+    port: 443
+    uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+    udp: true
+    tls: true
+    servername: rubifen.adaspoloandco.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/GOrbEh"
+      headers:
+        Host: rubifen.adaspoloandco.com
+  - name: "[7315][MD][0][SS][None][free4allVPN][2025-12-06][2026-09-22 "
+    type: ss
+    server: 89.221.225.15
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: yCbQ4bry4otfifK7oel71NaXpPL9pYJb
+    udp: true
+  - name: "[4706][UnResolvedDomains][0][SS][None][Capital_NET][2023-08-"
+    type: vless
+    server: 49.13.67.93
+    port: 54818
+    uuid: 72f5f4ec-5db2-4f41-8b73-e3f9eb93c9ce
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - zula.ir
+  - name: "[14960][DE][0][SS][None][v2rayNG_Matsuri][2026-09-17][2026-0"
+    type: vless
+    server: arcturus.yokkastars.com
+    port: 40443
+    uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
+    udp: true
+    tls: true
+    servername: deepl.com
+    reality-opts:
+      public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
+      short-id: db46e2946fc466fd
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[14657][UnResolvedDomains][0][SS][None][Configforvpn01][2023"
+    type: vless
+    server: turkws.configforvpn.fun
+    port: 2087
+    uuid: b24c8dc2-570e-488e-a7ee-fc64594ce388
+    udp: true
+    tls: true
+    servername: turkws.configforvpn.fun
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: turkws.configforvpn.fun
+  - name: "[7067][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 64.137.109.212
+    port: 44884
+    cipher: chacha20-ietf-poly1305
+    password: 2DGq3jvVRg5n3CcxmysGK2kmrgJeSNof12A76cZvVxqPpetyC1XEciCFufq5xKvRWGGnKVembpThuUSQhbZ7GMsZY4UVxEBw
+    udp: true
+  - name: "[8767][SI][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 192.71.244.150
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+  - name: "[18218][DE][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: vless
+    server: de01-vlr01.tcp-reset-club.net
+    port: 443
+    uuid: 4a640781-f5c8-4d17-80db-a6b0a091ba05
+    udp: true
+    tls: true
+    servername: hls-svod.itunes.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: "31"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[5157][US][0][SS][None][ShadowProxy66][2026-09-21][2026-09-2"
+    type: vless
+    server: 104.21.8.201
+    port: 2096
+    uuid: 832c8f42-7fe1-4aa4-9171-eb9dddbf6fef
+    udp: true
+    tls: true
+    servername: cdn-sg.skyvora.app
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/78bc8"
+      headers:
+        Host: cdn-sg.skyvora.app
+  - name: "[11403][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 167.88.63.99
+    port: 8090
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+    udp: true
+  - name: "[5240][AT][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: vless
+    server: 152.53.64.139
+    port: 8443
+    uuid: 84a794a5-2420-4ca7-8e08-8d21571f36f3
+    udp: true
+    tls: true
+    servername: avstri.plus-hit.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: Zvq-k6PMXjmd6YlWcu3T1J63m0IxZcOaedRwSG9O0lI
+      short-id: 92558baf673ab721
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "[17619][RU][0][SS][None][v2rayNG_Matsuri][2026-09-15][2026-0"
+    type: vless
+    server: tgfree.rush-server.com
+    port: 443
+    uuid: ebd1c0d6-7ff4-4b9f-8692-237517a27a64
+    udp: true
+    tls: true
+    servername: anyfile2file.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0
+      short-id: 64c1fe36c7846400
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[1680][NL][0][SS][None][marambashi][2026-09-13][2026-09-22 0"
+    type: vless
+    server: 77.233.213.106
+    port: 40443
+    uuid: 279a8eef-898f-44ef-b4f5-67a494f4b542
+    udp: true
+    tls: true
+    servername: deepl.com
+    reality-opts:
+      public-key: vAG5o6TQvpZAlvDnlyhHEFZBuSgEV_ybQigD_mGKh1M
+      short-id: 5b98
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[17903][UnResolvedDomains][0][SS][None][mftizi][2024-09-07]["
+    type: trojan
+    server: chapter.freetrade.link
+    port: 443
+    password: YA3aEKa6lSDxRB3X5SOwCTNDZjIpyDeepC3gOlcY4a2nZ837zyxR089qAFCFuS
+    udp: true
+    servername: chapter.freetrade.link
+    network: tcp
+  - name: "[16754][IT][0][SS][None][V2rayng_Fast][2026-09-19][2026-09-2"
+    type: vless
+    server: 31.76.113.51
+    port: 443
+    uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+    udp: true
+    tls: true
+    servername: it.s3-cloud.xyz
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
+      short-id: 7a3f9e2b1c8d4f6a
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[3000][DE][0][SS][None][Hope_Net][2026-09-17][2026-09-22 02:"
+    type: vless
+    server: 185.219.84.207
+    port: 2096
+    uuid: 43704528-f3cc-4696-faa2-2779f2460cc1
+    udp: true
+    tls: true
+    servername: dash.cloudflare.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Kcn7dLh3iQeiMuJdQwaLoWsQb67El0cfPPKztdKSYHA
+      short-id: d154163159
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[16760][IR][0][SS][None][v2ray_swhil][2024-07-24][2026-09-22"
+    type: vless
+    server: www.zula.ir
+    port: 8080
+    uuid: e017f822-58a9-49ae-882f-5b6a41f049fc
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "telegram-QJoinbedeY@V2riraN?ed=2560"
+      headers:
+        Host: v2riran.ir.www.speedtest.net.www.zula.ir.cloudflare.com.rizzlerlegacy.Ink.
+  - name: "[4973][RU][0][SS][None][proxy_mtm][2026-08-19][2026-09-22 02"
+    type: vless
+    server: 185.147.26.175
+    port: 443
+    uuid: 7d2bac5e-6ff9-45c9-844e-6bfc5a384a42
+    udp: true
+    tls: true
+    servername: yt.orpheous.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
+      short-id: 9e4eced6e98ed4d4
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[7586][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 162.251.61.47
+    port: 805
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "[10230][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 54.199.66.30
+    port: 443
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+  - name: "[16426][HK][0][SS][None][nofiltering2][2026-07-29][2026-09-2"
+    type: vless
+    server: 195.21.129.117
+    port: 2552
+    uuid: d8b42cd5-a149-4356-9e61-000000000000
+    udp: true
+    tls: false
+    network: tcp
+  - name: "[10603][PL][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 217.30.10.18
+    port: 9040
+    cipher: aes-256-cfb
+    password: p9z5BVADH2YFs3MN
+    udp: true
+  - name: "[491][US][0][SS][None][v2ray_swhil][2024-09-20][2026-09-22 0"
+    type: vless
+    server: www.speedtest.net
+    port: 8880
+    uuid: 09376388-01b0-4d6f-9f77-a554196cf511
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/-ViV2ry@V2RIRAN-TEL--@V2RIRAN-TEL--@V2RIRAN-TEL--@V2RIRAN-JOIN-@V2RIRAN-TEL--@V2RIRAN-JOIN-@V2RIRAN-TEL-@V2RIRAN-TEL--@V2RIRAN-JOIN-@V2RIRAN-TEL--@V2RIRAN?ed=8880"
+      headers:
+        Host: www.speedtest.net.B.PeYmOd.CoM.
+  - name: "[15714][US][0][SS][None][vpn_tehran][2026-09-15][2026-09-22 "
+    type: vless
+    server: 104.26.14.85
+    port: 443
+    uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+    udp: true
+    tls: true
+    servername: rubifen.adaspoloandco.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/GOrbEh"
+      headers:
+        Host: rubifen.adaspoloandco.com
+  - name: "[17860][UnResolvedDomains][0][SS][None][WebShecan][2023-07-3"
+    type: vless
+    server: webshecan.webredirect.org
+    port: 2087
+    uuid: ef5a098f-089e-44d4-ae77-9280ed945a1d
+    udp: true
+    tls: true
+    servername: www.speedtest.net
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 2M6UwPCIFyRuf41xzoiHRo_5DUDNBs8lfe-sK3c8-Dw
+      short-id: 53242a95
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[12265][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 23.157.40.87
+    port: 3389
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+    udp: true
+  - name: "[314][NL][0][SS][None][Outline_ir][2026-09-15][2026-09-22 02"
+    type: vless
+    server: 93.152.220.23
+    port: 443
+    uuid: 0480039e-2e85-49e4-9087-ba85e738851a
+    udp: true
+    tls: true
+    servername: nl-3.it-crp.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s
+      short-id: a1b2c3d4b5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[11331][IR][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 188.121.123.28
+    port: 9147
+    cipher: aes-256-gcm
+    password: NTMyOGNjMTI5OTFiOGQwMTg2NDI1YTc0YjhmMDUy
+    udp: true
+  - name: "[10207][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 3.113.7.154
+    port: 443
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+  - name: "[16913][FR][0][SS][None][shh_proxy][2026-09-08][2026-09-22 0"
+    type: vless
+    server: 13.37.73.8
+    port: 22224
+    uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+    udp: true
+    tls: false
+    network: tcp
+  - name: "[11659][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 38.86.135.27
+    port: 7002
+    cipher: aes-256-gcm
+    password: RexnBgU7EV5ADxG
+    udp: true
+  - name: "[4456][CH][0][SS][None][V2range][2026-07-26][2026-09-22 02:0"
+    type: vless
+    server: 45.59.125.228
+    port: 443
+    uuid: 691a9a35-76a6-48ea-9379-4f4f638c2b66
+    udp: true
+    tls: true
+    servername: www.amd.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: BjickB5Lt_-JIEj40uiaI1Sq4aDh1bzhWI1yBY9nbVc
+      short-id: 29fcba01
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: www.amd.com
+      mode: auto
+  - name: "[8184][IE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 20.238.35.153
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: LB2J8MvTt2SBgD6o
+    udp: true
+  - name: "[9315][PL][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 2.59.163.101
+    port: 2222
+    cipher: chacha20-ietf-poly1305
+    password: qscavF5UviIL-8V-E4raBA
+    udp: true
+  - name: "[2859][RU][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: vless
+    server: 84.252.100.49
+    port: 443
+    uuid: 3db8407b-1f96-4b82-bfeb-55258c1e57b4
+    udp: true
+    tls: true
+    servername: flarora.ferreo.sbs
+    reality-opts:
+      public-key: HKKWGVu7xJfscDTH_28WhqSfSnp8fA5jpj7X1eMO-mU
+      short-id: 1067b23f928e7618
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[471][CZ][0][SS][None][Outline_Vpn][2026-09-14][2026-09-22 0"
+    type: vless
+    server: 188.130.208.210
+    port: 443
+    uuid: 08b6dd4b-08df-4aa2-9580-92a3360cf07c
+    udp: true
+    tls: true
+    servername: edge-cz1.lovely.ceo
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: x_sc52Wgwr7bsogvKRA5hHHS5PJpdocqZNW_Up1mty8
+      short-id: 59ab2fc39ec55bc7
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[6886][CN][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 211.91.158.26
+    port: 21126
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    udp: true
+  - name: "[12646][GB][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 172.99.190.87
+    port: 8118
+    cipher: aes-256-gcm
+    password: cdBIDV42DCwnfIN
+    udp: true
+  - name: "[4220][RS][0][SS][None][marambashi][2026-09-08][2026-09-22 0"
+    type: vless
+    server: 81.18.48.97
+    port: 2053
+    uuid: 60e2a548-96aa-4850-a279-1edab743c39b
+    udp: true
+    tls: true
+    servername: finanzfluss.de
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 5_kjhGPcPUiUNJ0Mt4-YoRjphhDz3Hfvx1YCdbBRUA0
+      short-id: 8b71da690c3d5d03
+    network: grpc
+    grpc-opts:
+      grpc-service-name: remnagrpc
+  - name: "[17830][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: vless
+    server: yx.cloudflare.182682.xyz
+    port: 443
+    uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    udp: true
+    tls: true
+    servername: t1s1.rittbo.kdns.fr
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: t1s1.rittbo.kdns.fr
+  - name: "[4836][DE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: vless
+    server: 212.95.34.14
+    port: 443
+    uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+    udp: true
+    tls: true
+    servername: 212.95.34.14
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 212.95.34.14
+    client-fingerprint: chrome
+  - name: "[12020][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 142.202.49.84
+    port: 8008
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+    udp: true
+  - name: "[6638][LT][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 45.87.175.178
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: 4a2rfixophdjffa8KVA4Aa
+    udp: true
+  - name: "[10760][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 89.125.244.241
+    port: 10011
+    cipher: aes-256-gcm
+    password: 9cfaa78d51ac366f
+    udp: true
+  - name: "[14409][US][0][SS][None][hopev2ray][2026-06-02][2026-09-22 0"
+    type: vless
+    server: 198.62.62.18
+    port: 443
+    uuid: ace095c0-debd-46fd-903f-d29b9c8b4101
+    udp: true
+    tls: true
+    servername: collection.linefriends.com.cyylr.eu.cc
+    network: ws
+    ws-opts:
+      path: "/ae-bo"
+      headers:
+        Host: collection.linefriends.com.cyylr.eu.cc
+    client-fingerprint: chrome
+  - name: "[15681][CZ][0][SS][None][ConfigsHUB][2026-09-22][2026-09-22 "
+    type: vless
+    server: germany.ark-cloudservice.ir
+    port: 37356
+    uuid: ce8f5ca7-c2c4-43c4-9186-8cb96257c811
+    udp: true
+    tls: false
+    network: tcp
+  - name: "[9399][CN][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 14.29.124.168
+    port: 24007
+    cipher: aes-128-cfb
+    password: "QazEdcTgb159@$*"
+    udp: true
+  - name: "[3624][SC][0][SS][None][V2range][2026-06-20][2026-09-22 02:0"
+    type: vless
+    server: 45.206.0.44
+    port: 8443
+    uuid: 52faee73-e0fe-4661-992d-67259257170f
+    udp: true
+    tls: true
+    servername: storage.yandex.net
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8
+      short-id: ea10cd5686751ec5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[9089][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 172.233.128.126
+    port: 1866
+    cipher: chacha20-ietf-poly1305
+    password: "oXGp1+ihlfKg826H"
+    udp: true
+  - name: "[14901][UnResolvedDomains][0][SS][None][WebShecan][2023-08-1"
+    type: vless
+    server: webshecan.webredirect.org
+    port: 2087
+    uuid: b8c73c6c-3f19-48d9-9f96-48dbdc42f913
+    udp: true
+    tls: true
+    servername: www.speedtest.net
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 2M6UwPCIFyRuf41xzoiHRo_5DUDNBs8lfe-sK3c8-Dw
+      short-id: 53242a95
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[9324][IE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 94.245.92.85
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: rKE5OchHqTrkamzx
+    udp: true
+  - name: "[201][RU][0][SS][None][vpnx44][2026-09-16][2026-09-22 02:09]"
+    type: vless
+    server: 188.225.57.78
+    port: 443
+    uuid: 01a21e01-6098-4c3b-a6fd-1a04d64d0c7f
+    udp: true
+    tls: true
+    servername: app4.betust.net
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: NCW-zK60GXsiDdlbxww18Pqp4kz3zTG1URHWS_bnfDk
+      short-id: 3f7e0363
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[5549][US][0][SS][None][proxymtprotoir][2026-09-18][2026-09-"
+    type: vless
+    server: openai.com
+    port: 443
+    uuid: 8ccb3a94-9e3c-45d0-a280-850faea6bbff
+    udp: true
+    tls: true
+    servername: fdjl8sdmc774ru70b3a45lv4w8.akbar1sale6.workers.dev
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/vl/EpnESUGGdoM40CHmsDT?ed#TELEGRAM--MARAMBASHI--MARAMBASHI?ed=2560"
+      headers:
+        Host: fdjl8sdmc774ru70b3a45lv4w8.akbar1sale6.workers.dev
+  - name: "[13136][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 38.75.137.9
+    port: 2375
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+    udp: true
+  - name: "[5350][US][0][SS][None][prrofile_purple][2026-06-12][2026-09"
+    type: vless
+    server: mci.connectingissues.ir
+    port: 80
+    uuid: 884d809e-de48-4fa8-ab97-30b080789702
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/?ed=2048"
+      host: shirin-kose.de
+      mode: auto
+  - name: "[6963][NL][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 89.23.103.80
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: 0HFzxilXRfoV
+    udp: true
+  - name: "[13939][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 38.91.102.30
+    port: 6379
+    cipher: aes-256-gcm
+    password: zDNVedRFPQexG9v
+    udp: true
+  - name: "[16578][IT][0][SS][None][oneclickvpnkeys][2026-09-18][2026-0"
+    type: vless
+    server: 82.118.16.187
+    port: 443
+    uuid: dc2259c4-388e-4285-ba18-df619b6672b6
+    udp: true
+    tls: true
+    servername: www.cloudflare.com
+    reality-opts:
+      public-key: R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU
+      short-id: cd6065902eea7a02
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[13933][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 38.75.136.135
+    port: 6379
+    cipher: aes-256-gcm
+    password: zDNVedRFPQexG9v
+    udp: true
+  - name: "[4762][DE][0][SS][None][kingofilter][2026-09-20][2026-09-22 "
+    type: vless
+    server: gsv6.mobileemdad.top
+    port: 443
+    uuid: 75db0073-8a9e-4d88-8a9e-dde7be677f6a
+    udp: true
+    tls: true
+    servername: play-apps-features.googleusercontent.com
+    client-fingerprint: edge
+    reality-opts:
+      public-key: PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ
+      short-id: 070a23aed243
+    network: tcp
+  - name: "[8027][JP][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 5.183.176.96
+    port: 812
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "[4625][LV][0][SS][None][vpn_tehran][2026-09-06][2026-09-22 0"
+    type: vless
+    server: 89.36.161.222
+    port: 2083
+    uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+    udp: true
+    tls: true
+    servername: laoye.in-gect.fun
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: "[7237][AE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 40.172.178.194
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: u17T3BvpYaaiuW2c
+    udp: true
+  - name: "[18624][UnResolvedDomains][0][SS][None][freeconfigv2][2023-0"
+    type: vless
+    server: 116.203.1.14
+    port: 23704
+    uuid: fd7467a4-b290-4590-913f-f53c23bf91b2
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - speedtest.net
+  - name: "[14677][CY][0][SS][None][oneclickvpnkeys][2026-09-21][2026-0"
+    type: vless
+    server: 195.26.229.131
+    port: 443
+    uuid: b2593749-691c-428c-9481-14979cba3446
+    udp: true
+    tls: true
+    servername: xi.tbv.ccwu.cc
+    network: ws
+    ws-opts:
+      path: "/proxyip=us.xiabibi.cf"
+      headers:
+        Host: xi.tbv.ccwu.cc
+    client-fingerprint: chrome
+  - name: "[15477][US][0][SS][None][hopev2ray][2026-09-04][2026-09-22 0"
+    type: vless
+    server: 137.184.218.169
+    port: 36925
+    uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+    udp: true
+    tls: true
+    servername: www.cloudflare.com
+    reality-opts:
+      public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[14735][FI][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: vless
+    server: 213.176.65.115
+    port: 8501
+    uuid: b272917b-d154-423d-cdbe-9627f6099472
+    udp: true
+    tls: false
+    network: tcp
+  - name: "[4830][DE][0][SS][None][v2rayNG_Matsuri][2026-09-14][2026-09"
+    type: vless
+    server: 88.99.125.243
+    port: 15036
+    uuid: 783c7211-5349-4c26-8f8f-85f0f4c93ae8
+    udp: true
+    tls: false
+    network: tcp
+  - name: "[8090][FR][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 95.85.90.181
+    port: 804
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "[2338][MD][0][SS][None][FreakConfig][2026-09-18][2026-09-22 "
+    type: vless
+    server: md1.univesalsrv.com
+    port: 443
+    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+    udp: true
+    tls: true
+    servername: md1.univesalsrv.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY
+      short-id: 221ba6174224ca5b
+    network: grpc
+    grpc-opts:
+      grpc-service-name: hub.v1.RelayService
+  - name: "[8157][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 213.111.142.59
+    port: 8443
+    cipher: chacha20-ietf-poly1305
+    password: K5H7ATShusHhlh7Tbs6ANK
+    udp: true
+  - name: "[413][UnResolvedDomains][0][SS][None][azadi_az_inja_migzare]"
+    type: vless
+    server: qzc6tbpu04c4.dop69.com
+    port: 10962
+    uuid: 06568db5-1a09-4c8f-a595-71984bbd37e2
+    udp: true
+    tls: false
+    network: tcp
+  - name: "[5470][RU][0][SS][None][V2rayng_Fast][2026-09-12][2026-09-22"
+    type: vless
+    server: 147.78.182.3
+    port: 8443
+    uuid: 8bf3e040-8ac9-5d0e-304f-9b735e145de8
+    udp: true
+    tls: true
+    servername: dl.kaspersky.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Nnpwm8dqFl9dlMJmg0M9G11vmgCKzNagFTn4tH4sWy4
+    network: grpc
+    grpc-opts:
+      grpc-service-name: TunService
+  - name: "node 3"
+    type: vmess
+    server: 183.236.51.23
+    port: 54104
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "[15464][FI][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: vless
+    server: 37.27.15.167
+    port: 2089
+    uuid: c95740bb-b3be-44f9-9fa4-260c3fbec6de
+    udp: true
+    tls: true
+    servername: refersion.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: bvEBes1y2n6327dEgJyZTR6Xz_EuyfLdkEX7DxWGFFg
+      short-id: e3c5c005cae07eb8
+    network: tcp
+  - name: "[14971][US][0][SS][None][vless_vmess][2024-11-19][2026-09-22"
+    type: vless
+    server: www.speedtest.net
+    port: 2086
+    uuid: bb7853c3-769e-4680-8dc2-62d959d40367
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2056"
+      headers:
+        Host: sub-89ytdd0zy-rubika.ir.google.com.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--qeiaa57238baaaaaaabaacaaaaaaaaaaaaaaaaaaaaa.apaspeedtest.netrat.com.eu.com.shw814.ir.xn--cr8haaaaaaaaaaaaaaaaa.xn--g28h.EpicMaRket-HtTp.Ir.
+  - name: "[7154][SG][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 5.44.249.42
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    udp: true
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: "(TG @WangCai2)69b8e69:33734"
+  - name: "[12190][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 169.197.142.187
+    port: 5601
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+    udp: true
+  - name: "[17998][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
+    type: vmess
+    server: xcmg19.dtkj0328.com
+    port: 443
+    uuid: bc94f742-0e7b-4cf8-e897-6214f9bec8da
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: xcmg19.dtkj0328.com
+    network: ws
+    ws-opts:
+      path: "/xcmg1234"
+      headers:
+        Host: xcmg19.dtkj0328.com
+    client-fingerprint: chrome
+  - name: "[475][DE][0][SS][None][rxv2ray][2025-10-18][2026-09-22 02:09"
+    type: vless
+    server: 3.75.85.54
+    port: 25670
+    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
+    udp: true
+    tls: false
+    network: tcp
+  - name: "[10698][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 156.251.179.238
+    port: 443
+    cipher: aes-256-gcm
+    password: 25ec467c78cb
+    udp: true
+  - name: "[6698][UnResolvedDomains][0][SS][None][ext_raw.githubusercon"
+    type: ss
+    server: ddns.olucloud.subapi.cc
+    port: 20009
+    cipher: chacha20-ietf-poly1305
+    password: 6f932057-ffd9-4426-8ca7-f0654babf84f
+    udp: true
+  - name: "[11250][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 38.91.102.30
+    port: 8000
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+    udp: true
+  - name: "[2758][US][0][SS][None][kiava][2025-03-27][2026-09-22 02:09]"
+    type: vless
+    server: 44.198.189.24
+    port: 443
+    uuid: 38fe5e89-dee3-45ca-9e6e-6c24dd0f2b05
+    udp: true
+    tls: true
+    servername: api.cloudflare.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: cS_8Hh2EoGNJnscn64EOp7_zRg8oXI99D4gdaaMNryQ
+      short-id: d237
+    network: xhttp
+    xhttp-opts:
+      path: "/client"
+      host: api.cloudflare.com
+      mode: stream-up
+  - name: "[15802][SE][0][SS][None][Hope_Net][2026-09-17][2026-09-22 02"
+    type: vless
+    server: 185.146.173.43
+    port: 2095
+    uuid: cfb6d9ad-7a14-4061-b159-8902fd73bb57
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/DIGIV2RAY--DigiV2ray--digiv2ray--DIGIV2RAY--DigiV2ray--digiv2ray--DigiV2ray--DigiV2ray?ed=1024"
+      headers:
+        Host: DigiV2ray---_-_---DIGIq.radioTehran.org.
+  - name: "[2161][MD][0][SS][None][Outline_ir][2026-09-13][2026-09-22 0"
+    type: vless
+    server: 89.35.14.30
+    port: 443
+    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+    udp: true
+    tls: true
+    servername: md1.univesalsrv.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY
+      short-id: 221ba6174224ca5b
+    network: grpc
+    grpc-opts:
+      grpc-service-name: hub.v1.RelayService
+  - name: "[17278][UnResolvedDomains][0][SS][None][freeconfigv2][2023-1"
+    type: vless
+    server: 77.91.84.45
+    port: 22
+    uuid: e4e984ec-a215-4699-823d-3af9cbada9a1
+    udp: true
+    tls: true
+    servername: discord.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: q3BupBwfNY-D8ngvV6nIDNp7dwEP_oy19DiBqEDGFHc
+      short-id: ba3c725928dda448
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[8890][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 82.38.31.190
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+    udp: true
+  - name: "[16758][NL][0][SS][None][marambashi][2026-09-09][2026-09-22 "
+    type: vless
+    server: 45.82.67.183
+    port: 443
+    uuid: dfc220d1-0b3a-44a2-99e3-8075bcae3b68
+    udp: true
+    tls: true
+    servername: northwaleswildlifetrust.org.uk
+    client-fingerprint: random
+    reality-opts:
+      public-key: daiJkQwpAcBk7oH1iZzRthMj-jAlqovX7vAiwVqfjTU
+      short-id: 8880a9f75eb46d91
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[2833][UnResolvedDomains][0][SS][None][freeconfigv2][2023-11"
+    type: vless
+    server: 190.93.246.241
+    port: 443
+    uuid: 3c671527-9db6-4552-91af-cb7b6d95a7e0
+    udp: true
+    tls: true
+    servername: configforV2rayng.vpncustomize.Website
+    client-fingerprint: chrome
+    alpn:
+      - h2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "@VPNCUSTOMIZE"
+  - name: "[16951][GB][0][SS][None][PrivateVPNs][2026-09-16][2026-09-22"
+    type: vless
+    server: 13.41.173.87
+    port: 22222
+    uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+    udp: true
+    tls: false
+    network: tcp
+  - name: "node 4"
+    type: vmess
+    server: twriyfjhhhh1.hfhfb.homes
+    port: 80
+    uuid: 2744bc46-8b19-40a5-9733-5bc819fa9553
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed"
+      headers:
+        Host: app.dingtalk.com
+  - name: "[15153][KR][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 220.124.181.77
+    port: 18081
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    udp: true
+  - name: "[7637][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 185.160.24.217
+    port: 803
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "[5109][UnResolvedDomains][0][SS][None][ext_raw.githubusercon"
+    type: vless
+    server: mci.dl101movis.ir
+    port: 80
+    uuid: 816fae3f-8cac-4ef6-8d8c-461a0c896f2c
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/GaMeOpTiMiZeR?ed=2048"
+      host: sudo2014.ir
+      mode: auto
+  - name: "[9466][CN][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 14.29.124.168
+    port: 25286
+    cipher: aes-128-cfb
+    password: "QazEdcTgb159@$*"
+    udp: true
+  - name: "[17999][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
+    type: vmess
+    server: xcf036.facai2024.com
+    port: 443
+    uuid: 96c585de-c7e4-41cb-a232-9aba535ea9ac
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: xcf036.facai2024.com
+    network: ws
+    ws-opts:
+      path: "/96c585de"
+      headers:
+        Host: xcf036.facai2024.com
+    client-fingerprint: chrome
+  - name: "[10375][PL][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 217.30.10.18
+    port: 9084
+    cipher: aes-256-cfb
+    password: c3NtHJ5ujV2tGDfj
+    udp: true
+  - name: "[17839][UnResolvedDomains][0][SS][None][Capital_NET][2023-08"
+    type: vless
+    server: 49.12.240.34
+    port: 2096
+    uuid: eefcf749-fcfc-4321-b974-2828d4acb15c
+    udp: true
+    tls: true
+    servername: spiegel.de
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: GWLTRxw3B1iy29ZW4SqQH113-Gjup6-4vkOMksfEHB0
+      short-id: 0d8de1aa
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[10080][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 3.112.193.151
+    port: 443
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+  - name: "[13253][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 167.88.63.79
+    port: 5004
+    cipher: aes-256-gcm
+    password: g5MeD6Ft3CWlJId
+    udp: true
+  - name: "[14036][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: vless
+    server: 104.18.205.33
+    port: 443
+    uuid: a1650c69-531c-441f-bc6a-bd43565000a4
+    udp: true
+    tls: true
+    servername: rayan-fg-2.hasan-kachal.filegear-sg.me
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: rayan-fg-2.hasan-kachal.filegear-sg.me
+  - name: "[17384][FR][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: vless
+    server: 162.19.10.99
+    port: 443
+    uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+    udp: true
+    tls: true
+    servername: nasnet-162191099-direct.mbghalibaf.com
+    client-fingerprint: chrome
+    alpn:
+      - h2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[2968][FI][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: vless
+    server: 94.237.28.145
+    port: 28392
+    uuid: 427954ab-e6bd-4758-8793-7b129699068e
+    udp: true
+    tls: true
+    servername: yelp.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Pq_a-rDvNROjMaNtA7v2tSSsfPR8KspHwKfu2tEv_F8
+      short-id: cf34f84f37
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[4395][FR][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: vless
+    server: 62.60.157.101
+    port: 443
+    uuid: 66ac188b-bd8d-4218-b9ba-0bad0e152cd0
+    udp: true
+    tls: true
+    servername: fra-04.hello-there.ru
+    network: xhttp
+    xhttp-opts:
+      path: "/xh"
+      host: fra-04.hello-there.ru
+      mode: auto
+    client-fingerprint: chrome
+  - name: "[17475][DE][0][SS][None][proxy_mtm][2026-09-20][2026-09-22 0"
+    type: vless
+    server: 138.201.197.177
+    port: 2053
+    uuid: eabbd582-81d9-4b83-a185-fca6520a82e8
+    udp: true
+    tls: true
+    servername: prod.pl-node-01.security-sbrf.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: AGBGqJhEjDhDRaBqlUNtkiTAnga2TS8X1pxG34FDSTE
+      short-id: 7a9197ae1d5f
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[4527][US][0][SS][None][Lockey_vpn][2024-10-25][2026-09-22 0"
+    type: vless
+    server: tufts.edu
+    port: 443
+    uuid: 6c25ba82-a67f-4bdb-a235-6f5e3190e44a
+    udp: true
+    tls: true
+    servername: tufts.edu
+    client-fingerprint: chrome
+    alpn:
+      - h3
+    network: ws
+    ws-opts:
+      path: "/@LOCKEY_VPN-@LOCKEY_VPN-@LOCKEY_VPN-@LOCKEY_VPN-@LOCKEY_VPN-@LOCKEY_VPN-@LOCKEY_VPN-@LOCKEY_VPN-@LOCKEY_VPN-@LOCKEY_VPN-@LOCKEY_VPN-@LOCKEY_VPN-@LOCKEY_VPN-@LOCKEY_VPN-@LOCKEY_VPN??ed=2560"
+      headers:
+        Host: Lockey-VPN.com.tr
+  - name: "[788][NL][0][SS][None][flyv2ray][2026-09-15][2026-09-22 02:0"
+    type: vless
+    server: 31.56.184.132
+    port: 8443
+    uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
+    udp: true
+    tls: true
+    servername: cloudflare.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: bzbe7QdD633ew_Er1_YWEhuCEHWurmDpxpz3fRzXr0A
+      short-id: b4e3b0b55b8dc75b
+    network: grpc
+    grpc-opts:
+      grpc-service-name: shiforgrpc
+  - name: "[691][UnResolvedDomains][0][SS][None][freeconfigv2][2023-09-"
+    type: vless
+    server: 188.114.97.7
+    port: 2096
+    uuid: 0f8e66fc-ca6e-427b-bd20-93705ada9c4e
+    udp: true
+    tls: true
+    servername: V2ray-Napsternet-Irancell-Iran-mkh.varzesh3-cdn.site
+    alpn:
+      - h2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "@VPNCUSTOMIZE"
+    client-fingerprint: chrome
+  - name: "[9236][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 82.38.31.7
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+    udp: true
+  - name: "[7337][SE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 151.236.206.42
+    port: 39649
+    cipher: chacha20-ietf-poly1305
+    password: zCbrIk12Qlg9YcERdnzjoh
+    udp: true
+  - name: "[10578][GB][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 62.100.205.48
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+  - name: "[16208][US][0][SS][None][free1_vpn][2026-09-20][2026-09-22 0"
+    type: vless
+    server: b2n.ir
+    port: 443
+    uuid: d5af4dfe-eaf1-460c-87aa-fefe930db0ba
+    udp: true
+    tls: true
+    servername: chopin.paxr.ir
+    network: xhttp
+    xhttp-opts:
+      path: "/ChOpIn"
+      host: chopin.paxr.ir
+      mode: auto
+    client-fingerprint: chrome
+  - name: "[13887][DE][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 145.239.1.100
+    port: 6379
+    cipher: aes-256-gcm
+    password: zDNVedRFPQexG9v
+    udp: true
+  - name: "[5320][US][0][SS][None][prrofile_purple][2026-07-14][2026-09"
+    type: vless
+    server: 199.232.9.94
+    port: 443
+    uuid: 86fdb625-1a7f-4784-99a6-a96b3a80fc6d
+    udp: true
+    tls: true
+    servername: speedtest.net
+    client-fingerprint: chrome
+    alpn:
+      - h2
+    network: ws
+    ws-opts:
+      path: "/vip1#TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512"
+      headers:
+        Host: hamshahriesfahan.com
+  - name: "[12815][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 169.197.141.14
+    port: 9101
+    cipher: aes-256-gcm
+    password: e4FCWrgpkji3QY
+    udp: true
+  - name: "[717][US][0][SS][None][v2ray_swhil][2024-07-18][2026-09-22 0"
+    type: vless
+    server: 172.66.44.55
+    port: 443
+    uuid: 104380d8-f859-421a-bd11-29b2c9fbfa99
+    udp: true
+    tls: true
+    servername: famil-5c8.pages.dev
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: famil-5c8.pages.dev
+  - name: "[2609][UnResolvedDomains][0][SS][None][ext_raw.githubusercon"
+    type: vless
+    server: fast-01.saitsazs.ir
+    port: 80
+    uuid: 34a4cfb4-8b42-42ba-b087-6a338c2b3b4a
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/path"
+      host: Demon02.global.ssl.fastly.net
+      mode: auto
+  - name: "[17308][US][0][SS][None][v2rayNG_Matsuri][2026-09-22][2026-0"
+    type: vless
+    server: 172.64.150.28
+    port: 2082
+    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/fp"
+      headers:
+        Host: hhlfy.twiladaphne.ndjp.net
+  - name: "[13602][IT][0][SS][None][vpn_tehran][2026-09-06][2026-09-22 "
+    type: ss
+    server: 57.131.48.45
+    port: 8388
+    cipher: aes-256-gcm
+    password: "itzvpn@321"
+    udp: true
+  - name: "[14640][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: vless
+    server: Speedtest.net
+    port: 80
+    uuid: b1f58d90-e65f-4566-91f3-1b96e9a68610
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/@Digiv2ray--@Digiv2ray--@Digiv2ray--@Digiv2ray--@Digiv2ray--@Digiv2ray--@Digiv2ray--@Digiv2ray--@Digiv2ray--?ed=2048"
+      headers:
+        Host: JoiIInNn--DIgiv2Ray.Ir.
+  - name: "[1509][UnResolvedDomains][0][SS][None][freeconfigv2][2023-10"
+    type: vless
+    server: 77.91.84.236
+    port: 10284
+    uuid: 21fd5aa3-1c7b-431a-9208-685db303ad0a
+    udp: true
+    tls: true
+    servername: www.speedtest.net
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: AgSejYPfLAjLQnBZa-ZVkY4UpzbNM_3OV2F_HxaDwHI
+      short-id: "53"
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - www.speedtest.net
+  - name: "[2648][NL][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: vless
+    server: dey.lnmarketplace.net
+    port: 443
+    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+    udp: true
+    tls: true
+    servername: dey.lnmarketplace.net
+    client-fingerprint: firefox
+    alpn:
+      - h2
+    network: xhttp
+    xhttp-opts:
+      path: "/kavir"
+      host: dey.lnmarketplace.net
+      mode: stream-one
+  - name: "[617][PL][0][SS][None][marambashi][2026-09-14][2026-09-22 02"
+    type: vless
+    server: 185.32.6.61
+    port: 443
+    uuid: 0ce122a3-1c91-4cf5-a2cc-67f25e8cb56f
+    udp: true
+    tls: true
+    servername: dropbox.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: xy8AHr_xZCNqFOuLq_t2fe4oLlrv5iu38uCQ1hUJ40w
+      short-id: 954c99065465428d
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[4083][DE][0][SS][None][marambashi][2026-09-13][2026-09-22 0"
+    type: vless
+    server: 213.176.77.138
+    port: 443
+    uuid: 5e666f1f-a7a4-4495-a220-98b5e588cf3b
+    udp: true
+    tls: true
+    servername: de1.boutique-hotel1108.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 5yLzbmk8NAd12p-0Uu5WI7PjSLFbNScOZ5SmMWQ6txQ
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "[17343][US][0][SS][None][FreakConfig][2026-09-21][2026-09-22"
+    type: vless
+    server: 151.101.1.194
+    port: 80
+    uuid: e732cb07-4a31-49d3-9122-61dc1f68334e
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: simorghfr.global.ssl.fastly.net
+  - name: "[7071][IE][0][SS][None][mehrosaboran][2026-08-25][2026-09-22"
+    type: ss
+    server: 20.234.20.89
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: 2OPuSlR6h3ZHql3h
+    udp: true
+  - name: "[9968][VN][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 103.186.155.20
+    port: 38388
+    cipher: aes-256-cfb
+    password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    udp: true
+  - name: "[7863][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: 78.129.253.9
+    port: 808
+    cipher: chacha20-ietf-poly1305
+    password: "G!yBwPWH3Vao"
+    udp: true
+  - name: "[15733][US][0][SS][None][vpn_tehran][2026-09-06][2026-09-22 "
+    type: vless
+    server: 172.67.172.95
+    port: 443
+    uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+    udp: true
+    tls: true
+    servername: rubifen.adaspoloandco.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/GOrbEh"
+      headers:
+        Host: rubifen.adaspoloandco.com
+  - name: "[10053][FR][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 13.39.233.161
+    port: 443
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+  - name: "[11036][FR][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 54.38.72.170
+    port: 7306
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+    udp: true
+  - name: "[13166][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 69.50.95.152
+    port: 2375
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+    udp: true
+  - name: "[13214][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+    type: ss
+    server: 142.202.48.99
+    port: 5003
+    cipher: aes-256-gcm
+    password: g5MeD6Ft3CWlJId
+    udp: true
+  - name: "[9274][NL][0][SS][None][ext_raw.githubusercontent.com][2026-"
+    type: ss
+    server: h110vpnnl.outlinekeys.net
+    port: 52571
+    cipher: chacha20-ietf-poly1305
+    password: pbgRj4FVTuYsKy4pBmarqw
+    udp: true
+  - name: "[5730][US][0][SS][None][v2ray1_ng][2026-09-16][2026-09-22 02"
+    type: vless
+    server: 66.33.22.232
+    port: 10059
+    uuid: 923cc66b-d455-4592-8eb6-2c2b4076ed10
+    udp: true
+    tls: true
+    servername: learn.mapsplatform.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: U-KzX8JE4cjqLLhJUpYZnruUW9nO15bT6fZhNpYzbTs
+      short-id: 065016ff29ac
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: learn.mapsplatform.google.com
+      mode: auto
+  - name: "[3358][US][0][SS][None][kiava][2025-02-01][2026-09-22 02:09]"
+    type: vless
+    server: 98.82.19.157
+    port: 443
+    uuid: 497938d1-5383-4b7e-b276-07e62387360d
+    udp: true
+    tls: true
+    servername: api.cloudflare.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: juzywey621hi-9050fwF9aN6KfYkO9ICP7L41vRDiiI
+      short-id: 9d19629262
+    network: xhttp
+    xhttp-opts:
+      path: "/client"
+      host: api.cloudflare.com
+      mode: auto
+  - name: "[166][UnResolvedDomains][0][SS][None][freeconfigv2][2023-09-"
+    type: vless
+    server: 5.75.240.193
+    port: 443
+    uuid: 00a8f2d4-d565-4d8d-89b3-5c20c1a615d0
+    udp: true
+    tls: true
+    servername: www.iranserver.com
+    client-fingerprint: random
+    reality-opts:
+      public-key: qrWdM7lRUSiZgZW-sohUHuZVimTyjdGXejTnMUu_kWs
+      short-id: 4c226372
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "@VPNCUSTOMIZE"
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "♻️ 自动选择"
+      - DIRECT
+      - "[15523][US][0][SS][None][v2ray1_ng][2026-09-15][2026-09-22 0"
+      - "[8163][CA][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[11372][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[11304][US][0][SS][None][Outline_Vpn][2026-08-26][2026-09-22"
+      - "[12274][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[12135][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[16344][US][0][SS][None][v2rayNG_Matsuri][2026-09-14][2026-0"
+      - "[8750][UA][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[3418][UnResolvedDomains][0][SS][None][ext_raw.githubusercon"
+      - "[10950][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[12802][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[17821][US][0][SS][None][prrofile_purple][2026-07-13][2026-0"
+      - "[8638][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[15566][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[17687][US][0][SS][None][v2rayngvp][2025-07-29][2026-09-22 0"
+      - "[3810][DE][0][SS][None][V2rayng_Fast][2026-09-19][2026-09-22"
+      - "[7688][CA][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[2267][BG][0][SS][None][v2rayNG_Matsuri][2026-09-08][2026-09"
+      - "[3083][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[2026][RS][0][SS][None][V2rayng_Fast][2026-09-10][2026-09-22"
+      - "[8614][DE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[15886][CN][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[17038][FR][0][SS][None][VlessConfig][2026-09-11][2026-09-22"
+      - "[11713][NL][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[3920][DE][0][SS][None][oneclickvpnkeys][2026-09-17][2026-09"
+      - "[17890][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[1193][IR][0][SS][None][v2ray_swhil][2024-07-28][2026-09-22 "
+      - "[15231][US][0][SS][None][fnet00][2026-01-21][2026-09-22 02:0"
+      - "[7509][CA][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[10918][GB][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[5260][CA][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[920][DE][0][SS][None][FreakConfig][2026-09-21][2026-09-22 0"
+      - "[16274][DE][0][SS][None][vpnx44][2026-09-21][2026-09-22 02:0"
+      - "[12828][GB][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[7141][IR][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[10444][PT][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[5540][UnResolvedDomains][0][SS][None][freeconfigv2][2023-09"
+      - "[11094][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[3799][US][0][SS][None][Lockey_vpn][2025-02-18][2026-09-22 0"
+      - "[6080][BG][0][SS][None][oneclickvpnkeys][2026-09-20][2026-09"
+      - "[5798][US][0][SS][None][V2rayng_Fast][2026-09-21][2026-09-22"
+      - "[10265][JP][0][SS][None][VPNGate_Config][2023-09-30][2026-09"
+      - "[3001][UnResolvedDomains][0][SS][None][ext_raw.githubusercon"
+      - "[5455][US][0][SS][None][Lockey_vpn][2024-05-02][2026-09-22 0"
+      - "[14037][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[5969][US][0][SS][None][prrofile_purple][2026-09-05][2026-09"
+      - "[15128][ES][0][SS][None][marambashi][2026-09-12][2026-09-22 "
+      - "[4646][UnResolvedDomains][0][SS][None][freeconfigv2][2023-09"
+      - "[16503][DE][0][SS][None][oneclickvpnkeys][2026-09-21][2026-0"
+      - "[2704][UnResolvedDomains][0][SS][None][Capital_NET][2023-09-"
+      - "[16643][US][0][SS][None][proxymtprotoir][2026-09-21][2026-09"
+      - "[3181][US][0][SS][None][marambashi][2026-09-18][2026-09-22 0"
+      - "[11245][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[11990][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[14717][US][0][SS][None][oneclickvpnkeys][2026-09-20][2026-0"
+      - "[9993][BG][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[14133][US][0][SS][None][prrofile_purple][2026-06-06][2026-0"
+      - "[14053][PL][0][SS][None][marambashi][2026-09-14][2026-09-22 "
+      - "[17905][UnResolvedDomains][0][SS][None][mftizi][2024-12-08]["
+      - "[16073][US][0][SS][None][ConfigsHUB][2026-09-21][2026-09-22 "
+      - "[13946][CA][0][SS][None][vpn_tehran][2026-09-20][2026-09-22 "
+      - "[9578][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[12456][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[12993][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[7420][BH][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[17567][RU][0][SS][None][marambashi][2026-09-13][2026-09-22 "
+      - "[7016][LT][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[2429][RS][0][SS][None][FreakConfig][2026-09-18][2026-09-22 "
+      - "[13454][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[10891][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[8120][ES][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[14603][UnResolvedDomains][0][SS][None][bypass_filter][2023-"
+      - "[10033][SG][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[16807][US][0][SS][None][CUSTOMVPNSERVER][2026-01-22][2026-0"
+      - "[3111][US][0][SS][None][free1_vpn][2026-09-17][2026-09-22 02"
+      - "[7423][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[4819][TR][0][SS][None][oneclickvpnkeys][2026-09-19][2026-09"
+      - "[14581][SA][0][SS][None][VmessProtocol][2026-09-21][2026-09-"
+      - "[17740][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[8713][NL][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[18302][UnResolvedDomains][0][SS][None][Configforvpn01][2023"
+      - "[12826][GB][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[8117][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[11143][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[10689][RU][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[13359][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[15507][IR][0][SS][None][CUSTOMVPNSERVER][2025-07-25][2026-0"
+      - "[16628][US][0][SS][None][oneclickvpnkeys][2026-09-20][2026-0"
+      - "[6261][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[16336][US][0][SS][None][mehrosaboran][2026-09-14][2026-09-2"
+      - "[16074][DE][0][SS][None][oneclickvpnkeys][2026-09-20][2026-0"
+      - "[14118][UnResolvedDomains][0][SS][None][FalconPolV2rayNG][20"
+      - "[17933][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
+      - "[15274][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
+      - "[3226][US][0][SS][None][daredevill_404][2026-01-28][2026-09-"
+      - "[3909][DE][0][SS][None][v2rayNG_Matsuri][2026-09-16][2026-09"
+      - "[17400][UnResolvedDomains][0][SS][None][iTV2RAY][2023-07-24]"
+      - "[15061][UnResolvedDomains][0][SS][None][Capoit][2026-09-12]["
+      - "[18123][US][0][SS][None][vpn_tehran][2026-09-15][2026-09-22 "
+      - "[11758][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[2448][US][0][SS][None][prrofile_purple][2026-06-15][2026-09"
+      - "[7715][SG][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[16727][LT][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - node
+      - "[18386][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
+      - "[17446][IR][0][SS][None][DarkVPNpro][2026-04-16][2026-09-22 "
+      - "[9020][UnResolvedDomains][0][SS][None][v2ray_swhil][2024-11-"
+      - "[7342][FR][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[15416][US][0][SS][None][free1_vpn][2026-09-17][2026-09-22 0"
+      - "[16808][US][0][SS][None][Outline_Vpn][2026-07-13][2026-09-22"
+      - "node 2"
+      - "[7677][CA][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[5163][DE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[17977][US][0][SS][None][Hope_Net][2026-09-18][2026-09-22 02"
+      - "[14316][DE][0][SS][None][v2rayNG_Matsuri][2026-09-20][2026-0"
+      - "[13283][GB][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[11505][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[10467][BE][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[11256][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[18269][TR][0][SS][None][marambashi][2026-09-12][2026-09-22 "
+      - "[6072][ES][0][SS][None][oneclickvpnkeys][2026-09-17][2026-09"
+      - "[11438][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[3098][US][0][SS][None][proxy_mtm][2026-09-19][2026-09-22 02"
+      - "[11107][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[2360][MD][0][SS][None][v2ray1_ng][2026-09-09][2026-09-22 02"
+      - "[13928][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[13101][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[13070][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[1536][IN][0][SS][None][v2rayNG_Matsuri][2026-09-11][2026-09"
+      - "[7611][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[1589][US][0][SS][None][DarkVPNpro][2024-11-15][2026-09-22 0"
+      - "[7107][PL][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[15688][US][0][SS][None][vpn_tehran][2026-08-31][2026-09-22 "
+      - "[7315][MD][0][SS][None][free4allVPN][2025-12-06][2026-09-22 "
+      - "[4706][UnResolvedDomains][0][SS][None][Capital_NET][2023-08-"
+      - "[14960][DE][0][SS][None][v2rayNG_Matsuri][2026-09-17][2026-0"
+      - "[14657][UnResolvedDomains][0][SS][None][Configforvpn01][2023"
+      - "[7067][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[8767][SI][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[18218][DE][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[5157][US][0][SS][None][ShadowProxy66][2026-09-21][2026-09-2"
+      - "[11403][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[5240][AT][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[17619][RU][0][SS][None][v2rayNG_Matsuri][2026-09-15][2026-0"
+      - "[1680][NL][0][SS][None][marambashi][2026-09-13][2026-09-22 0"
+      - "[17903][UnResolvedDomains][0][SS][None][mftizi][2024-09-07]["
+      - "[16754][IT][0][SS][None][V2rayng_Fast][2026-09-19][2026-09-2"
+      - "[3000][DE][0][SS][None][Hope_Net][2026-09-17][2026-09-22 02:"
+      - "[16760][IR][0][SS][None][v2ray_swhil][2024-07-24][2026-09-22"
+      - "[4973][RU][0][SS][None][proxy_mtm][2026-08-19][2026-09-22 02"
+      - "[7586][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[10230][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[16426][HK][0][SS][None][nofiltering2][2026-07-29][2026-09-2"
+      - "[10603][PL][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[491][US][0][SS][None][v2ray_swhil][2024-09-20][2026-09-22 0"
+      - "[15714][US][0][SS][None][vpn_tehran][2026-09-15][2026-09-22 "
+      - "[17860][UnResolvedDomains][0][SS][None][WebShecan][2023-07-3"
+      - "[12265][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[314][NL][0][SS][None][Outline_ir][2026-09-15][2026-09-22 02"
+      - "[11331][IR][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[10207][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[16913][FR][0][SS][None][shh_proxy][2026-09-08][2026-09-22 0"
+      - "[11659][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[4456][CH][0][SS][None][V2range][2026-07-26][2026-09-22 02:0"
+      - "[8184][IE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[9315][PL][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[2859][RU][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[471][CZ][0][SS][None][Outline_Vpn][2026-09-14][2026-09-22 0"
+      - "[6886][CN][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[12646][GB][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[4220][RS][0][SS][None][marambashi][2026-09-08][2026-09-22 0"
+      - "[17830][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[4836][DE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[12020][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[6638][LT][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[10760][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[14409][US][0][SS][None][hopev2ray][2026-06-02][2026-09-22 0"
+      - "[15681][CZ][0][SS][None][ConfigsHUB][2026-09-22][2026-09-22 "
+      - "[9399][CN][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[3624][SC][0][SS][None][V2range][2026-06-20][2026-09-22 02:0"
+      - "[9089][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[14901][UnResolvedDomains][0][SS][None][WebShecan][2023-08-1"
+      - "[9324][IE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[201][RU][0][SS][None][vpnx44][2026-09-16][2026-09-22 02:09]"
+      - "[5549][US][0][SS][None][proxymtprotoir][2026-09-18][2026-09-"
+      - "[13136][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[5350][US][0][SS][None][prrofile_purple][2026-06-12][2026-09"
+      - "[6963][NL][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[13939][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[16578][IT][0][SS][None][oneclickvpnkeys][2026-09-18][2026-0"
+      - "[13933][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[4762][DE][0][SS][None][kingofilter][2026-09-20][2026-09-22 "
+      - "[8027][JP][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[4625][LV][0][SS][None][vpn_tehran][2026-09-06][2026-09-22 0"
+      - "[7237][AE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[18624][UnResolvedDomains][0][SS][None][freeconfigv2][2023-0"
+      - "[14677][CY][0][SS][None][oneclickvpnkeys][2026-09-21][2026-0"
+      - "[15477][US][0][SS][None][hopev2ray][2026-09-04][2026-09-22 0"
+      - "[14735][FI][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[4830][DE][0][SS][None][v2rayNG_Matsuri][2026-09-14][2026-09"
+      - "[8090][FR][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[2338][MD][0][SS][None][FreakConfig][2026-09-18][2026-09-22 "
+      - "[8157][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[413][UnResolvedDomains][0][SS][None][azadi_az_inja_migzare]"
+      - "[5470][RU][0][SS][None][V2rayng_Fast][2026-09-12][2026-09-22"
+      - "node 3"
+      - "[15464][FI][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[14971][US][0][SS][None][vless_vmess][2024-11-19][2026-09-22"
+      - "[7154][SG][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[12190][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[17998][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
+      - "[475][DE][0][SS][None][rxv2ray][2025-10-18][2026-09-22 02:09"
+      - "[10698][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[6698][UnResolvedDomains][0][SS][None][ext_raw.githubusercon"
+      - "[11250][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[2758][US][0][SS][None][kiava][2025-03-27][2026-09-22 02:09]"
+      - "[15802][SE][0][SS][None][Hope_Net][2026-09-17][2026-09-22 02"
+      - "[2161][MD][0][SS][None][Outline_ir][2026-09-13][2026-09-22 0"
+      - "[17278][UnResolvedDomains][0][SS][None][freeconfigv2][2023-1"
+      - "[8890][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[16758][NL][0][SS][None][marambashi][2026-09-09][2026-09-22 "
+      - "[2833][UnResolvedDomains][0][SS][None][freeconfigv2][2023-11"
+      - "[16951][GB][0][SS][None][PrivateVPNs][2026-09-16][2026-09-22"
+      - "node 4"
+      - "[15153][KR][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[7637][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[5109][UnResolvedDomains][0][SS][None][ext_raw.githubusercon"
+      - "[9466][CN][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[17999][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
+      - "[10375][PL][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[17839][UnResolvedDomains][0][SS][None][Capital_NET][2023-08"
+      - "[10080][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[13253][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[14036][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[17384][FR][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[2968][FI][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[4395][FR][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[17475][DE][0][SS][None][proxy_mtm][2026-09-20][2026-09-22 0"
+      - "[4527][US][0][SS][None][Lockey_vpn][2024-10-25][2026-09-22 0"
+      - "[788][NL][0][SS][None][flyv2ray][2026-09-15][2026-09-22 02:0"
+      - "[691][UnResolvedDomains][0][SS][None][freeconfigv2][2023-09-"
+      - "[9236][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[7337][SE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[10578][GB][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[16208][US][0][SS][None][free1_vpn][2026-09-20][2026-09-22 0"
+      - "[13887][DE][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[5320][US][0][SS][None][prrofile_purple][2026-07-14][2026-09"
+      - "[12815][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[717][US][0][SS][None][v2ray_swhil][2024-07-18][2026-09-22 0"
+      - "[2609][UnResolvedDomains][0][SS][None][ext_raw.githubusercon"
+      - "[17308][US][0][SS][None][v2rayNG_Matsuri][2026-09-22][2026-0"
+      - "[13602][IT][0][SS][None][vpn_tehran][2026-09-06][2026-09-22 "
+      - "[14640][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[1509][UnResolvedDomains][0][SS][None][freeconfigv2][2023-10"
+      - "[2648][NL][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[617][PL][0][SS][None][marambashi][2026-09-14][2026-09-22 02"
+      - "[4083][DE][0][SS][None][marambashi][2026-09-13][2026-09-22 0"
+      - "[17343][US][0][SS][None][FreakConfig][2026-09-21][2026-09-22"
+      - "[7071][IE][0][SS][None][mehrosaboran][2026-08-25][2026-09-22"
+      - "[9968][VN][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[7863][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[15733][US][0][SS][None][vpn_tehran][2026-09-06][2026-09-22 "
+      - "[10053][FR][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[11036][FR][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[13166][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[13214][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[9274][NL][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[5730][US][0][SS][None][v2ray1_ng][2026-09-16][2026-09-22 02"
+      - "[3358][US][0][SS][None][kiava][2025-02-01][2026-09-22 02:09]"
+      - "[166][UnResolvedDomains][0][SS][None][freeconfigv2][2023-09-"
+  - name: "♻️ 自动选择"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "[15523][US][0][SS][None][v2ray1_ng][2026-09-15][2026-09-22 0"
+      - "[8163][CA][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[11372][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[11304][US][0][SS][None][Outline_Vpn][2026-08-26][2026-09-22"
+      - "[12274][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[12135][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[16344][US][0][SS][None][v2rayNG_Matsuri][2026-09-14][2026-0"
+      - "[8750][UA][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[3418][UnResolvedDomains][0][SS][None][ext_raw.githubusercon"
+      - "[10950][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[12802][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[17821][US][0][SS][None][prrofile_purple][2026-07-13][2026-0"
+      - "[8638][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[15566][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[17687][US][0][SS][None][v2rayngvp][2025-07-29][2026-09-22 0"
+      - "[3810][DE][0][SS][None][V2rayng_Fast][2026-09-19][2026-09-22"
+      - "[7688][CA][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[2267][BG][0][SS][None][v2rayNG_Matsuri][2026-09-08][2026-09"
+      - "[3083][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[2026][RS][0][SS][None][V2rayng_Fast][2026-09-10][2026-09-22"
+      - "[8614][DE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[15886][CN][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[17038][FR][0][SS][None][VlessConfig][2026-09-11][2026-09-22"
+      - "[11713][NL][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[3920][DE][0][SS][None][oneclickvpnkeys][2026-09-17][2026-09"
+      - "[17890][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[1193][IR][0][SS][None][v2ray_swhil][2024-07-28][2026-09-22 "
+      - "[15231][US][0][SS][None][fnet00][2026-01-21][2026-09-22 02:0"
+      - "[7509][CA][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[10918][GB][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[5260][CA][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[920][DE][0][SS][None][FreakConfig][2026-09-21][2026-09-22 0"
+      - "[16274][DE][0][SS][None][vpnx44][2026-09-21][2026-09-22 02:0"
+      - "[12828][GB][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[7141][IR][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[10444][PT][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[5540][UnResolvedDomains][0][SS][None][freeconfigv2][2023-09"
+      - "[11094][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[3799][US][0][SS][None][Lockey_vpn][2025-02-18][2026-09-22 0"
+      - "[6080][BG][0][SS][None][oneclickvpnkeys][2026-09-20][2026-09"
+      - "[5798][US][0][SS][None][V2rayng_Fast][2026-09-21][2026-09-22"
+      - "[10265][JP][0][SS][None][VPNGate_Config][2023-09-30][2026-09"
+      - "[3001][UnResolvedDomains][0][SS][None][ext_raw.githubusercon"
+      - "[5455][US][0][SS][None][Lockey_vpn][2024-05-02][2026-09-22 0"
+      - "[14037][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[5969][US][0][SS][None][prrofile_purple][2026-09-05][2026-09"
+      - "[15128][ES][0][SS][None][marambashi][2026-09-12][2026-09-22 "
+      - "[4646][UnResolvedDomains][0][SS][None][freeconfigv2][2023-09"
+      - "[16503][DE][0][SS][None][oneclickvpnkeys][2026-09-21][2026-0"
+      - "[2704][UnResolvedDomains][0][SS][None][Capital_NET][2023-09-"
+      - "[16643][US][0][SS][None][proxymtprotoir][2026-09-21][2026-09"
+      - "[3181][US][0][SS][None][marambashi][2026-09-18][2026-09-22 0"
+      - "[11245][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[11990][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[14717][US][0][SS][None][oneclickvpnkeys][2026-09-20][2026-0"
+      - "[9993][BG][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[14133][US][0][SS][None][prrofile_purple][2026-06-06][2026-0"
+      - "[14053][PL][0][SS][None][marambashi][2026-09-14][2026-09-22 "
+      - "[17905][UnResolvedDomains][0][SS][None][mftizi][2024-12-08]["
+      - "[16073][US][0][SS][None][ConfigsHUB][2026-09-21][2026-09-22 "
+      - "[13946][CA][0][SS][None][vpn_tehran][2026-09-20][2026-09-22 "
+      - "[9578][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[12456][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[12993][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[7420][BH][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[17567][RU][0][SS][None][marambashi][2026-09-13][2026-09-22 "
+      - "[7016][LT][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[2429][RS][0][SS][None][FreakConfig][2026-09-18][2026-09-22 "
+      - "[13454][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[10891][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[8120][ES][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[14603][UnResolvedDomains][0][SS][None][bypass_filter][2023-"
+      - "[10033][SG][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[16807][US][0][SS][None][CUSTOMVPNSERVER][2026-01-22][2026-0"
+      - "[3111][US][0][SS][None][free1_vpn][2026-09-17][2026-09-22 02"
+      - "[7423][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[4819][TR][0][SS][None][oneclickvpnkeys][2026-09-19][2026-09"
+      - "[14581][SA][0][SS][None][VmessProtocol][2026-09-21][2026-09-"
+      - "[17740][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[8713][NL][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[18302][UnResolvedDomains][0][SS][None][Configforvpn01][2023"
+      - "[12826][GB][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[8117][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[11143][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[10689][RU][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[13359][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[15507][IR][0][SS][None][CUSTOMVPNSERVER][2025-07-25][2026-0"
+      - "[16628][US][0][SS][None][oneclickvpnkeys][2026-09-20][2026-0"
+      - "[6261][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[16336][US][0][SS][None][mehrosaboran][2026-09-14][2026-09-2"
+      - "[16074][DE][0][SS][None][oneclickvpnkeys][2026-09-20][2026-0"
+      - "[14118][UnResolvedDomains][0][SS][None][FalconPolV2rayNG][20"
+      - "[17933][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
+      - "[15274][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
+      - "[3226][US][0][SS][None][daredevill_404][2026-01-28][2026-09-"
+      - "[3909][DE][0][SS][None][v2rayNG_Matsuri][2026-09-16][2026-09"
+      - "[17400][UnResolvedDomains][0][SS][None][iTV2RAY][2023-07-24]"
+      - "[15061][UnResolvedDomains][0][SS][None][Capoit][2026-09-12]["
+      - "[18123][US][0][SS][None][vpn_tehran][2026-09-15][2026-09-22 "
+      - "[11758][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[2448][US][0][SS][None][prrofile_purple][2026-06-15][2026-09"
+      - "[7715][SG][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[16727][LT][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - node
+      - "[18386][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
+      - "[17446][IR][0][SS][None][DarkVPNpro][2026-04-16][2026-09-22 "
+      - "[9020][UnResolvedDomains][0][SS][None][v2ray_swhil][2024-11-"
+      - "[7342][FR][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[15416][US][0][SS][None][free1_vpn][2026-09-17][2026-09-22 0"
+      - "[16808][US][0][SS][None][Outline_Vpn][2026-07-13][2026-09-22"
+      - "node 2"
+      - "[7677][CA][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[5163][DE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[17977][US][0][SS][None][Hope_Net][2026-09-18][2026-09-22 02"
+      - "[14316][DE][0][SS][None][v2rayNG_Matsuri][2026-09-20][2026-0"
+      - "[13283][GB][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[11505][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[10467][BE][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[11256][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[18269][TR][0][SS][None][marambashi][2026-09-12][2026-09-22 "
+      - "[6072][ES][0][SS][None][oneclickvpnkeys][2026-09-17][2026-09"
+      - "[11438][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[3098][US][0][SS][None][proxy_mtm][2026-09-19][2026-09-22 02"
+      - "[11107][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[2360][MD][0][SS][None][v2ray1_ng][2026-09-09][2026-09-22 02"
+      - "[13928][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[13101][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[13070][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[1536][IN][0][SS][None][v2rayNG_Matsuri][2026-09-11][2026-09"
+      - "[7611][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[1589][US][0][SS][None][DarkVPNpro][2024-11-15][2026-09-22 0"
+      - "[7107][PL][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[15688][US][0][SS][None][vpn_tehran][2026-08-31][2026-09-22 "
+      - "[7315][MD][0][SS][None][free4allVPN][2025-12-06][2026-09-22 "
+      - "[4706][UnResolvedDomains][0][SS][None][Capital_NET][2023-08-"
+      - "[14960][DE][0][SS][None][v2rayNG_Matsuri][2026-09-17][2026-0"
+      - "[14657][UnResolvedDomains][0][SS][None][Configforvpn01][2023"
+      - "[7067][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[8767][SI][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[18218][DE][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[5157][US][0][SS][None][ShadowProxy66][2026-09-21][2026-09-2"
+      - "[11403][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[5240][AT][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[17619][RU][0][SS][None][v2rayNG_Matsuri][2026-09-15][2026-0"
+      - "[1680][NL][0][SS][None][marambashi][2026-09-13][2026-09-22 0"
+      - "[17903][UnResolvedDomains][0][SS][None][mftizi][2024-09-07]["
+      - "[16754][IT][0][SS][None][V2rayng_Fast][2026-09-19][2026-09-2"
+      - "[3000][DE][0][SS][None][Hope_Net][2026-09-17][2026-09-22 02:"
+      - "[16760][IR][0][SS][None][v2ray_swhil][2024-07-24][2026-09-22"
+      - "[4973][RU][0][SS][None][proxy_mtm][2026-08-19][2026-09-22 02"
+      - "[7586][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[10230][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[16426][HK][0][SS][None][nofiltering2][2026-07-29][2026-09-2"
+      - "[10603][PL][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[491][US][0][SS][None][v2ray_swhil][2024-09-20][2026-09-22 0"
+      - "[15714][US][0][SS][None][vpn_tehran][2026-09-15][2026-09-22 "
+      - "[17860][UnResolvedDomains][0][SS][None][WebShecan][2023-07-3"
+      - "[12265][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[314][NL][0][SS][None][Outline_ir][2026-09-15][2026-09-22 02"
+      - "[11331][IR][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[10207][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[16913][FR][0][SS][None][shh_proxy][2026-09-08][2026-09-22 0"
+      - "[11659][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[4456][CH][0][SS][None][V2range][2026-07-26][2026-09-22 02:0"
+      - "[8184][IE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[9315][PL][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[2859][RU][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[471][CZ][0][SS][None][Outline_Vpn][2026-09-14][2026-09-22 0"
+      - "[6886][CN][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[12646][GB][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[4220][RS][0][SS][None][marambashi][2026-09-08][2026-09-22 0"
+      - "[17830][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[4836][DE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[12020][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[6638][LT][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[10760][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[14409][US][0][SS][None][hopev2ray][2026-06-02][2026-09-22 0"
+      - "[15681][CZ][0][SS][None][ConfigsHUB][2026-09-22][2026-09-22 "
+      - "[9399][CN][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[3624][SC][0][SS][None][V2range][2026-06-20][2026-09-22 02:0"
+      - "[9089][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[14901][UnResolvedDomains][0][SS][None][WebShecan][2023-08-1"
+      - "[9324][IE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[201][RU][0][SS][None][vpnx44][2026-09-16][2026-09-22 02:09]"
+      - "[5549][US][0][SS][None][proxymtprotoir][2026-09-18][2026-09-"
+      - "[13136][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[5350][US][0][SS][None][prrofile_purple][2026-06-12][2026-09"
+      - "[6963][NL][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[13939][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[16578][IT][0][SS][None][oneclickvpnkeys][2026-09-18][2026-0"
+      - "[13933][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[4762][DE][0][SS][None][kingofilter][2026-09-20][2026-09-22 "
+      - "[8027][JP][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[4625][LV][0][SS][None][vpn_tehran][2026-09-06][2026-09-22 0"
+      - "[7237][AE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[18624][UnResolvedDomains][0][SS][None][freeconfigv2][2023-0"
+      - "[14677][CY][0][SS][None][oneclickvpnkeys][2026-09-21][2026-0"
+      - "[15477][US][0][SS][None][hopev2ray][2026-09-04][2026-09-22 0"
+      - "[14735][FI][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[4830][DE][0][SS][None][v2rayNG_Matsuri][2026-09-14][2026-09"
+      - "[8090][FR][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[2338][MD][0][SS][None][FreakConfig][2026-09-18][2026-09-22 "
+      - "[8157][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[413][UnResolvedDomains][0][SS][None][azadi_az_inja_migzare]"
+      - "[5470][RU][0][SS][None][V2rayng_Fast][2026-09-12][2026-09-22"
+      - "node 3"
+      - "[15464][FI][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[14971][US][0][SS][None][vless_vmess][2024-11-19][2026-09-22"
+      - "[7154][SG][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[12190][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[17998][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
+      - "[475][DE][0][SS][None][rxv2ray][2025-10-18][2026-09-22 02:09"
+      - "[10698][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[6698][UnResolvedDomains][0][SS][None][ext_raw.githubusercon"
+      - "[11250][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[2758][US][0][SS][None][kiava][2025-03-27][2026-09-22 02:09]"
+      - "[15802][SE][0][SS][None][Hope_Net][2026-09-17][2026-09-22 02"
+      - "[2161][MD][0][SS][None][Outline_ir][2026-09-13][2026-09-22 0"
+      - "[17278][UnResolvedDomains][0][SS][None][freeconfigv2][2023-1"
+      - "[8890][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[16758][NL][0][SS][None][marambashi][2026-09-09][2026-09-22 "
+      - "[2833][UnResolvedDomains][0][SS][None][freeconfigv2][2023-11"
+      - "[16951][GB][0][SS][None][PrivateVPNs][2026-09-16][2026-09-22"
+      - "node 4"
+      - "[15153][KR][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[7637][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[5109][UnResolvedDomains][0][SS][None][ext_raw.githubusercon"
+      - "[9466][CN][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[17999][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
+      - "[10375][PL][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[17839][UnResolvedDomains][0][SS][None][Capital_NET][2023-08"
+      - "[10080][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[13253][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[14036][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[17384][FR][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[2968][FI][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[4395][FR][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[17475][DE][0][SS][None][proxy_mtm][2026-09-20][2026-09-22 0"
+      - "[4527][US][0][SS][None][Lockey_vpn][2024-10-25][2026-09-22 0"
+      - "[788][NL][0][SS][None][flyv2ray][2026-09-15][2026-09-22 02:0"
+      - "[691][UnResolvedDomains][0][SS][None][freeconfigv2][2023-09-"
+      - "[9236][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[7337][SE][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[10578][GB][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[16208][US][0][SS][None][free1_vpn][2026-09-20][2026-09-22 0"
+      - "[13887][DE][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[5320][US][0][SS][None][prrofile_purple][2026-07-14][2026-09"
+      - "[12815][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[717][US][0][SS][None][v2ray_swhil][2024-07-18][2026-09-22 0"
+      - "[2609][UnResolvedDomains][0][SS][None][ext_raw.githubusercon"
+      - "[17308][US][0][SS][None][v2rayNG_Matsuri][2026-09-22][2026-0"
+      - "[13602][IT][0][SS][None][vpn_tehran][2026-09-06][2026-09-22 "
+      - "[14640][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[1509][UnResolvedDomains][0][SS][None][freeconfigv2][2023-10"
+      - "[2648][NL][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[617][PL][0][SS][None][marambashi][2026-09-14][2026-09-22 02"
+      - "[4083][DE][0][SS][None][marambashi][2026-09-13][2026-09-22 0"
+      - "[17343][US][0][SS][None][FreakConfig][2026-09-21][2026-09-22"
+      - "[7071][IE][0][SS][None][mehrosaboran][2026-08-25][2026-09-22"
+      - "[9968][VN][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[7863][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[15733][US][0][SS][None][vpn_tehran][2026-09-06][2026-09-22 "
+      - "[10053][FR][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[11036][FR][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[13166][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[13214][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "[9274][NL][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "[5730][US][0][SS][None][v2ray1_ng][2026-09-16][2026-09-22 02"
+      - "[3358][US][0][SS][None][kiava][2025-02-01][2026-09-22 02:09]"
+      - "[166][UnResolvedDomains][0][SS][None][freeconfigv2][2023-09-"
+rules:
+  - "GEOIP,LAN,DIRECT,no-resolve"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,🚀 节点选择"

@@ -1,0 +1,3814 @@
+# 订阅 5.txt -> Clash
+# 由 txt2clash.py 自动生成于 2026-11-01 16:51:15 +0800
+# 节点数量: 260
+# 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: "off"
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  listen: "0.0.0.0:1053"
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "*.localhost"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  proxy-server-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+proxies:
+  - name: "🌐سرور 8 | Bah-27| MTSRVRS"
+    type: vless
+    server: 25.129.199.122
+    port: 2096
+    uuid: 2fb8808b-b94c-42ea-9dd2-cd77d2efcc8d
+    udp: true
+    tls: true
+    servername: DiGIkALaA.dpdns.ORG
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoidDZLaDRBMWhpIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ"
+      headers:
+        Host: digikalaa.dpdns.org
+  - name: "🌐سرور 12 | Bah-27| MTSRVRS"
+    type: vless
+    server: 5.78.52.139
+    port: 443
+    uuid: 8269e1d5-0b3d-4464-9c3f-ffb7cd248181
+    udp: true
+    tls: true
+    servername: canva.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: E-gNaLJIQlj-8MK4HkBfWJ1Z5xhxiVMS8ZKEClrR3m0
+      short-id: "92462131"
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: canva.com
+      mode: stream-up
+  - name: "🌐سرور 16 | Bah-27| MTSRVRS"
+    type: vless
+    server: Panel.AhmadMomeni.ir
+    port: 44088
+    uuid: ced37f30-d54c-42f2-aa5e-9eea28f3fa33
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🌐سرور 21 | Bah-27| MTSRVRS"
+    type: ss
+    server: 109.120.186.9
+    port: 23022
+    cipher: chacha20-ietf-poly1305
+    password: "s#W0tqg%@N"
+    udp: true
+  - name: "🌐سرور 25 | Bah-27| MTSRVRS"
+    type: vless
+    server: 85.133.197.236
+    port: 9828
+    uuid: 3591d9e2-edbf-43f1-98dc-00eb607b8c46
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - pro30afzar.com
+  - name: "🌐سرور 29 | Bah-27| MTSRVRS"
+    type: vless
+    server: 185.146.173.152
+    port: 2095
+    uuid: af309ad2-c943-48ea-b570-2e51a2f079d9
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/DSDaswd22!11*fdfm55247.COM."
+      headers:
+        Host: NOxdB1.BisTaiR.orG
+  - name: "🌐سرور 33 | Bah-27| MTSRVRS"
+    type: vless
+    server: 146.19.80.242
+    port: 443
+    uuid: 309fa273-6579-4cb2-9143-7cad50401eba
+    udp: true
+    tls: true
+    servername: www.cloudflare.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: gZGVp5PUdafgsmi1gawa1yLuha_XhXRc_W9SvPiGmTY
+      short-id: 7cad5040
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 37 | Bah-27| MTSRVRS"
+    type: vless
+    server: a2.fusetea.ir
+    port: 2053
+    uuid: 52084409-cd8c-4ad6-e2d4-e918bbae9cbb
+    udp: true
+    tls: true
+    servername: swe.pingxbaz.com
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: swe.pingxbaz.com
+  - name: "🌐سرور 44 | Bah-27| MTSRVRS"
+    type: vless
+    server: python.org
+    port: 80
+    uuid: a26bbed7-a286-4840-84bc-dc102c526777
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/category/music"
+      host: iran.boltboost.gg
+      mode: auto
+  - name: "🌐سرور 50 | Bah-27| MTSRVRS"
+    type: vless
+    server: 638953873686412975.lahijan-drc-tusaas.info
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🌐سرور 54 | Bah-27| MTSRVRS"
+    type: vless
+    server: ir2.servertopia.top
+    port: 4555
+    uuid: c78bce12-1796-466f-b8a0-800c32b06679
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🌐سرور 58 | Bah-27| MTSRVRS"
+    type: trojan
+    server: 13.36.190.50
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    servername: trojan.burgerip.co.uk
+    alpn:
+      - http/1.1
+    network: tcp
+  - name: "🌐سرور 62 | Bah-27| MTSRVRS"
+    type: vless
+    server: trt.fastlynew.hosting-ip.com
+    port: 80
+    uuid: de8ebf94-883b-46e0-b276-2c3cd0c96e4e
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/?ed=2560"
+      host: maxde219.global.ssl.fastly.net
+      mode: auto
+  - name: "🌐سرور 67 | Bah-27| MTSRVRS"
+    type: vless
+    server: mtn.MsV2ray.space
+    port: 2083
+    uuid: 16d22529-b92a-40de-86c2-591d195a2d55
+    udp: true
+    tls: true
+    servername: tm.MsV2ray.cfd
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "@MsV2ray"
+    client-fingerprint: chrome
+  - name: "🌐سرور 71 | Bah-27| MTSRVRS"
+    type: vless
+    server: usaa.fastlynew.hosting-ip.com
+    port: 80
+    uuid: 8f2f9ad3-df75-464e-c542-cd80d61b57c4
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: civan.global.ssl.fastly.net
+  - name: "🌐سرور 76 | Bah-27| MTSRVRS"
+    type: vless
+    server: chatgpt.com
+    port: 443
+    uuid: 29187857-4a1f-4d1e-88eb-0016771e0dbb
+    udp: true
+    tls: true
+    servername: vless.hubp.de
+    client-fingerprint: chrome
+    alpn:
+      - h3
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: vless.hubp.de
+  - name: "🌐سرور 81 | Bah-27| MTSRVRS"
+    type: vless
+    server: 13.36.58.242
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    udp: true
+    tls: true
+    servername: trojan.burgerip.co.uk
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+      headers:
+        Host: trojan.burgerip.co.uk
+    client-fingerprint: chrome
+  - name: "🌐سرور 85 | Bah-27| MTSRVRS"
+    type: vless
+    server: www.speedtest.net
+    port: 2095
+    uuid: bf44c0a7-0b7d-49d0-b849-ac63a0176749
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "@Proxy_1@Proxy_1"
+      headers:
+        Host: Reza_OFF.markazdl.ir.
+  - name: "🌐سرور 89 | Bah-27| MTSRVRS"
+    type: vless
+    server: nim.saas-clouding.ir
+    port: 2046
+    uuid: 4631a8b4-7f38-402c-b794-b59c1d58be7d
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - p30afzar.com
+  - name: "🌐سرور 93 | Bah-27| MTSRVRS"
+    type: ss
+    server: 172.165.94.205
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: 1xO2cqPazqjGfCfd
+    udp: true
+  - name: "🌐سرور 97 | Bah-27| MTSRVRS"
+    type: vless
+    server: 104.21.112.1
+    port: 80
+    uuid: 2036e2c3-18a5-4eed-9db4-f91a7f02c7d5
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/193.123.81.105=443"
+      headers:
+        Host: zoomgov.vipren.biz.id
+  - name: "🌐سرور 101 | Bah-27| MTSRVRS"
+    type: trojan
+    server: 18.157.245.168
+    port: 22223
+    password: telegram-id-directvpn
+    udp: true
+    servername: trojan.burgerip.co.uk
+    alpn:
+      - http/1.1
+    network: tcp
+  - name: "🌐سرور 105 | Bah-27| MTSRVRS"
+    type: vmess
+    server: 141.95.126.134
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: jamekk.org
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: jamekk.org
+    client-fingerprint: chrome
+  - name: "🌐سرور 110 | Bah-27| MTSRVRS"
+    type: vless
+    server: 146.59.116.201
+    port: 443
+    uuid: b5154b7e-3a59-4537-a163-1d5a73d4b4bb
+    udp: true
+    tls: true
+    servername: convertio.co
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: "-q5LnD8S-F7Q6khGlle_aovNZt3fhmxCYHjbWXZvdUQ"
+      short-id: e3b41bfe
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "@V_2rayngVpn-@V_2rayngVpn-@V_2rayngVpn-@V_2rayngVpn"
+  - name: "🌐سرور 115 | Bah-27| MTSRVRS"
+    type: trojan
+    server: 91.107.141.0
+    port: 23825
+    password: ziIjOlyGbM
+    udp: true
+    servername: 91.107.141.0
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - 91.107.141.0
+  - name: "🌐سرور 119 | Bah-27| MTSRVRS"
+    type: vless
+    server: 185.236.232.100
+    port: 80
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🌐سرور 123 | Bah-27| MTSRVRS"
+    type: ss
+    server: admin.c2.havij.co
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: kaQH3hGdcP80XEDI
+    udp: true
+  - name: "🌐سرور 127 | Bah-27| MTSRVRS"
+    type: vless
+    server: trt.fastlynew.hosting-ip.com
+    port: 80
+    uuid: 9323f2c6-fb40-4ee3-890f-9c63b948cb29
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/?ed=2560"
+      host: maxus112.global.ssl.fastly.net
+      mode: auto
+  - name: "🌐سرور 131 | Bah-27| MTSRVRS"
+    type: vless
+    server: 45.130.125.160
+    port: 2087
+    uuid: 7ab6e0c3-4869-4a0e-8fe0-852a58a28bfb
+    udp: true
+    tls: true
+    servername: ns5.mehrsazi.ir
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ns5.mehrsazi.ir
+  - name: "🌐سرور 135 | Bah-27| MTSRVRS"
+    type: vless
+    server: 188.114.98.224
+    port: 2095
+    uuid: b5484088-cefc-43a1-943f-a99706fc3c0c
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/V2rayCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE?ed=1024"
+      headers:
+        Host: V2ray-_-_-_-_-_-VPNCUSTOMIZE.keLLekcoLLection.com.
+  - name: "🌐سرور 143 | Bah-27| MTSRVRS"
+    type: vless
+    server: fi.zeepo.ir
+    port: 443
+    uuid: 78d734d6-7e3b-aad5-5dde-cdbb57bbf8d6
+    udp: true
+    tls: true
+    servername: refersion.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: KkGxnE3A4EaG8C7JydHk46UMuCP-Hcpua6lna-TvIAI
+      short-id: eae3d03b0083f7af
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 147 | Bah-27| MTSRVRS"
+    type: ss
+    server: 74.177.199.135
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: u17T3BvpYaaiuW2c
+    udp: true
+  - name: "🌐سرور 151 | Bah-27| MTSRVRS"
+    type: vless
+    server: www.speedtest.net
+    port: 8443
+    uuid: 897da4d2-543a-4cbc-bb38-1a4a599d6543
+    udp: true
+    tls: true
+    servername: v2nGFASt.pavof74662.wOrkErs.dEv
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiNGxXdzBkdEdZSGdjRkVyIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560"
+      headers:
+        Host: v2ngfast.pavof74662.workers.dev
+  - name: "🌐سرور 155 | Bah-27| MTSRVRS"
+    type: ss
+    server: promo18v.bystrivpn.ru
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: dAHM1pm8ag7KdlrUylQi6t
+    udp: true
+  - name: "🌐سرور 159 | Bah-27| MTSRVRS"
+    type: vless
+    server: 194.113.226.197
+    port: 55555
+    uuid: 49d97f86-4589-4570-8e4b-794b49556e42
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - uptvs.com
+  - name: "🌐سرور 164 | Bah-27| MTSRVRS"
+    type: vless
+    server: Join.ShhProxy.Site
+    port: 80
+    uuid: 8172ce99-4146-4dbe-bbd0-cf6533081014
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: shhproxy.xn--85-pv2cl2k5x3fipr.org
+  - name: "🌐سرور 172 | Bah-27| MTSRVRS"
+    type: vless
+    server: 51.158.206.8
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 179 | Bah-27| MTSRVRS"
+    type: vless
+    server: 199.119.137.95
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: node
+    type: vmess
+    server: 104.24.169.183
+    port: 8080
+    uuid: nasnet
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/NASNET/cdn#/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560"
+      headers:
+        Host: nasnet-571299667.rahavard365.co
+  - name: "🌐سرور 185 | Bah-27| MTSRVRS"
+    type: vmess
+    server: 172.64.149.182
+    port: 8080
+    uuid: nasnet
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/nasnet/cdn?ed=2560"
+      headers:
+        Host: nasnet-5712964102.sharghdaily.co
+  - name: "🌐سرور 189 | Bah-27| MTSRVRS"
+    type: vless
+    server: tunel-aaasxa.gamepiu.com
+    port: 5087
+    uuid: 69b9d47e-59a9-4ba3-f8fe-4f581a624dfa
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - telewebion.com
+  - name: "🌐سرور 193 | Bah-27| MTSRVRS"
+    type: vless
+    server: 93.127.180.143
+    port: 85
+    uuid: a9ca2b2a-df16-4be9-9606-6046dc7e674d
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🌐سرور 199 | Bah-27| MTSRVRS"
+    type: vmess
+    server: 104.21.69.44
+    port: 8080
+    uuid: nasnet
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/nasnet/cdn"
+      headers:
+        Host: nasnet-511952424.mcitel.co
+  - name: "🌐سرور 207 | Bah-27| MTSRVRS"
+    type: vless
+    server: 104.17.148.22
+    port: 2096
+    uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+    udp: true
+    tls: true
+    servername: hetz.x-smm.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/45.76.183.217=49292"
+      headers:
+        Host: hetz.x-smm.com
+  - name: "🌐سرور 211 | Bah-27| MTSRVRS"
+    type: vless
+    server: 51.91.199.243
+    port: 8080
+    uuid: 5d0e6695-6c63-4168-b5e5-2a73ea86b1b1
+    udp: true
+    tls: true
+    servername: chatgpt.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw
+      short-id: b7b70c104ad267b8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 215 | Bah-27| MTSRVRS"
+    type: vless
+    server: 45.82.251.208
+    port: 8880
+    uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🌐سرور 219 | Bah-27| MTSRVRS"
+    type: vless
+    server: chatgpt.com
+    port: 443
+    uuid: ea3f180c-8141-4e03-b11c-4d542767a417
+    udp: true
+    tls: true
+    servername: e4xf3l6qfdu-shhc8axat6695v4t9e6p.pages.dev
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoidmo5SG5sY2oyMGNKYiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560"
+      headers:
+        Host: e4xf3l6qfdu-shhc8axat6695v4t9e6p.pages.dev
+  - name: "🌐سرور 223 | Bah-27| MTSRVRS"
+    type: vless
+    server: lovetea.dastur-amuzesh.ir
+    port: 6002
+    uuid: 88557913-31ed-443e-8c3e-b38d4a886520
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🌐سرور 227 | Bah-27| MTSRVRS"
+    type: vless
+    server: 85.208.110.183
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🌐سرور 231 | Bah-27| MTSRVRS"
+    type: vless
+    server: ip.shakhle.ir
+    port: 2083
+    uuid: 260f19e2-41c2-4f0c-870f-ab7e28e72ef6
+    udp: true
+    tls: true
+    servername: ipv4.yasharteam.com
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ipv4.yasharteam.com
+  - name: "🌐سرور 235 | Bah-27| MTSRVRS"
+    type: vless
+    server: clearcreditrepair.com
+    port: 443
+    uuid: 02500334-97ea-4952-b648-e27c42dd3a65
+    udp: true
+    tls: true
+    servername: clearcreditrepair.com
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ELiV2RAY.cc
+  - name: "🌐سرور 243 | Bah-27| MTSRVRS"
+    type: vless
+    server: chat.openai.com
+    port: 443
+    uuid: 289f7608-8995-4165-9f3a-3612577190bb
+    udp: true
+    tls: true
+    servername: dl98.hexo-music.ir
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: dl98.hexo-music.ir
+    client-fingerprint: chrome
+  - name: "🌐سرور 247 | Bah-27| MTSRVRS"
+    type: vless
+    server: fi.zeepo.ir
+    port: 443
+    uuid: b2662dc2-288f-ca09-c701-60c5ad317ca4
+    udp: true
+    tls: true
+    servername: refersion.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: KkGxnE3A4EaG8C7JydHk46UMuCP-Hcpua6lna-TvIAI
+      short-id: eae3d03b0083f7af
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 255 | Bah-27| MTSRVRS"
+    type: vless
+    server: 45.82.251.135
+    port: 8880
+    uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🌐سرور 259 | Bah-27| MTSRVRS"
+    type: vless
+    server: 65.109.221.182
+    port: 46000
+    uuid: b8773ac0-5d39-455d-a05b-a5f14d194049
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🌐سرور 267 | Bah-27| MTSRVRS"
+    type: ss
+    server: 90.156.203.62
+    port: 5112
+    cipher: chacha20-ietf-poly1305
+    password: VVlAff77CnAU43Aoc5j15Y
+    udp: true
+  - name: "🌐سرور 271 | Bah-27| MTSRVRS"
+    type: vless
+    server: 65.109.201.108
+    port: 443
+    uuid: b17ec18e-99af-40af-962b-0ad1b987d740
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🌐سرور 275 | Bah-27| MTSRVRS"
+    type: vless
+    server: 49.13.135.58
+    port: 443
+    uuid: 18e82ee0-3b88-48d1-9292-484c8051f690
+    udp: true
+    tls: true
+    servername: github.io
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: X5WLfJ82KCpBanu2EwML11CwJUM2NczTonML5hHwW2o
+      short-id: b5b39d420f404069
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 279 | Bah-27| MTSRVRS"
+    type: vless
+    server: 195.190.144.214
+    port: 23301
+    uuid: 5557ae8d-a9b1-48d3-9921-0c99754f1589
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - "bale.ai,igap.net,soroushplus.com"
+  - name: "🌐سرور 283 | Bah-27| MTSRVRS"
+    type: vless
+    server: 93.127.180.143
+    port: 2087
+    uuid: a9ca2b2a-df16-4be9-9606-6046dc7e674d
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🌐سرور 287 | Bah-27| MTSRVRS"
+    type: vless
+    server: 38.60.212.251
+    port: 29059
+    uuid: d706bf16-124a-417b-aaa0-0d6d5efd58fd
+    udp: true
+    tls: true
+    servername: mensura.cdn-apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: V_eMkcHXf237wGyfggMHHRvQqw51rW1UJPEIw_T2IE4
+      short-id: 6ba85179e30d4fc2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 291 | Bah-27| MTSRVRS"
+    type: vless
+    server: 104.16.2.90
+    port: 443
+    uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+    udp: true
+    tls: true
+    servername: ProxyVPN11.afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/43.218.77.16=1443/?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "🌐سرور 295 | Bah-27| MTSRVRS"
+    type: vless
+    server: tify-binex-join.espikernajafi.ir
+    port: 2053
+    uuid: 2f28ff4e-218d-42de-ed49-960083a48228
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY?ed=2560"
+      headers:
+        Host: tify-binex-join.espikernajafi.ir
+  - name: "🌐سرور 299 | Bah-27| MTSRVRS"
+    type: vless
+    server: 91.99.150.201
+    port: 443
+    uuid: 9eeaebce-523f-4fa2-a4b9-547f86159cf1
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/linkws#/?"
+      headers:
+        Host: 91.99.150.201
+  - name: "🌐سرور 303 | Bah-27| MTSRVRS"
+    type: vless
+    server: 5.161.151.62
+    port: 2095
+    uuid: 7b71f04e-984f-4c59-8875-790ba512c56a
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🌐سرور 307 | Bah-27| MTSRVRS"
+    type: vless
+    server: clyde.ns.cloudflare.com
+    port: 2096
+    uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+    udp: true
+    tls: true
+    servername: hetz.x-smm.com
+    network: ws
+    ws-opts:
+      path: "/45.76.183.217=49292"
+      headers:
+        Host: hetz.x-smm.com
+    client-fingerprint: chrome
+  - name: "🌐سرور 311 | Bah-27| MTSRVRS"
+    type: vmess
+    server: 502.outline-vpn.cloud
+    port: 443
+    uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: glweidf.sbs
+    network: ws
+    ws-opts:
+      path: "/linkws"
+      headers:
+        Host: glweidf.sbs
+    client-fingerprint: chrome
+  - name: "🌐سرور 319 | Bah-27| MTSRVRS"
+    type: vless
+    server: 46.102.136.69
+    port: 57803
+    uuid: 5b5c6557-d611-4c6f-a43b-a2c48c0b541d
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - fast.com
+  - name: "🌐سرور 323 | Bah-27| MTSRVRS"
+    type: vless
+    server: sr23.nofile.sbs
+    port: 2082
+    uuid: e32a63e2-d7fb-4149-9636-d45a35cb8e78
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🌐سرور 334 | Bah-27| MTSRVRS"
+    type: vless
+    server: speedtest.net
+    port: 80
+    uuid: a26bbed7-a286-4840-84bc-dc102c526777
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/category/music"
+      host: iran.boltboost.gg
+      mode: auto
+  - name: "🌐سرور 338 | Bah-27| MTSRVRS"
+    type: vless
+    server: safari.nabxcsjghjs2004.shop
+    port: 24574
+    uuid: c6f4ce13-3ef5-47cf-e678-e7b79cbd00e6
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - fast.com
+  - name: "🌐سرور 342 | Bah-27| MTSRVRS"
+    type: trojan
+    server: 15.236.182.0
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    servername: trojan.burgerip.co.uk
+    alpn:
+      - http/1.1
+    network: tcp
+  - name: "🌐سرور 346 | Bah-27| MTSRVRS"
+    type: vless
+    server: 77.83.245.196
+    port: 39819
+    uuid: d775578d-1289-42d4-b1af-b5d461858340
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: XYuEq4Q7rFLGDo8wAQbcSQL-mTX3KukOghSQTM1NKgg
+      short-id: 3536455aa22609b7
+    network: tcp
+  - name: "🌐سرور 354 | Bah-27| MTSRVRS"
+    type: vmess
+    server: 77.42.77.66
+    port: 40100
+    uuid: 73feeed6-9a40-45b0-a26d-84770f5f05fd
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "🌐سرور 358 | Bah-27| MTSRVRS"
+    type: vless
+    server: 188.114.99.99
+    port: 2096
+    uuid: a00e3e46-f0c2-4e54-b747-037d715d32c0
+    udp: true
+    tls: true
+    servername: tarasvalete.parhamtraberthos.IR.
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🌐سرور 362 | Bah-27| MTSRVRS"
+    type: vless
+    server: 3.79.57.168
+    port: 443
+    uuid: 3ffb5c28-97b3-4056-c72e-ba0de6272c05
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🌐سرور 366 | Bah-27| MTSRVRS"
+    type: vless
+    server: my-o1.rexine.ir
+    port: 1718
+    uuid: 1b6fb9c7-1494-490a-b70d-d3a2a1778729
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - mir-data-31.myket.ir
+  - name: "🌐سرور 370 | Bah-27| MTSRVRS"
+    type: vless
+    server: 212.111.84.82
+    port: 443
+    uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 2715592069f36fe7
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 374 | Bah-27| MTSRVRS"
+    type: vless
+    server: free.miladiran1.shop
+    port: 2001
+    uuid: 32849afc-1632-4273-9db6-833dc02a7af7
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - free.miladiran1.shop
+  - name: "🌐سرور 378 | Bah-27| MTSRVRS"
+    type: vless
+    server: 45.130.125.138
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "🌐سرور 383 | Bah-27| MTSRVRS"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: 396c904b-4b62-4334-b793-ee25fc0c61cc
+    udp: true
+    tls: true
+    servername: pages.dev
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=@abasbijan2560"
+      headers:
+        Host: 8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev
+    client-fingerprint: chrome
+  - name: "🌐سرور 387 | Bah-27| MTSRVRS"
+    type: vless
+    server: 135.125.218.217
+    port: 37464
+    uuid: f39de4e2-bcfd-4be9-b051-52ad8bb696bb
+    udp: true
+    tls: true
+    servername: convertio.co
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 9-pElNE3g76NeRuw6g1T7f9mw4NDVD4rftPCztwVEko
+      short-id: c7c99478
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "@V_2rayngVpn-@V_2rayngVpn-@V_2rayngVpn-@V_2rayngVpn-@V_2rayngVpn-@V_2rayngVpn-@V_2rayngVpn-@V_2rayngVpn-@V_2rayngVpn-@V_2rayngVpn-@V_2rayngVpn-@V_2rayngVpn-@V_2rayngVpn-@V_2rayngVpn-@V_2rayngVpn"
+  - name: "🌐سرور 395 | Bah-27| MTSRVRS"
+    type: vless
+    server: zula.ir
+    port: 443
+    uuid: 51905fd3-29de-4b4e-b351-83542f1d5390
+    udp: true
+    tls: true
+    servername: Bia.alLhub.Ltd
+    client-fingerprint: random
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: biA.ALlhub.LTD
+  - name: "🌐سرور 399 | Bah-27| MTSRVRS"
+    type: vless
+    server: 57.129.53.182
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 403 | Bah-27| MTSRVRS"
+    type: vmess
+    server: 108.162.192.63
+    port: 80
+    uuid: b2413a5a-d5d0-4447-b6d7-6dbcd2989a35
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess"
+      headers:
+        Host: "dl2.127.0.0.1.востейcontrol.控制.kонтроль農達懲罰.cводкаhо.wonkacapitano.buzz."
+  - name: "🌐سرور 409 | Bah-27| MTSRVRS"
+    type: vless
+    server: Iranserver.com
+    port: 2083
+    uuid: 07865379-86dd-4ca6-ad22-81255519c482
+    udp: true
+    tls: true
+    servername: vipv2rey.mamare.ir
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🌐سرور 414 | Bah-27| MTSRVRS"
+    type: vless
+    server: 185.45.194.29
+    port: 39571
+    uuid: 507d5567-1c19-485c-e481-2361a89615dc
+    udp: true
+    tls: true
+    servername: www.digikala.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: S-g0oP36DShii1uPOnZDSEhp_wQghX6h68PgMivOmD4
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 418 | Bah-27| MTSRVRS"
+    type: vless
+    server: de-5-tun-single.starpingshop.com
+    port: 8083
+    uuid: c44463d3-d816-4546-9084-fca094d063f9
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - www.speedtest.net
+  - name: "🌐سرور 422 | Bah-27| MTSRVRS"
+    type: vless
+    server: 195.42.233.47
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🌐سرور 426 | Bah-27| MTSRVRS"
+    type: vless
+    server: cdnjs.com
+    port: 443
+    uuid: 6cc5b6b6-b3d2-4c60-8197-5defdc8d6aa1
+    udp: true
+    tls: true
+    servername: 4sat.shop
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: public.4sat.shop
+  - name: "🌐سرور 438 | Bah-27| MTSRVRS"
+    type: vless
+    server: 185.201.50.149
+    port: 443
+    uuid: 17d2e113-f0d2-4094-848e-a80496b3afba
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "telewebion.com,user.telewebion.com,plus.telewebion.com,api.telewebion.com"
+  - name: "🌐سرور 442 | Bah-27| MTSRVRS"
+    type: vless
+    server: 212.111.84.187
+    port: 8443
+    uuid: 6d39596c-b569-4a61-86c3-28cfb83a4c95
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 887c0d72e771a934
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 446 | Bah-27| MTSRVRS"
+    type: vless
+    server: 104.18.167.135
+    port: 80
+    uuid: 7d96f544-c496-41cf-dd61-337f0aff062a
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/abcde"
+      headers:
+        Host: kr1.175852.xyz
+  - name: "🌐سرور 450 | Bah-27| MTSRVRS"
+    type: vless
+    server: 51.44.93.242
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    udp: true
+    tls: true
+    servername: trojan.burgerip.co.uk
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+      headers:
+        Host: trojan.burgerip.co.uk
+    client-fingerprint: chrome
+  - name: "🌐سرور 454 | Bah-27| MTSRVRS"
+    type: vless
+    server: cdn1.sohacase.ir
+    port: 80
+    uuid: 2056aaf3-7e69-41fa-b43d-b658d789d2cf
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: italiano.vpconnec.org
+      mode: auto
+  - name: "🌐سرور 458 | Bah-27| MTSRVRS"
+    type: vless
+    server: nodejs.org
+    port: 443
+    uuid: fef4a93d-eb4f-4657-b56b-32a0dc060045
+    udp: true
+    tls: true
+    servername: dev.nestandneighbours.com
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: dev.nestandneighbours.com
+    client-fingerprint: chrome
+  - name: "🌐سرور 462 | Bah-27| MTSRVRS"
+    type: vless
+    server: serverncyn.samanidempire.org
+    port: 443
+    uuid: 5a0170ca-44ba-46a0-9d9b-2e4663b1f6a5
+    udp: true
+    tls: true
+    servername: serverncyn.samanidempire.org
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/b6e684a7"
+      headers:
+        Host: serverncyn.samanidempire.org
+    client-fingerprint: chrome
+  - name: "🌐سرور 466 | Bah-27| MTSRVRS"
+    type: ss
+    server: 3.1.195.148
+    port: 8313
+    cipher: chacha20-ietf-poly1305
+    password: ljqdalu13..
+    udp: true
+  - name: "🌐سرور 470 | Bah-27| MTSRVRS"
+    type: vless
+    server: c1.s-sub.org
+    port: 8443
+    uuid: 991519c1-3680-49b7-bb9f-9029a7a39067
+    udp: true
+    tls: true
+    servername: backup.f-sub.cfd
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: backup.f-sub.cfd
+  - name: "🌐سرور 474 | Bah-27| MTSRVRS"
+    type: vless
+    server: 46.62.240.45
+    port: 46704
+    uuid: 27379a6d-c0f2-4476-b6c2-352bf4f2087b
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: HxFj9w2QRYJD6gLPuRW4upoYqe1A2lHqdAiB1mdcBUQ
+      short-id: bb5cae
+    network: tcp
+  - name: "🌐سرور 479 | Bah-27| MTSRVRS"
+    type: vless
+    server: zula.ir
+    port: 443
+    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
+    udp: true
+    tls: true
+    servername: cho.chonon.sbs
+    client-fingerprint: chrome
+    alpn:
+      - h3
+    network: xhttp
+    xhttp-opts:
+      path: "/gdsthjjjvfxsstyy؟ed=443"
+      host: cho.chonon.sbs
+      mode: packet-up
+  - name: "🌐سرور 483 | Bah-27| MTSRVRS"
+    type: vless
+    server: 104.18.32.47
+    port: 443
+    uuid: c94f3cf9-7aa5-4b6d-b153-baea45280c64
+    udp: true
+    tls: true
+    servername: x1MKkQTEJX0hRuPvUN3tUIAmtffMutnLGgNRIjSXOW7JZV4K.sangar.net
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/test"
+      headers:
+        Host: x1MKkQTEJX0hRuPvUN3tUIAmtffMutnLGgNRIjSXOW7JZV4K.sangar.net
+  - name: "🌐سرور 488 | Bah-27| MTSRVRS"
+    type: ss
+    server: 57.129.95.140
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 6d75de740e3d5197
+    udp: true
+  - name: "🌐سرور 492 | Bah-27| MTSRVRS"
+    type: vless
+    server: 172.67.180.92
+    port: 443
+    uuid: dd0cfef0-fda9-47ec-8a65-49d7bc004f82
+    udp: true
+    tls: true
+    servername: web.abcallcenter.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/--Telegram---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN?ed=2560"
+      headers:
+        Host: web.abcallcenter.com
+  - name: "🌐سرور 496 | Bah-27| MTSRVRS"
+    type: ss
+    server: 145.249.109.121
+    port: 25512
+    cipher: chacha20-ietf-poly1305
+    password: smSMfR9jqLgMkHuQtxSIWh
+    udp: true
+  - name: "🌐سرور 500 | Bah-27| MTSRVRS"
+    type: trojan
+    server: 13.37.147.199
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    servername: trojan.burgerip.co.uk
+    alpn:
+      - http/1.1
+    network: tcp
+  - name: "🌐سرور 504 | Bah-27| MTSRVRS"
+    type: ss
+    server: 82.38.31.122
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+    udp: true
+  - name: "🌐سرور 512 | Bah-27| MTSRVRS"
+    type: vless
+    server: 88.218.93.159
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🌐سرور 516 | Bah-27| MTSRVRS"
+    type: vless
+    server: mywar.myshopp.ir
+    port: 80
+    uuid: 6951424b-384c-4afc-8f12-38192f68192b
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/v2rairani?@freeiranweb@freeiranweb@freeiranweb@freeiranweb@freeiranweb@freeiranweb@freeiranweb"
+      headers:
+        Host: mywar.myshopp.ir
+  - name: "🌐سرور 520 | Bah-27| MTSRVRS"
+    type: vless
+    server: store.asanpaf.ir
+    port: 8443
+    uuid: 6e6f0a3b-a06c-4bb0-ae65-6258b92b972c
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - tgju.org
+  - name: "🌐سرور 529 | Bah-27| MTSRVRS"
+    type: vless
+    server: 185.146.173.143
+    port: 8080
+    uuid: 84a09036-9673-4be4-b428-48e7c75d6a7c
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "@ELiV2--@ELiV2--@ELiV2--@ELiV2?ed=80"
+      headers:
+        Host: f1.elena-cloudflare.com
+  - name: "🌐سرور 533 | Bah-27| MTSRVRS"
+    type: ss
+    server: 135.125.245.131
+    port: 20939
+    cipher: chacha20-ietf-poly1305
+    password: 85d3d8ccba287d3e
+    udp: true
+  - name: "🌐سرور 541 | Bah-27| MTSRVRS"
+    type: ss
+    server: series-a2.varzesh360.co
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: mps3FwmDjLrWaOVg
+    udp: true
+  - name: "🌐سرور 556 | Bah-27| MTSRVRS"
+    type: vless
+    server: zula.ir
+    port: 443
+    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2b29
+    udp: true
+    tls: true
+    servername: cho.chonon.sbs
+    client-fingerprint: chrome
+    alpn:
+      - h3
+    network: xhttp
+    xhttp-opts:
+      path: "/gdsthjjjvfxsstyy؟ed=443"
+      host: cho.chonon.sbs
+      mode: packet-up
+  - name: "🌐سرور 560 | Bah-27| MTSRVRS"
+    type: ss
+    server: 82.38.31.62
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+    udp: true
+  - name: "🌐سرور 564 | Bah-27| MTSRVRS"
+    type: vless
+    server: www.speedtest.net
+    port: 8443
+    uuid: e07c6a8b-f67d-4297-bc8f-31855eef57a8
+    udp: true
+    tls: true
+    servername: Tet.mehspeedtest.com
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: Tet.mehspeedtest.com
+  - name: "🌐سرور 568 | Bah-27| MTSRVRS"
+    type: vless
+    server: 45.144.53.77
+    port: 8104
+    uuid: db27262a-4151-4c36-8e5f-2cf7fd387a0f
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 4gcDJumxa0bTaHvrZRL4Hb5ItXPha6ZYZ0fGmMD_k0A
+      short-id: 9f4ca836ca270ef8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 573 | Bah-27| MTSRVRS"
+    type: vless
+    server: www.parspack.com
+    port: 8880
+    uuid: f9113568-93cd-4ac4-a1dd-b13b59d743be
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      v2ray-http-upgrade: true
+      headers:
+        Host: shhproxy.com.www.speedtest.net.www.zula.ir.cloudflare.com.mozdfree.bUzz.
+  - name: "🌐سرور 577 | Bah-27| MTSRVRS"
+    type: vless
+    server: 195.26.224.112
+    port: 8443
+    uuid: db444bee-8212-5ff5-be40-47e1a7509eb8
+    udp: true
+    tls: true
+    servername: vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: HE-fVd73NsTheypCLSyeNxgkg2EJOfXWGxjUOcvPZyQ
+      short-id: 938f14cf6757a249
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: vk.com
+      mode: auto
+  - name: "🌐سرور 581 | Bah-27| MTSRVRS"
+    type: vless
+    server: discord.gg
+    port: 80
+    uuid: e4cb2d9f-61ef-4738-a3f2-a8889cdf91e6
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: shhproxy-free.xn--85-pv2cl2k5x3fipr.org.
+  - name: "🌐سرور 585 | Bah-27| MTSRVRS"
+    type: vless
+    server: denl1317.dosarsimovie.sbs
+    port: 1317
+    uuid: e110d2d8-201f-485c-a905-527e1cc6e9bf
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🌐سرور 589 | Bah-27| MTSRVRS"
+    type: vless
+    server: partners.dissertationhelpspecialist.com
+    port: 2025
+    uuid: 0df5fd44-45de-4ab3-8986-e734a207e062
+    udp: true
+    tls: true
+    servername: tgju.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: nzSTknCPyUMPje16fksSyeZQ_BM6WCgqUt-m2XLZZlM
+      short-id: e28f547d13e3
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl
+  - name: "🌐سرور 593 | Bah-27| MTSRVRS"
+    type: vless
+    server: zone.fr.fx2hub.ir
+    port: 59095
+    uuid: bdf97c06-ae1f-47e9-b47a-9d9ff47b5820
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - skyroom.online
+  - name: "🌐سرور 597 | Bah-27| MTSRVRS"
+    type: vless
+    server: 104.21.30.230
+    port: 80
+    uuid: 435bda4c-fe5e-42c9-a3ad-15334943b38a
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: us3.rtacg.com
+  - name: "🌐سرور 601 | Bah-27| MTSRVRS"
+    type: vless
+    server: 194.31.194.110
+    port: 1257
+    uuid: 17e7b169-1899-4ba3-8efa-4f10e92c9455
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - Fast.com
+  - name: "🌐سرور 605 | Bah-27| MTSRVRS"
+    type: ss
+    server: 57.129.95.38
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: f54cdee10f8b25ce
+    udp: true
+  - name: "🌐سرور 610 | Bah-27| MTSRVRS"
+    type: vmess
+    server: 188.114.98.0
+    port: 8080
+    uuid: nasnet
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/nasnet/cdn?ed=2560"
+      headers:
+        Host: nasnet-162191099.sharghdaily.co
+  - name: "🌐سرور 614 | Bah-27| MTSRVRS"
+    type: vless
+    server: 104.22.0.87
+    port: 443
+    uuid: cb2effa0-e49c-49d3-aee6-c7e3e1f38922
+    udp: true
+    tls: true
+    servername: at1.vless.site
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/vless?ed"
+      headers:
+        Host: at1.vless.site
+  - name: "🌐سرور 618 | Bah-27| MTSRVRS"
+    type: ss
+    server: 154.38.176.7
+    port: 80
+    cipher: aes-256-gcm
+    password: nKeE2ZFWVaE4DyjR
+    udp: true
+  - name: "🌐سرور 622 | Bah-27| MTSRVRS"
+    type: vless
+    server: 45.138.74.173
+    port: 20601
+    uuid: 0f6c0aa0-7f37-44fe-b33f-ef9753f7ee9e
+    udp: true
+    tls: true
+    servername: Gstatic.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1ZyXEGSzQC_WAGlhnEV6SgDmHqCxXZSAYGryUHHkAQg
+      short-id: d2e9ce1d
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "Telegram@Rnrifci@Rnrifci@Rnrifci@Rnrifci@Rnrifci@Rnrifci@Rnrifci@Rnrifci@Rnrifci@Rnrifci@Rnrifci@Rnrifci@Rnrifci@Rnrifci"
+  - name: "🌐سرور 626 | Bah-27| MTSRVRS"
+    type: ss
+    server: series-a2-mec.samanehha.co
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: u17T3BvpYaaiuW2c
+    udp: true
+  - name: "🌐سرور 631 | Bah-27| MTSRVRS"
+    type: vless
+    server: 94.131.100.163
+    port: 443
+    uuid: 19ae54a4-716b-4b08-914f-c9c1556c4380
+    udp: true
+    tls: true
+    servername: api.avito.ru
+    network: ws
+    ws-opts:
+      path: "/pyzrgqws"
+      headers:
+        Host: api.avito.ru
+    client-fingerprint: chrome
+  - name: "🌐سرور 635 | Bah-27| MTSRVRS"
+    type: trojan
+    server: 18.195.108.52
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    servername: trojan.burgerip.co.uk
+    alpn:
+      - http/1.1
+    network: tcp
+  - name: "🌐سرور 639 | Bah-27| MTSRVRS"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: 32c257a1-f18c-42c7-860d-9cb0ead8b07c
+    udp: true
+    tls: true
+    servername: dragonhost9.qzz.io
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/47.250.139.59=443"
+      headers:
+        Host: dragonhost9.qzz.io
+  - name: "🌐سرور 643 | Bah-27| MTSRVRS"
+    type: vless
+    server: 94.232.247.168
+    port: 41360
+    uuid: e16a35ea-6715-4e75-9845-d20358bd0876
+    udp: true
+    tls: true
+    servername: yahoo.com
+    reality-opts:
+      public-key: TY6w1zP-qUFKVCAQdQT2ZEJsZBrPO4hZjZYBSS6h6DU
+      short-id: 1aab45
+    client-fingerprint: chrome
+    network: tcp
+  - name: "🌐سرور 647 | Bah-27| MTSRVRS"
+    type: vless
+    server: xn-de.onlinernet.ir
+    port: 20018
+    uuid: b433fd43-e947-4cd0-96f9-901eb09df4b9
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - play.google.com
+  - name: "🌐سرور 651 | Bah-27| MTSRVRS"
+    type: trojan
+    server: 23.186.200.107
+    port: 11011
+    password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+    udp: true
+    servername: wus01.weyaf9sdoh2h.space
+    network: tcp
+  - name: "🌐سرور 656 | Bah-27| MTSRVRS"
+    type: vmess
+    server: 103.97.203.220
+    port: 550
+    uuid: 9e0e83ca-0fbc-44b1-8024-0eb8f9414156
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "🌐سرور 660 | Bah-27| MTSRVRS"
+    type: vless
+    server: 51.158.206.87
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 664 | Bah-27| MTSRVRS"
+    type: vless
+    server: ir2.webira.net
+    port: 19204
+    uuid: a8439aac-8502-48e5-a87c-0a77802204d6
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - divarcdn.com
+  - name: "🌐سرور 669 | Bah-27| MTSRVRS"
+    type: vless
+    server: 104.17.147.22
+    port: 80
+    uuid: e53d3c58-c143-4d33-824c-4e3f1ef3b655
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/@Vpn_Mikey،@Vpn_Mikey"
+      v2ray-http-upgrade: true
+      headers:
+        Host: Vpn_Mikey-speedtest.net.Amir-Mikey.Tech.
+  - name: "🌐سرور 673 | Bah-27| MTSRVRS"
+    type: vless
+    server: partners.dissertationhelpspecialist.com
+    port: 2025
+    uuid: a04b259c-0319-434f-ba66-411b7a575b5d
+    udp: true
+    tls: true
+    servername: status.play.google.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: nzSTknCPyUMPje16fksSyeZQ_BM6WCgqUt-m2XLZZlM
+      short-id: e28f547d13e3
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl
+  - name: "🌐سرور 678 | Bah-27| MTSRVRS"
+    type: vless
+    server: www.speedtest.net
+    port: 80
+    uuid: 0c0c6c5e-0680-4505-b297-6fd3c0f75bad
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/-LiV2ry@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6?ed=2048"
+      headers:
+        Host: www.speedtest.net.lightning6.ip-ddns.com.
+  - name: "🌐سرور 690 | Bah-27| MTSRVRS"
+    type: trojan
+    server: 172.238.229.254
+    port: 14051
+    password: OdgHycGphesfLmPMYolUF
+    udp: true
+    servername: api.avito.ru
+    network: tcp
+  - name: "🌐سرور 694 | Bah-27| MTSRVRS"
+    type: vless
+    server: cf.mahdi383ir.website
+    port: 8443
+    uuid: 8edf51a7-a211-428d-9685-e6c71959ab9f
+    udp: true
+    tls: true
+    servername: kh2tiyozkxybazdibomyhih.mahdi383ir.website
+    client-fingerprint: firefox
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: kh2tiyozkxybazdibomyhih.mahdi383ir.website
+  - name: "🌐سرور 698 | Bah-27| MTSRVRS"
+    type: vless
+    server: 45.136.5.84
+    port: 8880
+    uuid: a0c62a1e-2360-4586-81d8-e5db7ff0599e
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🌐سرور 702 | Bah-27| MTSRVRS"
+    type: vless
+    server: nl.zeepo.ir
+    port: 443
+    uuid: 5520f018-2a8c-100e-81e5-0810cba12076
+    udp: true
+    tls: true
+    servername: tgju.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: SySMR9yW2kna78L7nmfkSYeQ-DkS7nIx98AsTsHy0gM
+      short-id: 7fec027d1852df40
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 706 | Bah-27| MTSRVRS"
+    type: vless
+    server: vip1.blackhats.shop
+    port: 21130
+    uuid: a0dd9d17-8595-461b-bfea-9d7e7943dad6
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - speedtest.net
+  - name: "🌐سرور 714 | Bah-27| MTSRVRS"
+    type: vless
+    server: 185.242.87.247
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🌐سرور 718 | Bah-27| MTSRVRS"
+    type: vless
+    server: trt.fastlynew.hosting-ip.com
+    port: 80
+    uuid: a8dcf8a4-e552-43fe-aeaa-eb6b6a4dcc2e
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/?ed=2560"
+      host: maxpl165.global.ssl.fastly.net
+      mode: auto
+  - name: "🌐سرور 723 | Bah-27| MTSRVRS"
+    type: vless
+    server: 89.221.224.238
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🌐سرور 727 | Bah-27| MTSRVRS"
+    type: vless
+    server: 13.36.190.50
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    udp: true
+    tls: true
+    servername: trojan.burgerip.co.uk
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+      headers:
+        Host: trojan.burgerip.co.uk
+    client-fingerprint: chrome
+  - name: "🌐سرور 731 | Bah-27| MTSRVRS"
+    type: vless
+    server: de.fastly80-3.hosting-ip.com
+    port: 80
+    uuid: ea4019ed-aa5f-43eb-a967-f8aaf6ded375
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/@custom_config?ed=2048"
+      headers:
+        Host: leader-of-www.com
+  - name: "🌐سرور 735 | Bah-27| MTSRVRS"
+    type: vless
+    server: german.vp22ray.site
+    port: 2087
+    uuid: 6f0dd694-2cdf-4c82-8616-814a5e60d250
+    udp: true
+    tls: true
+    servername: Ftp.debian.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 54z0hCTglWDmCFnDBU4JmzqjJtFgbhM3x45l-B5If1I
+      short-id: 32c43ca1
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - Ftp.debian.org
+  - name: "🌐سرور 739 | Bah-27| MTSRVRS"
+    type: vless
+    server: sv4.fasdata.top
+    port: 7323
+    uuid: 3bf97509-bce0-46ba-b9ce-d4208e0ce136
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - P30afzar.com
+  - name: "🌐سرور 743 | Bah-27| MTSRVRS"
+    type: vless
+    server: nim.saas-clouding.ir
+    port: 2046
+    uuid: c81567a3-6fa4-4f7f-9658-34977f611fe8
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/info"
+      headers:
+        Host:
+          - p30afzar.com
+  - name: "🌐سرور 747 | Bah-27| MTSRVRS"
+    type: ss
+    server: 20.254.21.147
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: W74XFALLLuw6m5IA
+    udp: true
+  - name: "🌐سرور 751 | Bah-27| MTSRVRS"
+    type: vless
+    server: 162.159.152.205
+    port: 443
+    uuid: 29187857-4a1f-4d1e-88eb-0016771e0dbb
+    udp: true
+    tls: true
+    servername: sni.aizrf.com
+    client-fingerprint: random
+    alpn:
+      - h3
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: sni.aizrf.com
+  - name: "🌐سرور 755 | Bah-27| MTSRVRS"
+    type: vless
+    server: 77.42.77.102
+    port: 46704
+    uuid: ea736b2b-0f0a-4b9f-865f-83e0014ffc8c
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: HxFj9w2QRYJD6gLPuRW4upoYqe1A2lHqdAiB1mdcBUQ
+      short-id: bb5cae
+    network: tcp
+  - name: "🌐سرور 759 | Bah-27| MTSRVRS"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: bbafc769-441b-4f06-9aae-9cc04ede1980
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/198.98.61.220=443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "🌐سرور 763 | Bah-27| MTSRVRS"
+    type: vless
+    server: no.tan3.ir
+    port: 2053
+    uuid: 1621caa6-2a23-4364-919b-1276ab6ca81a
+    udp: true
+    tls: true
+    servername: ax.tan3.ir
+    client-fingerprint: chrome
+    alpn:
+      - h2
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: ax.tan3.ir
+      mode: auto
+  - name: "🌐سرور 767 | Bah-27| MTSRVRS"
+    type: vless
+    server: 35.180.19.221
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    udp: true
+    tls: true
+    servername: trojan.burgerip.co.uk
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+      headers:
+        Host: trojan.burgerip.co.uk
+    client-fingerprint: chrome
+  - name: "🌐سرور 771 | Bah-27| MTSRVRS"
+    type: vless
+    server: www.speedtest.net
+    port: 2083
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    udp: true
+    tls: true
+    servername: hAsTi.frEEairLainEs.Com
+    client-fingerprint: randomized
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/G9WiaAeAdacfio6X?ed=2560"
+      headers:
+        Host: HaSTI.fReeAIrLAINes.COm
+  - name: "🌐سرور 775 | Bah-27| MTSRVRS"
+    type: vless
+    server: 46.38.147.4
+    port: 5122
+    uuid: dc4651a0-39c9-4e09-81f9-ef95aa993c8e
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - TABRIZ.NET
+  - name: "🌐سرور 779 | Bah-27| MTSRVRS"
+    type: vless
+    server: 104.18.26.90
+    port: 2087
+    uuid: dca945d2-6d9b-434f-8754-3626a6a75e21
+    udp: true
+    tls: true
+    servername: aza002.vaslbash.site
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: aza002.vaslbash.site
+    client-fingerprint: chrome
+  - name: "🌐سرور 784 | Bah-27| MTSRVRS"
+    type: vmess
+    server: chatgpt.com
+    port: 80
+    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: tr1-smart.adelping.com.
+  - name: "🌐سرور 790 | Bah-27| MTSRVRS"
+    type: vless
+    server: ARM.CROCODILESERVER.IR
+    port: 443
+    uuid: 32932937-b85f-40be-ae02-997ea5b0b62a
+    udp: true
+    tls: true
+    servername: app.hubspot.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+      short-id: fd1dff03520d8f56
+    network: tcp
+  - name: "🌐سرور 796 | Bah-27| MTSRVRS"
+    type: vless
+    server: 18.188.119.26
+    port: 1212
+    uuid: a7e04b44-855e-4fe7-8fa0-31894e928bce
+    udp: true
+    tls: true
+    servername: stackoverflow.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A
+      short-id: a4844ba7
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 801 | Bah-27| MTSRVRS"
+    type: vless
+    server: nl.jojack.ru
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    udp: true
+    tls: true
+    servername: nl.jojack.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: sxyxV0_y1o09gKJBL9AJJyRSEg6MiYK0j-kb5unzHh4
+      short-id: 6bb3c7f9f97b45b8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 809 | Bah-27| MTSRVRS"
+    type: trojan
+    server: 51.44.93.242
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    servername: trojan.burgerip.co.uk
+    alpn:
+      - http/1.1
+    network: tcp
+  - name: "🌐سرور 816 | Bah-27| MTSRVRS"
+    type: vless
+    server: amir.behnamweb.fun
+    port: 1234
+    uuid: 308975b2-0c44-4bbc-be41-62b2f6fccfe3
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - speedtest.net
+  - name: "🌐سرور 822 | Bah-27| MTSRVRS"
+    type: vless
+    server: 172.67.183.26
+    port: 443
+    uuid: b9ad895b-12ac-40fc-a5ac-a5b2a1285001
+    udp: true
+    tls: true
+    servername: 3k.pureboy.eu.org
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: 3k.pureboy.eu.org
+    client-fingerprint: chrome
+  - name: "🌐سرور 826 | Bah-27| MTSRVRS"
+    type: vless
+    server: 192.0.54.32
+    port: 2096
+    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+    udp: true
+    tls: true
+    servername: kejiland.freewarp.eu.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/snippets"
+      headers:
+        Host: kejiland.freewarp.eu.org
+  - name: "🌐سرور 830 | Bah-27| MTSRVRS"
+    type: vless
+    server: www.speedtest.net
+    port: 80
+    uuid: 7a265a0c-2199-40d8-b36b-21ffb0d30efe
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/telegram-@Shh_Proxy-@Shh_Proxy,telegram-@Shh_Proxy,telegram-@Shh_Proxy,telegram-@Shh_Proxy?ed=2560"
+      headers:
+        Host: shhproxy.com.www.speedtest.net.www.zula.ir.cloudflare.com.mozdfree.bUzz.
+  - name: "🌐سرور 834 | Bah-27| MTSRVRS"
+    type: vless
+    server: 150.230.107.234
+    port: 53780
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    udp: true
+    tls: true
+    servername: jpc.ylks01.eu.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: jpc.ylks01.eu.org
+    client-fingerprint: chrome
+  - name: "🌐سرور 839 | Bah-27| MTSRVRS"
+    type: ss
+    server: 145.239.6.202
+    port: 8090
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+    udp: true
+  - name: "🌐سرور 843 | Bah-27| MTSRVRS"
+    type: ss
+    server: 57.130.28.148
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 74918bc801d53a4b
+    udp: true
+  - name: "🌐سرور 847 | Bah-27| MTSRVRS"
+    type: vless
+    server: 45.130.125.160
+    port: 2052
+    uuid: 2271c50f-ac7a-4d7f-8b04-64085b0daa56
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/pabloping"
+      host: pablo-n1.digionix.ir
+      mode: auto
+  - name: "🌐سرور 851 | Bah-27| MTSRVRS"
+    type: trojan
+    server: 3.121.84.84
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    servername: trojan.burgerip.co.uk
+    alpn:
+      - http/1.1
+    network: tcp
+  - name: "🌐سرور 855 | Bah-27| MTSRVRS"
+    type: ss
+    server: 45.158.171.129
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: a8bt9fY0QsLS6eLnXUe0Ym
+    udp: true
+  - name: "🌐سرور 861 | Bah-27| MTSRVRS"
+    type: vless
+    server: 151.101.3.8
+    port: 80
+    uuid: 30ef22a6-b8a0-4b15-b8b7-bb92ded87b46
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/v2rayfree1vpn"
+      host: telv2rayfree1vpn.global.ssl.fastly.net
+      mode: auto
+  - name: "🌐سرور 871 | Bah-27| MTSRVRS"
+    type: vless
+    server: 146.19.80.222
+    port: 443
+    uuid: 309fa273-6579-4cb2-9143-7cad50401eba
+    udp: true
+    tls: true
+    servername: www.cloudflare.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: gZGVp5PUdafgsmi1gawa1yLuha_XhXRc_W9SvPiGmTY
+      short-id: 7cad5040
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 879 | Bah-27| MTSRVRS"
+    type: vless
+    server: utube.fluxorvpn.net
+    port: 443
+    uuid: f5b63288-12cb-4a16-937a-f8ec4d60fb9a
+    udp: true
+    tls: true
+    servername: store.steampowered.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: pQYGdr-ee0TotzdikPWnqJgKbX8OYcPNkJpH9scxjB0
+      short-id: d7e1a2bb
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 884 | Bah-27| MTSRVRS"
+    type: vless
+    server: 104.21.48.1
+    port: 443
+    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2b21
+    udp: true
+    tls: true
+    servername: cho.chonon.sbs
+    client-fingerprint: chrome
+    alpn:
+      - h3
+    network: xhttp
+    xhttp-opts:
+      path: "/gdsthjjjvfxsstyy؟ed=443"
+      host: cho.chonon.sbs
+      mode: packet-up
+  - name: "🌐سرور 888 | Bah-27| MTSRVRS"
+    type: trojan
+    server: 104.18.32.47
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.multiplydose.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.multiplydose.com
+  - name: "🌐سرور 892 | Bah-27| MTSRVRS"
+    type: vless
+    server: dqf21.sdssd1.sadqwdw1.carvan1.mimkiscx.ir
+    port: 443
+    uuid: f84ab055-3ffe-4a90-aad3-30596550b03c
+    udp: true
+    tls: true
+    servername: beh1.salonemojallal.ir.
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: beh1.salonemojallal.ir.
+  - name: "🌐سرور 896 | Bah-27| MTSRVRS"
+    type: ss
+    server: 13.43.249.65
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: W74XFALLLuw6m5IA
+    udp: true
+  - name: "🌐سرور 904 | Bah-27| MTSRVRS"
+    type: vless
+    server: 81.12.92.238
+    port: 2083
+    uuid: fbbcdbf8-293c-426a-9984-b7b9be61b17f
+    udp: true
+    tls: true
+    servername: www.tgju.org
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: fxaVnahQzU_e_I3dWZeNZXlp9RyleYnB3yjzHLm4mmQ
+      short-id: d7f6fa68e7aa8286
+    network: tcp
+  - name: "🌐سرور 908 | Bah-27| MTSRVRS"
+    type: vmess
+    server: 45.138.74.173
+    port: 13700
+    uuid: f38a5500-77de-4384-86f5-54d7ab5de2c8
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "Telegram@Rnrifci@Rnrifci@Rnrifci@Rnrifci@Rnrifci@Rnrifci@Rnrifci@Rnrifci@Rnrifci@Rnrifci"
+  - name: "🌐سرور 912 | Bah-27| MTSRVRS"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: acd18067-14d4-4c4b-83d7-5ef165051fea
+    udp: true
+    tls: true
+    servername: ancient-star-144e.sell003.workers.dev
+    client-fingerprint: chrome
+    alpn:
+      - h3
+      - h2
+    network: ws
+    ws-opts:
+      path: "/eyJleHAiOjE3NzA5MTI5MzA4MzV9?ed"
+      headers:
+        Host: ancient-star-144e.sell003.workers.dev
+  - name: "🌐سرور 920 | Bah-27| MTSRVRS"
+    type: vless
+    server: 45.88.183.156
+    port: 12794
+    uuid: 08704c01-7edb-454a-98a2-328ccb9936fa
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🌐سرور 924 | Bah-27| MTSRVRS"
+    type: vless
+    server: www.speedtest.net
+    port: 8880
+    uuid: 9be93141-a5d0-42d3-885d-0b2536f12a03
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/@iraniV2ray_config, @iraniV2ray_config/?ed=2560"
+      v2ray-http-upgrade: true
+      headers:
+        Host: iraniV2ray.nanowaash-shop.ir.
+  - name: "🌐سرور 932 | Bah-27| MTSRVRS"
+    type: vless
+    server: 194.4.49.19
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🌐سرور 936 | Bah-27| MTSRVRS"
+    type: vless
+    server: 188.114.98.224
+    port: 2095
+    uuid: 0afc7a72-a718-49c0-9cc2-ce473c46d6dc
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/V2rayCUSTOMIZE?ed=1024"
+      headers:
+        Host: V2ray-_-_-_-_-_-VPNCUSTOMIZE.keLLekcoLLection.com.
+  - name: "🌐سرور 940 | Bah-27| MTSRVRS"
+    type: vless
+    server: root.configforvpn.fun
+    port: 443
+    uuid: ca89921a-c01d-4a96-961e-fdeb52ed6513
+    udp: true
+    tls: true
+    servername: root.configforvpn.fun
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/cdn"
+      headers:
+        Host: root.configforvpn.fun
+  - name: "🌐سرور 949 | Bah-27| MTSRVRS"
+    type: ss
+    server: 54.36.174.140
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: pvgz9pq
+    udp: true
+  - name: "🌐سرور 953 | Bah-27| MTSRVRS"
+    type: vless
+    server: V2ngFast.huqpmfood.ir
+    port: 1146
+    uuid: 93a9f8f5-9ea8-46af-88a2-23ee4751dad7
+    udp: true
+    tls: true
+    servername: stackoverflow.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 18l7-wCCLwKZn-slnEV1HlM-ocxV94nau8CHNEpv3Ew
+      short-id: 077dc29a23d311f2
+    network: xhttp
+    xhttp-opts:
+      path: "/@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast"
+      host: stackoverflow.com
+      mode: auto
+  - name: "🌐سرور 959 | Bah-27| MTSRVRS"
+    type: vless
+    server: dlc-ger1.persianpinggame.ir
+    port: 443
+    uuid: d6637de9-6df6-4e14-b6c2-9f32df6d5c79
+    udp: true
+    tls: true
+    servername: yahoo.com
+    client-fingerprint: random
+    reality-opts:
+      public-key: FRhlZqNN8KVTgQ-yS-7WTqNjSi9Mhy-ItbmSqcnn5EM
+      short-id: 274e8f5c1c9feb3f
+    network: tcp
+  - name: "🌐سرور 963 | Bah-27| MTSRVRS"
+    type: vless
+    server: 151.101.0.155
+    port: 80
+    uuid: d0c3273b-3e75-4644-922a-e106ad0cfe7d
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/v2rayfree1vpn"
+      host: v2rayfree1vpnTL.global.ssl.fastly.net
+      mode: auto
+  - name: "🌐سرور 967 | Bah-27| MTSRVRS"
+    type: ss
+    server: 57.129.95.198
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: d6b0973401858b29
+    udp: true
+  - name: "🌐سرور 971 | Bah-27| MTSRVRS"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: dd0cfef0-fda9-47ec-8a65-49d7bc004f82
+    udp: true
+    tls: true
+    servername: www.hitgram.ir
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/--Telegram---MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN?ed=2560"
+      headers:
+        Host: www.hitgram.ir
+  - name: "🌐سرور 975 | Bah-27| MTSRVRS"
+    type: vless
+    server: chatgpt.com
+    port: 443
+    uuid: 8a07740f-b932-4372-a3a2-ed91f184cd33
+    udp: true
+    tls: true
+    servername: KhAmeneI.DPdNs.OrG
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560"
+      headers:
+        Host: khamenei.dpdns.org
+  - name: "🌐سرور 979 | Bah-27| MTSRVRS"
+    type: trojan
+    server: 35.180.19.221
+    port: 22223
+    password: telegram-id-directvpn
+    udp: true
+    servername: trojan.burgerip.co.uk
+    alpn:
+      - http/1.1
+    network: tcp
+  - name: "🌐سرور 983 | Bah-27| MTSRVRS"
+    type: vless
+    server: 37.32.43.104
+    port: 34963
+    uuid: 8bbca00c-aaf5-4dac-b45c-65d04f126b5d
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🌐سرور 987 | Bah-27| MTSRVRS"
+    type: vless
+    server: 151.101.25.242
+    port: 80
+    uuid: fbbd87c3-170b-4249-8139-aa6b23ad5133
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/?ed=2560"
+      host: maxde22.global.ssl.fastly.net
+      mode: auto
+  - name: "🌐سرور 991 | Bah-27| MTSRVRS"
+    type: vless
+    server: 93.127.180.102
+    port: 8880
+    uuid: 6889a1d2-fb40-4fe6-ba30-8ff731799394
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🌐سرور 999 | Bah-27| MTSRVRS"
+    type: trojan
+    server: 23.186.200.108
+    port: 11012
+    password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+    udp: true
+    servername: wus02.weyaf9sdoh2h.space
+    network: tcp
+  - name: "🌐سرور 1003 | Bah-27| MTSRVRS"
+    type: trojan
+    server: 13.37.147.199
+    port: 22223
+    password: telegram-id-directvpn
+    udp: true
+    servername: trojan.burgerip.co.uk
+    alpn:
+      - http/1.1
+    network: tcp
+  - name: "🌐سرور 1007 | Bah-27| MTSRVRS"
+    type: ss
+    server: 57.131.41.129
+    port: 8390
+    cipher: 2022-blake3-aes-256-gcm
+    password: "etU8/fvCVPaqmKkXV6bX8v8ULI4Fch+EKvg19MoETLk="
+    udp: true
+  - name: "🌐سرور 1011 | Bah-27| MTSRVRS"
+    type: ss
+    server: tinkered-pennies-puppies.freesocks.work
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: hbGrpfvNrJsUmKmPbR3iY2
+    udp: true
+  - name: "🌐سرور 1015 | Bah-27| MTSRVRS"
+    type: vmess
+    server: 188.114.97.7
+    port: 443
+    uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: linde06.indiavideo.sbs
+    network: ws
+    ws-opts:
+      path: "/linkws"
+      headers:
+        Host: linde06.indiavideo.sbs
+    client-fingerprint: chrome
+  - name: "🌐سرور 1019 | Bah-27| MTSRVRS"
+    type: vless
+    server: s2.plan-vpn.ru
+    port: 443
+    uuid: 3be95058-e4e5-40e2-b51c-db1e6313cb7c
+    udp: true
+    tls: true
+    servername: s2.plan-vpn.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: fT83pflGxRKuI01MxRCO7ODM8_UqAoHRC43lfpecLnk
+      short-id: 571dbf1163c63dca
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 1023 | Bah-27| MTSRVRS"
+    type: vless
+    server: 172.236.103.104
+    port: 443
+    uuid: bc432859-051c-40e5-ab96-a34f47f1b14a
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: 172.236.103.104
+      mode: stream-one
+  - name: "🌐سرور 1027 | Bah-27| MTSRVRS"
+    type: vless
+    server: 104.21.48.1
+    port: 443
+    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
+    udp: true
+    tls: true
+    servername: cho.chonon.sbs
+    client-fingerprint: chrome
+    alpn:
+      - h3
+    network: xhttp
+    xhttp-opts:
+      path: "/gdsthjjjvfxsstyy؟ed=443"
+      host: cho.chonon.sbs
+      mode: packet-up
+  - name: "🌐سرور 1032 | Bah-27| MTSRVRS"
+    type: vless
+    server: metrix.taklady.com
+    port: 47042
+    uuid: 007a5c24-cdbe-4adc-a79f-ca2768fef8bb
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - gharar.ir
+  - name: "🌐سرور 1036 | Bah-27| MTSRVRS"
+    type: vless
+    server: cloudflare.net
+    port: 8443
+    uuid: 09ceaa87-3cd5-491a-b734-e4ca15e89d35
+    udp: true
+    tls: true
+    servername: v2net-iran-v2ray-nl.morgensport.nl
+    client-fingerprint: edge
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/V2NET-IRAN-V2NET-IRAN-V2NET-IRAN-V2NET-IRAN-V2NET-IRAN-V2NET-IRAN-V2NET-IRAN-V2NET-IRAN-V2NET-IRAN-V2NET-IRAN-V2NET-IRAN-V2NET-IRAN-V2NET-IRAN-V2NET-IRAN"
+      headers:
+        Host: v2net-iran-v2ray-nl.morgensport.nl
+  - name: "🌐سرور 1040 | Bah-27| MTSRVRS"
+    type: vless
+    server: 45.76.136.227
+    port: 4403
+    uuid: 3d72057d-54c5-4d51-ade5-a872c1032b75
+    udp: true
+    tls: true
+    servername: www.foursquare.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: y1hXOgI6F-rUsm6UvVmZpRxqZi1JbktKw7yr4k8lr2o
+      short-id: c52a2c73
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🌐سرور 1044 | Bah-27| MTSRVRS"
+    type: vless
+    server: platform.wise.com
+    port: 2053
+    uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+    udp: true
+    tls: true
+    servername: sni.111000.dynv6.net
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: sni.111000.dynv6.net
+    client-fingerprint: chrome
+  - name: "🌐سرور 1050 | Bah-27| MTSRVRS"
+    type: vless
+    server: 172.67.67.250
+    port: 2053
+    uuid: 53bea386-912e-4fe3-9eff-59c2285a176c
+    udp: true
+    tls: true
+    servername: 9.neshaan.org
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/admins?ed=2560"
+      headers:
+        Host: 9.neshaan.org
+  - name: "🌐سرور 1054 | Bah-27| MTSRVRS"
+    type: vless
+    server: 104.21.64.1
+    port: 443
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    udp: true
+    tls: true
+    servername: pSycho.SueX12.Ir
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/Eujcp9ekQlNJr3cu?ed=2560flow=-udp443flow=-udp443"
+      headers:
+        Host: psycho.suex12.ir
+  - name: "🌐سرور 1062 | Bah-27| MTSRVRS"
+    type: vless
+    server: Channel-VPNCUSTOMIZE.V2ray.motorcycles
+    port: 2095
+    uuid: 4d140b43-05cc-4317-b77b-7006c17feeba
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/V2rayCUSTOMIZE?ed=1024"
+      headers:
+        Host: V2ray-_-_-_-_-_-VPNCUSTOMIZE.keLLekcoLLection.com.
+  - name: "🌐سرور 1066 | Bah-27| MTSRVRS"
+    type: vless
+    server: 3.13.163.21
+    port: 8880
+    uuid: 5488f821-2f39-4aee-832a-078e2ac14717
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🌐سرور 1070 | Bah-27| MTSRVRS"
+    type: vless
+    server: 66.81.247.155
+    port: 443
+    uuid: 4525c260-df3c-4f62-b8f1-f4f5f305694b
+    udp: true
+    tls: true
+    servername: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=#TELEGRAM-v2rayngzendegimamad?ed=512"
+      headers:
+        Host: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+  - name: "🌐سرور 1078 | Bah-27| MTSRVRS"
+    type: trojan
+    server: 58.152.110.40
+    port: 443
+    password: ea39fa94f1ee00999337ea1fd3318e69
+    udp: true
+    servername: www.nintendogames.net
+    network: tcp
+  - name: "🌐سرور 1082 | Bah-27| MTSRVRS"
+    type: vless
+    server: 85.133.202.88
+    port: 8880
+    uuid: f0817e51-5999-46fb-9808-0582c9a53d55
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - varzesh3.com
+  - name: "🌐سرور 1086 | Bah-27| MTSRVRS"
+    type: vless
+    server: uk.saas-clouding.ir
+    port: 2343
+    uuid: bbedba46-b4e6-4b0e-9e4a-3cdf75438be9
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/info"
+      headers:
+        Host:
+          - p30afzar.com
+  - name: "🌐سرور 1090 | Bah-27| MTSRVRS"
+    type: vless
+    server: 89.169.162.214
+    port: 443
+    uuid: 86c8a690-9602-4d40-bbf7-156720de104f
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: c6ef72e4635d15a5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 1096 | Bah-27| MTSRVRS"
+    type: vless
+    server: cx.tuurkderag.top
+    port: 2053
+    uuid: 99a5747a-106d-4f3c-b199-2e3ae09874fa
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🌐سرور 1100 | Bah-27| MTSRVRS"
+    type: vless
+    server: 192.200.160.20
+    port: 443
+    uuid: 2e27ac27-c360-489a-86ea-8b9659de6763
+    udp: true
+    tls: true
+    servername: 639065083958064562.corolla-perma.info
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/jztpmbws?ed"
+      headers:
+        Host: 639065083958064562.corolla-perma.info
+    client-fingerprint: chrome
+  - name: "🌐سرور 1105 | Bah-27| MTSRVRS"
+    type: vmess
+    server: www.speedtest.net
+    port: 2052
+    uuid: 33316b88-907c-4562-ac4e-75aecbc0d8a0
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: etc.tellss.ir
+  - name: "🌐سرور 1109 | Bah-27| MTSRVRS"
+    type: vless
+    server: xn--om2b20cm8cl2dp0cc0tqla.logoseti.ir
+    port: 2087
+    uuid: 8908d1a1-f01e-4192-b4da-d7b411560c09
+    udp: true
+    tls: true
+    servername: Dl.logoSeti.iR.
+    client-fingerprint: chrome
+    alpn:
+      - h3
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/@vilyshco/ed=1024"
+      headers:
+        Host: Dl.loGoSeti.iR
+  - name: "🌐سرور 1113 | Bah-27| MTSRVRS"
+    type: vless
+    server: german.vp22ray.site
+    port: 2087
+    uuid: 2179abfc-2435-4b64-8c96-cb39184a4348
+    udp: true
+    tls: true
+    servername: Ftp.debian.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 54z0hCTglWDmCFnDBU4JmzqjJtFgbhM3x45l-B5If1I
+      short-id: 32c43ca1
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - Ftp.debian.org
+  - name: "🌐سرور 1121 | Bah-27| MTSRVRS"
+    type: trojan
+    server: 13.39.240.185
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    servername: trojan.burgerip.co.uk
+    alpn:
+      - http/1.1
+    network: tcp
+  - name: "🌐سرور 1125 | Bah-27| MTSRVRS"
+    type: vless
+    server: vip-80.f-sub.cfd
+    port: 1517
+    uuid: 4b68fe5d-9426-4493-be80-8381d2e09680
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - JouRNaloFbIgdATA.SpRinGeropEn.coM.
+  - name: "🌐سرور 1129 | Bah-27| MTSRVRS"
+    type: vless
+    server: 51.158.206.20
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 1133 | Bah-27| MTSRVRS"
+    type: vless
+    server: ssl.hostirann.xyz
+    port: 443
+    uuid: cf2f7b94-f5a8-4782-8ad7-e70097e12d1c
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - varzesh3.com
+  - name: "🌐سرور 1137 | Bah-27| MTSRVRS"
+    type: ss
+    server: 23.95.76.147
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "🌐سرور 1145 | Bah-27| MTSRVRS"
+    type: vless
+    server: 91.198.77.216
+    port: 42206
+    uuid: 80e8309c-8235-47b2-b99f-d235cf2d46a4
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🌐سرور 1149 | Bah-27| MTSRVRS"
+    type: vless
+    server: ru-nl01-vlr01.tcp-reset-club.net
+    port: 17443
+    uuid: 4604876a-0652-4835-88bd-4421ea5c40da
+    udp: true
+    tls: true
+    servername: hls-svod.itunes.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: d3b13f31
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 1157 | Bah-27| MTSRVRS"
+    type: vless
+    server: realbook.psg2fr.pdf2book4iran1art.ir
+    port: 8880
+    uuid: 4583d428-8ff9-4000-bcbd-953fe8c8df17
+    udp: true
+    tls: true
+    servername: max.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Pyq2phArGYw2shJNqNQ6f6pF_eb4AVo_lI6a7lgHd0k
+      short-id: 2ad726e6b28daf57
+    network: tcp
+  - name: "🌐سرور 1161 | Bah-27| MTSRVRS"
+    type: vless
+    server: 188.114.97.42
+    port: 2053
+    uuid: 6b47700e-0784-4737-ab49-a47c6ad1425b
+    udp: true
+    tls: true
+    servername: wt1.v2sub.sbs
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/WioNjdhwowoHsiwow"
+      headers:
+        Host: wt.v2sub.sbs
+  - name: "🌐سرور 1165 | Bah-27| MTSRVRS"
+    type: vless
+    server: ars.nexun.ir
+    port: 443
+    uuid: 24fd4c36-83ee-4655-9d9b-1a429773787d
+    udp: true
+    tls: true
+    servername: iranhost.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    reality-opts:
+      public-key: xm1XNJSlX26n6eNLvj2GXjDT6bV51bcfkxXarMO0wAM
+      short-id: d87754b283
+    network: xhttp
+    xhttp-opts:
+      path: "/ceoHTTP"
+      host: iranhost.com
+      mode: auto
+  - name: "🌐سرور 1173 | Bah-27| MTSRVRS"
+    type: vless
+    server: 45.12.30.95
+    port: 443
+    uuid: f84ab055-3ffe-4a90-aad3-30596550b03c
+    udp: true
+    tls: true
+    servername: beh1.salonemojallal.ir.
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: beh1.salonemojallal.ir.
+  - name: "🌐سرور 1177 | Bah-27| MTSRVRS"
+    type: vless
+    server: 172.64.33.91
+    port: 2096
+    uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+    udp: true
+    tls: true
+    servername: hetz.x-smm.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/45.76.183.217=49292"
+      headers:
+        Host: hetz.x-smm.com
+  - name: "🌐سرور 1182 | Bah-27| MTSRVRS"
+    type: vless
+    server: m31a.vip784.com
+    port: 33801
+    uuid: 21d29623-3b91-4494-8402-08372da813a9
+    udp: true
+    tls: false
+    network: http
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - varzesh3.ir
+  - name: "🌐سرور 1186 | Bah-27| MTSRVRS"
+    type: vless
+    server: chatgpt.com
+    port: 8443
+    uuid: 6ceadcb3-81b5-4a0d-a99e-3cb24238952c
+    udp: true
+    tls: true
+    servername: V2nGfaST-V2NGfaST-V2NgfaST-V2NgFaST-V2NgfasT.nDulIMBH.WorkERS.dev
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiM01rd2Uxb21BemtUIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560"
+      headers:
+        Host: v2ngfast-v2ngfast-v2ngfast-v2ngfast-v2ngfast.ndulimbh.workers.dev
+  - name: "🌐سرور 1194 | Bah-27| MTSRVRS"
+    type: vless
+    server: blueivy.qzz.io
+    port: 443
+    uuid: da943f80-91e6-46df-b7ba-c6ecf28e0171
+    udp: true
+    tls: true
+    servername: blueivy.qzz.io
+    network: ws
+    ws-opts:
+      path: "/192.252.182.52:7602"
+      headers:
+        Host: blueivy.qzz.io
+    client-fingerprint: chrome
+  - name: "🌐سرور 1199 | Bah-27| MTSRVRS"
+    type: trojan
+    server: 51.44.93.242
+    port: 22223
+    password: telegram-id-directvpn
+    udp: true
+    servername: trojan.burgerip.co.uk
+    alpn:
+      - http/1.1
+    network: tcp
+  - name: "🌐سرور 1203 | Bah-27| MTSRVRS"
+    type: vless
+    server: 51.158.206.98
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 1207 | Bah-27| MTSRVRS"
+    type: vless
+    server: www.speedtest.net
+    port: 80
+    uuid: 0f5da327-c0b9-4859-8152-70fbb9830f11
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/melo/is/needed"
+      headers:
+        Host: ch1.dontbow.store.
+  - name: "🌐سرور 1213 | Bah-27| MTSRVRS"
+    type: vless
+    server: 162.159.36.5
+    port: 2053
+    uuid: e5f8a9f6-f164-479b-b3b5-b90f213c7145
+    udp: true
+    tls: true
+    servername: ir1.airpanel.top
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ir1.airpanel.top
+    client-fingerprint: chrome
+  - name: "🌐سرور 1218 | Bah-27| MTSRVRS"
+    type: vless
+    server: 25.129.199.122
+    port: 2053
+    uuid: 0044893e-f2ef-4367-88e7-428043d3432f
+    udp: true
+    tls: true
+    servername: Cn.ilkay.top
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: Cn.ilkay.top
+  - name: "🌐سرور 1222 | Bah-27| MTSRVRS"
+    type: vless
+    server: www.parsvds.ir
+    port: 80
+    uuid: 3d4eb0d2-55f3-4961-b032-c63bb884dfed
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/PROXY_MTM-PROXY_MTM-PROXY_MTM?ed=2048"
+      headers:
+        Host: 1.www.speedtest.net.zula.ir.zemestanil.iR.
+  - name: "🌐سرور 1230 | Bah-27| MTSRVRS"
+    type: vless
+    server: 45.136.5.109
+    port: 7443
+    uuid: 6d9a7312-5021-40b0-9e2b-d08b6ef0d917
+    udp: true
+    tls: false
+    network: tcp
+  - name: "🌐سرور 1234 | Bah-27| MTSRVRS"
+    type: vless
+    server: wolfb03.serverp1anel.ir
+    port: 8080
+    uuid: 61076cc8-6d63-4dbf-80b9-6c6d70f934ab
+    udp: true
+    tls: true
+    servername: chatgpt.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw
+      short-id: b7b70c104ad267b8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐سرور 1238 | Bah-27| MTSRVRS"
+    type: trojan
+    server: 15.236.182.0
+    port: 22223
+    password: telegram-id-directvpn
+    udp: true
+    servername: trojan.burgerip.co.uk
+    alpn:
+      - http/1.1
+    network: tcp
+  - name: "🌐سرور 1242 | Bah-27| MTSRVRS"
+    type: vless
+    server: live.skornorth.com
+    port: 443
+    uuid: 787cbde8-126c-4c39-93f7-56cfe44527c0
+    udp: true
+    tls: true
+    servername: live.skornorth.com
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/@custom_config?ed=2048"
+      headers:
+        Host: custom-config.ir
+  - name: "🌐سرور 1246 | Bah-27| MTSRVRS"
+    type: vless
+    server: 185.242.87.128
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🌐سرور 1250 | Bah-27| MTSRVRS"
+    type: ss
+    server: 45.95.233.75
+    port: 27389
+    cipher: chacha20-ietf-poly1305
+    password: qYkmH2DU5LiiIzU8BKyZxo
+    udp: true
+  - name: "🌐سرور 1254 | Bah-27| MTSRVRS"
+    type: ss
+    server: 91.107.141.0
+    port: 43486
+    cipher: chacha20-ietf-poly1305
+    password: "7vlJpFVhEpKh/VTTCvOab8eEoJo+MeXJpj9CDxLYm9o="
+    udp: true
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "♻️ 自动选择"
+      - DIRECT
+      - "🌐سرور 8 | Bah-27| MTSRVRS"
+      - "🌐سرور 12 | Bah-27| MTSRVRS"
+      - "🌐سرور 16 | Bah-27| MTSRVRS"
+      - "🌐سرور 21 | Bah-27| MTSRVRS"
+      - "🌐سرور 25 | Bah-27| MTSRVRS"
+      - "🌐سرور 29 | Bah-27| MTSRVRS"
+      - "🌐سرور 33 | Bah-27| MTSRVRS"
+      - "🌐سرور 37 | Bah-27| MTSRVRS"
+      - "🌐سرور 44 | Bah-27| MTSRVRS"
+      - "🌐سرور 50 | Bah-27| MTSRVRS"
+      - "🌐سرور 54 | Bah-27| MTSRVRS"
+      - "🌐سرور 58 | Bah-27| MTSRVRS"
+      - "🌐سرور 62 | Bah-27| MTSRVRS"
+      - "🌐سرور 67 | Bah-27| MTSRVRS"
+      - "🌐سرور 71 | Bah-27| MTSRVRS"
+      - "🌐سرور 76 | Bah-27| MTSRVRS"
+      - "🌐سرور 81 | Bah-27| MTSRVRS"
+      - "🌐سرور 85 | Bah-27| MTSRVRS"
+      - "🌐سرور 89 | Bah-27| MTSRVRS"
+      - "🌐سرور 93 | Bah-27| MTSRVRS"
+      - "🌐سرور 97 | Bah-27| MTSRVRS"
+      - "🌐سرور 101 | Bah-27| MTSRVRS"
+      - "🌐سرور 105 | Bah-27| MTSRVRS"
+      - "🌐سرور 110 | Bah-27| MTSRVRS"
+      - "🌐سرور 115 | Bah-27| MTSRVRS"
+      - "🌐سرور 119 | Bah-27| MTSRVRS"
+      - "🌐سرور 123 | Bah-27| MTSRVRS"
+      - "🌐سرور 127 | Bah-27| MTSRVRS"
+      - "🌐سرور 131 | Bah-27| MTSRVRS"
+      - "🌐سرور 135 | Bah-27| MTSRVRS"
+      - "🌐سرور 143 | Bah-27| MTSRVRS"
+      - "🌐سرور 147 | Bah-27| MTSRVRS"
+      - "🌐سرور 151 | Bah-27| MTSRVRS"
+      - "🌐سرور 155 | Bah-27| MTSRVRS"
+      - "🌐سرور 159 | Bah-27| MTSRVRS"
+      - "🌐سرور 164 | Bah-27| MTSRVRS"
+      - "🌐سرور 172 | Bah-27| MTSRVRS"
+      - "🌐سرور 179 | Bah-27| MTSRVRS"
+      - node
+      - "🌐سرور 185 | Bah-27| MTSRVRS"
+      - "🌐سرور 189 | Bah-27| MTSRVRS"
+      - "🌐سرور 193 | Bah-27| MTSRVRS"
+      - "🌐سرور 199 | Bah-27| MTSRVRS"
+      - "🌐سرور 207 | Bah-27| MTSRVRS"
+      - "🌐سرور 211 | Bah-27| MTSRVRS"
+      - "🌐سرور 215 | Bah-27| MTSRVRS"
+      - "🌐سرور 219 | Bah-27| MTSRVRS"
+      - "🌐سرور 223 | Bah-27| MTSRVRS"
+      - "🌐سرور 227 | Bah-27| MTSRVRS"
+      - "🌐سرور 231 | Bah-27| MTSRVRS"
+      - "🌐سرور 235 | Bah-27| MTSRVRS"
+      - "🌐سرور 243 | Bah-27| MTSRVRS"
+      - "🌐سرور 247 | Bah-27| MTSRVRS"
+      - "🌐سرور 255 | Bah-27| MTSRVRS"
+      - "🌐سرور 259 | Bah-27| MTSRVRS"
+      - "🌐سرور 267 | Bah-27| MTSRVRS"
+      - "🌐سرور 271 | Bah-27| MTSRVRS"
+      - "🌐سرور 275 | Bah-27| MTSRVRS"
+      - "🌐سرور 279 | Bah-27| MTSRVRS"
+      - "🌐سرور 283 | Bah-27| MTSRVRS"
+      - "🌐سرور 287 | Bah-27| MTSRVRS"
+      - "🌐سرور 291 | Bah-27| MTSRVRS"
+      - "🌐سرور 295 | Bah-27| MTSRVRS"
+      - "🌐سرور 299 | Bah-27| MTSRVRS"
+      - "🌐سرور 303 | Bah-27| MTSRVRS"
+      - "🌐سرور 307 | Bah-27| MTSRVRS"
+      - "🌐سرور 311 | Bah-27| MTSRVRS"
+      - "🌐سرور 319 | Bah-27| MTSRVRS"
+      - "🌐سرور 323 | Bah-27| MTSRVRS"
+      - "🌐سرور 334 | Bah-27| MTSRVRS"
+      - "🌐سرور 338 | Bah-27| MTSRVRS"
+      - "🌐سرور 342 | Bah-27| MTSRVRS"
+      - "🌐سرور 346 | Bah-27| MTSRVRS"
+      - "🌐سرور 354 | Bah-27| MTSRVRS"
+      - "🌐سرور 358 | Bah-27| MTSRVRS"
+      - "🌐سرور 362 | Bah-27| MTSRVRS"
+      - "🌐سرور 366 | Bah-27| MTSRVRS"
+      - "🌐سرور 370 | Bah-27| MTSRVRS"
+      - "🌐سرور 374 | Bah-27| MTSRVRS"
+      - "🌐سرور 378 | Bah-27| MTSRVRS"
+      - "🌐سرور 383 | Bah-27| MTSRVRS"
+      - "🌐سرور 387 | Bah-27| MTSRVRS"
+      - "🌐سرور 395 | Bah-27| MTSRVRS"
+      - "🌐سرور 399 | Bah-27| MTSRVRS"
+      - "🌐سرور 403 | Bah-27| MTSRVRS"
+      - "🌐سرور 409 | Bah-27| MTSRVRS"
+      - "🌐سرور 414 | Bah-27| MTSRVRS"
+      - "🌐سرور 418 | Bah-27| MTSRVRS"
+      - "🌐سرور 422 | Bah-27| MTSRVRS"
+      - "🌐سرور 426 | Bah-27| MTSRVRS"
+      - "🌐سرور 438 | Bah-27| MTSRVRS"
+      - "🌐سرور 442 | Bah-27| MTSRVRS"
+      - "🌐سرور 446 | Bah-27| MTSRVRS"
+      - "🌐سرور 450 | Bah-27| MTSRVRS"
+      - "🌐سرور 454 | Bah-27| MTSRVRS"
+      - "🌐سرور 458 | Bah-27| MTSRVRS"
+      - "🌐سرور 462 | Bah-27| MTSRVRS"
+      - "🌐سرور 466 | Bah-27| MTSRVRS"
+      - "🌐سرور 470 | Bah-27| MTSRVRS"
+      - "🌐سرور 474 | Bah-27| MTSRVRS"
+      - "🌐سرور 479 | Bah-27| MTSRVRS"
+      - "🌐سرور 483 | Bah-27| MTSRVRS"
+      - "🌐سرور 488 | Bah-27| MTSRVRS"
+      - "🌐سرور 492 | Bah-27| MTSRVRS"
+      - "🌐سرور 496 | Bah-27| MTSRVRS"
+      - "🌐سرور 500 | Bah-27| MTSRVRS"
+      - "🌐سرور 504 | Bah-27| MTSRVRS"
+      - "🌐سرور 512 | Bah-27| MTSRVRS"
+      - "🌐سرور 516 | Bah-27| MTSRVRS"
+      - "🌐سرور 520 | Bah-27| MTSRVRS"
+      - "🌐سرور 529 | Bah-27| MTSRVRS"
+      - "🌐سرور 533 | Bah-27| MTSRVRS"
+      - "🌐سرور 541 | Bah-27| MTSRVRS"
+      - "🌐سرور 556 | Bah-27| MTSRVRS"
+      - "🌐سرور 560 | Bah-27| MTSRVRS"
+      - "🌐سرور 564 | Bah-27| MTSRVRS"
+      - "🌐سرور 568 | Bah-27| MTSRVRS"
+      - "🌐سرور 573 | Bah-27| MTSRVRS"
+      - "🌐سرور 577 | Bah-27| MTSRVRS"
+      - "🌐سرور 581 | Bah-27| MTSRVRS"
+      - "🌐سرور 585 | Bah-27| MTSRVRS"
+      - "🌐سرور 589 | Bah-27| MTSRVRS"
+      - "🌐سرور 593 | Bah-27| MTSRVRS"
+      - "🌐سرور 597 | Bah-27| MTSRVRS"
+      - "🌐سرور 601 | Bah-27| MTSRVRS"
+      - "🌐سرور 605 | Bah-27| MTSRVRS"
+      - "🌐سرور 610 | Bah-27| MTSRVRS"
+      - "🌐سرور 614 | Bah-27| MTSRVRS"
+      - "🌐سرور 618 | Bah-27| MTSRVRS"
+      - "🌐سرور 622 | Bah-27| MTSRVRS"
+      - "🌐سرور 626 | Bah-27| MTSRVRS"
+      - "🌐سرور 631 | Bah-27| MTSRVRS"
+      - "🌐سرور 635 | Bah-27| MTSRVRS"
+      - "🌐سرور 639 | Bah-27| MTSRVRS"
+      - "🌐سرور 643 | Bah-27| MTSRVRS"
+      - "🌐سرور 647 | Bah-27| MTSRVRS"
+      - "🌐سرور 651 | Bah-27| MTSRVRS"
+      - "🌐سرور 656 | Bah-27| MTSRVRS"
+      - "🌐سرور 660 | Bah-27| MTSRVRS"
+      - "🌐سرور 664 | Bah-27| MTSRVRS"
+      - "🌐سرور 669 | Bah-27| MTSRVRS"
+      - "🌐سرور 673 | Bah-27| MTSRVRS"
+      - "🌐سرور 678 | Bah-27| MTSRVRS"
+      - "🌐سرور 690 | Bah-27| MTSRVRS"
+      - "🌐سرور 694 | Bah-27| MTSRVRS"
+      - "🌐سرور 698 | Bah-27| MTSRVRS"
+      - "🌐سرور 702 | Bah-27| MTSRVRS"
+      - "🌐سرور 706 | Bah-27| MTSRVRS"
+      - "🌐سرور 714 | Bah-27| MTSRVRS"
+      - "🌐سرور 718 | Bah-27| MTSRVRS"
+      - "🌐سرور 723 | Bah-27| MTSRVRS"
+      - "🌐سرور 727 | Bah-27| MTSRVRS"
+      - "🌐سرور 731 | Bah-27| MTSRVRS"
+      - "🌐سرور 735 | Bah-27| MTSRVRS"
+      - "🌐سرور 739 | Bah-27| MTSRVRS"
+      - "🌐سرور 743 | Bah-27| MTSRVRS"
+      - "🌐سرور 747 | Bah-27| MTSRVRS"
+      - "🌐سرور 751 | Bah-27| MTSRVRS"
+      - "🌐سرور 755 | Bah-27| MTSRVRS"
+      - "🌐سرور 759 | Bah-27| MTSRVRS"
+      - "🌐سرور 763 | Bah-27| MTSRVRS"
+      - "🌐سرور 767 | Bah-27| MTSRVRS"
+      - "🌐سرور 771 | Bah-27| MTSRVRS"
+      - "🌐سرور 775 | Bah-27| MTSRVRS"
+      - "🌐سرور 779 | Bah-27| MTSRVRS"
+      - "🌐سرور 784 | Bah-27| MTSRVRS"
+      - "🌐سرور 790 | Bah-27| MTSRVRS"
+      - "🌐سرور 796 | Bah-27| MTSRVRS"
+      - "🌐سرور 801 | Bah-27| MTSRVRS"
+      - "🌐سرور 809 | Bah-27| MTSRVRS"
+      - "🌐سرور 816 | Bah-27| MTSRVRS"
+      - "🌐سرور 822 | Bah-27| MTSRVRS"
+      - "🌐سرور 826 | Bah-27| MTSRVRS"
+      - "🌐سرور 830 | Bah-27| MTSRVRS"
+      - "🌐سرور 834 | Bah-27| MTSRVRS"
+      - "🌐سرور 839 | Bah-27| MTSRVRS"
+      - "🌐سرور 843 | Bah-27| MTSRVRS"
+      - "🌐سرور 847 | Bah-27| MTSRVRS"
+      - "🌐سرور 851 | Bah-27| MTSRVRS"
+      - "🌐سرور 855 | Bah-27| MTSRVRS"
+      - "🌐سرور 861 | Bah-27| MTSRVRS"
+      - "🌐سرور 871 | Bah-27| MTSRVRS"
+      - "🌐سرور 879 | Bah-27| MTSRVRS"
+      - "🌐سرور 884 | Bah-27| MTSRVRS"
+      - "🌐سرور 888 | Bah-27| MTSRVRS"
+      - "🌐سرور 892 | Bah-27| MTSRVRS"
+      - "🌐سرور 896 | Bah-27| MTSRVRS"
+      - "🌐سرور 904 | Bah-27| MTSRVRS"
+      - "🌐سرور 908 | Bah-27| MTSRVRS"
+      - "🌐سرور 912 | Bah-27| MTSRVRS"
+      - "🌐سرور 920 | Bah-27| MTSRVRS"
+      - "🌐سرور 924 | Bah-27| MTSRVRS"
+      - "🌐سرور 932 | Bah-27| MTSRVRS"
+      - "🌐سرور 936 | Bah-27| MTSRVRS"
+      - "🌐سرور 940 | Bah-27| MTSRVRS"
+      - "🌐سرور 949 | Bah-27| MTSRVRS"
+      - "🌐سرور 953 | Bah-27| MTSRVRS"
+      - "🌐سرور 959 | Bah-27| MTSRVRS"
+      - "🌐سرور 963 | Bah-27| MTSRVRS"
+      - "🌐سرور 967 | Bah-27| MTSRVRS"
+      - "🌐سرور 971 | Bah-27| MTSRVRS"
+      - "🌐سرور 975 | Bah-27| MTSRVRS"
+      - "🌐سرور 979 | Bah-27| MTSRVRS"
+      - "🌐سرور 983 | Bah-27| MTSRVRS"
+      - "🌐سرور 987 | Bah-27| MTSRVRS"
+      - "🌐سرور 991 | Bah-27| MTSRVRS"
+      - "🌐سرور 999 | Bah-27| MTSRVRS"
+      - "🌐سرور 1003 | Bah-27| MTSRVRS"
+      - "🌐سرور 1007 | Bah-27| MTSRVRS"
+      - "🌐سرور 1011 | Bah-27| MTSRVRS"
+      - "🌐سرور 1015 | Bah-27| MTSRVRS"
+      - "🌐سرور 1019 | Bah-27| MTSRVRS"
+      - "🌐سرور 1023 | Bah-27| MTSRVRS"
+      - "🌐سرور 1027 | Bah-27| MTSRVRS"
+      - "🌐سرور 1032 | Bah-27| MTSRVRS"
+      - "🌐سرور 1036 | Bah-27| MTSRVRS"
+      - "🌐سرور 1040 | Bah-27| MTSRVRS"
+      - "🌐سرور 1044 | Bah-27| MTSRVRS"
+      - "🌐سرور 1050 | Bah-27| MTSRVRS"
+      - "🌐سرور 1054 | Bah-27| MTSRVRS"
+      - "🌐سرور 1062 | Bah-27| MTSRVRS"
+      - "🌐سرور 1066 | Bah-27| MTSRVRS"
+      - "🌐سرور 1070 | Bah-27| MTSRVRS"
+      - "🌐سرور 1078 | Bah-27| MTSRVRS"
+      - "🌐سرور 1082 | Bah-27| MTSRVRS"
+      - "🌐سرور 1086 | Bah-27| MTSRVRS"
+      - "🌐سرور 1090 | Bah-27| MTSRVRS"
+      - "🌐سرور 1096 | Bah-27| MTSRVRS"
+      - "🌐سرور 1100 | Bah-27| MTSRVRS"
+      - "🌐سرور 1105 | Bah-27| MTSRVRS"
+      - "🌐سرور 1109 | Bah-27| MTSRVRS"
+      - "🌐سرور 1113 | Bah-27| MTSRVRS"
+      - "🌐سرور 1121 | Bah-27| MTSRVRS"
+      - "🌐سرور 1125 | Bah-27| MTSRVRS"
+      - "🌐سرور 1129 | Bah-27| MTSRVRS"
+      - "🌐سرور 1133 | Bah-27| MTSRVRS"
+      - "🌐سرور 1137 | Bah-27| MTSRVRS"
+      - "🌐سرور 1145 | Bah-27| MTSRVRS"
+      - "🌐سرور 1149 | Bah-27| MTSRVRS"
+      - "🌐سرور 1157 | Bah-27| MTSRVRS"
+      - "🌐سرور 1161 | Bah-27| MTSRVRS"
+      - "🌐سرور 1165 | Bah-27| MTSRVRS"
+      - "🌐سرور 1173 | Bah-27| MTSRVRS"
+      - "🌐سرور 1177 | Bah-27| MTSRVRS"
+      - "🌐سرور 1182 | Bah-27| MTSRVRS"
+      - "🌐سرور 1186 | Bah-27| MTSRVRS"
+      - "🌐سرور 1194 | Bah-27| MTSRVRS"
+      - "🌐سرور 1199 | Bah-27| MTSRVRS"
+      - "🌐سرور 1203 | Bah-27| MTSRVRS"
+      - "🌐سرور 1207 | Bah-27| MTSRVRS"
+      - "🌐سرور 1213 | Bah-27| MTSRVRS"
+      - "🌐سرور 1218 | Bah-27| MTSRVRS"
+      - "🌐سرور 1222 | Bah-27| MTSRVRS"
+      - "🌐سرور 1230 | Bah-27| MTSRVRS"
+      - "🌐سرور 1234 | Bah-27| MTSRVRS"
+      - "🌐سرور 1238 | Bah-27| MTSRVRS"
+      - "🌐سرور 1242 | Bah-27| MTSRVRS"
+      - "🌐سرور 1246 | Bah-27| MTSRVRS"
+      - "🌐سرور 1250 | Bah-27| MTSRVRS"
+      - "🌐سرور 1254 | Bah-27| MTSRVRS"
+  - name: "♻️ 自动选择"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "🌐سرور 8 | Bah-27| MTSRVRS"
+      - "🌐سرور 12 | Bah-27| MTSRVRS"
+      - "🌐سرور 16 | Bah-27| MTSRVRS"
+      - "🌐سرور 21 | Bah-27| MTSRVRS"
+      - "🌐سرور 25 | Bah-27| MTSRVRS"
+      - "🌐سرور 29 | Bah-27| MTSRVRS"
+      - "🌐سرور 33 | Bah-27| MTSRVRS"
+      - "🌐سرور 37 | Bah-27| MTSRVRS"
+      - "🌐سرور 44 | Bah-27| MTSRVRS"
+      - "🌐سرور 50 | Bah-27| MTSRVRS"
+      - "🌐سرور 54 | Bah-27| MTSRVRS"
+      - "🌐سرور 58 | Bah-27| MTSRVRS"
+      - "🌐سرور 62 | Bah-27| MTSRVRS"
+      - "🌐سرور 67 | Bah-27| MTSRVRS"
+      - "🌐سرور 71 | Bah-27| MTSRVRS"
+      - "🌐سرور 76 | Bah-27| MTSRVRS"
+      - "🌐سرور 81 | Bah-27| MTSRVRS"
+      - "🌐سرور 85 | Bah-27| MTSRVRS"
+      - "🌐سرور 89 | Bah-27| MTSRVRS"
+      - "🌐سرور 93 | Bah-27| MTSRVRS"
+      - "🌐سرور 97 | Bah-27| MTSRVRS"
+      - "🌐سرور 101 | Bah-27| MTSRVRS"
+      - "🌐سرور 105 | Bah-27| MTSRVRS"
+      - "🌐سرور 110 | Bah-27| MTSRVRS"
+      - "🌐سرور 115 | Bah-27| MTSRVRS"
+      - "🌐سرور 119 | Bah-27| MTSRVRS"
+      - "🌐سرور 123 | Bah-27| MTSRVRS"
+      - "🌐سرور 127 | Bah-27| MTSRVRS"
+      - "🌐سرور 131 | Bah-27| MTSRVRS"
+      - "🌐سرور 135 | Bah-27| MTSRVRS"
+      - "🌐سرور 143 | Bah-27| MTSRVRS"
+      - "🌐سرور 147 | Bah-27| MTSRVRS"
+      - "🌐سرور 151 | Bah-27| MTSRVRS"
+      - "🌐سرور 155 | Bah-27| MTSRVRS"
+      - "🌐سرور 159 | Bah-27| MTSRVRS"
+      - "🌐سرور 164 | Bah-27| MTSRVRS"
+      - "🌐سرور 172 | Bah-27| MTSRVRS"
+      - "🌐سرور 179 | Bah-27| MTSRVRS"
+      - node
+      - "🌐سرور 185 | Bah-27| MTSRVRS"
+      - "🌐سرور 189 | Bah-27| MTSRVRS"
+      - "🌐سرور 193 | Bah-27| MTSRVRS"
+      - "🌐سرور 199 | Bah-27| MTSRVRS"
+      - "🌐سرور 207 | Bah-27| MTSRVRS"
+      - "🌐سرور 211 | Bah-27| MTSRVRS"
+      - "🌐سرور 215 | Bah-27| MTSRVRS"
+      - "🌐سرور 219 | Bah-27| MTSRVRS"
+      - "🌐سرور 223 | Bah-27| MTSRVRS"
+      - "🌐سرور 227 | Bah-27| MTSRVRS"
+      - "🌐سرور 231 | Bah-27| MTSRVRS"
+      - "🌐سرور 235 | Bah-27| MTSRVRS"
+      - "🌐سرور 243 | Bah-27| MTSRVRS"
+      - "🌐سرور 247 | Bah-27| MTSRVRS"
+      - "🌐سرور 255 | Bah-27| MTSRVRS"
+      - "🌐سرور 259 | Bah-27| MTSRVRS"
+      - "🌐سرور 267 | Bah-27| MTSRVRS"
+      - "🌐سرور 271 | Bah-27| MTSRVRS"
+      - "🌐سرور 275 | Bah-27| MTSRVRS"
+      - "🌐سرور 279 | Bah-27| MTSRVRS"
+      - "🌐سرور 283 | Bah-27| MTSRVRS"
+      - "🌐سرور 287 | Bah-27| MTSRVRS"
+      - "🌐سرور 291 | Bah-27| MTSRVRS"
+      - "🌐سرور 295 | Bah-27| MTSRVRS"
+      - "🌐سرور 299 | Bah-27| MTSRVRS"
+      - "🌐سرور 303 | Bah-27| MTSRVRS"
+      - "🌐سرور 307 | Bah-27| MTSRVRS"
+      - "🌐سرور 311 | Bah-27| MTSRVRS"
+      - "🌐سرور 319 | Bah-27| MTSRVRS"
+      - "🌐سرور 323 | Bah-27| MTSRVRS"
+      - "🌐سرور 334 | Bah-27| MTSRVRS"
+      - "🌐سرور 338 | Bah-27| MTSRVRS"
+      - "🌐سرور 342 | Bah-27| MTSRVRS"
+      - "🌐سرور 346 | Bah-27| MTSRVRS"
+      - "🌐سرور 354 | Bah-27| MTSRVRS"
+      - "🌐سرور 358 | Bah-27| MTSRVRS"
+      - "🌐سرور 362 | Bah-27| MTSRVRS"
+      - "🌐سرور 366 | Bah-27| MTSRVRS"
+      - "🌐سرور 370 | Bah-27| MTSRVRS"
+      - "🌐سرور 374 | Bah-27| MTSRVRS"
+      - "🌐سرور 378 | Bah-27| MTSRVRS"
+      - "🌐سرور 383 | Bah-27| MTSRVRS"
+      - "🌐سرور 387 | Bah-27| MTSRVRS"
+      - "🌐سرور 395 | Bah-27| MTSRVRS"
+      - "🌐سرور 399 | Bah-27| MTSRVRS"
+      - "🌐سرور 403 | Bah-27| MTSRVRS"
+      - "🌐سرور 409 | Bah-27| MTSRVRS"
+      - "🌐سرور 414 | Bah-27| MTSRVRS"
+      - "🌐سرور 418 | Bah-27| MTSRVRS"
+      - "🌐سرور 422 | Bah-27| MTSRVRS"
+      - "🌐سرور 426 | Bah-27| MTSRVRS"
+      - "🌐سرور 438 | Bah-27| MTSRVRS"
+      - "🌐سرور 442 | Bah-27| MTSRVRS"
+      - "🌐سرور 446 | Bah-27| MTSRVRS"
+      - "🌐سرور 450 | Bah-27| MTSRVRS"
+      - "🌐سرور 454 | Bah-27| MTSRVRS"
+      - "🌐سرور 458 | Bah-27| MTSRVRS"
+      - "🌐سرور 462 | Bah-27| MTSRVRS"
+      - "🌐سرور 466 | Bah-27| MTSRVRS"
+      - "🌐سرور 470 | Bah-27| MTSRVRS"
+      - "🌐سرور 474 | Bah-27| MTSRVRS"
+      - "🌐سرور 479 | Bah-27| MTSRVRS"
+      - "🌐سرور 483 | Bah-27| MTSRVRS"
+      - "🌐سرور 488 | Bah-27| MTSRVRS"
+      - "🌐سرور 492 | Bah-27| MTSRVRS"
+      - "🌐سرور 496 | Bah-27| MTSRVRS"
+      - "🌐سرور 500 | Bah-27| MTSRVRS"
+      - "🌐سرور 504 | Bah-27| MTSRVRS"
+      - "🌐سرور 512 | Bah-27| MTSRVRS"
+      - "🌐سرور 516 | Bah-27| MTSRVRS"
+      - "🌐سرور 520 | Bah-27| MTSRVRS"
+      - "🌐سرور 529 | Bah-27| MTSRVRS"
+      - "🌐سرور 533 | Bah-27| MTSRVRS"
+      - "🌐سرور 541 | Bah-27| MTSRVRS"
+      - "🌐سرور 556 | Bah-27| MTSRVRS"
+      - "🌐سرور 560 | Bah-27| MTSRVRS"
+      - "🌐سرور 564 | Bah-27| MTSRVRS"
+      - "🌐سرور 568 | Bah-27| MTSRVRS"
+      - "🌐سرور 573 | Bah-27| MTSRVRS"
+      - "🌐سرور 577 | Bah-27| MTSRVRS"
+      - "🌐سرور 581 | Bah-27| MTSRVRS"
+      - "🌐سرور 585 | Bah-27| MTSRVRS"
+      - "🌐سرور 589 | Bah-27| MTSRVRS"
+      - "🌐سرور 593 | Bah-27| MTSRVRS"
+      - "🌐سرور 597 | Bah-27| MTSRVRS"
+      - "🌐سرور 601 | Bah-27| MTSRVRS"
+      - "🌐سرور 605 | Bah-27| MTSRVRS"
+      - "🌐سرور 610 | Bah-27| MTSRVRS"
+      - "🌐سرور 614 | Bah-27| MTSRVRS"
+      - "🌐سرور 618 | Bah-27| MTSRVRS"
+      - "🌐سرور 622 | Bah-27| MTSRVRS"
+      - "🌐سرور 626 | Bah-27| MTSRVRS"
+      - "🌐سرور 631 | Bah-27| MTSRVRS"
+      - "🌐سرور 635 | Bah-27| MTSRVRS"
+      - "🌐سرور 639 | Bah-27| MTSRVRS"
+      - "🌐سرور 643 | Bah-27| MTSRVRS"
+      - "🌐سرور 647 | Bah-27| MTSRVRS"
+      - "🌐سرور 651 | Bah-27| MTSRVRS"
+      - "🌐سرور 656 | Bah-27| MTSRVRS"
+      - "🌐سرور 660 | Bah-27| MTSRVRS"
+      - "🌐سرور 664 | Bah-27| MTSRVRS"
+      - "🌐سرور 669 | Bah-27| MTSRVRS"
+      - "🌐سرور 673 | Bah-27| MTSRVRS"
+      - "🌐سرور 678 | Bah-27| MTSRVRS"
+      - "🌐سرور 690 | Bah-27| MTSRVRS"
+      - "🌐سرور 694 | Bah-27| MTSRVRS"
+      - "🌐سرور 698 | Bah-27| MTSRVRS"
+      - "🌐سرور 702 | Bah-27| MTSRVRS"
+      - "🌐سرور 706 | Bah-27| MTSRVRS"
+      - "🌐سرور 714 | Bah-27| MTSRVRS"
+      - "🌐سرور 718 | Bah-27| MTSRVRS"
+      - "🌐سرور 723 | Bah-27| MTSRVRS"
+      - "🌐سرور 727 | Bah-27| MTSRVRS"
+      - "🌐سرور 731 | Bah-27| MTSRVRS"
+      - "🌐سرور 735 | Bah-27| MTSRVRS"
+      - "🌐سرور 739 | Bah-27| MTSRVRS"
+      - "🌐سرور 743 | Bah-27| MTSRVRS"
+      - "🌐سرور 747 | Bah-27| MTSRVRS"
+      - "🌐سرور 751 | Bah-27| MTSRVRS"
+      - "🌐سرور 755 | Bah-27| MTSRVRS"
+      - "🌐سرور 759 | Bah-27| MTSRVRS"
+      - "🌐سرور 763 | Bah-27| MTSRVRS"
+      - "🌐سرور 767 | Bah-27| MTSRVRS"
+      - "🌐سرور 771 | Bah-27| MTSRVRS"
+      - "🌐سرور 775 | Bah-27| MTSRVRS"
+      - "🌐سرور 779 | Bah-27| MTSRVRS"
+      - "🌐سرور 784 | Bah-27| MTSRVRS"
+      - "🌐سرور 790 | Bah-27| MTSRVRS"
+      - "🌐سرور 796 | Bah-27| MTSRVRS"
+      - "🌐سرور 801 | Bah-27| MTSRVRS"
+      - "🌐سرور 809 | Bah-27| MTSRVRS"
+      - "🌐سرور 816 | Bah-27| MTSRVRS"
+      - "🌐سرور 822 | Bah-27| MTSRVRS"
+      - "🌐سرور 826 | Bah-27| MTSRVRS"
+      - "🌐سرور 830 | Bah-27| MTSRVRS"
+      - "🌐سرور 834 | Bah-27| MTSRVRS"
+      - "🌐سرور 839 | Bah-27| MTSRVRS"
+      - "🌐سرور 843 | Bah-27| MTSRVRS"
+      - "🌐سرور 847 | Bah-27| MTSRVRS"
+      - "🌐سرور 851 | Bah-27| MTSRVRS"
+      - "🌐سرور 855 | Bah-27| MTSRVRS"
+      - "🌐سرور 861 | Bah-27| MTSRVRS"
+      - "🌐سرور 871 | Bah-27| MTSRVRS"
+      - "🌐سرور 879 | Bah-27| MTSRVRS"
+      - "🌐سرور 884 | Bah-27| MTSRVRS"
+      - "🌐سرور 888 | Bah-27| MTSRVRS"
+      - "🌐سرور 892 | Bah-27| MTSRVRS"
+      - "🌐سرور 896 | Bah-27| MTSRVRS"
+      - "🌐سرور 904 | Bah-27| MTSRVRS"
+      - "🌐سرور 908 | Bah-27| MTSRVRS"
+      - "🌐سرور 912 | Bah-27| MTSRVRS"
+      - "🌐سرور 920 | Bah-27| MTSRVRS"
+      - "🌐سرور 924 | Bah-27| MTSRVRS"
+      - "🌐سرور 932 | Bah-27| MTSRVRS"
+      - "🌐سرور 936 | Bah-27| MTSRVRS"
+      - "🌐سرور 940 | Bah-27| MTSRVRS"
+      - "🌐سرور 949 | Bah-27| MTSRVRS"
+      - "🌐سرور 953 | Bah-27| MTSRVRS"
+      - "🌐سرور 959 | Bah-27| MTSRVRS"
+      - "🌐سرور 963 | Bah-27| MTSRVRS"
+      - "🌐سرور 967 | Bah-27| MTSRVRS"
+      - "🌐سرور 971 | Bah-27| MTSRVRS"
+      - "🌐سرور 975 | Bah-27| MTSRVRS"
+      - "🌐سرور 979 | Bah-27| MTSRVRS"
+      - "🌐سرور 983 | Bah-27| MTSRVRS"
+      - "🌐سرور 987 | Bah-27| MTSRVRS"
+      - "🌐سرور 991 | Bah-27| MTSRVRS"
+      - "🌐سرور 999 | Bah-27| MTSRVRS"
+      - "🌐سرور 1003 | Bah-27| MTSRVRS"
+      - "🌐سرور 1007 | Bah-27| MTSRVRS"
+      - "🌐سرور 1011 | Bah-27| MTSRVRS"
+      - "🌐سرور 1015 | Bah-27| MTSRVRS"
+      - "🌐سرور 1019 | Bah-27| MTSRVRS"
+      - "🌐سرور 1023 | Bah-27| MTSRVRS"
+      - "🌐سرور 1027 | Bah-27| MTSRVRS"
+      - "🌐سرور 1032 | Bah-27| MTSRVRS"
+      - "🌐سرور 1036 | Bah-27| MTSRVRS"
+      - "🌐سرور 1040 | Bah-27| MTSRVRS"
+      - "🌐سرور 1044 | Bah-27| MTSRVRS"
+      - "🌐سرور 1050 | Bah-27| MTSRVRS"
+      - "🌐سرور 1054 | Bah-27| MTSRVRS"
+      - "🌐سرور 1062 | Bah-27| MTSRVRS"
+      - "🌐سرور 1066 | Bah-27| MTSRVRS"
+      - "🌐سرور 1070 | Bah-27| MTSRVRS"
+      - "🌐سرور 1078 | Bah-27| MTSRVRS"
+      - "🌐سرور 1082 | Bah-27| MTSRVRS"
+      - "🌐سرور 1086 | Bah-27| MTSRVRS"
+      - "🌐سرور 1090 | Bah-27| MTSRVRS"
+      - "🌐سرور 1096 | Bah-27| MTSRVRS"
+      - "🌐سرور 1100 | Bah-27| MTSRVRS"
+      - "🌐سرور 1105 | Bah-27| MTSRVRS"
+      - "🌐سرور 1109 | Bah-27| MTSRVRS"
+      - "🌐سرور 1113 | Bah-27| MTSRVRS"
+      - "🌐سرور 1121 | Bah-27| MTSRVRS"
+      - "🌐سرور 1125 | Bah-27| MTSRVRS"
+      - "🌐سرور 1129 | Bah-27| MTSRVRS"
+      - "🌐سرور 1133 | Bah-27| MTSRVRS"
+      - "🌐سرور 1137 | Bah-27| MTSRVRS"
+      - "🌐سرور 1145 | Bah-27| MTSRVRS"
+      - "🌐سرور 1149 | Bah-27| MTSRVRS"
+      - "🌐سرور 1157 | Bah-27| MTSRVRS"
+      - "🌐سرور 1161 | Bah-27| MTSRVRS"
+      - "🌐سرور 1165 | Bah-27| MTSRVRS"
+      - "🌐سرور 1173 | Bah-27| MTSRVRS"
+      - "🌐سرور 1177 | Bah-27| MTSRVRS"
+      - "🌐سرور 1182 | Bah-27| MTSRVRS"
+      - "🌐سرور 1186 | Bah-27| MTSRVRS"
+      - "🌐سرور 1194 | Bah-27| MTSRVRS"
+      - "🌐سرور 1199 | Bah-27| MTSRVRS"
+      - "🌐سرور 1203 | Bah-27| MTSRVRS"
+      - "🌐سرور 1207 | Bah-27| MTSRVRS"
+      - "🌐سرور 1213 | Bah-27| MTSRVRS"
+      - "🌐سرور 1218 | Bah-27| MTSRVRS"
+      - "🌐سرور 1222 | Bah-27| MTSRVRS"
+      - "🌐سرور 1230 | Bah-27| MTSRVRS"
+      - "🌐سرور 1234 | Bah-27| MTSRVRS"
+      - "🌐سرور 1238 | Bah-27| MTSRVRS"
+      - "🌐سرور 1242 | Bah-27| MTSRVRS"
+      - "🌐سرور 1246 | Bah-27| MTSRVRS"
+      - "🌐سرور 1250 | Bah-27| MTSRVRS"
+      - "🌐سرور 1254 | Bah-27| MTSRVRS"
+rules:
+  - "GEOIP,LAN,DIRECT,no-resolve"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,🚀 节点选择"

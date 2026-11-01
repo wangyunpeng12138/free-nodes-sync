@@ -1,0 +1,9 @@
+cache/
+tools/
+output_test/
+__pycache__/
+*.pyc
+*.zip
+*.log
+*.tmp
+.workbuddy-ai/

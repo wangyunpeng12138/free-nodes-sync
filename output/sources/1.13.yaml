@@ -1,0 +1,3878 @@
+# 订阅 1.13.txt -> Clash
+# 由 txt2clash.py 自动生成于 2026-11-01 16:51:09 +0800
+# 节点数量: 255
+# 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: "off"
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  listen: "0.0.0.0:1053"
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "*.localhost"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  proxy-server-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+proxies:
+  - name: "@V2ray_confiig`"
+    type: vless
+    server: all.tellmethetrue.shop
+    port: 443
+    uuid: e4824193-4f54-453b-d037-88368e85ef0e
+    udp: true
+    tls: true
+    servername: pqh30v1.carwashipdir.shop
+    client-fingerprint: chrome
+    alpn:
+      - h2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "@v2_mod_shop"
+    type: ss
+    server: 141.95.101.202
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 8e3c75581ade471d
+    udp: true
+  - name: "@v2_mod_shop 2"
+    type: ss
+    server: 57.129.69.122
+    port: 27130
+    cipher: chacha20-ietf-poly1305
+    password: a3027c931ae07bce
+    udp: true
+  - name: "🥐14@unvisible_drops"
+    type: vless
+    server: 144.31.2.86
+    port: 443
+    uuid: ca569d6c-d206-4709-9ed9-8dda73932c22
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: PuHKrJNt4shNVTNZ_leD7SmOI0QhxJ9SVnkV70i1xho
+      short-id: cbdfef7f3ede2072
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@v2_mod_shop 3"
+    type: ss
+    server: 135.125.245.131
+    port: 20939
+    cipher: chacha20-ietf-poly1305
+    password: 85d3d8ccba287d3e
+    udp: true
+  - name: "@v2_mod_shop 4"
+    type: ss
+    server: 57.130.28.148
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 74918bc801d53a4b
+    udp: true
+  - name: "@V2ray_confiig` 2"
+    type: vless
+    server: pqh29v4.globalfymain.com
+    port: 8880
+    uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "➤ @netshekan99"
+    type: vless
+    server: 185.21.14.122
+    port: 443
+    uuid: a44e0875-210f-4941-9062-89b6361a14c6
+    udp: true
+    tls: true
+    servername: apple.com
+    reality-opts:
+      public-key: i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4
+      short-id: 8bcfe256cf216fd8
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇷 IR 34 @Outline_Vpn"
+    type: vless
+    server: 172.67.249.36
+    port: 443
+    uuid: e4824193-4f54-453b-d037-88368e85ef0e
+    udp: true
+    tls: true
+    servername: pqh30v5.carwashipdir.shop
+    alpn:
+      - h2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+    client-fingerprint: chrome
+  - name: "https://t.me/cacaguys"
+    type: vless
+    server: 91.84.113.47
+    port: 443
+    uuid: a44e0875-210f-4941-9062-89b6361a14c6
+    udp: true
+    tls: true
+    servername: apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4
+      short-id: 8bcfe256cf216fd8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🍭22@unvisible_drops"
+    type: vless
+    server: 217.154.254.198
+    port: 443
+    uuid: 278cdc8a-1c0c-4710-bc48-b8c6e5f36c24
+    udp: true
+    tls: true
+    servername: azure.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "☢️35@unvisible_drops"
+    type: vless
+    server: 38.180.144.156
+    port: 8443
+    uuid: ae0a43bc-6189-456e-9b8a-a93f39af336e
+    udp: true
+    tls: true
+    servername: www.microsoft.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 76Cfr5qNl9BCrSb6jdkrgj0HbwfyCwj4oF6JJVhKD0s
+      short-id: 42d7234d875308a2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "Channel : @FreeConfigForYou🏴🏳`"
+    type: vless
+    server: 91.84.112.93
+    port: 443
+    uuid: a44e0875-210f-4941-9062-89b6361a14c6
+    udp: true
+    tls: true
+    servername: apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4
+      short-id: 8bcfe256cf216fd8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "Channel id: @KIA_NET 🇺🇸```"
+    type: ss
+    server: 147.135.77.6
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 7f9cb9aef317f096
+    udp: true
+  - name: "کانال تلگرام : Free_VPN_CH@"
+    type: vless
+    server: 94.131.123.167
+    port: 443
+    uuid: a44e0875-210f-4941-9062-89b6361a14c6
+    udp: true
+    tls: true
+    servername: apple.com
+    reality-opts:
+      public-key: i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4
+      short-id: 8bcfe256cf216fd8
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@Enzewa_Network👈جوین‌شوپرسرعت‌وصل‌شی"
+    type: vless
+    server: 57.129.53.182
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🆔Telegram : @planB_net"
+    type: ss
+    server: 163.171.206.24
+    port: 44235
+    cipher: chacha20-ietf-poly1305
+    password: 9d97433688e7efd5
+    udp: true
+  - name: "V2ray_confiig`"
+    type: vless
+    server: 51.158.206.103
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🆔Telegram : @planB_net 2"
+    type: ss
+    server: 103.97.203.227
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "🆔Telegram : @planB_net 3"
+    type: ss
+    server: 147.78.0.182
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "@filembad"
+    type: ss
+    server: 141.95.101.9
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: bb33fe67a330b3ea
+    udp: true
+  - name: "⚡Telegram = @netmelli15"
+    type: vless
+    server: nodejs.org
+    port: 443
+    uuid: fef4a93d-eb4f-4657-b56b-32a0dc060045
+    udp: true
+    tls: true
+    servername: dev.nestandneighbours.com
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: dev.nestandneighbours.com
+    client-fingerprint: chrome
+  - name: "🌐 XHTTP-Reality 📁 @DailyV2RY```"
+    type: vless
+    server: 195.26.224.112
+    port: 8443
+    uuid: db444bee-8212-5ff5-be40-47e1a7509eb8
+    udp: true
+    tls: true
+    servername: vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: HE-fVd73NsTheypCLSyeNxgkg2EJOfXWGxjUOcvPZyQ
+      short-id: 938f14cf6757a249
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: vk.com
+      mode: auto
+  - name: "@one_shop_official`"
+    type: vless
+    server: 38.180.27.102
+    port: 8443
+    uuid: 59edf6dc-b1f7-4017-8107-aae4f61a173c
+    udp: true
+    tls: true
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CWeNg8bNNdCHYhjNl01BTevvPnHsXd736dymoBEsbBI
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn"
+    type: vless
+    server: 57.129.53.181
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 2"
+    type: vless
+    server: 15.204.97.154
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐 TCP-Reality 📁 @v2ray_Extractor"
+    type: vless
+    server: 15.204.97.169
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐 TCP-Reality 📁 @v2ray_Extractor 2"
+    type: vless
+    server: 15.204.97.159
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 3"
+    type: vless
+    server: 51.158.206.93
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇺🇸 GRPC-None 📁 @FreakConfig"
+    type: vless
+    server: yesok42v2.ip4exordir.shop
+    port: 8880
+    uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "@chillguy_vpn 4"
+    type: vless
+    server: 152.53.50.126
+    port: 22955
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    udp: true
+    tls: true
+    servername: one-piece.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+      short-id: 6ba85179e30d4fc2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+  - name: "@chillguy_vpn 5"
+    type: vless
+    server: 104.18.4.130
+    port: 443
+    uuid: e765eb5b-8442-40e3-9532-857ba5ececa7
+    udp: true
+    tls: true
+    servername: vbox.ping-box.com
+    alpn:
+      - h2
+      - http/1.1
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+    client-fingerprint: chrome
+  - name: "@chillguy_vpn 6"
+    type: vless
+    server: 152.53.48.224
+    port: 22955
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    udp: true
+    tls: true
+    servername: one-piece.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+      short-id: 6ba85179e30d4fc2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+  - name: "🌐 WS-TLS 📁 @V2rayng_Fast"
+    type: vless
+    server: 104.17.73.206
+    port: 443
+    uuid: 3321a819-889d-40b3-b8fa-f34208827ef1
+    udp: true
+    tls: true
+    servername: o00o.snip.qzz.io
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/Tel-@V2rayAlpha"
+      headers:
+        Host: o00o.snip.qzz.io
+  - name: "@chillguy_vpn 7"
+    type: vless
+    server: 89.169.128.105
+    port: 443
+    uuid: 80d277e5-d30a-49c6-8987-cb4d2cc79ee5
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: f4b4a6365558ea2e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇩🇪 TCP-Reality 📁 @v2ray_configs_pool"
+    type: vless
+    server: 57.129.49.1
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 8"
+    type: vless
+    server: 158.160.105.121
+    port: 443
+    uuid: e8accc46-c511-42fb-919b-9283799a88a1
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 8f222b3475800821
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 9"
+    type: vless
+    server: 79.137.175.56
+    port: 8443
+    uuid: e8accc46-c511-42fb-919b-9283799a88a1
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 8f222b3475800821
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐 TCP-None 📁 @v2ray_Extractor"
+    type: vless
+    server: 91.99.218.107
+    port: 36454
+    uuid: 98fb333c-3d84-4fa4-b1f7-1683b509f65a
+    udp: true
+    tls: false
+    network: tcp
+  - name: node
+    type: vmess
+    server: 94.232.247.165
+    port: 45653
+    uuid: 9e91d19a-c73f-4276-adbc-b337c374259c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "@shadow_vpn👕"
+    type: trojan
+    server: 188.114.96.3
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.multiplydose.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.multiplydose.com
+  - name: "@shadow_vpn🧣"
+    type: trojan
+    server: 172.67.180.92
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.multiplydose.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.multiplydose.com
+  - name: "@chillguy_vpn 10"
+    type: vless
+    server: 15.204.97.148
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 11"
+    type: vless
+    server: 15.204.97.149
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 12"
+    type: vless
+    server: 15.204.97.164
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 13"
+    type: vless
+    server: 15.204.97.160
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 14"
+    type: vless
+    server: 15.204.97.165
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🥊 Tel : @ProxyVPN11 ⟵"
+    type: vless
+    server: ChatGPT.com
+    port: 443
+    uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+    udp: true
+    tls: true
+    servername: ProxyVPN11.afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/156.244.1.250=8443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "➤ @netshekan99 2"
+    type: vless
+    server: 89.169.128.105
+    port: 443
+    uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 2715592069f36fe7
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 15"
+    type: vless
+    server: 38.244.137.198
+    port: 443
+    uuid: 09748875-9da3-440e-9809-9752e1dda1e4
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: QXGsw1KqljvUiarkvFdBs3T1TeUQq4skwHFlsmbj31o
+      short-id: 365c07ed
+    network: tcp
+  - name: "کانال تلگرام : Free_VPN_CH@```"
+    type: vless
+    server: fr-gt-01.com
+    port: 8443
+    uuid: 6f192450-a1ed-4072-898b-0dd55c4e3437
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA
+      short-id: 364994a6f61fc955
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 16"
+    type: vless
+    server: 144.31.111.130
+    port: 443
+    uuid: a384c715-aeb5-45e8-859b-f687ca6c083f
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: wBrGfTI9PaFf966aN6KaCY0cL6QRLlop4nzNa6bJsiQ
+      short-id: 9f35da6c9412b832
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐 TCP-Reality 📁 @meliproxyy"
+    type: vless
+    server: 159.195.4.83
+    port: 443
+    uuid: 03695e31-89d2-4cce-9d7e-3e61d9d80f22
+    udp: true
+    tls: true
+    servername: live.com
+    client-fingerprint: chrome
+    alpn:
+      - h2
+    reality-opts:
+      public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@V2ray_confiig` 3"
+    type: vless
+    server: 77.110.118.9
+    port: 57463
+    uuid: af01651f-0058-492f-a614-7f9c316a0551
+    udp: true
+    tls: false
+    network: tcp
+  - name: "کانال تلگرام : Free_VPN_CH@ 2"
+    type: vless
+    server: 151.115.96.243
+    port: 7242
+    uuid: 859b7d71-a9fc-4234-8e03-42eb876a170a
+    udp: true
+    tls: true
+    servername: modily.net
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: jGmjU0vrRXCnIwn0rVatYKf5ihWZhMvqidp2ceY1QAM
+      short-id: 8c01e365
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "کانال تلگرام : Free_VPN_CH@``` 2"
+    type: vless
+    server: 40.160.14.104
+    port: 8880
+    uuid: 6251f84e-9c02-4140-921c-6b47d394fb96
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "MCI-@V2rayAlpha--22"
+    type: vless
+    server: velsanto.online
+    port: 8443
+    uuid: 72fb3bd4-75dd-488a-9af7-c391321ecfcc
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 04bf0403f96e5b4b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "MCI-@V2rayAlpha--29"
+    type: vless
+    server: 79.137.175.44
+    port: 443
+    uuid: 11e41a32-6672-48a0-b9cb-c8694242ecff
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: random
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 48fccabc158a4c22
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 17"
+    type: vless
+    server: 84.252.143.25
+    port: 8443
+    uuid: 636dac2e-9a58-49a6-84f5-313a03761131
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 48fccabc158a4c22
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "💚🌺7"
+    type: vless
+    server: uk-gthost-01.com
+    port: 8443
+    uuid: 12de8885-78d1-449f-8d4f-d5f261885827
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8
+      short-id: c20b1035d72d7793
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 18"
+    type: vless
+    server: 84.252.136.245
+    port: 443
+    uuid: 0a9fe7e0-e02d-42ca-bebd-ecb4292f180c
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+      short-id: c6ef72e4635d15a5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@V2ray_confiig` 4"
+    type: vless
+    server: 64.188.125.104
+    port: 443
+    uuid: 373a56eb-aaa9-4a92-b209-503dd916900f
+    udp: true
+    tls: true
+    servername: www.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 3cj5R-TwL-wjkLvwMcVW-DJXbm6xOyIIJEP1cC8AhgI
+      short-id: 286e2d
+    network: tcp
+  - name: "🌐 TCP-Reality 📁 @meliproxyy 2"
+    type: vless
+    server: 87.239.106.153
+    port: 443
+    uuid: 11e41a32-6672-48a0-b9cb-c8694242ecff
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: random
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 48fccabc158a4c22
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@filembad 2"
+    type: vless
+    server: 38.180.204.189
+    port: 443
+    uuid: 8e633674-dd04-45c0-a900-04066988bd2e
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "_WB4K6w5EoQuBAan6fsS9NPJf5wa6ggmxIa8No93ghM"
+      short-id: 6553e6d9
+    network: tcp
+  - name: "@filembad 3"
+    type: vless
+    server: h22.amoosias.site
+    port: 18521
+    uuid: bbb0d738-975d-41c5-ebfe-164f8cdc914f
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: h22.amoosias.site
+  - name: "@🄳🄴🄴🄿🅂🄾🄾🄽🄶 :کانال تلگرام🏅"
+    type: vless
+    server: 104.16.2.90
+    port: 443
+    uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+    udp: true
+    tls: true
+    servername: ProxyVPN11.afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/43.218.77.16=1443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "@chillguy_vpn 19"
+    type: vless
+    server: 51.158.206.96
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 20"
+    type: vless
+    server: 51.158.206.25
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 21"
+    type: vless
+    server: 51.158.206.97
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 22"
+    type: vless
+    server: 62.210.91.2
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 23"
+    type: vless
+    server: 15.204.97.198
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 24"
+    type: vless
+    server: 15.204.97.226
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 25"
+    type: vless
+    server: 51.158.206.19
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 26"
+    type: vless
+    server: 51.158.206.20
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 27"
+    type: vless
+    server: 51.158.206.29
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 28"
+    type: vless
+    server: 15.204.97.177
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 29"
+    type: vless
+    server: 15.204.97.175
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "node 2"
+    type: vmess
+    server: 165.140.216.141
+    port: 443
+    uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "🌐 GRPC-TLS 📁 @EmKavpn"
+    type: vless
+    server: 27.50.48.155
+    port: 443
+    uuid: ab321a49-bc9c-4bb6-915b-a1fcbc7de49c
+    udp: true
+    tls: true
+    servername: vbox1.ping-box.com
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🇱🇻 TCP-Reality 📁 @v2nodes```"
+    type: vless
+    server: 90.156.255.198
+    port: 51114
+    uuid: 8b575b35-3c7c-42b0-ac80-2aa6b0d7717c
+    udp: true
+    tls: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: lf7NJGZAcj3b-YdbsmD6oEISr0dZRjp_gM8ZhLHwb0U
+      short-id: 772e
+    network: tcp
+  - name: "node 3"
+    type: vmess
+    server: 162.19.248.238
+    port: 550
+    uuid: ede27a79-b039-490b-932c-495de4b68880
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "کانال تلگرام : Free_VPN_CH@ 3"
+    type: vless
+    server: 185.236.26.58
+    port: 443
+    uuid: f74d98a4-9198-4f78-b921-47d4f4950953
+    udp: true
+    tls: true
+    servername: de3.teleport.lat
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 30"
+    type: vless
+    server: 15.204.97.172
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 31"
+    type: vless
+    server: 15.204.97.176
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 32"
+    type: vless
+    server: 15.204.97.214
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 33"
+    type: vless
+    server: 15.204.97.216
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@v2_mod_shop🚀"
+    type: vless
+    server: 212.34.142.191
+    port: 8443
+    uuid: a5e746f7-328f-4b65-a65f-e2e2a4a5b1a9
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: wNcFqVd4_PkgJbfgJJeouSU6Pn_Swuce4q4Chw5T0hY
+      short-id: f7aa9e61197d3ac6
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 34"
+    type: vless
+    server: 15.204.97.168
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 35"
+    type: vless
+    server: 37.233.82.140
+    port: 40478
+    uuid: e977d854-33f3-4345-abee-bf3fa9a6d880
+    udp: true
+    tls: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: lcJ0LSh015XRfz5-7wB_hln3-bq5ZatFgPugSUCrdR0
+      short-id: 3c
+    network: tcp
+  - name: "@chillguy_vpn 36"
+    type: vless
+    server: 152.53.49.130
+    port: 22955
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    udp: true
+    tls: true
+    servername: one-piece.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+      short-id: 6ba85179e30d4fc2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+  - name: "@chillguy_vpn 37"
+    type: vless
+    server: 198.50.119.86
+    port: 8080
+    uuid: e2be0db4-4110-42eb-bca1-ba8df0897319
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/39427/Nextlife"
+      headers:
+        Host: telewebion.com
+  - name: "node 4"
+    type: vmess
+    server: 89.31.120.192
+    port: 443
+    uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "@chillguy_vpn 38"
+    type: vless
+    server: 77.239.125.99
+    port: 443
+    uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
+    udp: true
+    tls: true
+    servername: sun6-21.userapi.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 39"
+    type: vless
+    server: 152.53.48.237
+    port: 22955
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    udp: true
+    tls: true
+    servername: one-piece.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+      short-id: 6ba85179e30d4fc2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+  - name: "@chillguy_vpn 40"
+    type: vless
+    server: 152.53.51.29
+    port: 22955
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    udp: true
+    tls: true
+    servername: one-piece.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+      short-id: 6ba85179e30d4fc2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+  - name: "@chillguy_vpn 41"
+    type: vless
+    server: 84.32.151.60
+    port: 443
+    uuid: 9b5dffa2-8ab0-4e7c-af62-725a320957cc
+    udp: true
+    tls: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 42"
+    type: vless
+    server: 5.188.140.115
+    port: 1488
+    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "node 5"
+    type: vmess
+    server: 45.141.148.143
+    port: 5059
+    uuid: e720d2b6-80dd-4664-b64e-6cc784bce329
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: bmi.ir
+  - name: "@chillguy_vpn 43"
+    type: vless
+    server: 84.252.143.25
+    port: 443
+    uuid: 11e41a32-6672-48a0-b9cb-c8694242ecff
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 28047c78b3f5ee2c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 44"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: d85ea913-7dfa-44b0-bd66-33414e897991
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/35.230.79.26=443"
+      headers:
+        Host: afrcloud22.mmv.kr
+  - name: "@chillguy_vpn 45"
+    type: vless
+    server: 91.84.109.124
+    port: 443
+    uuid: a44e0875-210f-4941-9062-89b6361a14c6
+    udp: true
+    tls: true
+    servername: apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4
+      short-id: 8bcfe256cf216fd8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇳🇱@Proxy_FTProto"
+    type: vless
+    server: ipbaz.ping-box.com
+    port: 443
+    uuid: e765eb5b-8442-40e3-9532-857ba5ececa7
+    udp: true
+    tls: true
+    servername: vbox.ping-box.com
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "@filembad 4"
+    type: ss
+    server: 94.72.127.58
+    port: 443
+    cipher: aes-256-gcm
+    password: jJHq807bQ7TM0yOh
+    udp: true
+  - name: "@chillguy_vpn 46"
+    type: vless
+    server: 51.158.206.8
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🔵@chillguy_vpn"
+    type: vless
+    server: 178.17.50.66
+    port: 8443
+    uuid: 8e1d0e1d-65f7-454a-862b-90a75e1c27b7
+    udp: true
+    tls: true
+    servername: yandex.net
+    client-fingerprint: qq
+    reality-opts:
+      public-key: GzQr6fDhigtRAr0n2Y7Nk3snhdytYyOvaYo9zYe1Xn4
+      short-id: b3a1cc510a2001c6
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 47"
+    type: vless
+    server: 51.158.206.80
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 48"
+    type: vless
+    server: 5.253.41.152
+    port: 8443
+    uuid: 6432bbec-c4c0-4837-9aa3-82e79def5017
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CwOLLTLuQN1SPzvenr_B_ErYYoOB_ScSvGvH-iYOtF8
+      short-id: 83780413c2ad3eaa
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: Iran
+    type: vless
+    server: 212.192.246.57
+    port: 2087
+    uuid: 3dcd6767-ec3e-4eeb-9fa6-c70b8661072f
+    udp: true
+    tls: true
+    servername: refersion.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: DwNl_pR9JMgEQoq_cdx4HuZRPyapUBn4FkLZs1U3fXQ
+      short-id: e004
+    network: tcp
+  - name: "Iran 2"
+    type: ss
+    server: 154.205.145.37
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 47509ba3679b9df9
+    udp: true
+  - name: "Iran 3"
+    type: ss
+    server: 156.244.8.155
+    port: 5004
+    cipher: aes-256-gcm
+    password: g5MeD6Ft3CWlJId
+    udp: true
+  - name: "@chillguy_vpn 49"
+    type: vless
+    server: 91.84.111.44
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "@chillguy_vpn 50"
+    type: vless
+    server: 217.160.189.116
+    port: 443
+    uuid: 2db1793c-48c5-4cc7-b893-02292fd9400b
+    udp: true
+    tls: true
+    servername: azure.com
+    alpn:
+      - h2
+    reality-opts:
+      public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🏞🔥1"
+    type: vless
+    server: 51.77.213.238
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.dynv6.net
+    network: ws
+    ws-opts:
+      path: "/?Telegram🇨🇳+@WangCai2="
+      headers:
+        Host: sni.111000.dynv6.net
+    client-fingerprint: chrome
+  - name: "@vpnbaz ⛩️"
+    type: vless
+    server: 185.158.133.138
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "@vpnbaz 🎴"
+    type: vless
+    server: 14.102.228.238
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.jpmj.dev
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: sni.jpmj.dev
+    client-fingerprint: chrome
+  - name: "➤ @netshekan99 3"
+    type: ss
+    server: 154.12.240.141
+    port: 80
+    cipher: aes-256-gcm
+    password: mK7eN3z276Tr0vVA
+    udp: true
+  - name: "➤ @netshekan99`"
+    type: ss
+    server: 154.12.240.141
+    port: 443
+    cipher: aes-256-gcm
+    password: mK7eN3z276Tr0vVA
+    udp: true
+  - name: "@v2FreeHub 🇫🇮`"
+    type: ss
+    server: 38.244.137.202
+    port: 45380
+    cipher: chacha20-ietf-poly1305
+    password: E6GbjW3IZ4Wokvz4VYLj4o
+    udp: true
+  - name: "@chillguy_vpn 51"
+    type: vless
+    server: 104.26.7.205
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "@chillguy_vpn 52"
+    type: vless
+    server: 57.129.137.89
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "@chillguy_vpn 53"
+    type: vless
+    server: 31.43.179.4
+    port: 443
+    uuid: 8ae40bd9-f769-4b1b-bf89-fde9d5afc4c5
+    udp: true
+    tls: true
+    servername: pmeli.express-servers.ir
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: pmeli.express-servers.ir
+    client-fingerprint: chrome
+  - name: "node 6"
+    type: vmess
+    server: 69.63.210.35
+    port: 24943
+    uuid: a89feda9-ec30-48c1-ae6b-1a6f5b573f6b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/a89feda9-ec30-48c1-ae6b-1a6f5b573f6b-vm"
+      headers:
+        Host: www.bing.com
+  - name: "node 7"
+    type: vmess
+    server: 51.79.102.253
+    port: 80
+    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/IOebhLMhl1CTbFHbL95myfRX2"
+      headers:
+        Host: 51.79.102.253
+  - name: "@irmeliy"
+    type: vless
+    server: fr.cdn.stun.su
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    udp: true
+    tls: true
+    servername: fr.cdn.stun.su
+    client-fingerprint: chrome
+    alpn:
+      - "networld_vpn-channel@.irmeliy-channel@.irmeliy-channel@.irmeliy-channel@.irmeliy-channel@.irmeliy-channel@.irmeliy-"
+    reality-opts:
+      public-key: 8LWgKu6h8cXgOAixKaKPdGponKkAeQaq-IszDEQ4ojM
+      short-id: 3bdec72a5a0ffd84
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "T.me/i10VPN👽"
+    type: vless
+    server: 51.158.206.87
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 54"
+    type: vless
+    server: 195.201.222.173
+    port: 31232
+    uuid: 28cdbb46-1309-45fb-92f0-6a761bc30236
+    udp: true
+    tls: true
+    servername: tgju.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: YMUFe3eUfODM1B0huGgXNxdZLtQczEzSHS3a1TJXyGQ
+      short-id: 839cd0e5
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "@mahdi_383ir"
+  - name: "🇫🇮[openproxylist.com]"
+    type: ss
+    server: 178.17.61.67
+    port: 5790
+    cipher: chacha20-ietf-poly1305
+    password: qS3skwmolrQ70q842irQD0
+    udp: true
+  - name: "@chillguy_vpn 55"
+    type: vless
+    server: 195.201.222.173
+    port: 32916
+    uuid: 133d44b7-170e-41cd-a0cc-0b35470823bb
+    udp: true
+    tls: true
+    servername: tgju.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: Vf2gG3NUXw728geRwr-lSqNf1xz8VZwm29FRkimd_WU
+      short-id: 58b8
+    network: tcp
+  - name: "@Xvpnplus_bot```"
+    type: ss
+    server: 95.142.47.40
+    port: 62238
+    cipher: chacha20-ietf-poly1305
+    password: 5y5cwrCR8Iun5nlMSFS8uJ
+    udp: true
+  - name: "@chillguy_vpn 56"
+    type: vless
+    server: 195.201.222.173
+    port: 9090
+    uuid: c583e7f8-9807-43b6-dac7-ca7ae5623546
+    udp: true
+    tls: true
+    servername: tgju.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: tQwZ96ULPZim00dZUVBxCl1wRkVjULRVbho7_Z2FQFw
+      short-id: e0
+    network: tcp
+  - name: "@chillguy_vpn 57"
+    type: vless
+    server: 80.85.245.242
+    port: 443
+    uuid: a44e0875-210f-4941-9062-89b6361a14c6
+    udp: true
+    tls: true
+    servername: apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4
+      short-id: 8bcfe256cf216fd8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 58"
+    type: vless
+    server: 144.31.3.30
+    port: 443
+    uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+    udp: true
+    tls: true
+    servername: poland.scroogethebest.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+      short-id: 4fa44664f6a566d3
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "Channel id: @ShadowProxy66 🇳🇱"
+    type: ss
+    server: 82.38.31.61
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+    udp: true
+  - name: "Channel id: @ShadowProxy66 🇩🇪"
+    type: ss
+    server: 54.37.77.212
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: ef720f5b791a60f7
+    udp: true
+  - name: "@chillguy_vpn 59"
+    type: vless
+    server: 176.120.72.63
+    port: 38339
+    uuid: 481c5606-b586-44d7-bc2e-d8ef30d67f62
+    udp: true
+    tls: true
+    servername: dl.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: o0MFuznHh_Wztg0FTAMhFXm3hjAqOJAJIIVNn-_A9WA
+      short-id: e16883e511
+    network: tcp
+  - name: "@V2ray_confiig` 5"
+    type: vless
+    server: 65.109.203.5
+    port: 18521
+    uuid: bbb0d738-975d-41c5-ebfe-164f8cdc914f
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 65.109.203.5
+  - name: "کانال تلگرام : Free_VPN_CH@ 4"
+    type: vless
+    server: 37.139.42.234
+    port: 4443
+    uuid: 9cb2d5c5-c5e0-409b-ad3b-7c057b7971b1
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "-kDgSQgouE56cqDIDwgCco1LNQ-8q61WllL5egDI0yI"
+      short-id: "6670"
+    network: tcp
+  - name: "@chillguy_vpn 60"
+    type: vless
+    server: 144.31.3.35
+    port: 443
+    uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+    udp: true
+    tls: true
+    servername: poland.scroogethebest.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+      short-id: 4fa44664f6a566d3
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@i10VPN 🚀| با ما متصل بمون⚡"
+    type: vless
+    server: 92.53.191.238
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.jpmj.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: sni.jpmj.dev
+  - name: "@chillguy_vpn 61"
+    type: vless
+    server: 47.251.25.74
+    port: 443
+    uuid: 18805ff3-b420-45de-af18-93be14024ae8
+    udp: true
+    tls: true
+    servername: www.amazon.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 62"
+    type: vless
+    server: 15.204.97.206
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 63"
+    type: vless
+    server: 15.204.97.197
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 64"
+    type: vless
+    server: 190.93.245.94
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "@V2ray_confiig` 6"
+    type: vless
+    server: 54.37.64.97
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.dynv6.net
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@app_bedal"
+      headers:
+        Host: sni.111000.dynv6.net
+    client-fingerprint: chrome
+  - name: "@V2ray_confiig` 7"
+    type: vless
+    server: 162.19.243.46
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@app_bedal"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "@Proxy_sh 0797"
+    type: vless
+    server: 104.16.2.90
+    port: 443
+    uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+    udp: true
+    tls: true
+    servername: Pulavpn11.afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/43.218.77.16=1443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "🌐 WS-TLS | @Express_alaki | src @v2raba"
+    type: trojan
+    server: v1.dabache.top
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.multiplydose.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.multiplydose.com
+  - name: "🌐 WS-TLS | @Express_alaki | src @flyv2ray"
+    type: trojan
+    server: 104.18.11.110
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.multiplydose.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.multiplydose.com
+  - name: "@vpnbaz 🛡️"
+    type: vless
+    server: 66.81.247.155
+    port: 443
+    uuid: e765eb5b-8442-40e3-9532-857ba5ececa7
+    udp: true
+    tls: true
+    servername: vbox.ping-box.com
+    alpn:
+      - h2
+      - http/1.1
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+    client-fingerprint: chrome
+  - name: "@V2ray_confiig` 8"
+    type: vless
+    server: 89.169.128.105
+    port: 8443
+    uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: f4b4a6365558ea2e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@ConfigX2ray"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: 61066a16-78fc-4446-8013-6646bc3f27ba
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/103.86.44.120=65432"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "@v2FreeHub 🇷🇺"
+    type: ss
+    server: 212.192.14.73
+    port: 65330
+    cipher: chacha20-ietf-poly1305
+    password: hyeRslWhyBanRDW6PyTiSC
+    udp: true
+  - name: "@i10VPN 🚀| با ما متصل بمون⚡ 2"
+    type: vless
+    server: ipbaz.ping-box.com
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: sni.111000.indevs.in
+  - name: "@i10VPN 🚀| با ما متصل بمون⚡ 3"
+    type: vless
+    server: 188.114.99.243
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: sni.111000.indevs.in
+  - name: "@i10VPN 🚀| با ما متصل بمون⚡ 4"
+    type: vless
+    server: 51.158.206.98
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@meliproxyy"
+    type: vless
+    server: 212.34.153.15
+    port: 443
+    uuid: a44e0875-210f-4941-9062-89b6361a14c6
+    udp: true
+    tls: true
+    servername: apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4
+      short-id: 8bcfe256cf216fd8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "نتورلد تو تلگرام جستجو کنید"
+    type: vless
+    server: 185.170.166.138
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    alpn:
+      - "networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-"
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@vpnbaz"
+      headers:
+        Host: sni.111000.indevs.in
+  - name: "@networld_vpn"
+    type: vless
+    server: vpn.nnet.online
+    port: 443
+    uuid: 79d24ca6-8f75-4653-9a9c-2d4ee38f4b88
+    udp: true
+    tls: true
+    servername: nnet.online
+    alpn:
+      - "channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-"
+    network: ws
+    ws-opts:
+      path: "/vless-tls"
+      headers:
+        Host: nnet.online
+    client-fingerprint: chrome
+  - name: "تو کانال نتورلد نباشید قطع میشن@irmeliy"
+    type: vless
+    server: 162.159.153.231
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    alpn:
+      - "irmeliy-channel@.irmeliy-channel@.irmeliy-channel@.irmeliy-channel@.irmeliy-channel@.irmeliy-channel@.irmeliy-"
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@vpnbaz"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "حتما تو کانال نتورلد باشید"
+    type: vless
+    server: 159.223.24.65
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    alpn:
+      - "channel@.irmeliy@.irmeliy@.irmeliy@.irmeliy-"
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "@V2ray_confiig` 9"
+    type: vless
+    server: 185.238.228.46
+    port: 443
+    uuid: a992c7a6-832b-4243-a294-d34783d0294c
+    udp: true
+    tls: true
+    servername: hotchoclate.graphapp.ir
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/v2rayroad"
+      headers:
+        Host: hotchoclate.graphapp.ir
+  - name: "سرورهای رایگان و پرسرعت : Proxy_sh@`"
+    type: vless
+    server: www.speedtest.net
+    port: 8443
+    uuid: e07c6a8b-f67d-4297-bc8f-31855eef57a8
+    udp: true
+    tls: true
+    servername: Tet.mehspeedtest.com
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: Tet.mehspeedtest.com
+  - name: "🥹🥹7"
+    type: ss
+    server: 82.38.31.176
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+    udp: true
+  - name: "@VPNAZADIE"
+    type: vless
+    server: vpnazadie.voicesofiran.org
+    port: 80
+    uuid: 8960cdff-0f33-42f5-8b69-8157069542db
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/vless-ntls"
+      headers:
+        Host: voicesofiran.org
+  - name: "@chillguy_vpn 65"
+    type: vless
+    server: 45.12.30.238
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.jpmj.dev
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: sni.jpmj.dev
+    client-fingerprint: chrome
+  - name: "@unvisible_drops•7"
+    type: vless
+    server: 83.222.20.64
+    port: 17910
+    uuid: 079c1b04-7ef9-4c49-8a7a-849a18ba7b9b
+    udp: true
+    tls: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: KUhrhiJBplVCVCrAKP2KjIA_asOgkkvEEAxUJVofjgc
+      short-id: 8c09fb78b12f
+    network: tcp
+  - name: "@chillguy_vpn 66"
+    type: vless
+    server: 172.64.155.209
+    port: 2096
+    uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
+    udp: true
+    tls: true
+    servername: ca.adobe-connect.top
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ca.adobe-connect.top
+  - name: "@chillguy_vpn 67"
+    type: vless
+    server: 104.17.147.22
+    port: 8443
+    uuid: e07c6a8b-f67d-4297-bc8f-31855eef57a8
+    udp: true
+    tls: true
+    servername: Tet.mehspeedtest.com
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: Tet.mehspeedtest.com
+  - name: "node 8"
+    type: vmess
+    server: 172.67.197.47
+    port: 443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: sy4.620720.xyz
+    alpn:
+      - None
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: sy4.620720.xyz
+    client-fingerprint: chrome
+  - name: "@chillguy_vpn 68"
+    type: vless
+    server: 104.18.185.26
+    port: 2096
+    uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
+    udp: true
+    tls: true
+    servername: ca.adobe-connect.top
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ca.adobe-connect.top
+  - name: "node 9"
+    type: vmess
+    server: 172.233.229.91
+    port: 14102
+    uuid: 27ba87fc-583f-4763-9060-83cf0b9264db
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "جوین چنل شید قط نشید@netmelli15"
+    type: vless
+    server: 45.131.5.238
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.jpmj.dev
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.jpmj.dev
+    client-fingerprint: chrome
+  - name: "@chillguy_vpn 69"
+    type: vless
+    server: 51.250.4.119
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 7426b0c03ef009dc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 70"
+    type: vless
+    server: pl.jojack.ru
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    udp: true
+    tls: true
+    servername: pl.jojack.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: hSTtlpXKAYVVu5ybX3hQfq8dfsUrO_HoFVgfGGoCHVw
+      short-id: a7ab02dfcc1f2c04
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐 WS-TLS | @Express_alaki | src @meliproxyy"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: 7b906ed2-a5a8-41d2-a9cf-8621ec6e90a9
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/158.101.11.204=15805"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "🌐 WS-TLS | @Express_alaki | src @anotherme_night"
+    type: vless
+    server: z.linglingqi.dpdns.org
+    port: 443
+    uuid: 919f16d2-ae91-4589-8bb2-a672890e3537
+    udp: true
+    tls: true
+    servername: z.linglingqi.dpdns.org
+    client-fingerprint: chrome
+    alpn:
+      - h3
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: z.linglingqi.dpdns.org
+  - name: "🇳🇱 TCP-Reality | @Express_alaki | src @v2nodes"
+    type: vless
+    server: 38.93.136.8
+    port: 443
+    uuid: 426b17cf-400c-417f-8b36-459a01e57351
+    udp: true
+    tls: true
+    servername: miui.com
+    client-fingerprint: chrome
+    alpn:
+      - h2
+    reality-opts:
+      public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "جوین چنل شید قط نشید@shankamil"
+    type: trojan
+    server: www.gossipglove.com
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.gossipglove.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.gossipglove.com
+  - name: "جوین چنل شید قط نشید@shankamil 2"
+    type: trojan
+    server: 104.18.32.47
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.gossipglove.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.gossipglove.com
+  - name: "🌐 WS-TLS | @Express_alaki | src @anotherme_night 2"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: c4359d70-4f58-459b-8bd5-9c310c2f2d6f
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/152.67.248.2=53300"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "🌐 WS-TLS | @Express_alaki | src @anotherme_night 3"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: 61113265-3e78-4012-8f42-692b5069ddac
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/140.245.53.45=443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "🌐 WS-TLS | @Express_alaki | src @anotherme_night 4"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: 8fc83032-cb7e-4626-8058-f7051a68eb7b
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/44.217.235.114=2053"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "@VPNAZADIE 2"
+    type: vless
+    server: vpnazadie.voicesofiran.org
+    port: 80
+    uuid: f92f1657-f560-466d-9b75-c784d5d52912
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/vless-ntls"
+      headers:
+        Host: voicesofiran.org
+  - name: "@chillguy_vpn 71"
+    type: vless
+    server: 51.250.4.119
+    port: 443
+    uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
+    udp: true
+    tls: true
+    servername: api-maps.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 87cc0414902bee2d
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇮🇹[openproxylist.com]"
+    type: vless
+    server: 95.141.36.10
+    port: 443
+    uuid: 4bdc57ea-b143-493b-9654-be66e049f81e
+    udp: true
+    tls: true
+    servername: aws.com
+    client-fingerprint: chrome
+    alpn:
+      - h2
+    reality-opts:
+      public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐 TCP-None | @Express_alaki | src @v2ray_Extractor"
+    type: vless
+    server: 91.98.235.137
+    port: 12265
+    uuid: a9e655a1-b3ec-4b6f-9a81-0b23c60154da
+    udp: true
+    tls: false
+    network: tcp
+  - name: "@filembad 5"
+    type: vless
+    server: 95.164.85.109
+    port: 59374
+    uuid: bfc78cd8-5951-4803-8d6c-4cedef8cd420
+    udp: true
+    tls: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ZsswZuBV8bEGQWFrpShCilSytnDUj0kwHFhTSLXzOwc
+      short-id: d21e7c
+    network: tcp
+  - name: "🇺🇸[openproxylist.com]"
+    type: vless
+    server: usa.fastexte.pro
+    port: 443
+    uuid: 080c676a-c43f-4e73-aed9-db90ece9d4fb
+    udp: true
+    tls: true
+    servername: usa.fastexte.pro
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@InfoTech_VK"
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.gossipglove.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.gossipglove.com
+  - name: "@InfoTech_VK```"
+    type: vless
+    server: 91.107.208.24
+    port: 443
+    uuid: e6cf712c-7c48-466c-aaed-4154b276a4a4
+    udp: true
+    tls: false
+    network: tcp
+  - name: "@V2ray_confiig` 10"
+    type: ss
+    server: 38.54.29.57
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: cb955c8530320120
+    udp: true
+  - name: "VIP 💫@irmeliy"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: bbafc769-441b-4f06-9aae-9cc04ede1980
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/198.98.61.220=443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "VIP 💫@``irmeliy`"
+    type: vless
+    server: pq-india1.09vpn.com
+    port: 80
+    uuid: 5a54a377-a9d3-4ea5-b7b0-17bd899e202d
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: pq-india1.09vpn.com
+  - name: "VIP 💫@irmeliy 2"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: 16068e83-af4c-49ba-8048-98fcff3e5e7b
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/131.186.26.129=30443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "VIP 💫@irmeliy 3"
+    type: ss
+    server: 82.38.31.62
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+    udp: true
+  - name: "node 10"
+    type: vmess
+    server: hgtrojan.zabc.net
+    port: 2083
+    uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: hgtrojan.zabc.net
+    network: ws
+    ws-opts:
+      path: "/e6395c20"
+      headers:
+        Host: hgtrojan.zabc.net
+    client-fingerprint: chrome
+  - name: "node 11"
+    type: vmess
+    server: 172.67.197.47
+    port: 8443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: t1.620720.xyz
+    alpn:
+      - None
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: t1.620720.xyz
+    client-fingerprint: chrome
+  - name: "node 12"
+    type: vmess
+    server: 104.17.77.77
+    port: 8443
+    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+    alterId: 0
+    cipher: none
+    udp: true
+    tls: true
+    servername: v2ray1.dozapp.xyz
+    network: ws
+    ws-opts:
+      path: "/lMnsZUN4/"
+      headers:
+        Host: v2ray1.dozapp.xyz
+    client-fingerprint: chrome
+  - name: "@chillguy_vpn 72"
+    type: vless
+    server: 51.158.206.12
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    tls: true
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@viranet"
+    type: vless
+    server: 91.198.77.216
+    port: 42206
+    uuid: 6fc297ff-17c0-436a-b982-623d682e339a
+    udp: true
+    tls: false
+    network: tcp
+  - name: "@chillguy_vpn 73"
+    type: vless
+    server: 104.26.14.21
+    port: 443
+    uuid: 7dbc427e-1afd-4f76-b916-f7349e8131ce
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/44.217.235.114=8443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "@chillguy_vpn 74"
+    type: vless
+    server: 104.26.14.21
+    port: 443
+    uuid: 6fab6cc6-e340-4073-93e1-c6c6802002c7
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/167.179.110.68=8443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "@chillguy_vpn 75"
+    type: vless
+    server: 188.114.98.0
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "node 13"
+    type: vmess
+    server: 104.21.76.158
+    port: 443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: sy4.620720.xyz
+    alpn:
+      - None
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: sy4.620720.xyz
+    client-fingerprint: chrome
+  - name: "@chillguy_vpn 76"
+    type: vless
+    server: fn.takovpn.ru
+    port: 443
+    uuid: 373a56eb-aaa9-4a92-b209-503dd916900f
+    udp: true
+    tls: true
+    servername: www.vk.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 3cj5R-TwL-wjkLvwMcVW-DJXbm6xOyIIJEP1cC8AhgI
+      short-id: 286e2d
+    network: tcp
+  - name: "@chillguy_vpn 77"
+    type: vless
+    server: 193.42.11.50
+    port: 443
+    uuid: 64b5d863-81d6-48ea-9222-82030616fa63
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "تو کانال نتورلد نباشید قطع میشن%irmeliy"
+    type: vless
+    server: 172.64.158.2
+    port: 2096
+    uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+    udp: true
+    tls: true
+    servername: hetz.x-smm.com
+    alpn:
+      - "channel@.irmeliy@.irmeliy@.irmeliy@.irmeliy-"
+    network: ws
+    ws-opts:
+      path: "/45.76.183.217=49292"
+      headers:
+        Host: hetz.x-smm.com
+    client-fingerprint: chrome
+  - name: "تو کانال نتورلد نباشید قطع میشن@irmeliy 2"
+    type: vless
+    server: 45.12.134.86
+    port: 8443
+    uuid: 6432bbec-c4c0-4837-9aa3-82e79def5017
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: chrome
+    alpn:
+      - "irmeliy@.irmeliy@.irmeliy@.irmeliy@.irmeliy@.irmeliy@.irmeliy-"
+    reality-opts:
+      public-key: CwOLLTLuQN1SPzvenr_B_ErYYoOB_ScSvGvH-iYOtF8
+      short-id: 83780413c2ad3eaa
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@irmeliy 2"
+    type: vless
+    server: 5.253.41.208
+    port: 8443
+    uuid: 6432bbec-c4c0-4837-9aa3-82e79def5017
+    udp: true
+    tls: true
+    servername: tradingview.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CwOLLTLuQN1SPzvenr_B_ErYYoOB_ScSvGvH-iYOtF8
+      short-id: 83780413c2ad3eaa
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "تو کانال نتورلد نباشید قطع میشن@Irmeliy"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: fa335d1c-e6d1-48bb-99a3-f06710a29043
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    alpn:
+      - "irmeliy@.irmeliy@.irmeliy@.irmeliy@.irmeliy@.irmeliy@.irmeliy-"
+    network: ws
+    ws-opts:
+      path: "/130.185.164.213=8443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "@chillguy_vpn 78"
+    type: vless
+    server: at.jojack.ru
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    udp: true
+    tls: true
+    servername: at.jojack.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+      short-id: 8dc4fccb2bcfc99d
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "جوین چنل شید قط نشید@netmelli15 2"
+    type: vless
+    server: 190.93.245.94
+    port: 443
+    uuid: e765eb5b-8442-40e3-9532-857ba5ececa7
+    udp: true
+    tls: true
+    servername: vbox.ping-box.com
+    alpn:
+      - h2
+      - http/1.1
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+    client-fingerprint: chrome
+  - name: "جوین چنل شید قط نشید@netmelli15 3"
+    type: ss
+    server: tinkered-pennies-puppies.freesocks.work
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: hbGrpfvNrJsUmKmPbR3iY2
+    udp: true
+  - name: "[[@KIA_NET] 🇨🇦 CA-12460"
+    type: vless
+    server: 172.66.128.70
+    port: 80
+    uuid: 33e1a095-1e25-4198-bfe7-ec312e4f98ee
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed"
+      headers:
+        Host: CREDibLe-pLaNt7ddV4jJ7et.OnEeaT.CO.
+  - name: "[[@KIA_NET] 🇳🇱 NL-559"
+    type: vless
+    server: 91.84.113.114
+    port: 443
+    uuid: a44e0875-210f-4941-9062-89b6361a14c6
+    udp: true
+    tls: true
+    servername: apple.com
+    reality-opts:
+      public-key: i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4
+      short-id: 8bcfe256cf216fd8
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "node 14"
+    type: vmess
+    server: 45.13.227.118
+    port: 80
+    uuid: 8ce64662-f8b8-4955-bdf2-a55b821bc4aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560"
+      headers:
+        Host: "......................................................................................()..........................................................................................................................................................................................................................................................."
+  - name: "@chillguy_vpn 79"
+    type: vless
+    server: 104.26.15.21
+    port: 443
+    uuid: 0e4e3a71-e712-49c6-a6a5-0b457764746e
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/3.86.231.180=443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "@chillguy_vpn 80"
+    type: vless
+    server: 172.67.73.14
+    port: 443
+    uuid: 6fab6cc6-e340-4073-93e1-c6c6802002c7
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/167.179.110.68=8443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "@chillguy_vpn 81"
+    type: vless
+    server: 104.26.15.21
+    port: 443
+    uuid: 7dbc427e-1afd-4f76-b916-f7349e8131ce
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/44.217.235.114=8443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "@chillguy_vpn 82"
+    type: vless
+    server: 172.67.73.14
+    port: 443
+    uuid: 61066a16-78fc-4446-8013-6646bc3f27ba
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/103.86.44.120=65432"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "node 15"
+    type: vmess
+    server: 104.19.173.68
+    port: 8080
+    uuid: nasnet
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/NASNET/cdn?ed=2560"
+      headers:
+        Host: nasnet-571299667.rahavard365.co
+  - name: "🌐 WS-TLS | @Express_alaki | src @V2rayng_Fast```"
+    type: vless
+    server: 185.16.110.238
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.jpmj.dev
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.jpmj.dev
+    client-fingerprint: chrome
+  - name: "@chillguy_vpn 83"
+    type: vless
+    server: 79.137.175.56
+    port: 51102
+    uuid: 56e1592c-cae7-4ff1-b9d9-07ee111968b5
+    udp: true
+    tls: true
+    servername: m.vk.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 1929ef620e9b34f5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇩🇪@KIA_NET"
+    type: vless
+    server: 193.46.81.207
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    udp: true
+    tls: true
+    servername: de.cdn.stun.su
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+      short-id: 4daa022e84f8edf2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇦🇱@KIA_NET"
+    type: vless
+    server: 78.159.131.5
+    port: 443
+    uuid: 6beee13a-f356-4a51-8e65-75f776508e8f
+    udp: true
+    tls: true
+    servername: al.cdn.stun.su
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: su3dq3BDLDkX-jIjq3GyVUXwqzD7CNVYzKtOcO4HQ24
+      short-id: 8051d89749e0d400
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇳🇱@KIA_NET"
+    type: vless
+    server: 77.238.233.188
+    port: 443
+    uuid: a44e0875-210f-4941-9062-89b6361a14c6
+    udp: true
+    tls: true
+    servername: apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4
+      short-id: 8bcfe256cf216fd8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "『@confegraigan _ نت ملی ¹⁵⁹ 』```"
+    type: vless
+    server: c2.s-sub.org
+    port: 8443
+    uuid: 991519c1-3680-49b7-bb9f-9029a7a39067
+    udp: true
+    tls: true
+    servername: backup.f-sub.cfd
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: backup.f-sub.cfd
+  - name: "🌐 WS-TLS | @Express_alaki | src @Trick_mobil"
+    type: vless
+    server: 104.19.152.87
+    port: 443
+    uuid: d2efa18a-9e8a-3057-91fe-90c8e620e49f
+    udp: true
+    tls: true
+    servername: s6.oboob.cn
+    network: ws
+    ws-opts:
+      path: "/db1024113a787392"
+      headers:
+        Host: s6.oboob.cn
+    client-fingerprint: chrome
+  - name: "@v2_mod_shop🚀 2"
+    type: ss
+    server: 82.38.31.35
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+    udp: true
+  - name: "@chillguy_vpn 84"
+    type: vless
+    server: s2.plan-vpn.ru
+    port: 443
+    uuid: 3be95058-e4e5-40e2-b51c-db1e6313cb7c
+    udp: true
+    tls: true
+    servername: s2.plan-vpn.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: fT83pflGxRKuI01MxRCO7ODM8_UqAoHRC43lfpecLnk
+      short-id: 571dbf1163c63dca
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇳🇱[openproxylist.com]"
+    type: vless
+    server: ndt.fasti.win
+    port: 443
+    uuid: 5757c746-9878-4cfd-874a-edd95485f26d
+    udp: true
+    tls: true
+    servername: ndt.fasti.win
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: XBBVeMURFu7jmYJ9MZwjEWgfQlGTnRs0B5So5Fy7jWs
+      short-id: 992f3294e2336744
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 85"
+    type: vless
+    server: 158.160.105.121
+    port: 443
+    uuid: 56e1592c-cae7-4ff1-b9d9-07ee111968b5
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+      short-id: 887c0d72e771a934
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 86"
+    type: vless
+    server: 208.103.161.109
+    port: 2096
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    udp: true
+    tls: true
+    servername: WangCai.443888.xyz
+    network: ws
+    ws-opts:
+      path: "/danfeng?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: WangCai.443888.xyz
+    client-fingerprint: chrome
+  - name: "@Proxy_sh`"
+    type: vless
+    server: 45.82.251.208
+    port: 8880
+    uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+    udp: true
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "@Uvpn_org"
+    type: vless
+    server: 95.217.173.53
+    port: 8080
+    uuid: a91f7510-2b6c-4cb5-e509-f0ed5b8d7aea
+    udp: true
+    tls: true
+    servername: speedtest1.irancell.ir.prod.hosts.ooklaserver.net
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 6SQWq4pBZc6Ad2BVQ3gSW0UGYHROLqVJey5LRe11JBM
+      short-id: 91d64dcd
+    network: tcp
+  - name: "🆔Telegram : @planB_net 4"
+    type: vless
+    server: 176.124.223.138
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&telegram🇨🇳+@wangcai2"
+      headers:
+        Host: sni.111000.indevs.in
+  - name: "🌐 WS-TLS | @Express_alaki | src @V2rayng_Fast``` 2"
+    type: trojan
+    server: 188.114.96.3
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+  - name: "🇳🇱 @FNETPRO 👈کانال`"
+    type: vless
+    server: nl.zeepo.ir
+    port: 443
+    uuid: 5520f018-2a8c-100e-81e5-0810cba12076
+    udp: true
+    tls: true
+    servername: tgju.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: SySMR9yW2kna78L7nmfkSYeQ-DkS7nIx98AsTsHy0gM
+      short-id: 7fec027d1852df40
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 87"
+    type: vless
+    server: 104.26.14.21
+    port: 443
+    uuid: 16068e83-af4c-49ba-8048-98fcff3e5e7b
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/131.186.26.129=30443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "@v2_mod_shop🚀 3"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: ca7709bd-7ff1-4edc-9f1d-679d17bcd150
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/45.77.25.6=48828"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "@v2_mod_shop🚀 4"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: 9751a75b-b27c-4766-9e67-380599588612
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/138.2.95.61=1111"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "@v2_mod_shop🚀 5"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: e8add82d-0a0a-4f3b-a22e-c74f83da73b9
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/138.2.64.229=443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "@v2_mod_shop🚀 6"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: d9a83363-40a6-4a21-9dbe-cb2b7d287048
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/107.174.121.122=443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "@chillguy_vpn 88"
+    type: vless
+    server: 162.159.44.45
+    port: 2096
+    uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+    udp: true
+    tls: true
+    servername: hetz.x-smm.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/45.76.183.217=49292"
+      headers:
+        Host: hetz.x-smm.com
+  - name: "🇮🇹[openproxylist.com] 2"
+    type: ss
+    server: 193.135.174.135
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "@Filter_breaker"
+    type: ss
+    server: 38.54.97.247
+    port: 28026
+    cipher: chacha20-ietf-poly1305
+    password: 3bb08205cb6c8af0
+    udp: true
+  - name: "@Filter_breaker 2"
+    type: ss
+    server: 119.159.245.24
+    port: 26736
+    cipher: chacha20-ietf-poly1305
+    password: 1d1bc54689ed4b75
+    udp: true
+  - name: "@vpnbaz ⚜️"
+    type: vless
+    server: 77.83.245.191
+    port: 62391
+    uuid: 8aaa4ed2-0fca-48b7-bca6-5f692e278d5d
+    udp: true
+    tls: true
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 28C36ojKr0JugqCel9_zMI5YRzx2B2VG2TfziOhc_Qo
+      short-id: b57dc6123dbccf12
+    network: tcp
+  - name: "@proxy_online_net"
+    type: vless
+    server: 5.255.104.65
+    port: 16057
+    uuid: 00d71a81-6b32-4929-a9e6-dc812c0d6171
+    udp: true
+    tls: false
+    network: tcp
+  - name: "@chillguy_vpn 89"
+    type: vless
+    server: 190.93.244.138
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "@chillguy_vpn 90"
+    type: vless
+    server: 104.17.148.22
+    port: 8443
+    uuid: e07c6a8b-f67d-4297-bc8f-31855eef57a8
+    udp: true
+    tls: true
+    servername: Tet.mehspeedtest.com
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: Tet.mehspeedtest.com
+  - name: "@chillguy_vpn 91"
+    type: vless
+    server: 192.76.160.216
+    port: 2280
+    uuid: 3fa2f5cd-0cbc-4e4f-bce1-a59ae090eef4
+    udp: true
+    tls: true
+    servername: tgju.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 3O9CVvzD_0omAKw17VJoL0NlezpzxRAHNIbOWGBto2I
+      short-id: faf804ddc2e49f6c
+    network: tcp
+  - name: "@chillguy_vpn 92"
+    type: vless
+    server: 38.244.215.124
+    port: 443
+    uuid: 28f9da30-cd81-4726-86a9-d2e17b14decc
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: teH8elrVppRluj9CeSno57ARzAUKRLCu6X9f8yvxvhQ
+      short-id: 0ad4430e2c
+    network: tcp
+  - name: "@chillguy_vpn 93"
+    type: vless
+    server: 89.106.89.112
+    port: 2053
+    uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
+    udp: true
+    tls: true
+    servername: www.ibm.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: WckOSneVajAzpH0sZSAFAWPnmwuuEXKZrTICNj5_hHU
+      short-id: 4a5b6c7d
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "@chillguy_vpn 94"
+    type: vless
+    server: 152.228.135.5
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🎖@YamYamProxy"
+      headers:
+        Host: sni.111000.indevs.in
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "♻️ 自动选择"
+      - DIRECT
+      - "@V2ray_confiig`"
+      - "@v2_mod_shop"
+      - "@v2_mod_shop 2"
+      - "🥐14@unvisible_drops"
+      - "@v2_mod_shop 3"
+      - "@v2_mod_shop 4"
+      - "@V2ray_confiig` 2"
+      - "➤ @netshekan99"
+      - "🇮🇷 IR 34 @Outline_Vpn"
+      - "https://t.me/cacaguys"
+      - "🍭22@unvisible_drops"
+      - "☢️35@unvisible_drops"
+      - "Channel : @FreeConfigForYou🏴🏳`"
+      - "Channel id: @KIA_NET 🇺🇸```"
+      - "کانال تلگرام : Free_VPN_CH@"
+      - "@Enzewa_Network👈جوین‌شوپرسرعت‌وصل‌شی"
+      - "🆔Telegram : @planB_net"
+      - "V2ray_confiig`"
+      - "🆔Telegram : @planB_net 2"
+      - "🆔Telegram : @planB_net 3"
+      - "@filembad"
+      - "⚡Telegram = @netmelli15"
+      - "🌐 XHTTP-Reality 📁 @DailyV2RY```"
+      - "@one_shop_official`"
+      - "@chillguy_vpn"
+      - "@chillguy_vpn 2"
+      - "🌐 TCP-Reality 📁 @v2ray_Extractor"
+      - "🌐 TCP-Reality 📁 @v2ray_Extractor 2"
+      - "@chillguy_vpn 3"
+      - "🇺🇸 GRPC-None 📁 @FreakConfig"
+      - "@chillguy_vpn 4"
+      - "@chillguy_vpn 5"
+      - "@chillguy_vpn 6"
+      - "🌐 WS-TLS 📁 @V2rayng_Fast"
+      - "@chillguy_vpn 7"
+      - "🇩🇪 TCP-Reality 📁 @v2ray_configs_pool"
+      - "@chillguy_vpn 8"
+      - "@chillguy_vpn 9"
+      - "🌐 TCP-None 📁 @v2ray_Extractor"
+      - node
+      - "@shadow_vpn👕"
+      - "@shadow_vpn🧣"
+      - "@chillguy_vpn 10"
+      - "@chillguy_vpn 11"
+      - "@chillguy_vpn 12"
+      - "@chillguy_vpn 13"
+      - "@chillguy_vpn 14"
+      - "🥊 Tel : @ProxyVPN11 ⟵"
+      - "➤ @netshekan99 2"
+      - "@chillguy_vpn 15"
+      - "کانال تلگرام : Free_VPN_CH@```"
+      - "@chillguy_vpn 16"
+      - "🌐 TCP-Reality 📁 @meliproxyy"
+      - "@V2ray_confiig` 3"
+      - "کانال تلگرام : Free_VPN_CH@ 2"
+      - "کانال تلگرام : Free_VPN_CH@``` 2"
+      - "MCI-@V2rayAlpha--22"
+      - "MCI-@V2rayAlpha--29"
+      - "@chillguy_vpn 17"
+      - "💚🌺7"
+      - "@chillguy_vpn 18"
+      - "@V2ray_confiig` 4"
+      - "🌐 TCP-Reality 📁 @meliproxyy 2"
+      - "@filembad 2"
+      - "@filembad 3"
+      - "@🄳🄴🄴🄿🅂🄾🄾🄽🄶 :کانال تلگرام🏅"
+      - "@chillguy_vpn 19"
+      - "@chillguy_vpn 20"
+      - "@chillguy_vpn 21"
+      - "@chillguy_vpn 22"
+      - "@chillguy_vpn 23"
+      - "@chillguy_vpn 24"
+      - "@chillguy_vpn 25"
+      - "@chillguy_vpn 26"
+      - "@chillguy_vpn 27"
+      - "@chillguy_vpn 28"
+      - "@chillguy_vpn 29"
+      - "node 2"
+      - "🌐 GRPC-TLS 📁 @EmKavpn"
+      - "🇱🇻 TCP-Reality 📁 @v2nodes```"
+      - "node 3"
+      - "کانال تلگرام : Free_VPN_CH@ 3"
+      - "@chillguy_vpn 30"
+      - "@chillguy_vpn 31"
+      - "@chillguy_vpn 32"
+      - "@chillguy_vpn 33"
+      - "@v2_mod_shop🚀"
+      - "@chillguy_vpn 34"
+      - "@chillguy_vpn 35"
+      - "@chillguy_vpn 36"
+      - "@chillguy_vpn 37"
+      - "node 4"
+      - "@chillguy_vpn 38"
+      - "@chillguy_vpn 39"
+      - "@chillguy_vpn 40"
+      - "@chillguy_vpn 41"
+      - "@chillguy_vpn 42"
+      - "node 5"
+      - "@chillguy_vpn 43"
+      - "@chillguy_vpn 44"
+      - "@chillguy_vpn 45"
+      - "🇳🇱@Proxy_FTProto"
+      - "@filembad 4"
+      - "@chillguy_vpn 46"
+      - "🔵@chillguy_vpn"
+      - "@chillguy_vpn 47"
+      - "@chillguy_vpn 48"
+      - Iran
+      - "Iran 2"
+      - "Iran 3"
+      - "@chillguy_vpn 49"
+      - "@chillguy_vpn 50"
+      - "🏞🔥1"
+      - "@vpnbaz ⛩️"
+      - "@vpnbaz 🎴"
+      - "➤ @netshekan99 3"
+      - "➤ @netshekan99`"
+      - "@v2FreeHub 🇫🇮`"
+      - "@chillguy_vpn 51"
+      - "@chillguy_vpn 52"
+      - "@chillguy_vpn 53"
+      - "node 6"
+      - "node 7"
+      - "@irmeliy"
+      - "T.me/i10VPN👽"
+      - "@chillguy_vpn 54"
+      - "🇫🇮[openproxylist.com]"
+      - "@chillguy_vpn 55"
+      - "@Xvpnplus_bot```"
+      - "@chillguy_vpn 56"
+      - "@chillguy_vpn 57"
+      - "@chillguy_vpn 58"
+      - "Channel id: @ShadowProxy66 🇳🇱"
+      - "Channel id: @ShadowProxy66 🇩🇪"
+      - "@chillguy_vpn 59"
+      - "@V2ray_confiig` 5"
+      - "کانال تلگرام : Free_VPN_CH@ 4"
+      - "@chillguy_vpn 60"
+      - "@i10VPN 🚀| با ما متصل بمون⚡"
+      - "@chillguy_vpn 61"
+      - "@chillguy_vpn 62"
+      - "@chillguy_vpn 63"
+      - "@chillguy_vpn 64"
+      - "@V2ray_confiig` 6"
+      - "@V2ray_confiig` 7"
+      - "@Proxy_sh 0797"
+      - "🌐 WS-TLS | @Express_alaki | src @v2raba"
+      - "🌐 WS-TLS | @Express_alaki | src @flyv2ray"
+      - "@vpnbaz 🛡️"
+      - "@V2ray_confiig` 8"
+      - "@ConfigX2ray"
+      - "@v2FreeHub 🇷🇺"
+      - "@i10VPN 🚀| با ما متصل بمون⚡ 2"
+      - "@i10VPN 🚀| با ما متصل بمون⚡ 3"
+      - "@i10VPN 🚀| با ما متصل بمون⚡ 4"
+      - "@meliproxyy"
+      - "نتورلد تو تلگرام جستجو کنید"
+      - "@networld_vpn"
+      - "تو کانال نتورلد نباشید قطع میشن@irmeliy"
+      - "حتما تو کانال نتورلد باشید"
+      - "@V2ray_confiig` 9"
+      - "سرورهای رایگان و پرسرعت : Proxy_sh@`"
+      - "🥹🥹7"
+      - "@VPNAZADIE"
+      - "@chillguy_vpn 65"
+      - "@unvisible_drops•7"
+      - "@chillguy_vpn 66"
+      - "@chillguy_vpn 67"
+      - "node 8"
+      - "@chillguy_vpn 68"
+      - "node 9"
+      - "جوین چنل شید قط نشید@netmelli15"
+      - "@chillguy_vpn 69"
+      - "@chillguy_vpn 70"
+      - "🌐 WS-TLS | @Express_alaki | src @meliproxyy"
+      - "🌐 WS-TLS | @Express_alaki | src @anotherme_night"
+      - "🇳🇱 TCP-Reality | @Express_alaki | src @v2nodes"
+      - "جوین چنل شید قط نشید@shankamil"
+      - "جوین چنل شید قط نشید@shankamil 2"
+      - "🌐 WS-TLS | @Express_alaki | src @anotherme_night 2"
+      - "🌐 WS-TLS | @Express_alaki | src @anotherme_night 3"
+      - "🌐 WS-TLS | @Express_alaki | src @anotherme_night 4"
+      - "@VPNAZADIE 2"
+      - "@chillguy_vpn 71"
+      - "🇮🇹[openproxylist.com]"
+      - "🌐 TCP-None | @Express_alaki | src @v2ray_Extractor"
+      - "@filembad 5"
+      - "🇺🇸[openproxylist.com]"
+      - "@InfoTech_VK"
+      - "@InfoTech_VK```"
+      - "@V2ray_confiig` 10"
+      - "VIP 💫@irmeliy"
+      - "VIP 💫@``irmeliy`"
+      - "VIP 💫@irmeliy 2"
+      - "VIP 💫@irmeliy 3"
+      - "node 10"
+      - "node 11"
+      - "node 12"
+      - "@chillguy_vpn 72"
+      - "@viranet"
+      - "@chillguy_vpn 73"
+      - "@chillguy_vpn 74"
+      - "@chillguy_vpn 75"
+      - "node 13"
+      - "@chillguy_vpn 76"
+      - "@chillguy_vpn 77"
+      - "تو کانال نتورلد نباشید قطع میشن%irmeliy"
+      - "تو کانال نتورلد نباشید قطع میشن@irmeliy 2"
+      - "@irmeliy 2"
+      - "تو کانال نتورلد نباشید قطع میشن@Irmeliy"
+      - "@chillguy_vpn 78"
+      - "جوین چنل شید قط نشید@netmelli15 2"
+      - "جوین چنل شید قط نشید@netmelli15 3"
+      - "[[@KIA_NET] 🇨🇦 CA-12460"
+      - "[[@KIA_NET] 🇳🇱 NL-559"
+      - "node 14"
+      - "@chillguy_vpn 79"
+      - "@chillguy_vpn 80"
+      - "@chillguy_vpn 81"
+      - "@chillguy_vpn 82"
+      - "node 15"
+      - "🌐 WS-TLS | @Express_alaki | src @V2rayng_Fast```"
+      - "@chillguy_vpn 83"
+      - "🇩🇪@KIA_NET"
+      - "🇦🇱@KIA_NET"
+      - "🇳🇱@KIA_NET"
+      - "『@confegraigan _ نت ملی ¹⁵⁹ 』```"
+      - "🌐 WS-TLS | @Express_alaki | src @Trick_mobil"
+      - "@v2_mod_shop🚀 2"
+      - "@chillguy_vpn 84"
+      - "🇳🇱[openproxylist.com]"
+      - "@chillguy_vpn 85"
+      - "@chillguy_vpn 86"
+      - "@Proxy_sh`"
+      - "@Uvpn_org"
+      - "🆔Telegram : @planB_net 4"
+      - "🌐 WS-TLS | @Express_alaki | src @V2rayng_Fast``` 2"
+      - "🇳🇱 @FNETPRO 👈کانال`"
+      - "@chillguy_vpn 87"
+      - "@v2_mod_shop🚀 3"
+      - "@v2_mod_shop🚀 4"
+      - "@v2_mod_shop🚀 5"
+      - "@v2_mod_shop🚀 6"
+      - "@chillguy_vpn 88"
+      - "🇮🇹[openproxylist.com] 2"
+      - "@Filter_breaker"
+      - "@Filter_breaker 2"
+      - "@vpnbaz ⚜️"
+      - "@proxy_online_net"
+      - "@chillguy_vpn 89"
+      - "@chillguy_vpn 90"
+      - "@chillguy_vpn 91"
+      - "@chillguy_vpn 92"
+      - "@chillguy_vpn 93"
+      - "@chillguy_vpn 94"
+  - name: "♻️ 自动选择"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "@V2ray_confiig`"
+      - "@v2_mod_shop"
+      - "@v2_mod_shop 2"
+      - "🥐14@unvisible_drops"
+      - "@v2_mod_shop 3"
+      - "@v2_mod_shop 4"
+      - "@V2ray_confiig` 2"
+      - "➤ @netshekan99"
+      - "🇮🇷 IR 34 @Outline_Vpn"
+      - "https://t.me/cacaguys"
+      - "🍭22@unvisible_drops"
+      - "☢️35@unvisible_drops"
+      - "Channel : @FreeConfigForYou🏴🏳`"
+      - "Channel id: @KIA_NET 🇺🇸```"
+      - "کانال تلگرام : Free_VPN_CH@"
+      - "@Enzewa_Network👈جوین‌شوپرسرعت‌وصل‌شی"
+      - "🆔Telegram : @planB_net"
+      - "V2ray_confiig`"
+      - "🆔Telegram : @planB_net 2"
+      - "🆔Telegram : @planB_net 3"
+      - "@filembad"
+      - "⚡Telegram = @netmelli15"
+      - "🌐 XHTTP-Reality 📁 @DailyV2RY```"
+      - "@one_shop_official`"
+      - "@chillguy_vpn"
+      - "@chillguy_vpn 2"
+      - "🌐 TCP-Reality 📁 @v2ray_Extractor"
+      - "🌐 TCP-Reality 📁 @v2ray_Extractor 2"
+      - "@chillguy_vpn 3"
+      - "🇺🇸 GRPC-None 📁 @FreakConfig"
+      - "@chillguy_vpn 4"
+      - "@chillguy_vpn 5"
+      - "@chillguy_vpn 6"
+      - "🌐 WS-TLS 📁 @V2rayng_Fast"
+      - "@chillguy_vpn 7"
+      - "🇩🇪 TCP-Reality 📁 @v2ray_configs_pool"
+      - "@chillguy_vpn 8"
+      - "@chillguy_vpn 9"
+      - "🌐 TCP-None 📁 @v2ray_Extractor"
+      - node
+      - "@shadow_vpn👕"
+      - "@shadow_vpn🧣"
+      - "@chillguy_vpn 10"
+      - "@chillguy_vpn 11"
+      - "@chillguy_vpn 12"
+      - "@chillguy_vpn 13"
+      - "@chillguy_vpn 14"
+      - "🥊 Tel : @ProxyVPN11 ⟵"
+      - "➤ @netshekan99 2"
+      - "@chillguy_vpn 15"
+      - "کانال تلگرام : Free_VPN_CH@```"
+      - "@chillguy_vpn 16"
+      - "🌐 TCP-Reality 📁 @meliproxyy"
+      - "@V2ray_confiig` 3"
+      - "کانال تلگرام : Free_VPN_CH@ 2"
+      - "کانال تلگرام : Free_VPN_CH@``` 2"
+      - "MCI-@V2rayAlpha--22"
+      - "MCI-@V2rayAlpha--29"
+      - "@chillguy_vpn 17"
+      - "💚🌺7"
+      - "@chillguy_vpn 18"
+      - "@V2ray_confiig` 4"
+      - "🌐 TCP-Reality 📁 @meliproxyy 2"
+      - "@filembad 2"
+      - "@filembad 3"
+      - "@🄳🄴🄴🄿🅂🄾🄾🄽🄶 :کانال تلگرام🏅"
+      - "@chillguy_vpn 19"
+      - "@chillguy_vpn 20"
+      - "@chillguy_vpn 21"
+      - "@chillguy_vpn 22"
+      - "@chillguy_vpn 23"
+      - "@chillguy_vpn 24"
+      - "@chillguy_vpn 25"
+      - "@chillguy_vpn 26"
+      - "@chillguy_vpn 27"
+      - "@chillguy_vpn 28"
+      - "@chillguy_vpn 29"
+      - "node 2"
+      - "🌐 GRPC-TLS 📁 @EmKavpn"
+      - "🇱🇻 TCP-Reality 📁 @v2nodes```"
+      - "node 3"
+      - "کانال تلگرام : Free_VPN_CH@ 3"
+      - "@chillguy_vpn 30"
+      - "@chillguy_vpn 31"
+      - "@chillguy_vpn 32"
+      - "@chillguy_vpn 33"
+      - "@v2_mod_shop🚀"
+      - "@chillguy_vpn 34"
+      - "@chillguy_vpn 35"
+      - "@chillguy_vpn 36"
+      - "@chillguy_vpn 37"
+      - "node 4"
+      - "@chillguy_vpn 38"
+      - "@chillguy_vpn 39"
+      - "@chillguy_vpn 40"
+      - "@chillguy_vpn 41"
+      - "@chillguy_vpn 42"
+      - "node 5"
+      - "@chillguy_vpn 43"
+      - "@chillguy_vpn 44"
+      - "@chillguy_vpn 45"
+      - "🇳🇱@Proxy_FTProto"
+      - "@filembad 4"
+      - "@chillguy_vpn 46"
+      - "🔵@chillguy_vpn"
+      - "@chillguy_vpn 47"
+      - "@chillguy_vpn 48"
+      - Iran
+      - "Iran 2"
+      - "Iran 3"
+      - "@chillguy_vpn 49"
+      - "@chillguy_vpn 50"
+      - "🏞🔥1"
+      - "@vpnbaz ⛩️"
+      - "@vpnbaz 🎴"
+      - "➤ @netshekan99 3"
+      - "➤ @netshekan99`"
+      - "@v2FreeHub 🇫🇮`"
+      - "@chillguy_vpn 51"
+      - "@chillguy_vpn 52"
+      - "@chillguy_vpn 53"
+      - "node 6"
+      - "node 7"
+      - "@irmeliy"
+      - "T.me/i10VPN👽"
+      - "@chillguy_vpn 54"
+      - "🇫🇮[openproxylist.com]"
+      - "@chillguy_vpn 55"
+      - "@Xvpnplus_bot```"
+      - "@chillguy_vpn 56"
+      - "@chillguy_vpn 57"
+      - "@chillguy_vpn 58"
+      - "Channel id: @ShadowProxy66 🇳🇱"
+      - "Channel id: @ShadowProxy66 🇩🇪"
+      - "@chillguy_vpn 59"
+      - "@V2ray_confiig` 5"
+      - "کانال تلگرام : Free_VPN_CH@ 4"
+      - "@chillguy_vpn 60"
+      - "@i10VPN 🚀| با ما متصل بمون⚡"
+      - "@chillguy_vpn 61"
+      - "@chillguy_vpn 62"
+      - "@chillguy_vpn 63"
+      - "@chillguy_vpn 64"
+      - "@V2ray_confiig` 6"
+      - "@V2ray_confiig` 7"
+      - "@Proxy_sh 0797"
+      - "🌐 WS-TLS | @Express_alaki | src @v2raba"
+      - "🌐 WS-TLS | @Express_alaki | src @flyv2ray"
+      - "@vpnbaz 🛡️"
+      - "@V2ray_confiig` 8"
+      - "@ConfigX2ray"
+      - "@v2FreeHub 🇷🇺"
+      - "@i10VPN 🚀| با ما متصل بمون⚡ 2"
+      - "@i10VPN 🚀| با ما متصل بمون⚡ 3"
+      - "@i10VPN 🚀| با ما متصل بمون⚡ 4"
+      - "@meliproxyy"
+      - "نتورلد تو تلگرام جستجو کنید"
+      - "@networld_vpn"
+      - "تو کانال نتورلد نباشید قطع میشن@irmeliy"
+      - "حتما تو کانال نتورلد باشید"
+      - "@V2ray_confiig` 9"
+      - "سرورهای رایگان و پرسرعت : Proxy_sh@`"
+      - "🥹🥹7"
+      - "@VPNAZADIE"
+      - "@chillguy_vpn 65"
+      - "@unvisible_drops•7"
+      - "@chillguy_vpn 66"
+      - "@chillguy_vpn 67"
+      - "node 8"
+      - "@chillguy_vpn 68"
+      - "node 9"
+      - "جوین چنل شید قط نشید@netmelli15"
+      - "@chillguy_vpn 69"
+      - "@chillguy_vpn 70"
+      - "🌐 WS-TLS | @Express_alaki | src @meliproxyy"
+      - "🌐 WS-TLS | @Express_alaki | src @anotherme_night"
+      - "🇳🇱 TCP-Reality | @Express_alaki | src @v2nodes"
+      - "جوین چنل شید قط نشید@shankamil"
+      - "جوین چنل شید قط نشید@shankamil 2"
+      - "🌐 WS-TLS | @Express_alaki | src @anotherme_night 2"
+      - "🌐 WS-TLS | @Express_alaki | src @anotherme_night 3"
+      - "🌐 WS-TLS | @Express_alaki | src @anotherme_night 4"
+      - "@VPNAZADIE 2"
+      - "@chillguy_vpn 71"
+      - "🇮🇹[openproxylist.com]"
+      - "🌐 TCP-None | @Express_alaki | src @v2ray_Extractor"
+      - "@filembad 5"
+      - "🇺🇸[openproxylist.com]"
+      - "@InfoTech_VK"
+      - "@InfoTech_VK```"
+      - "@V2ray_confiig` 10"
+      - "VIP 💫@irmeliy"
+      - "VIP 💫@``irmeliy`"
+      - "VIP 💫@irmeliy 2"
+      - "VIP 💫@irmeliy 3"
+      - "node 10"
+      - "node 11"
+      - "node 12"
+      - "@chillguy_vpn 72"
+      - "@viranet"
+      - "@chillguy_vpn 73"
+      - "@chillguy_vpn 74"
+      - "@chillguy_vpn 75"
+      - "node 13"
+      - "@chillguy_vpn 76"
+      - "@chillguy_vpn 77"
+      - "تو کانال نتورلد نباشید قطع میشن%irmeliy"
+      - "تو کانال نتورلد نباشید قطع میشن@irmeliy 2"
+      - "@irmeliy 2"
+      - "تو کانال نتورلد نباشید قطع میشن@Irmeliy"
+      - "@chillguy_vpn 78"
+      - "جوین چنل شید قط نشید@netmelli15 2"
+      - "جوین چنل شید قط نشید@netmelli15 3"
+      - "[[@KIA_NET] 🇨🇦 CA-12460"
+      - "[[@KIA_NET] 🇳🇱 NL-559"
+      - "node 14"
+      - "@chillguy_vpn 79"
+      - "@chillguy_vpn 80"
+      - "@chillguy_vpn 81"
+      - "@chillguy_vpn 82"
+      - "node 15"
+      - "🌐 WS-TLS | @Express_alaki | src @V2rayng_Fast```"
+      - "@chillguy_vpn 83"
+      - "🇩🇪@KIA_NET"
+      - "🇦🇱@KIA_NET"
+      - "🇳🇱@KIA_NET"
+      - "『@confegraigan _ نت ملی ¹⁵⁹ 』```"
+      - "🌐 WS-TLS | @Express_alaki | src @Trick_mobil"
+      - "@v2_mod_shop🚀 2"
+      - "@chillguy_vpn 84"
+      - "🇳🇱[openproxylist.com]"
+      - "@chillguy_vpn 85"
+      - "@chillguy_vpn 86"
+      - "@Proxy_sh`"
+      - "@Uvpn_org"
+      - "🆔Telegram : @planB_net 4"
+      - "🌐 WS-TLS | @Express_alaki | src @V2rayng_Fast``` 2"
+      - "🇳🇱 @FNETPRO 👈کانال`"
+      - "@chillguy_vpn 87"
+      - "@v2_mod_shop🚀 3"
+      - "@v2_mod_shop🚀 4"
+      - "@v2_mod_shop🚀 5"
+      - "@v2_mod_shop🚀 6"
+      - "@chillguy_vpn 88"
+      - "🇮🇹[openproxylist.com] 2"
+      - "@Filter_breaker"
+      - "@Filter_breaker 2"
+      - "@vpnbaz ⚜️"
+      - "@proxy_online_net"
+      - "@chillguy_vpn 89"
+      - "@chillguy_vpn 90"
+      - "@chillguy_vpn 91"
+      - "@chillguy_vpn 92"
+      - "@chillguy_vpn 93"
+      - "@chillguy_vpn 94"
+rules:
+  - "GEOIP,LAN,DIRECT,no-resolve"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,🚀 节点选择"

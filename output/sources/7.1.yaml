@@ -1,0 +1,1198 @@
+# 订阅 7.1.txt -> Clash
+# 由 txt2clash.py 自动生成于 2026-11-01 16:51:16 +0800
+# 节点数量: 77
+# 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: "off"
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  listen: "0.0.0.0:1053"
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "*.localhost"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  proxy-server-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+proxies:
+  - name: EPODONIOS
+    type: trojan
+    server: 151.101.56.90
+    port: 443
+    password: MITIVpN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSs---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-66e.global.ssl.fastly.net
+  - name: "EPODONIOS 2"
+    type: trojan
+    server: 104.21.83.135
+    port: 443
+    password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
+    udp: true
+    servername: id1.nathaya.web.id
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/trojan"
+      headers:
+        Host: id1.nathaya.web.id
+  - name: "EPODONIOS 3"
+    type: trojan
+    server: 104.16.72.101
+    port: 443
+    password: 6c862415-30d2-4813-8e49-42e99a0bd415
+    udp: true
+    servername: space.byu.id.yxls.eu.cc
+    network: ws
+    ws-opts:
+      path: "/us-gllc@soskeynets"
+      headers:
+        Host: space.byu.id.yxls.eu.cc
+  - name: "EPODONIOS 4"
+    type: trojan
+    server: 13.250.28.5
+    port: 44370
+    password: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
+    udp: true
+    servername: www.yahoo.com
+    client-fingerprint: chrome
+    network: tcp
+  - name: "EPODONIOS 5"
+    type: trojan
+    server: jgzt1997.qivfelo.ir
+    port: 1080
+    password: BbNnpOgc1j9WOaWoslbSyeob1r47IRHV
+    udp: true
+    servername: maps.google.com
+    client-fingerprint: chrome
+    network: tcp
+  - name: "EPODONIOS 6"
+    type: trojan
+    server: 65.109.215.50
+    port: 54673
+    password: "Ldbgt4IUYv0S+5cFrG4vcWEbvdf8RgPGmoIXhnnOEh4="
+    udp: true
+    servername: 65.109.215.50
+    network: tcp
+  - name: "EPODONIOS 7"
+    type: trojan
+    server: 167.82.76.7
+    port: 443
+    password: MITIVPN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-33s.global.ssl.fastly.net
+  - name: "EPODONIOS 8"
+    type: trojan
+    server: 199.232.78.160
+    port: 443
+    password: MITIVPN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1i@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-44s.global.ssl.fastly.net
+  - name: "EPODONIOS 9"
+    type: trojan
+    server: 151.101.56.7
+    port: 443
+    password: MITIVpN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-22e.global.ssl.fastly.net
+  - name: "EPODONIOS 10"
+    type: trojan
+    server: 167.82.76.7
+    port: 443
+    password: MITIVpN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSs---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net
+  - name: "EPODONIOS 11"
+    type: trojan
+    server: 199.232.78.101
+    port: 443
+    password: MITIVpN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-11e.global.ssl.fastly.net
+  - name: "EPODONIOS 12"
+    type: trojan
+    server: 199.232.78.160
+    port: 443
+    password: MITIVpN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1i@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-44e.global.ssl.fastly.net
+  - name: "EPODONIOS 13"
+    type: trojan
+    server: 151.101.56.56
+    port: 443
+    password: MiTIVPN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-66e.global.ssl.fastly.net
+  - name: "EPODONIOS 14"
+    type: trojan
+    server: 151.101.56.7
+    port: 443
+    password: MiTIVPN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-22e.global.ssl.fastly.net
+  - name: "EPODONIOS 15"
+    type: trojan
+    server: 167.82.76.7
+    port: 443
+    password: MiTIVPN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net
+  - name: "EPODONIOS 16"
+    type: trojan
+    server: 199.232.78.101
+    port: 443
+    password: MiTIVPN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-11e.global.ssl.fastly.net
+  - name: "EPODONIOS 17"
+    type: trojan
+    server: 199.232.78.160
+    port: 443
+    password: MiTIVPN
+    udp: true
+    servername: ssl.fa
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "%"
+      headers:
+        Host: 44e.global.ssl.fastly.net
+  - name: "EPODONIOS 18"
+    type: trojan
+    server: 199.232.78.160
+    port: 443
+    password: MiTIVPN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-44e.global.ssl.fastly.net
+  - name: "EPODONIOS 19"
+    type: trojan
+    server: 151.101.56.101
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/des---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-5.global.ssl.fastly.net
+  - name: "EPODONIOS 20"
+    type: trojan
+    server: 151.101.56.6
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-1.global.ssl.fastly.net
+  - name: "EPODONIOS 21"
+    type: trojan
+    server: 151.101.56.7
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-2.global.ssl.fastly.net
+  - name: "EPODONIOS 22"
+    type: trojan
+    server: 167.82.76.27
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-3.global.ssl.fastly.net
+  - name: "EPODONIOS 23"
+    type: trojan
+    server: 199.232.78.101
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "---@bored_vpn"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-11.global.ssl.fastly.net
+  - name: "EPODONIOS 24"
+    type: trojan
+    server: 199.232.78.160
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-44e.global.ssl.fastly.net
+  - name: "EPODONIOS 25"
+    type: trojan
+    server: 104.17.108.189
+    port: 443
+    password: Telegram-Config0plus
+    udp: true
+    servername: go.appsflyer.com.r3xxe.eu.cc
+    network: ws
+    ws-opts:
+      path: "/ca-cl"
+      headers:
+        Host: go.appsflyer.com.r3xxe.eu.cc
+  - name: "EPODONIOS 26"
+    type: trojan
+    server: 172.67.167.173
+    port: 8443
+    password: "U&RdRdcsoeB;VU9.IO"
+    udp: true
+    servername: Te096C8unFj1zOKTL5peU24bS.878nAMn3I0xJ17no6p3.wORkErS.Dev
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/tr/oUxHeBhI2aoGvGd83MTCkEy2kmdXsBX0?ed=2560"
+      headers:
+        Host: Te096C8unFj1zOKTL5peU24bS.878nAMn3I0xJ17no6p3.wORkErS.Dev
+  - name: "EPODONIOS 27"
+    type: trojan
+    server: iranserver.com
+    port: 8443
+    password: auto
+    udp: true
+    servername: tg.cmliussss.us.kg
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/@Azarakhsh_Proxy?ed=2560"
+      headers:
+        Host: tg.cmliussss.us.kg
+  - name: "EPODONIOS 28"
+    type: trojan
+    server: 87.121.218.169
+    port: 443
+    password: bptHV5U91mWneB61rRKhCQ8f
+    udp: true
+    servername: 87.121.218.169
+    client-fingerprint: chrome
+    network: tcp
+  - name: "EPODONIOS 29"
+    type: trojan
+    server: 185.137.157.145
+    port: 443
+    password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+    udp: true
+    servername: 185.137.157.145
+    network: tcp
+  - name: "EPODONIOS 30"
+    type: trojan
+    server: 18.226.163.196
+    port: 15349
+    password: euEUAqUnKhIX
+    udp: true
+    servername: appsvs.shop
+    network: tcp
+  - name: "EPODONIOS 31"
+    type: trojan
+    server: 104.16.174.12
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "EPODONIOS 32"
+    type: trojan
+    server: 104.16.174.44
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "EPODONIOS 33"
+    type: trojan
+    server: 104.16.72.41
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+  - name: "EPODONIOS 34"
+    type: trojan
+    server: 104.17.121.71
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+  - name: "EPODONIOS 35"
+    type: trojan
+    server: 104.18.152.229
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "EPODONIOS 36"
+    type: trojan
+    server: 104.18.32.47
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+  - name: "EPODONIOS 37"
+    type: trojan
+    server: 104.19.229.21
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "EPODONIOS 38"
+    type: trojan
+    server: 104.19.229.21
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+  - name: "EPODONIOS 39"
+    type: trojan
+    server: 104.21.33.59
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.pleadcourt.org
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.pleadcourt.org
+  - name: "EPODONIOS 40"
+    type: trojan
+    server: 130.250.137.171
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "EPODONIOS 41"
+    type: trojan
+    server: 162.159.136.234
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "EPODONIOS 42"
+    type: trojan
+    server: 162.159.38.119
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.creationlong.org
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.creationlong.org
+  - name: "EPODONIOS 43"
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+  - name: "EPODONIOS 44"
+    type: trojan
+    server: 172.67.149.60
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "EPODONIOS 45"
+    type: trojan
+    server: 185.220.100.168
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+  - name: "EPODONIOS 46"
+    type: trojan
+    server: 188.114.97.6
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "//assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "EPODONIOS 47"
+    type: trojan
+    server: 188.114.97.6
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.pleadcourt.org
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.pleadcourt.org
+  - name: "EPODONIOS 48"
+    type: trojan
+    server: 188.114.97.7
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "EPODONIOS 49"
+    type: trojan
+    server: 188.114.98.0
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+  - name: "EPODONIOS 50"
+    type: trojan
+    server: 188.42.145.180
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.volumeroot.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.volumeroot.com
+  - name: "EPODONIOS 51"
+    type: trojan
+    server: 198.62.62.23
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+  - name: "EPODONIOS 52"
+    type: trojan
+    server: 212.183.88.136
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+  - name: "EPODONIOS 53"
+    type: trojan
+    server: 213.182.199.137
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.pleadcourt.org
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.pleadcourt.org
+  - name: "EPODONIOS 54"
+    type: trojan
+    server: 45.130.125.112
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.calmlunch.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+  - name: "EPODONIOS 55"
+    type: trojan
+    server: 78.47.146.151
+    port: 443
+    password: humanity
+    udp: true
+    servername: 78.47.146.151
+    network: tcp
+  - name: "EPODONIOS 56"
+    type: trojan
+    server: 8.47.69.0
+    port: 443
+    password: humanity
+    udp: true
+    servername: 8.47.69.0
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: tcp
+  - name: "EPODONIOS 57"
+    type: trojan
+    server: 8.47.69.0
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.pleadcourt.org
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.pleadcourt.org
+  - name: "EPODONIOS 58"
+    type: trojan
+    server: render.com
+    port: 443
+    password: humanity
+    udp: true
+    servername: render.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "EPODONIOS 59"
+    type: trojan
+    server: render.com
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "EPODONIOS 60"
+    type: trojan
+    server: www.calmlunch.com
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+  - name: "EPODONIOS 61"
+    type: trojan
+    server: www.speedtest.net
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+  - name: "EPODONIOS 62"
+    type: trojan
+    server: www.speedtest.net
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.ignitelimit.com
+  - name: "EPODONIOS 63"
+    type: trojan
+    server: www.speedtest.org
+    port: 443
+    password: humanity
+    udp: true
+    servername: www.ignitelimit.com
+    network: tcp
+  - name: "EPODONIOS 64"
+    type: trojan
+    server: 151.101.56.56
+    port: 443
+    password: mitivpn
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-66e.global.ssl.fastly.net
+  - name: "EPODONIOS 65"
+    type: trojan
+    server: 151.101.56.7
+    port: 443
+    password: mitivpn
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-22e.global.ssl.fastly.net
+  - name: "EPODONIOS 66"
+    type: trojan
+    server: 167.82.76.7
+    port: 443
+    password: mitivpn
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net
+  - name: "EPODONIOS 67"
+    type: trojan
+    server: 188.114.97.6
+    port: 443
+    password: mitivpn
+    udp: true
+    servername: www.ssl.global.digi.my.mitivpn.xyz
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ed=mitivpn"
+      headers:
+        Host: eee.we.wwww.swsl.glowbal.diwgi.mwy.mitivpn.xyz
+  - name: "EPODONIOS 68"
+    type: trojan
+    server: 199.232.78.101
+    port: 443
+    password: mitivpn
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-11e.global.ssl.fastly.net
+  - name: "EPODONIOS 69"
+    type: trojan
+    server: 199.232.78.160
+    port: 443
+    password: mitivpn
+    udp: true
+    servername: ssl.fastly.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP"
+      headers:
+        Host: mitivpn---ss--s---mitivpn-44e.global.ssl.fastly.net
+  - name: "EPODONIOS 70"
+    type: trojan
+    server: 27.50.48.49
+    port: 443
+    password: mitivpn
+    udp: true
+    servername: gamingdll.ir
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/index.html/ed=mitivpn"
+      headers:
+        Host: gamingdll.ir
+  - name: "EPODONIOS 71"
+    type: trojan
+    server: 188.114.96.1
+    port: 2083
+    password: nzrc4ma4087c1ukr
+    udp: true
+    servername: dl2.rahetejarat.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/WWEiIlL225IiiILl"
+      v2ray-http-upgrade: true
+      headers:
+        Host: dl1.rahetejarat.com
+  - name: "EPODONIOS 72"
+    type: trojan
+    server: 188.114.96.5
+    port: 2083
+    password: nzrc4ma4087c1ukr
+    udp: true
+    servername: dl2.rahetejarat.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/WWEiIlL225IiiILl"
+      v2ray-http-upgrade: true
+      headers:
+        Host: dl1.rahetejarat.com
+  - name: "EPODONIOS 73"
+    type: trojan
+    server: 191.44.113.95
+    port: 443
+    password: pkj3BBnG2NE4wD-72SwgzNcfaHSes-dr
+    udp: true
+    servername: 16.img.avito.st
+    client-fingerprint: chrome
+    network: tcp
+  - name: "EPODONIOS 74"
+    type: trojan
+    server: 194.93.61.120
+    port: 443
+    password: pkj3BBnG2NE4wD-72SwgzNcfaHSes-dr
+    udp: true
+    servername: 16.img.avito.st
+    client-fingerprint: chrome
+    network: tcp
+  - name: "EPODONIOS 75"
+    type: trojan
+    server: 15.223.8.8
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    servername: trojan.burgerip.co.uk
+    alpn:
+      - http/1.1
+    network: tcp
+  - name: "EPODONIOS 76"
+    type: trojan
+    server: 167.68.4.199
+    port: 2053
+    password: Aimer
+    udp: true
+    servername: epge.muarua.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ts.hpc.tw"
+      headers:
+        Host: epge.muarua.filegear-sg.me
+  - name: "EPODONIOS 77"
+    type: trojan
+    server: los.ydnode.us
+    port: 1002
+    password: b6a487eb-2ccf-4640-856e-4a32f974c8b1
+    udp: true
+    servername: los.ydnode.us
+    network: tcp
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "♻️ 自动选择"
+      - DIRECT
+      - EPODONIOS
+      - "EPODONIOS 2"
+      - "EPODONIOS 3"
+      - "EPODONIOS 4"
+      - "EPODONIOS 5"
+      - "EPODONIOS 6"
+      - "EPODONIOS 7"
+      - "EPODONIOS 8"
+      - "EPODONIOS 9"
+      - "EPODONIOS 10"
+      - "EPODONIOS 11"
+      - "EPODONIOS 12"
+      - "EPODONIOS 13"
+      - "EPODONIOS 14"
+      - "EPODONIOS 15"
+      - "EPODONIOS 16"
+      - "EPODONIOS 17"
+      - "EPODONIOS 18"
+      - "EPODONIOS 19"
+      - "EPODONIOS 20"
+      - "EPODONIOS 21"
+      - "EPODONIOS 22"
+      - "EPODONIOS 23"
+      - "EPODONIOS 24"
+      - "EPODONIOS 25"
+      - "EPODONIOS 26"
+      - "EPODONIOS 27"
+      - "EPODONIOS 28"
+      - "EPODONIOS 29"
+      - "EPODONIOS 30"
+      - "EPODONIOS 31"
+      - "EPODONIOS 32"
+      - "EPODONIOS 33"
+      - "EPODONIOS 34"
+      - "EPODONIOS 35"
+      - "EPODONIOS 36"
+      - "EPODONIOS 37"
+      - "EPODONIOS 38"
+      - "EPODONIOS 39"
+      - "EPODONIOS 40"
+      - "EPODONIOS 41"
+      - "EPODONIOS 42"
+      - "EPODONIOS 43"
+      - "EPODONIOS 44"
+      - "EPODONIOS 45"
+      - "EPODONIOS 46"
+      - "EPODONIOS 47"
+      - "EPODONIOS 48"
+      - "EPODONIOS 49"
+      - "EPODONIOS 50"
+      - "EPODONIOS 51"
+      - "EPODONIOS 52"
+      - "EPODONIOS 53"
+      - "EPODONIOS 54"
+      - "EPODONIOS 55"
+      - "EPODONIOS 56"
+      - "EPODONIOS 57"
+      - "EPODONIOS 58"
+      - "EPODONIOS 59"
+      - "EPODONIOS 60"
+      - "EPODONIOS 61"
+      - "EPODONIOS 62"
+      - "EPODONIOS 63"
+      - "EPODONIOS 64"
+      - "EPODONIOS 65"
+      - "EPODONIOS 66"
+      - "EPODONIOS 67"
+      - "EPODONIOS 68"
+      - "EPODONIOS 69"
+      - "EPODONIOS 70"
+      - "EPODONIOS 71"
+      - "EPODONIOS 72"
+      - "EPODONIOS 73"
+      - "EPODONIOS 74"
+      - "EPODONIOS 75"
+      - "EPODONIOS 76"
+      - "EPODONIOS 77"
+  - name: "♻️ 自动选择"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+      - EPODONIOS
+      - "EPODONIOS 2"
+      - "EPODONIOS 3"
+      - "EPODONIOS 4"
+      - "EPODONIOS 5"
+      - "EPODONIOS 6"
+      - "EPODONIOS 7"
+      - "EPODONIOS 8"
+      - "EPODONIOS 9"
+      - "EPODONIOS 10"
+      - "EPODONIOS 11"
+      - "EPODONIOS 12"
+      - "EPODONIOS 13"
+      - "EPODONIOS 14"
+      - "EPODONIOS 15"
+      - "EPODONIOS 16"
+      - "EPODONIOS 17"
+      - "EPODONIOS 18"
+      - "EPODONIOS 19"
+      - "EPODONIOS 20"
+      - "EPODONIOS 21"
+      - "EPODONIOS 22"
+      - "EPODONIOS 23"
+      - "EPODONIOS 24"
+      - "EPODONIOS 25"
+      - "EPODONIOS 26"
+      - "EPODONIOS 27"
+      - "EPODONIOS 28"
+      - "EPODONIOS 29"
+      - "EPODONIOS 30"
+      - "EPODONIOS 31"
+      - "EPODONIOS 32"
+      - "EPODONIOS 33"
+      - "EPODONIOS 34"
+      - "EPODONIOS 35"
+      - "EPODONIOS 36"
+      - "EPODONIOS 37"
+      - "EPODONIOS 38"
+      - "EPODONIOS 39"
+      - "EPODONIOS 40"
+      - "EPODONIOS 41"
+      - "EPODONIOS 42"
+      - "EPODONIOS 43"
+      - "EPODONIOS 44"
+      - "EPODONIOS 45"
+      - "EPODONIOS 46"
+      - "EPODONIOS 47"
+      - "EPODONIOS 48"
+      - "EPODONIOS 49"
+      - "EPODONIOS 50"
+      - "EPODONIOS 51"
+      - "EPODONIOS 52"
+      - "EPODONIOS 53"
+      - "EPODONIOS 54"
+      - "EPODONIOS 55"
+      - "EPODONIOS 56"
+      - "EPODONIOS 57"
+      - "EPODONIOS 58"
+      - "EPODONIOS 59"
+      - "EPODONIOS 60"
+      - "EPODONIOS 61"
+      - "EPODONIOS 62"
+      - "EPODONIOS 63"
+      - "EPODONIOS 64"
+      - "EPODONIOS 65"
+      - "EPODONIOS 66"
+      - "EPODONIOS 67"
+      - "EPODONIOS 68"
+      - "EPODONIOS 69"
+      - "EPODONIOS 70"
+      - "EPODONIOS 71"
+      - "EPODONIOS 72"
+      - "EPODONIOS 73"
+      - "EPODONIOS 74"
+      - "EPODONIOS 75"
+      - "EPODONIOS 76"
+      - "EPODONIOS 77"
+rules:
+  - "GEOIP,LAN,DIRECT,no-resolve"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,🚀 节点选择"

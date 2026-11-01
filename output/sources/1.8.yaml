@@ -1,0 +1,2828 @@
+# 订阅 1.8.txt -> Clash
+# 由 txt2clash.py 自动生成于 2026-11-01 16:51:09 +0800
+# 节点数量: 173
+# 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: "off"
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  listen: "0.0.0.0:1053"
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "*.localhost"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  proxy-server-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+proxies:
+  - name: "CID VPN (Спасибо донатерам)"
+    type: vless
+    server: cid.wlrus.lol
+    port: 37016
+    uuid: c6be0a05-6105-4c0a-8af5-3e227f10735f
+    udp: true
+    tls: true
+    servername: www.nvidia.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: YlwO0m3fxSkKzi0RqOadx0fDPUyDTmUEmHP97bvV7QQ
+      short-id: 6d37bd51
+    network: tcp
+  - name: "0001 - Australia @CID_VPN"
+    type: vless
+    server: hi4.afraseda.ir
+    port: 2053
+    uuid: 799e8287-0e67-41b1-889b-3277264d302c
+    udp: true
+    tls: true
+    servername: myopen.tencan.ir
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: xhttp
+    xhttp-opts:
+      path: "/?ed=2048"
+      host: myopen.tencan.ir
+      mode: auto
+  - name: "0002 - Belarus @CID_VPN"
+    type: vless
+    server: by.cdn.titun.su
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    udp: true
+    tls: true
+    servername: by.cdn.titun.su
+    client-fingerprint: qq
+    reality-opts:
+      public-key: 0L6FE1vTechnKhN9LxFgmcDzqGVIfEQz8ZBGfvzKGzg
+      short-id: cad317b20db4aad2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0004 - Belgium @CID_VPN"
+    type: vless
+    server: 151.101.8.79
+    port: 80
+    uuid: ddf459f2-a6c7-403f-bd91-f95c4c2c7874
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: 7Svnlet-it-happen-khafesho-Sd.global.ssl.fastly.net
+      mode: auto
+  - name: "0005 - Belize @CID_VPN"
+    type: vless
+    server: 45.131.5.238
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.jpmj.dev
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.jpmj.dev
+    client-fingerprint: chrome
+  - name: "0006 - Bulgaria @CID_VPN"
+    type: vless
+    server: c.brimliski.com
+    port: 443
+    uuid: 18bf6157-206c-4813-8f78-e7b83f9b8feb
+    udp: true
+    tls: true
+    servername: minio.migamet.sbs
+    client-fingerprint: chrome
+    network: xhttp
+    xhttp-opts:
+      path: "/assets?ed=2560"
+      host: minio.migamet.sbs
+      mode: auto
+  - name: "0007 - Canada @CID_VPN"
+    type: vless
+    server: 92.53.191.238
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.jpmj.dev
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: sni.jpmj.dev
+    client-fingerprint: chrome
+  - name: "0008 - Canada @CID_VPN"
+    type: vless
+    server: afrcloud22.mmv.kr
+    port: 443
+    uuid: 61113265-3e78-4012-8f42-692b5069ddac
+    udp: true
+    tls: true
+    servername: afrcloud22.mmv.kr
+    network: ws
+    ws-opts:
+      path: "/140.245.53.45=443"
+      headers:
+        Host: afrcloud22.mmv.kr
+    client-fingerprint: chrome
+  - name: "0009 - Canada @CID_VPN"
+    type: vless
+    server: SpEeDtEsT.NeT
+    port: 80
+    uuid: e4e081cb-b8b8-487a-89e4-43520a88b1cd
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/HajAmirVip?=2048"
+      host: fasthetz.global.ssl.fastly.net
+      mode: auto
+  - name: "0010 - Canada @CID_VPN"
+    type: vless
+    server: speedtest.net
+    port: 80
+    uuid: a26bbed7-a286-4840-84bc-dc102c526777
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/category/music"
+      host: iran.boltboost.gg
+      mode: auto
+  - name: "0012 - Canada @CID_VPN"
+    type: vless
+    server: python.org
+    port: 80
+    uuid: a26bbed7-a286-4840-84bc-dc102c526777
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/category/music"
+      host: iran.boltboost.gg
+      mode: auto
+  - name: "0014 - Canada @CID_VPN"
+    type: vless
+    server: 151.101.194.219
+    port: 80
+    uuid: a26bbed7-a286-4840-84bc-dc102c526777
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/category/music"
+      host: iran.boltboost.gg
+      mode: auto
+  - name: "0015 - Denmark @CID_VPN"
+    type: vless
+    server: 45.148.31.0
+    port: 15855
+    uuid: e4fc4761-154f-490e-bbaa-b4fa193f1073
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 45.148.31.0
+  - name: "0018 - Estonia @CID_VPN"
+    type: vless
+    server: est01-vlr01.tcp-reset-club.net
+    port: 443
+    uuid: 4604876a-0652-4835-88bd-4421ea5c40da
+    udp: true
+    tls: true
+    servername: hls-svod.itunes.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: f79448a30d
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0019 - Estonia @CID_VPN"
+    type: vless
+    server: est01-vlr01.tcp-reset-club.net
+    port: 443
+    uuid: 0d57032d-f54e-49a4-8285-39840bbf329e
+    udp: true
+    tls: true
+    servername: hls-svod.itunes.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: e499f276e7bd6420
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0020 - Estonia @CID_VPN"
+    type: vless
+    server: 95.85.245.114
+    port: 443
+    uuid: 04f040e8-1d14-4969-94ad-6bc0ac633063
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0021 - Estonia @CID_VPN"
+    type: vless
+    server: 95.85.242.191
+    port: 443
+    uuid: 04f040e8-1d14-4969-94ad-6bc0ac633063
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: qq
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0022 - Estonia @CID_VPN"
+    type: vless
+    server: ee01.keyinvest.org
+    port: 443
+    uuid: e35dd2de-7a4c-4af4-b671-1592e286a040
+    udp: true
+    tls: true
+    servername: keyinvest.org
+    reality-opts:
+      public-key: G39Eg-wogA8ErCPDN0SOwh-9QHJ-PrIIs_EKVvPeeAY
+    client-fingerprint: chrome
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "0023 - Estonia @CID_VPN"
+    type: vless
+    server: 91.235.234.219
+    port: 443
+    uuid: 644b3ac1-1b01-4a7f-9ed3-6b0b3b2b9491
+    udp: true
+    tls: true
+    servername: yahoo.com
+    reality-opts:
+      public-key: iEqv2C_HXlQ4-p9QL7eJQ57lS0nDMQb7vc2K7FyPJR4
+      short-id: 6a1f3c9b
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0027 - Estonia @CID_VPN"
+    type: vless
+    server: es.pineappled.org
+    port: 443
+    uuid: 64b5d863-81d6-48ea-9222-82030616fa63
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0029 - Finland @CID_VPN"
+    type: vless
+    server: 109.120.187.255
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "0030 - Finland @CID_VPN"
+    type: vless
+    server: 155.212.110.2
+    port: 993
+    uuid: c10999b4-7f93-5a50-3908-1467b1e52ae2
+    udp: true
+    tls: true
+    servername: speed.cloudflare.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: GfTzhy59k9CXlAdF819OUVeBdrqIILaDIWa1bddjGnA
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0031 - Finland @CID_VPN"
+    type: vless
+    server: fi.fasti.win
+    port: 443
+    uuid: f6d382fa-3a53-4497-beb0-b285ac9bcf3a
+    udp: true
+    tls: true
+    servername: fi.fasti.win
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F294G-iRQHISvxNNtUtF2arP3d6pzigwfVcY2jqXcSc
+      short-id: 2a8a7bb6036e8461
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0032 - Finland @CID_VPN"
+    type: vless
+    server: fi.fasti.win
+    port: 443
+    uuid: 5757c746-9878-4cfd-874a-edd95485f26d
+    udp: true
+    tls: true
+    servername: fi.fasti.win
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F294G-iRQHISvxNNtUtF2arP3d6pzigwfVcY2jqXcSc
+      short-id: 2a8a7bb6036e8461
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0033 - Finland @CID_VPN"
+    type: vless
+    server: 196.244.194.115
+    port: 443
+    uuid: 5757c746-9878-4cfd-874a-edd95485f26d
+    udp: true
+    tls: true
+    servername: fi.fasti.win
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F294G-iRQHISvxNNtUtF2arP3d6pzigwfVcY2jqXcSc
+      short-id: 2a8a7bb6036e8461
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0034 - Finland @CID_VPN"
+    type: vless
+    server: access-fl26.agveit.pro
+    port: 443
+    uuid: 637bd1f3-f097-4fa2-a62d-322f1aede2fe
+    udp: true
+    tls: true
+    servername: access-fl26.agveit.pro
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: KirNNYcecynNjQyb6gQFlHUcpbgijjcxjWgvAFJwmSs
+      short-id: a934cacc5e43cf60
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0035 - Finland @CID_VPN"
+    type: vless
+    server: 196.196.203.91
+    port: 443
+    uuid: 5757c746-9878-4cfd-874a-edd95485f26d
+    udp: true
+    tls: true
+    servername: fi.fasti.win
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F294G-iRQHISvxNNtUtF2arP3d6pzigwfVcY2jqXcSc
+      short-id: 2a8a7bb6036e8461
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0036 - Finland @CID_VPN"
+    type: vless
+    server: 196.244.191.211
+    port: 443
+    uuid: 5757c746-9878-4cfd-874a-edd95485f26d
+    udp: true
+    tls: true
+    servername: fi.fasti.win
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F294G-iRQHISvxNNtUtF2arP3d6pzigwfVcY2jqXcSc
+      short-id: 2a8a7bb6036e8461
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0037 - Finland @CID_VPN"
+    type: vless
+    server: 65.109.219.219
+    port: 8081
+    uuid: c35a26f6-dd78-47df-a75a-adc2db3c682b
+    udp: true
+    tls: true
+    servername: privacy.yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: IrQdnkYMWgbIbZstdagCAv0pkYTD1n_CqdEQAWVf4kQ
+      short-id: 6e92ae804ba0
+    network: xhttp
+    xhttp-opts:
+      path: "/xpIitb2BIKpivboh6tASFbppTMe"
+      host: privacy.yahoo.com
+      mode: auto
+  - name: "0038 - Finland @CID_VPN"
+    type: vless
+    server: 185.236.24.47
+    port: 443
+    uuid: 3be95058-e4e5-40e2-b51c-db1e6313cb7c
+    udp: true
+    tls: true
+    servername: node.plan-vpn.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: KM1vB10hHgDlTauO2WXczroF3HX2EqnzlGMJcsR92SE
+      short-id: bdc9e1764c1588ca
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0039 - Finland @CID_VPN"
+    type: vless
+    server: 65.109.219.219
+    port: 8443
+    uuid: 55e29875-a337-4327-bc2b-c19de8e4f38f
+    udp: true
+    tls: true
+    servername: privacy.yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: IrQdnkYMWgbIbZstdagCAv0pkYTD1n_CqdEQAWVf4kQ
+      short-id: 6e92ae804ba0
+    network: xhttp
+    xhttp-opts:
+      path: "/xpIitb2BIKpivboh6tASFbppTMe"
+      host: privacy.yahoo.com
+      mode: auto
+  - name: "0040 - Finland @CID_VPN"
+    type: vless
+    server: 185.228.233.22
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "0041 - Finland @CID_VPN"
+    type: vless
+    server: 81.85.72.197
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0042 - Finland @CID_VPN"
+    type: vless
+    server: 194.180.189.36
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "0043 - Finland @CID_VPN"
+    type: vless
+    server: 185.88.36.55
+    port: 443
+    uuid: ad5d8d51-18f4-451b-9c01-7baff1d9b244
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 30eHXS9LpzFg443EtLaGLuDFo2QGa4zvLM7WdT-tSiM
+      short-id: 35debf0dc757d053
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0044 - France @CID_VPN"
+    type: vless
+    server: 82.64.152.55
+    port: 20304
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "0045 - France @CID_VPN"
+    type: vless
+    server: france-paris.hostinger.kcartik-vps.com
+    port: 80
+    uuid: b5920b52-504c-4835-978c-fbc4110d5840
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/vless"
+      headers:
+        Host: france-paris.hostinger.kcartik-vps.com
+  - name: "0047 - France @CID_VPN"
+    type: vless
+    server: 188.92.28.204
+    port: 34045
+    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+    udp: true
+    tls: true
+    servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+    reality-opts:
+      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+      short-id: e8ab71d0
+    client-fingerprint: chrome
+    network: tcp
+  - name: "0048 - France @CID_VPN"
+    type: vless
+    server: 72.61.161.219
+    port: 80
+    uuid: b5920b52-504c-4835-978c-fbc4110d5840
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/vless"
+      headers:
+        Host: france-paris.hostinger.kcartik-vps.com
+  - name: "0049 - France @CID_VPN"
+    type: vless
+    server: fr.fasti.win
+    port: 443
+    uuid: f6d382fa-3a53-4497-beb0-b285ac9bcf3a
+    udp: true
+    tls: true
+    servername: fr.fasti.win
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CuLjZaOWwaC_didE-f8CZoUK0mGH75iq-0u1St_wjUU
+      short-id: 67f8515f3fa23d2f
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0050 - France @CID_VPN"
+    type: vless
+    server: fr.fasti.win
+    port: 443
+    uuid: 5757c746-9878-4cfd-874a-edd95485f26d
+    udp: true
+    tls: true
+    servername: fr.fasti.win
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CuLjZaOWwaC_didE-f8CZoUK0mGH75iq-0u1St_wjUU
+      short-id: 67f8515f3fa23d2f
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0052 - France @CID_VPN"
+    type: vless
+    server: fran.scroogethebest.com
+    port: 443
+    uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+    udp: true
+    tls: true
+    servername: fran.scroogethebest.com
+    client-fingerprint: random
+    reality-opts:
+      public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+      short-id: 4fa44664f6a566d3
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0053 - France @CID_VPN"
+    type: vless
+    server: fr.pineappled.org
+    port: 443
+    uuid: 18f72be7-0651-4037-928b-8a309d685796
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0056 - France @CID_VPN"
+    type: vless
+    server: 72.61.161.219
+    port: 443
+    uuid: b5920b52-504c-4835-978c-fbc4110d5840
+    udp: true
+    tls: true
+    servername: france-paris.hostinger.kcartik-vps.com
+    network: ws
+    ws-opts:
+      path: "/vless"
+      headers:
+        Host: france-paris.hostinger.kcartik-vps.com
+    client-fingerprint: chrome
+  - name: "0057 - France @CID_VPN"
+    type: vless
+    server: france-paris.hostinger.kcartik-vps.com
+    port: 443
+    uuid: b5920b52-504c-4835-978c-fbc4110d5840
+    udp: true
+    tls: true
+    servername: france-paris.hostinger.kcartik-vps.com
+    network: ws
+    ws-opts:
+      path: "/vless"
+      headers:
+        Host: france-paris.hostinger.kcartik-vps.com
+    client-fingerprint: chrome
+  - name: "0059 - France @CID_VPN"
+    type: vless
+    server: fasty.hamrahx.ir
+    port: 80
+    uuid: 6f26bcd2-40ab-4176-b2e7-4343ec2f3031
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/download"
+      host: khastam3.global.ssl.fastly.net
+      mode: auto
+  - name: "0060 - France @CID_VPN"
+    type: vless
+    server: fasty.hamrahx.ir
+    port: 80
+    uuid: 73635d7b-3e4a-4519-8d1e-d194ec5bcb29
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/download"
+      host: khastam3.global.ssl.fastly.net
+      mode: auto
+  - name: "0062 - Germany @CID_VPN"
+    type: vless
+    server: 194.87.25.176
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0063 - Germany @CID_VPN"
+    type: vless
+    server: 5.39.249.10
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0064 - Germany @CID_VPN"
+    type: vless
+    server: desrv.fasti.win
+    port: 443
+    uuid: 5757c746-9878-4cfd-874a-edd95485f26d
+    udp: true
+    tls: true
+    servername: desrv.fasti.win
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: THd83pRAiz68QKKNCzCdj3hvVq9Wy7NIFeIk1WjRJ1c
+      short-id: 15cdd4ff88310cf0
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0065 - Germany @CID_VPN"
+    type: vless
+    server: 89.106.89.112
+    port: 2053
+    uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
+    udp: true
+    tls: true
+    servername: www.ibm.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: WckOSneVajAzpH0sZSAFAWPnmwuuEXKZrTICNj5_hHU
+      short-id: 4a5b6c7d
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0066 - Germany @CID_VPN"
+    type: vless
+    server: 94.159.100.124
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0067 - Germany @CID_VPN"
+    type: vless
+    server: 5.61.47.9
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🎖@AliXTso"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0068 - Germany @CID_VPN"
+    type: vless
+    server: 66.151.41.45
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0069 - Germany @CID_VPN"
+    type: vless
+    server: 5.39.249.146
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "0070 - Germany @CID_VPN"
+    type: vless
+    server: 217.154.213.217
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+  - name: "0071 - Germany @CID_VPN"
+    type: vless
+    server: 188.241.241.33
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0072 - Germany @CID_VPN"
+    type: vless
+    server: 84.201.14.164
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "0073 - Germany @CID_VPN"
+    type: vless
+    server: 45.144.233.205
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0074 - Germany @CID_VPN"
+    type: vless
+    server: 89.169.55.112
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "0075 - Germany @CID_VPN"
+    type: vless
+    server: 94.159.97.98
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0076 - Germany @CID_VPN"
+    type: vless
+    server: 94.159.98.113
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+  - name: "0077 - Germany @CID_VPN"
+    type: vless
+    server: best.pineappled.org
+    port: 443
+    uuid: 64b5d863-81d6-48ea-9222-82030616fa63
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0078 - Germany @CID_VPN"
+    type: vless
+    server: germany.scroogethebest.com
+    port: 443
+    uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+    udp: true
+    tls: true
+    servername: germany.scroogethebest.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+      short-id: 4fa44664f6a566d3
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0079 - Germany @CID_VPN"
+    type: vless
+    server: 45.145.42.240
+    port: 443
+    uuid: 64b5d863-81d6-48ea-9222-82030616fa63
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0080 - Germany @CID_VPN"
+    type: vless
+    server: 176.96.137.153
+    port: 443
+    uuid: 64b5d863-81d6-48ea-9222-82030616fa63
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0082 - Germany @CID_VPN"
+    type: vless
+    server: inv0ker.global.ssl.fastly.net
+    port: 443
+    uuid: 3202120c-bb57-4499-9e28-a9801429a9ca
+    udp: true
+    tls: true
+    servername: inv0ker.global.ssl.fastly.net
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/site"
+      headers:
+        Host: inv0ker.global.ssl.fastly.net
+  - name: "0083 - Germany @CID_VPN"
+    type: vless
+    server: 94.143.231.58
+    port: 443
+    uuid: 64b5d863-81d6-48ea-9222-82030616fa63
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0084 - Germany @CID_VPN"
+    type: vless
+    server: 176.96.138.241
+    port: 443
+    uuid: 64b5d863-81d6-48ea-9222-82030616fa63
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0085 - Germany @CID_VPN"
+    type: vless
+    server: 176.96.137.43
+    port: 443
+    uuid: 64b5d863-81d6-48ea-9222-82030616fa63
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0086 - Germany @CID_VPN"
+    type: vless
+    server: 45.145.42.210
+    port: 443
+    uuid: 64b5d863-81d6-48ea-9222-82030616fa63
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0087 - Germany @CID_VPN"
+    type: vless
+    server: 194.107.126.120
+    port: 443
+    uuid: 64b5d863-81d6-48ea-9222-82030616fa63
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0088 - Germany @CID_VPN"
+    type: vless
+    server: best.pineappled.org
+    port: 443
+    uuid: 18f72be7-0651-4037-928b-8a309d685796
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0089 - Germany @CID_VPN"
+    type: vless
+    server: 216.106.187.194
+    port: 443
+    uuid: 891300bc-11b2-4b24-8056-b329b098888b
+    udp: true
+    tls: true
+    servername: t.me
+    client-fingerprint: qq
+    reality-opts:
+      public-key: sg2tKPvraASV-iF2qIJ1Tk4MpIdymoMOrFO9-ANaUVA
+      short-id: 30c2592b42db6b
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0090 - Germany @CID_VPN"
+    type: vless
+    server: 10gbit.de.vles.space
+    port: 510
+    uuid: e9f9d93a-6d47-4d2e-b767-2ea9c9330dd0
+    udp: true
+    tls: true
+    servername: cdn.vkvideo.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: gTLxGPaumAT1gY3dEXIbZcr0Ocspb1hdrEG5oBkPOA8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0091 - Germany @CID_VPN"
+    type: vless
+    server: 94.156.179.87
+    port: 443
+    uuid: 6cfca141-e7cf-4331-bc13-e1d638aa0e48
+    udp: true
+    tls: true
+    servername: cdnjs.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: HzpAi7R4yRXZ5Qi3KgZaRNp8cdKy7NjWEqexo9Y6Omk
+      short-id: 1cf36512bd9ba7
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "0093 - Germany @CID_VPN"
+    type: vless
+    server: 94.143.231.57
+    port: 443
+    uuid: 6d673cd0-d996-4c57-b959-a70cc31c9560
+    udp: true
+    tls: true
+    servername: cdnjs.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw
+      short-id: c2a0b2d60a7fc300
+    network: tcp
+  - name: "0094 - Germany @CID_VPN"
+    type: vless
+    server: 103.27.158.56
+    port: 443
+    uuid: 6a175b1f-fcdf-4dd6-9303-c34875209bc6
+    udp: true
+    tls: true
+    servername: gmail.com
+    client-fingerprint: chrome
+    alpn:
+      - h2
+    reality-opts:
+      public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0095 - Germany @CID_VPN"
+    type: vless
+    server: 194.48.142.150
+    port: 443
+    uuid: 3be95058-e4e5-40e2-b51c-db1e6313cb7c
+    udp: true
+    tls: true
+    servername: s4.plan-vpn.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: p5K2ZF8AswAugTlEs2wXdmoZqjP8vAVkGAcnCkEfyUI
+      short-id: d3d62c692a64fa2d
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0096 - Germany @CID_VPN"
+    type: vless
+    server: pvscsite.global.ssl.fastly.net
+    port: 443
+    uuid: 0b7f8f7f-cbf4-42e3-af4c-9a432deb8670
+    udp: true
+    tls: true
+    servername: pvscsite.global.ssl.fastly.net
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/site"
+      headers:
+        Host: pvscsite.global.ssl.fastly.net
+  - name: "0097 - Germany @CID_VPN"
+    type: vless
+    server: 10gbit.de.vles.space
+    port: 510
+    uuid: 440b6476-4d05-4b1f-b2bc-e0b26fe3940e
+    udp: true
+    tls: true
+    servername: cdn.vkvideo.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: gTLxGPaumAT1gY3dEXIbZcr0Ocspb1hdrEG5oBkPOA8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0098 - Germany @CID_VPN"
+    type: vless
+    server: 194.99.21.132
+    port: 443
+    uuid: c73b5c37-0c2b-4d78-8a48-d32bba7432b4
+    udp: true
+    tls: true
+    servername: de.kickvpn.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: RNoJ4GaXpjzQVkzBDtTc_XEQkMfM_6aqKcJqQRxXSHM
+      short-id: 9c2378562188c3cb
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0099 - Germany @CID_VPN"
+    type: vless
+    server: de3.pineappled.org
+    port: 443
+    uuid: 18f72be7-0651-4037-928b-8a309d685796
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0100 - Germany @CID_VPN"
+    type: vless
+    server: 185.143.238.229
+    port: 443
+    uuid: ad5d8d51-18f4-451b-9c01-7baff1d9b244
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 30eHXS9LpzFg443EtLaGLuDFo2QGa4zvLM7WdT-tSiM
+      short-id: 35debf0dc757d053
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0101 - Germany @CID_VPN"
+    type: vless
+    server: inv0ker.global.ssl.fastly.net
+    port: 443
+    uuid: 0b7f8f7f-cbf4-42e3-af4c-9a432deb8670
+    udp: true
+    tls: true
+    servername: inv0ker.global.ssl.fastly.net
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/site"
+      headers:
+        Host: inv0ker.global.ssl.fastly.net
+  - name: "0102 - Germany @CID_VPN"
+    type: vless
+    server: euclients-de2.msemse.ru
+    port: 443
+    uuid: 853fb55f-e53f-460a-b562-e2683f14be4a
+    udp: true
+    tls: true
+    servername: euclients-de2.msemse.ru
+    client-fingerprint: random
+    reality-opts:
+      public-key: NWbEQ4soMDDWwpC7GSHjmPmwChGxNP8hvP8c7gzwtn4
+      short-id: 0b60164091f4a031
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0105 - Germany @CID_VPN"
+    type: vless
+    server: 152.89.246.206
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    udp: true
+    tls: true
+    servername: de.cdn.stun.su
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+      short-id: 4daa022e84f8edf2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0106 - Germany @CID_VPN"
+    type: vless
+    server: 45.11.18.3
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    udp: true
+    tls: true
+    servername: de.cdn.stun.su
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+      short-id: 4daa022e84f8edf2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0107 - Germany @CID_VPN"
+    type: vless
+    server: de.cdn.stun.su
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    udp: true
+    tls: true
+    servername: de.cdn.stun.su
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+      short-id: 4daa022e84f8edf2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0109 - Germany @CID_VPN"
+    type: vless
+    server: de.pineappled.org
+    port: 443
+    uuid: 18f72be7-0651-4037-928b-8a309d685796
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0110 - Germany @CID_VPN"
+    type: vless
+    server: de2.pineappled.org
+    port: 443
+    uuid: 18f72be7-0651-4037-928b-8a309d685796
+    udp: true
+    tls: true
+    servername: google.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+      short-id: 9eb31eb7572c0882
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0111 - Germany @CID_VPN"
+    type: vless
+    server: 45.145.40.26
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    udp: true
+    tls: true
+    servername: de.cdn.stun.su
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+      short-id: 4daa022e84f8edf2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0112 - Germany @CID_VPN"
+    type: vless
+    server: 185.254.98.164
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    udp: true
+    tls: true
+    servername: de.cdn.stun.su
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+      short-id: 4daa022e84f8edf2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0113 - Germany @CID_VPN"
+    type: vless
+    server: gertest2.nekosocks.com
+    port: 443
+    uuid: 2a57e5e1-71aa-4bc8-8d28-f5a427214d4c
+    udp: true
+    tls: true
+    servername: gertest2.nekosocks.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Dh1UomRsMtlpOKAM4lnh9FElnSFwPNZz9wOEgOs2PXU
+      short-id: fc993ee4c735f617
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0114 - Germany @CID_VPN"
+    type: vless
+    server: gertest2g.nekosocks.com
+    port: 4443
+    uuid: 2a57e5e1-71aa-4bc8-8d28-f5a427214d4c
+    udp: true
+    tls: true
+    servername: gertest2g.nekosocks.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: P0ceZnf6N49nDZL5UzEIgKv2DwTvxSYZdIujBmNw11s
+      short-id: 92739d1b2e8214c1
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc-real
+  - name: "0115 - Germany @CID_VPN"
+    type: vless
+    server: 178.162.242.98
+    port: 443
+    uuid: a91e9db3-a3f1-43a4-84b3-316ea3600fac
+    udp: true
+    tls: true
+    servername: www.samsung.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0116 - Germany @CID_VPN"
+    type: vless
+    server: 91.107.241.189
+    port: 8080
+    uuid: 5c3f5abe-0412-4f21-981d-db70147e9029
+    udp: true
+    tls: true
+    servername: www.sony.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zAgVQVvF56AHVA2vH2hVr03ra43vv_L22PU-A_QuzBM
+      short-id: "8996"
+    network: tcp
+  - name: "0117 - Germany @CID_VPN"
+    type: vless
+    server: nimbus.isgately.dev
+    port: 11004
+    uuid: bf37aea5-57da-48ec-9f46-eb40809d69e8
+    udp: true
+    tls: true
+    servername: docker.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+    network: tcp
+  - name: "0118 - Germany @CID_VPN"
+    type: vless
+    server: de.zeepo.ir
+    port: 443
+    uuid: 97cfc877-9d44-24c7-81c5-6180d4e4cecb
+    udp: true
+    tls: true
+    servername: miro.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 10afHwCh2N-Qeqsskwvp9gLC0JrOA-CSfuRbgcK7YkA
+      short-id: d9a8dad452a7644f
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0119 - Germany @CID_VPN"
+    type: vless
+    server: de.zeepo.ir
+    port: 443
+    uuid: 9450d51a-7735-5d1e-a21f-aaf583e637a3
+    udp: true
+    tls: true
+    servername: miro.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 10afHwCh2N-Qeqsskwvp9gLC0JrOA-CSfuRbgcK7YkA
+      short-id: d9a8dad452a7644f
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0120 - Germany @CID_VPN"
+    type: vless
+    server: 188.245.209.90
+    port: 443
+    uuid: 97cfc877-9d44-24c7-81c5-6180d4e4cecb
+    udp: true
+    tls: true
+    servername: miro.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 10afHwCh2N-Qeqsskwvp9gLC0JrOA-CSfuRbgcK7YkA
+      short-id: d9a8dad452a7644f
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0121 - Greece @CID_VPN"
+    type: vless
+    server: 185.234.52.39
+    port: 443
+    uuid: c73b5c37-0c2b-4d78-8a48-d32bba7432b4
+    udp: true
+    tls: true
+    servername: gr.kickvpn.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: NxVLSGf2bSeNY3pg5AT6N7dXRaRrn6NN4KdxCbz4JF0
+      short-id: 9c2378562188c3cb
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0122 - Hong Kong @CID_VPN"
+    type: vless
+    server: 36.50.90.241
+    port: 47790
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0123 - Hong Kong @CID_VPN"
+    type: vless
+    server: 151.240.13.47
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0124 - Hong Kong @CID_VPN"
+    type: vless
+    server: 156.255.90.175
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+  - name: "0125 - Hong Kong @CID_VPN"
+    type: vless
+    server: 192.142.4.33
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.jpmj.dev
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.jpmj.dev
+    client-fingerprint: chrome
+  - name: "0126 - Hong Kong @CID_VPN"
+    type: vless
+    server: 8.223.63.150
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+  - name: "0127 - Hong Kong @CID_VPN"
+    type: vless
+    server: 156.230.12.71
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+  - name: "0128 - Hong Kong @CID_VPN"
+    type: vless
+    server: 156.238.228.167
+    port: 61777
+    uuid: df176b95-8e71-4e5b-a24a-9715d284e24d
+    udp: true
+    tls: true
+    servername: www.ebay.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 89P7XLJ_E9kPUuWQjndIMz8qgq6xK03dqr0U7IS3WWg
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0130 - Hong Kong @CID_VPN"
+    type: vless
+    server: 159.138.138.87
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0131 - Hong Kong @CID_VPN"
+    type: vless
+    server: 156.248.8.34
+    port: 58472
+    uuid: cb6724d6-4900-4188-ae20-5d89b626394d
+    udp: true
+    tls: true
+    servername: www.discoverasr.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: f6jIBpzHwC1lDAwvJojvEIPlwZqyEkL0gVsJxmeRLCI
+      short-id: 44ef9a66271b4e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0132 - Hungary @CID_VPN"
+    type: vless
+    server: 141.11.202.238
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.jpmj.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.jpmj.dev
+  - name: "0133 - India @CID_VPN"
+    type: vless
+    server: 216.10.243.159
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+  - name: "0134 - India @CID_VPN"
+    type: vless
+    server: 20.235.105.146
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+  - name: "0135 - Kazakhstan @CID_VPN"
+    type: vless
+    server: 194.59.5.138
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: sni.111000.indevs.in
+  - name: "0136 - Kazakhstan @CID_VPN"
+    type: vless
+    server: 194.76.18.13
+    port: 2083
+    uuid: c805b05e-339d-40e0-8787-432d97a27345
+    udp: true
+    tls: true
+    servername: hajfron.amirconfigpaanelllll.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: hajfron.amirconfigpaanelllll.com
+  - name: "0137 - Latvia @CID_VPN"
+    type: vless
+    server: 188.253.23.21
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0138 - Latvia @CID_VPN"
+    type: vless
+    server: 195.135.253.29
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@@jdfxq"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0139 - Latvia @CID_VPN"
+    type: vless
+    server: 46.32.184.75
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "0140 - Malaysia @CID_VPN"
+    type: vless
+    server: 47.250.132.147
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+  - name: "0141 - Netherlands @CID_VPN"
+    type: vless
+    server: 188.227.86.12
+    port: 30718
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "0142 - Netherlands @CID_VPN"
+    type: vless
+    server: 195.58.50.114
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "0143 - Netherlands @CID_VPN"
+    type: vless
+    server: 103.54.17.166
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "0144 - Netherlands @CID_VPN"
+    type: vless
+    server: ip1.iranvatanam.com
+    port: 443
+    uuid: ddf459f2-a6c7-403f-bd91-f95c4c2c7874
+    udp: true
+    tls: true
+    servername: MaMe6.MOBIlEzahrA.cOm
+    client-fingerprint: chrome
+    alpn:
+      - h2
+    network: xhttp
+    xhttp-opts:
+      path: "/graphql?query=getUserData"
+      host: MaMe6.MOBIlEzahrA.cOm
+      mode: packet-up
+  - name: "0145 - Netherlands @CID_VPN"
+    type: vless
+    server: 168.100.8.162
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0146 - Portugal @CID_VPN"
+    type: vless
+    server: 156.243.83.167
+    port: 2087
+    uuid: 9f582467-6af2-4bdd-848e-93fdd84486ad
+    udp: true
+    tls: true
+    servername: ce.xo-connection.ir
+    network: ws
+    ws-opts:
+      path: "/darkstrange"
+      headers:
+        Host: ce.xo-connection.ir
+    client-fingerprint: chrome
+  - name: "0147 - Russia @CID_VPN"
+    type: vless
+    server: finland.alpacalounge.com
+    port: 2087
+    uuid: dc770925-9965-493c-83f0-2744402ca584
+    udp: true
+    tls: true
+    servername: fn.alpacalounge.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: EgkiphFj0ks7_lKTbCiKZKP168yUhAHLfXi0yB2dzis
+      short-id: e9be24
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0148 - Russia @CID_VPN"
+    type: vless
+    server: ss.sps1.sbs
+    port: 8443
+    uuid: 15fc8611-c715-4db7-8d91-3a4431b52558
+    udp: true
+    tls: true
+    servername: dropbox.com
+    client-fingerprint: safari
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0150 - Russia @CID_VPN"
+    type: vless
+    server: ss.sps1.sbs
+    port: 8443
+    uuid: eb905045-5eeb-45ac-b9de-424f18047ecc
+    udp: true
+    tls: true
+    servername: dropbox.com
+    client-fingerprint: safari
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0152 - Russia @CID_VPN"
+    type: vless
+    server: ss.sps1.sbs
+    port: 8443
+    uuid: beb0bfb2-d8f4-412e-9865-282771636c64
+    udp: true
+    tls: true
+    servername: dropbox.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0154 - Russia @CID_VPN"
+    type: vless
+    server: 213.165.60.92
+    port: 443
+    uuid: b358dfad-0403-47f4-9eb6-2a2a9768c1c9
+    udp: true
+    tls: true
+    servername: ge.alpacalounge.com
+    client-fingerprint: random
+    reality-opts:
+      public-key: TtGqqsFCFZIPPnULMW6jGNZiZvObUc4smzRJJ-dpAhg
+      short-id: e54858300ed5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0155 - Russia @CID_VPN"
+    type: vless
+    server: germany.alpacalounge.com
+    port: 443
+    uuid: b358dfad-0403-47f4-9eb6-2a2a9768c1c9
+    udp: true
+    tls: true
+    servername: ge.alpacalounge.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: TtGqqsFCFZIPPnULMW6jGNZiZvObUc4smzRJJ-dpAhg
+      short-id: e54858300ed5
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0157 - Seychelles @CID_VPN"
+    type: vless
+    server: 45.130.125.138
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0158 - Seychelles @CID_VPN"
+    type: vless
+    server: 45.130.125.160
+    port: 443
+    uuid: acd7b767-d152-4387-846f-fe42a79dedde
+    udp: true
+    tls: true
+    servername: idid.xxxxxx-god.shop
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: idid.xxxxxx-god.shop
+  - name: "0159 - Seychelles @CID_VPN"
+    type: vless
+    server: F3.HaMrAhCoNf.Ir
+    port: 8443
+    uuid: 73635d7b-3e4a-4519-8d1e-d194ec5bcb29
+    udp: true
+    tls: true
+    servername: hm333.hamrahconfig.ir
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: hm333.hamrahconfig.ir
+  - name: "0160 - Seychelles @CID_VPN"
+    type: vless
+    server: M6.FASTSPEEDS.IR
+    port: 2083
+    uuid: eafaefc3-e1b1-494d-a81b-ab909b46d3c3
+    udp: true
+    tls: true
+    servername: zyxel.frsee.ir
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: zyxel.frsee.ir
+    client-fingerprint: chrome
+  - name: "0161 - Seychelles @CID_VPN"
+    type: vless
+    server: F2.HaMrAhCoNf.Ir
+    port: 8443
+    uuid: 6f26bcd2-40ab-4176-b2e7-4343ec2f3031
+    udp: true
+    tls: true
+    servername: hm33.hamrahconfig.ir
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: hm33.hamrahconfig.ir
+  - name: "0162 - Seychelles @CID_VPN"
+    type: vless
+    server: F2.HaMrAhCoNf.Ir
+    port: 8443
+    uuid: 762e127e-f223-4a9a-9399-99cd8139bde0
+    udp: true
+    tls: true
+    servername: hm33.hamrahconfig.ir
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: hm33.hamrahconfig.ir
+  - name: "0163 - Seychelles @CID_VPN"
+    type: vless
+    server: F1.HaMrAhCoNf.Ir
+    port: 8443
+    uuid: 6f26bcd2-40ab-4176-b2e7-4343ec2f3031
+    udp: true
+    tls: true
+    servername: hm3.hamrahconfig.ir
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: hm3.hamrahconfig.ir
+  - name: "0164 - Seychelles @CID_VPN"
+    type: vless
+    server: F1.HaMrAhCoNf.Ir
+    port: 8443
+    uuid: 73635d7b-3e4a-4519-8d1e-d194ec5bcb29
+    udp: true
+    tls: true
+    servername: hm3.hamrahconfig.ir
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: hm3.hamrahconfig.ir
+  - name: "0165 - Seychelles @CID_VPN"
+    type: vless
+    server: F3.HaMrAhCoNf.Ir
+    port: 8443
+    uuid: 6f26bcd2-40ab-4176-b2e7-4343ec2f3031
+    udp: true
+    tls: true
+    servername: hm333.hamrahconfig.ir
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: hm333.hamrahconfig.ir
+  - name: "0166 - Seychelles @CID_VPN"
+    type: vless
+    server: F1.HaMrAhCoNf.Ir
+    port: 8443
+    uuid: 762e127e-f223-4a9a-9399-99cd8139bde0
+    udp: true
+    tls: true
+    servername: hm3.hamrahconfig.ir
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: hm3.hamrahconfig.ir
+  - name: "0167 - Singapore @CID_VPN"
+    type: vless
+    server: 104.43.91.69
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+  - name: "0168 - Singapore @CID_VPN"
+    type: vless
+    server: 34.143.159.175
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+  - name: "0169 - Spain @CID_VPN"
+    type: vless
+    server: 185.251.81.138
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0170 - Sweden @CID_VPN"
+    type: vless
+    server: 109.120.132.213
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "0171 - Sweden @CID_VPN"
+    type: vless
+    server: 77.221.138.138
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "0172 - UAE @CID_VPN"
+    type: vless
+    server: 94.140.0.0
+    port: 8443
+    uuid: 37aa544d-c729-4dd8-bebf-376311d3c2cf
+    udp: true
+    tls: true
+    servername: fr1.mamady.ir
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: fr1.mamady.ir
+  - name: "0173 - UAE @CID_VPN"
+    type: vless
+    server: cfip2.mamady.ir
+    port: 8443
+    uuid: 37aa544d-c729-4dd8-bebf-376311d3c2cf
+    udp: true
+    tls: true
+    servername: fr1.mamady.ir
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: fr1.mamady.ir
+  - name: "0174 - UK @CID_VPN"
+    type: vless
+    server: 45.12.30.138
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?Telegram🇨🇳@WangCai2="
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0175 - UK @CID_VPN"
+    type: vless
+    server: jadf1.sfew1.sfh5.carvan2.mimkiscx.ir
+    port: 2095
+    uuid: f84ab055-3ffe-4a90-aad3-30596550b03c
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2087"
+      v2ray-http-upgrade: true
+      headers:
+        Host: beh2.salonemojallal.ir.
+  - name: "0176 - UK @CID_VPN"
+    type: vless
+    server: jdq2.rfg4s.sad21.ssa5h.carvan4.mimkiscx.ir
+    port: 2095
+    uuid: f84ab055-3ffe-4a90-aad3-30596550b03c
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "?ed=2087"
+      v2ray-http-upgrade: true
+      headers:
+        Host: beh2.salonemojallal.ir.
+  - name: "0178 - UK @CID_VPN"
+    type: vless
+    server: 143.20.213.118
+    port: 8443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    udp: true
+    tls: true
+    servername: WangCai.443888.xyz
+    network: ws
+    ws-opts:
+      path: "/danfeng?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: WangCai.443888.xyz
+    client-fingerprint: chrome
+  - name: "0179 - UK @CID_VPN"
+    type: vless
+    server: 143.20.213.206
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0180 - UK @CID_VPN"
+    type: vless
+    server: 45.12.30.95
+    port: 443
+    uuid: f84ab055-3ffe-4a90-aad3-30596550b03c
+    udp: true
+    tls: true
+    servername: beh1.salonemojallal.ir.
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: beh1.salonemojallal.ir.
+  - name: "0181 - UK @CID_VPN"
+    type: vless
+    server: dqf21.sdssd1.sadqwdw1.carvan1.mimkiscx.ir
+    port: 443
+    uuid: f84ab055-3ffe-4a90-aad3-30596550b03c
+    udp: true
+    tls: true
+    servername: beh1.salonemojallal.ir.
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: beh1.salonemojallal.ir.
+  - name: "0182 - UK @CID_VPN"
+    type: vless
+    server: 193.46.81.207
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    udp: true
+    tls: true
+    servername: de.cdn.stun.su
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+      short-id: 4daa022e84f8edf2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "0183 - UK @CID_VPN"
+    type: vless
+    server: 185.238.228.46
+    port: 443
+    uuid: a992c7a6-832b-4243-a294-d34783d0294c
+    udp: true
+    tls: true
+    servername: hotchoclate.graphapp.ir
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/v2rayroad"
+      headers:
+        Host: hotchoclate.graphapp.ir
+  - name: "0184 - USA @CID_VPN"
+    type: vless
+    server: 162.251.82.238
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.jpmj.dev
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: sni.jpmj.dev
+    client-fingerprint: chrome
+  - name: "0185 - USA @CID_VPN"
+    type: vless
+    server: 209.102.207.162
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0186 - USA @CID_VPN"
+    type: vless
+    server: 160.153.1.51
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "0187 - USA @CID_VPN"
+    type: vless
+    server: 135.84.73.132
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.indevs.in
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: sni.111000.indevs.in
+    client-fingerprint: chrome
+  - name: "0188 - USA @CID_VPN"
+    type: vless
+    server: 135.84.74.47
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "0189 - USA @CID_VPN"
+    type: vless
+    server: 50.62.195.238
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.jpmj.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.jpmj.dev
+  - name: "0190 - USA @CID_VPN"
+    type: vless
+    server: 45.40.148.238
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.jpmj.dev
+    network: ws
+    ws-opts:
+      path: "/?ed=2560fp=chrome"
+      headers:
+        Host: sni.jpmj.dev
+    client-fingerprint: chrome
+  - name: "0191 - USA @CID_VPN"
+    type: vless
+    server: 8.6.112.0
+    port: 443
+    uuid: 8d5ebe3f-d0c5-45f2-9dde-21ee29fc0ee6
+    udp: true
+    tls: true
+    servername: fin.moell13.org
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: fin.moell13.org
+      mode: auto
+    client-fingerprint: chrome
+  - name: "0193 - USA @CID_VPN"
+    type: vless
+    server: 104.167.197.86
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    tls: true
+    servername: sni.111000.v6.navy
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: sni.111000.v6.navy
+    client-fingerprint: chrome
+  - name: "0194 - USA @CID_VPN"
+    type: vless
+    server: ir2.productionmusic.ir
+    port: 443
+    uuid: 39ed90d9-1f08-4102-929a-6efcc9579b0e
+    udp: true
+    tls: true
+    servername: mail.productionmusic.ir
+    client-fingerprint: chrome
+    alpn:
+      - h3
+      - h2
+      - http/1.1
+    network: xhttp
+    xhttp-opts:
+      path: "/inboundsCWNeRzWFjgWHWZFw?ed=2560"
+      host: mail.productionmusic.ir
+      mode: auto
+  - name: "0195 - USA @CID_VPN"
+    type: vless
+    server: grs.zdshop.ir
+    port: 80
+    uuid: 9c3c5a92-1018-49a4-a84d-af2dde3e618d
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/ed=2560"
+      headers:
+        Host: smk23ws74gr.global.ssl.fastly.net
+  - name: "0196 - USA @CID_VPN"
+    type: vless
+    server: 140.248.128.0
+    port: 80
+    uuid: 5d06f973-f9c2-4d1a-8914-38e4971ddc4b
+    udp: true
+    tls: false
+    network: xhttp
+    xhttp-opts:
+      path: "/Telegram--configMs--Telegram--configMs--Telegram--configMs--Telegram--configMs--Telegram--configMs--Telegram--configMs--Telegram--configMs"
+      host: hazarabrowse.bh
+      mode: auto
+  - name: "0197 - USA @CID_VPN"
+    type: vless
+    server: daltoon.best-cloud.ir
+    port: 8443
+    uuid: 442ed0ac-c945-41ee-8bb5-8ee69ef50456
+    udp: true
+    tls: true
+    servername: speed.daltoon-server.ir
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: xhttp
+    xhttp-opts:
+      path: "/?ed=2056"
+      host: speed.daltoon-server.ir
+      mode: auto
+  - name: "0198 - USA @CID_VPN"
+    type: vless
+    server: hi5.afraseda.ir
+    port: 2053
+    uuid: 799e8287-0e67-41b1-889b-3277264d302c
+    udp: true
+    tls: true
+    servername: myopen.tencan.ir
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: xhttp
+    xhttp-opts:
+      path: "/?ed=2048"
+      host: myopen.tencan.ir
+      mode: auto
+  - name: "0199 - USA @CID_VPN"
+    type: vless
+    server: carlos1.benjem.ir
+    port: 443
+    uuid: 799e8287-0e67-41b1-889b-3277264d302c
+    udp: true
+    tls: true
+    servername: myopen.tencan.ir
+    client-fingerprint: chrome
+    alpn:
+      - h2
+      - http/1.1
+    network: xhttp
+    xhttp-opts:
+      path: "/?ed=2048"
+      host: myopen.tencan.ir
+      mode: auto
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "♻️ 自动选择"
+      - DIRECT
+      - "CID VPN (Спасибо донатерам)"
+      - "0001 - Australia @CID_VPN"
+      - "0002 - Belarus @CID_VPN"
+      - "0004 - Belgium @CID_VPN"
+      - "0005 - Belize @CID_VPN"
+      - "0006 - Bulgaria @CID_VPN"
+      - "0007 - Canada @CID_VPN"
+      - "0008 - Canada @CID_VPN"
+      - "0009 - Canada @CID_VPN"
+      - "0010 - Canada @CID_VPN"
+      - "0012 - Canada @CID_VPN"
+      - "0014 - Canada @CID_VPN"
+      - "0015 - Denmark @CID_VPN"
+      - "0018 - Estonia @CID_VPN"
+      - "0019 - Estonia @CID_VPN"
+      - "0020 - Estonia @CID_VPN"
+      - "0021 - Estonia @CID_VPN"
+      - "0022 - Estonia @CID_VPN"
+      - "0023 - Estonia @CID_VPN"
+      - "0027 - Estonia @CID_VPN"
+      - "0029 - Finland @CID_VPN"
+      - "0030 - Finland @CID_VPN"
+      - "0031 - Finland @CID_VPN"
+      - "0032 - Finland @CID_VPN"
+      - "0033 - Finland @CID_VPN"
+      - "0034 - Finland @CID_VPN"
+      - "0035 - Finland @CID_VPN"
+      - "0036 - Finland @CID_VPN"
+      - "0037 - Finland @CID_VPN"
+      - "0038 - Finland @CID_VPN"
+      - "0039 - Finland @CID_VPN"
+      - "0040 - Finland @CID_VPN"
+      - "0041 - Finland @CID_VPN"
+      - "0042 - Finland @CID_VPN"
+      - "0043 - Finland @CID_VPN"
+      - "0044 - France @CID_VPN"
+      - "0045 - France @CID_VPN"
+      - "0047 - France @CID_VPN"
+      - "0048 - France @CID_VPN"
+      - "0049 - France @CID_VPN"
+      - "0050 - France @CID_VPN"
+      - "0052 - France @CID_VPN"
+      - "0053 - France @CID_VPN"
+      - "0056 - France @CID_VPN"
+      - "0057 - France @CID_VPN"
+      - "0059 - France @CID_VPN"
+      - "0060 - France @CID_VPN"
+      - "0062 - Germany @CID_VPN"
+      - "0063 - Germany @CID_VPN"
+      - "0064 - Germany @CID_VPN"
+      - "0065 - Germany @CID_VPN"
+      - "0066 - Germany @CID_VPN"
+      - "0067 - Germany @CID_VPN"
+      - "0068 - Germany @CID_VPN"
+      - "0069 - Germany @CID_VPN"
+      - "0070 - Germany @CID_VPN"
+      - "0071 - Germany @CID_VPN"
+      - "0072 - Germany @CID_VPN"
+      - "0073 - Germany @CID_VPN"
+      - "0074 - Germany @CID_VPN"
+      - "0075 - Germany @CID_VPN"
+      - "0076 - Germany @CID_VPN"
+      - "0077 - Germany @CID_VPN"
+      - "0078 - Germany @CID_VPN"
+      - "0079 - Germany @CID_VPN"
+      - "0080 - Germany @CID_VPN"
+      - "0082 - Germany @CID_VPN"
+      - "0083 - Germany @CID_VPN"
+      - "0084 - Germany @CID_VPN"
+      - "0085 - Germany @CID_VPN"
+      - "0086 - Germany @CID_VPN"
+      - "0087 - Germany @CID_VPN"
+      - "0088 - Germany @CID_VPN"
+      - "0089 - Germany @CID_VPN"
+      - "0090 - Germany @CID_VPN"
+      - "0091 - Germany @CID_VPN"
+      - "0093 - Germany @CID_VPN"
+      - "0094 - Germany @CID_VPN"
+      - "0095 - Germany @CID_VPN"
+      - "0096 - Germany @CID_VPN"
+      - "0097 - Germany @CID_VPN"
+      - "0098 - Germany @CID_VPN"
+      - "0099 - Germany @CID_VPN"
+      - "0100 - Germany @CID_VPN"
+      - "0101 - Germany @CID_VPN"
+      - "0102 - Germany @CID_VPN"
+      - "0105 - Germany @CID_VPN"
+      - "0106 - Germany @CID_VPN"
+      - "0107 - Germany @CID_VPN"
+      - "0109 - Germany @CID_VPN"
+      - "0110 - Germany @CID_VPN"
+      - "0111 - Germany @CID_VPN"
+      - "0112 - Germany @CID_VPN"
+      - "0113 - Germany @CID_VPN"
+      - "0114 - Germany @CID_VPN"
+      - "0115 - Germany @CID_VPN"
+      - "0116 - Germany @CID_VPN"
+      - "0117 - Germany @CID_VPN"
+      - "0118 - Germany @CID_VPN"
+      - "0119 - Germany @CID_VPN"
+      - "0120 - Germany @CID_VPN"
+      - "0121 - Greece @CID_VPN"
+      - "0122 - Hong Kong @CID_VPN"
+      - "0123 - Hong Kong @CID_VPN"
+      - "0124 - Hong Kong @CID_VPN"
+      - "0125 - Hong Kong @CID_VPN"
+      - "0126 - Hong Kong @CID_VPN"
+      - "0127 - Hong Kong @CID_VPN"
+      - "0128 - Hong Kong @CID_VPN"
+      - "0130 - Hong Kong @CID_VPN"
+      - "0131 - Hong Kong @CID_VPN"
+      - "0132 - Hungary @CID_VPN"
+      - "0133 - India @CID_VPN"
+      - "0134 - India @CID_VPN"
+      - "0135 - Kazakhstan @CID_VPN"
+      - "0136 - Kazakhstan @CID_VPN"
+      - "0137 - Latvia @CID_VPN"
+      - "0138 - Latvia @CID_VPN"
+      - "0139 - Latvia @CID_VPN"
+      - "0140 - Malaysia @CID_VPN"
+      - "0141 - Netherlands @CID_VPN"
+      - "0142 - Netherlands @CID_VPN"
+      - "0143 - Netherlands @CID_VPN"
+      - "0144 - Netherlands @CID_VPN"
+      - "0145 - Netherlands @CID_VPN"
+      - "0146 - Portugal @CID_VPN"
+      - "0147 - Russia @CID_VPN"
+      - "0148 - Russia @CID_VPN"
+      - "0150 - Russia @CID_VPN"
+      - "0152 - Russia @CID_VPN"
+      - "0154 - Russia @CID_VPN"
+      - "0155 - Russia @CID_VPN"
+      - "0157 - Seychelles @CID_VPN"
+      - "0158 - Seychelles @CID_VPN"
+      - "0159 - Seychelles @CID_VPN"
+      - "0160 - Seychelles @CID_VPN"
+      - "0161 - Seychelles @CID_VPN"
+      - "0162 - Seychelles @CID_VPN"
+      - "0163 - Seychelles @CID_VPN"
+      - "0164 - Seychelles @CID_VPN"
+      - "0165 - Seychelles @CID_VPN"
+      - "0166 - Seychelles @CID_VPN"
+      - "0167 - Singapore @CID_VPN"
+      - "0168 - Singapore @CID_VPN"
+      - "0169 - Spain @CID_VPN"
+      - "0170 - Sweden @CID_VPN"
+      - "0171 - Sweden @CID_VPN"
+      - "0172 - UAE @CID_VPN"
+      - "0173 - UAE @CID_VPN"
+      - "0174 - UK @CID_VPN"
+      - "0175 - UK @CID_VPN"
+      - "0176 - UK @CID_VPN"
+      - "0178 - UK @CID_VPN"
+      - "0179 - UK @CID_VPN"
+      - "0180 - UK @CID_VPN"
+      - "0181 - UK @CID_VPN"
+      - "0182 - UK @CID_VPN"
+      - "0183 - UK @CID_VPN"
+      - "0184 - USA @CID_VPN"
+      - "0185 - USA @CID_VPN"
+      - "0186 - USA @CID_VPN"
+      - "0187 - USA @CID_VPN"
+      - "0188 - USA @CID_VPN"
+      - "0189 - USA @CID_VPN"
+      - "0190 - USA @CID_VPN"
+      - "0191 - USA @CID_VPN"
+      - "0193 - USA @CID_VPN"
+      - "0194 - USA @CID_VPN"
+      - "0195 - USA @CID_VPN"
+      - "0196 - USA @CID_VPN"
+      - "0197 - USA @CID_VPN"
+      - "0198 - USA @CID_VPN"
+      - "0199 - USA @CID_VPN"
+  - name: "♻️ 自动选择"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "CID VPN (Спасибо донатерам)"
+      - "0001 - Australia @CID_VPN"
+      - "0002 - Belarus @CID_VPN"
+      - "0004 - Belgium @CID_VPN"
+      - "0005 - Belize @CID_VPN"
+      - "0006 - Bulgaria @CID_VPN"
+      - "0007 - Canada @CID_VPN"
+      - "0008 - Canada @CID_VPN"
+      - "0009 - Canada @CID_VPN"
+      - "0010 - Canada @CID_VPN"
+      - "0012 - Canada @CID_VPN"
+      - "0014 - Canada @CID_VPN"
+      - "0015 - Denmark @CID_VPN"
+      - "0018 - Estonia @CID_VPN"
+      - "0019 - Estonia @CID_VPN"
+      - "0020 - Estonia @CID_VPN"
+      - "0021 - Estonia @CID_VPN"
+      - "0022 - Estonia @CID_VPN"
+      - "0023 - Estonia @CID_VPN"
+      - "0027 - Estonia @CID_VPN"
+      - "0029 - Finland @CID_VPN"
+      - "0030 - Finland @CID_VPN"
+      - "0031 - Finland @CID_VPN"
+      - "0032 - Finland @CID_VPN"
+      - "0033 - Finland @CID_VPN"
+      - "0034 - Finland @CID_VPN"
+      - "0035 - Finland @CID_VPN"
+      - "0036 - Finland @CID_VPN"
+      - "0037 - Finland @CID_VPN"
+      - "0038 - Finland @CID_VPN"
+      - "0039 - Finland @CID_VPN"
+      - "0040 - Finland @CID_VPN"
+      - "0041 - Finland @CID_VPN"
+      - "0042 - Finland @CID_VPN"
+      - "0043 - Finland @CID_VPN"
+      - "0044 - France @CID_VPN"
+      - "0045 - France @CID_VPN"
+      - "0047 - France @CID_VPN"
+      - "0048 - France @CID_VPN"
+      - "0049 - France @CID_VPN"
+      - "0050 - France @CID_VPN"
+      - "0052 - France @CID_VPN"
+      - "0053 - France @CID_VPN"
+      - "0056 - France @CID_VPN"
+      - "0057 - France @CID_VPN"
+      - "0059 - France @CID_VPN"
+      - "0060 - France @CID_VPN"
+      - "0062 - Germany @CID_VPN"
+      - "0063 - Germany @CID_VPN"
+      - "0064 - Germany @CID_VPN"
+      - "0065 - Germany @CID_VPN"
+      - "0066 - Germany @CID_VPN"
+      - "0067 - Germany @CID_VPN"
+      - "0068 - Germany @CID_VPN"
+      - "0069 - Germany @CID_VPN"
+      - "0070 - Germany @CID_VPN"
+      - "0071 - Germany @CID_VPN"
+      - "0072 - Germany @CID_VPN"
+      - "0073 - Germany @CID_VPN"
+      - "0074 - Germany @CID_VPN"
+      - "0075 - Germany @CID_VPN"
+      - "0076 - Germany @CID_VPN"
+      - "0077 - Germany @CID_VPN"
+      - "0078 - Germany @CID_VPN"
+      - "0079 - Germany @CID_VPN"
+      - "0080 - Germany @CID_VPN"
+      - "0082 - Germany @CID_VPN"
+      - "0083 - Germany @CID_VPN"
+      - "0084 - Germany @CID_VPN"
+      - "0085 - Germany @CID_VPN"
+      - "0086 - Germany @CID_VPN"
+      - "0087 - Germany @CID_VPN"
+      - "0088 - Germany @CID_VPN"
+      - "0089 - Germany @CID_VPN"
+      - "0090 - Germany @CID_VPN"
+      - "0091 - Germany @CID_VPN"
+      - "0093 - Germany @CID_VPN"
+      - "0094 - Germany @CID_VPN"
+      - "0095 - Germany @CID_VPN"
+      - "0096 - Germany @CID_VPN"
+      - "0097 - Germany @CID_VPN"
+      - "0098 - Germany @CID_VPN"
+      - "0099 - Germany @CID_VPN"
+      - "0100 - Germany @CID_VPN"
+      - "0101 - Germany @CID_VPN"
+      - "0102 - Germany @CID_VPN"
+      - "0105 - Germany @CID_VPN"
+      - "0106 - Germany @CID_VPN"
+      - "0107 - Germany @CID_VPN"
+      - "0109 - Germany @CID_VPN"
+      - "0110 - Germany @CID_VPN"
+      - "0111 - Germany @CID_VPN"
+      - "0112 - Germany @CID_VPN"
+      - "0113 - Germany @CID_VPN"
+      - "0114 - Germany @CID_VPN"
+      - "0115 - Germany @CID_VPN"
+      - "0116 - Germany @CID_VPN"
+      - "0117 - Germany @CID_VPN"
+      - "0118 - Germany @CID_VPN"
+      - "0119 - Germany @CID_VPN"
+      - "0120 - Germany @CID_VPN"
+      - "0121 - Greece @CID_VPN"
+      - "0122 - Hong Kong @CID_VPN"
+      - "0123 - Hong Kong @CID_VPN"
+      - "0124 - Hong Kong @CID_VPN"
+      - "0125 - Hong Kong @CID_VPN"
+      - "0126 - Hong Kong @CID_VPN"
+      - "0127 - Hong Kong @CID_VPN"
+      - "0128 - Hong Kong @CID_VPN"
+      - "0130 - Hong Kong @CID_VPN"
+      - "0131 - Hong Kong @CID_VPN"
+      - "0132 - Hungary @CID_VPN"
+      - "0133 - India @CID_VPN"
+      - "0134 - India @CID_VPN"
+      - "0135 - Kazakhstan @CID_VPN"
+      - "0136 - Kazakhstan @CID_VPN"
+      - "0137 - Latvia @CID_VPN"
+      - "0138 - Latvia @CID_VPN"
+      - "0139 - Latvia @CID_VPN"
+      - "0140 - Malaysia @CID_VPN"
+      - "0141 - Netherlands @CID_VPN"
+      - "0142 - Netherlands @CID_VPN"
+      - "0143 - Netherlands @CID_VPN"
+      - "0144 - Netherlands @CID_VPN"
+      - "0145 - Netherlands @CID_VPN"
+      - "0146 - Portugal @CID_VPN"
+      - "0147 - Russia @CID_VPN"
+      - "0148 - Russia @CID_VPN"
+      - "0150 - Russia @CID_VPN"
+      - "0152 - Russia @CID_VPN"
+      - "0154 - Russia @CID_VPN"
+      - "0155 - Russia @CID_VPN"
+      - "0157 - Seychelles @CID_VPN"
+      - "0158 - Seychelles @CID_VPN"
+      - "0159 - Seychelles @CID_VPN"
+      - "0160 - Seychelles @CID_VPN"
+      - "0161 - Seychelles @CID_VPN"
+      - "0162 - Seychelles @CID_VPN"
+      - "0163 - Seychelles @CID_VPN"
+      - "0164 - Seychelles @CID_VPN"
+      - "0165 - Seychelles @CID_VPN"
+      - "0166 - Seychelles @CID_VPN"
+      - "0167 - Singapore @CID_VPN"
+      - "0168 - Singapore @CID_VPN"
+      - "0169 - Spain @CID_VPN"
+      - "0170 - Sweden @CID_VPN"
+      - "0171 - Sweden @CID_VPN"
+      - "0172 - UAE @CID_VPN"
+      - "0173 - UAE @CID_VPN"
+      - "0174 - UK @CID_VPN"
+      - "0175 - UK @CID_VPN"
+      - "0176 - UK @CID_VPN"
+      - "0178 - UK @CID_VPN"
+      - "0179 - UK @CID_VPN"
+      - "0180 - UK @CID_VPN"
+      - "0181 - UK @CID_VPN"
+      - "0182 - UK @CID_VPN"
+      - "0183 - UK @CID_VPN"
+      - "0184 - USA @CID_VPN"
+      - "0185 - USA @CID_VPN"
+      - "0186 - USA @CID_VPN"
+      - "0187 - USA @CID_VPN"
+      - "0188 - USA @CID_VPN"
+      - "0189 - USA @CID_VPN"
+      - "0190 - USA @CID_VPN"
+      - "0191 - USA @CID_VPN"
+      - "0193 - USA @CID_VPN"
+      - "0194 - USA @CID_VPN"
+      - "0195 - USA @CID_VPN"
+      - "0196 - USA @CID_VPN"
+      - "0197 - USA @CID_VPN"
+      - "0198 - USA @CID_VPN"
+      - "0199 - USA @CID_VPN"
+rules:
+  - "GEOIP,LAN,DIRECT,no-resolve"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,🚀 节点选择"
