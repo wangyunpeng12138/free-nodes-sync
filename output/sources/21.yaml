@@ -1,7 +1,7 @@
 # 订阅 21.txt -> Clash
-# 由 txt2clash.py 自动生成于 2026-11-01 08:59:55 +0000
-# 节点数量: 262
+# 节点数量: 258
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
 mixed-port: 7890
 allow-lan: false
@@ -226,21 +226,6 @@ proxies:
       path: "/sc"
       host: server18477021984150715.tas-bazi.com
       mode: stream-one
-  - name: "node 7"
-    type: vmess
-    server: Cpannel.iranucshop.ir
-    port: 2085
-    uuid: 2c72c667-093c-47a5-a108-493c93282b57
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: http
-    http-opts:
-      path:
-        - "/"
-      headers:
-        Host:
-          - fast.com
   - name: "🇬🇧@FreakConfig"
     type: vless
     server: va16.serverh1ub.ir
@@ -269,7 +254,7 @@ proxies:
       headers:
         Host: trojan.burgerip.co.uk
     client-fingerprint: chrome
-  - name: "node 8"
+  - name: "node 7"
     type: vmess
     server: 183.236.48.158
     port: 50052
@@ -438,15 +423,6 @@ proxies:
       public-key: cFora2YYa3aZdpWW8vMD9iX97qRKtyLzXv4pWgXoh20
       short-id: ead461
     flow: xtls-rprx-vision
-    network: tcp
-  - name: "node 9"
-    type: vmess
-    server: 88.218.16.102
-    port: 10443
-    uuid: 2500ea98-1ef1-45d6-acd9-d3abc9cea2f8
-    alterId: 0
-    cipher: auto
-    udp: true
     network: tcp
   - name: "telegram 🍀 dailyv2ry"
     type: vless
@@ -624,21 +600,6 @@ proxies:
     cipher: chacha20-ietf-poly1305
     password: 0eC4ZBvStOgQEzTpCYjWN5
     udp: true
-  - name: "node 10"
-    type: vmess
-    server: 103.30.76.250
-    port: 16785
-    uuid: 086ce045-924d-4538-82ef-debb4ae9ccb5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: http
-    http-opts:
-      path:
-        - "/"
-      headers:
-        Host:
-          - 103.30.76.250
   - name: "长期更新节点@mftizi 2"
     type: ss
     server: qh62onjn.slashdevslashnetslashtun.net
@@ -1095,7 +1056,7 @@ proxies:
       short-id: 9eb31eb7572c0882
     flow: xtls-rprx-vision
     network: tcp
-  - name: "node 11"
+  - name: "node 8"
     type: vmess
     server: servers.xvon.in
     port: 2087
@@ -1969,7 +1930,7 @@ proxies:
       headers:
         Host: sni.111000.indevs.in
     client-fingerprint: chrome
-  - name: "node 12"
+  - name: "node 9"
     type: vmess
     server: 183.236.51.23
     port: 46602
@@ -1985,20 +1946,7 @@ proxies:
     cipher: chacha20-ietf-poly1305
     password: 09833a6f-4d46-426e-87fe-7793a5489f84
     udp: true
-  - name: "node 13"
-    type: vmess
-    server: tgju.org
-    port: 8080
-    uuid: nasnet
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/nasnet/cdn?ed=2560"
-      headers:
-        Host: nasnet-162191099.sharghdaily.co
-  - name: "node 14"
+  - name: "node 10"
     type: vmess
     server: 141.95.126.134
     port: 443
@@ -2014,7 +1962,7 @@ proxies:
       headers:
         Host: jamekk.org
     client-fingerprint: chrome
-  - name: "node 15"
+  - name: "node 11"
     type: vmess
     server: 146.59.55.50
     port: 443
@@ -2047,7 +1995,7 @@ proxies:
       path: "/"
       headers:
         Host: backup.f-sub.cfd
-  - name: "node 16"
+  - name: "node 12"
     type: vmess
     server: tr1-smart.adelping.com
     port: 80
@@ -3441,10 +3389,9 @@ proxy-groups:
       - "✅🍷@vless_vmess x | همه اپراتورها"
       - "2fc2-@Fr33C0nfig / کانفیگ رایگان"
       - "@configfree20255🐝 سرور های پرسرعت در"
-      - "node 7"
       - "🇬🇧@FreakConfig"
       - "@VlessConfig"
-      - "node 8"
+      - "node 7"
       - "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān🅿️ping:307.24ms 71 dai"
       - "@Hope_Net-join-us-on-Telegram 2"
       - "عضویت در کانال @configfree20255"
@@ -3457,7 +3404,6 @@ proxy-groups:
       - "@flyv2ray 2"
       - "🇺🇿telegram ➠ @v2rayNG_Matsuri"
       - "@flyv2ray 3"
-      - "node 9"
       - "telegram 🍀 dailyv2ry"
       - "🇺🇸@FreakConfig"
       - "🇩🇪@FreakConfig"
@@ -3472,7 +3418,6 @@ proxy-groups:
       - "@@V2rayng_Fast جوین نزنی آف میشه"
       - "💞4@oneclickvpnkeys"
       - "United State CGI"
-      - "node 10"
       - "长期更新节点@mftizi 2"
       - "🇹🇷@FreakConfig"
       - "@MARAMBASHI 🐳"
@@ -3508,7 +3453,7 @@ proxy-groups:
       - "🅿️57@oneclickvpnkeys"
       - "@WebShecan-27Mordad-Night"
       - "🅿️69@oneclickvpnkeys"
-      - "node 11"
+      - "node 8"
       - "lfns-@Fr33C0nfig / کانفیگ رایگان"
       - "@flyv2ray 4"
       - "lrnbymaa 3"
@@ -3577,13 +3522,12 @@ proxy-groups:
       - "free iran-vbyu0zam"
       - "🇯🇵@vpn_ioss ♻️ سرورهای بیشتر عضو شو"
       - "🇮🇳@FreakConfig"
-      - "node 12"
+      - "node 9"
       - "关注电报https://t.me/mftizi 2"
-      - "node 13"
-      - "node 14"
-      - "node 15"
+      - "node 10"
+      - "node 11"
       - "@FarazV2ray"
-      - "node 16"
+      - "node 12"
       - "عضو شو : @zibanabz"
       - "lrnbymaa 5"
       - "@WomanLifeFreedomVPN 2"
@@ -3709,10 +3653,9 @@ proxy-groups:
       - "✅🍷@vless_vmess x | همه اپراتورها"
       - "2fc2-@Fr33C0nfig / کانفیگ رایگان"
       - "@configfree20255🐝 سرور های پرسرعت در"
-      - "node 7"
       - "🇬🇧@FreakConfig"
       - "@VlessConfig"
-      - "node 8"
+      - "node 7"
       - "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān🅿️ping:307.24ms 71 dai"
       - "@Hope_Net-join-us-on-Telegram 2"
       - "عضویت در کانال @configfree20255"
@@ -3725,7 +3668,6 @@ proxy-groups:
       - "@flyv2ray 2"
       - "🇺🇿telegram ➠ @v2rayNG_Matsuri"
       - "@flyv2ray 3"
-      - "node 9"
       - "telegram 🍀 dailyv2ry"
       - "🇺🇸@FreakConfig"
       - "🇩🇪@FreakConfig"
@@ -3740,7 +3682,6 @@ proxy-groups:
       - "@@V2rayng_Fast جوین نزنی آف میشه"
       - "💞4@oneclickvpnkeys"
       - "United State CGI"
-      - "node 10"
       - "长期更新节点@mftizi 2"
       - "🇹🇷@FreakConfig"
       - "@MARAMBASHI 🐳"
@@ -3776,7 +3717,7 @@ proxy-groups:
       - "🅿️57@oneclickvpnkeys"
       - "@WebShecan-27Mordad-Night"
       - "🅿️69@oneclickvpnkeys"
-      - "node 11"
+      - "node 8"
       - "lfns-@Fr33C0nfig / کانفیگ رایگان"
       - "@flyv2ray 4"
       - "lrnbymaa 3"
@@ -3845,13 +3786,12 @@ proxy-groups:
       - "free iran-vbyu0zam"
       - "🇯🇵@vpn_ioss ♻️ سرورهای بیشتر عضو شو"
       - "🇮🇳@FreakConfig"
-      - "node 12"
+      - "node 9"
       - "关注电报https://t.me/mftizi 2"
-      - "node 13"
-      - "node 14"
-      - "node 15"
+      - "node 10"
+      - "node 11"
       - "@FarazV2ray"
-      - "node 16"
+      - "node 12"
       - "عضو شو : @zibanabz"
       - "lrnbymaa 5"
       - "@WomanLifeFreedomVPN 2"

@@ -31,7 +31,6 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG_PATH = os.path.join(ROOT, "config", "sources.json")
@@ -814,11 +813,12 @@ def build_config(proxies: list, clash_cfg: dict, title: str, groups_by_tag: dict
 
 
 def render(config: dict, title: str, count: int) -> str:
+    # 注意：这里不能写生成时间戳，否则每次运行都会产生 diff，定时任务会刷出无意义的提交
     header = [
         f"# {title}",
-        f"# 由 txt2clash.py 自动生成于 {datetime.now(timezone.utc).astimezone().strftime('%Y-%m-%d %H:%M:%S %z')}",
         f"# 节点数量: {count}",
         "# 源: https://github.com/Hidashimora/free-vpn-anti-rkn",
+        "# 由 src/txt2clash.py 自动生成，请勿手动编辑",
         "# 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）",
         "",
     ]
@@ -1118,9 +1118,8 @@ def main() -> int:
     if removed:
         log(f"  清理 {len(removed)} 个过期文件")
 
-    # 6) 统计文件
+    # 6) 统计文件（同样不写时间戳，保证 CI 里内容稳定、不会空提交）
     stat = {
-        "generated_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
         "sources": len(counts),
         "total_nodes": sum(counts.values()),
         "counts": dict(sorted(counts.items(), key=lambda kv: sort_key(kv[0]))),

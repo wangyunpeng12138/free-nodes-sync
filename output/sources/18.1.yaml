@@ -1,7 +1,7 @@
 # 订阅 18.1.txt -> Clash
-# 由 txt2clash.py 自动生成于 2026-11-01 08:59:55 +0000
 # 节点数量: 96
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
+# 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
 mixed-port: 7890
 allow-lan: false
