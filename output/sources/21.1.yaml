@@ -1,6 +1,6 @@
 # 订阅 21.1.txt -> Clash
-# 由 txt2clash.py 自动生成于 2026-11-01 16:51:16 +0800
-# 节点数量: 270
+# 由 txt2clash.py 自动生成于 2026-11-01 08:59:55 +0000
+# 节点数量: 275
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
 mixed-port: 7890
@@ -621,6 +621,15 @@ proxies:
     cipher: aes-256-gcm
     password: KixLvKzwjekG00rm
     udp: true
+  - name: node
+    type: vmess
+    server: 65.109.211.136
+    port: 33120
+    uuid: d9c919c2-872e-429d-a680-1e6c6bfe681b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
   - name: "[11990][US][0][SS][None][ext_raw.githubusercontent.com][2026"
     type: ss
     server: 38.75.136.21
@@ -1143,7 +1152,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: ""
-  - name: node
+  - name: "node 2"
     type: vmess
     server: 165.140.216.142
     port: 443
@@ -1220,7 +1229,7 @@ proxies:
       path: "/"
       headers:
         Host: ww1.aniuge.qzz.io
-  - name: "node 2"
+  - name: "node 3"
     type: vmess
     server: tw1-vds3.anyhk.co
     port: 21353
@@ -1664,6 +1673,22 @@ proxies:
     cipher: aes-256-cfb
     password: amazonskr05
     udp: true
+  - name: "node 4"
+    type: vmess
+    server: v2ray.codefyinc.com
+    port: 443
+    uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: v2ray.codefyinc.com
+    network: ws
+    ws-opts:
+      path: "/vmessws"
+      headers:
+        Host: v2ray.codefyinc.com
+    client-fingerprint: chrome
   - name: "[16426][HK][0][SS][None][nofiltering2][2026-07-29][2026-09-2"
     type: vless
     server: 195.21.129.117
@@ -2208,7 +2233,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: TunService
-  - name: "node 3"
+  - name: "node 5"
     type: vmess
     server: 183.236.51.23
     port: 54104
@@ -2406,7 +2431,7 @@ proxies:
     udp: true
     tls: false
     network: tcp
-  - name: "node 4"
+  - name: "node 6"
     type: vmess
     server: twriyfjhhhh1.hfhfb.homes
     port: 80
@@ -2452,6 +2477,19 @@ proxies:
     cipher: aes-128-cfb
     password: "QazEdcTgb159@$*"
     udp: true
+  - name: "node 7"
+    type: vmess
+    server: 104.16.219.108
+    port: 80
+    uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/Telegram/XV2ray"
+      headers:
+        Host: rubika.ir.google.com.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.aparat.com.V2ray.com.shw2.ir.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--g28h.dns-dynamic.net.
   - name: "[17999][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
     type: vmess
     server: xcf036.facai2024.com
@@ -2468,6 +2506,19 @@ proxies:
       headers:
         Host: xcf036.facai2024.com
     client-fingerprint: chrome
+  - name: "node 8"
+    type: vmess
+    server: 89.169.13.60
+    port: 28838
+    uuid: b9d3c414-89cc-455d-b717-10c7ca1665a1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 89.169.13.60
   - name: "[10375][PL][0][SS][None][ext_raw.githubusercontent.com][2026"
     type: ss
     server: 217.30.10.18
@@ -2475,6 +2526,19 @@ proxies:
     cipher: aes-256-cfb
     password: c3NtHJ5ujV2tGDfj
     udp: true
+  - name: "node 9"
+    type: vmess
+    server: npmjs.com
+    port: 8080
+    uuid: d3m1xvk50k
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/download/cdn"
+      headers:
+        Host: d3m1xvk50k-525340173.zamam.co
   - name: "[17839][UnResolvedDomains][0][SS][None][Capital_NET][2023-08"
     type: vless
     server: 49.12.240.34
@@ -2991,6 +3055,7 @@ proxy-groups:
       - "[16643][US][0][SS][None][proxymtprotoir][2026-09-21][2026-09"
       - "[3181][US][0][SS][None][marambashi][2026-09-18][2026-09-22 0"
       - "[11245][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - node
       - "[11990][US][0][SS][None][ext_raw.githubusercontent.com][2026"
       - "[14717][US][0][SS][None][oneclickvpnkeys][2026-09-20][2026-0"
       - "[9993][BG][0][SS][None][ext_raw.githubusercontent.com][2026-"
@@ -3041,14 +3106,14 @@ proxy-groups:
       - "[2448][US][0][SS][None][prrofile_purple][2026-06-15][2026-09"
       - "[7715][SG][0][SS][None][ext_raw.githubusercontent.com][2026-"
       - "[16727][LT][0][SS][None][ext_raw.githubusercontent.com][2026"
-      - node
+      - "node 2"
       - "[18386][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
       - "[17446][IR][0][SS][None][DarkVPNpro][2026-04-16][2026-09-22 "
       - "[9020][UnResolvedDomains][0][SS][None][v2ray_swhil][2024-11-"
       - "[7342][FR][0][SS][None][ext_raw.githubusercontent.com][2026-"
       - "[15416][US][0][SS][None][free1_vpn][2026-09-17][2026-09-22 0"
       - "[16808][US][0][SS][None][Outline_Vpn][2026-07-13][2026-09-22"
-      - "node 2"
+      - "node 3"
       - "[7677][CA][0][SS][None][ext_raw.githubusercontent.com][2026-"
       - "[5163][DE][0][SS][None][ext_raw.githubusercontent.com][2026-"
       - "[17977][US][0][SS][None][Hope_Net][2026-09-18][2026-09-22 02"
@@ -3090,6 +3155,7 @@ proxy-groups:
       - "[4973][RU][0][SS][None][proxy_mtm][2026-08-19][2026-09-22 02"
       - "[7586][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
       - "[10230][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "node 4"
       - "[16426][HK][0][SS][None][nofiltering2][2026-07-29][2026-09-2"
       - "[10603][PL][0][SS][None][ext_raw.githubusercontent.com][2026"
       - "[491][US][0][SS][None][v2ray_swhil][2024-09-20][2026-09-22 0"
@@ -3143,7 +3209,7 @@ proxy-groups:
       - "[8157][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
       - "[413][UnResolvedDomains][0][SS][None][azadi_az_inja_migzare]"
       - "[5470][RU][0][SS][None][V2rayng_Fast][2026-09-12][2026-09-22"
-      - "node 3"
+      - "node 5"
       - "[15464][FI][0][SS][None][ext_raw.githubusercontent.com][2026"
       - "[14971][US][0][SS][None][vless_vmess][2024-11-19][2026-09-22"
       - "[7154][SG][0][SS][None][ext_raw.githubusercontent.com][2026-"
@@ -3161,13 +3227,16 @@ proxy-groups:
       - "[16758][NL][0][SS][None][marambashi][2026-09-09][2026-09-22 "
       - "[2833][UnResolvedDomains][0][SS][None][freeconfigv2][2023-11"
       - "[16951][GB][0][SS][None][PrivateVPNs][2026-09-16][2026-09-22"
-      - "node 4"
+      - "node 6"
       - "[15153][KR][0][SS][None][ext_raw.githubusercontent.com][2026"
       - "[7637][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
       - "[5109][UnResolvedDomains][0][SS][None][ext_raw.githubusercon"
       - "[9466][CN][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "node 7"
       - "[17999][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
+      - "node 8"
       - "[10375][PL][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "node 9"
       - "[17839][UnResolvedDomains][0][SS][None][Capital_NET][2023-08"
       - "[10080][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
       - "[13253][US][0][SS][None][ext_raw.githubusercontent.com][2026"
@@ -3267,6 +3336,7 @@ proxy-groups:
       - "[16643][US][0][SS][None][proxymtprotoir][2026-09-21][2026-09"
       - "[3181][US][0][SS][None][marambashi][2026-09-18][2026-09-22 0"
       - "[11245][US][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - node
       - "[11990][US][0][SS][None][ext_raw.githubusercontent.com][2026"
       - "[14717][US][0][SS][None][oneclickvpnkeys][2026-09-20][2026-0"
       - "[9993][BG][0][SS][None][ext_raw.githubusercontent.com][2026-"
@@ -3317,14 +3387,14 @@ proxy-groups:
       - "[2448][US][0][SS][None][prrofile_purple][2026-06-15][2026-09"
       - "[7715][SG][0][SS][None][ext_raw.githubusercontent.com][2026-"
       - "[16727][LT][0][SS][None][ext_raw.githubusercontent.com][2026"
-      - node
+      - "node 2"
       - "[18386][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
       - "[17446][IR][0][SS][None][DarkVPNpro][2026-04-16][2026-09-22 "
       - "[9020][UnResolvedDomains][0][SS][None][v2ray_swhil][2024-11-"
       - "[7342][FR][0][SS][None][ext_raw.githubusercontent.com][2026-"
       - "[15416][US][0][SS][None][free1_vpn][2026-09-17][2026-09-22 0"
       - "[16808][US][0][SS][None][Outline_Vpn][2026-07-13][2026-09-22"
-      - "node 2"
+      - "node 3"
       - "[7677][CA][0][SS][None][ext_raw.githubusercontent.com][2026-"
       - "[5163][DE][0][SS][None][ext_raw.githubusercontent.com][2026-"
       - "[17977][US][0][SS][None][Hope_Net][2026-09-18][2026-09-22 02"
@@ -3366,6 +3436,7 @@ proxy-groups:
       - "[4973][RU][0][SS][None][proxy_mtm][2026-08-19][2026-09-22 02"
       - "[7586][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
       - "[10230][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "node 4"
       - "[16426][HK][0][SS][None][nofiltering2][2026-07-29][2026-09-2"
       - "[10603][PL][0][SS][None][ext_raw.githubusercontent.com][2026"
       - "[491][US][0][SS][None][v2ray_swhil][2024-09-20][2026-09-22 0"
@@ -3419,7 +3490,7 @@ proxy-groups:
       - "[8157][US][0][SS][None][ext_raw.githubusercontent.com][2026-"
       - "[413][UnResolvedDomains][0][SS][None][azadi_az_inja_migzare]"
       - "[5470][RU][0][SS][None][V2rayng_Fast][2026-09-12][2026-09-22"
-      - "node 3"
+      - "node 5"
       - "[15464][FI][0][SS][None][ext_raw.githubusercontent.com][2026"
       - "[14971][US][0][SS][None][vless_vmess][2024-11-19][2026-09-22"
       - "[7154][SG][0][SS][None][ext_raw.githubusercontent.com][2026-"
@@ -3437,13 +3508,16 @@ proxy-groups:
       - "[16758][NL][0][SS][None][marambashi][2026-09-09][2026-09-22 "
       - "[2833][UnResolvedDomains][0][SS][None][freeconfigv2][2023-11"
       - "[16951][GB][0][SS][None][PrivateVPNs][2026-09-16][2026-09-22"
-      - "node 4"
+      - "node 6"
       - "[15153][KR][0][SS][None][ext_raw.githubusercontent.com][2026"
       - "[7637][GB][0][SS][None][ext_raw.githubusercontent.com][2026-"
       - "[5109][UnResolvedDomains][0][SS][None][ext_raw.githubusercon"
       - "[9466][CN][0][SS][None][ext_raw.githubusercontent.com][2026-"
+      - "node 7"
       - "[17999][UnResolvedDomains][0][SS][None][ext_raw.githubuserco"
+      - "node 8"
       - "[10375][PL][0][SS][None][ext_raw.githubusercontent.com][2026"
+      - "node 9"
       - "[17839][UnResolvedDomains][0][SS][None][Capital_NET][2023-08"
       - "[10080][JP][0][SS][None][ext_raw.githubusercontent.com][2026"
       - "[13253][US][0][SS][None][ext_raw.githubusercontent.com][2026"
