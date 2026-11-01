@@ -1,5 +1,5 @@
 # 订阅 33.1.txt -> Clash
-# 节点数量: 8
+# 节点数量: 7
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -76,35 +76,17 @@ proxies:
       mode: auto
   - name: "🇳🇱 The Netherlands [*CIDR] VK"
     type: vless
-    server: 185.86.145.37
-    port: 443
-    uuid: fd8b05d0-0a98-4fba-9b48-5c0367abfcf5
+    server: cdn.freetato-converting.ru
+    port: 2096
+    uuid: b877b58f-5995-4b25-abec-3213a2f95512
     udp: true
     tls: true
-    servername: ara.rtkdvbr.cc
-    client-fingerprint: qq
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/amws"
-      headers:
-        Host: ara.rtkdvbr.cc
-  - name: "🇳🇱 The Netherlands [*CIDR] YA"
-    type: vless
-    server: 84.201.146.8
-    port: 443
-    uuid: 1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200
-    udp: true
-    tls: true
-    servername: max.ru
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo
+    servername: cdn.freetato-converting.ru
     network: xhttp
     xhttp-opts:
-      path: "/"
-      host: max.ru
+      path: "/chxh"
+      host: cdn.freetato-converting.ru
+    client-fingerprint: chrome
   - name: "🇷🇺 Russia | 🌐 [*CIDR] CDN"
     type: vless
     server: 37.18.14.43
@@ -113,7 +95,7 @@ proxies:
     udp: true
     tls: true
     servername: flatcrest.net
-    client-fingerprint: ios
+    client-fingerprint: edge
     alpn:
       - http/1.1
       - h2
@@ -174,7 +156,6 @@ proxy-groups:
       - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN"
       - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN 2"
       - "🇳🇱 The Netherlands [*CIDR] VK"
-      - "🇳🇱 The Netherlands [*CIDR] YA"
       - "🇷🇺 Russia | 🌐 [*CIDR] CDN"
       - "🇷🇺 Russia | 🌐 [*CIDR] CDN 2"
       - node
@@ -188,7 +169,6 @@ proxy-groups:
       - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN"
       - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN 2"
       - "🇳🇱 The Netherlands [*CIDR] VK"
-      - "🇳🇱 The Netherlands [*CIDR] YA"
       - "🇷🇺 Russia | 🌐 [*CIDR] CDN"
       - "🇷🇺 Russia | 🌐 [*CIDR] CDN 2"
       - node
