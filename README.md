@@ -218,14 +218,14 @@ python src/txt2clash.py --mirror jsdelivr
 
 ## 自动同步
 
-推到自己的 GitHub 仓库后，[`.github/workflows/sync-subscriptions.yml`](.github/workflows/sync-subscriptions.yml) 会**每 30 分钟**拉上游、转换、有变化才提交，你只需要在客户端填一个固定地址。
+[`.github/workflows/sync-subscriptions.yml`](.github/workflows/sync-subscriptions.yml) 会**每 30 分钟**拉上游、转换、有变化才提交，客户端只要填一个固定地址就能一直拿到最新节点。
 
-启用步骤：
+本仓库已启用，无需额外操作。fork 或新建仓库时需要开启：
 
-1. 把本项目推到你自己的 GitHub 仓库（必须 **public**，否则客户端拉不到）
-2. 仓库 **Settings → Actions → General → Workflow permissions** 选 **Read and write**
+1. 仓库必须是 **public**，否则客户端拉不到订阅
+2. **Settings → Actions → General → Workflow permissions** 选 **Read and write**
 3. **Actions** 页面点 **Enable workflow**，手动 Run 一次 `sync-subscriptions` 验证
-4. 客户端填下面的 raw 地址，Clash 会自动按间隔拉取
+4. 客户端填 [订阅地址](#订阅地址)，Clash 会自动按间隔拉取
 
 ### 本地定时（不用 Actions）
 
@@ -239,19 +239,21 @@ Windows 任务计划程序 → 新建任务 → 触发器「每 30 分钟」→ 
 
 ## 订阅地址
 
-把 `<user>/<repo>` 换成你自己的仓库：
+本项目已部署在 `wangyunpeng12138/free-nodes-sync`，直接复制下面的地址填进客户端：
 
 | 用途 | 地址 |
 |---|---|
-| 合并订阅（推荐） | `https://raw.githubusercontent.com/<user>/<repo>/main/output/all.yaml` |
-| 单源订阅 | `https://raw.githubusercontent.com/<user>/<repo>/main/output/sources/1.1.yaml` |
+| **合并订阅（推荐）** | `https://raw.githubusercontent.com/wangyunpeng12138/free-nodes-sync/main/output/all.yaml` |
+| 单源订阅 | `https://raw.githubusercontent.com/wangyunpeng12138/free-nodes-sync/main/output/sources/1.1.yaml` |
 
 国内直连 raw 不稳时换镜像：
 
 ```
-https://cdn.jsdelivr.net/gh/<user>/<repo>@main/output/all.yaml
-https://ghproxy.net/https://raw.githubusercontent.com/<user>/<repo>/main/output/all.yaml
+https://cdn.jsdelivr.net/gh/wangyunpeng12138/free-nodes-sync@main/output/all.yaml
+https://ghproxy.net/https://raw.githubusercontent.com/wangyunpeng12138/free-nodes-sync/main/output/all.yaml
 ```
+
+> fork 或改名后，把上面地址里的 `wangyunpeng12138/free-nodes-sync` 换成自己的仓库即可。
 
 ---
 
