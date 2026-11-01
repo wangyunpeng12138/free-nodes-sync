@@ -1,5 +1,5 @@
 # 订阅 33.1.txt -> Clash
-# 节点数量: 12
+# 节点数量: 8
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -40,20 +40,6 @@ dns:
     - "https://doh.pub/dns-query"
     - "https://dns.alidns.com/dns-query"
 proxies:
-  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] VK"
-    type: vless
-    server: 217.16.31.193
-    port: 443
-    uuid: 902e7be9-d0a8-42a6-994f-8320916a9d9e
-    udp: true
-    tls: true
-    servername: hel.mtmajestic.space
-    client-fingerprint: ios
-    reality-opts:
-      public-key: ejbzKnJoNSYWWIcDgo9Ghy-lQvjsp3QQFAGKDaFQbUo
-      short-id: 624ed7c00c61576b
-    flow: xtls-rprx-vision
-    network: tcp
   - name: "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN"
     type: vless
     server: 37.18.14.43
@@ -62,7 +48,7 @@ proxies:
     udp: true
     tls: true
     servername: flatcrest.net
-    client-fingerprint: chrome
+    client-fingerprint: ios
     alpn:
       - http/1.1
       - h2
@@ -88,56 +74,15 @@ proxies:
       path: "/api/v1/upload"
       host: flatcrest.net
       mode: auto
-  - name: "🇪🇪 Estonia [*CIDR] VK"
-    type: vless
-    server: 83.166.237.167
-    port: 52251
-    uuid: 902e7be9-d0a8-42a6-994f-8320916a9d9e
-    udp: true
-    tls: true
-    servername: api-maps.yandex.ru
-    client-fingerprint: qq
-    reality-opts:
-      public-key: 1A6Rv3MjIbi_0B2WchTlrS2k2IkDw-UxmTuV6A6S3Ew
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇩🇪 Germany [*CIDR] VK"
-    type: vless
-    server: 83.166.238.173
-    port: 443
-    uuid: 902e7be9-d0a8-42a6-994f-8320916a9d9e
-    udp: true
-    tls: true
-    servername: willow.gaznw.my
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 7VYlDCJXbPfNeDI3PGmEQc-cYg1r8CPCp4Xw4Pm4hlc
-      short-id: ce5f35fe1015d222
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇸🇪 Sweden [*CIDR] VK"
-    type: vless
-    server: 83.166.237.167
-    port: 443
-    uuid: 902e7be9-d0a8-42a6-994f-8320916a9d9e
-    udp: true
-    tls: true
-    servername: pine.gaznw.my
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: oKG1EhkfIvBM6xLEk7ck51ZbjvUKDR22RNjTJR_7sTU
-      short-id: 46da9a2868751b85
-    flow: xtls-rprx-vision
-    network: tcp
   - name: "🇳🇱 The Netherlands [*CIDR] VK"
     type: vless
     server: 185.86.145.37
     port: 443
-    uuid: e37ebf3b-ac32-48a8-8f56-d113967eaf29
+    uuid: fd8b05d0-0a98-4fba-9b48-5c0367abfcf5
     udp: true
     tls: true
     servername: ara.rtkdvbr.cc
-    client-fingerprint: firefox
+    client-fingerprint: qq
     alpn:
       - http/1.1
     network: ws
@@ -226,12 +171,8 @@ proxy-groups:
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] VK"
       - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN"
       - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN 2"
-      - "🇪🇪 Estonia [*CIDR] VK"
-      - "🇩🇪 Germany [*CIDR] VK"
-      - "🇸🇪 Sweden [*CIDR] VK"
       - "🇳🇱 The Netherlands [*CIDR] VK"
       - "🇳🇱 The Netherlands [*CIDR] YA"
       - "🇷🇺 Russia | 🌐 [*CIDR] CDN"
@@ -244,12 +185,8 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] VK"
       - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN"
       - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN 2"
-      - "🇪🇪 Estonia [*CIDR] VK"
-      - "🇩🇪 Germany [*CIDR] VK"
-      - "🇸🇪 Sweden [*CIDR] VK"
       - "🇳🇱 The Netherlands [*CIDR] VK"
       - "🇳🇱 The Netherlands [*CIDR] YA"
       - "🇷🇺 Russia | 🌐 [*CIDR] CDN"

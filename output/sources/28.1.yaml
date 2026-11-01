@@ -1,5 +1,5 @@
 # 订阅 28.1.txt -> Clash
-# 节点数量: 62
+# 节点数量: 82
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -42,79 +42,32 @@ dns:
 proxies:
   - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
     type: vless
-    server: 103.116.7.100
-    port: 2087
-    uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+    server: 151.101.65.242
+    port: 443
+    uuid: 0d03e44f-f60f-41b6-8ad7-13445af164fd
     udp: true
     tls: true
-    servername: 103.116.7.100
-    client-fingerprint: firefox
+    servername: adheres-scruple.quick-cdn.net
+    client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: "/"
+      path: "/ws"
       headers:
-        Host: proxy-1cu.pages.dev
-  - name: "🇦🇱 Albania, Tirana | [BL]"
-    type: vless
-    server: 151.123.187.198
-    port: 443
-    uuid: b24ad12f-f6ce-4f0b-a264-d58a76104026
-    udp: true
-    tls: true
-    servername: al2.magazinnarubeva.ru
-    reality-opts:
-      public-key: trN5x0amt2YuVzF2vZnK294YBAuh_zl5QkZjPyWz-TI
-      short-id: 8718c58d3d51db59
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇪🇪 Estonia, Tallinn | [BL]"
-    type: vless
-    server: ee.h1cloud.net
-    port: 25895
-    uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-    udp: true
-    tls: true
-    servername: www.samsung.com
-    reality-opts:
-      public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-      short-id: a73f0410d728c823
-    client-fingerprint: chrome
-    network: tcp
-  - name: "🇬🇪 Georgia, Tbilisi (Nadzaladevi District) | [BL]"
-    type: vless
-    server: 93.190.9.160
-    port: 3090
-    uuid: 0deac3ec-a11a-4b24-a332-19c93e7e2182
-    udp: true
-    tls: false
-    network: grpc
-    grpc-opts:
-      grpc-service-name: vless
-  - name: "🇬🇪 Georgia, Tbilisi (Nadzaladevi District) | [BL] 2"
-    type: vless
-    server: 93.190.9.109
-    port: 3090
-    uuid: fd5b0832-76a9-44a2-8f7b-fa5306900160
-    udp: true
-    tls: false
-    network: grpc
-    grpc-opts:
-      grpc-service-name: vless
+        Host: adheres-scruple.quick-cdn.net
   - name: "🇩🇪 Germany, Falkenstein | 🌐 | [BL]"
     type: vless
-    server: news.zoom.us
+    server: 141.193.213.21
     port: 2083
     uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
     udp: true
     tls: true
     servername: site.check-looks.space
+    client-fingerprint: qq
     network: ws
     ws-opts:
       path: "/"
       headers:
         Host: site.check-looks.space
-    client-fingerprint: chrome
   - name: "🇩🇪 Germany, Frankfurt am Main | [BL]"
     type: vless
     server: 216.24.57.15
@@ -127,19 +80,19 @@ proxies:
       - http/1.1
     network: ws
     ws-opts:
-      path: "/ws/2ee0d2aa-867e-a77e-9538-2edfc0b242aafp=firefoxfp=chrome"
+      path: "/ws/2ee0d2aa-867e-a77e-9538-2edfc0b242aafp=firefox"
       headers:
         Host: four04-rd37.onrender.com
     client-fingerprint: chrome
   - name: "🇩🇪 Germany, Frankfurt am Main | [BL] 2"
     type: vless
-    server: 151.101.131.6
+    server: 151.101.67.6
     port: 443
     uuid: bdf38176-48e9-40f1-9d1c-d501c333b464
     udp: true
     tls: true
-    servername: apps.apple.com
-    client-fingerprint: ios
+    servername: amp-api-edge.apps.apple.com
+    client-fingerprint: firefox
     alpn:
       - h3
     network: xhttp
@@ -147,99 +100,84 @@ proxies:
       path: "/crownnet"
       host: kkbr.tm
       mode: auto
-  - name: "🇩🇪 Germany, Frankfurt am Main | [BL] 3"
+  - name: "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]"
     type: vless
-    server: 194.58.71.117
+    server: 195.141.65.98
     port: 443
-    uuid: e07a6d05-f665-4811-91f0-9b3dc1094e4d
+    uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
     udp: true
     tls: true
-    servername: tradingview.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
-      short-id: 8f3c6e2a1b5d4f09
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇱🇻 Latvia, Riga | 🌐 | [BL]"
-    type: vless
-    server: 104.165.205.54
-    port: 2083
-    uuid: a0bce4ce-514e-4837-8753-0c458484b538
-    udp: true
-    tls: true
-    servername: speedtestmark.com
-    client-fingerprint: firefox
+    servername: 148-253-210-191.sslip.io
+    client-fingerprint: ios
     alpn:
       - http/1.1
     network: ws
     ws-opts:
-      path: "/vless-ws"
+      path: "/test-ws"
       headers:
-        Host: speedtestmark.com
-  - name: "🇳🇱 The Netherlands, Amsterdam | [BL]"
+        Host: 148-253-210-191.sslip.io
+  - name: "🇱🇻 Latvia, Riga | [BL]"
     type: vless
-    server: 79.141.164.81
+    server: test.wolf-moose.test-cdn-kkk.com
     port: 443
-    uuid: 99efa3ab-5dd3-4395-b05c-e9c6382298eb
+    uuid: bbe37c75-d097-4b72-a074-445a56fe3969
     udp: true
     tls: true
-    servername: nla.kosmosapp.net
-    client-fingerprint: firefox
+    servername: la.cdn-tech-images.com
+    client-fingerprint: chrome
     reality-opts:
-      public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
-      short-id: 27350908de933e09
-    network: grpc
-    grpc-opts:
-      grpc-service-name: neurex
-  - name: "🇳🇱 The Netherlands, Amsterdam | [BL] 2"
+      public-key: "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw"
+      short-id: "50"
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇳🇱 The Netherlands, Amsterdam | [BL]"
     type: vless
-    server: sw.golangwikito.cfd
+    server: fr.golangwikito.cfd
     port: 443
     uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
     udp: true
     tls: true
-    servername: sw.golangwikito.cfd
-    client-fingerprint: qq
-    skip-cert-verify: true
+    servername: fr.golangwikito.cfd
+    client-fingerprint: safari
     reality-opts:
-      public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
-      short-id: a1037b25dcef6aa7
+      public-key: isYQuhKDrgc7IQ7G0LHywFnt57wffrkZ-er18DkVsBA
+      short-id: e6d589857d1cec5e
     flow: xtls-rprx-vision
     network: tcp
-  - name: "🇬🇧 United Kingdom, London | [BL]"
+  - name: "🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]"
     type: vless
-    server: 140.225.208.51
-    port: 2083
-    uuid: 75b517db-1f97-4bda-a479-863d988c31a0
+    server: 46.8.68.106
+    port: 2053
+    uuid: 1564e669-1fa1-4233-876f-d6e52ad3979a
     udp: true
     tls: true
-    servername: speedtestmark.com
-    client-fingerprint: firefox
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/vless-ws"
-      headers:
-        Host: speedtestmark.com
-  - name: "🇬🇧 United Kingdom, London | [BL] 2"
-    type: vless
-    server: 140.225.209.130
-    port: 2083
-    uuid: a0bce4ce-514e-4837-8753-0c458484b538
-    udp: true
-    tls: true
-    servername: speedtestmark.com
-    client-fingerprint: firefox
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/vless-ws"
-      headers:
-        Host: speedtestmark.com
+    servername: www.cloudflare.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: eXczucKLrthwd91_Vo1VDZZZHhLemyw424GwmgH44CA
+      short-id: e35297ca
+    network: xhttp
+    xhttp-opts:
+      path: "/ap"
+      host: www.cloudflare.com
+      mode: auto
   - name: "🇺🇸 United States | 🌐 | [BL]"
+    type: vless
+    server: grimness-backlogs.cdn-content.com
+    port: 443
+    uuid: 0097844e-b939-4d50-93f3-591debdceb55
+    udp: true
+    tls: true
+    servername: grimness-backlogs.cdn-content.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: grimness-backlogs.cdn-content.com
+  - name: "🇺🇸 United States | 🌐 | [BL] 2"
     type: vless
     server: grimness-backlogs.cdn-content.com
     port: 443
@@ -255,7 +193,21 @@ proxies:
       path: "/ws"
       headers:
         Host: grimness-backlogs.cdn-content.com
-  - name: "🇺🇸 United States | 🌐 | [BL] 2"
+  - name: "🇺🇸 United States | 🌐 | [BL] 3"
+    type: vless
+    server: 151.101.129.242
+    port: 443
+    uuid: 0259b0b9-c954-4de2-988e-a5877b2cd6e5
+    udp: true
+    tls: true
+    servername: adheres-scruple.quick-cdn.net
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: adheres-scruple.quick-cdn.net
+  - name: "🇺🇸 United States | 🌐 | [BL] 4"
     type: vless
     server: 151.101.193.242
     port: 443
@@ -269,28 +221,14 @@ proxies:
       path: "/ws"
       headers:
         Host: piracy-android.video-streams.org
-  - name: "🇺🇸 United States | 🌐 | [BL] 3"
+  - name: "🇺🇸 United States | 🌐 | [BL] 5"
     type: vless
-    server: 199.232.173.242
+    server: 151.101.1.242
     port: 443
-    uuid: 0d03e44f-f60f-41b6-8ad7-13445af164fd
+    uuid: 11c1c5e2-7be9-464a-8945-abe4b131abd7
     udp: true
     tls: true
-    servername: piracy-android.video-streams.org
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: piracy-android.video-streams.org
-  - name: "🇺🇸 United States | 🌐 | [BL] 4"
-    type: vless
-    server: ghosts-spasm.quick-cdn.net
-    port: 443
-    uuid: 11e6c528-434f-4b15-83b3-40a46237ea13
-    udp: true
-    tls: true
-    servername: ghosts-spasm.quick-cdn.net
+    servername: minimize-evenness.cdn-content.com
     client-fingerprint: chrome
     alpn:
       - http/1.1
@@ -298,8 +236,50 @@ proxies:
     ws-opts:
       path: "/ws"
       headers:
-        Host: ghosts-spasm.quick-cdn.net
-  - name: "🇺🇸 United States | 🌐 | [BL] 5"
+        Host: minimize-evenness.cdn-content.com
+  - name: "🇺🇸 United States | 🌐 | [BL] 6"
+    type: vless
+    server: 151.101.201.242
+    port: 443
+    uuid: 11e6c528-434f-4b15-83b3-40a46237ea13
+    udp: true
+    tls: true
+    servername: bounded-crammed.video-streams.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: bounded-crammed.video-streams.org
+  - name: "🇺🇸 United States | 🌐 | [BL] 7"
+    type: vless
+    server: 151.101.1.242
+    port: 443
+    uuid: 11f654d8-8ee6-4663-8fc6-26f2a128b519
+    udp: true
+    tls: true
+    servername: adheres-scruple.quick-cdn.net
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: adheres-scruple.quick-cdn.net
+  - name: "🇺🇸 United States | 🌐 | [BL] 8"
+    type: vless
+    server: minimize-evenness.cdn-content.com
+    port: 443
+    uuid: 1220c563-30a8-46bd-9264-052d7ba92e7d
+    udp: true
+    tls: true
+    servername: minimize-evenness.cdn-content.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: minimize-evenness.cdn-content.com
+  - name: "🇺🇸 United States | 🌐 | [BL] 9"
     type: vless
     server: bounded-crammed.video-streams.org
     port: 443
@@ -315,89 +295,25 @@ proxies:
       path: "/ws"
       headers:
         Host: bounded-crammed.video-streams.org
-  - name: "🇺🇸 United States | 🌐 | [BL] 6"
-    type: vless
-    server: adheres-scruple.quick-cdn.net
-    port: 443
-    uuid: 1b3837df-41d5-4740-8a36-467ea03adfc3
-    udp: true
-    tls: true
-    servername: adheres-scruple.quick-cdn.net
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: adheres-scruple.quick-cdn.net
-    client-fingerprint: chrome
-  - name: "🇺🇸 United States | 🌐 | [BL] 7"
-    type: vless
-    server: adheres-scruple.quick-cdn.net
-    port: 443
-    uuid: 2497c739-697d-43e4-bef7-ed1a6e8e5c91
-    udp: true
-    tls: true
-    servername: adheres-scruple.quick-cdn.net
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: adheres-scruple.quick-cdn.net
-  - name: "🇺🇸 United States | 🌐 | [BL] 8"
+  - name: "🇺🇸 United States | 🌐 | [BL] 10"
     type: vless
     server: minimize-evenness.cdn-content.com
     port: 443
-    uuid: 2497c739-697d-43e4-bef7-ed1a6e8e5c91
+    uuid: 1f365eee-dd80-432b-8046-d0b3e7e0e419
     udp: true
     tls: true
     servername: minimize-evenness.cdn-content.com
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
     network: ws
     ws-opts:
       path: "/ws"
       headers:
         Host: minimize-evenness.cdn-content.com
-  - name: "🇺🇸 United States | 🌐 | [BL] 9"
-    type: vless
-    server: piracy-android.video-streams.org
-    port: 443
-    uuid: 2497c739-697d-43e4-bef7-ed1a6e8e5c91
-    udp: true
-    tls: true
-    servername: piracy-android.video-streams.org
-    client-fingerprint: qq
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: piracy-android.video-streams.org
-  - name: "🇺🇸 United States | 🌐 | [BL] 10"
-    type: vless
-    server: ghosts-spasm.quick-cdn.net
-    port: 443
-    uuid: 254e661b-77ef-454a-8e2d-832bcdfc7470
-    udp: true
-    tls: true
-    servername: ghosts-spasm.quick-cdn.net
     client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: ghosts-spasm.quick-cdn.net
   - name: "🇺🇸 United States | 🌐 | [BL] 11"
     type: vless
     server: adheres-scruple.quick-cdn.net
     port: 443
-    uuid: 316f013e-4cf9-4a02-8415-73c22932594a
+    uuid: 3c8a0eb8-37a3-4e69-8c5b-7ef465095710
     udp: true
     tls: true
     servername: adheres-scruple.quick-cdn.net
@@ -411,6 +327,20 @@ proxies:
         Host: adheres-scruple.quick-cdn.net
   - name: "🇺🇸 United States | 🌐 | [BL] 12"
     type: vless
+    server: 151.101.1.242
+    port: 443
+    uuid: 3d5f6543-8d96-4e94-b0dc-0a4bc7c3b363
+    udp: true
+    tls: true
+    servername: bounded-crammed.video-streams.org
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: bounded-crammed.video-streams.org
+  - name: "🇺🇸 United States | 🌐 | [BL] 13"
+    type: vless
     server: ghosts-spasm.quick-cdn.net
     port: 443
     uuid: 3d5f6543-8d96-4e94-b0dc-0a4bc7c3b363
@@ -418,35 +348,75 @@ proxies:
     tls: true
     servername: ghosts-spasm.quick-cdn.net
     client-fingerprint: chrome
-    alpn:
-      - http/1.1
     network: ws
     ws-opts:
       path: "/ws"
       headers:
         Host: ghosts-spasm.quick-cdn.net
-  - name: "🇺🇸 United States | 🌐 | [BL] 13"
+  - name: "🇺🇸 United States | 🌐 | [BL] 14"
     type: vless
-    server: bounded-crammed.video-streams.org
+    server: 151.101.1.242
     port: 443
     uuid: 476bdb75-0d9b-49f2-a492-4cd68f594d32
     udp: true
     tls: true
     servername: bounded-crammed.video-streams.org
-    client-fingerprint: chrome
+    client-fingerprint: firefox
     network: ws
     ws-opts:
       path: "/ws"
       headers:
         Host: bounded-crammed.video-streams.org
-  - name: "🇺🇸 United States | 🌐 | [BL] 14"
+  - name: "🇺🇸 United States | 🌐 | [BL] 15"
     type: vless
-    server: piracy-android.video-streams.org
+    server: 151.101.193.242
     port: 443
     uuid: 476bdb75-0d9b-49f2-a492-4cd68f594d32
     udp: true
     tls: true
-    servername: piracy-android.video-streams.org
+    servername: grimness-backlogs.cdn-content.com
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: grimness-backlogs.cdn-content.com
+  - name: "🇺🇸 United States | 🌐 | [BL] 16"
+    type: vless
+    server: ghosts-spasm.quick-cdn.net
+    port: 443
+    uuid: 476bdb75-0d9b-49f2-a492-4cd68f594d32
+    udp: true
+    tls: true
+    servername: ghosts-spasm.quick-cdn.net
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: ghosts-spasm.quick-cdn.net
+  - name: "🇺🇸 United States | 🌐 | [BL] 17"
+    type: vless
+    server: 151.101.65.242
+    port: 443
+    uuid: 484af701-34a8-4957-bf61-0f7bc3891e59
+    udp: true
+    tls: true
+    servername: grimness-backlogs.cdn-content.com
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: grimness-backlogs.cdn-content.com
+  - name: "🇺🇸 United States | 🌐 | [BL] 18"
+    type: vless
+    server: adheres-scruple.quick-cdn.net
+    port: 443
+    uuid: 4f46eb95-a57f-457f-895f-f50e6ad9f164
+    udp: true
+    tls: true
+    servername: adheres-scruple.quick-cdn.net
     client-fingerprint: chrome
     alpn:
       - http/1.1
@@ -454,8 +424,8 @@ proxies:
     ws-opts:
       path: "/ws"
       headers:
-        Host: piracy-android.video-streams.org
-  - name: "🇺🇸 United States | 🌐 | [BL] 15"
+        Host: adheres-scruple.quick-cdn.net
+  - name: "🇺🇸 United States | 🌐 | [BL] 19"
     type: vless
     server: 151.101.65.242
     port: 443
@@ -471,28 +441,87 @@ proxies:
       path: "/ws"
       headers:
         Host: adheres-scruple.quick-cdn.net
-  - name: "🇺🇸 United States | 🌐 | [BL] 16"
+  - name: "🇺🇸 United States | 🌐 | [BL] 20"
     type: vless
-    server: 151.101.65.242
+    server: adheres-scruple.quick-cdn.net
     port: 443
-    uuid: 57a8ea50-1a8d-4e9f-b6e8-e991a9914a8a
+    uuid: 566e98ad-4a56-4c1d-9dbc-83987079731b
+    udp: true
+    tls: true
+    servername: adheres-scruple.quick-cdn.net
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: adheres-scruple.quick-cdn.net
+  - name: "🇺🇸 United States | 🌐 | [BL] 21"
+    type: vless
+    server: piracy-android.video-streams.org
+    port: 443
+    uuid: 566e98ad-4a56-4c1d-9dbc-83987079731b
+    udp: true
+    tls: true
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: piracy-android.video-streams.org
+  - name: "🇺🇸 United States | 🌐 | [BL] 22"
+    type: vless
+    server: 151.101.193.242
+    port: 443
+    uuid: 5d76bd7c-d538-432f-a7d8-9be364427a19
     udp: true
     tls: true
     servername: ghosts-spasm.quick-cdn.net
-    client-fingerprint: chrome
+    client-fingerprint: firefox
     network: ws
     ws-opts:
       path: "/ws"
       headers:
         Host: ghosts-spasm.quick-cdn.net
-  - name: "🇺🇸 United States | 🌐 | [BL] 17"
+  - name: "🇺🇸 United States | 🌐 | [BL] 23"
     type: vless
-    server: piracy-android.video-streams.org
+    server: 151.101.1.242
     port: 443
     uuid: 5db320bf-0092-4871-9062-83f5cd00cbe4
     udp: true
     tls: true
-    servername: piracy-android.video-streams.org
+    servername: bounded-crammed.video-streams.org
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: bounded-crammed.video-streams.org
+  - name: "🇺🇸 United States | 🌐 | [BL] 24"
+    type: vless
+    server: adheres-scruple.quick-cdn.net
+    port: 443
+    uuid: 5db320bf-0092-4871-9062-83f5cd00cbe4
+    udp: true
+    tls: true
+    servername: adheres-scruple.quick-cdn.net
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: adheres-scruple.quick-cdn.net
+  - name: "🇺🇸 United States | 🌐 | [BL] 25"
+    type: vless
+    server: minimize-evenness.cdn-content.com
+    port: 443
+    uuid: 5fccaf5f-6cc7-46a1-8a41-03c0a4231e6c
+    udp: true
+    tls: true
+    servername: minimize-evenness.cdn-content.com
     client-fingerprint: chrome
     alpn:
       - http/1.1
@@ -500,58 +529,70 @@ proxies:
     ws-opts:
       path: "/ws"
       headers:
-        Host: piracy-android.video-streams.org
-  - name: "🇺🇸 United States | 🌐 | [BL] 18"
+        Host: minimize-evenness.cdn-content.com
+  - name: "🇺🇸 United States | 🌐 | [BL] 26"
     type: vless
-    server: minimize-evenness.cdn-content.com
+    server: 151.101.65.242
     port: 443
     uuid: 62cd6e5a-f41a-462a-8df9-31ab0ef75e46
     udp: true
     tls: true
-    servername: minimize-evenness.cdn-content.com
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
+    servername: adheres-scruple.quick-cdn.net
+    client-fingerprint: firefox
     network: ws
     ws-opts:
       path: "/ws"
       headers:
-        Host: minimize-evenness.cdn-content.com
-  - name: "🇺🇸 United States | 🌐 | [BL] 19"
+        Host: adheres-scruple.quick-cdn.net
+  - name: "🇺🇸 United States | 🌐 | [BL] 27"
     type: vless
-    server: piracy-android.video-streams.org
+    server: 151.101.1.242
     port: 443
-    uuid: 71ee5343-b431-44be-bed7-22b9b9f7253c
+    uuid: 63fcd1af-02c5-4048-bc03-def26ebe949a
     udp: true
     tls: true
     servername: piracy-android.video-streams.org
     client-fingerprint: chrome
+    alpn:
+      - http/1.1
     network: ws
     ws-opts:
       path: "/ws"
       headers:
         Host: piracy-android.video-streams.org
-  - name: "🇺🇸 United States | 🌐 | [BL] 20"
+  - name: "🇺🇸 United States | 🌐 | [BL] 28"
     type: vless
-    server: minimize-evenness.cdn-content.com
+    server: grimness-backlogs.cdn-content.com
     port: 443
-    uuid: 7313aaa5-a2e0-4072-a699-34e73d68e288
+    uuid: 68013563-ae18-40bc-9d6b-d9ef0fd5929a
+    udp: true
+    tls: true
+    servername: grimness-backlogs.cdn-content.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: grimness-backlogs.cdn-content.com
+  - name: "🇺🇸 United States | 🌐 | [BL] 29"
+    type: vless
+    server: 151.101.1.242
+    port: 443
+    uuid: 72a258a9-281d-41ae-a9d9-2247064923e0
     udp: true
     tls: true
     servername: minimize-evenness.cdn-content.com
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
+    client-fingerprint: firefox
     network: ws
     ws-opts:
       path: "/ws"
       headers:
         Host: minimize-evenness.cdn-content.com
-  - name: "🇺🇸 United States | 🌐 | [BL] 21"
+  - name: "🇺🇸 United States | 🌐 | [BL] 30"
     type: vless
     server: adheres-scruple.quick-cdn.net
     port: 443
-    uuid: 7443ec9d-4ded-409b-ac14-a20328502c13
+    uuid: 72a258a9-281d-41ae-a9d9-2247064923e0
     udp: true
     tls: true
     servername: adheres-scruple.quick-cdn.net
@@ -563,7 +604,53 @@ proxies:
       path: "/ws"
       headers:
         Host: adheres-scruple.quick-cdn.net
-  - name: "🇺🇸 United States | 🌐 | [BL] 22"
+  - name: "🇺🇸 United States | 🌐 | [BL] 31"
+    type: vless
+    server: piracy-android.video-streams.org
+    port: 443
+    uuid: 72a258a9-281d-41ae-a9d9-2247064923e0
+    udp: true
+    tls: true
+    servername: piracy-android.video-streams.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: piracy-android.video-streams.org
+  - name: "🇺🇸 United States | 🌐 | [BL] 32"
+    type: vless
+    server: bounded-crammed.video-streams.org
+    port: 443
+    uuid: 7430b11a-3b3e-4806-9a44-638caf36cabb
+    udp: true
+    tls: true
+    servername: bounded-crammed.video-streams.org
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: bounded-crammed.video-streams.org
+  - name: "🇺🇸 United States | 🌐 | [BL] 33"
+    type: vless
+    server: adheres-scruple.quick-cdn.net
+    port: 443
+    uuid: 7443ec9d-4ded-409b-ac14-a20328502c13
+    udp: true
+    tls: true
+    servername: adheres-scruple.quick-cdn.net
+    client-fingerprint: firefox
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: adheres-scruple.quick-cdn.net
+  - name: "🇺🇸 United States | 🌐 | [BL] 34"
     type: vless
     server: minimize-evenness.cdn-content.com
     port: 443
@@ -571,7 +658,7 @@ proxies:
     udp: true
     tls: true
     servername: minimize-evenness.cdn-content.com
-    client-fingerprint: safari
+    client-fingerprint: chrome
     alpn:
       - http/1.1
     network: ws
@@ -579,21 +666,39 @@ proxies:
       path: "/ws"
       headers:
         Host: minimize-evenness.cdn-content.com
-  - name: "🇺🇸 United States | 🌐 | [BL] 23"
+  - name: "🇺🇸 United States | 🌐 | [BL] 35"
     type: vless
-    server: 146.75.117.242
+    server: piracy-android.video-streams.org
     port: 443
-    uuid: 752a488f-1ac3-47d0-9165-6d80f1fc4b08
+    uuid: 7443ec9d-4ded-409b-ac14-a20328502c13
     udp: true
     tls: true
     servername: piracy-android.video-streams.org
-    client-fingerprint: firefox
+    client-fingerprint: safari
+    alpn:
+      - http/1.1
     network: ws
     ws-opts:
       path: "/ws"
       headers:
         Host: piracy-android.video-streams.org
-  - name: "🇺🇸 United States | 🌐 | [BL] 24"
+  - name: "🇺🇸 United States | 🌐 | [BL] 36"
+    type: vless
+    server: grimness-backlogs.cdn-content.com
+    port: 443
+    uuid: 7ca746f8-4b6d-48f6-a344-aff7bf836388
+    udp: true
+    tls: true
+    servername: grimness-backlogs.cdn-content.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: grimness-backlogs.cdn-content.com
+  - name: "🇺🇸 United States | 🌐 | [BL] 37"
     type: vless
     server: piracy-android.video-streams.org
     port: 443
@@ -609,7 +714,21 @@ proxies:
       path: "/ws"
       headers:
         Host: piracy-android.video-streams.org
-  - name: "🇺🇸 United States | 🌐 | [BL] 25"
+  - name: "🇺🇸 United States | 🌐 | [BL] 38"
+    type: vless
+    server: piracy-android.video-streams.org
+    port: 443
+    uuid: 81a12262-81a7-45dc-8157-a6abc0c0cda3
+    udp: true
+    tls: true
+    servername: piracy-android.video-streams.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: piracy-android.video-streams.org
+  - name: "🇺🇸 United States | 🌐 | [BL] 39"
     type: vless
     server: adheres-scruple.quick-cdn.net
     port: 443
@@ -618,14 +737,26 @@ proxies:
     tls: true
     servername: adheres-scruple.quick-cdn.net
     client-fingerprint: chrome
-    alpn:
-      - http/1.1
     network: ws
     ws-opts:
       path: "/ws"
       headers:
         Host: adheres-scruple.quick-cdn.net
-  - name: "🇺🇸 United States | 🌐 | [BL] 26"
+  - name: "🇺🇸 United States | 🌐 | [BL] 40"
+    type: vless
+    server: grimness-backlogs.cdn-content.com
+    port: 443
+    uuid: 8fa74247-8816-4caf-b2c8-0dadff14ee3c
+    udp: true
+    tls: true
+    servername: grimness-backlogs.cdn-content.com
+    client-fingerprint: safari
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: grimness-backlogs.cdn-content.com
+  - name: "🇺🇸 United States | 🌐 | [BL] 41"
     type: vless
     server: piracy-android.video-streams.org
     port: 443
@@ -634,14 +765,12 @@ proxies:
     tls: true
     servername: piracy-android.video-streams.org
     client-fingerprint: chrome
-    alpn:
-      - http/1.1
     network: ws
     ws-opts:
       path: "/ws"
       headers:
         Host: piracy-android.video-streams.org
-  - name: "🇺🇸 United States | 🌐 | [BL] 27"
+  - name: "🇺🇸 United States | 🌐 | [BL] 42"
     type: vless
     server: bounded-crammed.video-streams.org
     port: 443
@@ -657,55 +786,65 @@ proxies:
       path: "/ws"
       headers:
         Host: bounded-crammed.video-streams.org
-  - name: "🇺🇸 United States | 🌐 | [BL] 28"
+  - name: "🇺🇸 United States | 🌐 | [BL] 43"
     type: vless
-    server: 199.232.153.242
+    server: 151.101.65.242
     port: 443
-    uuid: a375fa6a-bef7-4f71-92f0-17976e5afaac
+    uuid: 9b733a43-cf91-4ba0-bd76-6ca8b42e827a
     udp: true
     tls: true
-    servername: minimize-evenness.cdn-content.com
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
+    servername: adheres-scruple.quick-cdn.net
+    client-fingerprint: firefox
     network: ws
     ws-opts:
       path: "/ws"
       headers:
-        Host: minimize-evenness.cdn-content.com
-  - name: "🇺🇸 United States | 🌐 | [BL] 29"
-    type: vless
-    server: 146.75.29.242
-    port: 443
-    uuid: abd924f4-132d-4ad3-ac2a-3aa01b8e5923
-    udp: true
-    tls: true
-    servername: minimize-evenness.cdn-content.com
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: minimize-evenness.cdn-content.com
-  - name: "🇺🇸 United States | 🌐 | [BL] 30"
+        Host: adheres-scruple.quick-cdn.net
+  - name: "🇺🇸 United States | 🌐 | [BL] 44"
     type: vless
     server: ghosts-spasm.quick-cdn.net
     port: 443
-    uuid: ad19e43c-362d-42cb-9c2b-a6955cbc6af0
+    uuid: 9d50fde6-7e89-4dee-9fee-17a77046604c
     udp: true
     tls: true
     servername: ghosts-spasm.quick-cdn.net
     client-fingerprint: chrome
-    alpn:
-      - http/1.1
     network: ws
     ws-opts:
       path: "/ws"
       headers:
         Host: ghosts-spasm.quick-cdn.net
-  - name: "🇺🇸 United States | 🌐 | [BL] 31"
+  - name: "🇺🇸 United States | 🌐 | [BL] 45"
+    type: vless
+    server: adheres-scruple.quick-cdn.net
+    port: 443
+    uuid: a9c57d75-a2d3-47f7-9fd5-020a8c918b93
+    udp: true
+    tls: true
+    servername: adheres-scruple.quick-cdn.net
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: adheres-scruple.quick-cdn.net
+  - name: "🇺🇸 United States | 🌐 | [BL] 46"
+    type: vless
+    server: 151.101.1.242
+    port: 443
+    uuid: b0cf4078-96b8-4e11-80a8-0f9352565a16
+    udp: true
+    tls: true
+    servername: minimize-evenness.cdn-content.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: minimize-evenness.cdn-content.com
+  - name: "🇺🇸 United States | 🌐 | [BL] 47"
     type: vless
     server: 151.101.193.242
     port: 443
@@ -719,7 +858,7 @@ proxies:
       path: "/ws"
       headers:
         Host: adheres-scruple.quick-cdn.net
-  - name: "🇺🇸 United States | 🌐 | [BL] 32"
+  - name: "🇺🇸 United States | 🌐 | [BL] 48"
     type: vless
     server: piracy-android.video-streams.org
     port: 443
@@ -735,11 +874,11 @@ proxies:
       path: "/ws"
       headers:
         Host: piracy-android.video-streams.org
-  - name: "🇺🇸 United States | 🌐 | [BL] 33"
+  - name: "🇺🇸 United States | 🌐 | [BL] 49"
     type: vless
     server: ghosts-spasm.quick-cdn.net
     port: 443
-    uuid: bc97af40-e59a-4d96-b0a3-349c35e45b48
+    uuid: b7eb28c2-9bd0-4c53-859c-dc0646288b8c
     udp: true
     tls: true
     servername: ghosts-spasm.quick-cdn.net
@@ -751,41 +890,11 @@ proxies:
       path: "/ws"
       headers:
         Host: ghosts-spasm.quick-cdn.net
-  - name: "🇺🇸 United States | 🌐 | [BL] 34"
-    type: vless
-    server: piracy-android.video-streams.org
-    port: 443
-    uuid: c7f0b683-61ea-48c5-93f1-783459ba2124
-    udp: true
-    tls: true
-    servername: piracy-android.video-streams.org
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: piracy-android.video-streams.org
-  - name: "🇺🇸 United States | 🌐 | [BL] 35"
-    type: vless
-    server: 151.101.129.242
-    port: 443
-    uuid: cd9e00aa-3581-42e4-a35c-56ae3a521159
-    udp: true
-    tls: true
-    servername: minimize-evenness.cdn-content.com
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: minimize-evenness.cdn-content.com
-  - name: "🇺🇸 United States | 🌐 | [BL] 36"
+  - name: "🇺🇸 United States | 🌐 | [BL] 50"
     type: vless
     server: bounded-crammed.video-streams.org
     port: 443
-    uuid: d51b3246-21fe-47fb-b600-a7b7b9b6182d
+    uuid: b973d146-31db-4ec4-8d62-c034598d4d79
     udp: true
     tls: true
     servername: bounded-crammed.video-streams.org
@@ -795,27 +904,25 @@ proxies:
       path: "/ws"
       headers:
         Host: bounded-crammed.video-streams.org
-  - name: "🇺🇸 United States | 🌐 | [BL] 37"
+  - name: "🇺🇸 United States | 🌐 | [BL] 51"
     type: vless
-    server: grimness-backlogs.cdn-content.com
+    server: 151.101.65.242
     port: 443
-    uuid: d51b3246-21fe-47fb-b600-a7b7b9b6182d
+    uuid: c7f0b683-61ea-48c5-93f1-783459ba2124
     udp: true
     tls: true
-    servername: grimness-backlogs.cdn-content.com
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
+    servername: piracy-android.video-streams.org
+    client-fingerprint: firefox
     network: ws
     ws-opts:
       path: "/ws"
       headers:
-        Host: grimness-backlogs.cdn-content.com
-  - name: "🇺🇸 United States | 🌐 | [BL] 38"
+        Host: piracy-android.video-streams.org
+  - name: "🇺🇸 United States | 🌐 | [BL] 52"
     type: vless
     server: minimize-evenness.cdn-content.com
     port: 443
-    uuid: e12bb1dc-d315-47e3-9184-cb655afe6421
+    uuid: c7f0b683-61ea-48c5-93f1-783459ba2124
     udp: true
     tls: true
     servername: minimize-evenness.cdn-content.com
@@ -827,7 +934,95 @@ proxies:
       path: "/ws"
       headers:
         Host: minimize-evenness.cdn-content.com
-  - name: "🇺🇸 United States | 🌐 | [BL] 39"
+  - name: "🇺🇸 United States | 🌐 | [BL] 53"
+    type: vless
+    server: adheres-scruple.quick-cdn.net
+    port: 443
+    uuid: c9ff358e-20c4-4979-bc14-acc3daaf1297
+    udp: true
+    tls: true
+    servername: adheres-scruple.quick-cdn.net
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: adheres-scruple.quick-cdn.net
+  - name: "🇺🇸 United States | 🌐 | [BL] 54"
+    type: vless
+    server: piracy-android.video-streams.org
+    port: 443
+    uuid: c9ff358e-20c4-4979-bc14-acc3daaf1297
+    udp: true
+    tls: true
+    servername: piracy-android.video-streams.org
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: piracy-android.video-streams.org
+  - name: "🇺🇸 United States | 🌐 | [BL] 55"
+    type: vless
+    server: grimness-backlogs.cdn-content.com
+    port: 443
+    uuid: d1ae5c78-3b70-40e6-899d-9f3650208368
+    udp: true
+    tls: true
+    servername: grimness-backlogs.cdn-content.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: grimness-backlogs.cdn-content.com
+  - name: "🇺🇸 United States | 🌐 | [BL] 56"
+    type: vless
+    server: minimize-evenness.cdn-content.com
+    port: 443
+    uuid: d4fb9d35-6ae7-422a-8ac1-8903d12f8962
+    udp: true
+    tls: true
+    servername: minimize-evenness.cdn-content.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: minimize-evenness.cdn-content.com
+  - name: "🇺🇸 United States | 🌐 | [BL] 57"
+    type: vless
+    server: 151.101.65.242
+    port: 443
+    uuid: daed3ca3-6b04-44e3-bd55-a9995e88d70b
+    udp: true
+    tls: true
+    servername: minimize-evenness.cdn-content.com
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: minimize-evenness.cdn-content.com
+  - name: "🇺🇸 United States | 🌐 | [BL] 58"
+    type: vless
+    server: adheres-scruple.quick-cdn.net
+    port: 443
+    uuid: e12bb1dc-d315-47e3-9184-cb655afe6421
+    udp: true
+    tls: true
+    servername: adheres-scruple.quick-cdn.net
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: adheres-scruple.quick-cdn.net
+  - name: "🇺🇸 United States | 🌐 | [BL] 59"
     type: vless
     server: piracy-android.video-streams.org
     port: 443
@@ -836,12 +1031,28 @@ proxies:
     tls: true
     servername: piracy-android.video-streams.org
     client-fingerprint: chrome
+    alpn:
+      - http/1.1
     network: ws
     ws-opts:
       path: "/ws"
       headers:
         Host: piracy-android.video-streams.org
-  - name: "🇺🇸 United States | 🌐 | [BL] 40"
+  - name: "🇺🇸 United States | 🌐 | [BL] 60"
+    type: vless
+    server: 151.101.129.242
+    port: 443
+    uuid: e262a993-a3be-4f36-95ba-81dc1e32d78c
+    udp: true
+    tls: true
+    servername: grimness-backlogs.cdn-content.com
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: grimness-backlogs.cdn-content.com
+  - name: "🇺🇸 United States | 🌐 | [BL] 61"
     type: vless
     server: adheres-scruple.quick-cdn.net
     port: 443
@@ -857,23 +1068,37 @@ proxies:
       path: "/ws"
       headers:
         Host: adheres-scruple.quick-cdn.net
-  - name: "🇺🇸 United States | 🌐 | [BL] 41"
+  - name: "🇺🇸 United States | 🌐 | [BL] 62"
     type: vless
-    server: bounded-crammed.video-streams.org
+    server: minimize-evenness.cdn-content.com
     port: 443
-    uuid: eb199167-16d6-45d0-aadb-314cab5a4e72
+    uuid: e836302b-2ab2-4286-b584-c1dcf2c2e6a0
     udp: true
     tls: true
-    servername: bounded-crammed.video-streams.org
-    client-fingerprint: chrome
+    servername: minimize-evenness.cdn-content.com
     alpn:
       - http/1.1
     network: ws
     ws-opts:
       path: "/ws"
       headers:
-        Host: bounded-crammed.video-streams.org
-  - name: "🇺🇸 United States | 🌐 | [BL] 42"
+        Host: minimize-evenness.cdn-content.com
+    client-fingerprint: chrome
+  - name: "🇺🇸 United States | 🌐 | [BL] 63"
+    type: vless
+    server: adheres-scruple.quick-cdn.net
+    port: 443
+    uuid: e8bec62c-ba78-45e9-a216-44c1a138b88d
+    udp: true
+    tls: true
+    servername: adheres-scruple.quick-cdn.net
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: adheres-scruple.quick-cdn.net
+  - name: "🇺🇸 United States | 🌐 | [BL] 64"
     type: vless
     server: ghosts-spasm.quick-cdn.net
     port: 443
@@ -887,30 +1112,27 @@ proxies:
       path: "/ws"
       headers:
         Host: ghosts-spasm.quick-cdn.net
-  - name: "🇺🇸 United States | 🌐 | [BL] 43"
+  - name: "🇺🇸 United States | 🌐 | [BL] 65"
     type: vless
-    server: grimness-backlogs.cdn-content.com
+    server: 151.101.193.242
     port: 443
-    uuid: f1646667-a135-4246-9a9a-de0c53b0dc8d
+    uuid: ecbc4229-e8d3-4607-8f02-fd592c9a0743
     udp: true
     tls: true
-    servername: grimness-backlogs.cdn-content.com
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
+    servername: adheres-scruple.quick-cdn.net
+    client-fingerprint: firefox
     network: ws
     ws-opts:
       path: "/ws"
       headers:
-        Host: grimness-backlogs.cdn-content.com
-  - name: "🇺🇸 United States | 🌐 | [BL] 44"
+        Host: adheres-scruple.quick-cdn.net
+  - name: "🇺🇸 United States | 🌐 | [BL] 66"
     type: vless
     server: minimize-evenness.cdn-content.com
     port: 443
-    uuid: fadcfc37-376a-42e6-a5cd-cb65988663d3
+    uuid: ecbc4229-e8d3-4607-8f02-fd592c9a0743
     udp: true
     tls: true
-    servername: minimize-evenness.cdn-content.com
     client-fingerprint: chrome
     alpn:
       - http/1.1
@@ -919,21 +1141,75 @@ proxies:
       path: "/ws"
       headers:
         Host: minimize-evenness.cdn-content.com
-  - name: "🇺🇸 United States, Detroit | [BL]"
+  - name: "🇺🇸 United States | 🌐 | [BL] 67"
     type: vless
-    server: 82.64.120.239
+    server: grimness-backlogs.cdn-content.com
     port: 443
-    uuid: f44f5cc3-df22-4183-a61b-c653485dd7f9
+    uuid: f1646667-a135-4246-9a9a-de0c53b0dc8d
     udp: true
     tls: true
-    servername: jyfrj1cims.dev.onappjet.com
+    servername: grimness-backlogs.cdn-content.com
+    client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: "/jx-o4e0xzvx0107se"
+      path: "/ws"
       headers:
-        Host: jyfrj1cims.dev.onappjet.com
+        Host: grimness-backlogs.cdn-content.com
+  - name: "🇺🇸 United States | 🌐 | [BL] 68"
+    type: vless
+    server: piracy-android.video-streams.org
+    port: 443
+    uuid: f2a7b23e-6ec3-432b-8381-5219d80f606f
+    udp: true
+    tls: true
+    servername: piracy-android.video-streams.org
+    client-fingerprint: ios
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: piracy-android.video-streams.org
+  - name: "🇺🇸 United States | 🌐 | [BL] 69"
+    type: vless
+    server: 151.101.21.242
+    port: 443
+    uuid: f80cfcb4-9bd1-4a0d-a50b-28e3eea107d8
+    udp: true
+    tls: true
+    servername: bounded-crammed.video-streams.org
     client-fingerprint: chrome
-  - name: "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇩🇪 🇬🇧 🇵🇱 | [BL]"
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: bounded-crammed.video-streams.org
+  - name: "🇺🇸 United States, Bear | [BL]"
+    type: vless
+    server: minimize-evenness.cdn-content.com
+    port: 443
+    uuid: 9760fa51-423f-4000-9dd8-15eccf811982
+    udp: true
+    tls: true
+    servername: minimize-evenness.cdn-content.com
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: minimize-evenness.cdn-content.com
+  - name: "🇺🇸 United States, Los Angeles | 🌐 | [BL]"
+    type: vless
+    server: us3.shtil.io
+    port: 443
+    uuid: 86a83d11-d751-4b60-aa4e-1dca5cff7028
+    udp: true
+    tls: true
+    servername: us3.shtil.io
+    client-fingerprint: firefox
+    network: tcp
+  - name: "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇩🇪 🇬🇧 🇮🇶 🇵🇱 | [BL]"
     type: vless
     server: 43.174.193.1
     port: 443
@@ -941,40 +1217,44 @@ proxies:
     udp: true
     tls: true
     servername: ccc.010304.xyz
-    client-fingerprint: ios
+    client-fingerprint: edge
     network: ws
     ws-opts:
-      path: "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560"
+      path: "/?TELEGRAM----ICV2RAY----?ed=2560fp=chrome"
       headers:
         Host: ccc.010304.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
+  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇷 🇭🇰 | [BL]"
     type: vless
-    server: 188.164.248.216
+    server: 101.32.142.168
     port: 443
-    uuid: d342d11e-d224-4463-b982-532309285094
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
     udp: true
     tls: true
-    servername: ccc.010304.xyz
-    client-fingerprint: ios
+    servername: xy1ej.stream-node-us.danfeng.qzz.io
+    client-fingerprint: firefox
+    alpn:
+      - http/1.1
     network: ws
     ws-opts:
-      path: "/fp=chrome"
+      path: "/danfeng?ed=2560"
       headers:
-        Host: ccc.010304.xyz
-  - name: "🌐 Anycast-IP | 🇫🇷 | [BL]"
+        Host: xy1ej.stream-node-us.danfeng.qzz.io
+  - name: "🌐 Anycast-IP | 🇵🇭 🇺🇸 | [BL]"
     type: vless
-    server: 199.232.78.160
-    port: 443
-    uuid: 49e29dba-814a-50b0-b4a9-deffe26ae624
+    server: 8.220.180.112
+    port: 80
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
     udp: true
     tls: true
-    servername: ssl.fastly.com
-    client-fingerprint: chrome
+    servername: xy1ej.stream-node-us.danfeng.qzz.io
+    client-fingerprint: firefox
+    alpn:
+      - http/1.1
     network: ws
     ws-opts:
-      path: "/"
+      path: "/danfeng?ed=2560"
       headers:
-        Host: Appxdn.global.ssl.fastly.net
+        Host: xy1ej.stream-node-us.danfeng.qzz.io
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -982,19 +1262,13 @@ proxy-groups:
       - "♻️ 自动选择"
       - DIRECT
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
-      - "🇦🇱 Albania, Tirana | [BL]"
-      - "🇪🇪 Estonia, Tallinn | [BL]"
-      - "🇬🇪 Georgia, Tbilisi (Nadzaladevi District) | [BL]"
-      - "🇬🇪 Georgia, Tbilisi (Nadzaladevi District) | [BL] 2"
       - "🇩🇪 Germany, Falkenstein | 🌐 | [BL]"
       - "🇩🇪 Germany, Frankfurt am Main | [BL]"
       - "🇩🇪 Germany, Frankfurt am Main | [BL] 2"
-      - "🇩🇪 Germany, Frankfurt am Main | [BL] 3"
-      - "🇱🇻 Latvia, Riga | 🌐 | [BL]"
+      - "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]"
+      - "🇱🇻 Latvia, Riga | [BL]"
       - "🇳🇱 The Netherlands, Amsterdam | [BL]"
-      - "🇳🇱 The Netherlands, Amsterdam | [BL] 2"
-      - "🇬🇧 United Kingdom, London | [BL]"
-      - "🇬🇧 United Kingdom, London | [BL] 2"
+      - "🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]"
       - "🇺🇸 United States | 🌐 | [BL]"
       - "🇺🇸 United States | 🌐 | [BL] 2"
       - "🇺🇸 United States | 🌐 | [BL] 3"
@@ -1039,10 +1313,36 @@ proxy-groups:
       - "🇺🇸 United States | 🌐 | [BL] 42"
       - "🇺🇸 United States | 🌐 | [BL] 43"
       - "🇺🇸 United States | 🌐 | [BL] 44"
-      - "🇺🇸 United States, Detroit | [BL]"
-      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇩🇪 🇬🇧 🇵🇱 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
-      - "🌐 Anycast-IP | 🇫🇷 | [BL]"
+      - "🇺🇸 United States | 🌐 | [BL] 45"
+      - "🇺🇸 United States | 🌐 | [BL] 46"
+      - "🇺🇸 United States | 🌐 | [BL] 47"
+      - "🇺🇸 United States | 🌐 | [BL] 48"
+      - "🇺🇸 United States | 🌐 | [BL] 49"
+      - "🇺🇸 United States | 🌐 | [BL] 50"
+      - "🇺🇸 United States | 🌐 | [BL] 51"
+      - "🇺🇸 United States | 🌐 | [BL] 52"
+      - "🇺🇸 United States | 🌐 | [BL] 53"
+      - "🇺🇸 United States | 🌐 | [BL] 54"
+      - "🇺🇸 United States | 🌐 | [BL] 55"
+      - "🇺🇸 United States | 🌐 | [BL] 56"
+      - "🇺🇸 United States | 🌐 | [BL] 57"
+      - "🇺🇸 United States | 🌐 | [BL] 58"
+      - "🇺🇸 United States | 🌐 | [BL] 59"
+      - "🇺🇸 United States | 🌐 | [BL] 60"
+      - "🇺🇸 United States | 🌐 | [BL] 61"
+      - "🇺🇸 United States | 🌐 | [BL] 62"
+      - "🇺🇸 United States | 🌐 | [BL] 63"
+      - "🇺🇸 United States | 🌐 | [BL] 64"
+      - "🇺🇸 United States | 🌐 | [BL] 65"
+      - "🇺🇸 United States | 🌐 | [BL] 66"
+      - "🇺🇸 United States | 🌐 | [BL] 67"
+      - "🇺🇸 United States | 🌐 | [BL] 68"
+      - "🇺🇸 United States | 🌐 | [BL] 69"
+      - "🇺🇸 United States, Bear | [BL]"
+      - "🇺🇸 United States, Los Angeles | 🌐 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇩🇪 🇬🇧 🇮🇶 🇵🇱 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇫🇷 🇭🇰 | [BL]"
+      - "🌐 Anycast-IP | 🇵🇭 🇺🇸 | [BL]"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -1050,19 +1350,13 @@ proxy-groups:
     tolerance: 50
     proxies:
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
-      - "🇦🇱 Albania, Tirana | [BL]"
-      - "🇪🇪 Estonia, Tallinn | [BL]"
-      - "🇬🇪 Georgia, Tbilisi (Nadzaladevi District) | [BL]"
-      - "🇬🇪 Georgia, Tbilisi (Nadzaladevi District) | [BL] 2"
       - "🇩🇪 Germany, Falkenstein | 🌐 | [BL]"
       - "🇩🇪 Germany, Frankfurt am Main | [BL]"
       - "🇩🇪 Germany, Frankfurt am Main | [BL] 2"
-      - "🇩🇪 Germany, Frankfurt am Main | [BL] 3"
-      - "🇱🇻 Latvia, Riga | 🌐 | [BL]"
+      - "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]"
+      - "🇱🇻 Latvia, Riga | [BL]"
       - "🇳🇱 The Netherlands, Amsterdam | [BL]"
-      - "🇳🇱 The Netherlands, Amsterdam | [BL] 2"
-      - "🇬🇧 United Kingdom, London | [BL]"
-      - "🇬🇧 United Kingdom, London | [BL] 2"
+      - "🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]"
       - "🇺🇸 United States | 🌐 | [BL]"
       - "🇺🇸 United States | 🌐 | [BL] 2"
       - "🇺🇸 United States | 🌐 | [BL] 3"
@@ -1107,10 +1401,36 @@ proxy-groups:
       - "🇺🇸 United States | 🌐 | [BL] 42"
       - "🇺🇸 United States | 🌐 | [BL] 43"
       - "🇺🇸 United States | 🌐 | [BL] 44"
-      - "🇺🇸 United States, Detroit | [BL]"
-      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇩🇪 🇬🇧 🇵🇱 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
-      - "🌐 Anycast-IP | 🇫🇷 | [BL]"
+      - "🇺🇸 United States | 🌐 | [BL] 45"
+      - "🇺🇸 United States | 🌐 | [BL] 46"
+      - "🇺🇸 United States | 🌐 | [BL] 47"
+      - "🇺🇸 United States | 🌐 | [BL] 48"
+      - "🇺🇸 United States | 🌐 | [BL] 49"
+      - "🇺🇸 United States | 🌐 | [BL] 50"
+      - "🇺🇸 United States | 🌐 | [BL] 51"
+      - "🇺🇸 United States | 🌐 | [BL] 52"
+      - "🇺🇸 United States | 🌐 | [BL] 53"
+      - "🇺🇸 United States | 🌐 | [BL] 54"
+      - "🇺🇸 United States | 🌐 | [BL] 55"
+      - "🇺🇸 United States | 🌐 | [BL] 56"
+      - "🇺🇸 United States | 🌐 | [BL] 57"
+      - "🇺🇸 United States | 🌐 | [BL] 58"
+      - "🇺🇸 United States | 🌐 | [BL] 59"
+      - "🇺🇸 United States | 🌐 | [BL] 60"
+      - "🇺🇸 United States | 🌐 | [BL] 61"
+      - "🇺🇸 United States | 🌐 | [BL] 62"
+      - "🇺🇸 United States | 🌐 | [BL] 63"
+      - "🇺🇸 United States | 🌐 | [BL] 64"
+      - "🇺🇸 United States | 🌐 | [BL] 65"
+      - "🇺🇸 United States | 🌐 | [BL] 66"
+      - "🇺🇸 United States | 🌐 | [BL] 67"
+      - "🇺🇸 United States | 🌐 | [BL] 68"
+      - "🇺🇸 United States | 🌐 | [BL] 69"
+      - "🇺🇸 United States, Bear | [BL]"
+      - "🇺🇸 United States, Los Angeles | 🌐 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇩🇪 🇬🇧 🇮🇶 🇵🇱 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇫🇷 🇭🇰 | [BL]"
+      - "🌐 Anycast-IP | 🇵🇭 🇺🇸 | [BL]"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
