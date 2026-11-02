@@ -1,5 +1,5 @@
 # 订阅 33.1.txt -> Clash
-# 节点数量: 7
+# 节点数量: 4
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -40,41 +40,20 @@ dns:
     - "https://doh.pub/dns-query"
     - "https://dns.alidns.com/dns-query"
 proxies:
-  - name: "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN"
-    type: vless
-    server: 37.18.14.43
-    port: 8443
-    uuid: 7dd69047-047e-422e-a2ba-ed773c34fd1a
-    udp: true
-    tls: true
-    servername: flatcrest.net
-    client-fingerprint: ios
-    alpn:
-      - http/1.1
-      - h2
-    network: xhttp
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: flatcrest.net
-      mode: auto
-  - name: "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN 2"
-    type: vless
-    server: flatcrest.net
-    port: 8443
-    uuid: 7dd69047-047e-422e-a2ba-ed773c34fd1a
-    udp: true
-    tls: true
-    servername: flatcrest.net
-    client-fingerprint: firefox
-    alpn:
-      - http/1.1
-      - h2
-    network: xhttp
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: flatcrest.net
-      mode: auto
   - name: "🇳🇱 The Netherlands [*CIDR] VK"
+    type: vless
+    server: 185.86.145.142
+    port: 2096
+    uuid: b877b58f-5995-4b25-abec-3213a2f95512
+    udp: true
+    tls: true
+    servername: cdn.freetato-converting.ru
+    network: xhttp
+    xhttp-opts:
+      path: "/chxh"
+      host: cdn.freetato-converting.ru
+    client-fingerprint: chrome
+  - name: "🇳🇱 The Netherlands [*CIDR] VK 2"
     type: vless
     server: cdn.freetato-converting.ru
     port: 2096
@@ -87,40 +66,6 @@ proxies:
       path: "/chxh"
       host: cdn.freetato-converting.ru
     client-fingerprint: chrome
-  - name: "🇷🇺 Russia | 🌐 [*CIDR] CDN"
-    type: vless
-    server: 37.18.14.43
-    port: 2053
-    uuid: 7dd69047-047e-422e-a2ba-ed773c34fd1a
-    udp: true
-    tls: true
-    servername: flatcrest.net
-    client-fingerprint: edge
-    alpn:
-      - http/1.1
-      - h2
-    network: xhttp
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: flatcrest.net
-      mode: auto
-  - name: "🇷🇺 Russia | 🌐 [*CIDR] CDN 2"
-    type: vless
-    server: flatcrest.net
-    port: 2053
-    uuid: 7dd69047-047e-422e-a2ba-ed773c34fd1a
-    udp: true
-    tls: true
-    servername: flatcrest.net
-    client-fingerprint: edge
-    alpn:
-      - http/1.1
-      - h2
-    network: xhttp
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: flatcrest.net
-      mode: auto
   - name: node
     type: vmess
     server: 158.160.180.165
@@ -153,11 +98,8 @@ proxy-groups:
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN"
-      - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN 2"
       - "🇳🇱 The Netherlands [*CIDR] VK"
-      - "🇷🇺 Russia | 🌐 [*CIDR] CDN"
-      - "🇷🇺 Russia | 🌐 [*CIDR] CDN 2"
+      - "🇳🇱 The Netherlands [*CIDR] VK 2"
       - node
       - "node 2"
   - name: "♻️ 自动选择"
@@ -166,11 +108,8 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN"
-      - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN 2"
       - "🇳🇱 The Netherlands [*CIDR] VK"
-      - "🇷🇺 Russia | 🌐 [*CIDR] CDN"
-      - "🇷🇺 Russia | 🌐 [*CIDR] CDN 2"
+      - "🇳🇱 The Netherlands [*CIDR] VK 2"
       - node
       - "node 2"
 rules:

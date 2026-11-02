@@ -42,80 +42,17 @@ dns:
 proxies:
   - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
     type: vless
-    server: 185.178.208.140
+    server: 87.242.119.253
     port: 443
-    uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+    uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
     udp: true
     tls: true
-    servername: static.bakarova-top.ru
-    client-fingerprint: safari
+    servername: hvtlr-ru-47sb.fade.mom
+    client-fingerprint: chrome
     alpn:
-      - h2
-    network: xhttp
-    xhttp-opts:
-      path: "/api/v2/events"
-      host: static.bakarova-top.ru
-      mode: packet-up
-  - name: "🇧🇬 Bulgaria [*CIDR]"
-    type: vless
-    server: 95.163.232.242
-    port: 8443
-    uuid: 7dd69047-047e-422e-a2ba-ed773c34fd1a
-    udp: true
-    tls: true
-    servername: fitindoor.net
-    client-fingerprint: firefox
-    network: xhttp
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: fitindoor.net
-      mode: auto
-  - name: "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN"
-    type: vless
-    server: 37.18.14.43
-    port: 8443
-    uuid: 7dd69047-047e-422e-a2ba-ed773c34fd1a
-    udp: true
-    tls: true
-    servername: flatcrest.net
-    client-fingerprint: ios
-    alpn:
-      - http/1.1
-      - h2
-    network: xhttp
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: flatcrest.net
-      mode: auto
-  - name: "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN 2"
-    type: vless
-    server: flatcrest.net
-    port: 8443
-    uuid: 7dd69047-047e-422e-a2ba-ed773c34fd1a
-    udp: true
-    tls: true
-    servername: flatcrest.net
-    client-fingerprint: firefox
-    alpn:
-      - http/1.1
-      - h2
-    network: xhttp
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: flatcrest.net
-      mode: auto
-  - name: "🇪🇪 Estonia | 🌐 [*CIDR]"
-    type: vless
-    server: 188.225.62.62
-    port: 7443
-    uuid: 6116f0f3-15eb-4217-b38e-16514dc00ba1
-    udp: true
-    tls: true
-    servername: ru2.datacore-tech.ru
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
+      - "[http/1.1"
     network: tcp
-  - name: "🇩🇪 Germany | 🌐 [*CIDR]"
+  - name: "🇩🇪 Germany [*CIDR]"
     type: vless
     server: 200.169.184.168
     port: 443
@@ -123,10 +60,24 @@ proxies:
     udp: true
     tls: true
     servername: tm6.24convertflow.ru
-    client-fingerprint: ios
+    client-fingerprint: chrome
     reality-opts:
       public-key: 2IylNqpuTBeUvd333tXWY6i0l8nkH6o5qfRVKZm6FA0
       short-id: e0aadc6f38ff06a8
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇩🇪 Germany | 🌐 [*CIDR]"
+    type: vless
+    server: de3.kartamira.cc
+    port: 5555
+    uuid: aa4450fa-0292-4275-a17d-b01ae08360b7
+    udp: true
+    tls: true
+    servername: de6-site.kartamira.cc
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
     flow: xtls-rprx-vision
     network: tcp
   - name: "🇱🇹 Lithuania [*CIDR]"
@@ -161,16 +112,34 @@ proxies:
       path: "/blog/posts"
       headers:
         Host: lorettmay.top
-  - name: "🇵🇱 Poland | 🌐 [*CIDR]"
+  - name: "🇵🇱 Poland [*CIDR]"
     type: vless
-    server: fr1.robotodata.ru
-    port: 7443
-    uuid: 6116f0f3-15eb-4217-b38e-16514dc00ba1
+    server: 185.178.208.140
+    port: 443
+    uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
     udp: true
     tls: true
-    servername: ru2.datacore-tech.ru
-    client-fingerprint: safari
-    flow: xtls-rprx-vision
+    servername: static.bakarova-top.ru
+    client-fingerprint: edge
+    alpn:
+      - h2
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/events"
+      host: static.bakarova-top.ru
+      mode: packet-up
+  - name: "🇨🇭 Switzerland [*CIDR]"
+    type: vless
+    server: ch2.h1cloud.net
+    port: 25879
+    uuid: 241306b3-9f27-4ed3-9524-6c0792c55856
+    udp: true
+    tls: true
+    servername: www.bing.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: XuI492LMe1OPIwQH5TQlIo33JRqMM3kfnto62tbx5FU
+      short-id: f1a7a14461a3f389
     network: tcp
   - name: "🇳🇱 The Netherlands [*CIDR]"
     type: vless
@@ -188,6 +157,19 @@ proxies:
     network: tcp
   - name: "🇳🇱 The Netherlands [*CIDR] VK"
     type: vless
+    server: 185.86.145.142
+    port: 2096
+    uuid: b877b58f-5995-4b25-abec-3213a2f95512
+    udp: true
+    tls: true
+    servername: cdn.freetato-converting.ru
+    network: xhttp
+    xhttp-opts:
+      path: "/chxh"
+      host: cdn.freetato-converting.ru
+    client-fingerprint: chrome
+  - name: "🇳🇱 The Netherlands [*CIDR] VK 2"
+    type: vless
     server: cdn.freetato-converting.ru
     port: 2096
     uuid: b877b58f-5995-4b25-abec-3213a2f95512
@@ -199,6 +181,34 @@ proxies:
       path: "/chxh"
       host: cdn.freetato-converting.ru
     client-fingerprint: chrome
+  - name: "🇹🇷 Turkey [*CIDR]"
+    type: vless
+    server: tr2.h1cloud.net
+    port: 25021
+    uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
+    udp: true
+    tls: true
+    servername: www.samsung.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg
+      short-id: 17fa3af0924c88b3
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇬🇧 United Kingdom [*CIDR]"
+    type: vless
+    server: 95.182.121.7
+    port: 443
+    uuid: ccf353ca-fa34-43fc-8ed9-520fb9d74bf6
+    udp: true
+    tls: true
+    servername: va.stream-room.com
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/vless-ws"
+      headers:
+        Host: va.stream-room.com
   - name: "🇷🇺 Russia [*CIDR]"
     type: vless
     server: 193.53.126.91
@@ -207,9 +217,9 @@ proxies:
     udp: true
     tls: true
     servername: u695098u14c5ddd4s2358.gogocs.xyz
+    client-fingerprint: chrome
     flow: xtls-rprx-vision
     network: tcp
-    client-fingerprint: chrome
   - name: "🇷🇺 Russia [*CIDR] 2"
     type: vless
     server: s2359.kukuss.top
@@ -229,9 +239,9 @@ proxies:
     udp: true
     tls: true
     servername: u695098u14c5ddd4s2358.gogocs.xyz
-    client-fingerprint: chrome
     flow: xtls-rprx-vision
     network: tcp
+    client-fingerprint: chrome
   - name: "🇷🇺 Russia [*CIDR] 4"
     type: vless
     server: 185.229.9.135
@@ -250,33 +260,19 @@ proxies:
         Host: business.lesotorg-kirov.ru
   - name: "🇷🇺 Russia [*CIDR] 5"
     type: vless
-    server: 95.163.232.242
-    port: 2053
-    uuid: 7dd69047-047e-422e-a2ba-ed773c34fd1a
-    udp: true
-    tls: true
-    servername: fitindoor.net
-    client-fingerprint: firefox
-    network: xhttp
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: fitindoor.net
-      mode: auto
-  - name: "🇷🇺 Russia [*CIDR] 6"
-    type: vless
     server: 178.236.242.254
     port: 8443
     uuid: c05ec3c7-2784-da2b-aa98-a3c132860fcb
     udp: true
     tls: true
     servername: xnod13x.artemida.live
-    client-fingerprint: chrome
+    client-fingerprint: ios
     reality-opts:
       public-key: ZRTNgwFRP8viY4SQOgPTfWlLWJCwY3dr0aawA7vHwhU
       short-id: a1b2c3d4e5f6a7b8
     flow: xtls-rprx-vision
     network: tcp
-  - name: "🇷🇺 Russia [*CIDR] 7"
+  - name: "🇷🇺 Russia [*CIDR] 6"
     type: vless
     server: xnod13x.artemida.live
     port: 8443
@@ -284,7 +280,7 @@ proxies:
     udp: true
     tls: true
     servername: xnod13x.artemida.live
-    client-fingerprint: random
+    client-fingerprint: safari
     reality-opts:
       public-key: ZRTNgwFRP8viY4SQOgPTfWlLWJCwY3dr0aawA7vHwhU
       short-id: a1b2c3d4e5f6a7b8
@@ -312,40 +308,6 @@ proxies:
     client-fingerprint: chrome
     flow: xtls-rprx-vision
     network: tcp
-  - name: "🇷🇺 Russia | 🌐 [*CIDR] CDN"
-    type: vless
-    server: 37.18.14.43
-    port: 2053
-    uuid: 7dd69047-047e-422e-a2ba-ed773c34fd1a
-    udp: true
-    tls: true
-    servername: flatcrest.net
-    client-fingerprint: edge
-    alpn:
-      - http/1.1
-      - h2
-    network: xhttp
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: flatcrest.net
-      mode: auto
-  - name: "🇷🇺 Russia | 🌐 [*CIDR] CDN 2"
-    type: vless
-    server: flatcrest.net
-    port: 2053
-    uuid: 7dd69047-047e-422e-a2ba-ed773c34fd1a
-    udp: true
-    tls: true
-    servername: flatcrest.net
-    client-fingerprint: edge
-    alpn:
-      - http/1.1
-      - h2
-    network: xhttp
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: flatcrest.net
-      mode: auto
   - name: node
     type: vmess
     server: 158.160.180.165
@@ -372,6 +334,26 @@ proxies:
     tls: true
     network: tcp
     client-fingerprint: chrome
+  - name: "🇩🇪 Germany [*CIDR] 2"
+    type: trojan
+    server: de-bots4.h1cloud.net
+    port: 25267
+    password: happybirthdaydaniel
+    udp: true
+    servername: t.me/FuckTheWall
+    client-fingerprint: safari
+    skip-cert-verify: true
+    network: tcp
+  - name: "🇩🇪 Germany [*CIDR] 3"
+    type: trojan
+    server: de-bots4.h1cloud.net
+    port: 25267
+    password: happybirthdaydaniel
+    udp: true
+    servername: de-bots4.h1cloud.net
+    client-fingerprint: android
+    skip-cert-verify: true
+    network: tcp
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -379,29 +361,29 @@ proxy-groups:
       - "♻️ 自动选择"
       - DIRECT
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
-      - "🇧🇬 Bulgaria [*CIDR]"
-      - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN"
-      - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN 2"
-      - "🇪🇪 Estonia | 🌐 [*CIDR]"
+      - "🇩🇪 Germany [*CIDR]"
       - "🇩🇪 Germany | 🌐 [*CIDR]"
       - "🇱🇹 Lithuania [*CIDR]"
       - "🇱🇹 Lithuania [*CIDR] 2"
-      - "🇵🇱 Poland | 🌐 [*CIDR]"
+      - "🇵🇱 Poland [*CIDR]"
+      - "🇨🇭 Switzerland [*CIDR]"
       - "🇳🇱 The Netherlands [*CIDR]"
       - "🇳🇱 The Netherlands [*CIDR] VK"
+      - "🇳🇱 The Netherlands [*CIDR] VK 2"
+      - "🇹🇷 Turkey [*CIDR]"
+      - "🇬🇧 United Kingdom [*CIDR]"
       - "🇷🇺 Russia [*CIDR]"
       - "🇷🇺 Russia [*CIDR] 2"
       - "🇷🇺 Russia [*CIDR] 3"
       - "🇷🇺 Russia [*CIDR] 4"
       - "🇷🇺 Russia [*CIDR] 5"
       - "🇷🇺 Russia [*CIDR] 6"
-      - "🇷🇺 Russia [*CIDR] 7"
       - "🇷🇺 Russia | 🌐 [*CIDR]"
       - "🇷🇺 Russia | 🌐 [*CIDR] 2"
-      - "🇷🇺 Russia | 🌐 [*CIDR] CDN"
-      - "🇷🇺 Russia | 🌐 [*CIDR] CDN 2"
       - node
       - "node 2"
+      - "🇩🇪 Germany [*CIDR] 2"
+      - "🇩🇪 Germany [*CIDR] 3"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -409,29 +391,29 @@ proxy-groups:
     tolerance: 50
     proxies:
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
-      - "🇧🇬 Bulgaria [*CIDR]"
-      - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN"
-      - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN 2"
-      - "🇪🇪 Estonia | 🌐 [*CIDR]"
+      - "🇩🇪 Germany [*CIDR]"
       - "🇩🇪 Germany | 🌐 [*CIDR]"
       - "🇱🇹 Lithuania [*CIDR]"
       - "🇱🇹 Lithuania [*CIDR] 2"
-      - "🇵🇱 Poland | 🌐 [*CIDR]"
+      - "🇵🇱 Poland [*CIDR]"
+      - "🇨🇭 Switzerland [*CIDR]"
       - "🇳🇱 The Netherlands [*CIDR]"
       - "🇳🇱 The Netherlands [*CIDR] VK"
+      - "🇳🇱 The Netherlands [*CIDR] VK 2"
+      - "🇹🇷 Turkey [*CIDR]"
+      - "🇬🇧 United Kingdom [*CIDR]"
       - "🇷🇺 Russia [*CIDR]"
       - "🇷🇺 Russia [*CIDR] 2"
       - "🇷🇺 Russia [*CIDR] 3"
       - "🇷🇺 Russia [*CIDR] 4"
       - "🇷🇺 Russia [*CIDR] 5"
       - "🇷🇺 Russia [*CIDR] 6"
-      - "🇷🇺 Russia [*CIDR] 7"
       - "🇷🇺 Russia | 🌐 [*CIDR]"
       - "🇷🇺 Russia | 🌐 [*CIDR] 2"
-      - "🇷🇺 Russia | 🌐 [*CIDR] CDN"
-      - "🇷🇺 Russia | 🌐 [*CIDR] CDN 2"
       - node
       - "node 2"
+      - "🇩🇪 Germany [*CIDR] 2"
+      - "🇩🇪 Germany [*CIDR] 3"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"

@@ -1,5 +1,5 @@
 # 订阅 27.txt -> Clash
-# 节点数量: 17
+# 节点数量: 12
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -42,86 +42,6 @@ dns:
 proxies:
   - name: node
     type: vmess
-    server: 20.235.220.189
-    port: 443
-    uuid: f23bb427c1f94373876c2f43e9f790f3
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-    network: ws
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-    client-fingerprint: chrome
-  - name: "node 2"
-    type: vmess
-    server: 20.235.220.189
-    port: 443
-    uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-    network: ws
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-    client-fingerprint: chrome
-  - name: "node 3"
-    type: vmess
-    server: 120.48.133.162
-    port: 10086
-    uuid: fde10e39-48bb-4dcf-b3ba-71d711323a54
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 120.48.133.162
-  - name: "node 4"
-    type: vmess
-    server: 39.108.113.127
-    port: 10086
-    uuid: 19ee3050-be66-4850-9f13-fc9d47487a3c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 39.108.113.127
-  - name: "node 5"
-    type: vmess
-    server: 47.250.135.244
-    port: 10000
-    uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: "node 6"
-    type: vmess
-    server: 120.48.133.162
-    port: 10086
-    uuid: 4fc543d5-23ce-4556-ae2b-01685edd4397
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 120.48.133.162
-  - name: "node 7"
-    type: vmess
     server: 120.48.133.162
     port: 10086
     uuid: f81d0fc9-c6b0-4dab-a270-6e697e0a367f
@@ -133,7 +53,7 @@ proxies:
       path: "/"
       headers:
         Host: 120.48.133.162
-  - name: "node 8"
+  - name: "node 2"
     type: vmess
     server: 120.48.133.162
     port: 10086
@@ -146,20 +66,16 @@ proxies:
       path: "/"
       headers:
         Host: 120.48.133.162
-  - name: "node 9"
+  - name: "node 3"
     type: vmess
-    server: 39.108.113.127
-    port: 10086
-    uuid: fccbad0f-eb6c-4bdd-80ed-145409e2f761
+    server: 47.250.135.244
+    port: 10000
+    uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
     alterId: 0
     cipher: auto
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 39.108.113.127
-  - name: "node 10"
+    network: tcp
+  - name: "node 4"
     type: vmess
     server: mdk.mdmekjll.best
     port: 80
@@ -172,90 +88,65 @@ proxies:
       path: "/game/resources"
       headers:
         Host: mdk.mdmekjll.best
-  - name: "node 11"
-    type: vmess
-    server: 104.21.7.133
-    port: 80
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 | [BL]"
+  - name: "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]"
     type: trojan
-    server: 199.232.78.120
-    port: 443
-    password: MiTiVPN
+    server: de-bots4.h1cloud.net
+    port: 25267
+    password: happybirthdaydaniel
     udp: true
-    servername: firefox.com
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
-      headers:
-        Host: mitivpn-mitivpn-mitivpn.ac.ir
-  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
-    type: trojan
-    server: 151.101.36.120
-    port: 443
-    password: MiTiVPN
-    udp: true
-    servername: community.fastly.steamstatic.com
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
-      headers:
-        Host: mitivpn-mitivpn-mitivpn.ac.ir
-  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 2"
-    type: trojan
-    server: 151.101.36.120
-    port: 443
-    password: MiTiVPN
-    udp: true
-    servername: firefox.com
+    servername: de-bots4.h1cloud.net
     client-fingerprint: android
-    alpn:
-      - http/1.1
     skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
-      headers:
-        Host: mitivpn-mitivpn-mitivpn.ac.ir
-  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 3"
+    network: tcp
+  - name: "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] 2"
     type: trojan
-    server: 199.232.78.120
-    port: 443
-    password: MiTiVPN
+    server: de-bots4.h1cloud.net
+    port: 25267
+    password: happybirthdaydaniel
     udp: true
-    servername: community.fastly.steamstatic.com
-    client-fingerprint: chrome
-    alpn:
-      - "http%2F1.1"
+    servername: t.me/FuckTheWall
+    client-fingerprint: android
     skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: "/—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/NLSus—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN"
-      headers:
-        Host: mitivpn-mitivpn-mitivpn.ac.ir
-  - name: "🌐 Anycast-IP | 🇬🇧 🇸🇪 🇺🇸 | [BL]"
+    network: tcp
+  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 | [BL]"
     type: trojan
     server: 146.75.57.120
     port: 443
     password: MiTiVPN
     udp: true
     servername: firefox.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSus---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN"
+      headers:
+        Host: mitivpn--mitivpn-mitivpn.ac.ir
+  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 🇺🇸 | [BL]"
+    type: trojan
+    server: 151.101.36.120
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: community.fastly.steamstatic.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: mitivpn-mitivpn-mitivpn.ac.ir
+  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 🇺🇸 | [BL] 2"
+    type: trojan
+    server: 167.82.64.120
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: community.fastly.steamstatic.com
     client-fingerprint: android
     alpn:
       - http/1.1
@@ -265,9 +156,9 @@ proxies:
       path: "/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSus---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN"
       headers:
         Host: mitivpn--mitivpn-mitivpn.ac.ir
-  - name: "🌐 Anycast-IP | 🇸🇪 🇺🇸 | [BL]"
+  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 🇺🇸 | [BL] 3"
     type: trojan
-    server: 167.82.64.120
+    server: 199.232.78.120
     port: 443
     password: MiTiVPN
     udp: true
@@ -279,6 +170,38 @@ proxies:
     network: ws
     ws-opts:
       path: "/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSus---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN"
+      headers:
+        Host: mitivpn-mitivpn-mitivpn.ac.ir
+  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
+    type: trojan
+    server: 199.232.78.120
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: firefox.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: mitivpn-mitivpn-mitivpn.ac.ir
+  - name: "🌐 Anycast-IP | 🇬🇧 🇸🇪 🇺🇸 | [BL]"
+    type: trojan
+    server: 167.82.64.120
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: cdn.akamai.steamstatic.com
+    client-fingerprint: android
+    alpn:
+      - http/1.1
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSus---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
       headers:
         Host: mitivpn--mitivpn-mitivpn.ac.ir
 proxy-groups:
@@ -291,19 +214,14 @@ proxy-groups:
       - "node 2"
       - "node 3"
       - "node 4"
-      - "node 5"
-      - "node 6"
-      - "node 7"
-      - "node 8"
-      - "node 9"
-      - "node 10"
-      - "node 11"
+      - "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]"
+      - "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] 2"
       - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 🇺🇸 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 🇺🇸 | [BL] 3"
       - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 3"
       - "🌐 Anycast-IP | 🇬🇧 🇸🇪 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇸🇪 🇺🇸 | [BL]"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -314,19 +232,14 @@ proxy-groups:
       - "node 2"
       - "node 3"
       - "node 4"
-      - "node 5"
-      - "node 6"
-      - "node 7"
-      - "node 8"
-      - "node 9"
-      - "node 10"
-      - "node 11"
+      - "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]"
+      - "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] 2"
       - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 🇺🇸 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇪 🇺🇸 | [BL] 3"
       - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 3"
       - "🌐 Anycast-IP | 🇬🇧 🇸🇪 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇸🇪 🇺🇸 | [BL]"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
