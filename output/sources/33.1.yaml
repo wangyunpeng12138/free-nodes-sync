@@ -1,5 +1,5 @@
 # 订阅 33.1.txt -> Clash
-# 节点数量: 6
+# 节点数量: 7
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -40,27 +40,11 @@ dns:
     - "https://doh.pub/dns-query"
     - "https://dns.alidns.com/dns-query"
 proxies:
-  - name: "🇳🇱 The Netherlands | 🌐 [*CIDR] VK"
-    type: vless
-    server: 185.86.145.207
-    port: 443
-    uuid: 553929aa-ae34-46ce-9045-054133776b62
-    udp: true
-    tls: true
-    servername: mama.beryi.pro
-    client-fingerprint: edge
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/pcws"
-      headers:
-        Host: mama.beryi.pro
   - name: "🇳🇱 The Netherlands [*CIDR] VK"
     type: vless
     server: 87.239.106.24
     port: 53571
-    uuid: 553929aa-ae34-46ce-9045-054133776b62
+    uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
     udp: true
     tls: true
     servername: xnl.chick-team.ru
@@ -81,7 +65,7 @@ proxies:
     udp: true
     tls: true
     servername: ara.rtkdvbr.cc
-    client-fingerprint: qq
+    client-fingerprint: chrome
     alpn:
       - http/1.1
     network: ws
@@ -97,11 +81,39 @@ proxies:
     udp: true
     tls: true
     servername: cdn.freetato-converting.ru
-    client-fingerprint: chrome
     network: xhttp
     xhttp-opts:
       path: "/chxh"
       host: cdn.freetato-converting.ru
+    client-fingerprint: chrome
+  - name: "🇳🇱 The Netherlands [*CIDR] VK 4"
+    type: vless
+    server: cdn.freetato-converting.ru
+    port: 2096
+    uuid: b877b58f-5995-4b25-abec-3213a2f95512
+    udp: true
+    tls: true
+    servername: cdn.freetato-converting.ru
+    network: xhttp
+    xhttp-opts:
+      path: "/chxh"
+      host: cdn.freetato-converting.ru
+    client-fingerprint: chrome
+  - name: "🇳🇱 The Netherlands [*CIDR] YA"
+    type: vless
+    server: 84.201.146.8
+    port: 443
+    uuid: 1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200
+    udp: true
+    tls: true
+    servername: max.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: max.ru
   - name: node
     type: vmess
     server: 158.160.180.165
@@ -134,10 +146,11 @@ proxy-groups:
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - "🇳🇱 The Netherlands | 🌐 [*CIDR] VK"
       - "🇳🇱 The Netherlands [*CIDR] VK"
       - "🇳🇱 The Netherlands [*CIDR] VK 2"
       - "🇳🇱 The Netherlands [*CIDR] VK 3"
+      - "🇳🇱 The Netherlands [*CIDR] VK 4"
+      - "🇳🇱 The Netherlands [*CIDR] YA"
       - node
       - "node 2"
   - name: "♻️ 自动选择"
@@ -146,10 +159,11 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "🇳🇱 The Netherlands | 🌐 [*CIDR] VK"
       - "🇳🇱 The Netherlands [*CIDR] VK"
       - "🇳🇱 The Netherlands [*CIDR] VK 2"
       - "🇳🇱 The Netherlands [*CIDR] VK 3"
+      - "🇳🇱 The Netherlands [*CIDR] VK 4"
+      - "🇳🇱 The Netherlands [*CIDR] YA"
       - node
       - "node 2"
 rules:
