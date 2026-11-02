@@ -1,5 +1,5 @@
 # 订阅 33.1.txt -> Clash
-# 节点数量: 7
+# 节点数量: 4
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -40,80 +40,33 @@ dns:
     - "https://doh.pub/dns-query"
     - "https://dns.alidns.com/dns-query"
 proxies:
-  - name: "🇳🇱 The Netherlands [*CIDR] VK"
+  - name: "🇳🇱 The Netherlands | [*CIDR] YA"
     type: vless
-    server: 87.239.106.24
-    port: 53571
-    uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+    server: 158.160.195.193
+    port: 443
+    uuid: 2effe34c-028b-4422-bcea-49b2664218ea
     udp: true
     tls: true
-    servername: xnl.chick-team.ru
+    servername: 158.160.195.193
     client-fingerprint: firefox
-    alpn:
-      - h2
-      - http/1.1
     network: xhttp
     xhttp-opts:
-      path: "/xhttppath/"
-      host: xnl.chick-team.ru
-      mode: auto
-  - name: "🇳🇱 The Netherlands [*CIDR] VK 2"
+      path: "/assets/nlrelay01/"
+      host: 158.160.195.193
+      mode: packet-up
+  - name: "🇳🇱 The Netherlands | [*CIDR] YA 2"
     type: vless
-    server: 185.86.145.37
+    server: 158.160.195.193
     port: 443
-    uuid: 769cc55c-7ed6-4f3a-a77c-92e1c5c137ba
+    uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
     udp: true
     tls: true
-    servername: ara.rtkdvbr.cc
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/amws"
-      headers:
-        Host: ara.rtkdvbr.cc
-  - name: "🇳🇱 The Netherlands [*CIDR] VK 3"
-    type: vless
-    server: 185.86.145.142
-    port: 2096
-    uuid: b877b58f-5995-4b25-abec-3213a2f95512
-    udp: true
-    tls: true
-    servername: cdn.freetato-converting.ru
+    servername: 158.160.195.193
+    client-fingerprint: edge
     network: xhttp
     xhttp-opts:
-      path: "/chxh"
-      host: cdn.freetato-converting.ru
-    client-fingerprint: chrome
-  - name: "🇳🇱 The Netherlands [*CIDR] VK 4"
-    type: vless
-    server: cdn.freetato-converting.ru
-    port: 2096
-    uuid: b877b58f-5995-4b25-abec-3213a2f95512
-    udp: true
-    tls: true
-    servername: cdn.freetato-converting.ru
-    network: xhttp
-    xhttp-opts:
-      path: "/chxh"
-      host: cdn.freetato-converting.ru
-    client-fingerprint: chrome
-  - name: "🇳🇱 The Netherlands [*CIDR] YA"
-    type: vless
-    server: 84.201.146.8
-    port: 443
-    uuid: 1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200
-    udp: true
-    tls: true
-    servername: max.ru
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo
-    network: xhttp
-    xhttp-opts:
-      path: "/"
-      host: max.ru
+      path: "/assets/nlrelay01/"
+      host: 158.160.195.193
   - name: node
     type: vmess
     server: 158.160.180.165
@@ -146,11 +99,8 @@ proxy-groups:
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - "🇳🇱 The Netherlands [*CIDR] VK"
-      - "🇳🇱 The Netherlands [*CIDR] VK 2"
-      - "🇳🇱 The Netherlands [*CIDR] VK 3"
-      - "🇳🇱 The Netherlands [*CIDR] VK 4"
-      - "🇳🇱 The Netherlands [*CIDR] YA"
+      - "🇳🇱 The Netherlands | [*CIDR] YA"
+      - "🇳🇱 The Netherlands | [*CIDR] YA 2"
       - node
       - "node 2"
   - name: "♻️ 自动选择"
@@ -159,11 +109,8 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "🇳🇱 The Netherlands [*CIDR] VK"
-      - "🇳🇱 The Netherlands [*CIDR] VK 2"
-      - "🇳🇱 The Netherlands [*CIDR] VK 3"
-      - "🇳🇱 The Netherlands [*CIDR] VK 4"
-      - "🇳🇱 The Netherlands [*CIDR] YA"
+      - "🇳🇱 The Netherlands | [*CIDR] YA"
+      - "🇳🇱 The Netherlands | [*CIDR] YA 2"
       - node
       - "node 2"
 rules:
