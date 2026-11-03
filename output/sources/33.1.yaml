@@ -1,5 +1,5 @@
 # 订阅 33.1.txt -> Clash
-# 节点数量: 5
+# 节点数量: 1
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -40,113 +40,36 @@ dns:
     - "https://doh.pub/dns-query"
     - "https://dns.alidns.com/dns-query"
 proxies:
-  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] VK"
+  - name: "🇳🇱 The Netherlands | [*CIDR] VK"
     type: vless
-    server: 84.23.52.120
-    port: 28449
-    uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+    server: 185.86.145.37
+    port: 443
+    uuid: 135aa7e5-87af-4df2-a9f0-0c4eaea0c492
     udp: true
     tls: true
-    servername: pl.sparxiecn.com
-    client-fingerprint: firefox
+    servername: rar.rtkdvbr.cc
+    client-fingerprint: edge
     alpn:
-      - h2
       - http/1.1
     network: ws
     ws-opts:
-      path: "/lovelive"
+      path: "/amws"
       headers:
-        Host: pl.sparxiecn.com
-  - name: "🇵🇱 Poland | 🌐 [*CIDR] VK"
-    type: vless
-    server: 84.23.52.120
-    port: 28452
-    uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
-    udp: true
-    tls: true
-    servername: pl.sparxiecn.com
-    client-fingerprint: firefox
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/lovelive"
-      headers:
-        Host: pl.sparxiecn.com
-  - name: "🇵🇱 Poland | 🌐 [*CIDR] VK 2"
-    type: vless
-    server: 84.23.52.120
-    port: 28453
-    uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
-    udp: true
-    tls: true
-    servername: pl.sparxiecn.com
-    client-fingerprint: ios
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/lovelive"
-      headers:
-        Host: pl.sparxiecn.com
-  - name: "🇵🇱 Poland [*CIDR] VK"
-    type: vless
-    server: 84.23.52.120
-    port: 28447
-    uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
-    udp: true
-    tls: true
-    servername: pl.sparxiecn.com
-    client-fingerprint: firefox
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/lovelive"
-      headers:
-        Host: pl.sparxiecn.com
-  - name: "🇵🇱 Poland [*CIDR] VK 2"
-    type: vless
-    server: 84.23.52.120
-    port: 28448
-    uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
-    udp: true
-    tls: true
-    servername: pl.sparxiecn.com
-    client-fingerprint: firefox
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/lovelive"
-      headers:
-        Host: pl.sparxiecn.com
+        Host: rar.rtkdvbr.cc
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] VK"
-      - "🇵🇱 Poland | 🌐 [*CIDR] VK"
-      - "🇵🇱 Poland | 🌐 [*CIDR] VK 2"
-      - "🇵🇱 Poland [*CIDR] VK"
-      - "🇵🇱 Poland [*CIDR] VK 2"
+      - "🇳🇱 The Netherlands | [*CIDR] VK"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     proxies:
-      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] VK"
-      - "🇵🇱 Poland | 🌐 [*CIDR] VK"
-      - "🇵🇱 Poland | 🌐 [*CIDR] VK 2"
-      - "🇵🇱 Poland [*CIDR] VK"
-      - "🇵🇱 Poland [*CIDR] VK 2"
+      - "🇳🇱 The Netherlands | [*CIDR] VK"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"

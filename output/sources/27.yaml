@@ -1,5 +1,5 @@
 # 订阅 27.txt -> Clash
-# 节点数量: 2
+# 节点数量: 21
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -42,22 +42,326 @@ dns:
 proxies:
   - name: node
     type: vmess
-    server: 23.147.56.181
-    port: 52843
-    uuid: 88be793c-c368-4eb1-8809-057e5df96606
+    server: nycqg19zkwacpm1b.v.3dns.vip
+    port: 443
+    uuid: f23bb427c1f94373876c2f43e9f790f3
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
+    tls: true
+    servername: nycqg19zkwacpm1b.v.3dns.vip
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: nycqg19zkwacpm1b.v.3dns.vip
+    client-fingerprint: chrome
   - name: "node 2"
     type: vmess
-    server: 195.26.26.162
-    port: 37044
-    uuid: 5e2c7665-3c4c-4591-b77c-c3c90981c10f
+    server: nycqg19zkwacpm1b.v.3dns.vip
+    port: 443
+    uuid: f23bb427c1f94373876c2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: NYcQg19zkwaCPM1B.v.3dns.vip
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: NYcQg19zkwaCPM1B.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "node 3"
+    type: vmess
+    server: qtkdr8jxe3wefxjm.v.3dns.vip
+    port: 443
+    uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: qtkdr8jxe3wefxjm.v.3dns.vip
+    client-fingerprint: random
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: qtkdr8jxe3wefxjm.v.3dns.vip
+  - name: "node 4"
+    type: vmess
+    server: qtkdr8jxe3wefxjm.v.3dns.vip
+    port: 443
+    uuid: f23bb427c1f94373876c2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: qtkdr8jxe3wefxjm.v.3dns.vip
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: qTKDR8jXE3wEFxJM.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "node 5"
+    type: vmess
+    server: qtkdr8jxe3wefxjm.v.3dns.vip
+    port: 443
+    uuid: f23bb427c1f94373876c2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: qtkdr8jxe3wefxjm.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "node 6"
+    type: vmess
+    server: 20.235.220.189
+    port: 443
+    uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: 6JDvArazgU3qQR6Q.v.3dns.vip
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "node 7"
+    type: vmess
+    server: 2b9hwy8ocx7q74nm.v.3dns.vip
+    port: 443
+    uuid: f23bb427c1f94373876c2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: 2b9hwy8ocx7q74nm.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "node 8"
+    type: vmess
+    server: 2b9hwy8ocx7q74nm.v.3dns.vip
+    port: 443
+    uuid: f23bb427c1f94373876c2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: 2b9hwy8ocx7q74nm.v.3dns.vip
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: 2b9hwy8ocx7q74nm.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "node 9"
+    type: vmess
+    server: 8.217.254.88
+    port: 443
+    uuid: f23bb427c1f94373876c2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: 2b9hwy8ocx7q74nm.v.3dns.vip
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: 2b9hwy8ocx7q74nm.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "node 10"
+    type: vmess
+    server: 8.217.13.103
+    port: 443
+    uuid: f23bb427c1f94373876c2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: qtkdr8jxe3wefxjm.v.3dns.vip
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: qtkdr8jxe3wefxjm.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "node 11"
+    type: vmess
+    server: 47.243.194.125
+    port: 443
+    uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: nycqg19zkwacpm1b.v.3dns.vip
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: nycqg19zkwacpm1b.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "node 12"
+    type: vmess
+    server: 47.243.194.125
+    port: 443
+    uuid: f23bb427c1f94373876c2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: nycqg19zkwacpm1b.v.3dns.vip
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: nycqg19zkwacpm1b.v.3dns.vip
+  - name: "node 13"
+    type: vmess
+    server: 8.217.13.103
+    port: 443
+    uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: qtkdr8jxe3wefxjm.v.3dns.vip
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: qtkdr8jxe3wefxjm.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "node 14"
+    type: vmess
+    server: 8.217.254.88
+    port: 443
+    uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: 2b9hwy8ocx7q74nm.v.3dns.vip
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: 2b9hwy8ocx7q74nm.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "node 15"
+    type: vmess
+    server: 2b9hwy8ocx7q74nm.v.3dns.vip
+    port: 443
+    uuid: f23bb427c1f94373876c2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: 2b9hwY8oCx7Q74NM.v.3dns.vip
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: 2b9hwY8oCx7Q74NM.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "node 16"
+    type: vmess
+    server: nycqg19zkwacpm1b.v.3dns.vip
+    port: 443
+    uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: NYcQg19zkwaCPM1B.v.3dns.vip
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: NYcQg19zkwaCPM1B.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "node 17"
+    type: vmess
+    server: qtkdr8jxe3wefxjm.v.3dns.vip
+    port: 443
+    uuid: f23bb427c1f94373876c2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: qTKDR8jXE3wEFxJM.v.3dns.vip
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: qTKDR8jXE3wEFxJM.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "node 18"
+    type: vmess
+    server: 132.145.80.230
+    port: 80
+    uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/cctv13.m3u8"
+      headers:
+        Host: "null"
+  - name: "node 19"
+    type: vmess
+    server: 119.46.51.45
+    port: 37515
+    uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
     alterId: 0
     cipher: auto
     udp: true
     network: tcp
+  - name: "node 20"
+    type: vmess
+    server: 172.67.187.145
+    port: 80
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ws?ed=2048"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+  - name: "node 21"
+    type: vmess
+    server: 104.17.147.222
+    port: 80
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: vmess.lbw666.dpdns.org
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -66,6 +370,25 @@ proxy-groups:
       - DIRECT
       - node
       - "node 2"
+      - "node 3"
+      - "node 4"
+      - "node 5"
+      - "node 6"
+      - "node 7"
+      - "node 8"
+      - "node 9"
+      - "node 10"
+      - "node 11"
+      - "node 12"
+      - "node 13"
+      - "node 14"
+      - "node 15"
+      - "node 16"
+      - "node 17"
+      - "node 18"
+      - "node 19"
+      - "node 20"
+      - "node 21"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -74,6 +397,25 @@ proxy-groups:
     proxies:
       - node
       - "node 2"
+      - "node 3"
+      - "node 4"
+      - "node 5"
+      - "node 6"
+      - "node 7"
+      - "node 8"
+      - "node 9"
+      - "node 10"
+      - "node 11"
+      - "node 12"
+      - "node 13"
+      - "node 14"
+      - "node 15"
+      - "node 16"
+      - "node 17"
+      - "node 18"
+      - "node 19"
+      - "node 20"
+      - "node 21"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
