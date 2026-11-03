@@ -1,5 +1,5 @@
 # 订阅 27.txt -> Clash
-# 节点数量: 7
+# 节点数量: 2
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -51,78 +51,13 @@ proxies:
     network: tcp
   - name: "node 2"
     type: vmess
-    server: 120.48.133.162
-    port: 10086
-    uuid: fde10e39-48bb-4dcf-b3ba-71d711323a54
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 120.48.133.162
-  - name: "node 3"
-    type: vmess
-    server: 120.48.133.162
-    port: 10086
-    uuid: 4fc543d5-23ce-4556-ae2b-01685edd4397
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 120.48.133.162
-  - name: "node 4"
-    type: vmess
-    server: 39.108.113.127
-    port: 10086
-    uuid: 4fc543d5-23ce-4556-ae2b-01685edd4397
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 39.108.113.127
-  - name: "node 5"
-    type: vmess
-    server: 39.108.113.127
-    port: 10086
-    uuid: fccbad0f-eb6c-4bdd-80ed-145409e2f761
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 39.108.113.127
-  - name: "node 6"
-    type: vmess
-    server: 43.130.35.53
-    port: 10087
-    uuid: 8e93b009-f1af-448a-b8ef-b110849a35f0
+    server: 195.26.26.162
+    port: 37044
+    uuid: 5e2c7665-3c4c-4591-b77c-c3c90981c10f
     alterId: 0
     cipher: auto
     udp: true
     network: tcp
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
-    type: trojan
-    server: 199.181.197.99
-    port: 443
-    password: 70756c73-0000-4000-8000-650000000000
-    udp: true
-    servername: parsa-panel-u48we.wotic15356.workers.dev
-    client-fingerprint: safari
-    network: ws
-    ws-opts:
-      path: "/pulse"
-      headers:
-        Host: parsa-panel-u48we.wotic15356.workers.dev
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -131,11 +66,6 @@ proxy-groups:
       - DIRECT
       - node
       - "node 2"
-      - "node 3"
-      - "node 4"
-      - "node 5"
-      - "node 6"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -144,11 +74,6 @@ proxy-groups:
     proxies:
       - node
       - "node 2"
-      - "node 3"
-      - "node 4"
-      - "node 5"
-      - "node 6"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"

@@ -1,5 +1,5 @@
 # 订阅 33.1.txt -> Clash
-# 节点数量: 4
+# 节点数量: 5
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -40,79 +40,113 @@ dns:
     - "https://doh.pub/dns-query"
     - "https://dns.alidns.com/dns-query"
 proxies:
-  - name: "🇳🇱 The Netherlands | [*CIDR] YA"
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] VK"
     type: vless
-    server: 158.160.195.193
-    port: 443
-    uuid: 2effe34c-028b-4422-bcea-49b2664218ea
+    server: 84.23.52.120
+    port: 28449
+    uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
     udp: true
     tls: true
-    servername: 158.160.195.193
+    servername: pl.sparxiecn.com
     client-fingerprint: firefox
-    network: xhttp
-    xhttp-opts:
-      path: "/assets/nlrelay01/"
-      host: 158.160.195.193
-      mode: packet-up
-  - name: "🇳🇱 The Netherlands | [*CIDR] YA 2"
-    type: vless
-    server: 158.160.195.193
-    port: 443
-    uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
-    udp: true
-    tls: true
-    servername: 158.160.195.193
-    client-fingerprint: edge
-    network: xhttp
-    xhttp-opts:
-      path: "/assets/nlrelay01/"
-      host: 158.160.195.193
-  - name: node
-    type: vmess
-    server: 158.160.180.165
-    port: 24212
-    uuid: c58c1205-b308-416f-8503-c04557abf93d
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: 158.160.180.165
     alpn:
       - h2
       - http/1.1
-    network: tcp
-    client-fingerprint: chrome
-  - name: "node 2"
-    type: vmess
-    server: 158.160.180.165
-    port: 24212
-    uuid: c58c1205-b308-416f-8503-c04557abf93d
-    alterId: 0
-    cipher: auto
+    network: ws
+    ws-opts:
+      path: "/lovelive"
+      headers:
+        Host: pl.sparxiecn.com
+  - name: "🇵🇱 Poland | 🌐 [*CIDR] VK"
+    type: vless
+    server: 84.23.52.120
+    port: 28452
+    uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
     udp: true
     tls: true
-    network: tcp
-    client-fingerprint: chrome
+    servername: pl.sparxiecn.com
+    client-fingerprint: firefox
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/lovelive"
+      headers:
+        Host: pl.sparxiecn.com
+  - name: "🇵🇱 Poland | 🌐 [*CIDR] VK 2"
+    type: vless
+    server: 84.23.52.120
+    port: 28453
+    uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+    udp: true
+    tls: true
+    servername: pl.sparxiecn.com
+    client-fingerprint: ios
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/lovelive"
+      headers:
+        Host: pl.sparxiecn.com
+  - name: "🇵🇱 Poland [*CIDR] VK"
+    type: vless
+    server: 84.23.52.120
+    port: 28447
+    uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+    udp: true
+    tls: true
+    servername: pl.sparxiecn.com
+    client-fingerprint: firefox
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/lovelive"
+      headers:
+        Host: pl.sparxiecn.com
+  - name: "🇵🇱 Poland [*CIDR] VK 2"
+    type: vless
+    server: 84.23.52.120
+    port: 28448
+    uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+    udp: true
+    tls: true
+    servername: pl.sparxiecn.com
+    client-fingerprint: firefox
+    alpn:
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/lovelive"
+      headers:
+        Host: pl.sparxiecn.com
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - "🇳🇱 The Netherlands | [*CIDR] YA"
-      - "🇳🇱 The Netherlands | [*CIDR] YA 2"
-      - node
-      - "node 2"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] VK"
+      - "🇵🇱 Poland | 🌐 [*CIDR] VK"
+      - "🇵🇱 Poland | 🌐 [*CIDR] VK 2"
+      - "🇵🇱 Poland [*CIDR] VK"
+      - "🇵🇱 Poland [*CIDR] VK 2"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     proxies:
-      - "🇳🇱 The Netherlands | [*CIDR] YA"
-      - "🇳🇱 The Netherlands | [*CIDR] YA 2"
-      - node
-      - "node 2"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] VK"
+      - "🇵🇱 Poland | 🌐 [*CIDR] VK"
+      - "🇵🇱 Poland | 🌐 [*CIDR] VK 2"
+      - "🇵🇱 Poland [*CIDR] VK"
+      - "🇵🇱 Poland [*CIDR] VK 2"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
