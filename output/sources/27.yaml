@@ -1,5 +1,5 @@
 # 订阅 27.txt -> Clash
-# 节点数量: 16
+# 节点数量: 7
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -42,38 +42,6 @@ dns:
 proxies:
   - name: node
     type: vmess
-    server: 20.235.220.189
-    port: 443
-    uuid: f23bb427c1f94373876c2f43e9f790f3
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-    network: ws
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-    client-fingerprint: chrome
-  - name: "node 2"
-    type: vmess
-    server: 20.235.220.189
-    port: 443
-    uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-    network: ws
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-    client-fingerprint: chrome
-  - name: "node 3"
-    type: vmess
     server: 23.147.56.181
     port: 52843
     uuid: 88be793c-c368-4eb1-8809-057e5df96606
@@ -81,23 +49,20 @@ proxies:
     cipher: auto
     udp: true
     network: tcp
-  - name: "node 4"
+  - name: "node 2"
     type: vmess
-    server: 172.64.80.1
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+    server: 120.48.133.162
+    port: 10086
+    uuid: fde10e39-48bb-4dcf-b3ba-71d711323a54
     alterId: 0
     cipher: auto
     udp: true
-    tls: true
-    servername: v2ray1.dozapp.xyz
     network: ws
     ws-opts:
-      path: "/lMnsZUN4/"
+      path: "/"
       headers:
-        Host: v2ray1.dozapp.xyz
-    client-fingerprint: chrome
-  - name: "node 5"
+        Host: 120.48.133.162
+  - name: "node 3"
     type: vmess
     server: 120.48.133.162
     port: 10086
@@ -110,7 +75,7 @@ proxies:
       path: "/"
       headers:
         Host: 120.48.133.162
-  - name: "node 6"
+  - name: "node 4"
     type: vmess
     server: 39.108.113.127
     port: 10086
@@ -123,24 +88,11 @@ proxies:
       path: "/"
       headers:
         Host: 39.108.113.127
-  - name: "node 7"
+  - name: "node 5"
     type: vmess
-    server: 120.48.133.162
+    server: 39.108.113.127
     port: 10086
-    uuid: fde10e39-48bb-4dcf-b3ba-71d711323a54
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET"
-      headers:
-        Host: 120.48.133.162
-  - name: "node 8"
-    type: vmess
-    server: 120.48.133.162
-    port: 10086
-    uuid: f81d0fc9-c6b0-4dab-a270-6e697e0a367f
+    uuid: fccbad0f-eb6c-4bdd-80ed-145409e2f761
     alterId: 0
     cipher: auto
     udp: true
@@ -148,124 +100,29 @@ proxies:
     ws-opts:
       path: "/"
       headers:
-        Host: 120.48.133.162
-  - name: "node 9"
+        Host: 39.108.113.127
+  - name: "node 6"
     type: vmess
-    server: 120.48.133.162
-    port: 10086
-    uuid: a8d931b0-6c27-428b-8d86-c20efea3dba7
+    server: 43.130.35.53
+    port: 10087
+    uuid: 8e93b009-f1af-448a-b8ef-b110849a35f0
     alterId: 0
     cipher: auto
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 120.48.133.162
-  - name: "node 10"
-    type: vmess
-    server: 172.67.221.77
-    port: 443
-    uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: www.ubuntuupdates.com
-    network: ws
-    ws-opts:
-      path: "/truth"
-      headers:
-        Host: www.ubuntuupdates.com
-    client-fingerprint: chrome
-  - name: "node 11"
-    type: vmess
-    server: 172.66.203.67
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/ws?ed=2048"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-  - name: "node 12"
-    type: vmess
-    server: cf.877771.xyz
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-  - name: "node 13"
-    type: vmess
-    server: 104.27.0.1
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-  - name: "node 14"
-    type: vmess
-    server: 104.17.77.77
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: v2ray1.dozapp.xyz
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: v2ray1.dozapp.xyz
-    client-fingerprint: chrome
-  - name: "🇸🇪 Sweden, Hudiksvall (Östra Hudiksvall) | 🌐 | [BL]"
-    type: trojan
-    server: 95.143.196.97
-    port: 443
-    password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-    udp: true
-    servername: connect-se.mimowhat.online
-    client-fingerprint: android
-    alpn:
-      - h2
-      - http/1.1
     network: tcp
-  - name: "🇸🇪 Sweden, Hudiksvall (Östra Hudiksvall) | 🌐 | [BL] 2"
+  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
     type: trojan
-    server: connect-se.mimowhat.online
+    server: 199.181.197.99
     port: 443
-    password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
+    password: 70756c73-0000-4000-8000-650000000000
     udp: true
-    servername: connect-se.mimowhat.online
-    client-fingerprint: android
-    alpn:
-      - h2
-      - http/1.1
-    network: tcp
+    servername: parsa-panel-u48we.wotic15356.workers.dev
+    client-fingerprint: safari
+    network: ws
+    ws-opts:
+      path: "/pulse"
+      headers:
+        Host: parsa-panel-u48we.wotic15356.workers.dev
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -278,16 +135,7 @@ proxy-groups:
       - "node 4"
       - "node 5"
       - "node 6"
-      - "node 7"
-      - "node 8"
-      - "node 9"
-      - "node 10"
-      - "node 11"
-      - "node 12"
-      - "node 13"
-      - "node 14"
-      - "🇸🇪 Sweden, Hudiksvall (Östra Hudiksvall) | 🌐 | [BL]"
-      - "🇸🇪 Sweden, Hudiksvall (Östra Hudiksvall) | 🌐 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -300,16 +148,7 @@ proxy-groups:
       - "node 4"
       - "node 5"
       - "node 6"
-      - "node 7"
-      - "node 8"
-      - "node 9"
-      - "node 10"
-      - "node 11"
-      - "node 12"
-      - "node 13"
-      - "node 14"
-      - "🇸🇪 Sweden, Hudiksvall (Östra Hudiksvall) | 🌐 | [BL]"
-      - "🇸🇪 Sweden, Hudiksvall (Östra Hudiksvall) | 🌐 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"

@@ -1,5 +1,5 @@
 # 订阅 29.txt -> Clash
-# 节点数量: 43
+# 节点数量: 86
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -40,21 +40,37 @@ dns:
     - "https://doh.pub/dns-query"
     - "https://dns.alidns.com/dns-query"
 proxies:
-  - name: "🇪🇪 Estonia, Tallinn | [BL]"
+  - name: "🇫🇮 Finland, Helsinki | [BL]"
     type: vless
-    server: qqmrkr71metydlthes8.dnetsolutions.ru
+    server: 78.17.39.129
     port: 443
-    uuid: 4b091976-0936-44ac-9a90-6a265d2b619f
+    uuid: c04522c4-3d53-4eab-b5b5-25385d5f11b1
     udp: true
     tls: true
-    servername: max.ru
+    servername: 78.17.39.129
+    client-fingerprint: safari
+    alpn:
+      - h2
+      - http/1.1
+    network: xhttp
+    xhttp-opts:
+      path: "/assets/finvip02/"
+      host: 78.17.39.129
+      mode: packet-up
+  - name: "🇩🇪 Germany | 🌐 | [BL]"
+    type: vless
+    server: 88.216.67.54
+    port: 443
+    uuid: 50414e45-4c5f-5a45-5553-47be357e54da
+    udp: true
+    tls: true
+    servername: 52z4vtewuass.game4090taking.workers.dev
     client-fingerprint: chrome
-    reality-opts:
-      public-key: uuD0VJNMH1jZKPjiI5qhbiMVabQFkocWy0LUjh-3HEQ
-      short-id: bc35
-    network: grpc
-    grpc-opts:
-      grpc-service-name: grpc-65
+    network: ws
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/47be357e54da/loc-0"
+      headers:
+        Host: 52z4vtewuass.game4090taking.workers.dev
   - name: "🇩🇪 Germany, Falkenstein | 🌐 | [BL]"
     type: vless
     server: 141.193.213.21
@@ -77,12 +93,26 @@ proxies:
     udp: true
     tls: true
     servername: site.check-looks.space
-    client-fingerprint: chrome
+    client-fingerprint: firefox
     network: ws
     ws-opts:
       path: "/"
       headers:
         Host: site.check-looks.space
+  - name: "🇩🇪 Germany, Frankfurt am Main | [BL]"
+    type: vless
+    server: 130.49.177.193
+    port: 443
+    uuid: 727a9178-d7f0-4142-8205-b0d19959ded0
+    udp: true
+    tls: true
+    servername: de-2.ffpn.pro
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc
+      short-id: 681fc2dd643bc2f3
+    flow: xtls-rprx-vision
+    network: tcp
   - name: "🇮🇪 Ireland, Dublin | [BL]"
     type: vless
     server: qtir1.dnetsolutions.ru
@@ -91,78 +121,231 @@ proxies:
     udp: true
     tls: true
     servername: max.ru
-    client-fingerprint: chrome
+    client-fingerprint: qq
     reality-opts:
       public-key: 9X-tgXeFaqxURY0nGxFNdz9bpNIo7DTXHoWXpBqiOj0
       short-id: cbc638acc8ac87
     network: grpc
     grpc-opts:
       grpc-service-name: grpc-90
-  - name: "🇲🇩 Moldova, Chisinau | 🌐 | [BL]"
+  - name: "🇪🇸 Spain, Valencia | [BL]"
     type: vless
-    server: 87.228.71.195
+    server: api.ferrin.uk
     port: 443
-    uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+    uuid: 7d1a74fd-8a38-4a29-863f-5da53a9e557e
     udp: true
     tls: true
-    servername: ap2.directly.chat
-    client-fingerprint: android
-    network: ws
-    ws-opts:
-      path: "/md/1"
-      headers:
-        Host: ap2.directly.chat
-  - name: "🇲🇩 Moldova, Chisinau | 🌐 | [BL] 2"
+    servername: 7d1a74fd.ferrin.uk
+    network: xhttp
+    xhttp-opts:
+      path: "/es/?@MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI?ed=2048"
+      host: 7d1a74fd.ferrin.uk
+      mode: stream-one
+    client-fingerprint: chrome
+  - name: "🇸🇪 Sweden, Stockholm | [BL]"
     type: vless
-    server: 87.228.71.196
+    server: sw.golangwikito.cfd
     port: 443
-    uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+    uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
     udp: true
     tls: true
-    servername: ap2.directly.chat
-    client-fingerprint: android
-    network: ws
-    ws-opts:
-      path: "/md/1"
-      headers:
-        Host: ap2.directly.chat
-  - name: "🇲🇩 Moldova, Chisinau | 🌐 | [BL] 3"
+    servername: sw.golangwikito.cfd
+    client-fingerprint: firefox
+    skip-cert-verify: true
+    reality-opts:
+      public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
+      short-id: a1037b25dcef6aa7
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇳🇱 The Netherlands, Eygelshoven | [BL]"
     type: vless
-    server: 87.228.71.197
+    server: nl.coffeconsulting.uk
     port: 443
-    uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+    uuid: c7fc009a-026b-46e5-a0c5-82e32bcabd69
     udp: true
     tls: true
-    servername: ap2.directly.chat
-    client-fingerprint: android
-    network: ws
-    ws-opts:
-      path: "/md/1"
-      headers:
-        Host: ap2.directly.chat
-  - name: "🇲🇩 Moldova, Chisinau | 🌐 | [BL] 4"
+    servername: nl.coffeconsulting.uk
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo
+      short-id: 492d593d82fc6674
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇹🇷 Turkey, Istanbul | [BL]"
     type: vless
-    server: 87.228.71.198
+    server: 185.95.164.150
     port: 443
-    uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+    uuid: 53154bc7-0409-4f8c-9873-29adad85fab5
     udp: true
     tls: true
-    servername: ap2.directly.chat
-    client-fingerprint: android
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: LnisQq4C_Z-c2atyogsViBwBntRXH7LZhxC1RccGXH4
+      short-id: 1db18aa1
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇺🇸 United States, Orem | [BL]"
+    type: vless
+    server: swidenafterlanzerotte.space
+    port: 443
+    uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+    udp: true
+    tls: true
+    servername: swidenafterlanzerotte.space
+    client-fingerprint: safari
+    reality-opts:
+      public-key: MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇺🇸 United States, Orem | [BL] 2"
+    type: vless
+    server: mhzedir.qzz.io
+    port: 2059
+    uuid: 8373f47d-5059-4ef5-90a6-aaff48572dd7
+    udp: true
+    tls: true
+    servername: dns.resolver.quad9.net
+    reality-opts:
+      public-key: R2iGvGK6SSncoLARMZHWZ4_p8XAmjGf0mxvbFfw6Rm0
+      short-id: 0217548b15
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇺🇸 United States, Salt Lake City | 🌐 | [BL]"
+    type: vless
+    server: 151.241.88.81
+    port: 19606
+    uuid: 782ba1d2-1241-418e-9054-463c08a424bc
+    udp: true
+    tls: true
+    servername: zh-hk.vuejs.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 4GIE6ygCBY4pqRPkQ3OLLo6inpNcbBUEYLIqjMoZ3n4
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐 Anycast-IP | 🇦🇲 🇮🇶 | [BL]"
+    type: vless
+    server: 77.91.68.117
+    port: 443
+    uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+    udp: true
+    tls: true
+    servername: cf-1rm.pages.dev
+    client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: "/md/1"
+      path: "/"
       headers:
-        Host: ap2.directly.chat
-  - name: "🇸🇬 Singapore, Newton | 🌐 | [BL]"
+        Host: cf-1rm.pages.dev
+  - name: "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇩🇪 | [BL]"
     type: vless
-    server: 43.133.62.238
+    server: 185.36.143.71
+    port: 443
+    uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+    udp: true
+    tls: true
+    servername: cf-1rm.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cf-1rm.pages.dev
+  - name: "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇩🇪 🇬🇧 🇵🇱 | [BL]"
+    type: vless
+    server: 43.174.192.1
+    port: 443
+    uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+    udp: true
+    tls: true
+    servername: cf-1rm.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cf-1rm.pages.dev
+  - name: "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇩🇪 🇵🇱 🇺🇸 | [BL]"
+    type: vless
+    server: 43.174.193.1
+    port: 443
+    uuid: d342d11e-d224-4463-b982-532309285094
+    udp: true
+    tls: true
+    servername: ccc.010304.xyz
+    client-fingerprint: edge
+    network: ws
+    ws-opts:
+      path: "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560"
+      headers:
+        Host: ccc.010304.xyz
+  - name: "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇯🇵 | [BL]"
+    type: vless
+    server: 8.219.155.125
+    port: 443
+    uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+    udp: true
+    tls: true
+    servername: vp10.pages.dev
+    client-fingerprint: qq
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: vp10.pages.dev
+  - name: "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇯🇵 🇰🇷 | [BL]"
+    type: vless
+    server: 47.91.15.80
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/play/avatar?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇯🇵 🇰🇷 | [BL] 2"
+    type: vless
+    server: 8.211.132.111
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/edu/teacher/torrent?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇯🇵 🇰🇷 | [BL] 3"
+    type: vless
+    server: 8.219.155.125
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/movie/static/about?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇦🇷 🇩🇪 🇺🇸 | [BL]"
+    type: vless
+    server: 213.145.72.93
     port: 443
     uuid: 26524cce-d514-4014-a426-365fb266a14d
     udp: true
     tls: true
     servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: chrome
+    client-fingerprint: firefox
     alpn:
       - http/1.1
     network: ws
@@ -170,124 +353,165 @@ proxies:
       path: "/danfeng?ed=2560"
       headers:
         Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🇳🇱 The Netherlands, Amsterdam | [BL]"
+  - name: "🌐 Anycast-IP | 🇦🇷 🇮🇪 🇺🇸 | [BL]"
     type: vless
-    server: 162.248.78.234
+    server: 143.246.62.134
     port: 443
-    uuid: 2bdef398-4587-4d9d-b350-992e461c9325
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
     udp: true
     tls: true
-    servername: portal.citygrainla.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
-      short-id: 051f20c2344a2dfd
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇹🇷 Turkey, Istanbul | [BL]"
-    type: vless
-    server: 177.202.96.106
-    port: 443
-    uuid: e53b3d8c-2782-456b-97bc-6bc232bdbaa8
-    udp: true
-    tls: true
-    servername: pl2.spidermanshopping.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇺🇸 United States | 🌐 | [BL]"
-    type: vless
-    server: 151.101.1.242
-    port: 443
-    uuid: 86d5fd71-3051-412e-a3f7-d803101afe2a
-    udp: true
-    tls: true
-    servername: opener-calcine.video-streams.org
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: opener-calcine.video-streams.org
-  - name: "🇺🇸 United States | 🌐 | [BL] 2"
-    type: vless
-    server: minimize-evenness.cdn-content.com
-    port: 443
-    uuid: a580f1c9-a001-4ddf-8b0e-0b10945ee6b2
-    udp: true
-    tls: true
-    servername: minimize-evenness.cdn-content.com
-    client-fingerprint: chrome
+    servername: xy1ej.stream-node-us.danfeng.qzz.io
+    client-fingerprint: safari
     alpn:
       - http/1.1
     network: ws
     ws-opts:
-      path: "/ws"
+      path: "/danfeng?ed=2560"
       headers:
-        Host: minimize-evenness.cdn-content.com
-  - name: "🇺🇸 United States | 🌐 | [BL] 3"
+        Host: xy1ej.stream-node-us.danfeng.qzz.io
+  - name: "🌐 Anycast-IP | 🇦🇷 🇯🇵 🇰🇷 | [BL]"
     type: vless
-    server: piracy-android.video-streams.org
+    server: 118.109.40.183
     port: 443
-    uuid: a580f1c9-a001-4ddf-8b0e-0b10945ee6b2
+    uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
     udp: true
     tls: true
-    servername: piracy-android.video-streams.org
+    servername: cf-1rm.pages.dev
     client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cf-1rm.pages.dev
+  - name: "🌐 Anycast-IP | 🇦🇹 🇨🇦 🇮🇪 🇺🇸 | [BL]"
+    type: vless
+    server: 185.175.58.196
+    port: 443
+    uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+    udp: true
+    tls: true
+    servername: cf-1rm.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cf-1rm.pages.dev
+  - name: "🌐 Anycast-IP | 🇦🇹 🇮🇪 | [BL]"
+    type: vless
+    server: 185.75.241.170
+    port: 8443
+    uuid: 3305c285-8d55-4f52-a3b0-2a582f5ffd59
+    udp: true
+    tls: true
+    servername: sdwf-amq.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: sdwf-amq.pages.dev
+  - name: "🌐 Anycast-IP | 🇧🇬 🇨🇦 | [BL]"
+    type: vless
+    server: 95.133.166.163
+    port: 443
+    uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+    udp: true
+    tls: true
+    servername: cf-1rm.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cf-1rm.pages.dev
+  - name: "🌐 Anycast-IP | 🇧🇬 🇨🇦 🇺🇸 | [BL]"
+    type: vless
+    server: 185.200.36.36
+    port: 443
+    uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+    udp: true
+    tls: true
+    servername: vp58.cc.cd
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/TelegramU0001F1E8U0001F1F3 @VPNine1fp=chrome"
+      headers:
+        Host: vp58.cc.cd
+  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 | [BL]"
+    type: vless
+    server: 8.209.105.99
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/online?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 | [BL] 2"
+    type: vless
+    server: 8.209.108.3
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    network: ws
+    ws-opts:
+      path: "/travel/thread/rank?ed=2560fp=chrome"
+      headers:
+        Host: edg-2oo.pages.dev
+    client-fingerprint: chrome
+  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 | [BL] 3"
+    type: vless
+    server: 8.209.111.225
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/zh-cn/go.php/courses?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 | [BL]"
+    type: vless
+    server: 47.245.131.215
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/outbound?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇮🇶 🇺🇸 | [BL]"
+    type: vless
+    server: 47.245.139.226
+    port: 443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    udp: true
+    tls: true
+    servername: xy1ej.stream-node-us.danfeng.qzz.io
+    client-fingerprint: firefox
     alpn:
       - http/1.1
     network: ws
     ws-opts:
-      path: "/ws"
+      path: "/danfeng?ed=2560"
       headers:
-        Host: piracy-android.video-streams.org
-  - name: "🇺🇸 United States, Chicago | [BL]"
-    type: vless
-    server: g01tig3hasus3.dnetsolutions.ru
-    port: 443
-    uuid: e08d9bc5-6832-4dd4-bd44-d9bbe61e5817
-    udp: true
-    tls: true
-    servername: max.ru
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 4qE0kXmxDvNzsns2jdwd74AN35RptcTD4eKo5REa9w8
-      short-id: "04"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: grpc-67
-  - name: "🇺🇸 United States, Orem | [BL]"
-    type: vless
-    server: 177.202.69.204
-    port: 443
-    uuid: 5adb25b6-b41a-46ac-a481-71651deb60c5
-    udp: true
-    tls: true
-    servername: hshdb.pashalloh.org
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: TuehOJjWdODQ0h3rFi7h1MHENl2SeiswlauIQIkNIgg
-      short-id: da4d87fa
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇺🇸 United States, Orem | [BL] 2"
-    type: vless
-    server: 201.58.177.35
-    port: 443
-    uuid: 5adb25b6-b41a-46ac-a481-71651deb60c5
-    udp: true
-    tls: true
-    servername: xb1.huinaduok.fans
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: DA1kJXSsIsN8H-kZ51jEYHafTx50X-2RGG8KNZuCISg
-      short-id: da4d87fa
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇬🇧 🇺🇸 | [BL]"
+        Host: xy1ej.stream-node-us.danfeng.qzz.io
+  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇺🇸 | [BL]"
     type: vless
     server: 47.245.134.84
     port: 443
@@ -295,35 +519,7 @@ proxies:
     udp: true
     tls: true
     servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇰🇷 | [BL]"
-    type: vless
-    server: 119.28.150.233
-    port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: t5pmr.mail-node.gfw.kdns.fr
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: t5pmr.mail-node.gfw.kdns.fr
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇰🇷 🇺🇸 | [BL]"
-    type: vless
-    server: 43.128.130.45
-    port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: firefox
+    client-fingerprint: safari
     alpn:
       - http/1.1
     network: ws
@@ -331,15 +527,173 @@ proxies:
       path: "/danfeng?ed=2560"
       headers:
         Host: xy1ej.stream-node-us.danfeng.qzz.io
+  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇺🇸 | [BL] 2"
+    type: vless
+    server: 5.187.4.45
+    port: 443
+    uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+    udp: true
+    tls: true
+    servername: cf-1rm.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cf-1rm.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇺🇸 | [BL] 3"
+    type: vless
+    server: 47.245.135.191
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/discount/wiki?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇺🇸 | [BL] 4"
+    type: vless
+    server: 8.209.83.19
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/trade/sort?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇶 🇺🇸 | [BL]"
+    type: vless
+    server: 47.245.139.99
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/data/detail?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇷 🇮🇪 🇮🇶 | [BL]"
+    type: vless
+    server: 82.64.120.239
+    port: 443
+    uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+    udp: true
+    tls: true
+    servername: cf-1rm.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cf-1rm.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇰🇷 🇺🇸 | [BL]"
+    type: vless
+    server: 47.237.78.5
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: 47.237.78.5
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇭🇰 | [BL]"
+    type: vless
+    server: 47.239.237.237
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/star/collection?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
   - name: "🌐 Anycast-IP | 🇨🇦 🇭🇰 🇮🇪 | [BL]"
     type: vless
-    server: 43.103.4.68
+    server: 43.135.6.72
     port: 443
     uuid: 26524cce-d514-4014-a426-365fb266a14d
     udp: true
     tls: true
     servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: firefox
+    client-fingerprint: ios
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/danfeng?ed=2560"
+      headers:
+        Host: xy1ej.stream-node-us.danfeng.qzz.io
+  - name: "🌐 Anycast-IP | 🇨🇦 🇭🇰 🇮🇪 | [BL] 2"
+    type: vless
+    server: 47.242.162.186
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/home?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇭🇰 🇮🇪 🇸🇬 | [BL]"
+    type: vless
+    server: proxyip.hk.cmliussss.net
+    port: 443
+    uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+    udp: true
+    tls: true
+    servername: vp10.pages.dev
+    client-fingerprint: qq
+    network: ws
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: vp10.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇭🇰 🇮🇪 🇸🇬 | [BL] 2"
+    type: vless
+    server: 47.239.241.168
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/order/members/mall?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇭🇰 🇵🇭 🇺🇸 | [BL]"
+    type: vless
+    server: 8.220.180.112
+    port: 80
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    udp: true
+    tls: true
+    servername: xy1ej.stream-node-us.danfeng.qzz.io
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
     network: ws
     ws-opts:
       path: "/danfeng?ed=2560"
@@ -347,65 +701,89 @@ proxies:
         Host: xy1ej.stream-node-us.danfeng.qzz.io
   - name: "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 | [BL]"
     type: vless
+    server: 188.239.19.57
+    port: 443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    udp: true
+    tls: true
+    servername: t5pmr.mail-node.gfw.kdns.fr
+    client-fingerprint: ios
+    network: ws
+    ws-opts:
+      path: "/danfeng?ed=2560"
+      headers:
+        Host: t5pmr.mail-node.gfw.kdns.fr
+  - name: "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 | [BL] 2"
+    type: vless
     server: 47.84.109.138
     port: 443
     uuid: 26524cce-d514-4014-a426-365fb266a14d
     udp: true
     tls: true
     servername: t5pmr.mail-node.gfw.kdns.fr
-    client-fingerprint: firefox
+    client-fingerprint: android
     network: ws
     ws-opts:
       path: "/danfeng?ed=2560"
       headers:
         Host: t5pmr.mail-node.gfw.kdns.fr
-  - name: "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 🇺🇸 | [BL]"
+  - name: "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 | [BL] 3"
     type: vless
-    server: 147.139.139.151
-    port: 587
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    server: 47.82.155.79
+    port: 8443
+    uuid: 3305c285-8d55-4f52-a3b0-2a582f5ffd59
     udp: true
     tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: firefox
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 🇺🇸 | [BL] 2"
-    type: vless
-    server: 47.84.87.77
-    port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: t5pmr.mail-node.gfw.kdns.fr
+    servername: sdwf-amq.pages.dev
     client-fingerprint: chrome
-    alpn:
-      - http/1.1
     network: ws
     ws-opts:
-      path: "/danfeng?ed=2560"
+      path: "/?ed=2048"
       headers:
-        Host: t5pmr.mail-node.gfw.kdns.fr
-  - name: "🌐 Anycast-IP | 🇨🇦 🇰🇷 🇺🇸 | [BL]"
+        Host: sdwf-amq.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 | [BL] 4"
     type: vless
-    server: 43.155.165.247
+    server: 147.139.189.225
     port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
     udp: true
     tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: firefox
+    servername: 147.139.189.225
+    client-fingerprint: edge
     network: ws
     ws-opts:
-      path: "/danfeng?ed=2560"
+      path: "/"
       headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇮🇪 🇸🇬 🇺🇸 | [BL]"
+        Host: proxy-1cu.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 | [BL] 5"
+    type: vless
+    server: 47.82.155.79
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/app/index?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 | [BL] 6"
+    type: vless
+    server: 47.84.109.138
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/collect/friends/stars?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 🇺🇸 | [BL]"
     type: vless
     server: 163.128.98.21
     port: 443
@@ -421,15 +799,85 @@ proxies:
       path: "/danfeng"
       headers:
         Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇵🇭 🇺🇸 | [BL]"
+  - name: "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 🇺🇸 | [BL] 2"
     type: vless
-    server: 8.220.180.112
-    port: 80
+    server: 147.139.189.225
+    port: 443
+    uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+    udp: true
+    tls: true
+    servername: proxy-1cu.pages.dev
+    client-fingerprint: android
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: proxy-1cu.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 🇺🇸 | [BL] 3"
+    type: vless
+    server: 161.117.181.127
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/buy/members/v?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 🇺🇸 | [BL] 4"
+    type: vless
+    server: 8.219.173.17
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/message?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇮🇶 🇮🇹 | [BL]"
+    type: vless
+    server: 4.232.64.201
+    port: 443
+    uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+    udp: true
+    tls: true
+    servername: cf-1rm.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cf-1rm.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇮🇶 🇮🇹 | [BL] 2"
+    type: vless
+    server: 80.211.134.75
+    port: 443
+    uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+    udp: true
+    tls: true
+    servername: cf-1rm.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cf-1rm.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇰🇷 | [BL]"
+    type: vless
+    server: 43.128.130.45
+    port: 443
     uuid: 26524cce-d514-4014-a426-365fb266a14d
     udp: true
     tls: true
     servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: firefox
+    client-fingerprint: edge
     alpn:
       - http/1.1
     network: ws
@@ -437,39 +885,345 @@ proxies:
       path: "/danfeng?ed=2560"
       headers:
         Host: xy1ej.stream-node-us.danfeng.qzz.io
+  - name: "🌐 Anycast-IP | 🇨🇦 🇰🇷 | [BL] 2"
+    type: vless
+    server: 43.155.165.247
+    port: 443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    udp: true
+    tls: true
+    servername: xy1ej.stream-node-us.danfeng.qzz.io
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/danfeng?ed=2560"
+      headers:
+        Host: xy1ej.stream-node-us.danfeng.qzz.io
+  - name: "🌐 Anycast-IP | 🇨🇦 🇰🇷 🇱🇹 | [BL]"
+    type: vless
+    server: 94.176.237.240
+    port: 443
+    uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+    udp: true
+    tls: true
+    servername: cf-1rm.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cf-1rm.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇰🇷 🇺🇸 | [BL]"
+    type: vless
+    server: 119.28.150.233
+    port: 443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    udp: true
+    tls: true
+    servername: t5pmr.mail-node.gfw.kdns.fr
+    client-fingerprint: qq
+    network: ws
+    ws-opts:
+      path: "/danfeng?ed=2560"
+      headers:
+        Host: t5pmr.mail-node.gfw.kdns.fr
+  - name: "🌐 Anycast-IP | 🇨🇦 🇰🇷 🇺🇸 | [BL] 2"
+    type: vless
+    server: 47.254.251.37
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/archives?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇰🇷 🇺🇸 | [BL] 3"
+    type: vless
+    server: 47.75.125.163
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/go.php/group?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇰🇷 🇺🇸 | [BL] 4"
+    type: vless
+    server: 47.77.237.245
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/res/dl/streams?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇱🇹 | [BL]"
+    type: vless
+    server: 185.34.52.147
+    port: 443
+    uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+    udp: true
+    tls: true
+    servername: cf-1rm.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cf-1rm.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇱🇹 | [BL] 2"
+    type: vless
+    server: 5.34.213.8
+    port: 443
+    uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+    udp: true
+    tls: true
+    servername: cf-1rm.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cf-1rm.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇱🇻 | [BL]"
+    type: vless
+    server: 31.56.227.253
+    port: 443
+    uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+    udp: true
+    tls: true
+    servername: cf-1rm.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cf-1rm.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL]"
+    type: vless
+    server: 47.237.78.5
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/settings/topics?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 2"
+    type: vless
+    server: 47.251.101.248
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/html/movies/watch?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 3"
+    type: vless
+    server: 47.251.110.54
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/trade?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 4"
+    type: vless
+    server: 47.253.251.184
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/article/pages/archive?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 5"
+    type: vless
+    server: 47.77.201.227
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/account/picture/study?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 6"
+    type: vless
+    server: 47.85.38.117
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/my/ads/online?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 7"
+    type: vless
+    server: 47.88.23.100
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    tls: true
+    servername: edg-2oo.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/blogs?ed=2560"
+      headers:
+        Host: edg-2oo.pages.dev
+  - name: "🌐 Anycast-IP | 🇩🇪 🇬🇧 🇸🇬 | [BL]"
+    type: vless
+    server: 5.104.107.80
+    port: 2053
+    uuid: f0c9ebf7-76cc-44b7-8b30-b33ee0ffc898
+    udp: true
+    tls: true
+    servername: coding.grok2.indevs.in
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/proxyip=ProxyIP.SG.CMLiussss.Net"
+      headers:
+        Host: coding.grok2.indevs.in
+  - name: "🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL]"
+    type: vless
+    server: 195.137.226.133
+    port: 2083
+    uuid: 7f733b1a-6c00-48ac-ae3b-cbc178a9146e
+    udp: true
+    tls: true
+    servername: nexostore.xnetaro.ir
+    client-fingerprint: firefox
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/wss"
+      headers:
+        Host: nexostore.xnetaro.ir
+  - name: "🌐 Anycast-IP | 🇬🇧 🇺🇸 | [BL]"
+    type: vless
+    server: 104.168.132.123
+    port: 443
+    uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+    udp: true
+    tls: true
+    servername: cf-1rm.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cf-1rm.pages.dev
+  - name: "🌐 Anycast-IP | 🇮🇪 🇮🇶 🇳🇱 | [BL]"
+    type: vless
+    server: 212.80.218.89
+    port: 443
+    uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+    udp: true
+    tls: true
+    servername: vp58.cc.cd
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/TelegramU0001F1E8U0001F1F3 @VPNine1fp=chrome"
+      headers:
+        Host: vp58.cc.cd
+  - name: "🌐 Anycast-IP | 🇮🇪 🇮🇶 🇳🇱 🇺🇸 | [BL]"
+    type: vless
+    server: 5.253.189.62
+    port: 443
+    uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+    udp: true
+    tls: true
+    servername: vp58.cc.cd
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/TelegramU0001F1E8U0001F1F3 @VPNine1fp=chrome"
+      headers:
+        Host: vp58.cc.cd
+  - name: "🌐 Anycast-IP | 🇮🇪 🇸🇬 | [BL]"
+    type: vless
+    server: 147.139.139.151
+    port: 587
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    udp: true
+    tls: true
+    servername: xy1ej.stream-node-us.danfeng.qzz.io
+    client-fingerprint: android
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/danfeng?ed=2560"
+      headers:
+        Host: xy1ej.stream-node-us.danfeng.qzz.io
+  - name: "🌐 Anycast-IP | 🇳🇱 | [BL]"
+    type: vless
+    server: 87.232.116.20
+    port: 443
+    uuid: d86e6fda-e519-46ab-98eb-9ff9a9da5984
+    udp: true
+    tls: true
+    servername: fafeqdhlett2p5la6d.cdn.cachefleet.com
+    client-fingerprint: firefox
+    network: grpc
+    grpc-opts:
+      grpc-service-name: 67h2o3erm0t9imsj
+  - name: "🌐 Anycast-IP | 🇺🇸 | [BL]"
+    type: vless
+    server: 104.168.152.26
+    port: 443
+    uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+    udp: true
+    tls: true
+    servername: cf-1rm.pages.dev
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cf-1rm.pages.dev
   - name: node
-    type: vmess
-    server: 20.235.220.189
-    port: 443
-    uuid: f23bb427c1f94373876c2f43e9f790f3
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-    network: ws
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-    client-fingerprint: chrome
-  - name: "node 2"
-    type: vmess
-    server: 20.235.220.189
-    port: 443
-    uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-    network: ws
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-    client-fingerprint: chrome
-  - name: "node 3"
     type: vmess
     server: 23.147.56.181
     port: 52843
@@ -478,36 +1232,7 @@ proxies:
     cipher: auto
     udp: true
     network: tcp
-  - name: "node 4"
-    type: vmess
-    server: 172.64.80.1
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: v2ray1.dozapp.xyz
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: v2ray1.dozapp.xyz
-    client-fingerprint: chrome
-  - name: "node 5"
-    type: vmess
-    server: 120.48.133.162
-    port: 10086
-    uuid: 4fc543d5-23ce-4556-ae2b-01685edd4397
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 120.48.133.162
-  - name: "node 6"
+  - name: "node 2"
     type: vmess
     server: 39.108.113.127
     port: 10086
@@ -520,24 +1245,11 @@ proxies:
       path: "/"
       headers:
         Host: 39.108.113.127
-  - name: "node 7"
+  - name: "node 3"
     type: vmess
-    server: 120.48.133.162
+    server: 39.108.113.127
     port: 10086
-    uuid: fde10e39-48bb-4dcf-b3ba-71d711323a54
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET"
-      headers:
-        Host: 120.48.133.162
-  - name: "node 8"
-    type: vmess
-    server: 120.48.133.162
-    port: 10086
-    uuid: f81d0fc9-c6b0-4dab-a270-6e697e0a367f
+    uuid: fccbad0f-eb6c-4bdd-80ed-145409e2f761
     alterId: 0
     cipher: auto
     udp: true
@@ -545,222 +1257,191 @@ proxies:
     ws-opts:
       path: "/"
       headers:
-        Host: 120.48.133.162
-  - name: "node 9"
-    type: vmess
-    server: 120.48.133.162
-    port: 10086
-    uuid: a8d931b0-6c27-428b-8d86-c20efea3dba7
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 120.48.133.162
-  - name: "node 10"
-    type: vmess
-    server: 172.67.221.77
-    port: 443
-    uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: www.ubuntuupdates.com
-    network: ws
-    ws-opts:
-      path: "/truth"
-      headers:
-        Host: www.ubuntuupdates.com
-    client-fingerprint: chrome
-  - name: "node 11"
-    type: vmess
-    server: 172.66.203.67
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/ws?ed=2048"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-  - name: "node 12"
-    type: vmess
-    server: cf.877771.xyz
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-  - name: "node 13"
-    type: vmess
-    server: 104.27.0.1
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-  - name: "node 14"
-    type: vmess
-    server: 104.17.77.77
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: v2ray1.dozapp.xyz
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: v2ray1.dozapp.xyz
-    client-fingerprint: chrome
-  - name: "🇸🇪 Sweden, Hudiksvall (Östra Hudiksvall) | 🌐 | [BL]"
-    type: trojan
-    server: 95.143.196.97
-    port: 443
-    password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-    udp: true
-    servername: connect-se.mimowhat.online
-    client-fingerprint: chrome
-    alpn:
-      - h2
-      - http/1.1
-    network: tcp
-  - name: "🇸🇪 Sweden, Hudiksvall (Östra Hudiksvall) | 🌐 | [BL] 2"
-    type: trojan
-    server: connect-se.mimowhat.online
-    port: 443
-    password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-    udp: true
-    servername: connect-se.mimowhat.online
-    client-fingerprint: chrome
-    alpn:
-      - h2
-      - http/1.1
-    network: tcp
+        Host: 39.108.113.127
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - "🇪🇪 Estonia, Tallinn | [BL]"
+      - "🇫🇮 Finland, Helsinki | [BL]"
+      - "🇩🇪 Germany | 🌐 | [BL]"
       - "🇩🇪 Germany, Falkenstein | 🌐 | [BL]"
       - "🇩🇪 Germany, Falkenstein | 🌐 | [BL] 2"
+      - "🇩🇪 Germany, Frankfurt am Main | [BL]"
       - "🇮🇪 Ireland, Dublin | [BL]"
-      - "🇲🇩 Moldova, Chisinau | 🌐 | [BL]"
-      - "🇲🇩 Moldova, Chisinau | 🌐 | [BL] 2"
-      - "🇲🇩 Moldova, Chisinau | 🌐 | [BL] 3"
-      - "🇲🇩 Moldova, Chisinau | 🌐 | [BL] 4"
-      - "🇸🇬 Singapore, Newton | 🌐 | [BL]"
-      - "🇳🇱 The Netherlands, Amsterdam | [BL]"
+      - "🇪🇸 Spain, Valencia | [BL]"
+      - "🇸🇪 Sweden, Stockholm | [BL]"
+      - "🇳🇱 The Netherlands, Eygelshoven | [BL]"
       - "🇹🇷 Turkey, Istanbul | [BL]"
-      - "🇺🇸 United States | 🌐 | [BL]"
-      - "🇺🇸 United States | 🌐 | [BL] 2"
-      - "🇺🇸 United States | 🌐 | [BL] 3"
-      - "🇺🇸 United States, Chicago | [BL]"
       - "🇺🇸 United States, Orem | [BL]"
       - "🇺🇸 United States, Orem | [BL] 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇬🇧 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇰🇷 | [BL]"
+      - "🇺🇸 United States, Salt Lake City | 🌐 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇲 🇮🇶 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇩🇪 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇩🇪 🇬🇧 🇵🇱 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇩🇪 🇵🇱 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇯🇵 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇯🇵 🇰🇷 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇯🇵 🇰🇷 | [BL] 2"
+      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇯🇵 🇰🇷 | [BL] 3"
+      - "🌐 Anycast-IP | 🇦🇷 🇩🇪 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇷 🇮🇪 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇷 🇯🇵 🇰🇷 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇹 🇨🇦 🇮🇪 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇹 🇮🇪 | [BL]"
+      - "🌐 Anycast-IP | 🇧🇬 🇨🇦 | [BL]"
+      - "🌐 Anycast-IP | 🇧🇬 🇨🇦 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 | [BL] 3"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇮🇶 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇺🇸 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇺🇸 | [BL] 3"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇺🇸 | [BL] 4"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇶 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇫🇷 🇮🇪 🇮🇶 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇰🇷 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇭🇰 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇭🇰 🇮🇪 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇭🇰 🇮🇪 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇭🇰 🇮🇪 🇸🇬 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇭🇰 🇮🇪 🇸🇬 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇭🇰 🇵🇭 🇺🇸 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 | [BL] 3"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 | [BL] 4"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 | [BL] 5"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 | [BL] 6"
       - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 🇺🇸 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 🇺🇸 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 🇺🇸 | [BL] 3"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 🇺🇸 | [BL] 4"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇶 🇮🇹 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇶 🇮🇹 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇰🇷 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇰🇷 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇰🇷 🇱🇹 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇰🇷 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇮🇪 🇸🇬 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇵🇭 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇰🇷 🇺🇸 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇰🇷 🇺🇸 | [BL] 3"
+      - "🌐 Anycast-IP | 🇨🇦 🇰🇷 🇺🇸 | [BL] 4"
+      - "🌐 Anycast-IP | 🇨🇦 🇱🇹 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇱🇹 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇱🇻 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 3"
+      - "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 4"
+      - "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 5"
+      - "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 6"
+      - "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 7"
+      - "🌐 Anycast-IP | 🇩🇪 🇬🇧 🇸🇬 | [BL]"
+      - "🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL]"
+      - "🌐 Anycast-IP | 🇬🇧 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇮🇪 🇮🇶 🇳🇱 | [BL]"
+      - "🌐 Anycast-IP | 🇮🇪 🇮🇶 🇳🇱 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇮🇪 🇸🇬 | [BL]"
+      - "🌐 Anycast-IP | 🇳🇱 | [BL]"
+      - "🌐 Anycast-IP | 🇺🇸 | [BL]"
       - node
       - "node 2"
       - "node 3"
-      - "node 4"
-      - "node 5"
-      - "node 6"
-      - "node 7"
-      - "node 8"
-      - "node 9"
-      - "node 10"
-      - "node 11"
-      - "node 12"
-      - "node 13"
-      - "node 14"
-      - "🇸🇪 Sweden, Hudiksvall (Östra Hudiksvall) | 🌐 | [BL]"
-      - "🇸🇪 Sweden, Hudiksvall (Östra Hudiksvall) | 🌐 | [BL] 2"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     proxies:
-      - "🇪🇪 Estonia, Tallinn | [BL]"
+      - "🇫🇮 Finland, Helsinki | [BL]"
+      - "🇩🇪 Germany | 🌐 | [BL]"
       - "🇩🇪 Germany, Falkenstein | 🌐 | [BL]"
       - "🇩🇪 Germany, Falkenstein | 🌐 | [BL] 2"
+      - "🇩🇪 Germany, Frankfurt am Main | [BL]"
       - "🇮🇪 Ireland, Dublin | [BL]"
-      - "🇲🇩 Moldova, Chisinau | 🌐 | [BL]"
-      - "🇲🇩 Moldova, Chisinau | 🌐 | [BL] 2"
-      - "🇲🇩 Moldova, Chisinau | 🌐 | [BL] 3"
-      - "🇲🇩 Moldova, Chisinau | 🌐 | [BL] 4"
-      - "🇸🇬 Singapore, Newton | 🌐 | [BL]"
-      - "🇳🇱 The Netherlands, Amsterdam | [BL]"
+      - "🇪🇸 Spain, Valencia | [BL]"
+      - "🇸🇪 Sweden, Stockholm | [BL]"
+      - "🇳🇱 The Netherlands, Eygelshoven | [BL]"
       - "🇹🇷 Turkey, Istanbul | [BL]"
-      - "🇺🇸 United States | 🌐 | [BL]"
-      - "🇺🇸 United States | 🌐 | [BL] 2"
-      - "🇺🇸 United States | 🌐 | [BL] 3"
-      - "🇺🇸 United States, Chicago | [BL]"
       - "🇺🇸 United States, Orem | [BL]"
       - "🇺🇸 United States, Orem | [BL] 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇬🇧 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇰🇷 | [BL]"
+      - "🇺🇸 United States, Salt Lake City | 🌐 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇲 🇮🇶 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇩🇪 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇩🇪 🇬🇧 🇵🇱 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇩🇪 🇵🇱 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇯🇵 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇯🇵 🇰🇷 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇯🇵 🇰🇷 | [BL] 2"
+      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇯🇵 🇰🇷 | [BL] 3"
+      - "🌐 Anycast-IP | 🇦🇷 🇩🇪 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇷 🇮🇪 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇷 🇯🇵 🇰🇷 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇹 🇨🇦 🇮🇪 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇦🇹 🇮🇪 | [BL]"
+      - "🌐 Anycast-IP | 🇧🇬 🇨🇦 | [BL]"
+      - "🌐 Anycast-IP | 🇧🇬 🇨🇦 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 | [BL] 3"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇮🇶 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇺🇸 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇺🇸 | [BL] 3"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇺🇸 | [BL] 4"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇶 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇫🇷 🇮🇪 🇮🇶 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇰🇷 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇭🇰 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇭🇰 🇮🇪 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇭🇰 🇮🇪 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇭🇰 🇮🇪 🇸🇬 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇭🇰 🇮🇪 🇸🇬 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇭🇰 🇵🇭 🇺🇸 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 | [BL] 3"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 | [BL] 4"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 | [BL] 5"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 | [BL] 6"
       - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 🇺🇸 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 🇺🇸 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 🇺🇸 | [BL] 3"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 🇺🇸 | [BL] 4"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇶 🇮🇹 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇮🇶 🇮🇹 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇰🇷 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇰🇷 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇰🇷 🇱🇹 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇰🇷 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇮🇪 🇸🇬 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇵🇭 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇰🇷 🇺🇸 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇰🇷 🇺🇸 | [BL] 3"
+      - "🌐 Anycast-IP | 🇨🇦 🇰🇷 🇺🇸 | [BL] 4"
+      - "🌐 Anycast-IP | 🇨🇦 🇱🇹 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇱🇹 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇱🇻 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 3"
+      - "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 4"
+      - "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 5"
+      - "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 6"
+      - "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 7"
+      - "🌐 Anycast-IP | 🇩🇪 🇬🇧 🇸🇬 | [BL]"
+      - "🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL]"
+      - "🌐 Anycast-IP | 🇬🇧 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇮🇪 🇮🇶 🇳🇱 | [BL]"
+      - "🌐 Anycast-IP | 🇮🇪 🇮🇶 🇳🇱 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇮🇪 🇸🇬 | [BL]"
+      - "🌐 Anycast-IP | 🇳🇱 | [BL]"
+      - "🌐 Anycast-IP | 🇺🇸 | [BL]"
       - node
       - "node 2"
       - "node 3"
-      - "node 4"
-      - "node 5"
-      - "node 6"
-      - "node 7"
-      - "node 8"
-      - "node 9"
-      - "node 10"
-      - "node 11"
-      - "node 12"
-      - "node 13"
-      - "node 14"
-      - "🇸🇪 Sweden, Hudiksvall (Östra Hudiksvall) | 🌐 | [BL]"
-      - "🇸🇪 Sweden, Hudiksvall (Östra Hudiksvall) | 🌐 | [BL] 2"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
