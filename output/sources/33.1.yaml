@@ -1,5 +1,5 @@
 # 订阅 33.1.txt -> Clash
-# 节点数量: 1
+# 节点数量: 2
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -40,36 +40,52 @@ dns:
     - "https://doh.pub/dns-query"
     - "https://dns.alidns.com/dns-query"
 proxies:
-  - name: "🇳🇱 The Netherlands | [*CIDR] VK"
+  - name: "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN"
     type: vless
-    server: 185.86.145.37
-    port: 443
-    uuid: 135aa7e5-87af-4df2-a9f0-0c4eaea0c492
+    server: 37.18.14.43
+    port: 8443
+    uuid: 7dd69047-047e-422e-a2ba-ed773c34fd1a
     udp: true
     tls: true
-    servername: rar.rtkdvbr.cc
-    client-fingerprint: edge
+    servername: flatcrest.net
+    client-fingerprint: chrome
     alpn:
       - http/1.1
-    network: ws
-    ws-opts:
-      path: "/amws"
-      headers:
-        Host: rar.rtkdvbr.cc
+      - h2
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: flatcrest.net
+      mode: auto
+  - name: "🇷🇺 Russia | 🌐 [*CIDR] CDN"
+    type: vless
+    server: 37.18.14.43
+    port: 2053
+    uuid: 7dd69047-047e-422e-a2ba-ed773c34fd1a
+    udp: true
+    tls: true
+    servername: flatcrest.net
+    client-fingerprint: chrome
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: flatcrest.net
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - "🇳🇱 The Netherlands | [*CIDR] VK"
+      - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN"
+      - "🇷🇺 Russia | 🌐 [*CIDR] CDN"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     proxies:
-      - "🇳🇱 The Netherlands | [*CIDR] VK"
+      - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN"
+      - "🇷🇺 Russia | 🌐 [*CIDR] CDN"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"

@@ -1,5 +1,5 @@
 # 订阅 27.txt -> Clash
-# 节点数量: 16
+# 节点数量: 7
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -42,19 +42,6 @@ dns:
 proxies:
   - name: node
     type: vmess
-    server: 120.48.133.162
-    port: 10086
-    uuid: 2a489513-46b5-488c-9899-9faaf2d83cd9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 120.48.133.162
-  - name: "node 2"
-    type: vmess
     server: 39.108.113.127
     port: 10086
     uuid: 4fc543d5-23ce-4556-ae2b-01685edd4397
@@ -66,7 +53,7 @@ proxies:
       path: "/"
       headers:
         Host: 39.108.113.127
-  - name: "node 3"
+  - name: "node 2"
     type: vmess
     server: 120.48.133.162
     port: 10086
@@ -79,33 +66,7 @@ proxies:
       path: "/"
       headers:
         Host: 120.48.133.162
-  - name: "node 4"
-    type: vmess
-    server: 120.48.133.162
-    port: 10086
-    uuid: 4fc543d5-23ce-4556-ae2b-01685edd4397
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 120.48.133.162
-  - name: "node 5"
-    type: vmess
-    server: 39.108.113.127
-    port: 10086
-    uuid: fccbad0f-eb6c-4bdd-80ed-145409e2f761
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 39.108.113.127
-  - name: "node 6"
+  - name: "node 3"
     type: vmess
     server: 120.48.133.162
     port: 10086
@@ -118,20 +79,11 @@ proxies:
       path: "/"
       headers:
         Host: 120.48.133.162
-  - name: "node 7"
+  - name: "node 4"
     type: vmess
-    server: 176.65.151.175
-    port: 11674
-    uuid: a98a98cb-ae86-43ae-b695-cf0dbcad3fc2
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: "node 8"
-    type: vmess
-    server: 156.245.232.239
-    port: 35043
-    uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+    server: 120.48.133.162
+    port: 10086
+    uuid: 2a489513-46b5-488c-9899-9faaf2d83cd9
     alterId: 0
     cipher: auto
     udp: true
@@ -139,7 +91,36 @@ proxies:
     ws-opts:
       path: "/"
       headers:
-        Host: 156.245.232.239
+        Host: 120.48.133.162
+  - name: "node 5"
+    type: vmess
+    server: 104.17.147.222
+    port: 80
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ws?ed=2048"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+  - name: "node 6"
+    type: vmess
+    server: 192.166.82.21
+    port: 443
+    uuid: ffe8ae49-05d7-4f56-a82b-dd618108c270
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: us-slc-global1.xeovo.eu
+    network: ws
+    ws-opts:
+      path: "/sacaca"
+      headers:
+        Host: us-slc-global1.xeovo.eu
+    client-fingerprint: chrome
   - name: "🇺🇸 United States, Ashburn | [BL]"
     type: trojan
     server: 199.68.156.250
@@ -156,97 +137,6 @@ proxies:
       path: "/wss"
       headers:
         Host: nexoshop.netvia.ir
-  - name: "🌐 Anycast-IP | 🇨🇦 🇭🇰 🇰🇷 | [BL]"
-    type: trojan
-    server: 103.3.26.26
-    port: 443
-    password: 8deb189a-3aed-4865-843b-b72dae954c46
-    udp: true
-    servername: api.85s.me
-    client-fingerprint: safari
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: api.85s.me
-  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
-    type: trojan
-    server: 121.127.33.130
-    port: 443
-    password: f426d3c9-fb43-43c0-868b-898dfa451a74
-    udp: true
-    servername: likejennie.pages.dev
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: likejennie.pages.dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇬 | [BL]"
-    type: trojan
-    server: 45.127.34.109
-    port: 443
-    password: 8deb189a-3aed-4865-843b-b72dae954c46
-    udp: true
-    servername: api.85s.me
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: api.85s.me
-  - name: "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL]"
-    type: trojan
-    server: 179.255.99.7
-    port: 8443
-    password: 8deb189a-3aed-4865-843b-b72dae954c46
-    udp: true
-    servername: api.85s.me
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: api.85s.me
-  - name: "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 2"
-    type: trojan
-    server: 47.75.104.211
-    port: 443
-    password: 8deb189a-3aed-4865-843b-b72dae954c46
-    udp: true
-    servername: api.85s.me
-    client-fingerprint: android
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: api.85s.me
-  - name: "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇺🇸 | [BL]"
-    type: trojan
-    server: 179.255.102.237
-    port: 443
-    password: 8deb189a-3aed-4865-843b-b72dae954c46
-    udp: true
-    servername: api.85s.me
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: api.85s.me
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇬 🇺🇸 | [BL]"
-    type: trojan
-    server: 69.8.133.223
-    port: 443
-    password: 8deb189a-3aed-4865-843b-b72dae954c46
-    udp: true
-    servername: api.85s.me
-    client-fingerprint: safari
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: api.85s.me
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -259,16 +149,7 @@ proxy-groups:
       - "node 4"
       - "node 5"
       - "node 6"
-      - "node 7"
-      - "node 8"
       - "🇺🇸 United States, Ashburn | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇭🇰 🇰🇷 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇬 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 2"
-      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇬 🇺🇸 | [BL]"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -281,16 +162,7 @@ proxy-groups:
       - "node 4"
       - "node 5"
       - "node 6"
-      - "node 7"
-      - "node 8"
       - "🇺🇸 United States, Ashburn | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇭🇰 🇰🇷 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇬 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇺🇸 | [BL] 2"
-      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇸🇬 🇺🇸 | [BL]"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
