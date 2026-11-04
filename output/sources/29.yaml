@@ -1,5 +1,5 @@
 # 订阅 29.txt -> Clash
-# 节点数量: 43
+# 节点数量: 21
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -40,34 +40,34 @@ dns:
     - "https://doh.pub/dns-query"
     - "https://dns.alidns.com/dns-query"
 proxies:
-  - name: "🇩🇪 Germany, Falkenstein | 🌐 | [BL]"
+  - name: "🇫🇷 France, Bidart | [BL]"
     type: vless
-    server: 141.193.213.21
-    port: 2083
-    uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
+    server: calendar.salphetka.ru
+    port: 443
+    uuid: c86fb9d6-8bdb-48ea-b78f-4409e02234ce
     udp: true
     tls: true
-    servername: site.check-looks.space
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: site.check-looks.space
-  - name: "🇩🇪 Germany, Falkenstein | 🌐 | [BL] 2"
+    servername: calendar.salphetka.ru
+    client-fingerprint: android
+    reality-opts:
+      public-key: IyUvo6owCe4Zfr8aIVdtweSNHQSpSyiO-OKsRDJ9BBs
+      short-id: a111111111111111
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇫🇷 France, Paris | [BL]"
     type: vless
-    server: news.zoom.us
-    port: 2083
-    uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
+    server: vl4.serveraa.ir
+    port: 443
+    uuid: d18e433f-0f40-4f71-8055-aea4a0a42af4
     udp: true
     tls: true
-    servername: site.check-looks.space
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: site.check-looks.space
+    servername: www.google.com
+    client-fingerprint: android
+    reality-opts:
+      public-key: 5l4RnloO79fW8U0ROmCmWsjNb9WECNxVDqZeTt9HDEc
+      short-id: f64da10a
+    flow: xtls-rprx-vision
+    network: tcp
   - name: "🇩🇪 Germany, Frankfurt am Main | [BL]"
     type: vless
     server: 130.49.177.193
@@ -76,38 +76,38 @@ proxies:
     udp: true
     tls: true
     servername: de-2.ffpn.pro
-    client-fingerprint: firefox
+    client-fingerprint: android
     reality-opts:
       public-key: DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc
       short-id: 681fc2dd643bc2f3
     flow: xtls-rprx-vision
     network: tcp
-  - name: "🇮🇹 Italy, Milan | [BL]"
+  - name: "🇩🇪 Germany, Frankfurt am Main | [BL] 2"
     type: vless
-    server: 195.58.46.17
-    port: 443
-    uuid: bbb2fa0f-30b1-4fb7-b007-79c563ff544b
+    server: 77.90.2.130
+    port: 43086
+    uuid: d782aa4c-9284-4a60-a9d9-f61412f8a2a4
     udp: true
     tls: true
-    servername: t93q8h39r8h183hr.ru
-    client-fingerprint: firefox
+    servername: apple.com
+    client-fingerprint: android
     reality-opts:
-      public-key: PVlnR_I9tZ8hKhOHW6ySpSofhsaShcBQ_JV2-0TePVA
-      short-id: ec9e3ca77d302766
+      public-key: SRKTZm_KYvsD9ONd5VU54ABZxudjR65r5Uhxc-1lLko
+      short-id: 1c601fed
     flow: xtls-rprx-vision
     network: tcp
-  - name: "🇱🇻 Latvia, Riga | [BL]"
+  - name: "🇩🇪 Germany, Kirchberg | [BL]"
     type: vless
-    server: test.wolf-moose.test-cdn-kkk.com
-    port: 443
-    uuid: bbe37c75-d097-4b72-a074-445a56fe3969
+    server: 94.249.198.211
+    port: 43000
+    uuid: 97462b18-1836-4e4f-b0fb-5c84d38a2e9d
     udp: true
     tls: true
-    servername: la.cdn-tech-images.com
-    client-fingerprint: qq
+    servername: 94.249.198.211
+    client-fingerprint: android
     reality-opts:
-      public-key: "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw"
-      short-id: "50"
+      public-key: QaPoY-5W4Z7NA_LUG37yjYNy3JWg53Ru7eWLTzec-nE
+      short-id: b62ac375
     flow: xtls-rprx-vision
     network: tcp
   - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]"
@@ -118,7 +118,7 @@ proxies:
     udp: true
     tls: true
     servername: u.srilankangrill.online
-    client-fingerprint: safari
+    client-fingerprint: android
     network: ws
     ws-opts:
       path: "/"
@@ -146,7 +146,7 @@ proxies:
     udp: true
     tls: true
     servername: u.srilankangrill.online
-    client-fingerprint: firefox
+    client-fingerprint: android
     network: ws
     ws-opts:
       path: "/"
@@ -154,13 +154,13 @@ proxies:
         Host: u.srilankangrill.online
   - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 4"
     type: vless
-    server: 103.173.179.184
+    server: 103.232.95.178
     port: 443
     uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
     udp: true
     tls: true
     servername: u.srilankangrill.online
-    client-fingerprint: chrome
+    client-fingerprint: android
     network: ws
     ws-opts:
       path: "/"
@@ -168,13 +168,13 @@ proxies:
         Host: u.srilankangrill.online
   - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 5"
     type: vless
-    server: 103.232.95.178
+    server: 103.25.202.25
     port: 443
     uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
     udp: true
     tls: true
     servername: u.srilankangrill.online
-    client-fingerprint: firefox
+    client-fingerprint: android
     network: ws
     ws-opts:
       path: "/"
@@ -182,13 +182,13 @@ proxies:
         Host: u.srilankangrill.online
   - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 6"
     type: vless
-    server: 103.25.202.25
+    server: 104.168.132.109
     port: 443
     uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
     udp: true
     tls: true
     servername: u.srilankangrill.online
-    client-fingerprint: chrome
+    client-fingerprint: android
     network: ws
     ws-opts:
       path: "/"
@@ -196,41 +196,13 @@ proxies:
         Host: u.srilankangrill.online
   - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 7"
     type: vless
-    server: 104.168.132.109
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 8"
-    type: vless
     server: 185.174.137.106
     port: 443
     uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
     udp: true
     tls: true
     servername: u.srilankangrill.online
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 9"
-    type: vless
-    server: 212.119.43.76
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: chrome
+    client-fingerprint: android
     network: ws
     ws-opts:
       path: "/"
@@ -244,387 +216,79 @@ proxies:
     udp: true
     tls: true
     servername: sw.golangwikito.cfd
-    client-fingerprint: firefox
+    client-fingerprint: android
     reality-opts:
       public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
       short-id: a1037b25dcef6aa7
     flow: xtls-rprx-vision
     network: tcp
-  - name: "🇺🇸 United States, Los Angeles | [BL]"
+  - name: "🇺🇸 United States, Los Angeles (Central-Alameda) | 🌐 | [BL]"
     type: vless
-    server: 136.0.197.99
-    port: 49520
-    uuid: ca4cb252-3fcb-4937-9d08-c39683e46e42
+    server: 179.255.139.212
+    port: 41392
+    uuid: 47e5e6c1-7228-402d-8df9-fa01b1010ba0
     udp: true
     tls: true
-    servername: www.ebay.com
-    client-fingerprint: firefox
+    servername: apple.com
+    client-fingerprint: android
     reality-opts:
-      public-key: c4S7RKiXGJElV2F5_cPCUc_NDZzjpcPHTEs-OwO6A2c
+      public-key: LOUa3SbB3M-pcOZTl5-Bei8gJRIiagR35arRnxNmFic
+      short-id: 77f82e43
     flow: xtls-rprx-vision
     network: tcp
   - name: "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL]"
     type: vless
-    server: 45.78.7.160
+    server: 104.225.239.235
     port: 443
-    uuid: 1e7c45aa-160c-4eb9-b2e2-2387b512a36c
+    uuid: 4dbf1ade-33f1-40dc-9273-e51babd570fe
     udp: true
     tls: true
-    servername: www.cloudflare.com
-    client-fingerprint: firefox
+    servername: portal.citygrainla.com
+    client-fingerprint: android
     reality-opts:
-      public-key: dKHgzv-s518XLU_HzAVzhtRkIIowd-Ryc6h8DQtN7Fw
-      short-id: a768c3de3009e45e
+      public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
+      short-id: 051f20c2344a2dfd
     flow: xtls-rprx-vision
     network: tcp
   - name: "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL 2"
     type: vless
-    server: 104.243.31.152
+    server: 104.243.16.178
     port: 443
     uuid: 4dbf1ade-33f1-40dc-9273-e51babd570fe
     udp: true
     tls: true
     servername: portal.citygrainla.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
-      short-id: 051f20c2344a2dfd
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL 3"
-    type: vless
-    server: 176.122.141.216
-    port: 443
-    uuid: 4dbf1ade-33f1-40dc-9273-e51babd570fe
-    udp: true
-    tls: true
-    servername: portal.citygrainla.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
-      short-id: 051f20c2344a2dfd
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL 4"
-    type: vless
-    server: 176.122.184.9
-    port: 443
-    uuid: 4dbf1ade-33f1-40dc-9273-e51babd570fe
-    udp: true
-    tls: true
-    servername: portal.citygrainla.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
-      short-id: 051f20c2344a2dfd
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇭🇰 🇸🇬 🇺🇸 | [BL]"
-    type: vless
-    server: 43.133.62.238
-    port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
     client-fingerprint: android
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇮🇪 🇯🇵 🇸🇬 | [BL]"
+    reality-opts:
+      public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
+      short-id: 051f20c2344a2dfd
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇺🇸 United States, Seattle | [BL]"
     type: vless
-    server: 147.139.139.151
-    port: 587
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: firefox
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇯🇵 🇸🇬 | [BL]"
-    type: vless
-    server: 188.239.19.57
+    server: mg1.ainivp.com
     port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    uuid: 9227afcd-026e-781f-1abc-c06efabd2338
     udp: true
     tls: true
-    servername: t5pmr.mail-node.gfw.kdns.fr
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed"
-      headers:
-        Host: t5pmr.mail-node.gfw.kdns.fr
-  - name: "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇺🇸 | [BL]"
+    servername: www.microsoft.com
+    client-fingerprint: android
+    reality-opts:
+      public-key: epgveXEcUs0sbs4jV_1KldTkZGnWUHfMKcs0XNyP41Y
+      short-id: a1b2c3d4
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🌐 Anycast-IP | 🇨🇦 🇯🇵 | [BL]"
     type: vless
-    server: 143.246.62.134
+    server: 23.27.11.86
     port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    uuid: e8a346c2-e14c-4f82-876f-367dc19ee541
     udp: true
     tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: qq
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560fp=firefox"
-      headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇺🇸 | [BL] 2"
-    type: vless
-    server: 64.178.113.224
-    port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇦🇷 🇩🇪 🇮🇶 | [BL]"
-    type: vless
-    server: 95.81.75.207
-    port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇦🇷 🇭🇰 🇮🇪 🇯🇵 🇸🇬 | [BL]"
-    type: vless
-    server: 101.32.142.168
-    port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇦🇷 🇮🇪 🇸🇬 🇺🇸 | [BL]"
-    type: vless
-    server: 43.163.86.187
-    port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: qq
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 | [BL]"
-    type: vless
-    server: 47.245.139.226
-    port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 | [BL]"
-    type: vless
-    server: 47.245.134.84
-    port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇺🇸 | [BL]"
-    type: vless
-    server: 82.139.215.7
-    port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: edge
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇮🇪 🇺🇸 | [BL]"
-    type: vless
-    server: 185.212.62.17
-    port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: firefox
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇰🇷 | [BL]"
-    type: vless
-    server: 43.155.165.247
-    port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇨🇦 🇭🇰 | [BL]"
-    type: vless
-    server: 8.220.180.112
-    port: 80
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: firefox
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 🇺🇸 | [BL]"
-    type: vless
-    server: 47.84.109.138
-    port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: t5pmr.mail-node.gfw.kdns.fr
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: t5pmr.mail-node.gfw.kdns.fr
-  - name: "🌐 Anycast-IP | 🇨🇦 🇰🇷 | [BL]"
-    type: vless
-    server: 119.28.150.233
-    port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: t5pmr.mail-node.gfw.kdns.fr
-    client-fingerprint: qq
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: t5pmr.mail-node.gfw.kdns.fr
-  - name: "🌐 Anycast-IP | 🇨🇦 🇰🇷 | [BL] 2"
-    type: vless
-    server: 43.128.130.45
-    port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: qq
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇩🇪 🇺🇸 | [BL]"
-    type: vless
-    server: 82.139.215.245
-    port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: safari
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇭🇰 🇰🇷 | [BL]"
-    type: vless
-    server: 43.161.253.137
-    port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    udp: true
-    tls: true
-    servername: xy1ej.stream-node-us.danfeng.qzz.io
-    client-fingerprint: edge
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/danfeng?ed=2560"
-      headers:
-        Host: xy1ej.stream-node-us.danfeng.qzz.io
-  - name: "🌐 Anycast-IP | 🇸🇬 | [BL]"
-    type: vless
-    server: hw6.divarkhaghazi.com
-    port: 465
-    uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
-    udp: true
-    tls: true
-    servername: hw6.divarkhaghazi.com.
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: hw6.divarkhaghazi.com.
-    client-fingerprint: chrome
+    servername: jp.burmy.xyz
+    client-fingerprint: android
+    flow: xtls-rprx-vision
+    network: tcp
   - name: node
     type: vmess
     server: 39.108.113.127
@@ -640,19 +304,6 @@ proxies:
         Host: 39.108.113.127
   - name: "node 2"
     type: vmess
-    server: 104.17.147.222
-    port: 80
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/ws?ed=2048"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-  - name: "node 3"
-    type: vmess
     server: 192.166.82.21
     port: 443
     uuid: ffe8ae49-05d7-4f56-a82b-dd618108c270
@@ -667,17 +318,26 @@ proxies:
       headers:
         Host: us-slc-global1.xeovo.eu
     client-fingerprint: chrome
+  - name: "node 3"
+    type: vmess
+    server: 43.173.67.42
+    port: 47116
+    uuid: fc3347e2-007d-4cad-fe28-3d80672c3ccc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - "🇩🇪 Germany, Falkenstein | 🌐 | [BL]"
-      - "🇩🇪 Germany, Falkenstein | 🌐 | [BL] 2"
+      - "🇫🇷 France, Bidart | [BL]"
+      - "🇫🇷 France, Paris | [BL]"
       - "🇩🇪 Germany, Frankfurt am Main | [BL]"
-      - "🇮🇹 Italy, Milan | [BL]"
-      - "🇱🇻 Latvia, Riga | [BL]"
+      - "🇩🇪 Germany, Frankfurt am Main | [BL] 2"
+      - "🇩🇪 Germany, Kirchberg | [BL]"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 2"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 3"
@@ -685,34 +345,12 @@ proxy-groups:
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 5"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 6"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 7"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 8"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 9"
       - "🇳🇱 The Netherlands, Amsterdam | [BL]"
-      - "🇺🇸 United States, Los Angeles | [BL]"
+      - "🇺🇸 United States, Los Angeles (Central-Alameda) | 🌐 | [BL]"
       - "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL]"
       - "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL 2"
-      - "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL 3"
-      - "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL 4"
-      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇭🇰 🇸🇬 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇮🇪 🇯🇵 🇸🇬 | [BL]"
-      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇯🇵 🇸🇬 | [BL]"
-      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇺🇸 | [BL] 2"
-      - "🌐 Anycast-IP | 🇦🇷 🇩🇪 🇮🇶 | [BL]"
-      - "🌐 Anycast-IP | 🇦🇷 🇭🇰 🇮🇪 🇯🇵 🇸🇬 | [BL]"
-      - "🌐 Anycast-IP | 🇦🇷 🇮🇪 🇸🇬 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇮🇪 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇰🇷 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇭🇰 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇰🇷 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇰🇷 | [BL] 2"
-      - "🌐 Anycast-IP | 🇩🇪 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇭🇰 🇰🇷 | [BL]"
-      - "🌐 Anycast-IP | 🇸🇬 | [BL]"
+      - "🇺🇸 United States, Seattle | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇯🇵 | [BL]"
       - node
       - "node 2"
       - "node 3"
@@ -722,11 +360,11 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "🇩🇪 Germany, Falkenstein | 🌐 | [BL]"
-      - "🇩🇪 Germany, Falkenstein | 🌐 | [BL] 2"
+      - "🇫🇷 France, Bidart | [BL]"
+      - "🇫🇷 France, Paris | [BL]"
       - "🇩🇪 Germany, Frankfurt am Main | [BL]"
-      - "🇮🇹 Italy, Milan | [BL]"
-      - "🇱🇻 Latvia, Riga | [BL]"
+      - "🇩🇪 Germany, Frankfurt am Main | [BL] 2"
+      - "🇩🇪 Germany, Kirchberg | [BL]"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 2"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 3"
@@ -734,34 +372,12 @@ proxy-groups:
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 5"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 6"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 7"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 8"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 9"
       - "🇳🇱 The Netherlands, Amsterdam | [BL]"
-      - "🇺🇸 United States, Los Angeles | [BL]"
+      - "🇺🇸 United States, Los Angeles (Central-Alameda) | 🌐 | [BL]"
       - "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL]"
       - "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL 2"
-      - "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL 3"
-      - "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL 4"
-      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇭🇰 🇸🇬 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇮🇪 🇯🇵 🇸🇬 | [BL]"
-      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇯🇵 🇸🇬 | [BL]"
-      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇺🇸 | [BL] 2"
-      - "🌐 Anycast-IP | 🇦🇷 🇩🇪 🇮🇶 | [BL]"
-      - "🌐 Anycast-IP | 🇦🇷 🇭🇰 🇮🇪 🇯🇵 🇸🇬 | [BL]"
-      - "🌐 Anycast-IP | 🇦🇷 🇮🇪 🇸🇬 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇮🇪 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇰🇷 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇭🇰 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇸🇬 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇰🇷 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇰🇷 | [BL] 2"
-      - "🌐 Anycast-IP | 🇩🇪 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇭🇰 🇰🇷 | [BL]"
-      - "🌐 Anycast-IP | 🇸🇬 | [BL]"
+      - "🇺🇸 United States, Seattle | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇯🇵 | [BL]"
       - node
       - "node 2"
       - "node 3"
