@@ -42,16 +42,21 @@ dns:
 proxies:
   - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
     type: vless
-    server: 193.53.126.91
+    server: 185.178.208.140
     port: 443
-    uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+    uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
     udp: true
     tls: true
-    servername: u695098u14c5ddd4s2358.gogocs.xyz
-    client-fingerprint: android
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 2"
+    servername: static.bakarova-top.ru
+    client-fingerprint: chrome
+    alpn:
+      - h2
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/events"
+      host: static.bakarova-top.ru
+      mode: packet-up
+  - name: "🇩🇪 Germany [*CIDR]"
     type: vless
     server: de15.h1cloud.net
     port: 25362
@@ -59,27 +64,13 @@ proxies:
     udp: true
     tls: true
     servername: www.chip.de
-    client-fingerprint: chrome
+    client-fingerprint: edge
+    skip-cert-verify: true
     reality-opts:
       public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
       short-id: 23732d14a527990d
     network: tcp
-  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 3"
-    type: vless
-    server: 147.45.161.4
-    port: 443
-    uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-    udp: true
-    tls: true
-    servername: defs-68.topp-con.xyz
-    client-fingerprint: chrome
-    skip-cert-verify: true
-    reality-opts:
-      public-key: xTePrM5IyjR8o52B2mRAO2nNivfyMpBZxya93MQk4Qc
-      short-id: 2a40b6d6495debf3
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇩🇪 Germany [*CIDR]"
+  - name: "🇩🇪 Germany [*CIDR] 2"
     type: vless
     server: 5.129.202.74
     port: 443
@@ -87,40 +78,26 @@ proxies:
     udp: true
     tls: true
     servername: patch-25.topp-con.xyz
-    client-fingerprint: safari
+    client-fingerprint: chrome
     reality-opts:
       public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
       short-id: b9120cd53ffd7bba
     flow: xtls-rprx-vision
     network: tcp
-  - name: "🇮🇩 Indonesia | 🌐 [*CIDR]"
+  - name: "🇩🇪 Germany | 🌐 [*CIDR]"
     type: vless
-    server: 213.176.19.216
+    server: basterdym.asia
     port: 443
-    uuid: 4460652a-ac34-454d-a119-afe8f4dde1a0
+    uuid: a292fd7d-d4ab-4441-aae3-69784202b321
     udp: true
     tls: true
-    servername: ru-in-ind-4vp.fast-cdn24.com
+    servername: basterdym.asia
     client-fingerprint: firefox
-    reality-opts:
-      public-key: NUjWUMNrcZKkvXmnK--E7wn_YyhEH6c-YOqjDMHWAxA
-      short-id: 686b3e179573a80a
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇮🇩 Indonesia | 🌐 | [*CIDR]"
-    type: vless
-    server: ru-in-ind-4vp.fast-cdn24.com
-    port: 443
-    uuid: 4460652a-ac34-454d-a119-afe8f4dde1a0
-    udp: true
-    tls: true
-    servername: ru-in-ind-4vp.fast-cdn24.com
-    client-fingerprint: edge
-    reality-opts:
-      public-key: NUjWUMNrcZKkvXmnK--E7wn_YyhEH6c-YOqjDMHWAxA
-      short-id: 686b3e179573a80a
-    flow: xtls-rprx-vision
-    network: tcp
+    alpn:
+      - h2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: glush.de1.v1
   - name: "🇱🇹 Lithuania [*CIDR]"
     type: vless
     server: lorettmay.top
@@ -129,7 +106,7 @@ proxies:
     udp: true
     tls: true
     servername: lorettmay.top
-    client-fingerprint: qq
+    client-fingerprint: chrome
     network: ws
     ws-opts:
       path: "/blog/posts"
@@ -142,42 +119,99 @@ proxies:
     uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
     udp: true
     tls: true
-    servername: static.bakarova-top.ru
+    servername: api.bakarova-top.ru
     client-fingerprint: chrome
     network: xhttp
     xhttp-opts:
       path: "/api/v2/events"
-      host: static.bakarova-top.ru
-      mode: packet-up
-  - name: "🇵🇱 Poland | [*CIDR] 2"
+      host: api.bakarova-top.ru
+  - name: "🇨🇭 Switzerland [*CIDR]"
     type: vless
-    server: 185.178.208.140
-    port: 443
-    uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+    server: ch2.h1cloud.net
+    port: 25879
+    uuid: 241306b3-9f27-4ed3-9524-6c0792c55856
     udp: true
     tls: true
-    servername: api.bakarova-top.ru
-    client-fingerprint: android
+    servername: www.bing.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: XuI492LMe1OPIwQH5TQlIo33JRqMM3kfnto62tbx5FU
+      short-id: f1a7a14461a3f389
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR]"
+    type: vless
+    server: 83.171.241.230
+    port: 443
+    uuid: 94042dd1-d32a-4797-b88c-dc48459e2b34
+    udp: true
+    tls: true
+    servername: 100497t.de2.h1clayd.click
+    client-fingerprint: edge
+    reality-opts:
+      public-key: x-7K9P2E91DCL-0ONwm14gxDkUseukg98hYzB-1dW1A
+      short-id: 5be240e45d3c445c
+    network: tcp
+  - name: "🇳🇱 The Netherlands [*CIDR] 2"
+    type: vless
+    server: aaf9a7x.de2.h1clayd.click
+    port: 443
+    uuid: 94042dd1-d32a-4797-b88c-dc48459e2b34
+    udp: true
+    tls: true
+    servername: aaf9a7x.de2.h1clayd.click
+    client-fingerprint: edge
+    reality-opts:
+      public-key: JxuqY729RxyPX7D1cZigwHUYbkSPIx2H7vNTcrj4VBs
+      short-id: 19a70eda3a2416cb
     network: xhttp
     xhttp-opts:
-      path: "/api/v2/events"
-      host: api.bakarova-top.ru
-  - name: "🇳🇱 The Netherlands | [*CIDR] VK"
+      path: "/9e6c99f913ef"
+      host: aaf9a7x.de2.h1clayd.click
+      mode: auto
+  - name: "🇳🇱 The Netherlands | [*CIDR]"
     type: vless
-    server: 185.86.145.37
+    server: 100497t.de2.h1clayd.click
     port: 443
-    uuid: 135aa7e5-87af-4df2-a9f0-0c4eaea0c492
+    uuid: 94042dd1-d32a-4797-b88c-dc48459e2b34
     udp: true
     tls: true
-    servername: rar.rtkdvbr.cc
-    client-fingerprint: edge
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/amws"
-      headers:
-        Host: rar.rtkdvbr.cc
+    servername: 100497t.de2.h1clayd.click
+    client-fingerprint: android
+    reality-opts:
+      public-key: x-7K9P2E91DCL-0ONwm14gxDkUseukg98hYzB-1dW1A
+      short-id: 5be240e45d3c445c
+    network: tcp
+  - name: "🇳🇱 The Netherlands | [*CIDR] 2"
+    type: vless
+    server: 83.171.241.230
+    port: 443
+    uuid: 94042dd1-d32a-4797-b88c-dc48459e2b34
+    udp: true
+    tls: true
+    servername: aaf9a7x.de2.h1clayd.click
+    client-fingerprint: android
+    reality-opts:
+      public-key: JxuqY729RxyPX7D1cZigwHUYbkSPIx2H7vNTcrj4VBs
+      short-id: 19a70eda3a2416cb
+    network: xhttp
+    xhttp-opts:
+      path: "/9e6c99f913ef"
+      host: aaf9a7x.de2.h1clayd.click
+  - name: "🇳🇱 The Netherlands | [*CIDR] 3"
+    type: vless
+    server: ac3f32g.de2.h1clayd.click
+    port: 443
+    uuid: 94042dd1-d32a-4797-b88c-dc48459e2b34
+    udp: true
+    tls: true
+    servername: ac3f32g.de2.h1clayd.click
+    client-fingerprint: android
+    reality-opts:
+      public-key: cO2bNRZvYDit8UqQk_zc6BaSBA7LiLMSmMHTwjU531Q
+      short-id: 051e90ed3d657158
+    network: grpc
+    grpc-opts:
+      grpc-service-name: 01ad85319ae3
   - name: "🇺🇸 United States [*CIDR]"
     type: vless
     server: 201.51.29.153
@@ -186,76 +220,45 @@ proxies:
     udp: true
     tls: true
     servername: db-23.topp-con.xyz
-    client-fingerprint: firefox
+    client-fingerprint: qq
     reality-opts:
       public-key: Elmq7GhYEGaiujWnLYeK3HidTkZV6JYH-aYJXBG9iwc
       short-id: 20b37477b1d93f7e
     flow: xtls-rprx-vision
     network: tcp
-  - name: "🇷🇺 Russia | [*CIDR]"
-    type: vless
-    server: 185.229.9.135
-    port: 443
-    uuid: 03c478b6-93fb-43aa-9fa1-73ced8a13caf
+  - name: "🇩🇪 Germany [*CIDR] 3"
+    type: trojan
+    server: de-bots4.h1cloud.net
+    port: 25267
+    password: happybirthdaydaniel
     udp: true
-    tls: true
-    servername: lesotorg-kirov.ru
-    client-fingerprint: firefox
-    alpn:
-      - http/1.1
+    servername: de-bots4.h1cloud.net
+    client-fingerprint: android
+    skip-cert-verify: true
+    network: tcp
+  - name: "🇩🇪 Germany [*CIDR] 4"
+    type: trojan
+    server: de-bots4.h1cloud.net
+    port: 25267
+    password: happybirthdaydaniel
+    udp: true
+    servername: t.me/FuckTheWall
+    client-fingerprint: android
+    skip-cert-verify: true
+    network: tcp
+  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇮🇶 🇳🇱 [*CIDR]"
+    type: trojan
+    server: 171.22.130.89
+    port: 443
+    password: 8deb189a-3aed-4865-843b-b72dae954c46
+    udp: true
+    servername: api.85s.me
+    client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: "/chws"
+      path: "/"
       headers:
-        Host: lesotorg-kirov.ru
-  - name: "🇷🇺 Russia | [*CIDR] 2"
-    type: vless
-    server: s2359.kukuss.top
-    port: 443
-    uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-    udp: true
-    tls: true
-    servername: u695098u14c5ddd4s2358.gogocs.xyz
-    client-fingerprint: edge
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇷🇺 Russia | 🌐 | [*CIDR]"
-    type: vless
-    server: ru-manager.nodexphere.net
-    port: 443
-    uuid: f935f257-1878-4656-8149-4e7737e2ff7d
-    udp: true
-    tls: true
-    servername: ru-manager.nodexphere.net
-    client-fingerprint: android
-    reality-opts:
-      public-key: lDbTuU4-pEAkxizbdrurcjz3eXq0AgECd0hEh0sL0zM
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇵🇱 Poland [*CIDR]"
-    type: trojan
-    server: 153.76.161.159
-    port: 443
-    password: zViIBNyzxX1SgY8aOTMM72-Oy8O4PS89
-    udp: true
-    servername: stoic-ridge.freedomcdnhelloworld.com
-    client-fingerprint: android
-    alpn:
-      - h2
-      - http/1.1
-    network: tcp
-  - name: "🇵🇱 Poland | [*CIDR] 3"
-    type: trojan
-    server: 45.146.131.92
-    port: 443
-    password: NesTjEDLXnCeVn0ZLb2hsE3oeZWHHaKR
-    udp: true
-    servername: ar-d-s-290.freedomcdnhelloworld.com
-    client-fingerprint: android
-    alpn:
-      - h2
-      - http/1.1
-    network: tcp
+        Host: api.85s.me
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -263,21 +266,21 @@ proxy-groups:
       - "♻️ 自动选择"
       - DIRECT
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
-      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 2"
-      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 3"
       - "🇩🇪 Germany [*CIDR]"
-      - "🇮🇩 Indonesia | 🌐 [*CIDR]"
-      - "🇮🇩 Indonesia | 🌐 | [*CIDR]"
+      - "🇩🇪 Germany [*CIDR] 2"
+      - "🇩🇪 Germany | 🌐 [*CIDR]"
       - "🇱🇹 Lithuania [*CIDR]"
       - "🇵🇱 Poland | [*CIDR]"
-      - "🇵🇱 Poland | [*CIDR] 2"
-      - "🇳🇱 The Netherlands | [*CIDR] VK"
+      - "🇨🇭 Switzerland [*CIDR]"
+      - "🇳🇱 The Netherlands [*CIDR]"
+      - "🇳🇱 The Netherlands [*CIDR] 2"
+      - "🇳🇱 The Netherlands | [*CIDR]"
+      - "🇳🇱 The Netherlands | [*CIDR] 2"
+      - "🇳🇱 The Netherlands | [*CIDR] 3"
       - "🇺🇸 United States [*CIDR]"
-      - "🇷🇺 Russia | [*CIDR]"
-      - "🇷🇺 Russia | [*CIDR] 2"
-      - "🇷🇺 Russia | 🌐 | [*CIDR]"
-      - "🇵🇱 Poland [*CIDR]"
-      - "🇵🇱 Poland | [*CIDR] 3"
+      - "🇩🇪 Germany [*CIDR] 3"
+      - "🇩🇪 Germany [*CIDR] 4"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇮🇶 🇳🇱 [*CIDR]"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -285,21 +288,21 @@ proxy-groups:
     tolerance: 50
     proxies:
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
-      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 2"
-      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 3"
       - "🇩🇪 Germany [*CIDR]"
-      - "🇮🇩 Indonesia | 🌐 [*CIDR]"
-      - "🇮🇩 Indonesia | 🌐 | [*CIDR]"
+      - "🇩🇪 Germany [*CIDR] 2"
+      - "🇩🇪 Germany | 🌐 [*CIDR]"
       - "🇱🇹 Lithuania [*CIDR]"
       - "🇵🇱 Poland | [*CIDR]"
-      - "🇵🇱 Poland | [*CIDR] 2"
-      - "🇳🇱 The Netherlands | [*CIDR] VK"
+      - "🇨🇭 Switzerland [*CIDR]"
+      - "🇳🇱 The Netherlands [*CIDR]"
+      - "🇳🇱 The Netherlands [*CIDR] 2"
+      - "🇳🇱 The Netherlands | [*CIDR]"
+      - "🇳🇱 The Netherlands | [*CIDR] 2"
+      - "🇳🇱 The Netherlands | [*CIDR] 3"
       - "🇺🇸 United States [*CIDR]"
-      - "🇷🇺 Russia | [*CIDR]"
-      - "🇷🇺 Russia | [*CIDR] 2"
-      - "🇷🇺 Russia | 🌐 | [*CIDR]"
-      - "🇵🇱 Poland [*CIDR]"
-      - "🇵🇱 Poland | [*CIDR] 3"
+      - "🇩🇪 Germany [*CIDR] 3"
+      - "🇩🇪 Germany [*CIDR] 4"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇮🇶 🇳🇱 [*CIDR]"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
