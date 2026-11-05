@@ -1,5 +1,5 @@
 # 订阅 30.txt -> Clash
-# 节点数量: 14
+# 节点数量: 11
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -54,107 +54,92 @@ proxies:
       short-id: 2a40b6d6495debf3
     flow: xtls-rprx-vision
     network: tcp
-  - name: "🇦🇹 Austria | [*CIDR]"
-    type: vless
-    server: api.mediaroshcha.cc
-    port: 443
-    uuid: 2f9ff2af-d0c5-4d40-bca0-cb1fbf1cc4bf
-    udp: true
-    tls: true
-    servername: api.mediaroshcha.cc
-    client-fingerprint: android
-    reality-opts:
-      public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-      short-id: a8
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇫🇮 Finland [*CIDR]"
-    type: vless
-    server: 107.150.93.22
-    port: 443
-    uuid: 53de05e9-8de3-48ae-9036-dcb203d4925c
-    udp: true
-    tls: true
-    servername: 53de05e9.ferrin.uk
-    client-fingerprint: edge
-    network: xhttp
-    xhttp-opts:
-      path: "/"
-      host: 53de05e9.ferrin.uk
-      mode: stream-one
-  - name: "🇩🇪 Germany | [*CIDR]"
-    type: vless
-    server: 213.176.19.188
-    port: 443
-    uuid: 411a6057-dc5f-4653-bf67-0e9c25554ec7
-    udp: true
-    tls: true
-    servername: m.dzen.ru
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: FsfogJiifVzkmmk0WryHUcw_bPbd9b8PLoJJBA9Swyk
-      short-id: 2011f0f1f08231a6
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇩🇪 Germany | [*CIDR] 2"
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 2"
     type: vless
     server: 185.178.208.140
     port: 443
-    uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+    uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
     udp: true
     tls: true
-    servername: gran-game.pro
-    client-fingerprint: firefox
+    servername: api.bakarova-top.ru
+    client-fingerprint: chrome
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/events"
+      host: api.bakarova-top.ru
+      mode: packet-up
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 3"
+    type: vless
+    server: 185.178.208.140
+    port: 443
+    uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+    udp: true
+    tls: true
+    servername: static.bakarova-top.ru
+    client-fingerprint: chrome
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/events"
+      host: static.bakarova-top.ru
+      mode: packet-up
+  - name: "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN"
+    type: vless
+    server: 37.18.14.43
+    port: 8443
+    uuid: 7dd69047-047e-422e-a2ba-ed773c34fd1a
+    udp: true
+    tls: true
+    servername: flatcrest.net
+    client-fingerprint: safari
     alpn:
       - http/1.1
-    network: ws
-    ws-opts:
-      path: "/static/events/900598fa7500/"
-      headers:
-        Host: gran-game.pro
-  - name: "🇩🇪 Germany | 🌐 [*CIDR]"
-    type: vless
-    server: 31.12.75.64
-    port: 443
-    uuid: 50414e45-4c5f-5a45-5553-15038a30cbef
-    udp: true
-    tls: true
-    servername: oizs5zecux0s.pouriayy1.workers.dev
-    client-fingerprint: safari
-    network: ws
-    ws-opts:
-      path: "/stream/PANEL_ZEUS/15038a30cbef/loc-0fp=unsafe"
-      headers:
-        Host: oizs5zecux0s.pouriayy1.workers.dev
-  - name: "🇩🇪 Germany | 🌐 [*CIDR] 2"
-    type: vless
-    server: 200.169.184.140
-    port: 443
-    uuid: 7feec880-56f0-4425-9313-e2e340206284
-    udp: true
-    tls: true
-    servername: basterdym.asia
-    client-fingerprint: firefox
-    alpn:
       - h2
-    network: grpc
-    grpc-opts:
-      grpc-service-name: glush.de1.v1
-  - name: "🇮🇪 Ireland [*CIDR]"
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: flatcrest.net
+      mode: auto
+  - name: "🇪🇪 Estonia | [*CIDR]"
     type: vless
-    server: 45.132.176.61
-    port: 443
-    uuid: 1b7ee703-fa08-4305-8469-ae3e30e61e44
+    server: 186.246.10.239
+    port: 2880
+    uuid: 2f6c70f3-206a-4bc1-ac1f-6b70153f9c73
     udp: true
     tls: true
-    servername: sopelka.yandex-api.com
-    client-fingerprint: chrome
-    skip-cert-verify: true
+    servername: unpkg.com
+    client-fingerprint: firefox
     reality-opts:
-      public-key: "_qSbW4JL4Ffqvj25vX-6a2ul9Qlj6PBdlF0ghsf_0RQ"
-      short-id: a9dc98a7dc87a7dc
+      public-key: CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko
+      short-id: b0d8c9a285c70f6f
     flow: xtls-rprx-vision
     network: tcp
+  - name: "🇱🇻 Latvia [*CIDR]"
+    type: vless
+    server: 193.233.89.130
+    port: 443
+    uuid: 7bd7c4aa-52c4-482c-bdcc-e7380fa6b5fe
+    udp: true
+    tls: true
+    servername: instance-100.prismix.cc
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: xx8KWdR4HbVmvqPb0wRPAstBHGN2Uk99m7AF794_E3c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇱🇻 Latvia [*CIDR] 2"
+    type: vless
+    server: 193.233.89.130
+    port: 8443
+    uuid: 7bd7c4aa-52c4-482c-bdcc-e7380fa6b5fe
+    udp: true
+    tls: true
+    servername: instance-100.prismix.cc
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: xx8KWdR4HbVmvqPb0wRPAstBHGN2Uk99m7AF794_E3c
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
   - name: "🇱🇹 Lithuania [*CIDR]"
     type: vless
     server: lorettmay.top
@@ -169,79 +154,47 @@ proxies:
       path: "/blog/posts"
       headers:
         Host: lorettmay.top
-  - name: "🇱🇹 Lithuania [*CIDR] 2"
+  - name: "🇳🇴 Norway [*CIDR]"
     type: vless
-    server: 185.178.208.140
-    port: 443
-    uuid: fb37d713-0ed3-4146-b085-a5c879a9aafa
+    server: connect2.accessgate.link
+    port: 2086
+    uuid: 2f6c70f3-206a-4bc1-ac1f-6b70153f9c73
     udp: true
     tls: true
-    servername: marshalltmp.top
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/shop/catalog"
-      headers:
-        Host: marshalltmp.top
-  - name: "🇵🇱 Poland [*CIDR]"
-    type: vless
-    server: 185.178.208.140
-    port: 443
-    uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
-    udp: true
-    tls: true
-    servername: static.bakarova-top.ru
-    client-fingerprint: qq
-    alpn:
-      - h2
-    network: xhttp
-    xhttp-opts:
-      path: "/api/v2/events"
-      host: static.bakarova-top.ru
-      mode: packet-up
-  - name: "🇵🇱 Poland | [*CIDR]"
-    type: vless
-    server: 185.178.208.140
-    port: 443
-    uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
-    udp: true
-    tls: true
-    servername: api.bakarova-top.ru
-    client-fingerprint: chrome
-    network: xhttp
-    xhttp-opts:
-      path: "/api/v2/events"
-      host: api.bakarova-top.ru
-      mode: packet-up
-  - name: "🇺🇸 United States [*CIDR]"
-    type: vless
-    server: 201.51.29.153
-    port: 443
-    uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-    udp: true
-    tls: true
-    servername: db-23.topp-con.xyz
-    client-fingerprint: ios
-    reality-opts:
-      public-key: Elmq7GhYEGaiujWnLYeK3HidTkZV6JYH-aYJXBG9iwc
-      short-id: 20b37477b1d93f7e
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🌐 Anycast-IP | 🇵🇱 🇺🇦 | [*CIDR]"
-    type: vless
-    server: 188.225.32.76
-    port: 443
-    uuid: aa09ada3-ad33-0002-9c1a-6af275272567
-    udp: true
-    tls: true
-    servername: yabro-wbplugin.edadeal.yandex.ru
+    servername: unpkg.com
     client-fingerprint: chrome
     reality-opts:
-      public-key: V-wRiXvhBx01utmXJbrThJ_DE4tNJfK6mnzo9EB3fVA
+      public-key: CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko
+      short-id: b0d8c9a285c70f6f
     flow: xtls-rprx-vision
     network: tcp
+  - name: "🇨🇭 Switzerland | 🌐 [*CIDR]"
+    type: vless
+    server: 193.233.89.130
+    port: 443
+    uuid: 7bd7c4aa-52c4-482c-bdcc-e7380fa6b5fe
+    udp: true
+    tls: true
+    servername: g.play2go.gay
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: xx8KWdR4HbVmvqPb0wRPAstBHGN2Uk99m7AF794_E3c
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇨🇭 Switzerland | 🌐 [*CIDR] 2"
+    type: vless
+    server: 193.233.89.130
+    port: 8443
+    uuid: 7bd7c4aa-52c4-482c-bdcc-e7380fa6b5fe
+    udp: true
+    tls: true
+    servername: g.play2go.gay
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: xx8KWdR4HbVmvqPb0wRPAstBHGN2Uk99m7AF794_E3c
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -249,19 +202,16 @@ proxy-groups:
       - "♻️ 自动选择"
       - DIRECT
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
-      - "🇦🇹 Austria | [*CIDR]"
-      - "🇫🇮 Finland [*CIDR]"
-      - "🇩🇪 Germany | [*CIDR]"
-      - "🇩🇪 Germany | [*CIDR] 2"
-      - "🇩🇪 Germany | 🌐 [*CIDR]"
-      - "🇩🇪 Germany | 🌐 [*CIDR] 2"
-      - "🇮🇪 Ireland [*CIDR]"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 2"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 3"
+      - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN"
+      - "🇪🇪 Estonia | [*CIDR]"
+      - "🇱🇻 Latvia [*CIDR]"
+      - "🇱🇻 Latvia [*CIDR] 2"
       - "🇱🇹 Lithuania [*CIDR]"
-      - "🇱🇹 Lithuania [*CIDR] 2"
-      - "🇵🇱 Poland [*CIDR]"
-      - "🇵🇱 Poland | [*CIDR]"
-      - "🇺🇸 United States [*CIDR]"
-      - "🌐 Anycast-IP | 🇵🇱 🇺🇦 | [*CIDR]"
+      - "🇳🇴 Norway [*CIDR]"
+      - "🇨🇭 Switzerland | 🌐 [*CIDR]"
+      - "🇨🇭 Switzerland | 🌐 [*CIDR] 2"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -269,19 +219,16 @@ proxy-groups:
     tolerance: 50
     proxies:
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
-      - "🇦🇹 Austria | [*CIDR]"
-      - "🇫🇮 Finland [*CIDR]"
-      - "🇩🇪 Germany | [*CIDR]"
-      - "🇩🇪 Germany | [*CIDR] 2"
-      - "🇩🇪 Germany | 🌐 [*CIDR]"
-      - "🇩🇪 Germany | 🌐 [*CIDR] 2"
-      - "🇮🇪 Ireland [*CIDR]"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 2"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 3"
+      - "🇧🇬 Bulgaria | 🌐 [*CIDR] CDN"
+      - "🇪🇪 Estonia | [*CIDR]"
+      - "🇱🇻 Latvia [*CIDR]"
+      - "🇱🇻 Latvia [*CIDR] 2"
       - "🇱🇹 Lithuania [*CIDR]"
-      - "🇱🇹 Lithuania [*CIDR] 2"
-      - "🇵🇱 Poland [*CIDR]"
-      - "🇵🇱 Poland | [*CIDR]"
-      - "🇺🇸 United States [*CIDR]"
-      - "🌐 Anycast-IP | 🇵🇱 🇺🇦 | [*CIDR]"
+      - "🇳🇴 Norway [*CIDR]"
+      - "🇨🇭 Switzerland | 🌐 [*CIDR]"
+      - "🇨🇭 Switzerland | 🌐 [*CIDR] 2"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"

@@ -1,5 +1,5 @@
 # 订阅 27.txt -> Clash
-# 节点数量: 8
+# 节点数量: 11
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -55,9 +55,21 @@ proxies:
         Host: 120.48.133.162
   - name: "node 2"
     type: vmess
-    server: 120.48.133.162
+    server: de.zhou-yufan.com
+    port: 443
+    uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: de.zhou-yufan.com
+    network: tcp
+    client-fingerprint: chrome
+  - name: "node 3"
+    type: vmess
+    server: 39.108.113.127
     port: 10086
-    uuid: 2a489513-46b5-488c-9899-9faaf2d83cd9
+    uuid: fccbad0f-eb6c-4bdd-80ed-145409e2f761
     alterId: 0
     cipher: auto
     udp: true
@@ -65,8 +77,8 @@ proxies:
     ws-opts:
       path: "/"
       headers:
-        Host: 120.48.133.162
-  - name: "node 3"
+        Host: 39.108.113.127
+  - name: "node 4"
     type: vmess
     server: 120.48.133.162
     port: 10086
@@ -79,17 +91,6 @@ proxies:
       path: "/"
       headers:
         Host: 120.48.133.162
-  - name: "node 4"
-    type: vmess
-    server: de.zhou-yufan.com
-    port: 443
-    uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    network: tcp
-    client-fingerprint: chrome
   - name: "node 5"
     type: vmess
     server: de.zhou-yufan.com
@@ -99,10 +100,30 @@ proxies:
     cipher: auto
     udp: true
     tls: true
-    servername: de.zhou-yufan.com
+    alpn:
+      - "[\"h2\""
     network: tcp
     client-fingerprint: chrome
   - name: "node 6"
+    type: vmess
+    server: getnet.serversubasli.top
+    port: 8080
+    uuid: d2b67e48-c341-47ba-8caa-5658df693ac4
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: getnet.serversubasli.top
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: getnet.serversubasli.top
+  - name: "node 7"
     type: vmess
     server: getnet.serversubasli.top
     port: 8080
@@ -117,28 +138,68 @@ proxies:
       headers:
         Host: getnet.serversubasli.top
     client-fingerprint: chrome
-  - name: "node 7"
+  - name: "node 8"
     type: vmess
-    server: 43.173.67.42
-    port: 47116
-    uuid: fc3347e2-007d-4cad-fe28-3d80672c3ccc
+    server: 104.17.147.222
+    port: 80
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
-    type: trojan
-    server: 199.181.197.99
-    port: 443
-    password: 70756c73-0000-4000-8000-650000000000
-    udp: true
-    servername: parsa-panel-u48we.wotic15356.workers.dev
-    client-fingerprint: android
     network: ws
     ws-opts:
-      path: "/pulse"
+      path: "/ws"
       headers:
-        Host: parsa-panel-u48we.wotic15356.workers.dev
+        Host: vmess.lbw666.dpdns.org
+  - name: "node 9"
+    type: vmess
+    server: rib9jxayoqjgn2kw.v.3dns.vip
+    port: 443
+    uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: rib9jxayoqjgn2kw.v.3dns.vip
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: rib9jxayoqjgn2kw.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "node 10"
+    type: vmess
+    server: rib9jxayoqjgn2kw.v.3dns.vip
+    port: 443
+    uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: rib9jxayoqjgn2kw.v.3dns.vip
+    client-fingerprint: chrome
+  - name: "🇳🇱 The Netherlands | 🌐 | [BL]"
+    type: trojan
+    server: 31.57.185.134
+    port: 8443
+    password: YektaCloud
+    udp: true
+    servername: 31.57.185.134
+    client-fingerprint: android
+    alpn:
+      - http/1.1
+      - h3
+      - h2
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/TELEGRAM----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud"
+      headers:
+        Host: 31.57.185.134
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -152,7 +213,10 @@ proxy-groups:
       - "node 5"
       - "node 6"
       - "node 7"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
+      - "node 8"
+      - "node 9"
+      - "node 10"
+      - "🇳🇱 The Netherlands | 🌐 | [BL]"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -166,7 +230,10 @@ proxy-groups:
       - "node 5"
       - "node 6"
       - "node 7"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
+      - "node 8"
+      - "node 9"
+      - "node 10"
+      - "🇳🇱 The Netherlands | 🌐 | [BL]"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
