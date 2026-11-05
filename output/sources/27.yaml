@@ -1,5 +1,5 @@
 # 订阅 27.txt -> Clash
-# 节点数量: 11
+# 节点数量: 2
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -42,70 +42,6 @@ dns:
 proxies:
   - name: node
     type: vmess
-    server: 120.48.133.162
-    port: 10086
-    uuid: 4fc543d5-23ce-4556-ae2b-01685edd4397
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 120.48.133.162
-  - name: "node 2"
-    type: vmess
-    server: de.zhou-yufan.com
-    port: 443
-    uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: de.zhou-yufan.com
-    network: tcp
-    client-fingerprint: chrome
-  - name: "node 3"
-    type: vmess
-    server: 39.108.113.127
-    port: 10086
-    uuid: fccbad0f-eb6c-4bdd-80ed-145409e2f761
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 39.108.113.127
-  - name: "node 4"
-    type: vmess
-    server: 120.48.133.162
-    port: 10086
-    uuid: f81d0fc9-c6b0-4dab-a270-6e697e0a367f
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 120.48.133.162
-  - name: "node 5"
-    type: vmess
-    server: de.zhou-yufan.com
-    port: 443
-    uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    alpn:
-      - "[\"h2\""
-    network: tcp
-    client-fingerprint: chrome
-  - name: "node 6"
-    type: vmess
     server: getnet.serversubasli.top
     port: 8080
     uuid: d2b67e48-c341-47ba-8caa-5658df693ac4
@@ -123,7 +59,7 @@ proxies:
       path: "/"
       headers:
         Host: getnet.serversubasli.top
-  - name: "node 7"
+  - name: "node 2"
     type: vmess
     server: getnet.serversubasli.top
     port: 8080
@@ -132,74 +68,14 @@ proxies:
     cipher: auto
     udp: true
     tls: true
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
     network: ws
     ws-opts:
       path: "/"
       headers:
         Host: getnet.serversubasli.top
-    client-fingerprint: chrome
-  - name: "node 8"
-    type: vmess
-    server: 104.17.147.222
-    port: 80
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-  - name: "node 9"
-    type: vmess
-    server: rib9jxayoqjgn2kw.v.3dns.vip
-    port: 443
-    uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: rib9jxayoqjgn2kw.v.3dns.vip
-    network: ws
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: rib9jxayoqjgn2kw.v.3dns.vip
-    client-fingerprint: chrome
-  - name: "node 10"
-    type: vmess
-    server: rib9jxayoqjgn2kw.v.3dns.vip
-    port: 443
-    uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: rib9jxayoqjgn2kw.v.3dns.vip
-    client-fingerprint: chrome
-  - name: "🇳🇱 The Netherlands | 🌐 | [BL]"
-    type: trojan
-    server: 31.57.185.134
-    port: 8443
-    password: YektaCloud
-    udp: true
-    servername: 31.57.185.134
-    client-fingerprint: android
-    alpn:
-      - http/1.1
-      - h3
-      - h2
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: "/TELEGRAM----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud"
-      headers:
-        Host: 31.57.185.134
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -208,15 +84,6 @@ proxy-groups:
       - DIRECT
       - node
       - "node 2"
-      - "node 3"
-      - "node 4"
-      - "node 5"
-      - "node 6"
-      - "node 7"
-      - "node 8"
-      - "node 9"
-      - "node 10"
-      - "🇳🇱 The Netherlands | 🌐 | [BL]"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -225,15 +92,6 @@ proxy-groups:
     proxies:
       - node
       - "node 2"
-      - "node 3"
-      - "node 4"
-      - "node 5"
-      - "node 6"
-      - "node 7"
-      - "node 8"
-      - "node 9"
-      - "node 10"
-      - "🇳🇱 The Netherlands | 🌐 | [BL]"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"

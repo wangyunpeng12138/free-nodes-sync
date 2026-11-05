@@ -1,5 +1,5 @@
 # 订阅 29.txt -> Clash
-# 节点数量: 22
+# 节点数量: 11
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -40,47 +40,34 @@ dns:
     - "https://doh.pub/dns-query"
     - "https://dns.alidns.com/dns-query"
 proxies:
-  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
+  - name: "🇫🇷 France, Paris | [BL]"
     type: vless
-    server: 212.119.43.76
+    server: de3.japancase.site
     port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+    uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
     udp: true
     tls: true
-    servername: u.srilankangrill.online
+    servername: de3.japancase.site
+    client-fingerprint: android
+    reality-opts:
+      public-key: iaJ8vIpfWkkzA-Tegc_wIQSF7DWKm2yTYCd3kvaGXig
+      short-id: d9d9e325a7f069e2
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL]"
+    type: vless
+    server: 43.156.62.218
+    port: 443
+    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+    udp: true
+    tls: true
+    servername: jp3.yohototo.top
     client-fingerprint: android
     network: ws
     ws-opts:
-      path: "/"
+      path: "/tyxyws"
       headers:
-        Host: u.srilankangrill.online
-  - name: "🇪🇪 Estonia, Tallinn | 🌐 | [BL]"
-    type: vless
-    server: static.paner-145.online
-    port: 443
-    uuid: aa09ada3-ad33-4668-9c1a-6af275272567
-    udp: true
-    tls: true
-    servername: static.paner-145.online
-    client-fingerprint: android
-    reality-opts:
-      public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇩🇪 Germany, Frankfurt am Main | [BL]"
-    type: vless
-    server: 130.49.177.193
-    port: 443
-    uuid: 727a9178-d7f0-4142-8205-b0d19959ded0
-    udp: true
-    tls: true
-    servername: de-2.ffpn.pro
-    client-fingerprint: android
-    reality-opts:
-      public-key: DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc
-      short-id: 681fc2dd643bc2f3
-    flow: xtls-rprx-vision
-    network: tcp
+        Host: jp3.yohototo.top
   - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]"
     type: vless
     server: 141.193.213.20
@@ -123,48 +110,6 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 4"
-    type: vless
-    server: 103.232.95.178
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: android
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 5"
-    type: vless
-    server: 104.168.132.109
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: android
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 6"
-    type: vless
-    server: 185.174.137.106
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: android
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
   - name: "🇱🇰 Sri Lanka, Battaramulla | [BL]"
     type: vless
     server: news.zoom.us
@@ -183,6 +128,20 @@ proxies:
         Host: free.vkehi.store
   - name: "🇳🇱 The Netherlands, Amsterdam | [BL]"
     type: vless
+    server: 104.245.102.26
+    port: 443
+    uuid: 0a3432cd-74b8-413a-896d-f51492b030bc
+    udp: true
+    tls: true
+    servername: portal.citygrainla.com
+    client-fingerprint: android
+    reality-opts:
+      public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
+      short-id: 051f20c2344a2dfd
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇳🇱 The Netherlands, Amsterdam | [BL] 2"
+    type: vless
     server: fr.golangwikito.cfd
     port: 443
     uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
@@ -195,85 +154,21 @@ proxies:
       short-id: e6d589857d1cec5e
     flow: xtls-rprx-vision
     network: tcp
-  - name: "🌐 Anycast-IP | 🇩🇪 🇫🇮 | [BL]"
+  - name: "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL]"
     type: vless
-    server: latvia.zovip2.ir
+    server: 104.160.44.254
     port: 443
-    uuid: 2a6ac8b1-a485-49d2-97be-20d2759312e2
+    uuid: 0a3432cd-74b8-413a-896d-f51492b030bc
     udp: true
     tls: true
-    servername: tr7.zovip2.ir
+    servername: portal.citygrainla.com
     client-fingerprint: android
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/api/v3/pulse"
-      headers:
-        Host: tr7.zovip2.ir
+    reality-opts:
+      public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
+      short-id: 051f20c2344a2dfd
+    flow: xtls-rprx-vision
+    network: tcp
   - name: node
-    type: vmess
-    server: 120.48.133.162
-    port: 10086
-    uuid: 4fc543d5-23ce-4556-ae2b-01685edd4397
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 120.48.133.162
-  - name: "node 2"
-    type: vmess
-    server: de.zhou-yufan.com
-    port: 443
-    uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: de.zhou-yufan.com
-    network: tcp
-    client-fingerprint: chrome
-  - name: "node 3"
-    type: vmess
-    server: 39.108.113.127
-    port: 10086
-    uuid: fccbad0f-eb6c-4bdd-80ed-145409e2f761
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 39.108.113.127
-  - name: "node 4"
-    type: vmess
-    server: 120.48.133.162
-    port: 10086
-    uuid: f81d0fc9-c6b0-4dab-a270-6e697e0a367f
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: 120.48.133.162
-  - name: "node 5"
-    type: vmess
-    server: de.zhou-yufan.com
-    port: 443
-    uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    network: tcp
-    client-fingerprint: chrome
-  - name: "node 6"
     type: vmess
     server: getnet.serversubasli.top
     port: 8080
@@ -290,7 +185,7 @@ proxies:
       path: "/"
       headers:
         Host: getnet.serversubasli.top
-  - name: "node 7"
+  - name: "node 2"
     type: vmess
     server: getnet.serversubasli.top
     port: 8080
@@ -308,106 +203,40 @@ proxies:
       headers:
         Host: getnet.serversubasli.top
     client-fingerprint: chrome
-  - name: "node 8"
-    type: vmess
-    server: 104.17.147.222
-    port: 80
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-  - name: "node 9"
-    type: vmess
-    server: rib9jxayoqjgn2kw.v.3dns.vip
-    port: 443
-    uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: rib9jxayoqjgn2kw.v.3dns.vip
-    client-fingerprint: chrome
-  - name: "node 10"
-    type: vmess
-    server: rib9jxayoqjgn2kw.v.3dns.vip
-    port: 443
-    uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: rib9jxayoqjgn2kw.v.3dns.vip
-    network: ws
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: rib9jxayoqjgn2kw.v.3dns.vip
-    client-fingerprint: chrome
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
-      - "🇪🇪 Estonia, Tallinn | 🌐 | [BL]"
-      - "🇩🇪 Germany, Frankfurt am Main | [BL]"
+      - "🇫🇷 France, Paris | [BL]"
+      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL]"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 2"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 3"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 4"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 5"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 6"
       - "🇱🇰 Sri Lanka, Battaramulla | [BL]"
       - "🇳🇱 The Netherlands, Amsterdam | [BL]"
-      - "🌐 Anycast-IP | 🇩🇪 🇫🇮 | [BL]"
+      - "🇳🇱 The Netherlands, Amsterdam | [BL] 2"
+      - "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL]"
       - node
       - "node 2"
-      - "node 3"
-      - "node 4"
-      - "node 5"
-      - "node 6"
-      - "node 7"
-      - "node 8"
-      - "node 9"
-      - "node 10"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     proxies:
-      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
-      - "🇪🇪 Estonia, Tallinn | 🌐 | [BL]"
-      - "🇩🇪 Germany, Frankfurt am Main | [BL]"
+      - "🇫🇷 France, Paris | [BL]"
+      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL]"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 2"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 3"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 4"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 5"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 6"
       - "🇱🇰 Sri Lanka, Battaramulla | [BL]"
       - "🇳🇱 The Netherlands, Amsterdam | [BL]"
-      - "🌐 Anycast-IP | 🇩🇪 🇫🇮 | [BL]"
+      - "🇳🇱 The Netherlands, Amsterdam | [BL] 2"
+      - "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL]"
       - node
       - "node 2"
-      - "node 3"
-      - "node 4"
-      - "node 5"
-      - "node 6"
-      - "node 7"
-      - "node 8"
-      - "node 9"
-      - "node 10"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
