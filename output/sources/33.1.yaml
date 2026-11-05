@@ -40,36 +40,34 @@ dns:
     - "https://doh.pub/dns-query"
     - "https://dns.alidns.com/dns-query"
 proxies:
-  - name: "🇳🇱 The Netherlands | [*CIDR] VK"
+  - name: "🇷🇺 Russia | [*CIDR] YA"
     type: vless
-    server: 185.86.145.37
-    port: 443
-    uuid: 40945325-a133-41ef-8fc3-2e726678ad52
+    server: 84.201.145.167
+    port: 51191
+    uuid: 0408e624-0d2a-49bc-8c1c-cbcf5fb75328
     udp: true
     tls: true
-    servername: rar.rtkdvbr.cc
-    client-fingerprint: ios
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/amws"
-      headers:
-        Host: rar.rtkdvbr.cc
+    servername: yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: PfSDTeA5VEg8LgrpBG5zf2kDU3P2wc9c9bA_9SbCeVY
+      short-id: 6ba85179e30d4fc2
+    flow: xtls-rprx-vision
+    network: tcp
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - "🇳🇱 The Netherlands | [*CIDR] VK"
+      - "🇷🇺 Russia | [*CIDR] YA"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     proxies:
-      - "🇳🇱 The Netherlands | [*CIDR] VK"
+      - "🇷🇺 Russia | [*CIDR] YA"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"

@@ -1,5 +1,5 @@
 # 订阅 27.txt -> Clash
-# 节点数量: 3
+# 节点数量: 8
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -42,7 +42,7 @@ dns:
 proxies:
   - name: node
     type: vmess
-    server: 39.108.113.127
+    server: 120.48.133.162
     port: 10086
     uuid: 4fc543d5-23ce-4556-ae2b-01685edd4397
     alterId: 0
@@ -52,24 +52,72 @@ proxies:
     ws-opts:
       path: "/"
       headers:
-        Host: 39.108.113.127
+        Host: 120.48.133.162
   - name: "node 2"
     type: vmess
-    server: 192.166.82.21
+    server: 120.48.133.162
+    port: 10086
+    uuid: 2a489513-46b5-488c-9899-9faaf2d83cd9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 120.48.133.162
+  - name: "node 3"
+    type: vmess
+    server: 120.48.133.162
+    port: 10086
+    uuid: f81d0fc9-c6b0-4dab-a270-6e697e0a367f
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 120.48.133.162
+  - name: "node 4"
+    type: vmess
+    server: de.zhou-yufan.com
     port: 443
-    uuid: ffe8ae49-05d7-4f56-a82b-dd618108c270
+    uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
     alterId: 0
     cipher: auto
     udp: true
     tls: true
-    servername: us-slc-global1.xeovo.eu
+    network: tcp
+    client-fingerprint: chrome
+  - name: "node 5"
+    type: vmess
+    server: de.zhou-yufan.com
+    port: 443
+    uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: de.zhou-yufan.com
+    network: tcp
+    client-fingerprint: chrome
+  - name: "node 6"
+    type: vmess
+    server: getnet.serversubasli.top
+    port: 8080
+    uuid: d2b67e48-c341-47ba-8caa-5658df693ac4
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
     network: ws
     ws-opts:
-      path: "/sacaca"
+      path: "/"
       headers:
-        Host: us-slc-global1.xeovo.eu
+        Host: getnet.serversubasli.top
     client-fingerprint: chrome
-  - name: "node 3"
+  - name: "node 7"
     type: vmess
     server: 43.173.67.42
     port: 47116
@@ -78,6 +126,19 @@ proxies:
     cipher: auto
     udp: true
     network: tcp
+  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
+    type: trojan
+    server: 199.181.197.99
+    port: 443
+    password: 70756c73-0000-4000-8000-650000000000
+    udp: true
+    servername: parsa-panel-u48we.wotic15356.workers.dev
+    client-fingerprint: android
+    network: ws
+    ws-opts:
+      path: "/pulse"
+      headers:
+        Host: parsa-panel-u48we.wotic15356.workers.dev
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -87,6 +148,11 @@ proxy-groups:
       - node
       - "node 2"
       - "node 3"
+      - "node 4"
+      - "node 5"
+      - "node 6"
+      - "node 7"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -96,6 +162,11 @@ proxy-groups:
       - node
       - "node 2"
       - "node 3"
+      - "node 4"
+      - "node 5"
+      - "node 6"
+      - "node 7"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
