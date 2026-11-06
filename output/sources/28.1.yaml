@@ -1,5 +1,5 @@
 # 订阅 28.1.txt -> Clash
-# 节点数量: 57
+# 节点数量: 59
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -40,7 +40,77 @@ dns:
     - "https://doh.pub/dns-query"
     - "https://dns.alidns.com/dns-query"
 proxies:
-  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
+  - name: "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL]"
+    type: vless
+    server: 104.16.10.135
+    port: 443
+    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+    udp: true
+    tls: true
+    servername: jp3.yohototo.top
+    network: ws
+    ws-opts:
+      path: "/tyxyws"
+      headers:
+        Host: jp3.yohototo.top
+    client-fingerprint: chrome
+  - name: "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 2"
+    type: vless
+    server: 104.16.10.22
+    port: 443
+    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+    udp: true
+    tls: true
+    servername: jp3.yohototo.top
+    client-fingerprint: android
+    network: ws
+    ws-opts:
+      path: "/tyxyws"
+      headers:
+        Host: jp3.yohototo.top
+  - name: "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 3"
+    type: vless
+    server: 104.16.111.102
+    port: 443
+    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+    udp: true
+    tls: true
+    servername: jp3.yohototo.top
+    network: ws
+    ws-opts:
+      path: "/tyxyws"
+      headers:
+        Host: jp3.yohototo.top
+    client-fingerprint: chrome
+  - name: "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 4"
+    type: vless
+    server: 162.159.254.3
+    port: 443
+    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+    udp: true
+    tls: true
+    servername: jp3.yohototo.top
+    client-fingerprint: safari
+    network: ws
+    ws-opts:
+      path: "/tyxyws"
+      headers:
+        Host: jp3.yohototo.top
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | [BL]"
+    type: vless
+    server: 104.19.178.244
+    port: 443
+    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+    udp: true
+    tls: true
+    servername: u.srilankangrill.online
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: u.srilankangrill.online
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]"
     type: vless
     server: 141.193.213.20
     port: 8443
@@ -48,125 +118,13 @@ proxies:
     udp: true
     tls: true
     servername: u.srilankangrill.online
-    client-fingerprint: edge
     network: ws
     ws-opts:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 2"
-    type: vless
-    server: news.zoom.us
-    port: 8443
-    uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: ios
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇯🇵 Japan, Inzai (Otsuka) | [BL]"
-    type: vless
-    server: 104.16.10.48
-    port: 443
-    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-    udp: true
-    tls: true
-    servername: jp3.yohototo.top
-    network: ws
-    ws-opts:
-      path: "/tyxyws"
-      headers:
-        Host: jp3.yohototo.top
     client-fingerprint: chrome
-  - name: "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL]"
-    type: vless
-    server: 104.19.12.94
-    port: 443
-    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-    udp: true
-    tls: true
-    servername: jp3.yohototo.top
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/tyxyws"
-      headers:
-        Host: jp3.yohototo.top
-  - name: "🇲🇾 Malaysia, Shah Alam | [BL]"
-    type: vless
-    server: 104.17.108.213
-    port: 443
-    uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-    udp: true
-    tls: true
-    servername: vpn.cintaku.qzz.io
-    client-fingerprint: safari
-    network: ws
-    ws-opts:
-      path: "/vlessws"
-      headers:
-        Host: vpn.cintaku.qzz.io
-  - name: "🇲🇾 Malaysia, Shah Alam | [BL] 2"
-    type: vless
-    server: 104.17.11.191
-    port: 443
-    uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-    udp: true
-    tls: true
-    servername: vpn.cintaku.qzz.io
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/vlessws"
-      headers:
-        Host: vpn.cintaku.qzz.io
-  - name: "🇲🇾 Malaysia, Shah Alam | [BL] 3"
-    type: vless
-    server: 8.35.211.242
-    port: 443
-    uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-    udp: true
-    tls: true
-    servername: vpn.cintaku.qzz.io
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/vlessws"
-      headers:
-        Host: vpn.cintaku.qzz.io
-  - name: "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]"
-    type: vless
-    server: 104.21.91.49
-    port: 443
-    uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-    udp: true
-    tls: true
-    servername: vpn.cintaku.qzz.io
-    network: ws
-    ws-opts:
-      path: "/vlessws"
-      headers:
-        Host: vpn.cintaku.qzz.io
-    client-fingerprint: chrome
-  - name: "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL] 2"
-    type: vless
-    server: 172.67.166.188
-    port: 443
-    uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-    udp: true
-    tls: true
-    servername: vpn.cintaku.qzz.io
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/vlessws"
-      headers:
-        Host: vpn.cintaku.qzz.io
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 2"
     type: vless
     server: 141.193.213.21
     port: 8443
@@ -174,13 +132,27 @@ proxies:
     udp: true
     tls: true
     servername: u.srilankangrill.online
-    client-fingerprint: android
+    client-fingerprint: safari
     network: ws
     ws-opts:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 2"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 3"
+    type: vless
+    server: news.zoom.us
+    port: 8443
+    uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+    udp: true
+    tls: true
+    servername: u.srilankangrill.online
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: u.srilankangrill.online
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 4"
     type: vless
     server: 104.16.10.100
     port: 443
@@ -194,7 +166,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 3"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 5"
     type: vless
     server: 104.16.10.103
     port: 443
@@ -208,7 +180,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 4"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 6"
     type: vless
     server: 104.16.10.104
     port: 443
@@ -222,7 +194,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 5"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 7"
     type: vless
     server: 104.16.10.10
     port: 443
@@ -236,7 +208,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 6"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 8"
     type: vless
     server: 104.16.10.116
     port: 443
@@ -250,7 +222,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 7"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 9"
     type: vless
     server: 104.16.10.117
     port: 443
@@ -264,7 +236,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 8"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 10"
     type: vless
     server: 104.16.10.189
     port: 443
@@ -272,13 +244,13 @@ proxies:
     udp: true
     tls: true
     servername: u.srilankangrill.online
-    client-fingerprint: chrome
+    client-fingerprint: qq
     network: ws
     ws-opts:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 9"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 11"
     type: vless
     server: 104.16.10.191
     port: 443
@@ -292,7 +264,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 10"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 12"
     type: vless
     server: 104.16.10.198
     port: 443
@@ -306,7 +278,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 11"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 13"
     type: vless
     server: 104.16.10.234
     port: 443
@@ -320,7 +292,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 12"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 14"
     type: vless
     server: 104.16.10.235
     port: 443
@@ -334,7 +306,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 13"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 15"
     type: vless
     server: 104.16.10.2
     port: 443
@@ -348,7 +320,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 14"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 16"
     type: vless
     server: 104.16.111.193
     port: 443
@@ -362,7 +334,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 15"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 17"
     type: vless
     server: 104.16.156.227
     port: 443
@@ -376,7 +348,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 16"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 18"
     type: vless
     server: 104.16.3.98
     port: 443
@@ -390,7 +362,7 @@ proxies:
       headers:
         Host: u.srilankangrill.online
     client-fingerprint: chrome
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 17"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 19"
     type: vless
     server: 104.17.117.137
     port: 443
@@ -404,7 +376,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 18"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 20"
     type: vless
     server: 104.18.26.90
     port: 443
@@ -418,21 +390,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 19"
-    type: vless
-    server: 104.19.178.244
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: android
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 20"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 21"
     type: vless
     server: 104.19.32.166
     port: 443
@@ -446,7 +404,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 21"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 22"
     type: vless
     server: 104.21.236.63
     port: 443
@@ -460,7 +418,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 22"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 23"
     type: vless
     server: 104.21.5.75
     port: 443
@@ -474,7 +432,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 23"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 24"
     type: vless
     server: 104.21.60.109
     port: 443
@@ -488,7 +446,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 24"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 25"
     type: vless
     server: 104.21.70.228
     port: 443
@@ -502,7 +460,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 25"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 26"
     type: vless
     server: 104.21.89.41
     port: 443
@@ -516,7 +474,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 26"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 27"
     type: vless
     server: 104.24.0.184
     port: 443
@@ -530,7 +488,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 27"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 28"
     type: vless
     server: 104.24.11.68
     port: 443
@@ -544,7 +502,7 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 28"
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 29"
     type: vless
     server: 188.114.97.6
     port: 443
@@ -558,6 +516,22 @@ proxies:
       path: "/"
       headers:
         Host: u.srilankangrill.online
+  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 30"
+    type: vless
+    server: 188.114.98.0
+    port: 443
+    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+    udp: true
+    tls: true
+    servername: u.srilankangrill.online
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: u.srilankangrill.online
   - name: "🇱🇰 Sri Lanka, Battaramulla | [BL]"
     type: vless
     server: news.zoom.us
@@ -566,7 +540,7 @@ proxies:
     udp: true
     tls: true
     servername: free.vkehi.store
-    client-fingerprint: firefox
+    client-fingerprint: android
     alpn:
       - http/1.1
     network: ws
@@ -574,6 +548,20 @@ proxies:
       path: "/"
       headers:
         Host: free.vkehi.store
+  - name: "🇨🇭 Switzerland, Bern | [BL]"
+    type: vless
+    server: prvtch.titun.su
+    port: 443
+    uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+    udp: true
+    tls: true
+    servername: perevodchiki.su
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+      short-id: 428ef87fd47a3a32
+    flow: xtls-rprx-vision
+    network: tcp
   - name: "🇹🇼 Taiwan, Taoyuan | [BL]"
     type: vless
     server: 172.67.165.32
@@ -590,6 +578,20 @@ proxies:
     client-fingerprint: chrome
   - name: "🇹🇼 Taiwan, Taoyuan | [BL] 2"
     type: vless
+    server: 188.114.98.0
+    port: 443
+    uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+    udp: true
+    tls: true
+    servername: n04.jinggai.online
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/nvl-n04-ws/e0577fe8fd7c8823"
+      headers:
+        Host: n04.jinggai.online
+  - name: "🇹🇼 Taiwan, Taoyuan | [BL] 3"
+    type: vless
     server: n04.jinggai.online
     port: 8443
     uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
@@ -602,20 +604,20 @@ proxies:
       path: "/nvl-n04-ws/e0577fe8fd7c8823"
       headers:
         Host: n04.jinggai.online
-  - name: "🇳🇱 The Netherlands, Amsterdam | [BL]"
+  - name: "🇳🇱 The Netherlands | 🌐 | [BL]"
     type: vless
-    server: fr.golangwikito.cfd
-    port: 443
-    uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+    server: 201.24.113.108
+    port: 993
+    uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
     udp: true
     tls: true
-    servername: fr.golangwikito.cfd
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: isYQuhKDrgc7IQ7G0LHywFnt57wffrkZ-er18DkVsBA
-      short-id: e6d589857d1cec5e
-    flow: xtls-rprx-vision
-    network: tcp
+    servername: fr2-ws.gacvpn.site
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/static/js/vendor.61db254e.js"
+      headers:
+        Host: fr2-ws.gacvpn.site
   - name: "🇬🇧 United Kingdom, Slough | [BL]"
     type: vless
     server: www.agahiya.ir
@@ -632,6 +634,20 @@ proxies:
     client-fingerprint: chrome
   - name: "🇬🇧 United Kingdom, Slough | [BL] 2"
     type: vless
+    server: www.agahiya.ir
+    port: 443
+    uuid: 57e089a8-0cd1-48d0-b572-105c4804f6b8
+    udp: true
+    tls: true
+    servername: soliconf-gghosin4-cell.dormhost.app
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/jx-y8179aild6rsmj"
+      headers:
+        Host: soliconf-gghosin4-cell.dormhost.app
+  - name: "🇬🇧 United Kingdom, Slough | [BL] 3"
+    type: vless
     server: www.farahghanizadeh.ir
     port: 443
     uuid: 57e089a8-0cd1-48d0-b572-105c4804f6b8
@@ -644,7 +660,7 @@ proxies:
       path: "/jx-y8179aild6rsmj"
       headers:
         Host: soliconf-gghosin4-cell.dormhost.app
-  - name: "🇬🇧 United Kingdom, Slough | [BL] 3"
+  - name: "🇬🇧 United Kingdom, Slough | [BL] 4"
     type: vless
     server: www.sarzaminaryan.ir
     port: 443
@@ -658,6 +674,20 @@ proxies:
       headers:
         Host: soliconf-gghosin4-cell.dormhost.app
     client-fingerprint: chrome
+  - name: "🇬🇧 United Kingdom, Slough | [BL] 5"
+    type: vless
+    server: www.sarzaminaryan.ir
+    port: 443
+    uuid: 57e089a8-0cd1-48d0-b572-105c4804f6b8
+    udp: true
+    tls: true
+    servername: soliconf-gghosin4-cell.dormhost.app
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/jx-y8179aild6rsmj"
+      headers:
+        Host: soliconf-gghosin4-cell.dormhost.app
   - name: "🇺🇸 United States, Buffalo | [BL]"
     type: vless
     server: mao.kipfelmao.de5.net
@@ -776,93 +806,99 @@ proxies:
       path: "/fastly"
       host: cloudrix.global.ssl.fastly.net
       mode: auto
-  - name: "🇺🇸 United States, Santa Clara | [BL]"
+  - name: "🇺🇸 United States, Secaucus | [BL]"
     type: vless
-    server: node.jaydentune.top
+    server: eeee.k1-0.kdns.fr
     port: 443
-    uuid: 2af77824-f83d-4f50-9dd0-560bb6e7cd45
+    uuid: 22882d2f-b308-43b4-ba72-fdb4d5aa9fb6
     udp: true
     tls: true
-    servername: node.jaydentune.top
-    network: ws
-    ws-opts:
-      path: "/ray"
-      headers:
-        Host: node.jaydentune.top
-    client-fingerprint: chrome
-  - name: "🌐 Anycast-IP | 🇲🇾 | [BL]"
-    type: vless
-    server: 188.114.98.0
-    port: 443
-    uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-    udp: true
-    tls: true
-    servername: vpn.cintaku.qzz.io
-    client-fingerprint: ios
-    network: ws
-    ws-opts:
-      path: "/vlessws"
-      headers:
-        Host: vpn.cintaku.qzz.io
-  - name: "🌐 Anycast-IP | 🇲🇾 | [BL] 2"
-    type: vless
-    server: vpn.cintaku.qzz.io
-    port: 443
-    uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-    udp: true
-    tls: true
-    servername: vpn.cintaku.qzz.io
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/vlessws"
-      headers:
-        Host: vpn.cintaku.qzz.io
-  - name: "🌐 Anycast-IP | 🇸🇬 | [BL]"
-    type: vless
-    server: 188.114.98.0
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
+    servername: eeEe.k1-0.kDNs.fr
     client-fingerprint: chrome
     alpn:
       - http/1.1
     network: ws
     ws-opts:
-      path: "/"
+      path: "/JM07pTsvwEO4643aWhQRrZq1a"
+      v2ray-http-upgrade: true
       headers:
-        Host: u.srilankangrill.online
-  - name: "🌐 Anycast-IP | 🇹🇼 | [BL]"
+        Host: EEEe.K1-0.kdNs.Fr
+  - name: "🇺🇸 United States, Secaucus | [BL] 2"
     type: vless
-    server: 188.114.98.0
+    server: eeeee.k1-0.kdns.fr
     port: 443
-    uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+    uuid: 22882d2f-b308-43b4-ba72-fdb4d5aa9fb6
     udp: true
     tls: true
-    servername: n04.jinggai.online
+    servername: EeEEE.k1-0.KDns.Fr
     client-fingerprint: firefox
+    alpn:
+      - http/1.1
     network: ws
     ws-opts:
-      path: "/nvl-n04-ws/e0577fe8fd7c8823"
+      path: "/JM07pTsvwEO4643aWhQRrZq1a"
+      v2ray-http-upgrade: true
       headers:
-        Host: n04.jinggai.online
+        Host: eeEee.K1-0.kdNS.Fr
+  - name: "🇺🇸 United States, Secaucus | [BL] 3"
+    type: vless
+    server: eeeeee.k1-0.kdns.fr
+    port: 443
+    uuid: 22882d2f-b308-43b4-ba72-fdb4d5aa9fb6
+    udp: true
+    tls: true
+    servername: EeeEEe.K1-0.KDnS.fr
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/JM07pTsvwEO4643aWhQRrZq1a"
+      v2ray-http-upgrade: true
+      headers:
+        Host: eeEEEE.k1-0.kdNS.fR
+  - name: "🇺🇸 United States, Secaucus | [BL] 4"
+    type: vless
+    server: vvv.k1-0.kdns.fr
+    port: 443
+    uuid: 22882d2f-b308-43b4-ba72-fdb4d5aa9fb6
+    udp: true
+    tls: true
+    servername: VVv.k1-0.Kdns.fr
+    client-fingerprint: edge
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/JM07pTsvwEO4643aWhQRrZq1a"
+      v2ray-http-upgrade: true
+      headers:
+        Host: vvv.k1-0.KdnS.FR
+  - name: "🌐 Anycast-IP | 🇬🇧 🇺🇸 | [BL]"
+    type: vless
+    server: ea0gmd8p.mtrxnet.click
+    port: 53898
+    uuid: bb190cdb-82ae-4212-b6cd-8ae9e6b768dd
+    udp: true
+    tls: true
+    servername: ea0gmd8p.mtrxnet.click
+    reality-opts:
+      public-key: aV_BHCeZ30y4-5rpUIHaWHMYAgogLsw4AE06Rw2X4WE
+      short-id: e202a94ad1711af2
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    network: tcp
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
-      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 2"
-      - "🇯🇵 Japan, Inzai (Otsuka) | [BL]"
       - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL]"
-      - "🇲🇾 Malaysia, Shah Alam | [BL]"
-      - "🇲🇾 Malaysia, Shah Alam | [BL] 2"
-      - "🇲🇾 Malaysia, Shah Alam | [BL] 3"
-      - "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]"
-      - "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL] 2"
+      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 2"
+      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 3"
+      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 4"
+      - "🇸🇬 Singapore, Singapore (Somapah) | [BL]"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 2"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 3"
@@ -891,13 +927,19 @@ proxy-groups:
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 26"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 27"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 28"
+      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 29"
+      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 30"
       - "🇱🇰 Sri Lanka, Battaramulla | [BL]"
+      - "🇨🇭 Switzerland, Bern | [BL]"
       - "🇹🇼 Taiwan, Taoyuan | [BL]"
       - "🇹🇼 Taiwan, Taoyuan | [BL] 2"
-      - "🇳🇱 The Netherlands, Amsterdam | [BL]"
+      - "🇹🇼 Taiwan, Taoyuan | [BL] 3"
+      - "🇳🇱 The Netherlands | 🌐 | [BL]"
       - "🇬🇧 United Kingdom, Slough | [BL]"
       - "🇬🇧 United Kingdom, Slough | [BL] 2"
       - "🇬🇧 United Kingdom, Slough | [BL] 3"
+      - "🇬🇧 United Kingdom, Slough | [BL] 4"
+      - "🇬🇧 United Kingdom, Slough | [BL] 5"
       - "🇺🇸 United States, Buffalo | [BL]"
       - "🇺🇸 United States, North Bergen | [BL]"
       - "🇺🇸 United States, North Bergen | [BL] 2"
@@ -906,26 +948,22 @@ proxy-groups:
       - "🇺🇸 United States, North Bergen | [BL] 5"
       - "🇺🇸 United States, North Bergen | [BL] 6"
       - "🇺🇸 United States, Orem | [BL]"
-      - "🇺🇸 United States, Santa Clara | [BL]"
-      - "🌐 Anycast-IP | 🇲🇾 | [BL]"
-      - "🌐 Anycast-IP | 🇲🇾 | [BL] 2"
-      - "🌐 Anycast-IP | 🇸🇬 | [BL]"
-      - "🌐 Anycast-IP | 🇹🇼 | [BL]"
+      - "🇺🇸 United States, Secaucus | [BL]"
+      - "🇺🇸 United States, Secaucus | [BL] 2"
+      - "🇺🇸 United States, Secaucus | [BL] 3"
+      - "🇺🇸 United States, Secaucus | [BL] 4"
+      - "🌐 Anycast-IP | 🇬🇧 🇺🇸 | [BL]"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     proxies:
-      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
-      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 2"
-      - "🇯🇵 Japan, Inzai (Otsuka) | [BL]"
       - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL]"
-      - "🇲🇾 Malaysia, Shah Alam | [BL]"
-      - "🇲🇾 Malaysia, Shah Alam | [BL] 2"
-      - "🇲🇾 Malaysia, Shah Alam | [BL] 3"
-      - "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]"
-      - "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL] 2"
+      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 2"
+      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 3"
+      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 4"
+      - "🇸🇬 Singapore, Singapore (Somapah) | [BL]"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 2"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 3"
@@ -954,13 +992,19 @@ proxy-groups:
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 26"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 27"
       - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 28"
+      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 29"
+      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 30"
       - "🇱🇰 Sri Lanka, Battaramulla | [BL]"
+      - "🇨🇭 Switzerland, Bern | [BL]"
       - "🇹🇼 Taiwan, Taoyuan | [BL]"
       - "🇹🇼 Taiwan, Taoyuan | [BL] 2"
-      - "🇳🇱 The Netherlands, Amsterdam | [BL]"
+      - "🇹🇼 Taiwan, Taoyuan | [BL] 3"
+      - "🇳🇱 The Netherlands | 🌐 | [BL]"
       - "🇬🇧 United Kingdom, Slough | [BL]"
       - "🇬🇧 United Kingdom, Slough | [BL] 2"
       - "🇬🇧 United Kingdom, Slough | [BL] 3"
+      - "🇬🇧 United Kingdom, Slough | [BL] 4"
+      - "🇬🇧 United Kingdom, Slough | [BL] 5"
       - "🇺🇸 United States, Buffalo | [BL]"
       - "🇺🇸 United States, North Bergen | [BL]"
       - "🇺🇸 United States, North Bergen | [BL] 2"
@@ -969,11 +1013,11 @@ proxy-groups:
       - "🇺🇸 United States, North Bergen | [BL] 5"
       - "🇺🇸 United States, North Bergen | [BL] 6"
       - "🇺🇸 United States, Orem | [BL]"
-      - "🇺🇸 United States, Santa Clara | [BL]"
-      - "🌐 Anycast-IP | 🇲🇾 | [BL]"
-      - "🌐 Anycast-IP | 🇲🇾 | [BL] 2"
-      - "🌐 Anycast-IP | 🇸🇬 | [BL]"
-      - "🌐 Anycast-IP | 🇹🇼 | [BL]"
+      - "🇺🇸 United States, Secaucus | [BL]"
+      - "🇺🇸 United States, Secaucus | [BL] 2"
+      - "🇺🇸 United States, Secaucus | [BL] 3"
+      - "🇺🇸 United States, Secaucus | [BL] 4"
+      - "🌐 Anycast-IP | 🇬🇧 🇺🇸 | [BL]"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"

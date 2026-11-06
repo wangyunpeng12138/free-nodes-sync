@@ -1,5 +1,5 @@
 # 订阅 30.txt -> Clash
-# 节点数量: 6
+# 节点数量: 15
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -48,55 +48,84 @@ proxies:
     udp: true
     tls: true
     servername: ripelever.net
-    client-fingerprint: chrome
+    client-fingerprint: edge
+    alpn:
+      - h2
+      - http/1.1
     flow: xtls-rprx-vision
     network: tcp
   - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 2"
     type: vless
-    server: 185.178.208.140
+    server: 185.173.179.218
     port: 443
-    uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+    uuid: f219ffe2-bc36-495f-a83d-8f9ac4af05fd
     udp: true
     tls: true
-    servername: static.bakarova-top.ru
-    client-fingerprint: edge
+    servername: ru1.cdn-space.org
+    client-fingerprint: chrome
     alpn:
       - h2
     network: xhttp
     xhttp-opts:
-      path: "/api/v2/events"
-      host: static.bakarova-top.ru
-      mode: packet-up
-  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 3"
+      path: "/assets/api/v3/connect/"
+      host: ru1.cdn-space.org
+      mode: auto
+  - name: "🇧🇬 Bulgaria [*CIDR]"
     type: vless
-    server: 185.178.208.140
+    server: 176.124.218.80
     port: 443
-    uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+    uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
     udp: true
     tls: true
-    servername: api.bakarova-top.ru
-    client-fingerprint: chrome
-    network: xhttp
-    xhttp-opts:
-      path: "/api/v2/events"
-      host: api.bakarova-top.ru
-      mode: packet-up
-  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 4"
-    type: vless
-    server: 185.178.208.140
-    port: 443
-    uuid: fb37d713-0ed3-4146-b085-a5c879a9aafa
-    udp: true
-    tls: true
-    servername: marshalltmp.top
-    client-fingerprint: edge
-    alpn:
-      - http/1.1
+    servername: bg2-ws.gacvpn.site
+    client-fingerprint: firefox
     network: ws
     ws-opts:
-      path: "/shop/catalog"
+      path: "/static/js/vendor.f857f795.js"
       headers:
-        Host: marshalltmp.top
+        Host: bg2-ws.gacvpn.site
+  - name: "🇩🇪 Germany | 🌐 [*CIDR]"
+    type: vless
+    server: falmero.store
+    port: 443
+    uuid: 8fb19a9e-ca2b-433a-8469-e4c7796033b2
+    udp: true
+    tls: true
+    servername: falmero.store
+    client-fingerprint: chrome
+    alpn:
+      - h2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: glush.de1.v1
+  - name: "🇩🇪 Germany | 🌐 | [*CIDR]"
+    type: vless
+    server: 186.246.4.49
+    port: 993
+    uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
+    udp: true
+    tls: true
+    servername: msk5.gacvpn.site
+    client-fingerprint: android
+    network: ws
+    ws-opts:
+      path: "/static/js/runtime.d9e71138.js"
+      headers:
+        Host: msk5.gacvpn.site
+  - name: "🇱🇻 Latvia | [*CIDR]"
+    type: vless
+    server: 176.124.218.80
+    port: 993
+    uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
+    udp: true
+    tls: true
+    servername: lv.gacvpn.site
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/static/js/vendor.448f02e7.js"
+      headers:
+        Host: lv.gacvpn.site
   - name: "🇱🇹 Lithuania [*CIDR]"
     type: vless
     server: lorettmay.top
@@ -111,18 +140,119 @@ proxies:
       path: "/blog/posts"
       headers:
         Host: lorettmay.top
-  - name: "🇺🇸 United States | 🌐 [*CIDR]"
+  - name: "🇵🇱 Poland | [*CIDR]"
     type: vless
-    server: 82.146.32.120
-    port: 8443
-    uuid: 93969894-5156-472b-9534-5fad18768e50
+    server: 77.233.222.33
+    port: 993
+    uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
     udp: true
     tls: true
-    servername: us2.cloudvienta.com
+    servername: msk6.gacvpn.site
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/static/js/vendor.32acab26.js"
+      headers:
+        Host: msk6.gacvpn.site
+  - name: "🇷🇴 Romania | [*CIDR]"
+    type: vless
+    server: 185.178.208.140
+    port: 443
+    uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+    udp: true
+    tls: true
+    servername: static.bakarova-top.ru
+    client-fingerprint: chrome
+    alpn:
+      - h2
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/events"
+      host: static.bakarova-top.ru
+  - name: "🇷🇴 Romania | [*CIDR] 2"
+    type: vless
+    server: 185.178.208.140
+    port: 443
+    uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+    udp: true
+    tls: true
+    servername: api.bakarova-top.ru
+    client-fingerprint: chrome
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/events"
+      host: api.bakarova-top.ru
+      mode: packet-up
+  - name: "🇸🇰 Slovakia | [*CIDR]"
+    type: vless
+    server: 62.113.42.147
+    port: 995
+    uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
+    udp: true
+    tls: true
+    servername: fi.gacvpn.site
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/static/js/runtime.6dc28486.js"
+      headers:
+        Host: fi.gacvpn.site
+  - name: "🇳🇱 The Netherlands [*CIDR]"
+    type: vless
+    server: ru1.cdn-space.org
+    port: 443
+    uuid: f219ffe2-bc36-495f-a83d-8f9ac4af05fd
+    udp: true
+    tls: true
+    servername: ru1.cdn-space.org
+    client-fingerprint: firefox
+    alpn:
+      - h2
+    network: xhttp
+    xhttp-opts:
+      path: "/assets/api/v3/connect/"
+      host: ru1.cdn-space.org
+      mode: auto
+  - name: "🇳🇱 The Netherlands | [*CIDR] VK"
+    type: vless
+    server: 185.86.147.175
+    port: 443
+    uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
+    udp: true
+    tls: true
+    servername: bhjolq0d0l.flowersgood.top
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/service/telemetry/045d381f1166/"
+      headers:
+        Host: bhjolq0d0l.flowersgood.top
+  - name: "🇺🇸 United States | 🌐 | [*CIDR]"
+    type: vless
+    server: 194.87.118.232
+    port: 993
+    uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
+    udp: true
+    tls: true
+    servername: us2-ws.gacvpn.site
+    client-fingerprint: edge
+    network: ws
+    ws-opts:
+      path: "/static/js/vendor.2e12e7f4.js"
+      headers:
+        Host: us2-ws.gacvpn.site
+  - name: "🌐 Anycast-IP | 🇬🇧 🇺🇸 | [*CIDR]"
+    type: vless
+    server: ea0gmd8p.mtrxnet.click
+    port: 53898
+    uuid: bb190cdb-82ae-4212-b6cd-8ae9e6b768dd
+    udp: true
+    tls: true
+    servername: ea0gmd8p.mtrxnet.click
     client-fingerprint: firefox
     reality-opts:
-      public-key: WwDK-bG5qji91Cqw6F_VSW1MWygTYrqjsuoN6Pyvzlg
-      short-id: b68ef2733ce64fe2
+      public-key: aV_BHCeZ30y4-5rpUIHaWHMYAgogLsw4AE06Rw2X4WE
+      short-id: e202a94ad1711af2
     flow: xtls-rprx-vision
     network: tcp
 proxy-groups:
@@ -133,10 +263,19 @@ proxy-groups:
       - DIRECT
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 2"
-      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 3"
-      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 4"
+      - "🇧🇬 Bulgaria [*CIDR]"
+      - "🇩🇪 Germany | 🌐 [*CIDR]"
+      - "🇩🇪 Germany | 🌐 | [*CIDR]"
+      - "🇱🇻 Latvia | [*CIDR]"
       - "🇱🇹 Lithuania [*CIDR]"
-      - "🇺🇸 United States | 🌐 [*CIDR]"
+      - "🇵🇱 Poland | [*CIDR]"
+      - "🇷🇴 Romania | [*CIDR]"
+      - "🇷🇴 Romania | [*CIDR] 2"
+      - "🇸🇰 Slovakia | [*CIDR]"
+      - "🇳🇱 The Netherlands [*CIDR]"
+      - "🇳🇱 The Netherlands | [*CIDR] VK"
+      - "🇺🇸 United States | 🌐 | [*CIDR]"
+      - "🌐 Anycast-IP | 🇬🇧 🇺🇸 | [*CIDR]"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -145,10 +284,19 @@ proxy-groups:
     proxies:
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 2"
-      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 3"
-      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 4"
+      - "🇧🇬 Bulgaria [*CIDR]"
+      - "🇩🇪 Germany | 🌐 [*CIDR]"
+      - "🇩🇪 Germany | 🌐 | [*CIDR]"
+      - "🇱🇻 Latvia | [*CIDR]"
       - "🇱🇹 Lithuania [*CIDR]"
-      - "🇺🇸 United States | 🌐 [*CIDR]"
+      - "🇵🇱 Poland | [*CIDR]"
+      - "🇷🇴 Romania | [*CIDR]"
+      - "🇷🇴 Romania | [*CIDR] 2"
+      - "🇸🇰 Slovakia | [*CIDR]"
+      - "🇳🇱 The Netherlands [*CIDR]"
+      - "🇳🇱 The Netherlands | [*CIDR] VK"
+      - "🇺🇸 United States | 🌐 | [*CIDR]"
+      - "🌐 Anycast-IP | 🇬🇧 🇺🇸 | [*CIDR]"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
