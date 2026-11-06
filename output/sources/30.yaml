@@ -1,5 +1,5 @@
 # 订阅 30.txt -> Clash
-# 节点数量: 17
+# 节点数量: 13
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -42,19 +42,36 @@ dns:
 proxies:
   - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
     type: vless
+    server: connect2.accessgate.link
+    port: 2086
+    uuid: 2f6c70f3-206a-4bc1-ac1f-6b70153f9c73
+    udp: true
+    tls: true
+    servername: unpkg.com
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    reality-opts:
+      public-key: CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko
+      short-id: b0d8c9a285c70f6f
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 2"
+    type: vless
     server: 185.178.208.140
     port: 443
     uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
     udp: true
     tls: true
     servername: api.bakarova-top.ru
-    client-fingerprint: chrome
+    client-fingerprint: firefox
+    alpn:
+      - h2
     network: xhttp
     xhttp-opts:
       path: "/api/v2/events"
       host: api.bakarova-top.ru
       mode: packet-up
-  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 2"
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 3"
     type: vless
     server: 185.178.208.140
     port: 443
@@ -63,91 +80,72 @@ proxies:
     tls: true
     servername: static.bakarova-top.ru
     client-fingerprint: chrome
-    alpn:
-      - h2
     network: xhttp
     xhttp-opts:
       path: "/api/v2/events"
       host: static.bakarova-top.ru
       mode: packet-up
-  - name: "🇫🇮 Finland | [*CIDR]"
+  - name: "🇪🇪 Estonia [*CIDR]"
     type: vless
-    server: re-rus2.koska.pro
-    port: 443
-    uuid: c5f09ac5-d980-408d-a7fa-00cdb4d8ead4
+    server: connect1.accessgate.link
+    port: 2880
+    uuid: 2f6c70f3-206a-4bc1-ac1f-6b70153f9c73
     udp: true
     tls: true
-    servername: yandex.tr
-    client-fingerprint: android
+    servername: unpkg.com
+    client-fingerprint: chrome
     reality-opts:
-      public-key: 6OOa1D_Yrkt0k9VXpuDC6j0qtqwtfV7-P-KsqAJyrks
-      short-id: 8580939eb8d1ca17
-    network: xhttp
-    xhttp-opts:
-      path: "/"
-      host: yandex.tr
-      mode: stream-up
-  - name: "🇫🇮 Finland | [*CIDR] 2"
-    type: vless
-    server: re-rus4.koska.pro
-    port: 443
-    uuid: c5f09ac5-d980-408d-a7fa-00cdb4d8ead4
-    udp: true
-    tls: true
-    servername: ozon.ru
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: 0YT84_xcDsLgiP0Bmwk7YoXKQslmEIHkmJNU20g4yB4
-      short-id: 1b8baf052c4e771a
-    network: xhttp
-    xhttp-opts:
-      path: "/"
-      host: ozon.ru
-      mode: stream-up
+      public-key: CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko
+      short-id: b0d8c9a285c70f6f
+    flow: xtls-rprx-vision
+    network: tcp
   - name: "🇩🇪 Germany [*CIDR]"
     type: vless
-    server: 176.123.162.102
-    port: 8443
-    uuid: 65e7a6ab-84b4-4202-a951-7d2afe2aa352
+    server: 46.8.19.126
+    port: 443
+    uuid: f67f1548-c958-45e4-a7f4-194b90ccd99f
     udp: true
     tls: true
-    servername: vk.ru
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: pjRu70aycBq_sodRHf_BDYUXVjmi0wofQNQXTTXQfDU
+      short-id: cb1733a12d48629b
+    network: xhttp
+    xhttp-opts:
+      path: "/vless-xhttp"
+      host: ads.x5.ru
+      mode: auto
+  - name: "🇩🇪 Germany [*CIDR] 2"
+    type: vless
+    server: 46.8.19.126
+    port: 8443
+    uuid: f67f1548-c958-45e4-a7f4-194b90ccd99f
+    udp: true
+    tls: true
+    servername: ads.x5.ru
     client-fingerprint: firefox
     reality-opts:
-      public-key: 5J8IRlEEy8vuB2NArH15h9EVV--wwDUdq-_9HXoy9FM
-      short-id: dcc04e7520
+      public-key: pjRu70aycBq_sodRHf_BDYUXVjmi0wofQNQXTTXQfDU
+      short-id: cb1733a12d48629b
     flow: xtls-rprx-vision
     network: tcp
-  - name: "🇱🇹 Lithuania [*CIDR]"
+  - name: "🇩🇪 Germany | 🌐 | [*CIDR]"
     type: vless
-    server: 162afct.lt2.h1clayd.click
-    port: 443
-    uuid: 1fc053ed-e9e8-49f2-b7c1-fde68d722dff
+    server: 46.8.19.126
+    port: 8444
+    uuid: f67f1548-c958-45e4-a7f4-194b90ccd99f
     udp: true
     tls: true
-    servername: 162afct.lt2.h1clayd.click
-    client-fingerprint: qq
+    servername: ads.x5.ru
+    client-fingerprint: android
     reality-opts:
-      public-key: y_pzv7NPwU8d4gAC3r6f6FZN5vFmaKJK9YPEGOjSYB0
-      short-id: 51e7ad7303dba560
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇱🇹 Lithuania [*CIDR] 2"
-    type: vless
-    server: 5a873ag.lt2.h1clayd.click
-    port: 443
-    uuid: 1fc053ed-e9e8-49f2-b7c1-fde68d722dff
-    udp: true
-    tls: true
-    servername: 5a873ag.lt2.h1clayd.click
-    client-fingerprint: edge
-    reality-opts:
-      public-key: "-7jCGkgrVLVo1DgJrvOT_erdlIRf2IyVu1KGS409eBc"
-      short-id: 40cdf901244028cb
+      public-key: pjRu70aycBq_sodRHf_BDYUXVjmi0wofQNQXTTXQfDU
+      short-id: cb1733a12d48629b
     network: grpc
     grpc-opts:
-      grpc-service-name: 8fcf9a0ebfb7
-  - name: "🇱🇹 Lithuania [*CIDR] 3"
+      grpc-service-name: grpc-reality
+  - name: "🇱🇹 Lithuania [*CIDR]"
     type: vless
     server: lorettmay.top
     port: 443
@@ -161,35 +159,7 @@ proxies:
       path: "/blog/posts"
       headers:
         Host: lorettmay.top
-  - name: "🇱🇹 Lithuania | [*CIDR]"
-    type: vless
-    server: 83.171.241.142
-    port: 443
-    uuid: 1fc053ed-e9e8-49f2-b7c1-fde68d722dff
-    udp: true
-    tls: true
-    servername: 162afct.lt2.h1clayd.click
-    client-fingerprint: edge
-    reality-opts:
-      public-key: y_pzv7NPwU8d4gAC3r6f6FZN5vFmaKJK9YPEGOjSYB0
-      short-id: 51e7ad7303dba560
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇵🇱 Poland | [*CIDR]"
-    type: vless
-    server: 72.56.233.10
-    port: 8443
-    uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-    udp: true
-    tls: true
-    servername: lte-v2-ws.gacvpn.site
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/static/js/runtime.9d03c7.js"
-      headers:
-        Host: lte-v2-ws.gacvpn.site
-  - name: "🇵🇱 Poland | [*CIDR] 2"
+  - name: "🇵🇱 Poland [*CIDR]"
     type: vless
     server: lte-v2-ws.gacvpn.site
     port: 8443
@@ -197,57 +167,55 @@ proxies:
     udp: true
     tls: true
     servername: lte-v2-ws.gacvpn.site
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/static/js/runtime.9d03c7.js"
+      headers:
+        Host: lte-v2-ws.gacvpn.site
+  - name: "🇵🇱 Poland | [*CIDR]"
+    type: vless
+    server: 129.101.100.126
+    port: 8443
+    uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
+    udp: true
+    tls: true
+    servername: lte-v2-ws.gacvpn.site
     client-fingerprint: firefox
     network: ws
     ws-opts:
       path: "/static/js/runtime.9d03c7.js"
       headers:
         Host: lte-v2-ws.gacvpn.site
-  - name: "🇬🇧 United Kingdom | [*CIDR]"
+  - name: "🇸🇪 Sweden | [*CIDR]"
     type: vless
-    server: ru2.radiolumens.uk
-    port: 9444
-    uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
-    udp: true
-    tls: true
-    servername: ru2.radiolumens.uk
-    client-fingerprint: chrome
-    alpn:
-      - h2
-      - http/1.1
-    network: xhttp
-    xhttp-opts:
-      path: "/beru-uk"
-      host: ru2.radiolumens.uk
-      mode: auto
-  - name: "🇬🇧 United Kingdom | 🌐 [*CIDR]"
-    type: vless
-    server: 77.232.135.123
-    port: 9444
-    uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
-    udp: true
-    tls: true
-    servername: ru2.radiolumens.uk
-    client-fingerprint: qq
-    network: xhttp
-    xhttp-opts:
-      path: "/beru-uk"
-      host: ru2.radiolumens.uk
-  - name: "🇬🇧 United Kingdom | 🌐 | [*CIDR]"
-    type: vless
-    server: 95.182.120.114
+    server: 89.221.203.164
     port: 443
-    uuid: f9688dcf-60d0-4a8d-8f2a-f3bdb401c198
+    uuid: 54c13857-f1e1-4f7b-8e7c-793d87def80e
     udp: true
     tls: true
-    servername: crt.molniya.sbs
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/vless-ws"
-      headers:
-        Host: crt.molniya.sbs
+    servername: fitauto.ru
+    client-fingerprint: android
+    reality-opts:
+      public-key: yCKV2xr725jI0sFhm4KbttKl8b9UZrnQTXxZLN2S4BM
+      short-id: 06a7eb34
+    flow: xtls-rprx-vision
+    network: tcp
   - name: "🇺🇸 United States [*CIDR]"
+    type: vless
+    server: 95.213.245.84
+    port: 443
+    uuid: 255a8044-3337-473e-af26-46a37208adcc
+    udp: true
+    tls: true
+    servername: hudson.glowbreeze.online
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qqvs2x0N1F5WgXvC7PB9wmO5RxcVgCHS1hYHYOxdBk4
+      short-id: 5f3fd060c992bb2e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇺🇸 United States [*CIDR] 2"
     type: vless
     server: hudson.glowbreeze.online
     port: 443
@@ -261,33 +229,6 @@ proxies:
       short-id: 5f3fd060c992bb2e
     flow: xtls-rprx-vision
     network: tcp
-  - name: "🇺🇸 United States | [*CIDR]"
-    type: vless
-    server: 95.213.245.84
-    port: 443
-    uuid: 255a8044-3337-473e-af26-46a37208adcc
-    udp: true
-    tls: true
-    servername: hudson.glowbreeze.online
-    client-fingerprint: android
-    reality-opts:
-      public-key: qqvs2x0N1F5WgXvC7PB9wmO5RxcVgCHS1hYHYOxdBk4
-      short-id: 5f3fd060c992bb2e
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇺🇸 United States | [*CIDR] 2"
-    type: vless
-    server: 188.225.45.170
-    port: 443
-    uuid: 29c46e15-5adc-461a-add7-4c8e834bb488
-    udp: true
-    tls: true
-    servername: static.rutube.ru
-    client-fingerprint: android
-    reality-opts:
-      public-key: P0P_zFJU0jUz97JutgEUfbjGOyplGFrn6YN232yBR2Y
-    flow: xtls-rprx-vision
-    network: tcp
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -296,21 +237,17 @@ proxy-groups:
       - DIRECT
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 2"
-      - "🇫🇮 Finland | [*CIDR]"
-      - "🇫🇮 Finland | [*CIDR] 2"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 3"
+      - "🇪🇪 Estonia [*CIDR]"
       - "🇩🇪 Germany [*CIDR]"
+      - "🇩🇪 Germany [*CIDR] 2"
+      - "🇩🇪 Germany | 🌐 | [*CIDR]"
       - "🇱🇹 Lithuania [*CIDR]"
-      - "🇱🇹 Lithuania [*CIDR] 2"
-      - "🇱🇹 Lithuania [*CIDR] 3"
-      - "🇱🇹 Lithuania | [*CIDR]"
+      - "🇵🇱 Poland [*CIDR]"
       - "🇵🇱 Poland | [*CIDR]"
-      - "🇵🇱 Poland | [*CIDR] 2"
-      - "🇬🇧 United Kingdom | [*CIDR]"
-      - "🇬🇧 United Kingdom | 🌐 [*CIDR]"
-      - "🇬🇧 United Kingdom | 🌐 | [*CIDR]"
+      - "🇸🇪 Sweden | [*CIDR]"
       - "🇺🇸 United States [*CIDR]"
-      - "🇺🇸 United States | [*CIDR]"
-      - "🇺🇸 United States | [*CIDR] 2"
+      - "🇺🇸 United States [*CIDR] 2"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -319,21 +256,17 @@ proxy-groups:
     proxies:
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 2"
-      - "🇫🇮 Finland | [*CIDR]"
-      - "🇫🇮 Finland | [*CIDR] 2"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 3"
+      - "🇪🇪 Estonia [*CIDR]"
       - "🇩🇪 Germany [*CIDR]"
+      - "🇩🇪 Germany [*CIDR] 2"
+      - "🇩🇪 Germany | 🌐 | [*CIDR]"
       - "🇱🇹 Lithuania [*CIDR]"
-      - "🇱🇹 Lithuania [*CIDR] 2"
-      - "🇱🇹 Lithuania [*CIDR] 3"
-      - "🇱🇹 Lithuania | [*CIDR]"
+      - "🇵🇱 Poland [*CIDR]"
       - "🇵🇱 Poland | [*CIDR]"
-      - "🇵🇱 Poland | [*CIDR] 2"
-      - "🇬🇧 United Kingdom | [*CIDR]"
-      - "🇬🇧 United Kingdom | 🌐 [*CIDR]"
-      - "🇬🇧 United Kingdom | 🌐 | [*CIDR]"
+      - "🇸🇪 Sweden | [*CIDR]"
       - "🇺🇸 United States [*CIDR]"
-      - "🇺🇸 United States | [*CIDR]"
-      - "🇺🇸 United States | [*CIDR] 2"
+      - "🇺🇸 United States [*CIDR] 2"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
