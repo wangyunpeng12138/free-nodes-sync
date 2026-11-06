@@ -1,5 +1,5 @@
 # 订阅 29.txt -> Clash
-# 节点数量: 35
+# 节点数量: 27
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -40,64 +40,6 @@ dns:
     - "https://doh.pub/dns-query"
     - "https://dns.alidns.com/dns-query"
 proxies:
-  - name: "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]"
-    type: vless
-    server: 104.18.51.110
-    port: 443
-    uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
-    udp: true
-    tls: true
-    servername: n.bitpulse.me
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/019bcbad-3813-7cce-8786-3ac0e418f128"
-      headers:
-        Host: n.bitpulse.me
-  - name: "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] 2"
-    type: vless
-    server: 104.19.235.15
-    port: 443
-    uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
-    udp: true
-    tls: true
-    servername: n.bitpulse.me
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/019bcbad-3813-7cce-8786-3ac0e418f128"
-      headers:
-        Host: n.bitpulse.me
-    client-fingerprint: chrome
-  - name: "🇵🇱 Poland, Warsaw | [BL]"
-    type: vless
-    server: lte-v2-ws.gacvpn.site
-    port: 8443
-    uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-    udp: true
-    tls: true
-    servername: lte-v2-ws.gacvpn.site
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/static/js/runtime.9d03c7.js"
-      headers:
-        Host: lte-v2-ws.gacvpn.site
-  - name: "🇳🇱 The Netherlands, Amsterdam | [BL]"
-    type: vless
-    server: fr.golangwikito.cfd
-    port: 443
-    uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-    udp: true
-    tls: true
-    servername: fr.golangwikito.cfd
-    client-fingerprint: edge
-    reality-opts:
-      public-key: isYQuhKDrgc7IQ7G0LHywFnt57wffrkZ-er18DkVsBA
-      short-id: e6d589857d1cec5e
-    flow: xtls-rprx-vision
-    network: tcp
   - name: "🇬🇧 United Kingdom, Slough | [BL]"
     type: vless
     server: www.agahiya.ir
@@ -126,49 +68,21 @@ proxies:
       headers:
         Host: soliconf-gghosin4-cell.dormhost.app
     client-fingerprint: chrome
-  - name: "🇬🇧 United Kingdom, Slough | [BL] 3"
-    type: vless
-    server: www.sarzaminaryan.ir
-    port: 443
-    uuid: 57e089a8-0cd1-48d0-b572-105c4804f6b8
-    udp: true
-    tls: true
-    servername: www.sarzaminaryan.ir
-    network: ws
-    ws-opts:
-      path: "/jx-y8179aild6rsmj"
-      headers:
-        Host: soliconf-gghosin4-cell.dormhost.app
-    client-fingerprint: chrome
-  - name: "🇺🇸 United States, Buffalo | [BL]"
-    type: vless
-    server: mao.kipfelmao.de5.net
-    port: 443
-    uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
-    udp: true
-    tls: true
-    servername: mao.kipfelmao.de5.net
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/api/v1/guests/profiles/5de14443985f/"
-      headers:
-        Host: mao.kipfelmao.de5.net
-  - name: "🇺🇸 United States, Dublin | [BL]"
-    type: vless
-    server: msma-hfgetway.hf.space
-    port: 443
-    uuid: 0ad9eed9-ea49-4c97-9ac4-fe0ec7e6f97b
-    udp: true
-    tls: true
-    servername: msma-hfgetway.hf.space
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/ws/vless"
-      headers:
-        Host: msma-hfgetway.hf.space
   - name: "🇺🇸 United States, North Bergen | [BL]"
+    type: vless
+    server: 104.21.58.37
+    port: 2053
+    uuid: c83f15bf-1817-4ec8-a19f-6393d226434c
+    udp: true
+    tls: true
+    servername: fast.145779.xyz
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws-tesla"
+      headers:
+        Host: fast.145779.xyz
+  - name: "🇺🇸 United States, North Bergen | [BL] 2"
     type: vless
     server: 172.67.199.126
     port: 2053
@@ -182,7 +96,7 @@ proxies:
       path: "/ws-tesla"
       headers:
         Host: fast.145779.xyz
-  - name: "🇺🇸 United States, North Bergen | [BL] 2"
+  - name: "🇺🇸 United States, North Bergen | [BL] 3"
     type: vless
     server: fast.145779.xyz
     port: 2053
@@ -190,15 +104,15 @@ proxies:
     udp: true
     tls: true
     servername: fast.145779.xyz
-    client-fingerprint: ios
+    client-fingerprint: firefox
     network: ws
     ws-opts:
       path: "/ws-tesla"
       headers:
         Host: fast.145779.xyz
-  - name: "🇺🇸 United States, North Bergen | [BL] 3"
+  - name: "🇺🇸 United States, North Bergen | [BL] 4"
     type: vless
-    server: 172.67.199.126
+    server: 104.21.58.37
     port: 2053
     uuid: e3149c82-00f6-4227-b2c0-b78f1dd81279
     udp: true
@@ -212,7 +126,23 @@ proxies:
       path: "/ws-tesla"
       headers:
         Host: fast.145779.xyz
-  - name: "🇺🇸 United States, North Bergen | [BL] 4"
+  - name: "🇺🇸 United States, North Bergen | [BL] 5"
+    type: vless
+    server: 172.67.199.126
+    port: 2053
+    uuid: e3149c82-00f6-4227-b2c0-b78f1dd81279
+    udp: true
+    tls: true
+    servername: fast.145779.xyz
+    client-fingerprint: firefox
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ws-tesla"
+      headers:
+        Host: fast.145779.xyz
+  - name: "🇺🇸 United States, North Bergen | [BL] 6"
     type: vless
     server: fast.145779.xyz
     port: 2053
@@ -220,68 +150,12 @@ proxies:
     udp: true
     tls: true
     servername: fast.145779.xyz
-    client-fingerprint: chrome
+    client-fingerprint: firefox
     network: ws
     ws-opts:
       path: "/ws-tesla"
       headers:
         Host: fast.145779.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]"
-    type: vless
-    server: k9-85j.pages.dev
-    port: 443
-    uuid: 3dc83518-4002-485e-a066-d3bbcaaa2b2e
-    udp: true
-    tls: true
-    servername: K9-85J.paGEs.Dev
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/1WWzkWgNslKTcceU?ed=2560"
-      headers:
-        Host: K9-85J.paGEs.Dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 2"
-    type: vless
-    server: 188.114.97.3
-    port: 443
-    uuid: 72f10005-8849-4072-b081-db3258c1350f
-    udp: true
-    tls: true
-    servername: xa6jgykbpcfy6na3tt4zeefsquy2x5kank9hmzdqieofbqkbv3kukzmdfsssaaa.b5mq1ob64b.workers.Dev
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "telegram channel : @pandavpntc"
-      headers:
-        Host: xa6jgykbpcfy6na3tt4zeefsquy2x5kank9hmzdqieofbqkbv3kukzmdfsssaaa.b5mq1ob64b.workers.Dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇯🇵 | [BL]"
-    type: vless
-    server: 14f7f5f0.mrbl69black.pages.dev
-    port: 443
-    uuid: 0d5a2112-789f-4755-88e6-61a1a8f8067b
-    udp: true
-    tls: true
-    servername: 14F7F5f0.mRBL69BlaCK.paGES.DeV
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/I0IHonn0TGa2xaOO?ed=2560"
-      headers:
-        Host: 14F7F5f0.mRBL69BlaCK.paGES.DeV
-  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
-    type: vless
-    server: www.speedtest.net
-    port: 443
-    uuid: 85550ebf-fd43-42dd-9801-bda528fea2fc
-    udp: true
-    tls: true
-    servername: wallweb5.pages.dev
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: wallweb5.pages.dev
-    client-fingerprint: chrome
   - name: node
     type: vmess
     server: 172.67.156.121
@@ -489,28 +363,29 @@ proxies:
     client-fingerprint: chrome
   - name: "node 14"
     type: vmess
-    server: 172.66.0.1
+    server: vipccc.cc
     port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    uuid: 5bead32f-a987-4f57-b1a8-6698778facda
     alterId: 0
     cipher: auto
     udp: true
     tls: true
-    servername: vmess.lbw666.dpdns.org
+    servername: vipccc.cc
     network: ws
     ws-opts:
-      path: "/ws"
+      path: "/ray_proxy"
       headers:
-        Host: vmess.lbw666.dpdns.org
+        Host: vipccc.cc
     client-fingerprint: chrome
   - name: "🇫🇮 Finland, Helsinki | [BL]"
     type: trojan
-    server: 104.16.186.130
+    server: 104.18.0.1
     port: 2053
     password: gHQP0D7D15
     udp: true
     servername: marvdasht.phonecomparisonblog.org
-    client-fingerprint: android
+    alpn:
+      - http/1.1
     network: ws
     ws-opts:
       path: "/"
@@ -523,6 +398,9 @@ proxies:
     password: gHQP0D7D15
     udp: true
     servername: marvdasht.phonecomparisonblog.org
+    client-fingerprint: firefox
+    alpn:
+      - http/1.1
     network: ws
     ws-opts:
       path: "/"
@@ -535,6 +413,7 @@ proxies:
     password: gHQP0D7D15
     udp: true
     servername: marvdasht.phonecomparisonblog.org
+    client-fingerprint: qq
     network: ws
     ws-opts:
       path: "/"
@@ -542,7 +421,22 @@ proxies:
         Host: marvdasht.phonecomparisonblog.org
   - name: "🇫🇮 Finland, Helsinki | [BL] 4"
     type: trojan
-    server: 188.114.96.3
+    server: 104.27.0.1
+    port: 2053
+    password: gHQP0D7D15
+    udp: true
+    servername: marvdasht.phonecomparisonblog.org
+    client-fingerprint: ios
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: marvdasht.phonecomparisonblog.org
+  - name: "🇫🇮 Finland, Helsinki | [BL] 5"
+    type: trojan
+    server: 172.66.0.1
     port: 2053
     password: gHQP0D7D15
     udp: true
@@ -560,23 +454,14 @@ proxy-groups:
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]"
-      - "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] 2"
-      - "🇵🇱 Poland, Warsaw | [BL]"
-      - "🇳🇱 The Netherlands, Amsterdam | [BL]"
       - "🇬🇧 United Kingdom, Slough | [BL]"
       - "🇬🇧 United Kingdom, Slough | [BL] 2"
-      - "🇬🇧 United Kingdom, Slough | [BL] 3"
-      - "🇺🇸 United States, Buffalo | [BL]"
-      - "🇺🇸 United States, Dublin | [BL]"
       - "🇺🇸 United States, North Bergen | [BL]"
       - "🇺🇸 United States, North Bergen | [BL] 2"
       - "🇺🇸 United States, North Bergen | [BL] 3"
       - "🇺🇸 United States, North Bergen | [BL] 4"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇯🇵 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
+      - "🇺🇸 United States, North Bergen | [BL] 5"
+      - "🇺🇸 United States, North Bergen | [BL] 6"
       - node
       - "node 2"
       - "node 3"
@@ -595,29 +480,21 @@ proxy-groups:
       - "🇫🇮 Finland, Helsinki | [BL] 2"
       - "🇫🇮 Finland, Helsinki | [BL] 3"
       - "🇫🇮 Finland, Helsinki | [BL] 4"
+      - "🇫🇮 Finland, Helsinki | [BL] 5"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     proxies:
-      - "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]"
-      - "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] 2"
-      - "🇵🇱 Poland, Warsaw | [BL]"
-      - "🇳🇱 The Netherlands, Amsterdam | [BL]"
       - "🇬🇧 United Kingdom, Slough | [BL]"
       - "🇬🇧 United Kingdom, Slough | [BL] 2"
-      - "🇬🇧 United Kingdom, Slough | [BL] 3"
-      - "🇺🇸 United States, Buffalo | [BL]"
-      - "🇺🇸 United States, Dublin | [BL]"
       - "🇺🇸 United States, North Bergen | [BL]"
       - "🇺🇸 United States, North Bergen | [BL] 2"
       - "🇺🇸 United States, North Bergen | [BL] 3"
       - "🇺🇸 United States, North Bergen | [BL] 4"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇯🇵 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
+      - "🇺🇸 United States, North Bergen | [BL] 5"
+      - "🇺🇸 United States, North Bergen | [BL] 6"
       - node
       - "node 2"
       - "node 3"
@@ -636,6 +513,7 @@ proxy-groups:
       - "🇫🇮 Finland, Helsinki | [BL] 2"
       - "🇫🇮 Finland, Helsinki | [BL] 3"
       - "🇫🇮 Finland, Helsinki | [BL] 4"
+      - "🇫🇮 Finland, Helsinki | [BL] 5"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"

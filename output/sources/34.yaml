@@ -40,18 +40,18 @@ dns:
     - "https://doh.pub/dns-query"
     - "https://dns.alidns.com/dns-query"
 proxies:
-  - name: "🇳🇱 The Netherlands | [SNI-RU] platform-api.max.ru"
+  - name: "🇳🇱 The Netherlands | [SNI-RU] golos.mail.ru"
     type: vless
-    server: 213.165.39.134
+    server: novonl.subv.ru
     port: 443
-    uuid: 6a251a93-8eee-43b5-92ed-ecadedcfd0a8
+    uuid: 90157e25-cee1-4217-921e-91f300bc1a24
     udp: true
     tls: true
-    servername: platform-api.max.ru
-    client-fingerprint: ios
+    servername: golos.mail.ru
+    client-fingerprint: chrome
     reality-opts:
-      public-key: Gtz3xOdQdWSocdx4NNie6s-bsa9VDiG6thqanJ4h31s
-      short-id: 6f3332a09b0ab6d1
+      public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+      short-id: 428ef87fd47a3a32
     flow: xtls-rprx-vision
     network: tcp
 proxy-groups:
@@ -60,14 +60,14 @@ proxy-groups:
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - "🇳🇱 The Netherlands | [SNI-RU] platform-api.max.ru"
+      - "🇳🇱 The Netherlands | [SNI-RU] golos.mail.ru"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     proxies:
-      - "🇳🇱 The Netherlands | [SNI-RU] platform-api.max.ru"
+      - "🇳🇱 The Netherlands | [SNI-RU] golos.mail.ru"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
