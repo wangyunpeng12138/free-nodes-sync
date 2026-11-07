@@ -1,5 +1,5 @@
 # 订阅 33.1.txt -> Clash
-# 节点数量: 1
+# 节点数量: 2
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -48,7 +48,23 @@ proxies:
     udp: true
     tls: true
     servername: bhjolq0d0l.flowersgood.top
-    client-fingerprint: firefox
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/service/telemetry/045d381f1166/"
+      headers:
+        Host: bhjolq0d0l.flowersgood.top
+  - name: "🇳🇱 The Netherlands | [*CIDR] VK 2"
+    type: vless
+    server: bhjolq0d0l.flowersgood.top
+    port: 443
+    uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
+    udp: true
+    tls: true
+    servername: bhjolq0d0l.flowersgood.top
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
     network: ws
     ws-opts:
       path: "/service/telemetry/045d381f1166/"
@@ -61,6 +77,7 @@ proxy-groups:
       - "♻️ 自动选择"
       - DIRECT
       - "🇳🇱 The Netherlands | [*CIDR] VK"
+      - "🇳🇱 The Netherlands | [*CIDR] VK 2"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -68,6 +85,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - "🇳🇱 The Netherlands | [*CIDR] VK"
+      - "🇳🇱 The Netherlands | [*CIDR] VK 2"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"

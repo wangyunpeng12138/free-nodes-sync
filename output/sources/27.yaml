@@ -1,5 +1,5 @@
 # 订阅 27.txt -> Clash
-# 节点数量: 43
+# 节点数量: 39
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -42,102 +42,6 @@ dns:
 proxies:
   - name: node
     type: vmess
-    server: 172.67.156.121
-    port: 443
-    uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: www.gptcloudai.com
-    network: ws
-    ws-opts:
-      path: "/truth"
-      headers:
-        Host: www.gptcloudai.com
-    client-fingerprint: chrome
-  - name: "node 2"
-    type: vmess
-    server: 172.67.153.127
-    port: 443
-    uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: www.windowsmsidownloads.com
-    network: ws
-    ws-opts:
-      path: "/truth"
-      headers:
-        Host: www.windowsmsidownloads.com
-    client-fingerprint: chrome
-  - name: "node 3"
-    type: vmess
-    server: 188.114.96.1
-    port: 443
-    uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: www.windowsmsidownloads.com
-    network: ws
-    ws-opts:
-      path: "/truth"
-      headers:
-        Host: www.windowsmsidownloads.com
-    client-fingerprint: chrome
-  - name: "node 4"
-    type: vmess
-    server: 104.21.3.99
-    port: 443
-    uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: www.windowsmsidownloads.com
-    network: ws
-    ws-opts:
-      path: "/truth"
-      headers:
-        Host: www.windowsmsidownloads.com
-    client-fingerprint: chrome
-  - name: "node 5"
-    type: vmess
-    server: wwww.speedtest.org
-    port: 443
-    uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: www.windowsmsidownloads.com
-    network: ws
-    ws-opts:
-      path: "/truth"
-      headers:
-        Host: www.windowsmsidownloads.com
-    client-fingerprint: chrome
-  - name: "node 6"
-    type: vmess
-    server: www.windowsmsidownloads.com
-    port: 443
-    uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: www.windowsmsidownloads.com
-    network: ws
-    ws-opts:
-      path: "/truth"
-      headers:
-        Host: www.windowsmsidownloads.com
-    client-fingerprint: chrome
-  - name: "node 7"
-    type: vmess
     server: 104.17.136.198
     port: 443
     uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
@@ -152,7 +56,7 @@ proxies:
       headers:
         Host: vmess.lbw666.dpdns.org
     client-fingerprint: chrome
-  - name: "node 8"
+  - name: "node 2"
     type: vmess
     server: 172.66.0.1
     port: 443
@@ -168,389 +72,7 @@ proxies:
       headers:
         Host: vmess.lbw666.dpdns.org
     client-fingerprint: chrome
-  - name: "node 9"
-    type: vmess
-    server: www.windowssearchtools.com
-    port: 443
-    uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: www.windowssearchtools.com
-    network: ws
-    ws-opts:
-      path: "/truth"
-      headers:
-        Host: www.windowssearchtools.com
-    client-fingerprint: chrome
-  - name: "node 10"
-    type: vmess
-    server: www.gptcloudai.com
-    port: 443
-    uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: www.gptcloudai.com
-    network: ws
-    ws-opts:
-      path: "/truth"
-      headers:
-        Host: www.gptcloudai.com
-    client-fingerprint: chrome
-  - name: "node 11"
-    type: vmess
-    server: cf.877771.xyz
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-  - name: "node 12"
-    type: vmess
-    server: 141.11.91.8
-    port: 7647
-    uuid: c3d17f1d-9201-4644-b184-6cd1414c6cc5
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: v29.nodemo.top
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: v29.nodemo.top
-    client-fingerprint: chrome
-  - name: "node 13"
-    type: vmess
-    server: 104.21.15.251
-    port: 443
-    uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: www.windowssearchtools.com
-    network: ws
-    ws-opts:
-      path: "/truth"
-      headers:
-        Host: www.windowssearchtools.com
-    client-fingerprint: chrome
-  - name: "node 14"
-    type: vmess
-    server: www.windowsmsidownloads.com
-    port: 443
-    uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: "/truth"
-      headers:
-        Host: www.windowsmsidownloads.com
-    client-fingerprint: chrome
-  - name: "node 15"
-    type: vmess
-    server: www.windowssearchtools.com
-    port: 443
-    uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: "/truth"
-      headers:
-        Host: www.windowssearchtools.com
-    client-fingerprint: chrome
-  - name: "node 16"
-    type: vmess
-    server: 188.114.97.1
-    port: 443
-    uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: www.windowssearchtools.com
-    network: ws
-    ws-opts:
-      path: "/truth"
-      headers:
-        Host: www.windowssearchtools.com
-    client-fingerprint: chrome
-  - name: "node 17"
-    type: vmess
-    server: www.gptcloudai.com
-    port: 443
-    uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: "/truth"
-      headers:
-        Host: www.gptcloudai.com
-    client-fingerprint: chrome
-  - name: "node 18"
-    type: vmess
-    server: vipccc.cc
-    port: 443
-    uuid: 5bead32f-a987-4f57-b1a8-6698778facda
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: "/ray_proxy"
-      headers:
-        Host: vipccc.cc
-    client-fingerprint: chrome
-  - name: "node 19"
-    type: vmess
-    server: vipccc.cc
-    port: 443
-    uuid: 5bead32f-a987-4f57-b1a8-6698778facda
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vipccc.cc
-    network: ws
-    ws-opts:
-      path: "/ray_proxy"
-      headers:
-        Host: vipccc.cc
-    client-fingerprint: chrome
-  - name: "node 20"
-    type: vmess
-    server: 141.11.91.8
-    port: 8283
-    uuid: c3d17f1d-9201-4644-b184-6cd1414c6cc5
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: v25.nodemo.top
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: v25.nodemo.top
-    client-fingerprint: chrome
-  - name: "node 21"
-    type: vmess
-    server: 141.11.91.8
-    port: 3117
-    uuid: c3d17f1d-9201-4644-b184-6cd1414c6cc5
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: v15.nodemo.top
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: v15.nodemo.top
-    client-fingerprint: chrome
-  - name: "node 22"
-    type: vmess
-    server: 141.11.91.8
-    port: 5193
-    uuid: c3d17f1d-9201-4644-b184-6cd1414c6cc5
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: v18.nodemo.top
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: v18.nodemo.top
-    client-fingerprint: chrome
-  - name: "node 23"
-    type: vmess
-    server: cf.0sm.com
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/ws?ed=2048"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-  - name: "node 24"
-    type: vmess
-    server: 104.27.0.1
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-  - name: "node 25"
-    type: vmess
-    server: 172.64.229.21
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-  - name: "node 26"
-    type: vmess
-    server: 172.66.203.67
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-  - name: "node 27"
-    type: vmess
-    server: cf.090227.xyz
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-  - name: "node 28"
-    type: vmess
-    server: 104.21.57.84
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: v2ray1.dozapp.xyz
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: v2ray1.dozapp.xyz
-    client-fingerprint: chrome
-  - name: "node 29"
-    type: vmess
-    server: 104.21.91.53
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: v2ray1.dozapp.xyz
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: v2ray1.dozapp.xyz
-    client-fingerprint: chrome
-  - name: "node 30"
-    type: vmess
-    server: 104.17.77.77
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: none
-    udp: true
-    tls: true
-    servername: v2ray1.dozapp.xyz
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: v2ray1.dozapp.xyz
-    client-fingerprint: chrome
-  - name: "node 31"
-    type: vmess
-    server: 172.67.167.78
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: v2ray1.dozapp.xyz
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: v2ray1.dozapp.xyz
-    client-fingerprint: chrome
-  - name: "node 32"
-    type: vmess
-    server: 172.64.155.209
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: v2ray1.dozapp.xyz
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: v2ray1.dozapp.xyz
-    client-fingerprint: chrome
-  - name: "node 33"
+  - name: "node 3"
     type: vmess
     server: 172.64.80.1
     port: 8443
@@ -566,7 +88,264 @@ proxies:
       headers:
         Host: v2ray1.dozapp.xyz
     client-fingerprint: chrome
-  - name: "node 34"
+  - name: "node 4"
+    type: vmess
+    server: cf.877771.xyz
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+  - name: "node 5"
+    type: vmess
+    server: vipccc.cc
+    port: 443
+    uuid: 5bead32f-a987-4f57-b1a8-6698778facda
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: "/ray_proxy"
+      headers:
+        Host: vipccc.cc
+    client-fingerprint: chrome
+  - name: "node 6"
+    type: vmess
+    server: vipccc.cc
+    port: 443
+    uuid: 5bead32f-a987-4f57-b1a8-6698778facda
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vipccc.cc
+    network: ws
+    ws-opts:
+      path: "/ray_proxy"
+      headers:
+        Host: vipccc.cc
+    client-fingerprint: chrome
+  - name: "node 7"
+    type: vmess
+    server: 162.159.130.234
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: or3.sfacg.uk
+    network: ws
+    ws-opts:
+      path: "/or3"
+      headers:
+        Host: or3.sfacg.uk
+    client-fingerprint: chrome
+  - name: "node 8"
+    type: vmess
+    server: 172.64.229.21
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ws?ed=2048"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+  - name: "node 9"
+    type: vmess
+    server: 172.66.203.67
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws?ed=2048"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+  - name: "node 10"
+    type: vmess
+    server: 104.27.0.1
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+  - name: "node 11"
+    type: vmess
+    server: 104.21.7.133
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws?ed=2048"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+  - name: "node 12"
+    type: vmess
+    server: cf.090227.xyz
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws?ed=2048"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+  - name: "node 13"
+    type: vmess
+    server: cf.0sm.com
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+  - name: "node 14"
+    type: vmess
+    server: 104.17.77.77
+    port: 8443
+    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: v2ray1.dozapp.xyz
+    network: ws
+    ws-opts:
+      path: "/lMnsZUN4/"
+      headers:
+        Host: v2ray1.dozapp.xyz
+    client-fingerprint: chrome
+  - name: "node 15"
+    type: vmess
+    server: 104.21.57.84
+    port: 8443
+    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: v2ray1.dozapp.xyz
+    network: ws
+    ws-opts:
+      path: "/lMnsZUN4/"
+      headers:
+        Host: v2ray1.dozapp.xyz
+    client-fingerprint: chrome
+  - name: "node 16"
+    type: vmess
+    server: 104.21.91.53
+    port: 8443
+    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: v2ray1.dozapp.xyz
+    network: ws
+    ws-opts:
+      path: "/lMnsZUN4/"
+      headers:
+        Host: v2ray1.dozapp.xyz
+    client-fingerprint: chrome
+  - name: "node 17"
+    type: vmess
+    server: 172.67.167.78
+    port: 8443
+    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: v2ray1.dozapp.xyz
+    network: ws
+    ws-opts:
+      path: "/lMnsZUN4/"
+      headers:
+        Host: v2ray1.dozapp.xyz
+    client-fingerprint: chrome
+  - name: "node 18"
+    type: vmess
+    server: 172.67.161.144
+    port: 8443
+    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: v2ray1.dozapp.xyz
+    network: ws
+    ws-opts:
+      path: "/lMnsZUN4/"
+      headers:
+        Host: v2ray1.dozapp.xyz
+    client-fingerprint: chrome
+  - name: "node 19"
+    type: vmess
+    server: 172.64.155.209
+    port: 8443
+    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: v2ray1.dozapp.xyz
+    network: ws
+    ws-opts:
+      path: "/lMnsZUN4/"
+      headers:
+        Host: v2ray1.dozapp.xyz
+    client-fingerprint: chrome
+  - name: "node 20"
     type: vmess
     server: 188.114.96.3
     port: 8443
@@ -582,7 +361,7 @@ proxies:
       headers:
         Host: v2ray1.dozapp.xyz
     client-fingerprint: chrome
-  - name: "node 35"
+  - name: "node 21"
     type: vmess
     server: chatgpt.com
     port: 8443
@@ -598,6 +377,143 @@ proxies:
       headers:
         Host: v2ray1.dozapp.xyz
     client-fingerprint: chrome
+  - name: "node 22"
+    type: vmess
+    server: or3.sfacg.uk
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: or3.sfacg.uk
+    network: ws
+    ws-opts:
+      path: "/or3"
+      headers:
+        Host: or3.sfacg.uk
+    client-fingerprint: chrome
+  - name: "node 23"
+    type: vmess
+    server: 104.17.0.1
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: or3.sfacg.uk
+    network: ws
+    ws-opts:
+      path: "/or3"
+      headers:
+        Host: or3.sfacg.uk
+    client-fingerprint: chrome
+  - name: "node 24"
+    type: vmess
+    server: 104.21.50.177
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: or3.sfacg.uk
+    network: ws
+    ws-opts:
+      path: "/or3"
+      headers:
+        Host: or3.sfacg.uk
+    client-fingerprint: chrome
+  - name: "node 25"
+    type: vmess
+    server: 162.159.135.234
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: cdn.sfacg.uk
+    network: ws
+    ws-opts:
+      path: "/or3"
+      headers:
+        Host: or3.sfacg.uk
+    client-fingerprint: chrome
+  - name: "node 26"
+    type: vmess
+    server: cdn.sfacg.uk
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: or3.sfacg.uk
+    network: ws
+    ws-opts:
+      path: "/or3"
+      headers:
+        Host: or3.sfacg.uk
+    client-fingerprint: chrome
+  - name: "node 27"
+    type: vmess
+    server: or3.sfacg.uk
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: cdn.sfacg.uk
+    network: ws
+    ws-opts:
+      path: "/or3"
+      headers:
+        Host: or3.sfacg.uk
+    client-fingerprint: chrome
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
+    type: trojan
+    server: 104.24.0.1
+    port: 2053
+    password: gHQP0D7D15
+    udp: true
+    servername: marvdasht.phonecomparisonblog.org
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: marvdasht.phonecomparisonblog.org
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 2"
+    type: trojan
+    server: 104.27.0.1
+    port: 2053
+    password: gHQP0D7D15
+    udp: true
+    servername: marvdasht.phonecomparisonblog.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: marvdasht.phonecomparisonblog.org
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 3"
+    type: trojan
+    server: 188.114.96.3
+    port: 2053
+    password: gHQP0D7D15
+    udp: true
+    servername: marvdasht.phonecomparisonblog.org
+    client-fingerprint: ios
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: marvdasht.phonecomparisonblog.org
   - name: "🇫🇮 Finland, Helsinki | [BL]"
     type: trojan
     server: 104.16.186.130
@@ -626,21 +542,6 @@ proxies:
         Host: marvdasht.phonecomparisonblog.org
   - name: "🇫🇮 Finland, Helsinki | [BL] 3"
     type: trojan
-    server: 104.24.0.1
-    port: 2053
-    password: gHQP0D7D15
-    udp: true
-    servername: marvdasht.phonecomparisonblog.org
-    client-fingerprint: safari
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: marvdasht.phonecomparisonblog.org
-  - name: "🇫🇮 Finland, Helsinki | [BL] 4"
-    type: trojan
     server: 104.25.239.113
     port: 2053
     password: gHQP0D7D15
@@ -652,21 +553,7 @@ proxies:
       path: "/"
       headers:
         Host: marvdasht.phonecomparisonblog.org
-  - name: "🇫🇮 Finland, Helsinki | [BL] 5"
-    type: trojan
-    server: 104.27.0.1
-    port: 2053
-    password: gHQP0D7D15
-    udp: true
-    servername: marvdasht.phonecomparisonblog.org
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: marvdasht.phonecomparisonblog.org
-  - name: "🇫🇮 Finland, Helsinki | [BL] 6"
+  - name: "🇫🇮 Finland, Helsinki | [BL] 4"
     type: trojan
     server: 172.66.0.1
     port: 2053
@@ -680,21 +567,51 @@ proxies:
       path: "/"
       headers:
         Host: marvdasht.phonecomparisonblog.org
-  - name: "🇫🇮 Finland, Helsinki | [BL] 7"
+  - name: "🇫🇮 Finland, Helsinki | [BL] 5"
     type: trojan
-    server: 188.114.96.3
+    server: 172.67.118.45
     port: 2053
     password: gHQP0D7D15
     udp: true
     servername: marvdasht.phonecomparisonblog.org
-    alpn:
-      - http/1.1
+    client-fingerprint: chrome
     network: ws
     ws-opts:
       path: "/"
       headers:
         Host: marvdasht.phonecomparisonblog.org
+  - name: "🇯🇵 Japan, Inzai (Otsuka) | [BL]"
+    type: trojan
+    server: 150.230.217.160
+    port: 27777
+    password: 24f9c0b4-f1c8-43a2-9c17-0a256b693db5
+    udp: true
+    servername: ol1.ssn571.top
+    network: tcp
+  - name: "🇯🇵 Japan, Inzai (Otsuka) | [BL] 2"
+    type: trojan
+    server: 150.230.217.160
+    port: 27777
+    password: e79bb958-2a79-4eea-87a3-7e73d0059ebf
+    udp: true
+    servername: ol1.ssn571.top
+    network: tcp
   - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]"
+    type: trojan
+    server: russia.com
+    port: 443
+    password: bpb-trojan
+    udp: true
+    servername: kargar001.pages.dev
+    client-fingerprint: randomized
+    alpn:
+      - h3
+    network: ws
+    ws-opts:
+      path: "/tr?ed=2560"
+      headers:
+        Host: kargar001.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL] 2"
     type: trojan
     server: singapore.com
     port: 443
@@ -742,22 +659,18 @@ proxy-groups:
       - "node 25"
       - "node 26"
       - "node 27"
-      - "node 28"
-      - "node 29"
-      - "node 30"
-      - "node 31"
-      - "node 32"
-      - "node 33"
-      - "node 34"
-      - "node 35"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 2"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 3"
       - "🇫🇮 Finland, Helsinki | [BL]"
       - "🇫🇮 Finland, Helsinki | [BL] 2"
       - "🇫🇮 Finland, Helsinki | [BL] 3"
       - "🇫🇮 Finland, Helsinki | [BL] 4"
       - "🇫🇮 Finland, Helsinki | [BL] 5"
-      - "🇫🇮 Finland, Helsinki | [BL] 6"
-      - "🇫🇮 Finland, Helsinki | [BL] 7"
+      - "🇯🇵 Japan, Inzai (Otsuka) | [BL]"
+      - "🇯🇵 Japan, Inzai (Otsuka) | [BL] 2"
       - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL] 2"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -791,22 +704,18 @@ proxy-groups:
       - "node 25"
       - "node 26"
       - "node 27"
-      - "node 28"
-      - "node 29"
-      - "node 30"
-      - "node 31"
-      - "node 32"
-      - "node 33"
-      - "node 34"
-      - "node 35"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 2"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 3"
       - "🇫🇮 Finland, Helsinki | [BL]"
       - "🇫🇮 Finland, Helsinki | [BL] 2"
       - "🇫🇮 Finland, Helsinki | [BL] 3"
       - "🇫🇮 Finland, Helsinki | [BL] 4"
       - "🇫🇮 Finland, Helsinki | [BL] 5"
-      - "🇫🇮 Finland, Helsinki | [BL] 6"
-      - "🇫🇮 Finland, Helsinki | [BL] 7"
+      - "🇯🇵 Japan, Inzai (Otsuka) | [BL]"
+      - "🇯🇵 Japan, Inzai (Otsuka) | [BL] 2"
       - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL] 2"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
