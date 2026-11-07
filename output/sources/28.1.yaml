@@ -1,5 +1,5 @@
 # 订阅 28.1.txt -> Clash
-# 节点数量: 130
+# 节点数量: 24
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -40,72 +40,49 @@ dns:
     - "https://doh.pub/dns-query"
     - "https://dns.alidns.com/dns-query"
 proxies:
-  - name: "🇧🇬 Bulgaria, Sofia | [BL]"
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
     type: vless
-    server: 168.113.128.70
-    port: 20105
-    uuid: 9aff658c-1f80-4c82-9213-48ca26996142
+    server: 104.21.58.37
+    port: 2053
+    uuid: e3149c82-00f6-4227-b2c0-b78f1dd81279
     udp: true
     tls: true
-    servername: ripelever.net
-    client-fingerprint: ios
+    servername: fast.145779.xyz
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws-tesla"
+      headers:
+        Host: fast.145779.xyz
+  - name: "🇦🇺 Australia, Huntingwood | [BL]"
+    type: vless
+    server: dddz-3-z.473221.xyz
+    port: 33162
+    uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
+    udp: true
+    tls: true
+    servername: download-porter.hoyoverse.com
+    client-fingerprint: edge
+    reality-opts:
+      public-key: Qp9_bpGExQK_h5LMXLLwVA2o1vifMQwGJ6Qh2-X26Ro
+      short-id: 3fe1e73fc9ecc8d7
     flow: xtls-rprx-vision
     network: tcp
-  - name: "🇬🇪 Georgia, Tbilisi (Nadzaladevi District) | [BL]"
+  - name: "🇨🇦 Canada, Montreal (Ville-Marie) | [BL]"
     type: vless
-    server: 93.190.9.194
-    port: 3090
-    uuid: 1589e19a-4ff8-4064-b58a-97f8bfd91b3f
+    server: 5.53.124.191
+    port: 8008
+    uuid: b48e1596-e835-4547-bdae-31daadf9ea17
     udp: true
     tls: false
-    network: grpc
-    grpc-opts:
-      grpc-service-name: vless
-  - name: "🇮🇳 India, Navi Mumbai (Rabale) | [BL]"
-    type: vless
-    server: fxhub.ir
-    port: 443
-    uuid: bc4a4b66-c3fc-4f91-938e-4d93698c0d43
-    udp: true
-    tls: true
-    servername: fxhub.ir
-    network: ws
-    ws-opts:
-      path: "/jx-ge7wex6ki2ixyk"
-      headers:
-        Host: soli-gghosin4-cell.dormhost.app
-    client-fingerprint: chrome
-  - name: "🇮🇳 India, Navi Mumbai (Rabale) | [BL] 2"
-    type: vless
-    server: mahdroo.ir
-    port: 443
-    uuid: bc4a4b66-c3fc-4f91-938e-4d93698c0d43
-    udp: true
-    tls: true
-    servername: mahdroo.ir
-    network: ws
-    ws-opts:
-      path: "/jx-ge7wex6ki2ixyk"
-      headers:
-        Host: soli-gghosin4-cell.dormhost.app
-    client-fingerprint: chrome
-  - name: "🇯🇵 Japan, Inzai (Otsuka) | [BL]"
-    type: vless
-    server: 104.16.111.102
-    port: 443
-    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-    udp: true
-    tls: true
-    servername: jp3.yohototo.top
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/tyxyws"
-      headers:
-        Host: jp3.yohototo.top
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: 5.53.124.191
+      mode: auto
   - name: "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL]"
     type: vless
-    server: 104.16.10.185
+    server: 104.16.0.1
     port: 443
     uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
     udp: true
@@ -119,7 +96,7 @@ proxies:
         Host: jp3.yohototo.top
   - name: "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 2"
     type: vless
-    server: 104.16.111.195
+    server: 104.16.10.48
     port: 443
     uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
     udp: true
@@ -133,692 +110,46 @@ proxies:
         Host: jp3.yohototo.top
   - name: "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 3"
     type: vless
-    server: 104.17.169.13
+    server: 104.17.50.227
     port: 443
     uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
     udp: true
     tls: true
     servername: jp3.yohototo.top
-    network: ws
-    ws-opts:
-      path: "/tyxyws"
-      headers:
-        Host: jp3.yohototo.top
-    client-fingerprint: chrome
-  - name: "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 4"
-    type: vless
-    server: 104.17.210.74
-    port: 443
-    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-    udp: true
-    tls: true
-    servername: jp3.yohototo.top
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/tyxyws"
-      headers:
-        Host: jp3.yohototo.top
-  - name: "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 5"
-    type: vless
-    server: 104.19.33.237
-    port: 443
-    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-    udp: true
-    tls: true
-    servername: jp3.yohototo.top
-    network: ws
-    ws-opts:
-      path: "/tyxyws"
-      headers:
-        Host: jp3.yohototo.top
-    client-fingerprint: chrome
-  - name: "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 6"
-    type: vless
-    server: 104.19.48.107
-    port: 443
-    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-    udp: true
-    tls: true
-    servername: jp3.yohototo.top
-    network: ws
-    ws-opts:
-      path: "/tyxyws"
-      headers:
-        Host: jp3.yohototo.top
-    client-fingerprint: chrome
-  - name: "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 7"
-    type: vless
-    server: 104.21.70.228
-    port: 443
-    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-    udp: true
-    tls: true
-    servername: jp3.yohototo.top
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/tyxyws"
-      headers:
-        Host: jp3.yohototo.top
-  - name: "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 8"
-    type: vless
-    server: 104.24.31.89
-    port: 443
-    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-    udp: true
-    tls: true
-    servername: jp3.yohototo.top
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/tyxyws"
-      headers:
-        Host: jp3.yohototo.top
-  - name: "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 9"
-    type: vless
-    server: 172.64.190.13
-    port: 443
-    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-    udp: true
-    tls: true
-    servername: jp3.yohototo.top
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/tyxyws"
-      headers:
-        Host: jp3.yohototo.top
-  - name: "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 10"
-    type: vless
-    server: 172.67.156.147
-    port: 443
-    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-    udp: true
-    tls: true
-    servername: jp3.yohototo.top
-    network: ws
-    ws-opts:
-      path: "/tyxyws"
-      headers:
-        Host: jp3.yohototo.top
-    client-fingerprint: chrome
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]"
-    type: vless
-    server: 104.16.10.100
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 2"
-    type: vless
-    server: 104.16.10.103
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 3"
-    type: vless
-    server: 104.16.10.104
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 4"
-    type: vless
-    server: 104.16.10.10
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 5"
-    type: vless
-    server: 104.16.10.116
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 6"
-    type: vless
-    server: 104.16.10.117
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: ios
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 7"
-    type: vless
-    server: 104.16.10.189
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 8"
-    type: vless
-    server: 104.16.10.191
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 9"
-    type: vless
-    server: 104.16.10.198
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 10"
-    type: vless
-    server: 104.16.10.234
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 11"
-    type: vless
-    server: 104.16.10.235
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 12"
-    type: vless
-    server: 104.16.10.2
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 13"
-    type: vless
-    server: 104.16.111.193
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 14"
-    type: vless
-    server: 104.16.156.227
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: safari
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 15"
-    type: vless
-    server: 104.16.3.98
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-    client-fingerprint: chrome
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 16"
-    type: vless
-    server: 104.17.117.137
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 17"
-    type: vless
-    server: 104.18.26.90
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 18"
-    type: vless
-    server: 104.19.178.244
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
     client-fingerprint: android
     network: ws
     ws-opts:
-      path: "/"
+      path: "/tyxyws"
       headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 19"
+        Host: jp3.yohototo.top
+  - name: "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 4"
     type: vless
-    server: 104.19.32.166
+    server: 162.159.254.3
     port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
     udp: true
     tls: true
-    servername: u.srilankangrill.online
+    servername: jp3.yohototo.top
     client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: "/"
+      path: "/tyxyws"
       headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 20"
-    type: vless
-    server: 104.21.236.63
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 21"
-    type: vless
-    server: 104.21.5.75
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 22"
-    type: vless
-    server: 104.21.60.109
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 23"
-    type: vless
-    server: 104.21.70.228
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 24"
-    type: vless
-    server: 104.21.89.41
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: safari
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 25"
-    type: vless
-    server: 104.24.0.184
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: ios
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 26"
-    type: vless
-    server: 104.24.11.68
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 27"
-    type: vless
-    server: 188.114.97.6
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
-  - name: "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 28"
-    type: vless
-    server: 188.114.98.0
-    port: 443
-    uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-    udp: true
-    tls: true
-    servername: u.srilankangrill.online
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: u.srilankangrill.online
+        Host: jp3.yohototo.top
   - name: "🇹🇼 Taiwan, Taoyuan | [BL]"
     type: vless
-    server: 172.67.165.32
-    port: 8443
-    uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-    udp: true
-    tls: true
-    servername: n04.jinggai.online
-    network: ws
-    ws-opts:
-      path: "/nvl-n04-ws/e0577fe8fd7c8823"
-      headers:
-        Host: n04.jinggai.online
-    client-fingerprint: chrome
-  - name: "🇹🇼 Taiwan, Taoyuan | [BL] 2"
-    type: vless
     server: 188.114.98.0
     port: 443
     uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
     udp: true
     tls: true
     servername: n04.jinggai.online
-    client-fingerprint: chrome
+    client-fingerprint: edge
     network: ws
     ws-opts:
       path: "/nvl-n04-ws/e0577fe8fd7c8823"
       headers:
         Host: n04.jinggai.online
-  - name: "🇹🇼 Taiwan, Taoyuan | [BL] 3"
-    type: vless
-    server: n04.jinggai.online
-    port: 8443
-    uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-    udp: true
-    tls: true
-    servername: n04.jinggai.online
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/nvl-n04-ws/e0577fe8fd7c8823"
-      headers:
-        Host: n04.jinggai.online
-  - name: "🇳🇱 The Netherlands | 🌐 | [BL]"
-    type: vless
-    server: 104.18.151.231
-    port: 443
-    uuid: eaf76557-2219-4799-8171-d7020adfefd0
-    udp: true
-    tls: true
-    servername: damp-pine-ea85.wimaren917.workers.dev
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: damp-pine-ea85.wimaren917.workers.dev
-    client-fingerprint: chrome
-  - name: "🇳🇱 The Netherlands | 🌐 | [BL] 2"
-    type: vless
-    server: 104.18.151.231
-    port: 443
-    uuid: eaf76557-2219-4799-8171-d7020adfefd0
-    udp: true
-    tls: true
-    servername: delicate-hall-bf16.vpndkah.workers.dev
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: delicate-hall-bf16.vpndkah.workers.dev
-    client-fingerprint: chrome
-  - name: "🇳🇱 The Netherlands | 🌐 | [BL] 3"
-    type: vless
-    server: 104.18.151.231
-    port: 443
-    uuid: eaf76557-2219-4799-8171-d7020adfefd0
-    udp: true
-    tls: true
-    servername: hidden-star-98c5.tebohi79684008.workers.dev
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: hidden-star-98c5.tebohi79684008.workers.dev
-    client-fingerprint: chrome
-  - name: "🇳🇱 The Netherlands | 🌐 | [BL] 4"
-    type: vless
-    server: 104.18.151.231
-    port: 443
-    uuid: eaf76557-2219-4799-8171-d7020adfefd0
-    udp: true
-    tls: true
-    servername: jolly-silence-83b2.kidat76098.workers.dev
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: jolly-silence-83b2.kidat76098.workers.dev
-    client-fingerprint: chrome
-  - name: "🇳🇱 The Netherlands | 🌐 | [BL] 5"
-    type: vless
-    server: 104.18.151.231
-    port: 443
-    uuid: eaf76557-2219-4799-8171-d7020adfefd0
-    udp: true
-    tls: true
-    servername: muddy-star-d195.aboumansour10313.workers.dev
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: muddy-star-d195.aboumansour10313.workers.dev
-    client-fingerprint: chrome
-  - name: "🇳🇱 The Netherlands | 🌐 | [BL] 6"
-    type: vless
-    server: 104.18.151.231
-    port: 443
-    uuid: eaf76557-2219-4799-8171-d7020adfefd0
-    udp: true
-    tls: true
-    servername: steep-lake-615e.xeremed6978165.workers.dev
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: steep-lake-615e.xeremed6978165.workers.dev
-    client-fingerprint: chrome
-  - name: "🇳🇱 The Netherlands | 🌐 | [BL] 7"
-    type: vless
-    server: 104.18.151.231
-    port: 443
-    uuid: eaf76557-2219-4799-8171-d7020adfefd0
-    udp: true
-    tls: true
-    servername: workers.jijew83195.workers.dev
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: workers.jijew83195.workers.dev
-    client-fingerprint: chrome
-  - name: "🇳🇱 The Netherlands | 🌐 | [BL] 8"
-    type: vless
-    server: 104.18.151.231
-    port: 443
-    uuid: eaf76557-2219-4799-8171-d7020adfefd0
-    udp: true
-    tls: true
-    servername: workers.retaxay188.workers.dev
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: workers.retaxay188.workers.dev
-    client-fingerprint: chrome
-  - name: "🇳🇱 The Netherlands | 🌐 | [BL] 9"
-    type: vless
-    server: 104.18.151.231
-    port: 443
-    uuid: eaf76557-2219-4799-8171-d7020adfefd0
-    udp: true
-    tls: true
-    servername: 104.18.151.231
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: damp-pine-ea85.wimaren917.workers.dev
-  - name: "🇳🇱 The Netherlands, Amsterdam | [BL]"
-    type: vless
-    server: fr.golangwikito.cfd
-    port: 443
-    uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-    udp: true
-    tls: true
-    servername: fr.golangwikito.cfd
-    client-fingerprint: safari
-    reality-opts:
-      public-key: isYQuhKDrgc7IQ7G0LHywFnt57wffrkZ-er18DkVsBA
-      short-id: e6d589857d1cec5e
-    flow: xtls-rprx-vision
-    network: tcp
   - name: "🇳🇱 The Netherlands, Dedemsvaart | [BL]"
     type: vless
     server: 188.114.98.0
@@ -827,6 +158,7 @@ proxies:
     udp: true
     tls: true
     servername: nl29.dr-ping.ir
+    client-fingerprint: chrome
     alpn:
       - h3
       - h2
@@ -835,49 +167,7 @@ proxies:
     xhttp-opts:
       path: "/"
       host: nl29.dr-ping.ir
-    client-fingerprint: chrome
-  - name: "🇬🇧 United Kingdom, London | [BL]"
-    type: vless
-    server: 34.39.80.57
-    port: 50818
-    uuid: 408c814e-f70a-4d16-b3b3-8182bb70211d
-    udp: true
-    tls: true
-    servername: yingguo.rymaker.cn
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/GunService"
-      headers:
-        Host: yingguo.rymaker.cn
-  - name: "🇬🇧 United Kingdom, London | 🌐 | [BL]"
-    type: vless
-    server: 52.56.166.118
-    port: 1412
-    uuid: 109852f2-4591-498c-9a96-f1d9206ce804
-    udp: true
-    tls: true
-    servername: www.dhl.de
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: bNpg56GtTArrVyrnonNlMA-3JyYIAFATdgsH_wn0gmc
-      short-id: 4ea6a183
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇬🇧 United Kingdom, London | 🌐 | [BL] 2"
-    type: vless
-    server: engnode.barnikle1.me
-    port: 1412
-    uuid: 109852f2-4591-498c-9a96-f1d9206ce804
-    udp: true
-    tls: true
-    servername: www.dhl.de
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: bNpg56GtTArrVyrnonNlMA-3JyYIAFATdgsH_wn0gmc
-      short-id: 4ea6a183
-    flow: xtls-rprx-vision
-    network: tcp
+      mode: auto
   - name: "🇬🇧 United Kingdom, Slough | [BL]"
     type: vless
     server: www.agahiya.ir
@@ -886,12 +176,12 @@ proxies:
     udp: true
     tls: true
     servername: www.agahiya.ir
+    client-fingerprint: android
     network: ws
     ws-opts:
       path: "/jx-y8179aild6rsmj"
       headers:
         Host: soliconf-gghosin4-cell.dormhost.app
-    client-fingerprint: chrome
   - name: "🇬🇧 United Kingdom, Slough | [BL] 2"
     type: vless
     server: www.agahiya.ir
@@ -922,13 +212,13 @@ proxies:
         Host: soliconf-gghosin4-cell.dormhost.app
   - name: "🇬🇧 United Kingdom, Slough | [BL] 4"
     type: vless
-    server: www.farahghanizadeh.ir
+    server: www.sarzaminaryan.ir
     port: 443
     uuid: 57e089a8-0cd1-48d0-b572-105c4804f6b8
     udp: true
     tls: true
-    servername: soliconf-gghosin4-cell.dormhost.app
-    client-fingerprint: chrome
+    servername: www.sarzaminaryan.ir
+    client-fingerprint: android
     network: ws
     ws-opts:
       path: "/jx-y8179aild6rsmj"
@@ -941,20 +231,6 @@ proxies:
     uuid: 57e089a8-0cd1-48d0-b572-105c4804f6b8
     udp: true
     tls: true
-    servername: www.sarzaminaryan.ir
-    network: ws
-    ws-opts:
-      path: "/jx-y8179aild6rsmj"
-      headers:
-        Host: soliconf-gghosin4-cell.dormhost.app
-    client-fingerprint: chrome
-  - name: "🇬🇧 United Kingdom, Slough | [BL] 6"
-    type: vless
-    server: www.sarzaminaryan.ir
-    port: 443
-    uuid: 57e089a8-0cd1-48d0-b572-105c4804f6b8
-    udp: true
-    tls: true
     servername: soliconf-gghosin4-cell.dormhost.app
     client-fingerprint: chrome
     network: ws
@@ -962,18 +238,61 @@ proxies:
       path: "/jx-y8179aild6rsmj"
       headers:
         Host: soliconf-gghosin4-cell.dormhost.app
-  - name: "🇺🇸 United States, Columbus | 🌐 | [BL]"
+  - name: "🇺🇸 United States, Buffalo | [BL]"
     type: vless
-    server: parvaz.zqpm.ir
-    port: 20753
-    uuid: 92b368fe-8991-4345-a726-b512ba6da8da
+    server: dddz-1-x.473221.xyz
+    port: 34759
+    uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
     udp: true
     tls: true
-    servername: yahoo.com
+    servername: v1-dy.ixigua.com
+    client-fingerprint: edge
     reality-opts:
-      public-key: PF8LdirtBEOQ_w9-1-i3mhgeFYbIQ1iOu1FPCfxUHQo
-      short-id: 2efbb0033df59520
+      public-key: H0AETHQQIsu1c7ZHZ5RUgNaLYIVdMI6gJlMaBLBeX3o
+      short-id: 5e0eb283246c6911
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇺🇸 United States, Charlotte (Oakview Terrace) | 🌐 | [BL]"
+    type: vless
+    server: 45.143.94.91
+    port: 8443
+    uuid: 3837e7a5-d40e-4b85-8700-5f9725a5a2cb
+    udp: true
+    tls: true
+    servername: us1.cloudvienta.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 3Kgy_0tHtOzEn9_mEylNsBVlAHNngT6S4AuYy5wEOSU
+      short-id: 0c37b64d1935ebc1
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL]"
+    type: vless
+    server: 176.122.142.140
+    port: 443
+    uuid: e60f4255-3cf2-483b-b6d3-3e302f431ef3
+    udp: true
+    tls: true
+    servername: portal.citygrainla.com
     client-fingerprint: chrome
+    reality-opts:
+      public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
+      short-id: 051f20c2344a2dfd
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL 2"
+    type: vless
+    server: 176.122.188.184
+    port: 443
+    uuid: e60f4255-3cf2-483b-b6d3-3e302f431ef3
+    udp: true
+    tls: true
+    servername: portal.citygrainla.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
+      short-id: 051f20c2344a2dfd
+    flow: xtls-rprx-vision
     network: tcp
   - name: "🇺🇸 United States, North Bergen | [BL]"
     type: vless
@@ -997,7 +316,7 @@ proxies:
     udp: true
     tls: true
     servername: fast.145779.xyz
-    client-fingerprint: firefox
+    client-fingerprint: chrome
     network: ws
     ws-opts:
       path: "/ws-tesla"
@@ -1011,7 +330,7 @@ proxies:
     udp: true
     tls: true
     servername: fast.145779.xyz
-    client-fingerprint: firefox
+    client-fingerprint: chrome
     network: ws
     ws-opts:
       path: "/ws-tesla"
@@ -1019,13 +338,13 @@ proxies:
         Host: fast.145779.xyz
   - name: "🇺🇸 United States, North Bergen | [BL] 4"
     type: vless
-    server: 104.21.58.37
+    server: 172.67.199.126
     port: 2053
     uuid: e3149c82-00f6-4227-b2c0-b78f1dd81279
     udp: true
     tls: true
     servername: fast.145779.xyz
-    client-fingerprint: safari
+    client-fingerprint: chrome
     alpn:
       - http/1.1
     network: ws
@@ -1035,1115 +354,92 @@ proxies:
         Host: fast.145779.xyz
   - name: "🇺🇸 United States, North Bergen | [BL] 5"
     type: vless
-    server: 172.67.199.126
-    port: 2053
-    uuid: e3149c82-00f6-4227-b2c0-b78f1dd81279
-    udp: true
-    tls: true
-    servername: fast.145779.xyz
-    client-fingerprint: firefox
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/ws-tesla"
-      headers:
-        Host: fast.145779.xyz
-  - name: "🇺🇸 United States, North Bergen | [BL] 6"
-    type: vless
     server: fast.145779.xyz
     port: 2053
     uuid: e3149c82-00f6-4227-b2c0-b78f1dd81279
     udp: true
     tls: true
     servername: fast.145779.xyz
-    client-fingerprint: firefox
+    client-fingerprint: chrome
     network: ws
     ws-opts:
       path: "/ws-tesla"
       headers:
         Host: fast.145779.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]"
-    type: vless
-    server: 172.66.44.200
-    port: 443
-    uuid: 3dc83518-4002-485e-a066-d3bbcaaa2b2e
-    udp: true
-    tls: true
-    servername: K9-85J.paGEs.Dev
-    client-fingerprint: randomized
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/1WWzkWgNslKTcceU?ed=2560"
-      headers:
-        Host: k9-85j.pages.dev
   - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]"
     type: vless
-    server: 14f7f5f0.mrbl69black.pages.dev
+    server: 104.26.1.117
     port: 443
-    uuid: 0d5a2112-789f-4755-88e6-61a1a8f8067b
+    uuid: bdde0eb9-62c6-4d30-ac96-ab10d8eb7939
     udp: true
     tls: true
-    servername: 14F7F5f0.mRBL69BlaCK.paGES.DeV
+    servername: erupencompanypdr.pages.dev
     client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: "/I0IHonn0TGa2xaOO?ed=2560"
+      path: "/ISoOMY675XVPxHG4?ed=2560"
       headers:
-        Host: 14F7F5f0.mRBL69BlaCK.paGES.DeV
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 2"
-    type: vless
-    server: 104.25.0.1
-    port: 2096
-    uuid: 341832cc-ba98-425b-8225-b3db621a0da3
-    udp: true
-    tls: true
-    servername: rainfall0705.cc.cd
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: rainfall0705.cc.cd
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 3"
-    type: vless
-    server: 104.18.0.1
-    port: 443
-    uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
-    udp: true
-    tls: true
-    servername: all.speedtest03.ccwu.cc
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: all.speedtest03.ccwu.cc
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 4"
-    type: vless
-    server: k9-85j.pages.dev
-    port: 443
-    uuid: 3dc83518-4002-485e-a066-d3bbcaaa2b2e
-    udp: true
-    tls: true
-    servername: K9-85J.paGEs.Dev
-    client-fingerprint: randomized
-    network: ws
-    ws-opts:
-      path: "/1WWzkWgNslKTcceU?ed=2560"
-      headers:
-        Host: K9-85J.paGEs.Dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 5"
-    type: vless
-    server: cf.090227.xyz
-    port: 443
-    uuid: 3de5a94c-aadc-4e40-ba1a-7d4b6545f8a3
-    udp: true
-    tls: true
-    servername: oooyo.bi8bo.cyou
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: oooyo.bi8bo.cyou
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 6"
-    type: vless
-    server: 188.114.96.3
-    port: 443
-    uuid: 5b716e51-489e-4e97-b5c8-dd10803eff93
-    udp: true
-    tls: true
-    servername: snc9ne2f7zclhn5uzth7hcfgsrnympmmrnej7w2uzdjtsyt2fssssssssssssss.n0xp4ed8mc.workers.Dev
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "Telegram channel : @pandavpntc"
-      headers:
-        Host: snc9ne2f7zclhn5uzth7hcfgsrnympmmrnej7w2uzdjtsyt2fssssssssssssss.n0xp4ed8mc.workers.Dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 7"
-    type: vless
-    server: 188.114.96.3
-    port: 443
-    uuid: 5b716e51-489e-4e97-b5c8-dd10803eff93
-    udp: true
-    tls: true
-    servername: 188.114.96.3
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: snc9ne2f7zclhn5uzth7hcfgsrnympmmrnej7w2uzdjtsyt2fssssssssssssss.n0xp4ed8mc.workers.dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 8"
-    type: vless
-    server: edge-relay-c9db.edge-edge-relay-be8e.workers.dev
-    port: 443
-    uuid: 8a540f3b-04c7-4e22-924a-51a0b6fad164
-    udp: true
-    tls: true
-    servername: edge-relay-c9db.edge-edge-relay-be8e.workers.dev
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/admin/proxyip=undefined"
-      headers:
-        Host: edge-relay-c9db.edge-edge-relay-be8e.workers.dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 9"
-    type: vless
-    server: 104.18.1.1
-    port: 2083
-    uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-    udp: true
-    tls: true
-    servername: vlsovip.1d.mom
-    network: ws
-    ws-opts:
-      path: "/socks5=888:888"
-      headers:
-        Host: vlsovip.1d.mom
-    client-fingerprint: chrome
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 10"
-    type: vless
-    server: 188.114.97.3
-    port: 443
-    uuid: e7727c1e-c5a7-4810-b31a-2eeb22f95d6d
-    udp: true
-    tls: true
-    servername: kjjwrmfezmelh9amswcvmuscxxuuqdzzgw9khj7cfgcp59yju9edrihsssssss6.oh7mn.workers.Dev
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "telegram channel : @pandavpntc"
-      headers:
-        Host: kjjwrmfezmelh9amswcvmuscxxuuqdzzgw9khj7cfgcp59yju9edrihsssssss6.oh7mn.workers.Dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇮🇪 | [BL]"
-    type: vless
-    server: 5.157.30.3
-    port: 8443
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp6.1145678.xyz
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/docs"
-      headers:
-        Host: vp6.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
-    type: vless
-    server: 8.35.211.188
-    port: 8443
-    uuid: 2b181a3a-c001-4145-845a-5d43a43837d5
-    udp: true
-    tls: true
-    servername: vpn-1fj.pages.dev
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: vpn-1fj.pages.dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 2"
-    type: vless
-    server: 172.64.152.52
-    port: 443
-    uuid: 2d4b819d-6fa6-4db2-8434-61e7db0fe93c
-    udp: true
-    tls: true
-    servername: cf.zhahui.de5.net
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: cf.zhahui.de5.net
-    client-fingerprint: chrome
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 3"
-    type: vless
-    server: 172.64.156.111
-    port: 443
-    uuid: 2d4b819d-6fa6-4db2-8434-61e7db0fe93c
-    udp: true
-    tls: true
-    servername: cf.zhahui.de5.net
-    network: ws
-    ws-opts:
-      path: "/fp=chrome"
-      headers:
-        Host: cf.zhahui.de5.net
-    client-fingerprint: chrome
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 4"
-    type: vless
-    server: 104.18.47.140
-    port: 2096
-    uuid: 341832cc-ba98-425b-8225-b3db621a0da3
-    udp: true
-    tls: true
-    servername: rainfall0705.cc.cd
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: rainfall0705.cc.cd
-    client-fingerprint: chrome
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 5"
-    type: vless
-    server: 162.159.130.234
-    port: 2083
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp14.1145678.xyz
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/community/redirect.html"
-      headers:
-        Host: vp14.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 6"
-    type: vless
-    server: saas.sin.fan
-    port: 2053
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp21.1145678.xyz
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/items/downloads"
-      headers:
-        Host: vp21.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 7"
-    type: vless
-    server: saas.sin.fan
-    port: 2053
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp6.1145678.xyz
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/drama"
-      headers:
-        Host: vp6.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 8"
-    type: vless
-    server: saas.sin.fan
-    port: 2053
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp7.1145678.xyz
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/question/watch"
-      headers:
-        Host: vp7.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 9"
-    type: vless
-    server: saas.sin.fan
-    port: 2083
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp7.1145678.xyz
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/events/class"
-      headers:
-        Host: vp7.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 10"
-    type: vless
-    server: saas.sin.fan
-    port: 2087
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp3.1145678.xyz
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/new/comics"
-      headers:
-        Host: vp3.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 11"
-    type: vless
-    server: saas.sin.fan
-    port: 2087
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp6.1145678.xyz
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/thread"
-      headers:
-        Host: vp6.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 12"
-    type: vless
-    server: saas.sin.fan
-    port: 2096
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp8.1145678.xyz
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/p"
-      headers:
-        Host: vp8.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 13"
-    type: vless
-    server: saas.sin.fan
-    port: 2096
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp13.1145678.xyz
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: vp13.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 14"
-    type: vless
-    server: saas.sin.fan
-    port: 2096
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp6.1145678.xyz
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: vp6.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 15"
-    type: vless
-    server: saas.sin.fan
-    port: 443
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp12.1145678.xyz
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/torrent/documents/photos"
-      headers:
-        Host: vp12.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 16"
-    type: vless
-    server: saas.sin.fan
-    port: 443
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp22.1145678.xyz
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/playlist"
-      headers:
-        Host: vp22.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 17"
-    type: vless
-    server: saas.sin.fan
-    port: 443
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp5.1145678.xyz
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/servicefp=chrome"
-      headers:
-        Host: vp5.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 18"
-    type: vless
-    server: saas.sin.fan
-    port: 443
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp7.1145678.xyz
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/images"
-      headers:
-        Host: vp7.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 19"
-    type: vless
-    server: 172.64.150.248
-    port: 443
-    uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-    udp: true
-    tls: true
-    servername: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 20"
-    type: vless
-    server: 104.18.35.86
-    port: 2083
-    uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-    udp: true
-    tls: true
-    servername: vlsovip.1d.mom
-    network: ws
-    ws-opts:
-      path: "/fp=unsafefp=chrome"
-      headers:
-        Host: vlsovip.1d.mom
-    client-fingerprint: chrome
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 21"
-    type: vless
-    server: 162.159.152.205
-    port: 443
-    uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-    udp: true
-    tls: true
-    servername: vless2-8vx.pages.dev
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: vless2-8vx.pages.dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 🇸🇪 | [BL]"
-    type: vless
-    server: saas.sin.fan
-    port: 2087
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp2.1145678.xyz
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: vp2.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 🇺🇸 | [BL]"
-    type: vless
-    server: 162.159.130.234
-    port: 2096
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp8.1145678.xyz
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/p"
-      headers:
-        Host: vp8.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇨🇦 🇷🇺 | [BL]"
-    type: vless
-    server: snowflake.com
-    port: 443
-    uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
-    udp: true
-    tls: true
-    servername: wallweb-4ez.pages.dev
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: wallweb-4ez.pages.dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 | [BL]"
-    type: vless
-    server: www.speedtest.net
-    port: 443
-    uuid: 85550ebf-fd43-42dd-9801-bda528fea2fc
-    udp: true
-    tls: true
-    servername: wallweb5.pages.dev
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: wallweb5.pages.dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 | [BL] 2"
-    type: vless
-    server: 104.17.44.17
-    port: 443
-    uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
-    udp: true
-    tls: true
-    servername: top-e4s.pages.dev
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/fp=unsafe"
-      headers:
-        Host: top-e4s.pages.dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
-    type: vless
-    server: 104.17.148.111
-    port: 2053
-    uuid: 2b181a3a-c001-4145-845a-5d43a43837d5
-    udp: true
-    tls: true
-    servername: vpn-1fj.pages.dev
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: vpn-1fj.pages.dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 2"
-    type: vless
-    server: 104.19.32.132
-    port: 8443
-    uuid: 2b181a3a-c001-4145-845a-5d43a43837d5
-    udp: true
-    tls: true
-    servername: vpn-1fj.pages.dev
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: vpn-1fj.pages.dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 3"
-    type: vless
-    server: 104.17.44.17
-    port: 443
-    uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
-    udp: true
-    tls: true
-    servername: 104.17.44.17
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: top-e4s.pages.dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 4"
-    type: vless
-    server: www.speedtest.net
-    port: 443
-    uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
-    udp: true
-    tls: true
-    servername: top-e4s.pages.dev
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: top-e4s.pages.dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 5"
-    type: vless
-    server: www.speedtest.net
-    port: 443
-    uuid: ec23f217-23a1-4f62-b98d-ba56070de89c
-    udp: true
-    tls: true
-    servername: wallweb4.pages.dev
-    network: ws
-    ws-opts:
-      path: "/fp=chrome"
-      headers:
-        Host: wallweb4.pages.dev
-    client-fingerprint: chrome
-  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 6"
-    type: vless
-    server: 104.17.177.160
-    port: 8443
-    uuid: fceb3200-2516-47d2-8e28-d04ecde9427a
-    udp: true
-    tls: true
-    servername: 104.17.177.160
-    network: ws
-    ws-opts:
-      path: "/fp=chrome"
-      headers:
-        Host: edge-fef90023.pages.dev
-    client-fingerprint: chrome
-  - name: "🌐 Anycast-IP | 🇨🇭 | [BL]"
-    type: vless
-    server: 46.19.138.214
-    port: 443
-    uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-    udp: true
-    tls: true
-    servername: perevodchiki.su
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-      short-id: 428ef87fd47a3a32
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🌐 Anycast-IP | 🇨🇱 🇺🇸 | [BL]"
-    type: vless
-    server: us2.japancase.site
-    port: 443
-    uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-    udp: true
-    tls: true
-    servername: us2.japancase.site
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
-      short-id: 41ae8e266bc3346f
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🌐 Anycast-IP | 🇩🇪 🇲🇴 | [BL]"
-    type: vless
-    server: mo01.dw.sh-cloudflare.sbs
-    port: 11107
-    uuid: 792ba6a8-b887-42bd-9480-4eb19b0a9b2b
-    udp: true
-    tls: true
-    servername: cdn-dynmedia-1.microsoft.com
-    client-fingerprint: safari
-    reality-opts:
-      public-key: cIAvdh9g8o4OWaCs4yY1aKxz32F0N73O7kQpqp3oQHg
-      short-id: 9433bfa1
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL]"
-    type: vless
-    server: 172.64.145.82
-    port: 443
-    uuid: 2d4b819d-6fa6-4db2-8434-61e7db0fe93c
-    udp: true
-    tls: true
-    servername: cf.zhahui.de5.net
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: cf.zhahui.de5.net
-  - name: "🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL] 2"
-    type: vless
-    server: saas.sin.fan
-    port: 2053
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp11.1145678.xyz
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/videos/forum"
-      headers:
-        Host: vp11.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL] 3"
-    type: vless
-    server: saas.sin.fan
-    port: 2083
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp14.1145678.xyz
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/community/redirect.html"
-      headers:
-        Host: vp14.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL] 4"
-    type: vless
-    server: 172.64.145.94
-    port: 443
-    uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-    udp: true
-    tls: true
-    servername: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
-    client-fingerprint: chrome
-  - name: "🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL] 5"
-    type: vless
-    server: 172.64.145.94
-    port: 443
-    uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-    udp: true
-    tls: true
-    servername: 172.64.145.94
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
-  - name: "🌐 Anycast-IP | 🇸🇪 🇺🇸 | [BL]"
-    type: vless
-    server: saas.sin.fan
-    port: 2096
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp9.1145678.xyz
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/thread/list"
-      headers:
-        Host: vp9.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇸🇪 🇺🇸 | [BL] 2"
-    type: vless
-    server: 104.19.52.70
-    port: 8443
-    uuid: fceb3200-2516-47d2-8e28-d04ecde9427a
-    udp: true
-    tls: true
-    servername: 104.19.52.70
-    network: ws
-    ws-opts:
-      path: "/fp=firefox"
-      headers:
-        Host: edge-fef90023.pages.dev
-    client-fingerprint: chrome
-  - name: "🌐 Anycast-IP | 🇸🇬 🇺🇸 | [BL]"
-    type: vless
-    server: 172.86.86.21
-    port: 443
-    uuid: 3c4aa500-e3ae-4778-837b-f02dfea8c85f
-    udp: true
-    tls: true
-    servername: us2.qik-fin.uk
-    client-fingerprint: qq
-    alpn:
-      - h2
-    network: xhttp
-    xhttp-opts:
-      path: "/static/js/chunk"
-      host: us2.qik-fin.uk
-      mode: stream-one
-  - name: "🌐 Anycast-IP | 🇸🇬 🇺🇸 | [BL] 2"
-    type: vless
-    server: us2.qik-fin.uk
-    port: 443
-    uuid: 3c4aa500-e3ae-4778-837b-f02dfea8c85f
-    udp: true
-    tls: true
-    servername: us2.qik-fin.uk
-    client-fingerprint: qq
-    alpn:
-      - h2
-    network: xhttp
-    xhttp-opts:
-      path: "/static/js/chunk"
-      host: us2.qik-fin.uk
-      mode: stream-one
-  - name: "🌐 Anycast-IP | 🇸🇬 🇺🇸 | [BL] 3"
-    type: vless
-    server: 172.86.86.21
-    port: 443
-    uuid: bc6c3e9a-592c-46b9-ad48-87c052c64486
-    udp: true
-    tls: true
-    servername: us2.qik-fin.uk
-    client-fingerprint: qq
-    alpn:
-      - h2
-    network: xhttp
-    xhttp-opts:
-      path: "/static/js/chunk"
-      host: us2.qik-fin.uk
-      mode: stream-one
+        Host: erupencompanypdr.pages.dev
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - "🇧🇬 Bulgaria, Sofia | [BL]"
-      - "🇬🇪 Georgia, Tbilisi (Nadzaladevi District) | [BL]"
-      - "🇮🇳 India, Navi Mumbai (Rabale) | [BL]"
-      - "🇮🇳 India, Navi Mumbai (Rabale) | [BL] 2"
-      - "🇯🇵 Japan, Inzai (Otsuka) | [BL]"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
+      - "🇦🇺 Australia, Huntingwood | [BL]"
+      - "🇨🇦 Canada, Montreal (Ville-Marie) | [BL]"
       - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL]"
       - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 2"
       - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 3"
       - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 4"
-      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 5"
-      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 6"
-      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 7"
-      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 8"
-      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 9"
-      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 10"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 2"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 3"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 4"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 5"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 6"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 7"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 8"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 9"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 10"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 11"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 12"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 13"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 14"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 15"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 16"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 17"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 18"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 19"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 20"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 21"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 22"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 23"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 24"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 25"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 26"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 27"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 28"
       - "🇹🇼 Taiwan, Taoyuan | [BL]"
-      - "🇹🇼 Taiwan, Taoyuan | [BL] 2"
-      - "🇹🇼 Taiwan, Taoyuan | [BL] 3"
-      - "🇳🇱 The Netherlands | 🌐 | [BL]"
-      - "🇳🇱 The Netherlands | 🌐 | [BL] 2"
-      - "🇳🇱 The Netherlands | 🌐 | [BL] 3"
-      - "🇳🇱 The Netherlands | 🌐 | [BL] 4"
-      - "🇳🇱 The Netherlands | 🌐 | [BL] 5"
-      - "🇳🇱 The Netherlands | 🌐 | [BL] 6"
-      - "🇳🇱 The Netherlands | 🌐 | [BL] 7"
-      - "🇳🇱 The Netherlands | 🌐 | [BL] 8"
-      - "🇳🇱 The Netherlands | 🌐 | [BL] 9"
-      - "🇳🇱 The Netherlands, Amsterdam | [BL]"
       - "🇳🇱 The Netherlands, Dedemsvaart | [BL]"
-      - "🇬🇧 United Kingdom, London | [BL]"
-      - "🇬🇧 United Kingdom, London | 🌐 | [BL]"
-      - "🇬🇧 United Kingdom, London | 🌐 | [BL] 2"
       - "🇬🇧 United Kingdom, Slough | [BL]"
       - "🇬🇧 United Kingdom, Slough | [BL] 2"
       - "🇬🇧 United Kingdom, Slough | [BL] 3"
       - "🇬🇧 United Kingdom, Slough | [BL] 4"
       - "🇬🇧 United Kingdom, Slough | [BL] 5"
-      - "🇬🇧 United Kingdom, Slough | [BL] 6"
-      - "🇺🇸 United States, Columbus | 🌐 | [BL]"
+      - "🇺🇸 United States, Buffalo | [BL]"
+      - "🇺🇸 United States, Charlotte (Oakview Terrace) | 🌐 | [BL]"
+      - "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL]"
+      - "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL 2"
       - "🇺🇸 United States, North Bergen | [BL]"
       - "🇺🇸 United States, North Bergen | [BL] 2"
       - "🇺🇸 United States, North Bergen | [BL] 3"
       - "🇺🇸 United States, North Bergen | [BL] 4"
       - "🇺🇸 United States, North Bergen | [BL] 5"
-      - "🇺🇸 United States, North Bergen | [BL] 6"
-      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 3"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 4"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 5"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 6"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 7"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 8"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 9"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 10"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇮🇪 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 3"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 4"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 5"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 6"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 7"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 8"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 9"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 10"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 11"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 12"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 13"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 14"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 15"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 16"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 17"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 18"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 19"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 20"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 21"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 🇸🇪 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇷🇺 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 | [BL] 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 3"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 4"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 5"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 6"
-      - "🌐 Anycast-IP | 🇨🇭 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇱 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇩🇪 🇲🇴 | [BL]"
-      - "🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL]"
-      - "🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL] 2"
-      - "🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL] 3"
-      - "🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL] 4"
-      - "🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL] 5"
-      - "🌐 Anycast-IP | 🇸🇪 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇸🇪 🇺🇸 | [BL] 2"
-      - "🌐 Anycast-IP | 🇸🇬 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇸🇬 🇺🇸 | [BL] 2"
-      - "🌐 Anycast-IP | 🇸🇬 🇺🇸 | [BL] 3"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     proxies:
-      - "🇧🇬 Bulgaria, Sofia | [BL]"
-      - "🇬🇪 Georgia, Tbilisi (Nadzaladevi District) | [BL]"
-      - "🇮🇳 India, Navi Mumbai (Rabale) | [BL]"
-      - "🇮🇳 India, Navi Mumbai (Rabale) | [BL] 2"
-      - "🇯🇵 Japan, Inzai (Otsuka) | [BL]"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
+      - "🇦🇺 Australia, Huntingwood | [BL]"
+      - "🇨🇦 Canada, Montreal (Ville-Marie) | [BL]"
       - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL]"
       - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 2"
       - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 3"
       - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 4"
-      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 5"
-      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 6"
-      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 7"
-      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 8"
-      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 9"
-      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL] 10"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 2"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 3"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 4"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 5"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 6"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 7"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 8"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 9"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 10"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 11"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 12"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 13"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 14"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 15"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 16"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 17"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 18"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 19"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 20"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 21"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 22"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 23"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 24"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 25"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 26"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 27"
-      - "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] 28"
       - "🇹🇼 Taiwan, Taoyuan | [BL]"
-      - "🇹🇼 Taiwan, Taoyuan | [BL] 2"
-      - "🇹🇼 Taiwan, Taoyuan | [BL] 3"
-      - "🇳🇱 The Netherlands | 🌐 | [BL]"
-      - "🇳🇱 The Netherlands | 🌐 | [BL] 2"
-      - "🇳🇱 The Netherlands | 🌐 | [BL] 3"
-      - "🇳🇱 The Netherlands | 🌐 | [BL] 4"
-      - "🇳🇱 The Netherlands | 🌐 | [BL] 5"
-      - "🇳🇱 The Netherlands | 🌐 | [BL] 6"
-      - "🇳🇱 The Netherlands | 🌐 | [BL] 7"
-      - "🇳🇱 The Netherlands | 🌐 | [BL] 8"
-      - "🇳🇱 The Netherlands | 🌐 | [BL] 9"
-      - "🇳🇱 The Netherlands, Amsterdam | [BL]"
       - "🇳🇱 The Netherlands, Dedemsvaart | [BL]"
-      - "🇬🇧 United Kingdom, London | [BL]"
-      - "🇬🇧 United Kingdom, London | 🌐 | [BL]"
-      - "🇬🇧 United Kingdom, London | 🌐 | [BL] 2"
       - "🇬🇧 United Kingdom, Slough | [BL]"
       - "🇬🇧 United Kingdom, Slough | [BL] 2"
       - "🇬🇧 United Kingdom, Slough | [BL] 3"
       - "🇬🇧 United Kingdom, Slough | [BL] 4"
       - "🇬🇧 United Kingdom, Slough | [BL] 5"
-      - "🇬🇧 United Kingdom, Slough | [BL] 6"
-      - "🇺🇸 United States, Columbus | 🌐 | [BL]"
+      - "🇺🇸 United States, Buffalo | [BL]"
+      - "🇺🇸 United States, Charlotte (Oakview Terrace) | 🌐 | [BL]"
+      - "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL]"
+      - "🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL 2"
       - "🇺🇸 United States, North Bergen | [BL]"
       - "🇺🇸 United States, North Bergen | [BL] 2"
       - "🇺🇸 United States, North Bergen | [BL] 3"
       - "🇺🇸 United States, North Bergen | [BL] 4"
       - "🇺🇸 United States, North Bergen | [BL] 5"
-      - "🇺🇸 United States, North Bergen | [BL] 6"
-      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 3"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 4"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 5"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 6"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 7"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 8"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 9"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 10"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇮🇪 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 3"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 4"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 5"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 6"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 7"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 8"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 9"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 10"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 11"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 12"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 13"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 14"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 15"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 16"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 17"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 18"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 19"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 20"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL] 21"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 🇸🇪 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇷🇺 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 | [BL] 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 3"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 4"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 5"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 6"
-      - "🌐 Anycast-IP | 🇨🇭 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇱 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇩🇪 🇲🇴 | [BL]"
-      - "🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL]"
-      - "🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL] 2"
-      - "🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL] 3"
-      - "🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL] 4"
-      - "🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL] 5"
-      - "🌐 Anycast-IP | 🇸🇪 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇸🇪 🇺🇸 | [BL] 2"
-      - "🌐 Anycast-IP | 🇸🇬 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇸🇬 🇺🇸 | [BL] 2"
-      - "🌐 Anycast-IP | 🇸🇬 🇺🇸 | [BL] 3"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"

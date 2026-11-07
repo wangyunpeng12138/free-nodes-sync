@@ -1,5 +1,5 @@
 # 订阅 33.1.txt -> Clash
-# 节点数量: 2
+# 节点数量: 3
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -70,6 +70,19 @@ proxies:
       path: "/service/telemetry/045d381f1166/"
       headers:
         Host: bhjolq0d0l.flowersgood.top
+  - name: "🌐 Anycast-IP | 🇪🇪 🇷🇺 | [*CIDR] VK"
+    type: vless
+    server: 185.86.145.112
+    port: 8445
+    uuid: cd138479-c87a-4d4c-b6ea-4beeb6ef2b47
+    udp: true
+    tls: true
+    servername: passport.yandex.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: l06r0clkHjHk7HRGpkDBJwZ1JJscSqfwHUQOrV3v3hQ
+    flow: xtls-rprx-vision
+    network: tcp
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -78,6 +91,7 @@ proxy-groups:
       - DIRECT
       - "🇳🇱 The Netherlands | [*CIDR] VK"
       - "🇳🇱 The Netherlands | [*CIDR] VK 2"
+      - "🌐 Anycast-IP | 🇪🇪 🇷🇺 | [*CIDR] VK"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -86,6 +100,7 @@ proxy-groups:
     proxies:
       - "🇳🇱 The Netherlands | [*CIDR] VK"
       - "🇳🇱 The Netherlands | [*CIDR] VK 2"
+      - "🌐 Anycast-IP | 🇪🇪 🇷🇺 | [*CIDR] VK"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
