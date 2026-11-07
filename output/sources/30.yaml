@@ -1,5 +1,5 @@
 # 订阅 30.txt -> Clash
-# 节点数量: 17
+# 节点数量: 7
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -42,106 +42,18 @@ dns:
 proxies:
   - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
     type: vless
-    server: 185.178.208.140
-    port: 443
-    uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+    server: 201.51.0.7
+    port: 993
+    uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
     udp: true
     tls: true
-    servername: api.bakarova-top.ru
-    client-fingerprint: chrome
-    alpn:
-      - h2
-    network: xhttp
-    xhttp-opts:
-      path: "/api/v2/events"
-      host: api.bakarova-top.ru
-      mode: packet-up
-  - name: "🇧🇬 Bulgaria [*CIDR]"
-    type: vless
-    server: 168.113.128.70
-    port: 20105
-    uuid: 9aff658c-1f80-4c82-9213-48ca26996142
-    udp: true
-    tls: true
-    servername: ripelever.net
+    servername: msk5.gacvpn.site
     client-fingerprint: firefox
-    alpn:
-      - h2
-      - http/1.1
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇨🇿 Czechia | [*CIDR]"
-    type: vless
-    server: 189.74.118.9
-    port: 443
-    uuid: 7585e2a8-42a5-45b2-b706-3189938f90d0
-    udp: true
-    tls: true
-    servername: api.mediapolden.cc
-    client-fingerprint: android
-    alpn:
-      - h2
-    network: grpc
-    grpc-opts:
-      grpc-service-name: r7Kp4mN9tQ2v
-  - name: "🇩🇪 Germany [*CIDR]"
-    type: vless
-    server: 147.45.153.134
-    port: 443
-    uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-    udp: true
-    tls: true
-    servername: renderer-bridge-2-133.mirra.now
-    client-fingerprint: chrome
-    alpn:
-      - h2
-    network: grpc
-    grpc-opts:
-      grpc-service-name: VideoRenderer
-  - name: "🇩🇪 Germany [*CIDR] 2"
-    type: vless
-    server: renderer-bridge-2-133.mirra.now
-    port: 443
-    uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-    udp: true
-    tls: true
-    servername: renderer-bridge-2-133.mirra.now
-    client-fingerprint: ios
-    alpn:
-      - h2
-    network: grpc
-    grpc-opts:
-      grpc-service-name: VideoRenderer
-  - name: "🇩🇪 Germany | [*CIDR]"
-    type: vless
-    server: 83.171.241.174
-    port: 443
-    uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
-    udp: true
-    tls: true
-    servername: be5faex.de9.h1clayd.click
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: yO4py2ltxx3eqzeTeNUZvNvTClHAIf8vWT1BJtVEgRg
-      short-id: bead219b05a63ae6
-    network: xhttp
-    xhttp-opts:
-      path: "/fcbe41be11cb"
-      host: be5faex.de9.h1clayd.click
-  - name: "🇩🇪 Germany | 🌐 [*CIDR]"
-    type: vless
-    server: 188.225.78.228
-    port: 443
-    uuid: bb190cdb-82ae-4212-b6cd-8ae9e6b768dd
-    udp: true
-    tls: true
-    servername: music.yandex.ru
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: aV_BHCeZ30y4-5rpUIHaWHMYAgogLsw4AE06Rw2X4WE
-      short-id: e202a94ad1711af2
-    flow: xtls-rprx-vision
-    network: tcp
+    network: ws
+    ws-opts:
+      path: "/static/js/runtime.d9e71138.js"
+      headers:
+        Host: msk5.gacvpn.site
   - name: "🇱🇹 Lithuania [*CIDR]"
     type: vless
     server: lorettmay.top
@@ -156,21 +68,6 @@ proxies:
       path: "/blog/posts"
       headers:
         Host: lorettmay.top
-  - name: "🇱🇹 Lithuania | [*CIDR]"
-    type: vless
-    server: www.skelmoridianservice.com
-    port: 443
-    uuid: ba86b5dd-76c5-4155-be30-dbf0ca09e849
-    udp: true
-    tls: true
-    servername: velunatrixes.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
-      short-id: a1b2c3d4e5f6a7b8
-    network: grpc
-    grpc-opts:
-      grpc-service-name: moktana.net.v1.StreamService
   - name: "🇷🇴 Romania | [*CIDR]"
     type: vless
     server: 185.178.208.140
@@ -187,78 +84,20 @@ proxies:
       path: "/api/v2/events"
       host: static.bakarova-top.ru
       mode: packet-up
-  - name: "🇳🇱 The Netherlands | [*CIDR] VK"
+  - name: "🇷🇴 Romania | [*CIDR] 2"
     type: vless
-    server: 185.86.147.175
+    server: 185.178.208.140
     port: 443
-    uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
+    uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
     udp: true
     tls: true
-    servername: bhjolq0d0l.flowersgood.top
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/service/telemetry/045d381f1166/"
-      headers:
-        Host: bhjolq0d0l.flowersgood.top
-  - name: "🇳🇱 The Netherlands | [*CIDR] VK 2"
-    type: vless
-    server: bhjolq0d0l.flowersgood.top
-    port: 443
-    uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
-    udp: true
-    tls: true
-    servername: bhjolq0d0l.flowersgood.top
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/service/telemetry/045d381f1166/"
-      headers:
-        Host: bhjolq0d0l.flowersgood.top
-  - name: "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇮🇶 🇳🇱 | [*CIDR]"
-    type: vless
-    server: 194.93.0.240
-    port: 8443
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    udp: true
-    tls: true
-    servername: vp4.1145678.xyz
-    client-fingerprint: android
-    network: ws
-    ws-opts:
-      path: "/wenku/comics"
-      headers:
-        Host: vp4.1145678.xyz
-  - name: "🌐 Anycast-IP | 🇬🇧 🇺🇸 | [*CIDR]"
-    type: vless
-    server: 81.177.140.23
-    port: 53898
-    uuid: bb190cdb-82ae-4212-b6cd-8ae9e6b768dd
-    udp: true
-    tls: true
-    servername: ea0gmd8p.mtrxnet.click
-    client-fingerprint: android
-    reality-opts:
-      public-key: aV_BHCeZ30y4-5rpUIHaWHMYAgogLsw4AE06Rw2X4WE
-      short-id: e202a94ad1711af2
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🌐 Anycast-IP | 🇬🇧 🇺🇸 | [*CIDR] 2"
-    type: vless
-    server: ea0gmd8p.mtrxnet.click
-    port: 53898
-    uuid: bb190cdb-82ae-4212-b6cd-8ae9e6b768dd
-    udp: true
-    tls: true
-    servername: ea0gmd8p.mtrxnet.click
-    client-fingerprint: android
-    reality-opts:
-      public-key: aV_BHCeZ30y4-5rpUIHaWHMYAgogLsw4AE06Rw2X4WE
-      short-id: e202a94ad1711af2
-    flow: xtls-rprx-vision
-    network: tcp
+    servername: api.bakarova-top.ru
+    client-fingerprint: firefox
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/events"
+      host: api.bakarova-top.ru
+      mode: packet-up
   - name: node
     type: vmess
     server: 93.93.88.22
@@ -291,6 +130,24 @@ proxies:
       headers:
         Host: renderer-stream-1-871.mirra.now
     client-fingerprint: chrome
+  - name: "node 3"
+    type: vmess
+    server: renderer-stream-1-871.mirra.now
+    port: 443
+    uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: renderer-stream-1-871.mirra.now
+    client-fingerprint: firefox
+    alpn:
+      - h2
+    network: ws
+    ws-opts:
+      path: "/api/v1/gpu-stream/o36ecpsebqjq/socket"
+      headers:
+        Host: renderer-stream-1-871.mirra.now
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -298,22 +155,12 @@ proxy-groups:
       - "♻️ 自动选择"
       - DIRECT
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
-      - "🇧🇬 Bulgaria [*CIDR]"
-      - "🇨🇿 Czechia | [*CIDR]"
-      - "🇩🇪 Germany [*CIDR]"
-      - "🇩🇪 Germany [*CIDR] 2"
-      - "🇩🇪 Germany | [*CIDR]"
-      - "🇩🇪 Germany | 🌐 [*CIDR]"
       - "🇱🇹 Lithuania [*CIDR]"
-      - "🇱🇹 Lithuania | [*CIDR]"
       - "🇷🇴 Romania | [*CIDR]"
-      - "🇳🇱 The Netherlands | [*CIDR] VK"
-      - "🇳🇱 The Netherlands | [*CIDR] VK 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇮🇶 🇳🇱 | [*CIDR]"
-      - "🌐 Anycast-IP | 🇬🇧 🇺🇸 | [*CIDR]"
-      - "🌐 Anycast-IP | 🇬🇧 🇺🇸 | [*CIDR] 2"
+      - "🇷🇴 Romania | [*CIDR] 2"
       - node
       - "node 2"
+      - "node 3"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -321,22 +168,12 @@ proxy-groups:
     tolerance: 50
     proxies:
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
-      - "🇧🇬 Bulgaria [*CIDR]"
-      - "🇨🇿 Czechia | [*CIDR]"
-      - "🇩🇪 Germany [*CIDR]"
-      - "🇩🇪 Germany [*CIDR] 2"
-      - "🇩🇪 Germany | [*CIDR]"
-      - "🇩🇪 Germany | 🌐 [*CIDR]"
       - "🇱🇹 Lithuania [*CIDR]"
-      - "🇱🇹 Lithuania | [*CIDR]"
       - "🇷🇴 Romania | [*CIDR]"
-      - "🇳🇱 The Netherlands | [*CIDR] VK"
-      - "🇳🇱 The Netherlands | [*CIDR] VK 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇮🇶 🇳🇱 | [*CIDR]"
-      - "🌐 Anycast-IP | 🇬🇧 🇺🇸 | [*CIDR]"
-      - "🌐 Anycast-IP | 🇬🇧 🇺🇸 | [*CIDR] 2"
+      - "🇷🇴 Romania | [*CIDR] 2"
       - node
       - "node 2"
+      - "node 3"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
