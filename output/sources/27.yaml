@@ -1,5 +1,5 @@
 # 订阅 27.txt -> Clash
-# 节点数量: 35
+# 节点数量: 24
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -42,7 +42,7 @@ dns:
 proxies:
   - name: node
     type: vmess
-    server: 104.17.136.198
+    server: 172.66.0.1
     port: 443
     uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
     alterId: 0
@@ -58,7 +58,7 @@ proxies:
     client-fingerprint: chrome
   - name: "node 2"
     type: vmess
-    server: 172.66.0.1
+    server: cf.877771.xyz
     port: 443
     uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
     alterId: 0
@@ -74,52 +74,21 @@ proxies:
     client-fingerprint: chrome
   - name: "node 3"
     type: vmess
-    server: 172.64.80.1
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+    server: 104.25.134.76
+    port: 443
+    uuid: c8b455ad-fff1-43e9-9af9-d97585c4534a
     alterId: 0
     cipher: auto
     udp: true
     tls: true
-    servername: v2ray1.dozapp.xyz
+    servername: hk-v2ray.ryin.vip
     network: ws
     ws-opts:
-      path: "/lMnsZUN4/"
+      path: "/ryinsocksv2board"
       headers:
-        Host: v2ray1.dozapp.xyz
+        Host: hk-v2ray.ryin.vip
     client-fingerprint: chrome
   - name: "node 4"
-    type: vmess
-    server: vipccc.cc
-    port: 443
-    uuid: 5bead32f-a987-4f57-b1a8-6698778facda
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: "/ray_proxy"
-      headers:
-        Host: vipccc.cc
-    client-fingerprint: chrome
-  - name: "node 5"
-    type: vmess
-    server: vipccc.cc
-    port: 443
-    uuid: 5bead32f-a987-4f57-b1a8-6698778facda
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vipccc.cc
-    network: ws
-    ws-opts:
-      path: "/ray_proxy"
-      headers:
-        Host: vipccc.cc
-    client-fingerprint: chrome
-  - name: "node 6"
     type: vmess
     server: 162.159.128.17
     port: 443
@@ -135,114 +104,39 @@ proxies:
       headers:
         Host: v2ray.ryin.vip
     client-fingerprint: chrome
+  - name: "node 5"
+    type: vmess
+    server: 104.21.7.133
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws?ed=2048"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+  - name: "node 6"
+    type: vmess
+    server: 172.66.203.67
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws?ed=2048"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
   - name: "node 7"
-    type: vmess
-    server: JP032007.ssgreen.org
-    port: 443
-    uuid: adfa46c1-5ac9-41cb-aeaa-265d8b4c8697
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: "/wes"
-      headers:
-        Host: JP032007.ssgreen.org
-    client-fingerprint: chrome
-  - name: "node 8"
-    type: vmess
-    server: JP032001.ssgreen.org
-    port: 443
-    uuid: ed7c7849-5b12-456f-8f50-52d3959dc12e
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: "/wes"
-      headers:
-        Host: JP032001.ssgreen.org
-    client-fingerprint: chrome
-  - name: "node 9"
-    type: vmess
-    server: JP032002.ssgreen.org
-    port: 443
-    uuid: 4a621100-cb2e-4d9e-a1fc-960715c7d378
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: "/wes"
-      headers:
-        Host: JP032002.ssgreen.org
-    client-fingerprint: chrome
-  - name: "node 10"
-    type: vmess
-    server: JP032009.ssgreen.org
-    port: 443
-    uuid: 00d44309-aba0-4a3c-beea-c54b13c70772
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: "/wes"
-      headers:
-        Host: JP032009.ssgreen.org
-    client-fingerprint: chrome
-  - name: "node 11"
-    type: vmess
-    server: JP032010.ssgreen.org
-    port: 443
-    uuid: c291f70e-2906-478c-aec0-a4a188c55f8f
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: "/wes"
-      headers:
-        Host: JP032010.ssgreen.org
-    client-fingerprint: chrome
-  - name: "node 12"
-    type: vmess
-    server: cf.090227.xyz
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-  - name: "node 13"
-    type: vmess
-    server: 104.27.0.1
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-  - name: "node 14"
     type: vmess
     server: cf.0sm.com
     port: 443
@@ -258,9 +152,9 @@ proxies:
       headers:
         Host: vmess.lbw666.dpdns.org
     client-fingerprint: chrome
-  - name: "node 15"
+  - name: "node 8"
     type: vmess
-    server: 172.66.203.67
+    server: 104.17.136.198
     port: 443
     uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
     alterId: 0
@@ -273,192 +167,216 @@ proxies:
       path: "/ws"
       headers:
         Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+  - name: "node 9"
+    type: vmess
+    server: 172.64.229.21
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+  - name: "node 10"
+    type: vmess
+    server: cf.090227.xyz
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+  - name: "node 11"
+    type: vmess
+    server: 104.27.0.1
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+  - name: "node 12"
+    type: vmess
+    server: 104.17.0.1
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: or3.sfacg.uk
+    network: ws
+    ws-opts:
+      path: "/or3"
+      headers:
+        Host: or3.sfacg.uk
+    client-fingerprint: chrome
+  - name: "node 13"
+    type: vmess
+    server: 104.21.50.177
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: or3.sfacg.uk
+    network: ws
+    ws-opts:
+      path: "/or3"
+      headers:
+        Host: or3.sfacg.uk
+    client-fingerprint: chrome
+  - name: "node 14"
+    type: vmess
+    server: cdn.sfacg.uk
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: or3.sfacg.uk
+    network: ws
+    ws-opts:
+      path: "/or3"
+      headers:
+        Host: or3.sfacg.uk
+    client-fingerprint: chrome
+  - name: "node 15"
+    type: vmess
+    server: 104.21.0.1
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: or3.sfacg.uk
+    network: ws
+    ws-opts:
+      path: "/or3"
+      headers:
+        Host: or3.sfacg.uk
     client-fingerprint: chrome
   - name: "node 16"
     type: vmess
-    server: cf.877771.xyz
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    server: 162.159.130.234
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
     alterId: 0
     cipher: auto
     udp: true
     tls: true
-    servername: vmess.lbw666.dpdns.org
+    servername: cdn.sfacg.uk
     network: ws
     ws-opts:
-      path: "/ws"
+      path: "/or3"
       headers:
-        Host: vmess.lbw666.dpdns.org
+        Host: or3.sfacg.uk
     client-fingerprint: chrome
   - name: "node 17"
     type: vmess
-    server: US032014.ssgreen.org
-    port: 443
-    uuid: 4f3881c7-d833-4340-86b1-4756f94d84f6
+    server: 162.159.135.234
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
     alterId: 0
     cipher: auto
     udp: true
     tls: true
+    servername: or3.sfacg.uk
     network: ws
     ws-opts:
-      path: "/wes"
+      path: "/or3"
       headers:
-        Host: US032014.ssgreen.org
+        Host: or3.sfacg.uk
     client-fingerprint: chrome
   - name: "node 18"
     type: vmess
-    server: US032017.ssgreen.org
-    port: 443
-    uuid: 8b1b4177-ea9e-4d6c-aeef-edbadb5bb15d
+    server: 162.159.135.234
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
     alterId: 0
     cipher: auto
     udp: true
     tls: true
+    servername: cdn.sfacg.uk
+    client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: "/wes"
+      path: "/or3"
       headers:
-        Host: US032017.ssgreen.org
-    client-fingerprint: chrome
+        Host: or3.sfacg.uk
   - name: "node 19"
     type: vmess
-    server: US032012.westmgreen.com
-    port: 443
-    uuid: c6fe7601-c254-4a1c-b607-13c42c88f319
+    server: cdn.sfacg.uk
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
     alterId: 0
     cipher: auto
     udp: true
     tls: true
+    servername: cdn.sfacg.uk
+    client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: "/wes"
+      path: "/or3"
       headers:
-        Host: US032012.westmgreen.com
-    client-fingerprint: chrome
+        Host: or3.sfacg.uk
   - name: "node 20"
     type: vmess
-    server: US032021.ssgreen.org
-    port: 443
-    uuid: cde5d0bf-3048-4952-b3f1-28f490092f1d
+    server: or3.sfacg.uk
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
     alterId: 0
     cipher: auto
     udp: true
     tls: true
+    servername: cdn.sfacg.uk
     network: ws
     ws-opts:
-      path: "/wes"
+      path: "/or3"
       headers:
-        Host: US032021.ssgreen.org
+        Host: or3.sfacg.uk
     client-fingerprint: chrome
   - name: "node 21"
     type: vmess
-    server: US032023.ssgreen.org
-    port: 443
-    uuid: 956ef123-1ced-4b3e-83ef-b65dc5c148ec
+    server: or3.sfacg.uk
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
     alterId: 0
     cipher: auto
     udp: true
     tls: true
+    servername: or3.sfacg.uk
     network: ws
     ws-opts:
-      path: "/wes"
+      path: "/or3"
       headers:
-        Host: US032023.ssgreen.org
+        Host: or3.sfacg.uk
     client-fingerprint: chrome
-  - name: "node 22"
-    type: vmess
-    server: US122205.ssgreen.org
-    port: 443
-    uuid: fb49c594-fcbf-4733-bd9a-2f44bb90eb2c
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: "/wes"
-      headers:
-        Host: US122205.ssgreen.org
-    client-fingerprint: chrome
-  - name: "node 23"
-    type: vmess
-    server: US122208.ssgreen.org
-    port: 443
-    uuid: 19f71384-452b-4765-843b-cbbea716da0f
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: "/wes"
-      headers:
-        Host: US122208.ssgreen.org
-    client-fingerprint: chrome
-  - name: "node 24"
-    type: vmess
-    server: US122202.ssgreen.org
-    port: 443
-    uuid: 224b4657-a076-4245-ad73-9b7e260fb2ec
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: "/wes"
-      headers:
-        Host: US122202.ssgreen.org
-    client-fingerprint: chrome
-  - name: "node 25"
-    type: vmess
-    server: 104.17.77.77
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: v2ray1.dozapp.xyz
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: v2ray1.dozapp.xyz
-    client-fingerprint: chrome
-  - name: "node 26"
-    type: vmess
-    server: 188.114.96.3
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: v2ray1.dozapp.xyz
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: v2ray1.dozapp.xyz
-    client-fingerprint: chrome
-  - name: "node 27"
-    type: vmess
-    server: 172.64.155.209
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: v2ray1.dozapp.xyz
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: v2ray1.dozapp.xyz
-    client-fingerprint: chrome
-  - name: "🇫🇮 Finland, Helsinki | [BL]"
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
     type: trojan
     server: 104.16.186.130
     port: 2053
@@ -471,14 +389,14 @@ proxies:
       path: "/"
       headers:
         Host: marvdasht.phonecomparisonblog.org
-  - name: "🇫🇮 Finland, Helsinki | [BL] 2"
+  - name: "🇫🇮 Finland, Helsinki | [BL]"
     type: trojan
     server: 172.66.0.1
     port: 2053
     password: gHQP0D7D15
     udp: true
     servername: marvdasht.phonecomparisonblog.org
-    client-fingerprint: firefox
+    client-fingerprint: chrome
     alpn:
       - http/1.1
     network: ws
@@ -486,7 +404,7 @@ proxies:
       path: "/"
       headers:
         Host: marvdasht.phonecomparisonblog.org
-  - name: "🇫🇮 Finland, Helsinki | [BL] 3"
+  - name: "🇫🇮 Finland, Helsinki | [BL] 2"
     type: trojan
     server: 172.67.118.45
     port: 2053
@@ -499,57 +417,6 @@ proxies:
       path: "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET"
       headers:
         Host: marvdasht.phonecomparisonblog.org
-  - name: "🇯🇵 Japan, Inzai (Otsuka) | [BL]"
-    type: trojan
-    server: 150.230.217.160
-    port: 27777
-    password: e79bb958-2a79-4eea-87a3-7e73d0059ebf
-    udp: true
-    servername: ol1.ssn571.top
-    client-fingerprint: ios
-    network: tcp
-  - name: "🇳🇱 The Netherlands, Amsterdam | [BL]"
-    type: trojan
-    server: de-bots4.h1cloud.net
-    port: 25267
-    password: happybirthdaydaniel
-    udp: true
-    servername: "t.me%2525252Ffuckthewall"
-    client-fingerprint: chrome
-    skip-cert-verify: true
-    network: tcp
-  - name: "🇳🇱 The Netherlands, Amsterdam | [BL] 2"
-    type: trojan
-    server: de-bots4.h1cloud.net
-    port: 25267
-    password: happybirthdaydaniel
-    udp: true
-    servername: "t.me%252Ffuckthewall"
-    client-fingerprint: chrome
-    skip-cert-verify: true
-    network: tcp
-  - name: "🇳🇱 The Netherlands, Amsterdam | [BL] 3"
-    type: trojan
-    server: de-bots4.h1cloud.net
-    port: 25267
-    password: happybirthdaydaniel
-    udp: true
-    servername: t.me/FuckTheWall
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    skip-cert-verify: true
-    network: tcp
-  - name: "🇳🇱 The Netherlands, Amsterdam | [BL] 4"
-    type: trojan
-    server: de-bots4.h1cloud.net
-    port: 25267
-    password: happybirthdaydaniel
-    udp: true
-    servername: de-bots4.h1cloud.net
-    client-fingerprint: android
-    skip-cert-verify: true
-    network: tcp
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -577,20 +444,9 @@ proxy-groups:
       - "node 19"
       - "node 20"
       - "node 21"
-      - "node 22"
-      - "node 23"
-      - "node 24"
-      - "node 25"
-      - "node 26"
-      - "node 27"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
       - "🇫🇮 Finland, Helsinki | [BL]"
       - "🇫🇮 Finland, Helsinki | [BL] 2"
-      - "🇫🇮 Finland, Helsinki | [BL] 3"
-      - "🇯🇵 Japan, Inzai (Otsuka) | [BL]"
-      - "🇳🇱 The Netherlands, Amsterdam | [BL]"
-      - "🇳🇱 The Netherlands, Amsterdam | [BL] 2"
-      - "🇳🇱 The Netherlands, Amsterdam | [BL] 3"
-      - "🇳🇱 The Netherlands, Amsterdam | [BL] 4"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -618,20 +474,9 @@ proxy-groups:
       - "node 19"
       - "node 20"
       - "node 21"
-      - "node 22"
-      - "node 23"
-      - "node 24"
-      - "node 25"
-      - "node 26"
-      - "node 27"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
       - "🇫🇮 Finland, Helsinki | [BL]"
       - "🇫🇮 Finland, Helsinki | [BL] 2"
-      - "🇫🇮 Finland, Helsinki | [BL] 3"
-      - "🇯🇵 Japan, Inzai (Otsuka) | [BL]"
-      - "🇳🇱 The Netherlands, Amsterdam | [BL]"
-      - "🇳🇱 The Netherlands, Amsterdam | [BL] 2"
-      - "🇳🇱 The Netherlands, Amsterdam | [BL] 3"
-      - "🇳🇱 The Netherlands, Amsterdam | [BL] 4"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
