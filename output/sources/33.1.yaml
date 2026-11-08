@@ -1,5 +1,5 @@
 # 订阅 33.1.txt -> Clash
-# 节点数量: 2
+# 节点数量: 5
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -40,48 +40,107 @@ dns:
     - "https://doh.pub/dns-query"
     - "https://dns.alidns.com/dns-query"
 proxies:
-  - name: "🌐 Anycast-IP | 🇪🇪 🇷🇺 [*CIDR] VK"
+  - name: "🇨🇿 Czechia [*CIDR] VK"
     type: vless
-    server: 185.86.145.106
-    port: 8445
-    uuid: cd138479-c87a-4d4c-b6ea-4beeb6ef2b47
+    server: 185.86.147.85
+    port: 10459
+    uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
     udp: true
     tls: true
-    servername: passport.yandex.ru
-    client-fingerprint: chrome
+    servername: max.ru
+    client-fingerprint: edge
     reality-opts:
-      public-key: l06r0clkHjHk7HRGpkDBJwZ1JJscSqfwHUQOrV3v3hQ
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🌐 Anycast-IP | 🇪🇪 🇷🇺 [*CIDR] VK 2"
+      public-key: kDEc42JBZxig3BrLD3V1ofs3oJZk15-ANWN-rM0JW10
+      short-id: f28145401b4f633a
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: max.ru
+      mode: auto
+  - name: "🇳🇱 The Netherlands | [*CIDR] CDN"
     type: vless
-    server: rapira-dof.whitenw.net
-    port: 8445
-    uuid: cd138479-c87a-4d4c-b6ea-4beeb6ef2b47
+    server: 6b9iw.guardora.pro
+    port: 443
+    uuid: d9cc5c37-b53c-14a1-b4e1-1b9f7fbea1b1
     udp: true
     tls: true
-    servername: passport.yandex.ru
+    servername: 6b9iw.guardora.pro
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ogVAL8moh5SB"
+      headers:
+        Host: 6b9iw.guardora.pro
+  - name: "🌐 Anycast-IP | 🇭🇳 🇳🇱 | [*CIDR] CDN"
+    type: vless
+    server: 6b9iw.guardora.pro
+    port: 10018
+    uuid: d9cc5c37-b53c-14a1-b4e1-1b9f7fbea1b1
+    udp: true
+    tls: true
+    servername: 6b9iw.guardora.pro
     client-fingerprint: chrome
     reality-opts:
-      public-key: l06r0clkHjHk7HRGpkDBJwZ1JJscSqfwHUQOrV3v3hQ
-    flow: xtls-rprx-vision
-    network: tcp
+      public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
+      short-id: c1a7e9b4711d5f60
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+  - name: "🌐 Anycast-IP | 🇱🇹 🇺🇸 | [*CIDR] CDN"
+    type: vless
+    server: 6b9iw.guardora.pro
+    port: 10018
+    uuid: d9cc5c37-b53c-1131-b4e1-1b9f7fbea1b1
+    udp: true
+    tls: true
+    servername: 6b9iw.guardora.pro
+    client-fingerprint: edge
+    reality-opts:
+      public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
+      short-id: c1a7e9b4711d5f60
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+  - name: "🌐 Anycast-IP | 🇱🇹 🇺🇸 | [*CIDR] CDN 2"
+    type: vless
+    server: 6b9iw.guardora.pro
+    port: 443
+    uuid: d9cc5c37-b53c-1131-b4e1-1b9f7fbea1b1
+    udp: true
+    tls: true
+    servername: 6b9iw.guardora.pro
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/ogVAL8moh5SB"
+      headers:
+        Host: 6b9iw.guardora.pro
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - "🌐 Anycast-IP | 🇪🇪 🇷🇺 [*CIDR] VK"
-      - "🌐 Anycast-IP | 🇪🇪 🇷🇺 [*CIDR] VK 2"
+      - "🇨🇿 Czechia [*CIDR] VK"
+      - "🇳🇱 The Netherlands | [*CIDR] CDN"
+      - "🌐 Anycast-IP | 🇭🇳 🇳🇱 | [*CIDR] CDN"
+      - "🌐 Anycast-IP | 🇱🇹 🇺🇸 | [*CIDR] CDN"
+      - "🌐 Anycast-IP | 🇱🇹 🇺🇸 | [*CIDR] CDN 2"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     proxies:
-      - "🌐 Anycast-IP | 🇪🇪 🇷🇺 [*CIDR] VK"
-      - "🌐 Anycast-IP | 🇪🇪 🇷🇺 [*CIDR] VK 2"
+      - "🇨🇿 Czechia [*CIDR] VK"
+      - "🇳🇱 The Netherlands | [*CIDR] CDN"
+      - "🌐 Anycast-IP | 🇭🇳 🇳🇱 | [*CIDR] CDN"
+      - "🌐 Anycast-IP | 🇱🇹 🇺🇸 | [*CIDR] CDN"
+      - "🌐 Anycast-IP | 🇱🇹 🇺🇸 | [*CIDR] CDN 2"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"

@@ -1,5 +1,5 @@
 # 订阅 27.txt -> Clash
-# 节点数量: 27
+# 节点数量: 25
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -90,31 +90,6 @@ proxies:
     client-fingerprint: chrome
   - name: "node 4"
     type: vmess
-    server: de.zhou-yufan.com
-    port: 443
-    uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: de.zhou-yufan.com
-    network: tcp
-    client-fingerprint: chrome
-  - name: "node 5"
-    type: vmess
-    server: de.zhou-yufan.com
-    port: 443
-    uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    alpn:
-      - "[\"h2\""
-    network: tcp
-    client-fingerprint: chrome
-  - name: "node 6"
-    type: vmess
     server: 162.159.128.17
     port: 443
     uuid: c8b455ad-fff1-43e9-9af9-d97585c4534a
@@ -129,9 +104,9 @@ proxies:
       headers:
         Host: v2ray.ryin.vip
     client-fingerprint: chrome
-  - name: "node 7"
+  - name: "node 5"
     type: vmess
-    server: 104.27.0.1
+    server: 104.21.7.133
     port: 443
     uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
     alterId: 0
@@ -139,17 +114,15 @@ proxies:
     udp: true
     tls: true
     servername: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
     network: ws
     ws-opts:
       path: "/ws"
       headers:
         Host: vmess.lbw666.dpdns.org
-  - name: "node 8"
+    client-fingerprint: chrome
+  - name: "node 6"
     type: vmess
-    server: cf.0sm.com
+    server: 172.64.229.21
     port: 443
     uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
     alterId: 0
@@ -163,7 +136,7 @@ proxies:
       headers:
         Host: vmess.lbw666.dpdns.org
     client-fingerprint: chrome
-  - name: "node 9"
+  - name: "node 7"
     type: vmess
     server: cf.090227.xyz
     port: 443
@@ -179,9 +152,41 @@ proxies:
       headers:
         Host: vmess.lbw666.dpdns.org
     client-fingerprint: chrome
+  - name: "node 8"
+    type: vmess
+    server: 172.66.203.67
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws?ed=2048"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+  - name: "node 9"
+    type: vmess
+    server: cf.0sm.com
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws?ed=2048"
+      headers:
+        Host: vmess.lbw666.dpdns.org
   - name: "node 10"
     type: vmess
-    server: 172.64.229.21
+    server: 104.27.0.1
     port: 443
     uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
     alterId: 0
@@ -197,22 +202,6 @@ proxies:
     client-fingerprint: chrome
   - name: "node 11"
     type: vmess
-    server: 172.66.203.67
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-  - name: "node 12"
-    type: vmess
     server: 162.159.128.17
     port: 443
     uuid: c8b455ad-fff1-43e9-9af9-d97585c4534a
@@ -227,7 +216,7 @@ proxies:
       headers:
         Host: ny-v2ray.ryin.vip
     client-fingerprint: chrome
-  - name: "node 13"
+  - name: "node 12"
     type: vmess
     server: 104.17.77.77
     port: 8443
@@ -243,23 +232,7 @@ proxies:
       headers:
         Host: v2ray1.dozapp.xyz
     client-fingerprint: chrome
-  - name: "node 14"
-    type: vmess
-    server: 172.67.167.78
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: v2ray1.dozapp.xyz
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: v2ray1.dozapp.xyz
-    client-fingerprint: chrome
-  - name: "node 15"
+  - name: "node 13"
     type: vmess
     server: 172.64.155.209
     port: 8443
@@ -275,25 +248,37 @@ proxies:
       headers:
         Host: v2ray1.dozapp.xyz
     client-fingerprint: chrome
-  - name: "node 16"
-    type: vmess
-    server: chatgpt.com
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: auto
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
+    type: trojan
+    server: 104.18.0.1
+    port: 2053
+    password: gHQP0D7D15
     udp: true
-    tls: true
-    servername: v2ray1.dozapp.xyz
+    servername: marvdasht.phonecomparisonblog.org
+    client-fingerprint: qq
+    alpn:
+      - http/1.1
     network: ws
     ws-opts:
-      path: "/lMnsZUN4/"
+      path: "/"
       headers:
-        Host: v2ray1.dozapp.xyz
-    client-fingerprint: chrome
-  - name: "🇫🇮 Finland, Helsinki | [BL]"
+        Host: marvdasht.phonecomparisonblog.org
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 2"
     type: trojan
-    server: 104.16.186.130
+    server: 104.24.0.1
+    port: 2053
+    password: gHQP0D7D15
+    udp: true
+    servername: marvdasht.phonecomparisonblog.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: marvdasht.phonecomparisonblog.org
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 3"
+    type: trojan
+    server: 104.25.239.113
     port: 2053
     password: gHQP0D7D15
     udp: true
@@ -303,14 +288,52 @@ proxies:
       path: "/"
       headers:
         Host: marvdasht.phonecomparisonblog.org
-  - name: "🇫🇮 Finland, Helsinki | [BL] 2"
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 4"
     type: trojan
-    server: 104.18.0.1
+    server: 172.66.0.1
     port: 2053
     password: gHQP0D7D15
     udp: true
     servername: marvdasht.phonecomparisonblog.org
     client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: marvdasht.phonecomparisonblog.org
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 5"
+    type: trojan
+    server: 172.67.118.45
+    port: 2053
+    password: gHQP0D7D15
+    udp: true
+    servername: marvdasht.phonecomparisonblog.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET"
+      headers:
+        Host: marvdasht.phonecomparisonblog.org
+  - name: "🇫🇮 Finland, Helsinki | [BL]"
+    type: trojan
+    server: 104.16.186.130
+    port: 2053
+    password: gHQP0D7D15
+    udp: true
+    servername: marvdasht.phonecomparisonblog.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: marvdasht.phonecomparisonblog.org
+  - name: "🇫🇮 Finland, Helsinki | [BL] 2"
+    type: trojan
+    server: 104.27.0.1
+    port: 2053
+    password: gHQP0D7D15
+    udp: true
+    servername: marvdasht.phonecomparisonblog.org
     alpn:
       - http/1.1
     network: ws
@@ -320,7 +343,7 @@ proxies:
         Host: marvdasht.phonecomparisonblog.org
   - name: "🇫🇮 Finland, Helsinki | [BL] 3"
     type: trojan
-    server: 104.24.0.1
+    server: 188.114.96.3
     port: 2053
     password: gHQP0D7D15
     udp: true
@@ -332,62 +355,20 @@ proxies:
       path: "/"
       headers:
         Host: marvdasht.phonecomparisonblog.org
-  - name: "🇫🇮 Finland, Helsinki | [BL] 4"
+  - name: "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
     type: trojan
-    server: 104.25.239.113
-    port: 2053
-    password: gHQP0D7D15
+    server: 188.114.98.0
+    port: 443
+    password: 883e3cc8-9613-4f2d-8c42-0dd3d429db55
     udp: true
-    servername: marvdasht.phonecomparisonblog.org
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: marvdasht.phonecomparisonblog.org
-  - name: "🇫🇮 Finland, Helsinki | [BL] 5"
-    type: trojan
-    server: 104.27.0.1
-    port: 2053
-    password: gHQP0D7D15
-    udp: true
-    servername: marvdasht.phonecomparisonblog.org
-    client-fingerprint: firefox
+    servername: ltf8.jueson.de5.net
     alpn:
       - http/1.1
     network: ws
     ws-opts:
-      path: "/"
+      path: "/categories/community/"
       headers:
-        Host: marvdasht.phonecomparisonblog.org
-  - name: "🇫🇮 Finland, Helsinki | [BL] 6"
-    type: trojan
-    server: 172.66.0.1
-    port: 2053
-    password: gHQP0D7D15
-    udp: true
-    servername: marvdasht.phonecomparisonblog.org
-    client-fingerprint: firefox
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: marvdasht.phonecomparisonblog.org
-  - name: "🇫🇮 Finland, Helsinki | [BL] 7"
-    type: trojan
-    server: 172.67.118.45
-    port: 2053
-    password: gHQP0D7D15
-    udp: true
-    servername: marvdasht.phonecomparisonblog.org
-    client-fingerprint: safari
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: marvdasht.phonecomparisonblog.org
+        Host: ltf8.jueson.de5.net
   - name: "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 🇺🇸 | [BL]"
     type: trojan
     server: 199.232.78.160
@@ -406,20 +387,6 @@ proxies:
         Host: MiTiVPN-1-mitivpn.ac.ir
   - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
     type: trojan
-    server: 188.114.98.0
-    port: 443
-    password: 883e3cc8-9613-4f2d-8c42-0dd3d429db55
-    udp: true
-    servername: ltf8.jueson.de5.net
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/categories/community/"
-      headers:
-        Host: ltf8.jueson.de5.net
-  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 2"
-    type: trojan
     server: 146.75.57.7
     port: 443
     password: MiTiVPN
@@ -434,7 +401,7 @@ proxies:
       path: "/---@MiTiVPN---@MiTiVPN"
       headers:
         Host: MiTiVPN-1-mitivpn.ac.ir
-  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 3"
+  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 2"
     type: trojan
     server: 167.82.64.7
     port: 443
@@ -469,20 +436,18 @@ proxy-groups:
       - "node 11"
       - "node 12"
       - "node 13"
-      - "node 14"
-      - "node 15"
-      - "node 16"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 2"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 3"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 4"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 5"
       - "🇫🇮 Finland, Helsinki | [BL]"
       - "🇫🇮 Finland, Helsinki | [BL] 2"
       - "🇫🇮 Finland, Helsinki | [BL] 3"
-      - "🇫🇮 Finland, Helsinki | [BL] 4"
-      - "🇫🇮 Finland, Helsinki | [BL] 5"
-      - "🇫🇮 Finland, Helsinki | [BL] 6"
-      - "🇫🇮 Finland, Helsinki | [BL] 7"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 🇺🇸 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 3"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -502,20 +467,18 @@ proxy-groups:
       - "node 11"
       - "node 12"
       - "node 13"
-      - "node 14"
-      - "node 15"
-      - "node 16"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 2"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 3"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 4"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL] 5"
       - "🇫🇮 Finland, Helsinki | [BL]"
       - "🇫🇮 Finland, Helsinki | [BL] 2"
       - "🇫🇮 Finland, Helsinki | [BL] 3"
-      - "🇫🇮 Finland, Helsinki | [BL] 4"
-      - "🇫🇮 Finland, Helsinki | [BL] 5"
-      - "🇫🇮 Finland, Helsinki | [BL] 6"
-      - "🇫🇮 Finland, Helsinki | [BL] 7"
+      - "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 🇺🇸 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 3"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"

@@ -1,5 +1,5 @@
 # 订阅 29.txt -> Clash
-# 节点数量: 42
+# 节点数量: 25
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -40,150 +40,47 @@ dns:
     - "https://doh.pub/dns-query"
     - "https://dns.alidns.com/dns-query"
 proxies:
-  - name: "🇧🇾 Belarus, Minsk | [BL]"
+  - name: "🇩🇪 Germany, Frankfurt am Main | [BL]"
     type: vless
-    server: 144.31.225.108
+    server: renderer-bridge-2-133.mirra.now
     port: 443
-    uuid: 92b79c22-f68b-4713-8b21-52f264cb92f5
+    uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
     udp: true
     tls: true
-    servername: downloadchache1.song69.fun
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: "_wgNV4y_WpP2Itc3StvZcCKEari3CMGjnzaCCjm9Zko"
-    network: xhttp
-    xhttp-opts:
-      path: "/cdn/assets/v3"
-      host: downloadchache1.song69.fun
-  - name: "🇧🇾 Belarus, Minsk | [BL] 2"
-    type: vless
-    server: downloadchache1.song69.fun
-    port: 443
-    uuid: 92b79c22-f68b-4713-8b21-52f264cb92f5
-    udp: true
-    tls: true
-    servername: downloadchache1.song69.fun
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: "_wgNV4y_WpP2Itc3StvZcCKEari3CMGjnzaCCjm9Zko"
-    network: xhttp
-    xhttp-opts:
-      path: "/cdn/assets/v3"
-      host: downloadchache1.song69.fun
-      mode: auto
-  - name: "🇫🇮 Finland, Helsinki | 🌐 | [BL]"
-    type: vless
-    server: 167.82.76.27
-    port: 443
-    uuid: 847107d5-9969-4dac-9160-4d94f0a9b844
-    udp: true
-    tls: true
-    servername: ssl.fastly.com
-    client-fingerprint: chrome
-    alpn:
-      - h2
-    network: xhttp
-    xhttp-opts:
-      path: "/"
-      host: dxcuf8cmyfdxovm.global.ssl.fastly.neT.
-      mode: auto
-  - name: "🇩🇪 Germany, Nuremberg | [BL]"
-    type: vless
-    server: d1.ge3.fluxora.ir
-    port: 2436
-    uuid: e22111d5-d287-488a-b70d-34d006420edb
-    udp: true
-    tls: true
-    servername: play.google.com
+    servername: renderer-bridge-2-133.mirra.now
     client-fingerprint: ios
-    reality-opts:
-      public-key: zmqcaHqIZJfKGwM61QT19F8dP8BZzZrTKSu5BoAW6gA
-      short-id: ae913a7486be9be9
-    network: tcp
-  - name: "🇮🇳 India, Navi Mumbai (Rabale) | [BL]"
-    type: vless
-    server: fxhub.ir
-    port: 443
-    uuid: bc4a4b66-c3fc-4f91-938e-4d93698c0d43
-    udp: true
-    tls: true
-    servername: fxhub.ir
-    network: ws
-    ws-opts:
-      path: "/jx-ge7wex6ki2ixyk"
-      headers:
-        Host: soli-gghosin4-cell.dormhost.app
-    client-fingerprint: chrome
-  - name: "🇮🇳 India, Navi Mumbai (Rabale) | [BL] 2"
-    type: vless
-    server: mahdroo.ir
-    port: 443
-    uuid: bc4a4b66-c3fc-4f91-938e-4d93698c0d43
-    udp: true
-    tls: true
-    servername: mahdroo.ir
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/jx-ge7wex6ki2ixyk"
-      headers:
-        Host: soli-gghosin4-cell.dormhost.app
-  - name: "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL]"
-    type: vless
-    server: 104.19.48.107
-    port: 443
-    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-    udp: true
-    tls: true
-    servername: jp3.yohototo.top
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/tyxyws"
-      headers:
-        Host: jp3.yohototo.top
+    network: grpc
+    grpc-opts:
+      grpc-service-name: VideoRenderer
   - name: "🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]"
     type: vless
-    server: sg01.cf.sh-cloudflare.sbs
+    server: 172.64.229.88
     port: 8443
     uuid: a8d9c86f-cddb-4fa5-96f7-f68eb48b3cb3
     udp: true
     tls: true
     servername: sg01.cdn00.top
-    client-fingerprint: chrome
+    client-fingerprint: firefox
     network: ws
     ws-opts:
       path: "/shanhai/sg01"
       headers:
         Host: sg01.cdn00.top
-  - name: "🇹🇼 Taiwan, Taoyuan | [BL]"
+  - name: "🇪🇸 Spain, Madrid (Chamartín) | [BL]"
     type: vless
-    server: 172.67.165.32
-    port: 8443
-    uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+    server: 49930ag.es8.h1clayd.click
+    port: 443
+    uuid: 95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f
     udp: true
     tls: true
-    servername: n04.jinggai.online
-    network: ws
-    ws-opts:
-      path: "/nvl-n04-ws/e0577fe8fd7c8823"
-      headers:
-        Host: n04.jinggai.online
-    client-fingerprint: chrome
-  - name: "🇹🇼 Taiwan, Taoyuan | [BL] 2"
-    type: vless
-    server: n04.jinggai.online
-    port: 8443
-    uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-    udp: true
-    tls: true
-    servername: n04.jinggai.online
-    client-fingerprint: edge
-    network: ws
-    ws-opts:
-      path: "/nvl-n04-ws/e0577fe8fd7c8823"
-      headers:
-        Host: n04.jinggai.online
+    servername: 49930ag.es8.h1clayd.click
+    client-fingerprint: ios
+    reality-opts:
+      public-key: H_sPS4IJjHa4Wd7WLAtp_eamROtKBAj-G0UcMBHLHQw
+      short-id: 2437eeeb791b6d80
+    network: grpc
+    grpc-opts:
+      grpc-service-name: 61c20be08f4f
   - name: "🇳🇱 The Netherlands, Amsterdam | [BL]"
     type: vless
     server: 185.173.179.218
@@ -192,7 +89,7 @@ proxies:
     udp: true
     tls: true
     servername: ru1.cdn-space.org
-    client-fingerprint: firefox
+    client-fingerprint: chrome
     alpn:
       - h2
     network: xhttp
@@ -208,7 +105,7 @@ proxies:
     udp: true
     tls: true
     servername: ru1.cdn-space.org
-    client-fingerprint: firefox
+    client-fingerprint: edge
     alpn:
       - h2
     network: xhttp
@@ -216,104 +113,79 @@ proxies:
       path: "/assets/api/v3/connect/"
       host: ru1.cdn-space.org
       mode: auto
-  - name: "🇬🇧 United Kingdom, Slough | [BL]"
+  - name: "🇳🇱 The Netherlands, Amsterdam | [BL] 3"
     type: vless
-    server: www.agahiya.ir
+    server: 31.56.186.24
     port: 443
-    uuid: 57e089a8-0cd1-48d0-b572-105c4804f6b8
+    uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
     udp: true
     tls: true
-    servername: www.agahiya.ir
+    servername: fr.golangwikito.cfd
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: isYQuhKDrgc7IQ7G0LHywFnt57wffrkZ-er18DkVsBA
+      short-id: e6d589857d1cec5e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇳🇱 The Netherlands, Amsterdam | [BL] 4"
+    type: vless
+    server: fr.golangwikito.cfd
+    port: 443
+    uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+    udp: true
+    tls: true
+    servername: fr.golangwikito.cfd
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: isYQuhKDrgc7IQ7G0LHywFnt57wffrkZ-er18DkVsBA
+      short-id: e6d589857d1cec5e
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇳🇱 The Netherlands, Dedemsvaart | [BL]"
+    type: vless
+    server: 188.114.98.0
+    port: 443
+    uuid: 64c5f924-1c24-44a5-acff-2e3ebcd2f807
+    udp: true
+    tls: true
+    servername: nl29.dr-ping.ir
+    alpn:
+      - h3
+      - h2
+      - http/1.1
+    network: xhttp
+    xhttp-opts:
+      path: "/"
+      host: nl29.dr-ping.ir
+    client-fingerprint: chrome
+  - name: "🇹🇷 Turkey, Bursa | [BL]"
+    type: vless
+    server: tr.0a0.uk
+    port: 443
+    uuid: 4a414062-e1b2-496a-bf50-d447e786f3f4
+    udp: true
+    tls: true
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: U-2PKc5vWQ8drgWUeoxL58r4v_GNpmuvxarkDRat9R0
+      short-id: 2eec85de34f4cc39
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇺🇸 United States, Buffalo | [BL]"
+    type: vless
+    server: mao.kipfelmao.de5.net
+    port: 443
+    uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+    udp: true
+    tls: true
+    servername: mao.kipfelmao.de5.net
     client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: "/jx-y8179aild6rsmj"
+      path: "/api/v1/guests/profiles/5de14443985f/"
       headers:
-        Host: soliconf-gghosin4-cell.dormhost.app
-  - name: "🇬🇧 United Kingdom, Slough | [BL] 2"
-    type: vless
-    server: www.agahiya.ir
-    port: 443
-    uuid: 57e089a8-0cd1-48d0-b572-105c4804f6b8
-    udp: true
-    tls: true
-    servername: soliconf-gghosin4-cell.dormhost.app
-    client-fingerprint: edge
-    network: ws
-    ws-opts:
-      path: "/jx-y8179aild6rsmj"
-      headers:
-        Host: soliconf-gghosin4-cell.dormhost.app
-  - name: "🇬🇧 United Kingdom, Slough | [BL] 3"
-    type: vless
-    server: www.farahghanizadeh.ir
-    port: 443
-    uuid: 57e089a8-0cd1-48d0-b572-105c4804f6b8
-    udp: true
-    tls: true
-    servername: www.farahghanizadeh.ir
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/jx-y8179aild6rsmj"
-      headers:
-        Host: soliconf-gghosin4-cell.dormhost.app
-  - name: "🇬🇧 United Kingdom, Slough | [BL] 4"
-    type: vless
-    server: www.farahghanizadeh.ir
-    port: 443
-    uuid: 57e089a8-0cd1-48d0-b572-105c4804f6b8
-    udp: true
-    tls: true
-    servername: soliconf-gghosin4-cell.dormhost.app
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: "/jx-y8179aild6rsmj"
-      headers:
-        Host: soliconf-gghosin4-cell.dormhost.app
-  - name: "🇬🇧 United Kingdom, Slough | [BL] 5"
-    type: vless
-    server: www.sarzaminaryan.ir
-    port: 443
-    uuid: 57e089a8-0cd1-48d0-b572-105c4804f6b8
-    udp: true
-    tls: true
-    servername: www.sarzaminaryan.ir
-    client-fingerprint: android
-    network: ws
-    ws-opts:
-      path: "/jx-y8179aild6rsmj"
-      headers:
-        Host: soliconf-gghosin4-cell.dormhost.app
-  - name: "🇬🇧 United Kingdom, Slough | [BL] 6"
-    type: vless
-    server: www.sarzaminaryan.ir
-    port: 443
-    uuid: 57e089a8-0cd1-48d0-b572-105c4804f6b8
-    udp: true
-    tls: true
-    servername: soliconf-gghosin4-cell.dormhost.app
-    client-fingerprint: qq
-    network: ws
-    ws-opts:
-      path: "/jx-y8179aild6rsmj"
-      headers:
-        Host: soliconf-gghosin4-cell.dormhost.app
-  - name: "🇺🇸 United States, Detroit | [BL]"
-    type: vless
-    server: 185.242.113.75
-    port: 443
-    uuid: 18615aac-72e2-451b-b7c8-b492e63cf65a
-    udp: true
-    tls: true
-    servername: 185.242.113.75
-    network: ws
-    ws-opts:
-      path: "/jx-8c3iiq92bemzqp"
-      headers:
-        Host: jyfrj1cims.dev.onappjet.com
-    client-fingerprint: chrome
+        Host: mao.kipfelmao.de5.net
   - name: "🇺🇸 United States, North Bergen | [BL]"
     type: vless
     server: 104.21.58.37
@@ -336,7 +208,7 @@ proxies:
     udp: true
     tls: true
     servername: fast.145779.xyz
-    client-fingerprint: ios
+    client-fingerprint: firefox
     network: ws
     ws-opts:
       path: "/ws-tesla"
@@ -402,139 +274,7 @@ proxies:
       path: "/ws-tesla"
       headers:
         Host: fast.145779.xyz
-  - name: "🇺🇸 United States, Orem | [BL]"
-    type: vless
-    server: pl1.obxodvpn.us
-    port: 443
-    uuid: 146d567c-6335-4e63-a8aa-7ec068642440
-    udp: true
-    tls: true
-    servername: pl1.obxodvpn.us
-    reality-opts:
-      public-key: fDrDDz_GCqhDgG8kMxWXk2vRuyfBHTTNwVa7k7nJHgw
-      short-id: 5c42ed8c
-    client-fingerprint: chrome
-    network: xhttp
-    xhttp-opts:
-      path: "/xhttp"
-      host: pl1.obxodvpn.us
-      mode: packet-up
-  - name: "🇺🇸 United States, San Jose | [BL]"
-    type: vless
-    server: whitepanel-ui-production-84c0.up.railway.app
-    port: 443
-    uuid: b05c5bfc-0f53-474a-8a43-8d30af8bccd2
-    udp: true
-    tls: true
-    servername: whitepanel-ui-production-84c0.up.railway.app
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/ws/b05c5bfc-0f53-474a-8a43-8d30af8bccd2"
-      headers:
-        Host: whitepanel-ui-production-84c0.up.railway.app
-  - name: "🌐 Anycast-IP | 🇳🇱 | [BL]"
-    type: vless
-    server: 188.114.98.0
-    port: 443
-    uuid: 64c5f924-1c24-44a5-acff-2e3ebcd2f807
-    udp: true
-    tls: true
-    servername: nl29.dr-ping.ir
-    alpn:
-      - h3
-      - h2
-      - http/1.1
-    network: xhttp
-    xhttp-opts:
-      path: "/"
-      host: nl29.dr-ping.ir
-    client-fingerprint: chrome
   - name: node
-    type: vmess
-    server: cf.877771.xyz
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-  - name: "node 2"
-    type: vmess
-    server: 162.159.128.17
-    port: 443
-    uuid: c8b455ad-fff1-43e9-9af9-d97585c4534a
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: v2ray.ryin.vip
-    network: ws
-    ws-opts:
-      path: "/ryinsocksv2board"
-      headers:
-        Host: v2ray.ryin.vip
-    client-fingerprint: chrome
-  - name: "node 3"
-    type: vmess
-    server: 104.27.0.1
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-  - name: "node 4"
-    type: vmess
-    server: 172.66.0.1
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-  - name: "node 5"
-    type: vmess
-    server: cf.0sm.com
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/ws?ed=2048"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-  - name: "node 6"
     type: vmess
     server: 104.17.136.198
     port: 443
@@ -550,7 +290,119 @@ proxies:
       headers:
         Host: vmess.lbw666.dpdns.org
     client-fingerprint: chrome
+  - name: "node 2"
+    type: vmess
+    server: 172.66.0.1
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+  - name: "node 3"
+    type: vmess
+    server: 162.159.128.17
+    port: 443
+    uuid: c8b455ad-fff1-43e9-9af9-d97585c4534a
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: v2ray.ryin.vip
+    network: ws
+    ws-opts:
+      path: "/ryinsocksv2board"
+      headers:
+        Host: v2ray.ryin.vip
+    client-fingerprint: chrome
+  - name: "node 4"
+    type: vmess
+    server: 104.21.7.133
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws?ed=2048"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+  - name: "node 5"
+    type: vmess
+    server: cf.877771.xyz
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws?ed=2048"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+  - name: "node 6"
+    type: vmess
+    server: 172.66.203.67
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws?ed=2048"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
   - name: "node 7"
+    type: vmess
+    server: cf.0sm.com
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws?ed=2048"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+  - name: "node 8"
+    type: vmess
+    server: 104.27.0.1
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+  - name: "node 9"
     type: vmess
     server: 172.64.229.21
     port: 443
@@ -566,138 +418,28 @@ proxies:
       headers:
         Host: vmess.lbw666.dpdns.org
     client-fingerprint: chrome
-  - name: "🇫🇮 Finland, Helsinki | [BL]"
-    type: trojan
-    server: 104.18.0.1
-    port: 2053
-    password: gHQP0D7D15
-    udp: true
-    servername: marvdasht.phonecomparisonblog.org
-    client-fingerprint: firefox
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: marvdasht.phonecomparisonblog.org
-  - name: "🇫🇮 Finland, Helsinki | [BL] 2"
-    type: trojan
-    server: 104.24.0.1
-    port: 2053
-    password: gHQP0D7D15
-    udp: true
-    servername: marvdasht.phonecomparisonblog.org
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: marvdasht.phonecomparisonblog.org
-  - name: "🇫🇮 Finland, Helsinki | [BL] 3"
-    type: trojan
-    server: 104.25.239.113
-    port: 2053
-    password: gHQP0D7D15
-    udp: true
-    servername: marvdasht.phonecomparisonblog.org
-    client-fingerprint: ios
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: marvdasht.phonecomparisonblog.org
-  - name: "🇫🇮 Finland, Helsinki | [BL] 4"
-    type: trojan
-    server: 104.27.0.1
-    port: 2053
-    password: gHQP0D7D15
-    udp: true
-    servername: marvdasht.phonecomparisonblog.org
-    client-fingerprint: firefox
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: marvdasht.phonecomparisonblog.org
-  - name: "🇫🇮 Finland, Helsinki | [BL] 5"
-    type: trojan
-    server: 172.66.0.1
-    port: 2053
-    password: gHQP0D7D15
-    udp: true
-    servername: marvdasht.phonecomparisonblog.org
-    client-fingerprint: firefox
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: marvdasht.phonecomparisonblog.org
-  - name: "🇫🇮 Finland, Helsinki | [BL] 6"
-    type: trojan
-    server: 172.67.118.45
-    port: 2053
-    password: gHQP0D7D15
-    udp: true
-    servername: marvdasht.phonecomparisonblog.org
-    network: ws
-    ws-opts:
-      path: "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET"
-      headers:
-        Host: marvdasht.phonecomparisonblog.org
-  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
-    type: trojan
-    server: 188.114.98.0
-    port: 443
-    password: 883e3cc8-9613-4f2d-8c42-0dd3d429db55
-    udp: true
-    servername: ltf8.jueson.de5.net
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/categories/community/"
-      headers:
-        Host: ltf8.jueson.de5.net
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - "🇧🇾 Belarus, Minsk | [BL]"
-      - "🇧🇾 Belarus, Minsk | [BL] 2"
-      - "🇫🇮 Finland, Helsinki | 🌐 | [BL]"
-      - "🇩🇪 Germany, Nuremberg | [BL]"
-      - "🇮🇳 India, Navi Mumbai (Rabale) | [BL]"
-      - "🇮🇳 India, Navi Mumbai (Rabale) | [BL] 2"
-      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL]"
+      - "🇩🇪 Germany, Frankfurt am Main | [BL]"
       - "🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]"
-      - "🇹🇼 Taiwan, Taoyuan | [BL]"
-      - "🇹🇼 Taiwan, Taoyuan | [BL] 2"
+      - "🇪🇸 Spain, Madrid (Chamartín) | [BL]"
       - "🇳🇱 The Netherlands, Amsterdam | [BL]"
       - "🇳🇱 The Netherlands, Amsterdam | [BL] 2"
-      - "🇬🇧 United Kingdom, Slough | [BL]"
-      - "🇬🇧 United Kingdom, Slough | [BL] 2"
-      - "🇬🇧 United Kingdom, Slough | [BL] 3"
-      - "🇬🇧 United Kingdom, Slough | [BL] 4"
-      - "🇬🇧 United Kingdom, Slough | [BL] 5"
-      - "🇬🇧 United Kingdom, Slough | [BL] 6"
-      - "🇺🇸 United States, Detroit | [BL]"
+      - "🇳🇱 The Netherlands, Amsterdam | [BL] 3"
+      - "🇳🇱 The Netherlands, Amsterdam | [BL] 4"
+      - "🇳🇱 The Netherlands, Dedemsvaart | [BL]"
+      - "🇹🇷 Turkey, Bursa | [BL]"
+      - "🇺🇸 United States, Buffalo | [BL]"
       - "🇺🇸 United States, North Bergen | [BL]"
       - "🇺🇸 United States, North Bergen | [BL] 2"
       - "🇺🇸 United States, North Bergen | [BL] 3"
       - "🇺🇸 United States, North Bergen | [BL] 4"
       - "🇺🇸 United States, North Bergen | [BL] 5"
       - "🇺🇸 United States, North Bergen | [BL] 6"
-      - "🇺🇸 United States, Orem | [BL]"
-      - "🇺🇸 United States, San Jose | [BL]"
-      - "🌐 Anycast-IP | 🇳🇱 | [BL]"
       - node
       - "node 2"
       - "node 3"
@@ -705,47 +447,30 @@ proxy-groups:
       - "node 5"
       - "node 6"
       - "node 7"
-      - "🇫🇮 Finland, Helsinki | [BL]"
-      - "🇫🇮 Finland, Helsinki | [BL] 2"
-      - "🇫🇮 Finland, Helsinki | [BL] 3"
-      - "🇫🇮 Finland, Helsinki | [BL] 4"
-      - "🇫🇮 Finland, Helsinki | [BL] 5"
-      - "🇫🇮 Finland, Helsinki | [BL] 6"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
+      - "node 8"
+      - "node 9"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     proxies:
-      - "🇧🇾 Belarus, Minsk | [BL]"
-      - "🇧🇾 Belarus, Minsk | [BL] 2"
-      - "🇫🇮 Finland, Helsinki | 🌐 | [BL]"
-      - "🇩🇪 Germany, Nuremberg | [BL]"
-      - "🇮🇳 India, Navi Mumbai (Rabale) | [BL]"
-      - "🇮🇳 India, Navi Mumbai (Rabale) | [BL] 2"
-      - "🇯🇵 Japan, Inzai (Otsuka) | 🌐 | [BL]"
+      - "🇩🇪 Germany, Frankfurt am Main | [BL]"
       - "🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]"
-      - "🇹🇼 Taiwan, Taoyuan | [BL]"
-      - "🇹🇼 Taiwan, Taoyuan | [BL] 2"
+      - "🇪🇸 Spain, Madrid (Chamartín) | [BL]"
       - "🇳🇱 The Netherlands, Amsterdam | [BL]"
       - "🇳🇱 The Netherlands, Amsterdam | [BL] 2"
-      - "🇬🇧 United Kingdom, Slough | [BL]"
-      - "🇬🇧 United Kingdom, Slough | [BL] 2"
-      - "🇬🇧 United Kingdom, Slough | [BL] 3"
-      - "🇬🇧 United Kingdom, Slough | [BL] 4"
-      - "🇬🇧 United Kingdom, Slough | [BL] 5"
-      - "🇬🇧 United Kingdom, Slough | [BL] 6"
-      - "🇺🇸 United States, Detroit | [BL]"
+      - "🇳🇱 The Netherlands, Amsterdam | [BL] 3"
+      - "🇳🇱 The Netherlands, Amsterdam | [BL] 4"
+      - "🇳🇱 The Netherlands, Dedemsvaart | [BL]"
+      - "🇹🇷 Turkey, Bursa | [BL]"
+      - "🇺🇸 United States, Buffalo | [BL]"
       - "🇺🇸 United States, North Bergen | [BL]"
       - "🇺🇸 United States, North Bergen | [BL] 2"
       - "🇺🇸 United States, North Bergen | [BL] 3"
       - "🇺🇸 United States, North Bergen | [BL] 4"
       - "🇺🇸 United States, North Bergen | [BL] 5"
       - "🇺🇸 United States, North Bergen | [BL] 6"
-      - "🇺🇸 United States, Orem | [BL]"
-      - "🇺🇸 United States, San Jose | [BL]"
-      - "🌐 Anycast-IP | 🇳🇱 | [BL]"
       - node
       - "node 2"
       - "node 3"
@@ -753,13 +478,8 @@ proxy-groups:
       - "node 5"
       - "node 6"
       - "node 7"
-      - "🇫🇮 Finland, Helsinki | [BL]"
-      - "🇫🇮 Finland, Helsinki | [BL] 2"
-      - "🇫🇮 Finland, Helsinki | [BL] 3"
-      - "🇫🇮 Finland, Helsinki | [BL] 4"
-      - "🇫🇮 Finland, Helsinki | [BL] 5"
-      - "🇫🇮 Finland, Helsinki | [BL] 6"
-      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
+      - "node 8"
+      - "node 9"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
