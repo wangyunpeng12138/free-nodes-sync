@@ -1,5 +1,5 @@
 # 订阅 32.1.txt -> Clash
-# 节点数量: 7
+# 节点数量: 5
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -40,18 +40,23 @@ dns:
     - "https://doh.pub/dns-query"
     - "https://dns.alidns.com/dns-query"
 proxies:
-  - name: "🇧🇬 Bulgaria [*CIDR]"
+  - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
     type: vless
-    server: 168.113.128.70
-    port: 20105
-    uuid: 9aff658c-1f80-4c82-9213-48ca26996142
+    server: 185.173.179.218
+    port: 443
+    uuid: f219ffe2-bc36-495f-a83d-8f9ac4af05fd
     udp: true
     tls: true
-    servername: ripelever.net
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    network: tcp
-  - name: "🇨🇦 Canada | 🌐 [*CIDR]"
+    servername: ru1.cdn-space.org
+    client-fingerprint: android
+    alpn:
+      - h2
+    network: xhttp
+    xhttp-opts:
+      path: "/assets/api/v3/connect/"
+      host: ru1.cdn-space.org
+      mode: auto
+  - name: "🇨🇦 Canada [*CIDR]"
     type: vless
     server: 5.53.124.191
     port: 8008
@@ -62,101 +67,72 @@ proxies:
     xhttp-opts:
       path: "/"
       host: 5.53.124.191
-  - name: "🇫🇮 Finland | [*CIDR]"
+  - name: "🇩🇪 Germany | 🌐 | [*CIDR]"
     type: vless
-    server: 5.129.249.155
+    server: 5.129.197.49
     port: 443
-    uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+    uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
     udp: true
     tls: true
-    servername: assets-59.topp-con.xyz
+    servername: orviko.xyz
+    client-fingerprint: chrome
+    alpn:
+      - h2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: glush.de3.v1
+  - name: "🇨🇭 Switzerland | [*CIDR]"
+    type: vless
+    server: orbdash.fun
+    port: 4443
+    uuid: 8af1ac56-283b-4fc5-bb33-6892498a0592
+    udp: true
+    tls: true
+    servername: orbdash.fun
     client-fingerprint: chrome
     reality-opts:
-      public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
-      short-id: b9120cd53ffd7bba
+      public-key: 4MkQvUvAT2jcS5yv7HLqrm6jJ_I10_yangDq76XjU24
+    network: xhttp
+    xhttp-opts:
+      path: "/media/relay/d8e6db6b"
+      host: orbdash.fun
+      mode: packet-up
+  - name: "🇨🇭 Switzerland | 🌐 | [*CIDR]"
+    type: vless
+    server: 157.22.185.58
+    port: 2058
+    uuid: 4ad9f982-b56a-444a-9684-35ce51307a36
+    udp: true
+    tls: true
+    servername: www.cloudflare.com
+    client-fingerprint: android
+    reality-opts:
+      public-key: lJBsn9ndieTIUBzXkJUhf6O0OE8pm29_z1fUtARwL0s
+      short-id: 937255313d6ce673
     flow: xtls-rprx-vision
     network: tcp
-  - name: "🇩🇪 Germany [*CIDR]"
-    type: vless
-    server: 89.223.125.45
-    port: 443
-    uuid: 8fb19a9e-ca2b-433a-8469-e4c7796033b2
-    udp: true
-    tls: true
-    servername: falmero.store
-    client-fingerprint: ios
-    network: grpc
-    grpc-opts:
-      grpc-service-name: glush.de1.v1
-  - name: "🇩🇪 Germany | 🌐 [*CIDR]"
-    type: vless
-    server: falmero.store
-    port: 443
-    uuid: 8fb19a9e-ca2b-433a-8469-e4c7796033b2
-    udp: true
-    tls: true
-    servername: falmero.store
-    client-fingerprint: ios
-    alpn:
-      - h2
-    network: grpc
-    grpc-opts:
-      grpc-service-name: glush.de1.v1
-  - name: "🇰🇼 Kuwait | [*CIDR]"
-    type: vless
-    server: 185.178.208.140
-    port: 443
-    uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
-    udp: true
-    tls: true
-    servername: static.bakarova-top.ru
-    client-fingerprint: chrome
-    network: xhttp
-    xhttp-opts:
-      path: "/api/v2/events"
-      host: static.bakarova-top.ru
-  - name: "🇷🇴 Romania | [*CIDR]"
-    type: vless
-    server: 185.178.208.140
-    port: 443
-    uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
-    udp: true
-    tls: true
-    servername: api.bakarova-top.ru
-    client-fingerprint: android
-    alpn:
-      - h2
-    network: xhttp
-    xhttp-opts:
-      path: "/api/v2/events"
-      host: api.bakarova-top.ru
-      mode: packet-up
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - "🇧🇬 Bulgaria [*CIDR]"
-      - "🇨🇦 Canada | 🌐 [*CIDR]"
-      - "🇫🇮 Finland | [*CIDR]"
-      - "🇩🇪 Germany [*CIDR]"
-      - "🇩🇪 Germany | 🌐 [*CIDR]"
-      - "🇰🇼 Kuwait | [*CIDR]"
-      - "🇷🇴 Romania | [*CIDR]"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
+      - "🇨🇦 Canada [*CIDR]"
+      - "🇩🇪 Germany | 🌐 | [*CIDR]"
+      - "🇨🇭 Switzerland | [*CIDR]"
+      - "🇨🇭 Switzerland | 🌐 | [*CIDR]"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     proxies:
-      - "🇧🇬 Bulgaria [*CIDR]"
-      - "🇨🇦 Canada | 🌐 [*CIDR]"
-      - "🇫🇮 Finland | [*CIDR]"
-      - "🇩🇪 Germany [*CIDR]"
-      - "🇩🇪 Germany | 🌐 [*CIDR]"
-      - "🇰🇼 Kuwait | [*CIDR]"
-      - "🇷🇴 Romania | [*CIDR]"
+      - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
+      - "🇨🇦 Canada [*CIDR]"
+      - "🇩🇪 Germany | 🌐 | [*CIDR]"
+      - "🇨🇭 Switzerland | [*CIDR]"
+      - "🇨🇭 Switzerland | 🌐 | [*CIDR]"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
