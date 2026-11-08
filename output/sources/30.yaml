@@ -1,5 +1,5 @@
 # 订阅 30.txt -> Clash
-# 节点数量: 9
+# 节点数量: 12
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -56,19 +56,20 @@ proxies:
         Host: lorettmay.top
   - name: ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 2"
     type: vless
-    server: 185.178.208.140
+    server: 185.178.208.167
     port: 443
-    uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+    uuid: fb37d713-0ed3-4146-b085-a5c879a9aafa
     udp: true
     tls: true
-    servername: static.bakarova-top.ru
-    client-fingerprint: edge
+    servername: lorettmay.top
+    client-fingerprint: firefox
     alpn:
-      - h2
-    network: xhttp
-    xhttp-opts:
-      path: "/api/v2/events"
-      host: static.bakarova-top.ru
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/blog/posts"
+      headers:
+        Host: lorettmay.top
   - name: "🇧🇬 Bulgaria [*CIDR]"
     type: vless
     server: 168.113.128.70
@@ -83,7 +84,7 @@ proxies:
       - http/1.1
     flow: xtls-rprx-vision
     network: tcp
-  - name: "🇨🇦 Canada [*CIDR]"
+  - name: "🇨🇦 Canada | 🌐 [*CIDR]"
     type: vless
     server: 5.53.124.191
     port: 8008
@@ -95,6 +96,46 @@ proxies:
       path: "/"
       host: 5.53.124.191
       mode: auto
+  - name: "🇨🇿 Czechia | 🌐 [*CIDR]"
+    type: vless
+    server: 194.26.229.241
+    port: 443
+    uuid: 0aa6bee3-cfa1-0004-9a76-19f231d1681f
+    udp: true
+    tls: true
+    servername: aeza1.maxtelemost.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: J0SK1ic3YJvP1gac5m3KSVaUuK_bxFtqz0fh0uEdEw4
+    flow: xtls-rprx-vision
+    network: tcp
+  - name: "🇩🇪 Germany [*CIDR]"
+    type: vless
+    server: falmero.store
+    port: 443
+    uuid: 8fb19a9e-ca2b-433a-8469-e4c7796033b2
+    udp: true
+    tls: true
+    servername: falmero.store
+    client-fingerprint: chrome
+    network: grpc
+    grpc-opts:
+      grpc-service-name: glush.de1.v1
+  - name: "🇰🇼 Kuwait | [*CIDR]"
+    type: vless
+    server: 185.178.208.140
+    port: 443
+    uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+    udp: true
+    tls: true
+    servername: static.bakarova-top.ru
+    client-fingerprint: chrome
+    alpn:
+      - h2
+    network: xhttp
+    xhttp-opts:
+      path: "/api/v2/events"
+      host: static.bakarova-top.ru
   - name: "🇷🇴 Romania | [*CIDR]"
     type: vless
     server: 185.178.208.140
@@ -117,7 +158,7 @@ proxies:
     udp: true
     tls: true
     servername: codifyr.ru
-    client-fingerprint: qq
+    client-fingerprint: chrome
     reality-opts:
       public-key: WCGVWrqI3t-c5ZIbUEmwjN3wiFFT7xV09PIio-OQGHU
       short-id: d16860c57700c886
@@ -148,25 +189,24 @@ proxies:
     udp: true
     tls: true
     servername: codifyr.ru
-    client-fingerprint: ios
+    client-fingerprint: edge
     reality-opts:
       public-key: WCGVWrqI3t-c5ZIbUEmwjN3wiFFT7xV09PIio-OQGHU
       short-id: d16860c57700c886
     network: grpc
     grpc-opts:
       grpc-service-name: grpc-reality
-  - name: "🇺🇸 United States | 🌐 [*CIDR]"
+  - name: "🇳🇱 The Netherlands | [*CIDR]"
     type: vless
-    server: 45.143.94.91
-    port: 8443
-    uuid: 3837e7a5-d40e-4b85-8700-5f9725a5a2cb
+    server: selek3.gamma-kvn.com
+    port: 443
+    uuid: e37b223d-c602-4be9-8ce0-eca27841ec8b
     udp: true
     tls: true
-    servername: us1.cloudvienta.com
-    client-fingerprint: edge
-    reality-opts:
-      public-key: 3Kgy_0tHtOzEn9_mEylNsBVlAHNngT6S4AuYy5wEOSU
-      short-id: 0c37b64d1935ebc1
+    servername: selek3.gamma-kvn.com
+    client-fingerprint: android
+    alpn:
+      - h2
     flow: xtls-rprx-vision
     network: tcp
 proxy-groups:
@@ -178,12 +218,15 @@ proxy-groups:
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 2"
       - "🇧🇬 Bulgaria [*CIDR]"
-      - "🇨🇦 Canada [*CIDR]"
+      - "🇨🇦 Canada | 🌐 [*CIDR]"
+      - "🇨🇿 Czechia | 🌐 [*CIDR]"
+      - "🇩🇪 Germany [*CIDR]"
+      - "🇰🇼 Kuwait | [*CIDR]"
       - "🇷🇴 Romania | [*CIDR]"
       - "🇨🇭 Switzerland [*CIDR]"
       - "🇨🇭 Switzerland [*CIDR] 2"
       - "🇨🇭 Switzerland [*CIDR] 3"
-      - "🇺🇸 United States | 🌐 [*CIDR]"
+      - "🇳🇱 The Netherlands | [*CIDR]"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -193,12 +236,15 @@ proxy-groups:
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]"
       - ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] 2"
       - "🇧🇬 Bulgaria [*CIDR]"
-      - "🇨🇦 Canada [*CIDR]"
+      - "🇨🇦 Canada | 🌐 [*CIDR]"
+      - "🇨🇿 Czechia | 🌐 [*CIDR]"
+      - "🇩🇪 Germany [*CIDR]"
+      - "🇰🇼 Kuwait | [*CIDR]"
       - "🇷🇴 Romania | [*CIDR]"
       - "🇨🇭 Switzerland [*CIDR]"
       - "🇨🇭 Switzerland [*CIDR] 2"
       - "🇨🇭 Switzerland [*CIDR] 3"
-      - "🇺🇸 United States | 🌐 [*CIDR]"
+      - "🇳🇱 The Netherlands | [*CIDR]"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
