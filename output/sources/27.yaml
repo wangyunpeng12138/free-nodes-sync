@@ -1,5 +1,5 @@
 # 订阅 27.txt -> Clash
-# 节点数量: 66
+# 节点数量: 68
 # 源: https://github.com/Hidashimora/free-vpn-anti-rkn
 # 由 src/txt2clash.py 自动生成，请勿手动编辑
 # 客户端: mihomo / Clash.Meta / Clash Verge Rev / ClashX Meta（原生 Clash 不支持 vless）
@@ -133,15 +133,6 @@ proxies:
     network: tcp
   - name: "node 7"
     type: vmess
-    server: 64.118.129.151
-    port: 22222
-    uuid: a5206a55-d5bd-41b9-92a5-bd27a90355ff
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: "node 8"
-    type: vmess
     server: 141.11.139.102
     port: 32515
     uuid: 081dbf5a-d8b6-40c8-96f8-3c4ca9f50442
@@ -149,7 +140,55 @@ proxies:
     cipher: auto
     udp: true
     network: tcp
+  - name: "node 8"
+    type: vmess
+    server: 104.17.0.1
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: or3.sfacg.uk
+    network: ws
+    ws-opts:
+      path: "/or3"
+      headers:
+        Host: or3.sfacg.uk
+    client-fingerprint: chrome
   - name: "node 9"
+    type: vmess
+    server: 104.21.0.1
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: or3.sfacg.uk
+    network: ws
+    ws-opts:
+      path: "/or3"
+      headers:
+        Host: or3.sfacg.uk
+    client-fingerprint: chrome
+  - name: "node 10"
+    type: vmess
+    server: 104.21.50.177
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: or3.sfacg.uk
+    network: ws
+    ws-opts:
+      path: "/or3"
+      headers:
+        Host: or3.sfacg.uk
+    client-fingerprint: chrome
+  - name: "node 11"
     type: vmess
     server: 162.159.128.17
     port: 443
@@ -165,7 +204,16 @@ proxies:
       headers:
         Host: v2ray.ryin.vip
     client-fingerprint: chrome
-  - name: "node 10"
+  - name: "node 12"
+    type: vmess
+    server: 43.159.7.24
+    port: 11353
+    uuid: d105eadc-c3ea-4a82-a299-373d75f2d2b7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: "node 13"
     type: vmess
     server: df.668fx.com
     port: 11353
@@ -174,7 +222,7 @@ proxies:
     cipher: auto
     udp: true
     network: tcp
-  - name: "node 11"
+  - name: "node 14"
     type: vmess
     server: 192.228.138.161
     port: 10086
@@ -183,7 +231,7 @@ proxies:
     cipher: auto
     udp: true
     network: tcp
-  - name: "node 12"
+  - name: "node 15"
     type: vmess
     server: 195.133.135.238
     port: 10086
@@ -192,7 +240,7 @@ proxies:
     cipher: auto
     udp: true
     network: tcp
-  - name: "node 13"
+  - name: "node 16"
     type: vmess
     server: 116.88.224.217
     port: 8080
@@ -201,56 +249,6 @@ proxies:
     cipher: auto
     udp: true
     network: tcp
-  - name: "node 14"
-    type: vmess
-    server: cf.0sm.com
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-  - name: "node 15"
-    type: vmess
-    server: 104.21.7.133
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
-  - name: "node 16"
-    type: vmess
-    server: 172.64.229.21
-    port: 443
-    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: vmess.lbw666.dpdns.org
-    alpn:
-      - "null"
-    network: ws
-    ws-opts:
-      path: "/ws?ed=2048"
-      headers:
-        Host: vmess.lbw666.dpdns.org
-    client-fingerprint: chrome
   - name: "node 17"
     type: vmess
     server: 172.66.203.67
@@ -269,6 +267,38 @@ proxies:
     client-fingerprint: chrome
   - name: "node 18"
     type: vmess
+    server: 104.21.7.133
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+  - name: "node 19"
+    type: vmess
+    server: 172.64.229.21
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: vmess.lbw666.dpdns.org
+  - name: "node 20"
+    type: vmess
     server: cf.090227.xyz
     port: 443
     uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
@@ -283,20 +313,23 @@ proxies:
       headers:
         Host: vmess.lbw666.dpdns.org
     client-fingerprint: chrome
-  - name: "node 19"
+  - name: "node 21"
     type: vmess
-    server: 104.21.7.133
-    port: 80
+    server: cf.0sm.com
+    port: 443
     uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
     alterId: 0
     cipher: auto
     udp: true
+    tls: true
+    servername: vmess.lbw666.dpdns.org
     network: ws
     ws-opts:
-      path: "/ws?ed=2048"
+      path: "/ws"
       headers:
         Host: vmess.lbw666.dpdns.org
-  - name: "node 20"
+    client-fingerprint: chrome
+  - name: "node 22"
     type: vmess
     server: 162.159.128.17
     port: 443
@@ -312,7 +345,7 @@ proxies:
       headers:
         Host: ny-v2ray.ryin.vip
     client-fingerprint: chrome
-  - name: "node 21"
+  - name: "node 23"
     type: vmess
     server: 104.21.57.84
     port: 8443
@@ -328,7 +361,7 @@ proxies:
       headers:
         Host: v2ray1.dozapp.xyz
     client-fingerprint: chrome
-  - name: "node 22"
+  - name: "node 24"
     type: vmess
     server: 104.21.91.53
     port: 8443
@@ -344,41 +377,9 @@ proxies:
       headers:
         Host: v2ray1.dozapp.xyz
     client-fingerprint: chrome
-  - name: "node 23"
-    type: vmess
-    server: 104.17.77.77
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: none
-    udp: true
-    tls: true
-    servername: v2ray1.dozapp.xyz
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: v2ray1.dozapp.xyz
-    client-fingerprint: chrome
-  - name: "node 24"
-    type: vmess
-    server: 172.67.167.78
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: v2ray1.dozapp.xyz
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: v2ray1.dozapp.xyz
-    client-fingerprint: chrome
   - name: "node 25"
     type: vmess
-    server: 172.67.161.144
+    server: 104.17.77.77
     port: 8443
     uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
     alterId: 0
@@ -394,7 +395,7 @@ proxies:
     client-fingerprint: chrome
   - name: "node 26"
     type: vmess
-    server: 172.64.155.209
+    server: 104.18.32.47
     port: 8443
     uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
     alterId: 0
@@ -410,7 +411,7 @@ proxies:
     client-fingerprint: chrome
   - name: "node 27"
     type: vmess
-    server: chatgpt.com
+    server: 172.67.167.78
     port: 8443
     uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
     alterId: 0
@@ -426,22 +427,54 @@ proxies:
     client-fingerprint: chrome
   - name: "node 28"
     type: vmess
-    server: or3.sfacg.uk
-    port: 2083
-    uuid: ac251237-576f-40c8-a543-554960c958b1
+    server: 172.67.161.144
+    port: 8443
+    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
     alterId: 0
     cipher: auto
     udp: true
     tls: true
-    servername: or3.sfacg.uk
+    servername: v2ray1.dozapp.xyz
     network: ws
     ws-opts:
-      path: "/or3"
+      path: "/lMnsZUN4/"
       headers:
-        Host: or3.sfacg.uk
+        Host: v2ray1.dozapp.xyz
     client-fingerprint: chrome
   - name: "node 29"
     type: vmess
+    server: 172.64.155.209
+    port: 8443
+    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: v2ray1.dozapp.xyz
+    network: ws
+    ws-opts:
+      path: "/lMnsZUN4/"
+      headers:
+        Host: v2ray1.dozapp.xyz
+    client-fingerprint: chrome
+  - name: "node 30"
+    type: vmess
+    server: chatgpt.com
+    port: 8443
+    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: v2ray1.dozapp.xyz
+    network: ws
+    ws-opts:
+      path: "/lMnsZUN4/"
+      headers:
+        Host: v2ray1.dozapp.xyz
+    client-fingerprint: chrome
+  - name: "node 31"
+    type: vmess
     server: or3.sfacg.uk
     port: 2083
     uuid: ac251237-576f-40c8-a543-554960c958b1
@@ -449,38 +482,6 @@ proxies:
     cipher: auto
     udp: true
     tls: true
-    network: ws
-    ws-opts:
-      path: "/or3"
-      headers:
-        Host: or3.sfacg.uk
-    client-fingerprint: chrome
-  - name: "node 30"
-    type: vmess
-    server: 104.21.50.177
-    port: 2083
-    uuid: ac251237-576f-40c8-a543-554960c958b1
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: or3.sfacg.uk
-    network: ws
-    ws-opts:
-      path: "/or3"
-      headers:
-        Host: or3.sfacg.uk
-    client-fingerprint: chrome
-  - name: "node 31"
-    type: vmess
-    server: 104.21.0.1
-    port: 2083
-    uuid: ac251237-576f-40c8-a543-554960c958b1
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: or3.sfacg.uk
     network: ws
     ws-opts:
       path: "/or3"
@@ -489,14 +490,14 @@ proxies:
     client-fingerprint: chrome
   - name: "node 32"
     type: vmess
-    server: 104.17.0.1
+    server: 162.159.130.234
     port: 2083
     uuid: ac251237-576f-40c8-a543-554960c958b1
     alterId: 0
     cipher: auto
     udp: true
     tls: true
-    servername: or3.sfacg.uk
+    servername: cdn.sfacg.uk
     network: ws
     ws-opts:
       path: "/or3"
@@ -505,7 +506,7 @@ proxies:
     client-fingerprint: chrome
   - name: "node 33"
     type: vmess
-    server: 162.159.135.234
+    server: 162.159.130.234
     port: 2083
     uuid: ac251237-576f-40c8-a543-554960c958b1
     alterId: 0
@@ -528,29 +529,29 @@ proxies:
     cipher: auto
     udp: true
     tls: true
-    servername: cdn.sfacg.uk
-    client-fingerprint: chrome
+    servername: or3.sfacg.uk
     network: ws
     ws-opts:
       path: "/or3"
       headers:
         Host: or3.sfacg.uk
+    client-fingerprint: chrome
   - name: "node 35"
     type: vmess
-    server: cdn.sfacg.uk
+    server: or3.sfacg.uk
     port: 2083
     uuid: ac251237-576f-40c8-a543-554960c958b1
     alterId: 0
     cipher: auto
     udp: true
     tls: true
-    servername: cdn.sfacg.uk
-    client-fingerprint: chrome
+    servername: or3.sfacg.uk
     network: ws
     ws-opts:
       path: "/or3"
       headers:
         Host: or3.sfacg.uk
+    client-fingerprint: chrome
   - name: "node 36"
     type: vmess
     server: or3.sfacg.uk
@@ -601,41 +602,47 @@ proxies:
     client-fingerprint: chrome
   - name: "node 39"
     type: vmess
-    server: 103.160.180.26
-    port: 22222
-    uuid: a5206a55-d5bd-41b9-92a5-bd27a90355ff
+    server: cdn.sfacg.uk
+    port: 2083
+    uuid: ac251237-576f-40c8-a543-554960c958b1
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]"
-    type: trojan
-    server: 104.19.45.195
-    port: 443
-    password: "pH[]S[Bh:_:D6T4k"
-    udp: true
-    servername: AZaDneT-692.PagEs.DEv
-    client-fingerprint: chrome
+    tls: true
+    servername: cdn.sfacg.uk
     network: ws
     ws-opts:
-      path: "/trsVu9Ualb1DOfGjpw"
+      path: "/or3"
       headers:
-        Host: AZaDneT-692.PagEs.DEv
-  - name: "🌐 Anycast-IP | 🇨🇦 🇪🇸 🇫🇮 🇳🇱 | [BL]"
+        Host: or3.sfacg.uk
+    client-fingerprint: chrome
+  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]"
     type: trojan
-    server: 104.17.147.22
-    port: 8443
-    password: uFepQ5r4JSusbY
+    server: 172.64.80.1
+    port: 443
+    password: bpb-trojan
     udp: true
-    servername: floral-grass-aa1e.dianawpewpek1.workers.dev
+    servername: vless.herogoing.top
+    network: ws
+    ws-opts:
+      path: "/tr?ed=2560"
+      headers:
+        Host: vless.herogoing.top
+  - name: "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL] 2"
+    type: trojan
+    server: 188.114.96.0
+    port: 2096
+    password: "vP!XvZBNdw.e*ddSgmH!"
+    udp: true
+    servername: N0Q4xprJ2d4X4pRCQ29l8JkcZd0.paGES.DeV
     client-fingerprint: chrome
     alpn:
       - http/1.1
     network: ws
     ws-opts:
-      path: "/?ed=2048"
+      path: "/tr/lqCTAonDgcErIZylZuNyy?ed=2560"
       headers:
-        Host: floral-grass-aa1e.dianawpewpek1.workers.dev
+        Host: n0q4xprj2d4x4prcq29l8jkczd0.pages.dev
   - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]"
     type: trojan
     server: 104.16.148.5
@@ -664,6 +671,19 @@ proxies:
         Host: dimskiee.biz.id
   - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 3"
     type: trojan
+    server: 104.17.10.171
+    port: 443
+    password: 883e3cc8-9613-4f2d-8c42-0dd3d429db55
+    udp: true
+    servername: ltf8.jueson.de5.net
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ltf8.jueson.de5.net
+  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 4"
+    type: trojan
     server: 188.114.98.0
     port: 443
     password: 883e3cc8-9613-4f2d-8c42-0dd3d429db55
@@ -676,21 +696,9 @@ proxies:
       path: "/categories/community/"
       headers:
         Host: ltf8.jueson.de5.net
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 4"
-    type: trojan
-    server: 172.64.80.1
-    port: 443
-    password: bpb-trojan
-    udp: true
-    servername: vless.herogoing.top
-    network: ws
-    ws-opts:
-      path: "/tr?ed=2560"
-      headers:
-        Host: vless.herogoing.top
   - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 5"
     type: trojan
-    server: singapore.com
+    server: russia.com
     port: 443
     password: bpb-trojan
     udp: true
@@ -760,18 +768,6 @@ proxies:
         Host: 4okhrijuyjytflnvowhl3zfw5wsgi34o.pages.dev
   - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 10"
     type: trojan
-    server: 104.18.35.86
-    port: 8443
-    password: trojan
-    udp: true
-    servername: longwanghen.pages.dev
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: longwanghen.pages.dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 11"
-    type: trojan
     server: 188.114.97.9
     port: 443
     password: "TsX0XJKMa2h$CbKr0k"
@@ -785,36 +781,37 @@ proxies:
       path: "/tr/mPwnfIHtx0vldKy0A5AGJTZB"
       headers:
         Host: IDB8onmVBntUyt5T7T6cEjFW8VLRB.PAGES.DeV
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 12"
+  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 11"
     type: trojan
-    server: 188.114.96.0
-    port: 2096
-    password: "vP!XvZBNdw.e*ddSgmH!"
+    server: floral-grass-aa1e.dianawpewpek1.workers.dev
+    port: 443
+    password: uFepQ5r4JSusbY
     udp: true
-    servername: N0Q4xprJ2d4X4pRCQ29l8JkcZd0.paGES.DeV
+    servername: floral-grass-aa1e.dianawpewpek1.workers.dev
     client-fingerprint: chrome
     alpn:
       - http/1.1
     network: ws
     ws-opts:
-      path: "/tr/lqCTAonDgcErIZylZuNyy?ed=2560"
+      path: "/?ed=2048"
       headers:
-        Host: n0q4xprj2d4x4prcq29l8jkczd0.pages.dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 13"
+        Host: floral-grass-aa1e.dianawpewpek1.workers.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 12"
     type: trojan
-    server: 104.18.42.98
-    port: 443
-    password: xhl549341
+    server: www.speedtest.net
+    port: 2083
+    password: uFepQ5r4JSusbY
     udp: true
-    servername: tro.baiyi.cloudns.org
+    servername: floral-grass-aa1e.dianawpewpek1.workers.dev
+    client-fingerprint: chrome
     alpn:
-      - h3
+      - http/1.1
     network: ws
     ws-opts:
-      path: "/?ed=2560"
+      path: "/?ed=2048"
       headers:
-        Host: tro.baiyi.cloudns.org
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇬🇧 | [BL]"
+        Host: floral-grass-aa1e.dianawpewpek1.workers.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 13"
     type: trojan
     server: 188.114.96.3
     port: 2096
@@ -829,6 +826,51 @@ proxies:
       path: "/tr/ZFttmjSqvda5ohOQ?ed=2560"
       headers:
         Host: n0q4xprj2d4x4prcq29l8jkczd0.pages.dev
+  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 14"
+    type: trojan
+    server: 104.18.43.174
+    port: 443
+    password: xhl549341
+    udp: true
+    servername: tro.baiyi.cloudns.org
+    client-fingerprint: chrome
+    alpn:
+      - h3
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: tro.baiyi.cloudns.org
+  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 15"
+    type: trojan
+    server: 172.64.145.158
+    port: 443
+    password: xhl549341
+    udp: true
+    servername: tro.baiyi.cloudns.org
+    client-fingerprint: chrome
+    alpn:
+      - h3
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: tro.baiyi.cloudns.org
+  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 16"
+    type: trojan
+    server: 172.64.152.241
+    port: 443
+    password: xhl549341
+    udp: true
+    servername: tro.baiyi.cloudns.org
+    client-fingerprint: chrome
+    alpn:
+      - h3
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: tro.baiyi.cloudns.org
   - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇳🇱 | [BL]"
     type: trojan
     server: 104.17.147.22
@@ -846,7 +888,7 @@ proxies:
         Host: floral-grass-aa1e.dianawpewpek1.workers.dev
   - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇳🇱 | [BL] 2"
     type: trojan
-    server: 104.17.148.22
+    server: 104.17.147.22
     port: 8443
     password: uFepQ5r4JSusbY
     udp: true
@@ -861,8 +903,8 @@ proxies:
         Host: floral-grass-aa1e.dianawpewpek1.workers.dev
   - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇳🇱 | [BL] 3"
     type: trojan
-    server: floral-grass-aa1e.dianawpewpek1.workers.dev
-    port: 443
+    server: 104.17.148.22
+    port: 8443
     password: uFepQ5r4JSusbY
     udp: true
     servername: floral-grass-aa1e.dianawpewpek1.workers.dev
@@ -875,21 +917,6 @@ proxies:
       headers:
         Host: floral-grass-aa1e.dianawpewpek1.workers.dev
   - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇳🇱 | [BL] 4"
-    type: trojan
-    server: www.speedtest.net
-    port: 2083
-    password: uFepQ5r4JSusbY
-    udp: true
-    servername: floral-grass-aa1e.dianawpewpek1.workers.dev
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: floral-grass-aa1e.dianawpewpek1.workers.dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇳🇱 | [BL] 5"
     type: trojan
     server: www.speedtest.net
     port: 8443
@@ -919,7 +946,21 @@ proxies:
       path: "/tr/K6yFgCX8e93ySqOO4K?ed=2560"
       headers:
         Host: apkd964o1oghltghht0l0of.pages.dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇷 🇮🇶 | [BL]"
+  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇺🇸 | [BL] 2"
+    type: trojan
+    server: 104.18.42.98
+    port: 443
+    password: xhl549341
+    udp: true
+    servername: tro.baiyi.cloudns.org
+    alpn:
+      - h3
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: tro.baiyi.cloudns.org
+  - name: "🌐 Anycast-IP | 🇨🇦 🇫🇷 🇮🇶 🇺🇸 | [BL]"
     type: trojan
     server: 104.24.210.142
     port: 443
@@ -931,39 +972,7 @@ proxies:
       path: "/stream/PANEL_ZEUS/ccc0e8cd3a83"
       headers:
         Host: fgzb39ezu86s.ycz7syeeu3is.workers.dev
-  - name: "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 🇺🇸 | [BL]"
-    type: trojan
-    server: 146.75.57.7
-    port: 443
-    password: MiTiVPN
-    udp: true
-    servername: cdn.akamai.steamstatic.com
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: "/---@MiTiVPN---@MiTiVPN"
-      headers:
-        Host: MiTiVPN-1-mitivpn.ac.ir
-  - name: "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 🇺🇸 | [BL] 2"
-    type: trojan
-    server: 151.101.36.7
-    port: 443
-    password: MiTiVPN
-    udp: true
-    servername: cdn.akamai.steamstatic.com
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: "/---@MiTiVPN---@MiTiVPN"
-      headers:
-        Host: Abu.ac.ir
-  - name: "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 🇺🇸 | [BL] 3"
+  - name: "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 | [BL]"
     type: trojan
     server: 167.82.64.7
     port: 443
@@ -979,7 +988,7 @@ proxies:
       path: "/---@MiTiVPN---@MiTiVPN"
       headers:
         Host: MiTiVPN-1-mitivpn.ac.ir
-  - name: "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 🇺🇸 | [BL] 4"
+  - name: "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 🇺🇸 | [BL]"
     type: trojan
     server: 199.232.78.160
     port: 443
@@ -995,6 +1004,38 @@ proxies:
       path: "/---@MiTiVPN---@MiTiVPN"
       headers:
         Host: MiTiVPN-1-mitivpn.ac.ir
+  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
+    type: trojan
+    server: 146.75.57.7
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: cdn.akamai.steamstatic.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: MiTiVPN-1-mitivpn.ac.ir
+  - name: "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 2"
+    type: trojan
+    server: 151.101.36.7
+    port: 443
+    password: MiTiVPN
+    udp: true
+    servername: cdn.akamai.steamstatic.com
+    client-fingerprint: chrome
+    alpn:
+      - http/1.1
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: Abu.ac.ir
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -1041,7 +1082,7 @@ proxy-groups:
       - "node 38"
       - "node 39"
       - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇪🇸 🇫🇮 🇳🇱 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL] 2"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 2"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 3"
@@ -1055,18 +1096,20 @@ proxy-groups:
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 11"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 12"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 13"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇬🇧 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 14"
+      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 15"
+      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 16"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇳🇱 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇳🇱 | [BL] 2"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇳🇱 | [BL] 3"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇳🇱 | [BL] 4"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇳🇱 | [BL] 5"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇷 🇮🇶 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇺🇸 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇫🇷 🇮🇶 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 🇺🇸 | [BL] 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 🇺🇸 | [BL] 3"
-      - "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 🇺🇸 | [BL] 4"
+      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 2"
   - name: "♻️ 自动选择"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -1113,7 +1156,7 @@ proxy-groups:
       - "node 38"
       - "node 39"
       - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇪🇸 🇫🇮 🇳🇱 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL] 2"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 2"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 3"
@@ -1127,18 +1170,20 @@ proxy-groups:
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 11"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 12"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 13"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇬🇧 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 14"
+      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 15"
+      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] 16"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇳🇱 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇳🇱 | [BL] 2"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇳🇱 | [BL] 3"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇳🇱 | [BL] 4"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇳🇱 | [BL] 5"
       - "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇫🇷 🇮🇶 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇫🇮 🇺🇸 | [BL] 2"
+      - "🌐 Anycast-IP | 🇨🇦 🇫🇷 🇮🇶 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 | [BL]"
       - "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 🇺🇸 | [BL]"
-      - "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 🇺🇸 | [BL] 2"
-      - "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 🇺🇸 | [BL] 3"
-      - "🌐 Anycast-IP | 🇨🇦 🇳🇱 🇸🇪 🇺🇸 | [BL] 4"
+      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]"
+      - "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL] 2"
 rules:
   - "GEOIP,LAN,DIRECT,no-resolve"
   - "GEOIP,CN,DIRECT"
